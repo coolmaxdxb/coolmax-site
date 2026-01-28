@@ -1,268 +1,216 @@
 import React, { useState } from "react";
-import { StarIcon } from "@heroicons/react/20/solid";
+import { motion, AnimatePresence } from "framer-motion";
+import { 
+  StarIcon, 
+  ArrowRightIcon, 
+  BeakerIcon, 
+  CubeTransparentIcon,
+  CheckCircleIcon
+} from "@heroicons/react/24/outline";
 
 /* ================= IMAGE IMPORTS ================= */
-
-/* M10 */
 import M10Black from "../asset/productimg/Model M10/M10 - 1.jpeg";
 import M10White from "../asset/productimg/Model M10/M10 - 2.jpeg";
-
-/* Q500 */
 import Q500Black from "../asset/productimg/Model Q500/Model Q500 - 1.jpeg";
 import Q500White from "../asset/productimg/Model Q500/Model Q500 - 2.jpeg";
-
-/* M45 */
 import M45Black from "../asset/productimg/Model M45/Model M45 1.jpeg";
 import M45White from "../asset/productimg/Model M45/Model M45 2.jpeg";
-
-/* M41-B */
 import M41BBlack from "../asset/productimg/Model M41-B/Model M41-B - 1.jpeg";
 import M41BWhite from "../asset/productimg/Model M41-B/Model M41-B - 2.jpeg";
-
-/* D100 */
 import D100Black from "../asset/productimg/Model D100/Model D100 - 1.jpeg";
 import D100White from "../asset/productimg/Model D100/Model D100 - 2.jpeg";
-
-/* H11-A-2026 */
 import H11Black from "../asset/productimg/Model H11-A-2026/Model H11-A-2026 - 1.jpeg";
 import H11White from "../asset/productimg/Model H11-A-2026/Model H11-A-2026 - 10.jpeg";
-
-/* A500 */
 import A500Black from "../asset/productimg/Model D100/Model D100 - 11.jpeg";
 import A500White from "../asset/productimg/Model D100/Model D100 - 13.jpeg";
-
-/* VS160 */
 import VS160Black from "../asset/productimg/Model VS160/Model VS160 - 2.jpeg";
 import VS160White from "../asset/productimg/Model VS160/Model VS160 - 1.jpeg";
-
-/* DSQ1010-1 */
 import DSQBlack from "../asset/productimg/Model DSQ1010-1/Model DSQ1010-1 (1).jpeg";
 import DSQWhite from "../asset/productimg/Model DSQ1010-1/Model DSQ1010-1 (2).jpeg";
 
-/* ================= PRODUCT DATA ================= */
-
-const products = [
-  {
-    id: 1,
-    name: "Car Aroma Diffusers",
-    model: "M10",
-    description: "Compact and portable scent solutions designed specifically for vehicles, ensuring a fresh commute.",
-    subProducts: [
-      { name: "Black", image: M10Black },
-      { name: "White", image: M10White },
-    ],
-  },
-  {
-    id: 2,
-    name: "Desktop & Small Space Diffusers",
-    model: "A500",
-    description: "Perfect for desks, washrooms, and intimate spaces. Quiet operation with elegant design.",
-    subProducts: [
-      { name: "Black", image: A500Black },
-      { name: "White", image: A500White },
-    ],
-  },
-  {
-    id: 3,
-    name: "Wall-Mounted & Ceiling Diffusers",
-    model: "M45",
-    description: "Space-saving designs that mount easily to walls or ceilings for seamless fragrance distribution.",
-    subProducts: [
-      { name: "Black", image: M45Black },
-      { name: "White", image: M45White },
-    ],
-  },
-  {
-    id: 4,
-    name: "Commercial Aroma Diffusers",
-    model: "D100",
-    description: "Powerful standalone units built for retail stores, hotel lobbies, and high-traffic commercial zones.",
-    subProducts: [
-      { name: "Black", image: D100Black },
-      { name: "White", image: D100White },
-    ],
-  },
-  {
-    id: 5,
-    name: "Large Area & HVAC Diffusers",
-    model: "M41-B",
-    description: "Connects directly to HVAC systems for invisible, uniform scent coverage across expansive facilities.",
-    subProducts: [
-      { name: "Black", image: M41BBlack },
-      { name: "White", image: M41BWhite },
-    ],
-  },
-  {
-    id: 6,
-    name: "Floor-Standing Aroma Diffusers",
-    model: "VS160",
-    description: "Statement pieces designed to stand on the floor, delivering powerful scent diffusion with style.",
-    subProducts: [
-      { name: "Black", image: VS160Black },
-      { name: "White", image: VS160White },
-    ],
-  },
-  {
-    id: 7,
-    name: "Passive / No-Power Diffusers",
-    model: "Q500", // Using Q500 as visual placeholder for this category
-    description: "Eco-friendly, silent diffusion solutions that require no electricity. Ideal for quiet zones.",
-    subProducts: [
-      { name: "Black", image: Q500Black },
-      { name: "White", image: Q500White },
-    ],
-  },
-  // Kept extra models below to ensure all imported images are available if needed
-  {
-    id: 8,
-    name: "High Capacity Industrial",
-    model: "DSQ1010-1",
-    description: "Maximum output diffusers for industrial spaces, event halls, and very large volumes.",
-    subProducts: [
-      { name: "Black", image: DSQBlack },
-      { name: "White", image: DSQWhite },
-    ],
-  },
-  {
-    id: 9,
-    name: "Advanced Tech Series",
-    model: "H11-A-2026",
-    description: "Next-generation smart diffusers with programmable controls and high efficiency.",
-    subProducts: [
-      { name: "Black", image: H11Black },
-      { name: "White", image: H11White },
-    ],
-  },
+/* ================= 20 PRODUCTS DATA ================= */
+const baseProducts = [
+  { id: 1, name: "Car Aroma Diffuser", model: "M10", desc: "Compact and portable scent solutions designed specifically for vehicles.", type: "Portable", imgs: [M10Black, M10White] },
+  { id: 2, name: "Desktop Smart Diffuser", model: "A500", desc: "Perfect for desks and washrooms. Quiet operation with elegant design.", type: "Tabletop", imgs: [A500Black, A500White] },
+  { id: 3, name: "Wall-Mount Pro", model: "M45", desc: "Space-saving designs that mount easily to walls or ceilings.", type: "Wall", imgs: [M45Black, M45White] },
+  { id: 4, name: "Commercial Tower", model: "D100", desc: "Powerful standalone units built for retail stores and lobbies.", type: "Floor", imgs: [D100Black, D100White] },
+  { id: 5, name: "HVAC Integrated System", model: "M41-B", desc: "Connects directly to HVAC systems for invisible scent coverage.", type: "HVAC", imgs: [M41BBlack, M41BWhite] },
+  { id: 6, name: "Luxury Floor Stand", model: "VS160", desc: "Statement pieces designed to stand on the floor with style.", type: "Floor", imgs: [VS160Black, VS160White] },
+  { id: 7, name: "Eco-Passive Diffuser", model: "Q500", desc: "Eco-friendly, silent diffusion solutions that require no electricity.", type: "Passive", imgs: [Q500Black, Q500White] },
+  { id: 8, name: "Industrial Power Unit", model: "DSQ1010", desc: "Maximum output diffusers for industrial spaces and event halls.", type: "HVAC", imgs: [DSQBlack, DSQWhite] },
+  { id: 9, name: "Smart Tech Series", model: "H11-A", desc: "Next-generation smart diffusers with programmable controls.", type: "Smart", imgs: [H11Black, H11White] },
 ];
 
-/* ================= COMPONENT ================= */
+const expandedProducts = [
+  ...baseProducts,
+  { id: 10, name: "Compact Office Plus", model: "A500-Pro", desc: "Enhanced output for meeting rooms.", type: "Tabletop", imgs: [A500White, A500Black] },
+  { id: 11, name: "Lobby Master X", model: "D100-X", desc: "Extended battery life version.", type: "Floor", imgs: [D100White, D100Black] },
+  { id: 12, name: "HVAC Enterprise", model: "M41-Pro", desc: "Dual-nozzle HVAC system.", type: "HVAC", imgs: [M41BWhite, M41BBlack] },
+  { id: 13, name: "Vertical Slim", model: "VS160-S", desc: "Slim profile for corridors.", type: "Floor", imgs: [VS160White, VS160Black] },
+  { id: 14, name: "Travel Scent Pod", model: "M10-Go", desc: "Pocket-sized for travelers.", type: "Portable", imgs: [M10White, M10Black] },
+  { id: 15, name: "Ceiling Cloud", model: "M45-C", desc: "Recessed ceiling mount unit.", type: "Ceiling", imgs: [M45White, M45Black] },
+  { id: 16, name: "Event Scent Cannon", model: "DSQ-Max", desc: "Rapid diffusion for events.", type: "Portable", imgs: [DSQWhite, DSQBlack] },
+  { id: 17, name: "Spa Serenity", model: "Q500-Zen", desc: "Whisper-quiet for spas.", type: "Tabletop", imgs: [Q500White, Q500Black] },
+  { id: 18, name: "Retail Omni", model: "D100-R", desc: "Designed for retail shelves.", type: "Tabletop", imgs: [D100Black, D100White] },
+  { id: 19, name: "Smart Home Hub", model: "H11-IoT", desc: "Connects to Google/Alexa.", type: "Smart", imgs: [H11White, H11Black] },
+  { id: 20, name: "Signature Grand", model: "VS-Gold", desc: "Our flagship floor unit.", type: "Floor", imgs: [VS160Black, VS160White] },
+];
 
 export default function ProductDetail() {
-  const [activeProduct, setActiveProduct] = useState(products[0]);
-  const [activeSub, setActiveSub] = useState(products[0].subProducts[0]);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const activeProduct = expandedProducts[selectedIndex];
 
   return (
-    <section className="relative py-24 px-6 bg-gradient-to-br from-white via-gray-50 to-gray-100 overflow-hidden">
-      <div className="relative max-w-[1400px] mx-auto">
-        <h2 className="text-4xl font-bold text-gray-900 mb-16">
-          Our Products
-        </h2>
+    <section className="relative py-24 bg-[#F8FAFC] font-sans selection:bg-indigo-500 selection:text-white min-h-screen mt-16">
+      
+      <div className="max-w-[1800px] mx-auto px-6 md:px-12 h-full">
+        
+        {/* --- Header --- */}
+        <div className="mb-12 border-b border-slate-200 pb-8 flex flex-col md:flex-row justify-between items-end">
+          <div>
+            <span className="text-indigo-600 font-bold tracking-widest uppercase text-xs mb-3 block">
+              Cool Max Collection
+            </span>
+            <h2 className="text-4xl md:text-5xl font-serif text-slate-900">
+              Product Catalogue
+            </h2>
+          </div>
+          <div className="text-right hidden md:block">
+            <p className="text-slate-500 text-sm font-medium">Displaying 20 Models</p>
+          </div>
+        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
-          {/* LEFT LIST */}
-          <aside className="lg:col-span-4">
-            <h3 className="text-lg font-semibold mb-6">
-              Explore Our Full Range
-            </h3>
-
-            <div className="space-y-3">
-              {products.map((product) => (
-                <button
-                  key={product.id}
-                  onClick={() => {
-                    setActiveProduct(product);
-                    setActiveSub(product.subProducts[0]);
-                  }}
-                  className={`w-full flex items-center gap-4 p-4 rounded-2xl border transition text-left ${
-                    activeProduct.id === product.id
-                      ? "bg-indigo-50 border-indigo-500 shadow-sm"
-                      : "bg-white border-gray-200 hover:bg-gray-50"
-                  }`}
-                >
-                  <div className="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center shrink-0">
-                    <img
-                      src={product.subProducts[0].image}
-                      alt={product.name}
-                      className="max-h-12 object-contain"
-                    />
-                  </div>
-                  <div>
-                    <p className={`font-semibold ${activeProduct.id === product.id ? "text-indigo-900" : "text-gray-800"}`}>
-                        {product.name}
-                    </p>
-                    <p className="text-xs text-gray-500">Model: {product.model}</p>
-                  </div>
-                </button>
-              ))}
-            </div>
-          </aside>
-
-          {/* RIGHT DETAILS */}
-          <div className="lg:col-span-8 grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {/* Product Image Stage */}
-            <div className="bg-white rounded-3xl p-10 shadow-sm flex items-center justify-center border border-gray-100">
-              <img
-                src={activeSub.image}
-                alt={activeSub.name}
-                className="h-[420px] object-contain drop-shadow-xl"
-              />
-            </div>
-
-            {/* Product Info */}
-            <div className="flex flex-col justify-center">
-              <span className="inline-block py-1 px-3 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold tracking-widest uppercase mb-4 w-fit">
-                Professional Series
-              </span>
-              <h1 className="text-4xl font-bold text-gray-900 mb-2">{activeProduct.name}</h1>
-              <p className="text-sm text-gray-500 mb-6 font-medium">
-                Model: <span className="text-gray-900">{activeProduct.model}</span>
-              </p>
-
-              <div className="flex items-center gap-2 mb-6">
-                {[...Array(5)].map((_, i) => (
-                  <StarIcon key={i} className="h-5 w-5 text-yellow-400" />
-                ))}
-                <span className="text-sm text-gray-500 ml-2">
-                  Top Choice for Business
-                </span>
-              </div>
-
-              <p className="text-lg text-gray-600 mb-10 leading-relaxed">
-                {activeProduct.description}
-              </p>
-
-              {/* Color/Variation Selection */}
-              <div className="mb-10">
-                <p className="text-sm font-semibold text-gray-900 mb-3">Select Variation:</p>
-                <div className="grid grid-cols-2 gap-4">
-                    {activeProduct.subProducts.map((sub) => (
-                    <button
-                        key={sub.name}
-                        onClick={() => setActiveSub(sub)}
-                        className={`group relative flex items-center gap-3 border rounded-xl p-3 transition-all ${
-                        activeSub.name === sub.name
-                            ? "border-indigo-600 bg-indigo-50 ring-1 ring-indigo-600"
-                            : "border-gray-200 hover:border-gray-400"
-                        }`}
-                    >
-                        <div className="w-12 h-12 bg-white rounded-lg p-1 flex items-center justify-center border border-gray-100">
-                            <img
-                            src={sub.image}
-                            alt={sub.name}
-                            className="h-full object-contain"
-                            />
-                        </div>
-                        <span className={`font-medium ${activeSub.name === sub.name ? "text-indigo-900" : "text-gray-700"}`}>
-                            {sub.name}
-                        </span>
-                    </button>
-                    ))}
+        {/* --- Main Content Layout --- */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 h-full">
+          
+          {/* LEFT: Scrollable Menu (4 Cols) */}
+          <div className="lg:col-span-4 h-[calc(100vh-200px)] overflow-y-auto pr-4 space-y-3 custom-scrollbar">
+            {expandedProducts.map((product, idx) => (
+              <button
+                key={product.id}
+                onClick={() => setSelectedIndex(idx)}
+                className={`w-full p-5 rounded-xl border text-left transition-all duration-300 group ${
+                  selectedIndex === idx 
+                    ? "bg-white border-indigo-500 shadow-xl shadow-indigo-100 ring-1 ring-indigo-500 transform scale-[1.02]" 
+                    : "bg-white border-slate-200 hover:border-slate-300 hover:bg-slate-50"
+                }`}
+              >
+                <div className="flex justify-between items-center mb-2">
+                  <span className={`text-[10px] font-bold uppercase tracking-widest ${selectedIndex === idx ? "text-indigo-600" : "text-slate-400"}`}>
+                    Model {product.model}
+                  </span>
+                  {selectedIndex === idx && <CheckCircleIcon className="w-5 h-5 text-indigo-500"/>}
                 </div>
-              </div>
+                <h3 className={`text-lg font-bold ${selectedIndex === idx ? "text-slate-900" : "text-slate-700"}`}>
+                  {product.name}
+                </h3>
+                <p className={`text-xs mt-1 truncate ${selectedIndex === idx ? "text-slate-500" : "text-slate-400"}`}>
+                  {product.type} Series
+                </p>
+              </button>
+            ))}
+          </div>
 
-              {/* CTA Buttons */}
-              <div className="flex gap-4 mt-auto">
-                <button className="flex-1 bg-gray-900 text-white py-4 rounded-xl font-bold hover:bg-gray-800 transition shadow-lg shadow-gray-200">
-                  Request Quote
-                </button>
-                <button className="flex-1 border-2 border-gray-200 py-4 rounded-xl font-bold hover:border-gray-900 hover:text-gray-900 transition text-gray-600">
-                  Download Spec Sheet
-                </button>
+          {/* RIGHT: Sticky Preview (8 Cols) */}
+          <div className="lg:col-span-8 relative h-full">
+            <div className="sticky top-10 bg-white rounded-[2.5rem] p-10 md:p-16 border border-slate-200 shadow-2xl overflow-hidden min-h-[600px] flex flex-col justify-center">
+              
+              {/* Decorative Background */}
+              <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-50 rounded-full blur-[100px] opacity-60 pointer-events-none -mr-20 -mt-20"></div>
+              
+              <div className="grid grid-cols-1 xl:grid-cols-2 gap-16 items-center relative z-10">
+                
+                {/* Text Info */}
+                <div className="order-2 xl:order-1">
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="px-3 py-1 bg-slate-900 text-white text-[10px] font-bold uppercase tracking-widest rounded-full">
+                      In Stock
+                    </span>
+                    <span className="flex text-yellow-400 gap-0.5">
+                      {[...Array(5)].map((_,i) => <StarIcon key={i} className="w-4 h-4 fill-current"/>)}
+                    </span>
+                  </div>
+
+                  <motion.h1 
+                    key={`title-${activeProduct.id}`}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="text-4xl md:text-6xl font-serif text-slate-900 mb-6 leading-tight"
+                  >
+                    {activeProduct.name}
+                  </motion.h1>
+
+                  <motion.p 
+                    key={`desc-${activeProduct.id}`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.1 }}
+                    className="text-lg text-slate-500 font-light leading-relaxed mb-10"
+                  >
+                    {activeProduct.desc} Engineered for those who appreciate the finer details of scent architecture.
+                  </motion.p>
+
+                  <div className="grid grid-cols-2 gap-6 mb-10">
+                    <div className="flex items-center gap-4">
+                      <div className="p-3 bg-slate-50 rounded-xl text-indigo-600"><CubeTransparentIcon className="w-6 h-6"/></div>
+                      <div>
+                        <p className="text-xs text-slate-400 font-bold uppercase">Coverage</p>
+                        <p className="text-sm font-bold text-slate-900">Up to 300m²</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <div className="p-3 bg-slate-50 rounded-xl text-indigo-600"><BeakerIcon className="w-6 h-6"/></div>
+                      <div>
+                        <p className="text-xs text-slate-400 font-bold uppercase">Technology</p>
+                        <p className="text-sm font-bold text-slate-900">Cold Diffusion</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button className="flex items-center gap-3 px-8 py-4 bg-indigo-600 text-white rounded-full font-bold uppercase tracking-widest text-sm hover:bg-indigo-700 transition-all shadow-lg hover:shadow-indigo-200">
+                    Request Quote <ArrowRightIcon className="w-4 h-4" />
+                  </button>
+                </div>
+
+                {/* Image */}
+                <div className="order-1 xl:order-2 flex justify-center items-center h-[300px] xl:h-[450px]">
+                  <AnimatePresence mode="wait">
+                    <motion.img
+                      key={activeProduct.id}
+                      initial={{ opacity: 0, scale: 0.9, x: 20 }}
+                      animate={{ opacity: 1, scale: 1, x: 0 }}
+                      exit={{ opacity: 0, scale: 0.9, x: -20 }}
+                      transition={{ duration: 0.4 }}
+                      src={activeProduct.imgs[0]}
+                      alt={activeProduct.name}
+                      className="max-h-full w-auto object-contain drop-shadow-2xl"
+                    />
+                  </AnimatePresence>
+                </div>
+
               </div>
             </div>
           </div>
+
         </div>
       </div>
+
+      {/* Scrollbar Utility */}
+      <style>{`
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background-color: #cbd5e1;
+          border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background-color: #94a3b8;
+        }
+      `}</style>
     </section>
   );
 }

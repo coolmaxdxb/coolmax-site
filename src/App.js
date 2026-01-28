@@ -8,7 +8,7 @@ import WhatsAppFloating from "./component/WhatsAppFloating";
 import AboutUs from "./component/aboutus";
 import SolutionsSection from "./component/Solutions";
 import Products from "./component/Products";
-import AromaOils from "./component/AromaOils";
+// import AromaOils from "./component/AromaOils";
 import IndustriesWeServe from "./component/IndustriesWeServe";
 import Blog from "./component/blog";
 import TalkToExpert from "./component/TalkToExpert";
@@ -39,7 +39,7 @@ const ScrollToTop = () => {
 const ProductPage = () => (
   <>
     <Products />
-    <AromaOils /> 
+    {/* <AromaOils />  */}
   </>
 );
 
