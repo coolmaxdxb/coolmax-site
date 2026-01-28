@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // Use Link for internal navigation
 import {
   Bars3Icon,
   XMarkIcon,
@@ -10,20 +11,20 @@ import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import Logo from "../../src/asset/hero/coll-logo.png";
 
 // --- NAVIGATION DATA ---
+// Updated structure to include specific 'href' for every dropdown item
 const navigation = [
- 
   { name: "About", href: "/about", type: "link" },
   {
     name: "Solutions",
     type: "dropdown",
     cols: 1, 
     items: [
-      "Scent Marketing Strategy",
-      "Commercial Aroma Diffusion",
-      "HVAC Scenting Solutions",
-      "Washroom Hygiene Solutions",
-      "Car & Personal Space Scenting",
-      "Maintenance & Refill Support",
+      { label: "Scent Marketing Strategy", href: "/solutions" },
+      { label: "Commercial Aroma Diffusion", href: "/solutions" },
+      { label: "HVAC Scenting Solutions", href: "/solutions" },
+      { label: "Washroom Hygiene Solutions", href: "/solutions" },
+      { label: "Car & Personal Space Scenting", href: "/solutions" },
+      { label: "Maintenance & Refill Support", href: "/solutions" },
     ],
   },
   {
@@ -31,13 +32,13 @@ const navigation = [
     type: "dropdown",
     cols: 2, 
     items: [
-      "Car Aroma Diffusers",
-      "Desktop & Small Space",
-      "Wall-Mounted & Ceiling",
-      "Commercial Diffusers",
-      "Large Area & HVAC",
-      "Floor-Standing Diffusers",
-      "Passive / No-Power",
+      { label: "Car Aroma Diffusers", href: "/products" },
+      { label: "Desktop & Small Space", href: "/products" },
+      { label: "Wall-Mounted & Ceiling", href: "/products" },
+      { label: "Commercial Diffusers", href: "/products" },
+      { label: "Large Area & HVAC", href: "/products" },
+      { label: "Floor-Standing Diffusers", href: "/products" },
+      { label: "Passive / No-Power", href: "/products" },
     ],
   },
   {
@@ -45,14 +46,14 @@ const navigation = [
     type: "dropdown",
     cols: 2, 
     items: [
-      "Fresh & Clean Scents",
-      "Floral Comfort Scents",
-      "Energy & Citrus Scents",
-      "Warm & Luxury Scents",
-      "Relaxation & Wellness",
-      "Signature Business Scents",
-      "Car & Personal Scents",
-      "Trial & Sample Sets",
+      { label: "Fresh & Clean Scents", href: "/oils/fresh" },
+      { label: "Floral Comfort Scents", href: "/oils/floral" },
+      { label: "Energy & Citrus Scents", href: "/oils/citrus" },
+      { label: "Warm & Luxury Scents", href: "/oils/luxury" },
+      { label: "Relaxation & Wellness", href: "/oils/wellness" },
+      { label: "Signature Business Scents", href: "/oils/signature" },
+      { label: "Car & Personal Scents", href: "/oils/car" },
+      { label: "Trial & Sample Sets", href: "/oils/samples" },
     ],
   },
   {
@@ -60,13 +61,13 @@ const navigation = [
     type: "dropdown",
     cols: 1,
     items: [
-      "Offices & Corporate",
-      "Hotels & Hospitality",
-      "Hospitals & Clinics",
-      "Schools & Education",
-      "Retail & Showrooms",
-      "Restaurants & Cafes",
-      "Malls & Commercial",
+      { label: "Offices & Corporate", href: "/industries" },
+      { label: "Hotels & Hospitality", href: "/industries" },
+      { label: "Hospitals & Clinics", href: "/industries" },
+      { label: "Schools & Education", href: "/industries" },
+      { label: "Retail & Showrooms", href: "/industries" },
+      { label: "Restaurants & Cafes", href: "/industries" },
+      { label: "Malls & Commercial", href: "/industries" },
     ],
   },
   { name: "Blog", href: "/blog", type: "link" },
@@ -89,7 +90,7 @@ export default function Header() {
       className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 border-b ${
         scrolled
           ? "bg-black border-white/10 py-3" 
-          : "bg-black border-transparent py-6" // Using solid black always for better contrast on mobile
+          : "bg-black border-transparent py-6"
       }`}
     >
       <div className="max-w-[1600px] mx-auto px-6 lg:px-12">
@@ -97,7 +98,7 @@ export default function Header() {
           
           {/* --- LEFT: LOGO --- */}
           <div className="flex-shrink-0 z-20">
-            <a href="/">
+            <Link to="/">
               <img
                 src={Logo}
                 alt="CoolMax"
@@ -105,7 +106,7 @@ export default function Header() {
                   scrolled ? "h-8 md:h-10" : "h-10 md:h-12"
                 }`} 
               />
-            </a>
+            </Link>
           </div>
 
           {/* --- MIDDLE: CENTERED NAV (Desktop) --- */}
@@ -118,18 +119,18 @@ export default function Header() {
                   onMouseEnter={() => setActiveDropdown(idx)}
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
-                  <a
-                    href={item.href || "/"}
+                  <Link
+                    to={item.href || "/"}
                     className={`relative flex items-center gap-1.5 text-xs font-bold uppercase tracking-[0.15em] transition-colors duration-300 ${
-                        activeDropdown === idx ? "text-amber-500" : "text-gray-300 hover:text-white"
+                        activeDropdown === idx ? "text-blue-500" : "text-gray-300 hover:text-white"
                     }`}
                   >
                     {item.name}
                     {item.type === "dropdown" && (
-                      <ChevronDownIcon className={`w-3 h-3 transition-transform duration-300 ${activeDropdown === idx ? "rotate-180 text-amber-500" : "text-gray-500"}`} />
+                      <ChevronDownIcon className={`w-3 h-3 transition-transform duration-300 ${activeDropdown === idx ? "rotate-180 text-blue-500" : "text-gray-500"}`} />
                     )}
-                    <span className={`absolute -bottom-1 left-0 w-0 h-[2px] bg-amber-500 transition-all duration-300 group-hover:w-full ${activeDropdown === idx ? "w-full" : ""}`}></span>
-                  </a>
+                    <span className={`absolute -bottom-1 left-0 w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full ${activeDropdown === idx ? "w-full" : ""}`}></span>
+                  </Link>
 
                   {/* MEGA MENU DROPDOWN */}
                   {item.type === "dropdown" && (
@@ -140,17 +141,17 @@ export default function Header() {
                       `}
                     >
                       <div className="bg-neutral-900 rounded-sm border border-white/10 shadow-xl overflow-hidden">
-                        <div className="h-[2px] w-full bg-amber-500" />
+                        <div className="h-[2px] w-full bg-blue-500" />
                         <div className={`p-6 grid ${item.cols === 2 ? "grid-cols-2 gap-x-8 gap-y-2" : "grid-cols-1 gap-y-2"}`}>
                           {item.items.map((sub, subIdx) => (
-                            <a
+                            <Link
                               key={subIdx}
-                              href="/products1"
+                              to={sub.href} // Unique link for each item
                               className="group flex items-center text-sm text-gray-400 hover:text-white transition-colors py-1.5"
                             >
-                              <span className="w-1.5 h-1.5 rounded-full bg-amber-500 mr-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                              {sub}
-                            </a>
+                              <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                              {sub.label}
+                            </Link>
                           ))}
                         </div>
                       </div>
@@ -165,24 +166,24 @@ export default function Header() {
           <div className="hidden xl:flex items-center gap-6 z-20">
             <div className="flex items-center gap-4 border-r border-white/10 pr-6">
               {[FaFacebookF, FaInstagram, FaLinkedinIn].map((Icon, i) => (
-                <a key={i} href="/" className="text-gray-400 hover:text-amber-500 transition-colors">
+                <a key={i} href="/" className="text-gray-400 hover:text-blue-500 transition-colors">
                   <Icon className="text-sm" />
                 </a>
               ))}
             </div>
-            <a 
-                href="/contact" 
-                className="flex items-center gap-2 px-6 py-2.5 bg-white text-black text-xs font-bold uppercase tracking-widest hover:bg-amber-500 hover:text-white transition-all duration-300"
+            <Link 
+                to="/contact" 
+                className="flex items-center gap-2 px-6 py-2.5 bg-white text-black text-xs font-bold uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all duration-300"
             >
                 <PhoneIcon className="w-3 h-3" />
                 Contact
-            </a>
+            </Link>
           </div>
 
           {/* --- MOBILE TOGGLE --- */}
           <button
             onClick={() => setMobileMenuOpen(true)}
-            className="xl:hidden p-2 text-white hover:text-amber-500 transition"
+            className="xl:hidden p-2 text-white hover:text-blue-500 transition"
           >
             <Bars3Icon className="w-8 h-8" />
           </button>
@@ -211,22 +212,22 @@ export default function Header() {
                     {navigation.map((item, idx) => (
                         <div key={idx} className="border-b border-white/5 last:border-0 pb-2">
                             {item.type === "link" ? (
-                                <a 
-                                    href={item.href} 
-                                    className="block py-3 text-base font-semibold text-gray-200 hover:text-amber-500 tracking-wide transition-colors"
+                                <Link 
+                                    to={item.href} 
+                                    className="block py-3 text-base font-semibold text-gray-200 hover:text-blue-500 tracking-wide transition-colors"
                                     onClick={() => setMobileMenuOpen(false)}
                                 >
                                     {item.name}
-                                </a>
+                                </Link>
                             ) : (
                                 <div>
                                     <button 
                                         onClick={() => setMobileActive(mobileActive === idx ? null : idx)}
-                                        className={`w-full flex items-center justify-between py-3 text-base font-semibold transition-colors ${mobileActive === idx ? "text-amber-500" : "text-gray-200"}`}
+                                        className={`w-full flex items-center justify-between py-3 text-base font-semibold transition-colors ${mobileActive === idx ? "text-blue-500" : "text-gray-200"}`}
                                     >
                                         {item.name}
                                         <ChevronDownIcon 
-                                            className={`w-4 h-4 transition-transform duration-300 ${mobileActive === idx ? "rotate-180 text-amber-500" : "text-gray-500"}`} 
+                                            className={`w-4 h-4 transition-transform duration-300 ${mobileActive === idx ? "rotate-180 text-blue-500" : "text-gray-500"}`} 
                                         />
                                     </button>
                                     
@@ -238,13 +239,14 @@ export default function Header() {
                                     >
                                         <div className="flex flex-col gap-1 pl-4 border-l-2 border-white/10 ml-1 mt-1">
                                             {item.items.map((sub, i) => (
-                                                <a 
+                                                <Link 
                                                     key={i} 
-                                                    href="/" 
+                                                    to={sub.href} // Specific link for mobile item 
                                                     className="block py-2 text-sm text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200"
+                                                    onClick={() => setMobileMenuOpen(false)}
                                                 >
-                                                    {sub}
-                                                </a>
+                                                    {sub.label}
+                                                </Link>
                                             ))}
                                         </div>
                                     </div>
@@ -258,13 +260,15 @@ export default function Header() {
             {/* Drawer Footer (Sticky Bottom) */}
             <div className="p-6 bg-black border-t border-white/10 flex-shrink-0">
                 <div className="flex justify-center gap-8 mb-6 text-gray-500">
-                    <FaFacebookF className="hover:text-amber-500 cursor-pointer transition text-lg" />
-                    <FaInstagram className="hover:text-amber-500 cursor-pointer transition text-lg" />
-                    <FaLinkedinIn className="hover:text-amber-500 cursor-pointer transition text-lg" />
+                    <FaFacebookF className="hover:text-blue-500 cursor-pointer transition text-lg" />
+                    <FaInstagram className="hover:text-blue-500 cursor-pointer transition text-lg" />
+                    <FaLinkedinIn className="hover:text-blue-500 cursor-pointer transition text-lg" />
                 </div>
-                <button className="w-full py-3.5 bg-amber-500 text-black font-bold uppercase tracking-widest text-xs hover:bg-white transition-colors shadow-lg shadow-amber-900/20">
-                    Request Demo
-                </button>
+                <Link to="/contact">
+                    <button className="w-full py-3.5 bg-blue-600 text-white font-bold uppercase tracking-widest text-xs hover:bg-white hover:text-black transition-colors shadow-lg shadow-blue-900/20">
+                        Request Demo
+                    </button>
+                </Link>
             </div>
         </div>
       </div>

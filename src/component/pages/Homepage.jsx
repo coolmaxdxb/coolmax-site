@@ -9,7 +9,7 @@ import Industries1 from "../../component/pages/industries1";
 import Blog1 from "../pages/Blog1";
 import Testimonials from "../Testimonials"; // Fixed 'Testimonials is not defined'
 import TalkToExpert from "../TalkToExpert"; // Fixed 'TalkToExpert is not defined'
-
+import Clear1 from "../pages/clear1";
 import WhatsAppFloating from "../WhatsAppFloating";
 
 export default function Homepage() {
@@ -25,6 +25,7 @@ export default function Homepage() {
       <AromaOils1 />
       <Industries1/>
       <Blog1 />
+      <Clear1 />
       <Testimonials />
       <TalkToExpert />
     </div>

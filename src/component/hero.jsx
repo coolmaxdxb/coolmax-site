@@ -71,7 +71,7 @@ export default function HeroSection() {
             {/* Main Headline with Gradient */}
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-slate-900 tracking-tight mb-6 leading-[1.1]">
               Professional Scent <br className="hidden md:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 animate-gradient bg-[length:200%_auto]">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-blue-500 to-blue-200 animate-gradient bg-[length:200%_auto]">
                 Marketing Solutions
               </span>
             </h1>
@@ -109,7 +109,7 @@ export default function HeroSection() {
               className="group p-5 bg-white/40 backdrop-blur-md border border-white/60 rounded-2xl hover:bg-white/70 hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300"
             >
               <h3 className="text-slate-900 font-bold text-lg mb-2 flex items-center gap-3">
-                <div className="w-8 h-8 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center text-sm font-bold shadow-sm">02</div>
+                <div className="w-8 h-8 rounded-lg bg-purple-100 text-blue-600 flex items-center justify-center text-sm font-bold shadow-sm">02</div>
                 Solutions
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed pl-11">
