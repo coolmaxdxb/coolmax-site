@@ -193,7 +193,7 @@ export default function Header() {
                 {/* Social Icons (Desktop) */}
                 <div className="hidden lg:flex items-center gap-3 border-r border-white/10 pr-4 mr-1">
                     {[FaFacebookF, FaInstagram, FaWhatsapp].map((Icon, i) => (
-                        <a key={i} href="/contact" className="text-slate-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
+                        <a key={i} href="#" className="text-slate-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
                             <Icon size={14} />
                         </a>
                     ))}
@@ -223,7 +223,7 @@ export default function Header() {
         </div>
       </header>
 
-      {/* ================= MOBILE DRAWER (Glassmorphic Card Stack) ================= */}
+      {/* ================= MOBILE DRAWER (Corrected UI) ================= */}
       <div
         className={`fixed inset-0 z-[100] transition-all duration-500 ${
           mobileMenuOpen ? "visible" : "invisible pointer-events-none"
@@ -274,15 +274,18 @@ export default function Header() {
                        : "bg-white/[0.02] border-white/5"
                     }`}
                   >
+                     {/* Check if it's a direct Link type */}
                      {item.type === "link" ? (
                         <Link
                            to={item.href}
                            onClick={() => setMobileMenuOpen(false)}
-                           className="flex items-center gap-3 px-5 py-4 text-[16px] font-semibold text-slate-200 hover:text-white"
+                           className="flex items-center justify-between px-5 py-4 text-[16px] font-semibold text-slate-200 hover:text-white"
                         >
-                           {/* Replaced Icon logic with uniform spacer */}
-                           <span className="w-5 h-5 rounded-full bg-white/10 flex items-center justify-center text-[10px] text-slate-400">#</span>
-                           {item.name}
+                           <div className="flex items-center gap-3">
+                               {/* Use the same dot style as dropdowns for consistency */}
+                               <div className="w-2 h-2 rounded-full bg-slate-600" />
+                               {item.name}
+                           </div>
                         </Link>
                      ) : (
                         <div>
