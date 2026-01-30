@@ -13,6 +13,12 @@ import {
   BeakerIcon
 } from "@heroicons/react/24/outline";
 
+// --- IMAGE IMPORTS ---
+import HeroImg from "../../asset/hero/hero2.webp"; 
+import FeatureImg1 from "../../asset/hero/hero2.webp"; // For "Why it matters" section
+import FeatureImg2 from "../../asset/hero/hero2.webp"; // For "What Is It" section
+import TextureImg from "../../asset/hero/hero2.webp"; // For "Branding/Support" background
+
 export default function MaintenancePage() {
   return (
     <div className="relative min-h-screen bg-[#020617] text-slate-300 font-sans selection:bg-emerald-500 selection:text-white overflow-hidden">
@@ -24,7 +30,8 @@ export default function MaintenancePage() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:80px_80px] opacity-30" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 pb-32">
+      {/* CHANGED: Increased max-width to 1600px */}
+      <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 pb-32">
 
         {/* ================= HERO SECTION ================= */}
         <section className="min-h-[85vh] flex flex-col justify-center items-center text-center pt-24 relative">
@@ -36,7 +43,7 @@ export default function MaintenancePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="relative z-10"
+            className="relative z-10 max-w-5xl"
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-950/20 backdrop-blur-md mb-8 shadow-[0_0_20px_rgba(16,185,129,0.3)]">
               <WrenchScrewdriverIcon className="w-4 h-4 text-emerald-400" />
@@ -52,9 +59,25 @@ export default function MaintenancePage() {
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-slate-400 font-light max-w-3xl mx-auto border-t border-white/10 pt-8 mt-8">
+            <p className="text-xl md:text-2xl text-slate-400 font-light max-w-3xl mx-auto border-t border-white/10 pt-8 mt-8 mb-12">
               Reliable Ongoing Care for Scent & Hygiene Systems in UAE
             </p>
+
+            {/* --- IMAGE 1: HERO VISUAL --- */}
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="relative w-full max-w-4xl mx-auto rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-emerald-900/50"
+            >
+              <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent z-10"></div>
+              <img 
+                src={HeroImg} 
+                alt="Maintenance & Support" 
+                className="w-full h-auto object-cover opacity-90 hover:scale-105 transition-transform duration-700" 
+              />
+            </motion.div>
+
           </motion.div>
         </section>
 
@@ -64,7 +87,7 @@ export default function MaintenancePage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-4xl mx-auto text-lg md:text-xl leading-relaxed text-slate-300 space-y-8"
+            className="max-w-5xl mx-auto text-lg md:text-xl leading-relaxed text-slate-300 space-y-8"
           >
             <p className="first-letter:text-6xl first-letter:font-serif first-letter:text-emerald-400 first-letter:float-left first-letter:mr-4 first-letter:leading-none text-justify">
               Installing a scent system is only the first step. To maintain consistent fragrance quality, system performance, and hygiene standards, regular maintenance and timely refilling are essential. At Cool Max Scent, we provide professional maintenance and refill support services in UAE to ensure your scent diffuser machines, commercial scent machines, and hygiene systems operate reliably every day.
@@ -102,10 +125,18 @@ export default function MaintenancePage() {
                 </div>
               </div>
               
-              {/* Visual Abstract */}
-              <div className="relative h-[500px] bg-gradient-to-tr from-emerald-900/10 to-transparent rounded-[2.5rem] border border-white/5 flex items-center justify-center overflow-hidden">
-                 <div className="absolute inset-0 bg-emerald-500/10 blur-[80px]" />
-                 <ArrowPathIcon className="w-48 h-48 text-emerald-500/20 relative z-10 animate-spin-slow" />
+              {/* --- IMAGE 2: FEATURE VISUAL --- */}
+              <div className="relative h-[600px] bg-gradient-to-tr from-emerald-900/10 to-transparent rounded-[2.5rem] border border-white/5 flex items-center justify-center overflow-hidden">
+                 <img src={FeatureImg1} alt="Technician Service" className="w-full h-full object-cover opacity-80" />
+                 <div className="absolute inset-0 bg-emerald-900/10 mix-blend-overlay"></div>
+                 <div className="absolute bottom-8 left-8 right-8">
+                   <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl flex items-center gap-4">
+                      <div className="p-3 bg-emerald-500/20 rounded-full">
+                        <ArrowPathIcon className="w-6 h-6 text-emerald-300 animate-spin-slow" />
+                      </div>
+                      <p className="text-white font-serif text-lg">Continuous performance through expert care.</p>
+                   </div>
+                 </div>
               </div>
             </div>
           </div>
@@ -113,7 +144,7 @@ export default function MaintenancePage() {
 
         {/* ================= SECTION 3: WHAT IS IT? (Feature List) ================= */}
         <section className="py-24 bg-white/[0.015]">
-          <div className="max-w-5xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="text-4xl md:text-5xl font-serif text-white mb-10 text-center">What Is Maintenance & Refill Support?</h2>
             
             <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -121,25 +152,31 @@ export default function MaintenancePage() {
                 <p className="text-slate-400 text-lg leading-relaxed mb-8">
                   Maintenance and refill support involves ongoing service care for scent and hygiene systems. At Cool Max, we offer structured maintenance programs designed to suit different environments and usage levels.
                 </p>
-                <div className="p-6 bg-[#0B0F19] rounded-xl border-l-4 border-emerald-500">
+                <div className="p-6 bg-[#0B0F19] rounded-xl border-l-4 border-emerald-500 mb-8">
                   <p className="text-emerald-100 font-medium italic">
                     We ensure your systems perform at their best, always.
                   </p>
                 </div>
+                <div className="space-y-4">
+                  {[
+                    "Replacing fragrance oils or refills",
+                    "Cleaning and inspecting diffuser components",
+                    "Checking system settings and performance",
+                    "Adjusting fragrance intensity as needed",
+                    "Preventive maintenance to avoid breakdowns"
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-center gap-4 p-5 bg-white/[0.03] rounded-2xl border border-white/5 hover:border-emerald-500/30 transition-all">
+                      <CheckBadgeIcon className="w-6 h-6 text-emerald-500 flex-shrink-0" />
+                      <span className="text-slate-300 text-sm font-medium">{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="space-y-4">
-                {[
-                  "Replacing fragrance oils or refills",
-                  "Cleaning and inspecting diffuser components",
-                  "Checking system settings and performance",
-                  "Adjusting fragrance intensity as needed",
-                  "Preventive maintenance to avoid breakdowns"
-                ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-4 p-5 bg-white/[0.03] rounded-2xl border border-white/5 hover:border-emerald-500/30 transition-all">
-                    <CheckBadgeIcon className="w-6 h-6 text-emerald-500 flex-shrink-0" />
-                    <span className="text-slate-300 text-sm font-medium">{item}</span>
-                  </div>
-                ))}
+
+              {/* --- IMAGE 3: CONTEXT VISUAL --- */}
+              <div className="relative h-[600px] rounded-[2.5rem] border border-white/10 overflow-hidden shadow-2xl">
+                 <img src={FeatureImg2} alt="Refill Process" className="w-full h-full object-cover opacity-80" />
+                 <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent"></div>
               </div>
             </div>
           </div>
@@ -261,11 +298,11 @@ export default function MaintenancePage() {
                 "Transparent service process"
               ].map((reason, i) => (
                 <li key={i} className="flex items-center gap-4 text-slate-300">
-                  <ShieldCheckIcon className="w-5 h-5 text-indigo-400" /> {reason}
+                  <ShieldCheckIcon className="w-5 h-5 text-emerald-400" /> {reason}
                 </li>
               ))}
             </ul>
-            <p className="mt-10 text-xs text-indigo-300 font-bold border-t border-white/10 pt-6 uppercase tracking-widest">We focus on long-term partnerships, not one-time installations.</p>
+            <p className="mt-10 text-xs text-emerald-300 font-bold border-t border-white/10 pt-6 uppercase tracking-widest">We focus on long-term partnerships, not one-time installations.</p>
           </div>
         </section>
 
@@ -315,8 +352,15 @@ export default function MaintenancePage() {
               </ul>
               <p className="mt-8 text-sm text-slate-500 italic border-l-2 border-white/10 pl-4">Professional support ensures your scent system continues to perform as intended.</p>
             </div>
+            
+            {/* --- IMAGE 4: TEXTURE BACKGROUND --- */}
             <div className="flex flex-col justify-center p-12 bg-gradient-to-tr from-[#0B0F19] to-black rounded-[2.5rem] border border-white/10 relative overflow-hidden">
-              <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5" />
+              
+              {/* Background Texture Image */}
+              <div className="absolute inset-0 opacity-20 mix-blend-overlay">
+                  <img src={TextureImg} alt="" className="w-full h-full object-cover grayscale" />
+              </div>
+
               <h2 className="text-3xl font-serif text-white mb-6 relative z-10">Supporting Your Brand Through Consistent Scenting</h2>
               <p className="text-slate-400 leading-relaxed mb-6 relative z-10">
                 A scent system is part of your environment identity. With proper maintenance, your home fragrance system, commercial scent machine, or HVAC scent diffuser continues to support comfort, hygiene, and brand perception.

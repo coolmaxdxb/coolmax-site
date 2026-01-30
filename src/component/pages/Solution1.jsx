@@ -1,6 +1,6 @@
 import React from "react";
 
-// --- Data Structure ---
+// --- Data Structure (Content Unchanged) ---
 const solutions = [
   {
     title: "Scent Marketing Solutions",
@@ -48,53 +48,69 @@ const solutions = [
 
 export default function SolutionsSection() {
   return (
-    <section className="relative py-24 text-gray-900" id="solutions">
+    <section className="relative py-28 text-slate-600 font-sans bg-[#F8FAFC]" id="solutions">
       
       {/* ================= BACKGROUND ================= */}
-      {/* Uses the requested radial dot pattern */}
-      <div className="absolute inset-0 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] -z-10"></div>
+      <div className="absolute inset-0 h-full w-full opacity-40" 
+           style={{ backgroundImage: 'radial-gradient(#cbd5e1 1px, transparent 1px)', backgroundSize: '32px 32px' }}>
+      </div>
+      
+      {/* Soft Blue Glow */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-100/40 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12">
+      <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12">
         
         {/* --- Header Section --- */}
-        <div className="mb-20 max-w-4xl bg-white/50 backdrop-blur-sm p-6 rounded-3xl border border-white/50">
-          <h2 className="text-sm font-bold tracking-widest text-indigo-600 uppercase mb-3">
-            Designed for Comfort, Consistency, and Control
-          </h2>
-          <h3 className="text-4xl md:text-5xl font-serif text-gray-900 mb-6 leading-tight">
-            Complete Scent Solutions for <br/> <span className="italic text-gray-500">Homes & Businesses</span>
+        <div className="mb-20 max-w-4xl mx-auto text-center md:text-left">
+          <div className="inline-flex items-center gap-2 mb-4">
+             <span className="w-8 h-px bg-blue-600"></span>
+             {/* Switched to Mono font for a 'Technical Spec' feel */}
+             <h2 className="text-xs font-mono font-bold tracking-widest text-blue-600 uppercase">
+               Designed for Comfort, Consistency, and Control
+             </h2>
+          </div>
+          
+          {/* Switched to Sans-Serif, Bold, Tight Tracking for Modern look */}
+          <h3 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-8 leading-tight tracking-tight">
+            Complete Scent Solutions for <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-indigo-600">Homes & Businesses</span>
           </h3>
-          <p className="text-lg text-gray-600 leading-relaxed border-l-4 border-indigo-600 pl-6">
-            At Cool Max, we offer end-to-end home scent systems and commercial scenting solutions that are practical, effective, and easy to maintain. Our focus is not just on selling machines, but on helping our clients achieve a consistently fresh and pleasant indoor environment.
-          </p>
+          
+          <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm border-l-4 border-l-blue-600">
+            <p className="text-lg text-slate-500 leading-relaxed font-medium">
+              At Cool Max, we offer end-to-end home scent systems and commercial scenting solutions that are practical, effective, and easy to maintain. Our focus is not just on selling machines, but on helping our clients achieve a consistently fresh and pleasant indoor environment.
+            </p>
+          </div>
         </div>
 
         {/* --- Solutions Grid --- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {solutions.map((item, index) => (
             <div
               key={index}
-              className="group relative flex flex-col items-start p-8 bg-white border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 rounded-2xl"
+              className="group relative flex flex-col items-start p-10 bg-white border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-900/10 hover:-translate-y-2 transition-all duration-300 rounded-[2rem] overflow-hidden"
             >
+              {/* Top Blue Line On Hover */}
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+
               {/* Icon Container */}
-              <div className="mb-6 p-4 rounded-xl bg-gray-50 text-gray-400 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
+              <div className="mb-8 p-4 rounded-2xl bg-slate-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm">
                 {item.icon}
               </div>
 
-              {/* Title */}
-              <h4 className="text-2xl font-semibold mb-3 group-hover:text-indigo-600 transition-colors">
+              {/* Title: Sans-Serif Bold */}
+              <h4 className="text-xl font-bold text-slate-900 mb-4 group-hover:text-blue-700 transition-colors tracking-tight">
                 {item.title}
               </h4>
 
-              {/* Description */}
-              <p className="text-gray-500 leading-relaxed mb-8 text-lg">
+              {/* Description: Sans-Serif Relaxed */}
+              <p className="text-slate-500 leading-relaxed mb-10 text-base font-normal">
                 {item.description}
               </p>
 
-              {/* Subtle 'Learn More' Link */}
+              {/* Link: Mono Font for Tech feel */}
               <a
                 href="/contact"
-                className="mt-auto flex items-center gap-2 text-sm font-medium text-gray-900 group-hover:underline decoration-indigo-600 underline-offset-4"
+                className="mt-auto inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-slate-900 border-b border-slate-200 pb-1 group-hover:border-blue-500 group-hover:text-blue-600 transition-all"
               >
                 Learn more
                 <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>

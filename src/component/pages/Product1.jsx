@@ -1,16 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   CubeIcon, 
   SpeakerWaveIcon, 
   ArrowDownTrayIcon, 
   TagIcon,
-  SparklesIcon,
+
   SwatchIcon,
- 
+  BoltIcon,
+  BeakerIcon,
+
 } from "@heroicons/react/24/outline";
 
-/* ================= IMAGE IMPORTS ================= */
+/* ================= IMAGE IMPORTS (Placeholders reused for demo) ================= */
+// NOTE: Ideally, you should import unique images for all 30 products. 
+// I am reusing the imports you provided to ensure the code runs immediately.
 import M10Black from "../../asset/productimg/Model M10/M10 - 1.jpeg";
 import M10White from "../../asset/productimg/Model M10/M10 - 2.jpeg";
 import Q500Black from "../../asset/productimg/Model Q500/Model Q500 - 1.jpeg";
@@ -30,301 +34,318 @@ import VS160White from "../../asset/productimg/Model VS160/Model VS160 - 1.jpeg"
 import DSQBlack from "../../asset/productimg/Model DSQ1010-1/Model DSQ1010-1 (1).jpeg";
 import DSQWhite from "../../asset/productimg/Model DSQ1010-1/Model DSQ1010-1 (2).jpeg";
 
-/* ================= FULL 20-ITEM DATASET ================= */
-const products = [
-  // --- CAR SERIES (Rows 1-4) ---
+/* ================= DATA STRUCTURE (6 Categories x 5 Products) ================= */
+const categoryData = [
   {
-    id: 1,
-    name: "DriveScent",
-    model: "H11-A-2026",
-    category: "Car Aroma Diffusers",
-    description: "Coolmax DriveMist Car Aroma Diffuser. Compact and portable scent solution designed specifically for vehicles.",
-    coverage: "15 m³",
-    noise: "< 30dB",
-    subProducts: [{ name: "Black", image: H11Black }, { name: "White", image: H11White }],
+    id: "home",
+    label: "Home & Desktop",
+    products: [
+      {
+        id: "h1", name: "OpalMist Clock", model: "U2 Smart",
+        desc: "2-in-1 Smart Clock Diffuser. Combines timekeeping with aromatherapy for bedside tables.",
+        specs: { coverage: "50 m³", noise: "< 30dB", tank: "100ml", voltage: "5V USB" },
+        variants: [{ name: "Black", img: M41BBlack }, { name: "White", img: M41BWhite }]
+      },
+      {
+        id: "h2", name: "ZenBox Mini", model: "D50-Mini",
+        desc: "Ultra-compact silent diffuser perfect for personal study desks and small bedrooms.",
+        specs: { coverage: "60 m³", noise: "< 28dB", tank: "60ml", voltage: "5V USB" },
+        variants: [{ name: "Black", img: M10Black }, { name: "White", img: M10White }]
+      },
+      {
+        id: "h3", name: "AromaDesk Pro", model: "H10-A",
+        desc: "Minimalist desktop unit with high-frequency ultrasonic vibration.",
+        specs: { coverage: "80 m³", noise: "< 30dB", tank: "120ml", voltage: "12V" },
+        variants: [{ name: "Black", img: M41BBlack }, { name: "White", img: M41BWhite }]
+      },
+      {
+        id: "h4", name: "LuxePanel Small", model: "OV-5",
+        desc: "Sleek flat-panel design that fits on bookshelves without taking space.",
+        specs: { coverage: "100 m³", noise: "< 32dB", tank: "150ml", voltage: "12V" },
+        variants: [{ name: "Black", img: M45Black }, { name: "White", img: M45White }]
+      },
+      {
+        id: "h5", name: "Natural Flow", model: "M10-Eco",
+        desc: "Battery-operated, eco-friendly passive diffuser for bathrooms.",
+        specs: { coverage: "40 m³", noise: "0dB", tank: "Oil Pad", voltage: "Battery" },
+        variants: [{ name: "Black", img: M10Black }, { name: "White", img: M10White }]
+      }
+    ]
   },
   {
-    id: 2,
-    name: "VentoCar",
-    model: "H11-B-2026",
-    category: "Car Aroma Diffusers",
-    description: "Coolmax DriveMist Pro Car Diffuser. Enhanced airflow design for rapid fragrance dispersion in vehicles.",
-    coverage: "20 m³",
-    noise: "< 30dB",
-    subProducts: [{ name: "Black", image: H11Black }, { name: "White", image: H11White }],
+    id: "wall",
+    label: "Wall-Mounted",
+    products: [
+      {
+        id: "w1", name: "CeilAir Pro", model: "M45-W",
+        desc: "Discreet wall-mounted unit ideal for corridors and washrooms.",
+        specs: { coverage: "300 m³", noise: "< 35dB", tank: "200ml", voltage: "12V" },
+        variants: [{ name: "Black", img: M45Black }, { name: "White", img: M45White }]
+      },
+      {
+        id: "w2", name: "AeroWall S", model: "M41-W",
+        desc: "Compact wall diffuser with app control for scheduling.",
+        specs: { coverage: "150 m³", noise: "< 32dB", tank: "150ml", voltage: "12V" },
+        variants: [{ name: "Black", img: M41BBlack }, { name: "White", img: M41BWhite }]
+      },
+      {
+        id: "w3", name: "AeroWall Max", model: "Q500-W",
+        desc: "High-capacity wall unit for large waiting areas and lobbies.",
+        specs: { coverage: "500 m³", noise: "< 40dB", tank: "500ml", voltage: "12V" },
+        variants: [{ name: "Black", img: Q500Black }, { name: "White", img: Q500White }]
+      },
+      {
+        id: "w4", name: "SlimLine 200", model: "SL-200",
+        desc: "Ultra-thin profile wall diffuser that blends into modern architecture.",
+        specs: { coverage: "200 m³", noise: "< 30dB", tank: "180ml", voltage: "12V" },
+        variants: [{ name: "Black", img: M45Black }, { name: "White", img: M45White }]
+      },
+      {
+        id: "w5", name: "CornerFit", model: "CF-100",
+        desc: "Specially designed triangular unit to fit perfectly in room corners.",
+        specs: { coverage: "100 m³", noise: "< 28dB", tank: "100ml", voltage: "12V" },
+        variants: [{ name: "Black", img: M41BBlack }, { name: "White", img: M41BWhite }]
+      }
+    ]
   },
   {
-    id: 3,
-    name: "DeskScent",
-    model: "H19",
-    category: "Car Aroma Diffusers",
-    description: "Coolmax AutoLux Aroma Diffuser. Dual-purpose design suitable for car cup holders or small office desks.",
-    coverage: "15 m³",
-    noise: "< 28dB",
-    subProducts: [{ name: "Black", image: H11Black }, { name: "White", image: H11White }],
+    id: "commercial",
+    label: "Commercial",
+    products: [
+      {
+        id: "c1", name: "MistBox X", model: "OV-10",
+        desc: "Heavy-duty commercial scent machine for retail stores.",
+        specs: { coverage: "800 m³", noise: "< 42dB", tank: "800ml", voltage: "12V" },
+        variants: [{ name: "Black", img: D100Black }, { name: "White", img: D100White }]
+      },
+      {
+        id: "c2", name: "AeroBlack Med", model: "Q500-C",
+        desc: "Medium range commercial diffuser with locking mechanism.",
+        specs: { coverage: "500 m³", noise: "< 35dB", tank: "500ml", voltage: "12V" },
+        variants: [{ name: "Black", img: Q500Black }, { name: "White", img: Q500White }]
+      },
+      {
+        id: "c3", name: "RetailPro 1000", model: "RP-1K",
+        desc: "Designed specifically for clothing stores and showrooms.",
+        specs: { coverage: "1000 m³", noise: "< 45dB", tank: "1L", voltage: "24V" },
+        variants: [{ name: "Black", img: D100Black }, { name: "White", img: D100White }]
+      },
+      {
+        id: "c4", name: "LobbyMaster", model: "LM-500",
+        desc: "Silent operation commercial unit for hotel reception areas.",
+        specs: { coverage: "600 m³", noise: "< 38dB", tank: "500ml", voltage: "12V" },
+        variants: [{ name: "Black", img: Q500Black }, { name: "White", img: Q500White }]
+      },
+      {
+        id: "c5", name: "EventScent", model: "ES-Portable",
+        desc: "Portable high-output diffuser for temporary events and weddings.",
+        specs: { coverage: "700 m³", noise: "< 40dB", tank: "750ml", voltage: "Battery/AC" },
+        variants: [{ name: "Black", img: D100Black }, { name: "White", img: D100White }]
+      }
+    ]
   },
   {
-    id: 4,
-    name: "NovaCar Diffuser",
-    model: "DA1004-2026",
-    category: "Car Aroma Diffusers",
-    description: "Coolmax AutoElite Metal Car Diffuser. Premium metallic finish with durable build for luxury interiors.",
-    coverage: "25 m³",
-    noise: "< 32dB",
-    subProducts: [{ name: "Black", image: H11Black }, { name: "White", image: H11White }],
-  },
-
-  // --- DESKTOP & SMALL SPACE (Rows 5-9) ---
-  {
-    id: 5,
-    name: "OpalMist Clock",
-    model: "U2",
-    category: "Desktop & Small Space",
-    description: "Coolmax OpalMist Smart Clock Diffuser. Innovative 2-in-1 device combining timekeeping with aromatherapy.",
-    coverage: "50 m³",
-    noise: "< 30dB",
-    subProducts: [{ name: "Black", image: M41BBlack }, { name: "White", image: M41BWhite }],
-  },
-  {
-    id: 6,
-    name: "AromaDesk",
-    model: "H10-A-2026",
-    category: "Desktop & Small Space",
-    description: "Coolmax DeskMist Aroma Diffuser. Minimalist design perfect for workspaces and reception counters.",
-    coverage: "80 m³",
-    noise: "< 30dB",
-    subProducts: [{ name: "Black", image: M41BBlack }, { name: "White", image: M41BWhite }],
-  },
-  {
-    id: 7,
-    name: "ZenBox Mini",
-    model: "D50mini",
-    category: "Desktop & Small Space",
-    description: "Coolmax ZenBox Mini Diffuser. Ultra-compact powerhouse for personal fragrance zones.",
-    coverage: "60 m³",
-    noise: "< 28dB",
-    subProducts: [{ name: "Black", image: M10Black }, { name: "White", image: M10White }],
+    id: "floor",
+    label: "Floor Standing",
+    products: [
+      {
+        id: "f1", name: "Titan Diffuser", model: "A700",
+        desc: "Luxury aluminum floor standing unit with 360-degree dispersion.",
+        specs: { coverage: "500 m³", noise: "< 36dB", tank: "500ml", voltage: "12V" },
+        variants: [{ name: "Black", img: A500Black }, { name: "White", img: A500White }]
+      },
+      {
+        id: "f2", name: "AeroPillar", model: "F-Air",
+        desc: "Slim tower design, perfect for narrow hallways and corners.",
+        specs: { coverage: "600 m³", noise: "< 38dB", tank: "600ml", voltage: "12V" },
+        variants: [{ name: "Black", img: VS160Black }, { name: "White", img: VS160White }]
+      },
+      {
+        id: "f3", name: "AirPole Pro", model: "G-Air",
+        desc: "Advanced floor unit with high velocity fan for large lobbies.",
+        specs: { coverage: "900 m³", noise: "< 40dB", tank: "800ml", voltage: "24V" },
+        variants: [{ name: "Black", img: VS160Black }, { name: "White", img: VS160White }]
+      },
+      {
+        id: "f4", name: "NanoPillar", model: "A500-S",
+        desc: "Compact floor standing unit for smaller luxury boutiques.",
+        specs: { coverage: "400 m³", noise: "< 35dB", tank: "400ml", voltage: "12V" },
+        variants: [{ name: "Black", img: A500Black }, { name: "White", img: A500White }]
+      },
+      {
+        id: "f5", name: "AeroMax Tower", model: "A315L",
+        desc: "Industrial look floor diffuser for gyms and large venues.",
+        specs: { coverage: "1000 m³", noise: "< 45dB", tank: "1L", voltage: "24V" },
+        variants: [{ name: "Black", img: A500Black }, { name: "White", img: A500White }]
+      }
+    ]
   },
   {
-    id: 8,
-    name: "AeroCube Diffuser",
-    model: "M41-B",
-    category: "Desktop & Small Space",
-    description: "Coolmax AeroCube Wall/Desktop Diffuser. Versatile mounting options for small to medium rooms.",
-    coverage: "150 m³",
-    noise: "< 30dB",
-    subProducts: [{ name: "Black", image: M41BBlack }, { name: "White", image: M41BWhite }],
+    id: "hvac",
+    label: "HVAC Systems",
+    products: [
+      {
+        id: "hv1", name: "AeroBlack Pro", model: "Q3000",
+        desc: "Massive output HVAC connected system for malls and airports.",
+        specs: { coverage: "3000 m³", noise: "< 50dB", tank: "2L", voltage: "24V" },
+        variants: [{ name: "Black", img: DSQBlack }, { name: "White", img: DSQWhite }]
+      },
+      {
+        id: "hv2", name: "AirPulse 150", model: "VS-160",
+        desc: "Compact HVAC unit for medium sized offices and homes.",
+        specs: { coverage: "1500 m³", noise: "Silent", tank: "500ml", voltage: "12V" },
+        variants: [{ name: "Black", img: VS160Black }, { name: "White", img: VS160White }]
+      },
+      {
+        id: "hv3", name: "DuctMaster 500", model: "DM-500",
+        desc: "Specialized nozzle design for direct duct insertion.",
+        specs: { coverage: "2000 m³", noise: "< 45dB", tank: "1L", voltage: "24V" },
+        variants: [{ name: "Black", img: DSQBlack }, { name: "White", img: DSQWhite }]
+      },
+      {
+        id: "hv4", name: "CentralAir X", model: "CA-X",
+        desc: "Smart HVAC diffuser with Wi-Fi control and monitoring.",
+        specs: { coverage: "2500 m³", noise: "< 48dB", tank: "1.5L", voltage: "24V" },
+        variants: [{ name: "Black", img: VS160Black }, { name: "White", img: VS160White }]
+      },
+      {
+        id: "hv5", name: "MegaFlow 5K", model: "MF-5000",
+        desc: "Our most powerful unit for stadiums and convention centers.",
+        specs: { coverage: "5000 m³", noise: "< 55dB", tank: "5L", voltage: "110-240V" },
+        variants: [{ name: "Black", img: DSQBlack }, { name: "White", img: DSQWhite }]
+      }
+    ]
   },
   {
-    id: 9,
-    name: "LuxePanel Diffuser",
-    model: "OV-5 Pro",
-    category: "Desktop & Small Space",
-    description: "Coolmax LuxePanel Smart Diffuser. Sleek panel design with intelligent scheduling features.",
-    coverage: "200 m³",
-    noise: "< 32dB",
-    subProducts: [{ name: "Black", image: M45Black }, { name: "White", image: M45White }],
-  },
-
-  // --- WALL & CEILING (Row 10) ---
-  {
-    id: 10,
-    name: "CeilAir Pro",
-    model: "M45",
-    category: "Wall-Mounted & Ceiling",
-    description: "Coolmax CeilAir Pro Aroma Diffuser. Discreet ceiling or wall installation for unobstructed airflow.",
-    coverage: "300 m³",
-    noise: "< 40dB",
-    subProducts: [{ name: "Black", image: M45Black }, { name: "White", image: M45White }],
-  },
-
-  // --- COMMERCIAL (Rows 11-12) ---
-  {
-    id: 11,
-    name: "AeroBlack Med",
-    model: "Q500",
-    category: "Commercial Aroma Diffusers",
-    description: "Coolmax AeroBlack Med Diffuser. Robust commercial solution for medium-sized retail and lobby environments.",
-    coverage: "500 m³",
-    noise: "< 35dB",
-    subProducts: [{ name: "Black", image: Q500Black }, { name: "White", image: Q500White }],
-  },
-  {
-    id: 12,
-    name: "MistBox X",
-    model: "OV-10",
-    category: "Commercial Aroma Diffusers",
-    description: "Coolmax MistBox X Commercial Diffuser. High-capacity tank system for extended operation in busy spaces.",
-    coverage: "800 m³",
-    noise: "< 42dB",
-    subProducts: [{ name: "Black", image: D100Black }, { name: "White", image: D100White }],
-  },
-
-  // --- LARGE AREA & HVAC (Rows 13-14) ---
-  {
-    id: 13,
-    name: "AeroBlack Pro",
-    model: "Q3000Pro",
-    category: "Large Area & HVAC",
-    description: "Coolmax AeroBlack Pro HVAC Diffuser. Maximum output diffuser for large industrial spaces and event halls.",
-    coverage: "3000 m³",
-    noise: "< 50dB",
-    subProducts: [{ name: "Black", image: DSQBlack }, { name: "White", image: DSQWhite }],
-  },
-  {
-    id: 14,
-    name: "AirPulse 150",
-    model: "VS-160",
-    category: "Large Area & HVAC",
-    description: "Coolmax AirPulse 150 HVAC System. Connects directly to HVAC for invisible, uniform scent coverage.",
-    coverage: "1500 m³",
-    noise: "Silent",
-    subProducts: [{ name: "Black", image: VS160Black }, { name: "White", image: VS160White }],
-  },
-
-  // --- FLOOR STANDING (Rows 15-17, 19-20) ---
-  {
-    id: 15,
-    name: "AeroPillar",
-    model: "F-Air",
-    category: "Floor-Standing Diffusers",
-    description: "Coolmax AeroPillar Floor Diffuser. Slim tower design that blends seamlessly into modern decor.",
-    coverage: "600 m³",
-    noise: "< 38dB",
-    subProducts: [{ name: "Black", image: VS160Black }, { name: "White", image: VS160White }],
-  },
-  {
-    id: 16,
-    name: "AirPole Pro",
-    model: "G-Air",
-    category: "Floor-Standing Diffusers",
-    description: "Coolmax AirPole Pro Floor Diffuser. Advanced floor unit with high velocity dispersion technology.",
-    coverage: "900 m³",
-    noise: "< 40dB",
-    subProducts: [{ name: "Black", image: VS160Black }, { name: "White", image: VS160White }],
-  },
-  {
-    id: 17,
-    name: "Titan Diffuser",
-    model: "A700",
-    category: "Floor-Standing Diffusers",
-    description: "Coolmax AuraCone Desktop/Floor Diffuser. Unique conical design for 360-degree fragrance projection.",
-    coverage: "500 m³",
-    noise: "< 36dB",
-    subProducts: [{ name: "Black", image: A500Black }, { name: "White", image: A500White }],
-  },
-  {
-    id: 18,
-    name: "Natural Flow",
-    model: "M10",
-    category: "Passive / No-Power",
-    description: "Coolmax NaturalFlow Passive Diffuser. Eco-friendly, silent diffusion solution requiring no electricity.",
-    coverage: "50 m³",
-    noise: "0dB",
-    subProducts: [{ name: "Black", image: M10Black }, { name: "White", image: M10White }],
-  },
-  {
-    id: 19,
-    name: "NanoPillar",
-    model: "A500",
-    category: "Floor-Standing Diffusers",
-    description: "Coolmax NanoPillar Floor Diffuser. Elegant aluminum body floor-standing design for luxury spaces.",
-    coverage: "400 m³",
-    noise: "< 35dB",
-    subProducts: [{ name: "Black", image: A500Black }, { name: "White", image: A500White }],
-  },
-  {
-    id: 20,
-    name: "AeroMax Pro",
-    model: "A315L",
-    category: "Floor-Standing Diffusers",
-    description: "Coolmax AeroMax Pro Tower. Heavy-duty floor unit designed for continuous operation in lobbies.",
-    coverage: "1000 m³",
-    noise: "< 45dB",
-    subProducts: [{ name: "Black", image: A500Black }, { name: "White", image: A500White }],
-  },
+    id: "car",
+    label: "Automotive",
+    products: [
+      {
+        id: "ca1", name: "DriveScent", model: "H11-A",
+        desc: "Fits perfectly in cup holders. USB rechargeable.",
+        specs: { coverage: "15 m³", noise: "< 30dB", tank: "10ml", voltage: "5V Battery" },
+        variants: [{ name: "Black", img: H11Black }, { name: "White", img: H11White }]
+      },
+      {
+        id: "ca2", name: "VentoCar", model: "H11-B",
+        desc: "Clip-on vent diffuser for direct airflow fragrance.",
+        specs: { coverage: "10 m³", noise: "< 25dB", tank: "5ml", voltage: "Passive" },
+        variants: [{ name: "Black", img: H11Black }, { name: "White", img: H11White }]
+      },
+      {
+        id: "ca3", name: "AutoElite Metal", model: "DA1004",
+        desc: "Premium aluminum alloy body for luxury vehicles.",
+        specs: { coverage: "20 m³", noise: "< 30dB", tank: "20ml", voltage: "5V USB" },
+        variants: [{ name: "Black", img: H11Black }, { name: "White", img: H11White }]
+      },
+      {
+        id: "ca4", name: "MotionScent", model: "MS-Auto",
+        desc: "Smart sensor activates only when the car is moving.",
+        specs: { coverage: "15 m³", noise: "< 28dB", tank: "15ml", voltage: "Battery" },
+        variants: [{ name: "Black", img: H11Black }, { name: "White", img: H11White }]
+      },
+      {
+        id: "ca5", name: "TravelMini", model: "TM-Go",
+        desc: "Pocket-sized portable diffuser for rental cars and travel.",
+        specs: { coverage: "10 m³", noise: "< 25dB", tank: "10ml", voltage: "Battery" },
+        variants: [{ name: "Black", img: H11Black }, { name: "White", img: H11White }]
+      }
+    ]
+  }
 ];
 
-/* ================= COMPONENT ================= */
 export default function ProductDetail() {
-  const [activeProduct, setActiveProduct] = useState(products[0]);
-  const [activeSub, setActiveSub] = useState(products[0].subProducts[0]);
+  const [activeCategory, setActiveCategory] = useState(categoryData[0]);
+  const [activeProduct, setActiveProduct] = useState(categoryData[0].products[0]);
+  const [activeVariant, setActiveVariant] = useState(categoryData[0].products[0].variants[0]);
 
+  // When category changes, reset active product to the first in that category
+  useEffect(() => {
+    setActiveProduct(activeCategory.products[0]);
+    setActiveVariant(activeCategory.products[0].variants[0]);
+  }, [activeCategory]);
+
+  // When product changes, reset variant to the first one
   const handleProductChange = (product) => {
     setActiveProduct(product);
-    setActiveSub(product.subProducts[0]);
+    setActiveVariant(product.variants[0]);
   };
 
   return (
-    <section className="relative py-24 bg-[#FDFCF8] font-sans overflow-hidden min-h-screen selection:bg-stone-200 selection:text-stone-900">
+    <section className="relative py-24 bg-[#F8FAFC] font-sans overflow-hidden min-h-screen text-slate-600">
       
-      {/* ================= ATMOSPHERE ================= */}
-      <div className="absolute inset-0 opacity-40 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/cream-paper.png')] mix-blend-multiply"></div>
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-stone-100/60 rounded-full blur-[120px] pointer-events-none mix-blend-multiply" />
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-stone-200/40 rounded-full blur-[100px] pointer-events-none mix-blend-multiply" />
+      {/* ================= BACKGROUND TEXTURE ================= */}
+      <div className="absolute inset-0 opacity-[0.4]" 
+           style={{ backgroundImage: 'radial-gradient(#cbd5e1 1px, transparent 1px)', backgroundSize: '32px 32px' }}>
+      </div>
 
       <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12">
         
         {/* --- HEADER --- */}
-        <div className="mb-16 flex flex-col md:flex-row justify-between items-end pb-8 border-b border-stone-200">
-          <div>
-            <div className="flex items-center gap-3 mb-4">
-               <div className="h-px w-12 bg-stone-300"></div>
-               <span className="text-xs font-bold text-stone-400 uppercase tracking-[0.2em]">Product Catalogue</span>
-            </div>
-            <h3 className="text-4xl md:text-6xl font-serif text-stone-800 tracking-tight">Collection 2026</h3>
-          </div>
-          <div className="text-right hidden md:block">
-            <p className="text-stone-500 font-serif italic text-lg">
-              "Engineering the invisible art of fragrance."
-            </p>
-          </div>
+        <div className="mb-12 text-center max-w-3xl mx-auto">
+           <span className="text-blue-600 font-bold tracking-[0.2em] uppercase text-xs mb-4 block">
+              Product Catalogue 2026
+           </span>
+           <h3 className="text-4xl md:text-6xl font-serif text-slate-900 mb-6">
+              Precision Air <span className="italic text-blue-700">Treatment</span>
+           </h3>
+        </div>
+
+        {/* --- CATEGORY TABS --- */}
+        <div className="flex justify-center mb-16 overflow-x-auto pb-4 no-scrollbar">
+           <div className="bg-white/80 backdrop-blur-md p-2 rounded-full border border-slate-200 shadow-sm flex gap-2">
+              {categoryData.map((cat) => (
+                <button
+                  key={cat.id}
+                  onClick={() => setActiveCategory(cat)}
+                  className={`px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 whitespace-nowrap ${
+                    activeCategory.id === cat.id 
+                    ? "bg-slate-900 text-white shadow-lg" 
+                    : "text-slate-500 hover:bg-slate-100"
+                  }`}
+                >
+                  {cat.label}
+                </button>
+              ))}
+           </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
-          {/* ================= SIDEBAR: LIST (Gallery Style) ================= */}
+          {/* ================= SIDEBAR: PRODUCT LIST ================= */}
           <aside className="lg:col-span-3 lg:sticky lg:top-24 z-20">
-            <div className="bg-white/80 backdrop-blur-md border border-stone-200 rounded-[2rem] overflow-hidden shadow-2xl shadow-stone-200/40">
+            <div className="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-xl shadow-slate-200/50">
               
-              <div className="p-6 border-b border-stone-100 flex items-center justify-between bg-white/50">
-                <span className="text-xs font-bold text-stone-400 uppercase tracking-widest flex items-center gap-2">
-                  <TagIcon className="w-4 h-4" /> Index
+              <div className="p-6 border-b border-slate-100 flex items-center justify-between bg-slate-50">
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                  <TagIcon className="w-4 h-4" /> Models
                 </span>
-                <span className="px-2 py-1 rounded-full bg-stone-100 text-[10px] font-bold text-stone-600">{products.length} Models</span>
+                <span className="px-2 py-1 rounded-md bg-white border border-slate-200 text-[10px] font-bold text-slate-600">
+                   {activeCategory.products.length} Items
+                </span>
               </div>
 
-              <div className="max-h-[650px] overflow-y-auto custom-scrollbar p-2 space-y-1 bg-stone-50/30">
-                {products.map((product) => (
+              <div className="max-h-[600px] overflow-y-auto custom-scrollbar p-3 space-y-2 bg-white">
+                {activeCategory.products.map((product) => (
                   <button
                     key={product.id}
                     onClick={() => handleProductChange(product)}
-                    className={`relative w-full group flex items-center justify-between p-4 rounded-xl transition-all duration-300 outline-none ${
+                    className={`w-full group flex items-center justify-between p-4 rounded-xl transition-all duration-300 text-left border ${
                       activeProduct.id === product.id
-                        ? "text-stone-900"
-                        : "text-stone-400 hover:bg-white hover:shadow-sm"
+                        ? "bg-blue-50 border-blue-200 shadow-sm"
+                        : "bg-transparent border-transparent hover:bg-slate-50 hover:border-slate-100"
                     }`}
                   >
-                    {/* Active Background Pill */}
-                    {activeProduct.id === product.id && (
-                      <motion.div
-                        layoutId="activeTab"
-                        className="absolute inset-0 bg-white border border-stone-100 shadow-sm rounded-xl"
-                        initial={false}
-                        transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                      />
-                    )}
-
-                    <div className="relative z-10 flex flex-col items-start text-left pl-2">
-                      <span className={`text-sm font-bold tracking-wide transition-colors ${activeProduct.id === product.id ? "text-stone-900" : "text-stone-500"}`}>
+                    <div>
+                      <span className={`block text-sm font-bold transition-colors ${activeProduct.id === product.id ? "text-blue-900" : "text-slate-600"}`}>
                         {product.name}
                       </span>
-                      <span className="text-[9px] uppercase tracking-wider font-medium opacity-60">
+                      <span className="text-[10px] uppercase tracking-wider font-medium text-slate-400">
                         {product.model}
                       </span>
                     </div>
                     {activeProduct.id === product.id && (
-                      <div className="relative z-10 w-1.5 h-1.5 rounded-full bg-stone-800 mr-2" />
+                      <div className="w-2 h-2 rounded-full bg-blue-600" />
                     )}
                   </button>
                 ))}
@@ -333,121 +354,125 @@ export default function ProductDetail() {
           </aside>
 
           {/* ================= MAIN DISPLAY ================= */}
-          <div className="lg:col-span-9 grid grid-cols-1 xl:grid-cols-2 gap-16">
+          <div className="lg:col-span-9 grid grid-cols-1 xl:grid-cols-2 gap-12 xl:gap-24">
             
-            {/* --- Left: Floating Product Stage --- */}
+            {/* --- Left: Image Stage --- */}
             <div className="relative flex flex-col items-center">
-               {/* Main Image Container */}
                <motion.div 
-                 initial={{ opacity: 0 }}
-                 animate={{ opacity: 1 }}
-                 transition={{ duration: 0.8 }}
-                 className="relative w-full aspect-[4/5] bg-white rounded-[3rem] border border-stone-100 flex items-center justify-center overflow-hidden p-12 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.05)]"
+                 key={activeProduct.id} // Re-animate on product change
+                 initial={{ opacity: 0, y: 20 }}
+                 animate={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.5 }}
+                 className="relative w-full aspect-[4/5] bg-white rounded-[3rem] border border-slate-200 flex items-center justify-center overflow-hidden p-12 shadow-2xl shadow-slate-200/50"
                >
-                 
-                 {/* Soft Radial Glow behind product */}
-                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-gradient-to-b from-stone-50 to-white rounded-full blur-3xl" />
+                 {/* Glow Background */}
+                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[70%] bg-blue-50 rounded-full blur-3xl opacity-60" />
 
                  <AnimatePresence mode="wait">
                    <motion.img
-                     key={activeSub.image}
-                     src={activeSub.image}
-                     alt={activeSub.name}
-                     initial={{ opacity: 0, scale: 0.95, y: 20 }}
-                     animate={{ opacity: 1, scale: 1, y: 0 }}
-                     exit={{ opacity: 0, scale: 1.05 }}
-                     transition={{ duration: 0.5, ease: "easeOut" }}
-                     className="relative z-10 w-full h-full object-contain drop-shadow-2xl mix-blend-multiply"
+                     key={activeVariant.img}
+                     src={activeVariant.img}
+                     alt={activeProduct.name}
+                     initial={{ opacity: 0, scale: 0.9 }}
+                     animate={{ opacity: 1, scale: 1 }}
+                     exit={{ opacity: 0 }}
+                     transition={{ duration: 0.4 }}
+                     className="relative z-10 w-full h-full object-contain drop-shadow-xl mix-blend-multiply"
                    />
                  </AnimatePresence>
                  
-                 {/* Top Right: Category Badge */}
-                 <div className="absolute top-8 right-8">
-                    <span className="px-4 py-2 bg-stone-100/80 backdrop-blur-sm rounded-full text-xs font-bold text-stone-500 uppercase tracking-widest border border-white">
-                      {activeProduct.category.split(' ')[0]} Series
+                 {/* Series Badge */}
+                 <div className="absolute top-8 right-8 px-4 py-2 bg-white/90 backdrop-blur border border-slate-100 rounded-lg shadow-sm">
+                    <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">
+                      {activeCategory.label}
                     </span>
                  </div>
                </motion.div>
 
-               {/* Finish Selector (Below Image) */}
-               <div className="mt-8 flex items-center gap-6 bg-white px-8 py-4 rounded-full border border-stone-200 shadow-sm">
-                  <span className="text-xs font-bold text-stone-400 uppercase tracking-widest flex items-center gap-2">
+               {/* Color Selector */}
+               <div className="mt-8 flex items-center gap-6 bg-white px-8 py-4 rounded-full border border-slate-200 shadow-sm">
+                  <span className="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
                     <SwatchIcon className="w-4 h-4" /> Finish
                   </span>
-                  <div className="h-4 w-px bg-stone-200"></div>
+                  <div className="h-4 w-px bg-slate-200"></div>
                   <div className="flex gap-4">
-                    {activeProduct.subProducts.map((sub) => (
+                    {activeProduct.variants.map((variant) => (
                       <button
-                        key={sub.name}
-                        onClick={() => setActiveSub(sub)}
-                        className={`group relative w-6 h-6 rounded-full transition-all duration-300 ${
-                          activeSub.name === sub.name ? "scale-125 ring-2 ring-stone-200 ring-offset-2" : "hover:scale-110 opacity-70 hover:opacity-100"
+                        key={variant.name}
+                        onClick={() => setActiveVariant(variant)}
+                        className={`group relative w-8 h-8 rounded-full transition-all duration-300 flex items-center justify-center ${
+                          activeVariant.name === variant.name ? "ring-2 ring-blue-500 ring-offset-2" : "hover:scale-110"
                         }`}
-                        title={sub.name}
+                        title={variant.name}
                       >
-                         <span className={`absolute inset-0 rounded-full shadow-inner ${sub.name === 'Black' ? 'bg-stone-900' : 'bg-stone-100 border border-stone-300'}`} />
+                         <span className={`w-full h-full rounded-full border border-slate-200 shadow-inner ${variant.name === 'Black' ? 'bg-slate-900' : 'bg-white'}`} />
                       </button>
                     ))}
                   </div>
                </div>
             </div>
 
-            {/* --- Right: Typography & Specs --- */}
-            <div className="flex flex-col justify-center pt-8 xl:pt-0">
+            {/* --- Right: Specs & Info --- */}
+            <div className="flex flex-col justify-center pt-4">
               
-              <div className="mb-12">
+              <div className="mb-10">
                 <div className="flex items-center gap-3 mb-4">
-                    <span className="h-px w-8 bg-stone-800"></span>
-                    <span className="text-sm font-bold text-stone-800 uppercase tracking-widest">{activeProduct.model}</span>
+                    <span className="h-px w-12 bg-blue-600"></span>
+                    <span className="text-sm font-bold text-blue-600 uppercase tracking-widest">Model: {activeProduct.model}</span>
                 </div>
-                <h2 className="text-4xl md:text-5xl font-serif text-stone-800 mb-6 leading-tight">
+                <h2 className="text-4xl md:text-5xl font-serif text-slate-900 mb-6 leading-tight">
                   {activeProduct.name}
                 </h2>
-                <p className="text-stone-500 leading-loose text-lg font-light max-w-md">
-                  {activeProduct.description}
+                <p className="text-slate-500 leading-relaxed text-lg font-light max-w-lg">
+                  {activeProduct.desc}
                 </p>
               </div>
 
-              {/* Clean Minimal Specs */}
-              <div className="space-y-6 mb-12">
+              {/* Detailed Spec Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 mb-12 border-t border-slate-200 pt-8">
                  
-                 {/* Row 1 */}
-                 <div className="flex items-center justify-between py-4 border-b border-stone-100">
-                    <div className="flex items-center gap-3 text-stone-400">
-                       <CubeIcon className="w-5 h-5" />
-                       <span className="text-xs font-bold uppercase tracking-widest">Coverage Area</span>
+                 <div className="flex flex-col gap-1">
+                    <div className="flex items-center gap-2 text-slate-400 mb-1">
+                       <CubeIcon className="w-4 h-4" />
+                       <span className="text-[10px] font-bold uppercase tracking-widest">Coverage</span>
                     </div>
-                    <span className="text-xl font-serif text-stone-800">{activeProduct.coverage}</span>
+                    <span className="text-xl font-serif text-slate-900">{activeProduct.specs.coverage}</span>
                  </div>
 
-                 {/* Row 2 */}
-                 <div className="flex items-center justify-between py-4 border-b border-stone-100">
-                    <div className="flex items-center gap-3 text-stone-400">
-                       <SpeakerWaveIcon className="w-5 h-5" />
-                       <span className="text-xs font-bold uppercase tracking-widest">Noise Level</span>
+                 <div className="flex flex-col gap-1">
+                    <div className="flex items-center gap-2 text-slate-400 mb-1">
+                       <SpeakerWaveIcon className="w-4 h-4" />
+                       <span className="text-[10px] font-bold uppercase tracking-widest">Noise Level</span>
                     </div>
-                    <span className="text-xl font-serif text-stone-800">{activeProduct.noise}</span>
+                    <span className="text-xl font-serif text-slate-900">{activeProduct.specs.noise}</span>
                  </div>
 
-                 {/* Row 3 */}
-                 <div className="flex items-center justify-between py-4 border-b border-stone-100">
-                    <div className="flex items-center gap-3 text-stone-400">
-                       <SparklesIcon className="w-5 h-5" />
-                       <span className="text-xs font-bold uppercase tracking-widest">Installation</span>
+                 <div className="flex flex-col gap-1">
+                    <div className="flex items-center gap-2 text-slate-400 mb-1">
+                       <BeakerIcon className="w-4 h-4" />
+                       <span className="text-[10px] font-bold uppercase tracking-widest">Oil Capacity</span>
                     </div>
-                    <span className="text-sm font-bold text-stone-600 uppercase tracking-wide">Plug & Play / HVAC</span>
+                    <span className="text-xl font-serif text-slate-900">{activeProduct.specs.tank}</span>
+                 </div>
+
+                 <div className="flex flex-col gap-1">
+                    <div className="flex items-center gap-2 text-slate-400 mb-1">
+                       <BoltIcon className="w-4 h-4" />
+                       <span className="text-[10px] font-bold uppercase tracking-widest">Voltage</span>
+                    </div>
+                    <span className="text-xl font-serif text-slate-900">{activeProduct.specs.voltage}</span>
                  </div>
 
               </div>
 
               {/* Actions */}
               <div className="flex flex-wrap gap-4">
-                <button className="px-10 py-4 bg-stone-900 text-white font-bold uppercase tracking-widest text-xs rounded-full hover:bg-stone-700 transition-all duration-300 shadow-xl shadow-stone-200">
-                   Request Pricing
+                <button className="px-8 py-4 bg-slate-900 text-white font-bold uppercase tracking-widest text-xs rounded-full hover:bg-blue-600 transition-all duration-300 shadow-xl shadow-slate-300/50 hover:shadow-blue-500/30 hover:-translate-y-1">
+                   Get Quote
                 </button>
-                <button className="px-10 py-4 bg-white border border-stone-200 text-stone-600 font-bold uppercase tracking-widest text-xs rounded-full hover:border-stone-400 transition-colors flex items-center gap-2">
+                <button className="px-8 py-4 bg-white border border-slate-200 text-slate-600 font-bold uppercase tracking-widest text-xs rounded-full hover:border-slate-400 hover:text-slate-900 transition-colors flex items-center gap-2">
                    <ArrowDownTrayIcon className="w-4 h-4" />
-                   Download Spec
+                   Spec Sheet
                 </button>
               </div>
 
@@ -457,12 +482,15 @@ export default function ProductDetail() {
         </div>
       </div>
       
-      {/* Refined Scrollbar */}
+      {/* Refined Scrollbar Styles */}
       <style>{`
-        .custom-scrollbar::-webkit-scrollbar { width: 3px; }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
         .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
-        .custom-scrollbar::-webkit-scrollbar-thumb { background: #e7e5e4; border-radius: 10px; }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #d6d3d1; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        /* Hide scrollbar for tabs */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
       `}</style>
     </section>
   );

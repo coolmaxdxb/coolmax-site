@@ -19,9 +19,10 @@ export default function Homepage() {
       <HeroSection />
       <WhatsAppFloating />
       <Clientsscroll />
+      <Product1 />
       <About1 />
       <Solution1/>
-      <Product1 />
+      
       <AromaOils1 />
       <Industries1/>
       <Blog1 />

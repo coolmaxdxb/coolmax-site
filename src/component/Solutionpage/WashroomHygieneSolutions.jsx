@@ -11,8 +11,15 @@ import {
   ClockIcon, 
   WrenchScrewdriverIcon,
   CheckCircleIcon,
-  ArrowRightIcon
+  ArrowRightIcon,
+ 
 } from "@heroicons/react/24/outline";
+
+// --- IMAGE IMPORTS ---
+import HeroImg from "../../asset/hero/hero2.webp"; 
+import FeatureImg1 from "../../asset/hero/hero2.webp"; // For "Why Critical?" section
+import FeatureImg2 from "../../asset/hero/hero2.webp"; // For "What is it?" section
+import TextureImg from "../../asset/hero/hero2.webp"; // For "Why Choose Us" background
 
 export default function WashroomHygienePage() {
   return (
@@ -25,7 +32,8 @@ export default function WashroomHygienePage() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:80px_80px] opacity-30" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 pb-32">
+      {/* CHANGED: Increased max-width to 1600px */}
+      <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 pb-32">
 
         {/* ================= HERO SECTION ================= */}
         <section className="min-h-[85vh] flex flex-col justify-center items-center text-center pt-24 relative">
@@ -37,7 +45,7 @@ export default function WashroomHygienePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="relative z-10"
+            className="relative z-10 max-w-5xl"
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-teal-500/30 bg-teal-950/20 backdrop-blur-md mb-8 shadow-[0_0_20px_rgba(20,184,166,0.3)]">
               <SparklesIcon className="w-4 h-4 text-teal-400" />
@@ -53,9 +61,25 @@ export default function WashroomHygienePage() {
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-slate-400 font-light max-w-3xl mx-auto border-t border-white/10 pt-8 mt-8">
+            <p className="text-xl md:text-2xl text-slate-400 font-light max-w-3xl mx-auto border-t border-white/10 pt-8 mt-8 mb-12">
               Professional Odor Control & Air Freshening for Commercial Washrooms
             </p>
+
+            {/* --- IMAGE 1: HERO VISUAL --- */}
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="relative w-full max-w-3xl mx-auto rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-teal-900/50"
+            >
+              <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent z-10"></div>
+              <img 
+                src={HeroImg} 
+                alt="Washroom Hygiene" 
+                className="w-full h-auto object-cover opacity-90 hover:scale-105 transition-transform duration-700" 
+              />
+            </motion.div>
+
           </motion.div>
         </section>
 
@@ -65,7 +89,7 @@ export default function WashroomHygienePage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-4xl mx-auto text-lg md:text-xl leading-relaxed text-slate-300 space-y-8"
+            className="max-w-5xl mx-auto text-lg md:text-xl leading-relaxed text-slate-300 space-y-8"
           >
             <p className="first-letter:text-6xl first-letter:font-serif first-letter:text-teal-400 first-letter:float-left first-letter:mr-4 first-letter:leading-none text-justify">
               Washrooms are one of the most frequently used and closely judged areas in any facility. A poorly maintained washroom can negatively impact user perception, hygiene confidence, and brand image. At Cool Max Scent, we provide professional washroom hygiene solutions in UAE designed to maintain clean, fresh, and odor-free washrooms in commercial and institutional environments.
@@ -102,34 +126,53 @@ export default function WashroomHygienePage() {
                 </div>
               </div>
               
-              {/* Visual Abstract */}
-              <div className="relative h-[500px] bg-gradient-to-tr from-teal-900/10 to-transparent rounded-[2.5rem] border border-white/5 flex items-center justify-center overflow-hidden">
-                 <div className="absolute inset-0 bg-teal-500/10 blur-[80px]" />
-                 <ShieldCheckIcon className="w-48 h-48 text-teal-500/20 relative z-10" />
+              {/* --- IMAGE 2: FEATURE VISUAL --- */}
+              <div className="relative h-[600px] bg-gradient-to-tr from-teal-900/10 to-transparent rounded-[2.5rem] border border-white/5 flex items-center justify-center overflow-hidden">
+                 <img src={FeatureImg1} alt="Hygiene Standards" className="w-full h-full object-cover opacity-80" />
+                 <div className="absolute inset-0 bg-teal-900/10 mix-blend-overlay"></div>
+                 <div className="absolute bottom-8 left-8 right-8">
+                   <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl flex items-center gap-4">
+                      <div className="p-3 bg-teal-500/20 rounded-full">
+                        <ShieldCheckIcon className="w-6 h-6 text-teal-300" />
+                      </div>
+                      <p className="text-white font-serif text-lg">Maintaining professional standards.</p>
+                   </div>
+                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ================= SECTION 3: WHAT ARE SOLUTIONS? (Feature List) ================= */}
+        {/* ================= SECTION 3: WHAT IS IT? (Feature List) ================= */}
         <section className="py-24 bg-white/[0.015]">
-          <div className="max-w-5xl mx-auto px-6 text-center">
+          <div className="max-w-6xl mx-auto px-6 text-center">
             <h2 className="text-4xl md:text-5xl font-serif text-white mb-10">What Are Washroom Hygiene Solutions?</h2>
-            <p className="text-slate-400 mb-12 max-w-3xl mx-auto text-lg">
-              Washroom hygiene solutions involve the use of professional air scent machines, aroma scent diffusers, and odor control systems designed specifically for high-traffic restroom environments. Unlike basic sprays or consumer air fresheners, these systems are:
-            </p>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-              {["Automated", "Long-lasting", "Consistent", "Designed for commercial usage"].map((tag, i) => (
-                <div key={i} className="py-5 bg-teal-900/20 border border-teal-500/20 rounded-xl text-teal-200 font-bold text-sm uppercase tracking-wider shadow-lg shadow-teal-900/10">
-                  {tag}
+            <div className="grid md:grid-cols-2 gap-16 items-center">
+              <div>
+                <p className="text-slate-400 mb-12 text-lg text-left">
+                  Washroom hygiene solutions involve the use of professional air scent machines, aroma scent diffusers, and odor control systems designed specifically for high-traffic restroom environments. Unlike basic sprays or consumer air fresheners, these systems are:
+                </p>
+                
+                <div className="grid grid-cols-2 gap-6 mb-12 text-left">
+                  {["Automated", "Long-lasting", "Consistent", "Designed for commercial usage"].map((tag, i) => (
+                    <div key={i} className="py-4 px-6 bg-teal-900/20 border border-teal-500/20 rounded-xl text-teal-200 font-bold text-sm uppercase tracking-wider shadow-lg shadow-teal-900/10">
+                      {tag}
+                    </div>
+                  ))}
                 </div>
-              ))}
+                
+                <p className="text-slate-500 text-sm italic text-left">
+                  At Cool Max, our washroom hygiene solutions are tailored to different washroom sizes, usage levels, and environments to ensure reliable performance.
+                </p>
+              </div>
+
+              {/* --- IMAGE 3: CONTEXT VISUAL --- */}
+              <div className="relative h-[500px] rounded-[2.5rem] border border-white/10 overflow-hidden shadow-2xl">
+                 <img src={FeatureImg2} alt="Commercial Washroom" className="w-full h-full object-cover opacity-80" />
+                 <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent"></div>
+              </div>
             </div>
-            
-            <p className="text-slate-500 text-sm italic">
-              At Cool Max, our washroom hygiene solutions are tailored to different washroom sizes, usage levels, and environments to ensure reliable performance.
-            </p>
           </div>
         </section>
 
@@ -192,11 +235,11 @@ export default function WashroomHygienePage() {
           </div>
         </section>
 
-        {/* ================= SECTION 6: COMPARISON TABLE (Modernized) ================= */}
+        {/* ================= SECTION 6: COMPARISON TABLE ================= */}
         <section className="py-24">
           <h2 className="text-3xl md:text-4xl font-serif text-white mb-16 text-center">Difference Between Washroom Hygiene Systems & Regular Air Fresheners</h2>
           
-          <div className="overflow-hidden bg-white/[0.02] rounded-[2rem] border border-white/10 backdrop-blur-sm shadow-2xl">
+          <div className="overflow-hidden bg-white/[0.02] rounded-[2rem] border border-white/10 backdrop-blur-sm shadow-2xl max-w-5xl mx-auto">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="border-b border-white/10 text-xs uppercase tracking-widest text-slate-500 bg-black/20">
@@ -227,7 +270,7 @@ export default function WashroomHygienePage() {
           </p>
         </section>
 
-        {/* ================= SECTION 7 & 9: TECH & BENEFITS (Combined Grid) ================= */}
+        {/* ================= SECTION 7 & 9: TECH & BENEFITS ================= */}
         <section className="py-24 grid lg:grid-cols-2 gap-12">
           
           {/* Tech */}
@@ -296,7 +339,14 @@ export default function WashroomHygienePage() {
 
         {/* ================= SECTION 10 & 11: WHY CHOOSE & WHEN UPGRADE ================= */}
         <section className="py-24">
+          {/* --- IMAGE 4: TEXTURE BACKGROUND --- */}
           <div className="bg-gradient-to-r from-[#0B0F19] to-black rounded-[3rem] p-10 md:p-20 border border-white/10 text-center relative overflow-hidden">
+            
+            {/* Background Texture Image */}
+            <div className="absolute inset-0 opacity-20 mix-blend-overlay">
+                <img src={TextureImg} alt="" className="w-full h-full object-cover grayscale" />
+            </div>
+
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-serif text-white mb-8">Why Choose Cool Max for Washroom Hygiene Solutions in UAE?</h2>
               <p className="text-slate-400 mb-12 max-w-3xl mx-auto text-lg">Businesses across the UAE trust Cool Max for our dependable washroom hygiene solutions and service-driven approach. We focus on providing washroom hygiene solutions that are practical, consistent, and suitable for real-world usage.</p>
@@ -319,20 +369,20 @@ export default function WashroomHygienePage() {
                 <h3 className="text-2xl font-serif text-white mb-8">When Should You Upgrade Your Washroom Hygiene System?</h3>
                 <p className="text-slate-400 mb-10">You should consider professional washroom hygiene solutions if:</p>
                 <div className="grid md:grid-cols-3 gap-8 text-left max-w-5xl mx-auto">
-                   {[
-                     "Washrooms experience frequent odor issues",
-                     "Foot traffic is high throughout the day",
-                     "Manual air fresheners are ineffective",
-                     "You want automated, consistent freshness",
-                     "Hygiene perception is important for your brand"
-                   ].map((item,i) => (
-                     <div key={i} className="flex items-center gap-4 text-slate-300 text-sm font-medium">
+                    {[
+                      "Washrooms experience frequent odor issues",
+                      "Foot traffic is high throughout the day",
+                      "Manual air fresheners are ineffective",
+                      "You want automated, consistent freshness",
+                      "Hygiene perception is important for your brand"
+                    ].map((item,i) => (
+                      <div key={i} className="flex items-center gap-4 text-slate-300 text-sm font-medium">
                         <div className="w-8 h-8 rounded-lg bg-teal-500/10 flex items-center justify-center text-teal-400 flex-shrink-0">
                           <ClockIcon className="w-5 h-5" />
                         </div>
                         {item}
-                     </div>
-                   ))}
+                      </div>
+                    ))}
                 </div>
                 <p className="text-slate-500 mt-12 text-sm italic">Professional washroom hygiene systems offer a reliable solution for maintaining freshness without constant attention.</p>
               </div>

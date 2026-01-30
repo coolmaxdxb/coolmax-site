@@ -16,6 +16,12 @@ import {
   ArrowRightIcon
 } from "@heroicons/react/24/outline";
 
+// --- IMAGE IMPORTS ---
+import HeroImg from "../../asset/hero/hero2.webp"; 
+import FeatureImg1 from "../../asset/hero/hero2.webp"; // For "What Is HVAC Scenting?" section
+import FeatureImg2 from "../../asset/hero/hero2.webp"; // For "Why Ideal?" section
+import TextureImg from "../../asset/hero/hero2.webp"; // For "Technology" background
+
 export default function HVACSolutionsPage() {
   return (
     <div className="relative min-h-screen bg-[#020617] text-slate-300 font-sans selection:bg-cyan-500 selection:text-white overflow-hidden">
@@ -27,7 +33,8 @@ export default function HVACSolutionsPage() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:80px_80px] opacity-30" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 pb-32">
+      {/* CHANGED: Increased max-width to 1600px */}
+      <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 pb-32">
 
         {/* ================= HERO SECTION ================= */}
         <section className="min-h-[90vh] flex flex-col justify-center items-center text-center pt-24 relative">
@@ -39,7 +46,7 @@ export default function HVACSolutionsPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="relative z-10"
+            className="relative z-10 max-w-5xl"
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-950/20 backdrop-blur-md mb-8 shadow-[0_0_20px_rgba(6,182,212,0.3)]">
               <CloudIcon className="w-4 h-4 text-cyan-400" />
@@ -55,9 +62,25 @@ export default function HVACSolutionsPage() {
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-slate-400 font-light max-w-3xl mx-auto border-t border-white/10 pt-8 mt-8">
+            <p className="text-xl md:text-2xl text-slate-400 font-light max-w-3xl mx-auto border-t border-white/10 pt-8 mt-8 mb-12">
               Professional Fragrance Distribution for Large Commercial Spaces
             </p>
+
+            {/* --- IMAGE 1: HERO VISUAL --- */}
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="relative w-full max-w-4xl mx-auto rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-cyan-900/50"
+            >
+              <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent z-10"></div>
+              <img 
+                src={HeroImg} 
+                alt="HVAC Scenting System" 
+                className="w-full h-auto object-cover opacity-90 hover:scale-105 transition-transform duration-700" 
+              />
+            </motion.div>
+
           </motion.div>
         </section>
 
@@ -67,7 +90,7 @@ export default function HVACSolutionsPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-4xl mx-auto text-lg md:text-xl leading-relaxed text-slate-300 space-y-8"
+            className="max-w-5xl mx-auto text-lg md:text-xl leading-relaxed text-slate-300 space-y-8"
           >
             <p className="first-letter:text-6xl first-letter:font-serif first-letter:text-cyan-400 first-letter:float-left first-letter:mr-4 first-letter:leading-none text-justify">
               Large commercial spaces require a different approach to scenting. Standard air fresheners or small diffuser machines are not designed to cover wide areas or deliver consistent fragrance across multiple zones. At Cool Max Scent, we provide professional HVAC scenting solutions in UAE that allow fragrance to be evenly distributed through centralized air-conditioning systems.
@@ -83,31 +106,43 @@ export default function HVACSolutionsPage() {
         {/* ================= SECTION 2: WHAT IS HVAC SCENTING? (Glass Card) ================= */}
         <section className="py-24">
           <div className="bg-white/[0.02] border border-white/5 rounded-[3rem] p-10 md:p-20 relative overflow-hidden backdrop-blur-sm">
-            <h2 className="text-4xl md:text-5xl font-serif text-white mb-12 text-center md:text-left">What Is HVAC Scenting?</h2>
-            
-            <div className="grid lg:grid-cols-2 gap-16 text-slate-400 text-lg leading-relaxed relative z-10">
-              <div className="space-y-8">
-                <p>
-                  HVAC scenting is a professional fragrance distribution method that uses HVAC scent diffuser machines connected to centralized air-conditioning systems. Instead of scenting a single room, fragrance is delivered through the air ducts and circulated evenly across multiple areas.
-                </p>
-                <div className="bg-cyan-950/20 p-8 rounded-3xl border border-cyan-500/20">
-                  <h4 className="text-cyan-300 font-bold mb-6 uppercase text-xs tracking-widest border-b border-cyan-500/20 pb-2">This method ensures</h4>
-                  <ul className="grid grid-cols-1 gap-4">
-                    {["Uniform fragrance coverage", "Controlled intensity", "Continuous performance", "Minimal visual impact"].map((item, i) => (
-                      <li key={i} className="flex items-center gap-3 text-sm text-cyan-100">
-                        <CheckBadgeIcon className="w-5 h-5 text-cyan-400" /> {item}
-                      </li>
-                    ))}
-                  </ul>
+            <div className="grid lg:grid-cols-2 gap-16 relative z-10 items-center">
+              <div>
+                <h2 className="text-4xl md:text-5xl font-serif text-white mb-8">What Is HVAC Scenting?</h2>
+                <div className="space-y-8 text-slate-400 text-lg leading-relaxed">
+                  <p>
+                    HVAC scenting is a professional fragrance distribution method that uses HVAC scent diffuser machines connected to centralized air-conditioning systems. Instead of scenting a single room, fragrance is delivered through the air ducts and circulated evenly across multiple areas.
+                  </p>
+                  <div className="bg-cyan-950/20 p-8 rounded-3xl border border-cyan-500/20">
+                    <h4 className="text-cyan-300 font-bold mb-6 uppercase text-xs tracking-widest border-b border-cyan-500/20 pb-2">This method ensures</h4>
+                    <ul className="grid grid-cols-1 gap-4">
+                      {["Uniform fragrance coverage", "Controlled intensity", "Continuous performance", "Minimal visual impact"].map((item, i) => (
+                        <li key={i} className="flex items-center gap-3 text-sm text-cyan-100">
+                          <CheckBadgeIcon className="w-5 h-5 text-cyan-400" /> {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <p>
+                    Unlike standalone scent diffuser machines, HVAC scenting systems are designed specifically for large-scale environments where consistency and coverage are critical.
+                  </p>
                 </div>
               </div>
-              <div className="flex flex-col justify-center gap-8">
-                <p>
-                  Unlike standalone scent diffuser machines, HVAC scenting systems are designed specifically for large-scale environments where consistency and coverage are critical.
-                </p>
-                <div className="h-64 rounded-2xl bg-gradient-to-tr from-cyan-500/10 to-transparent border border-white/5 flex items-center justify-center">
-                   <ArrowsPointingOutIcon className="w-32 h-32 text-cyan-500/30 animate-pulse" />
-                </div>
+
+              {/* --- IMAGE 2: FEATURE VISUAL --- */}
+              <div className="relative h-[600px] rounded-[2.5rem] border border-white/10 overflow-hidden shadow-2xl shadow-cyan-900/20">
+                 <img src={FeatureImg1} alt="HVAC Integration" className="w-full h-full object-cover opacity-80" />
+                 <div className="absolute inset-0 bg-cyan-900/10 mix-blend-overlay"></div>
+                 <div className="absolute bottom-8 left-8 right-8">
+                   <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl">
+                     <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center">
+                            <ArrowsPointingOutIcon className="w-6 h-6 text-cyan-300" />
+                        </div>
+                        <p className="text-white font-serif text-lg">Centralized Scent Distribution.</p>
+                     </div>
+                   </div>
+                 </div>
               </div>
             </div>
           </div>
@@ -115,35 +150,53 @@ export default function HVACSolutionsPage() {
 
         {/* ================= SECTION 3: WHY IDEAL? (Bento Grid) ================= */}
         <section className="py-24">
-          <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Why HVAC Scenting Is Ideal</h2>
-            <p className="text-slate-400 text-lg">
-              Large facilities face unique challenges when it comes to indoor air freshness. HVAC scenting addresses these challenges effectively.
-            </p>
-          </div>
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+            
+            {/* --- IMAGE 3: CONTEXT VISUAL --- */}
+            <div className="lg:col-span-5 order-2 lg:order-1">
+                <motion.div 
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    className="relative h-[650px] rounded-[2.5rem] overflow-hidden border border-white/10"
+                >
+                    <img src={FeatureImg2} alt="Large Commercial Space" className="w-full h-full object-cover opacity-80" />
+                    <div className="absolute inset-0 bg-cyan-900/10 mix-blend-overlay"></div>
+                </motion.div>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              { title: "Even Fragrance Distribution", desc: "HVAC scenting ensures fragrance reaches all connected areas, eliminating uneven scent concentration or missed zones.", icon: <ArrowsPointingOutIcon className="w-6 h-6"/> },
-              { title: "Centralized Control", desc: "A single HVAC scent diffuser can manage fragrance levels across multiple rooms or floors, reducing the need for multiple standalone devices.", icon: <ComputerDesktopIcon className="w-6 h-6"/> },
-              { title: "Professional & Discreet Solution", desc: "Because the scent is distributed through existing air systems, there are no visible machines affecting interior aesthetics.", icon: <EyeSlashIcon className="w-6 h-6"/> },
-              { title: "Consistent Indoor Experience", desc: "Guests, customers, and employees experience the same pleasant fragrance throughout the building.", icon: <FaceSmileIcon className="w-6 h-6"/> }
-            ].map((item, idx) => (
-              <motion.div 
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="group p-10 bg-gradient-to-b from-white/[0.02] to-transparent border border-white/5 hover:border-cyan-500/30 rounded-[2rem] transition-all duration-500 hover:bg-white/[0.03] hover:-translate-y-2"
-              >
-                <div className="w-12 h-12 rounded-xl bg-cyan-900/20 text-cyan-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  {item.icon}
+            <div className="lg:col-span-7 order-1 lg:order-2">
+                <div className="mb-12">
+                    <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Why HVAC Scenting Is Ideal</h2>
+                    <p className="text-slate-400 text-lg">
+                    Large facilities face unique challenges when it comes to indoor air freshness. HVAC scenting addresses these challenges effectively.
+                    </p>
                 </div>
-                <h3 className="text-2xl font-serif text-white mb-4 group-hover:text-cyan-200 transition-colors">{item.title}</h3>
-                <p className="text-base text-slate-400 leading-relaxed">{item.desc}</p>
-              </motion.div>
-            ))}
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {[
+                    { title: "Even Fragrance Distribution", desc: "HVAC scenting ensures fragrance reaches all connected areas, eliminating uneven scent concentration or missed zones.", icon: <ArrowsPointingOutIcon className="w-6 h-6"/> },
+                    { title: "Centralized Control", desc: "A single HVAC scent diffuser can manage fragrance levels across multiple rooms or floors, reducing the need for multiple standalone devices.", icon: <ComputerDesktopIcon className="w-6 h-6"/> },
+                    { title: "Professional & Discreet Solution", desc: "Because the scent is distributed through existing air systems, there are no visible machines affecting interior aesthetics.", icon: <EyeSlashIcon className="w-6 h-6"/> },
+                    { title: "Consistent Indoor Experience", desc: "Guests, customers, and employees experience the same pleasant fragrance throughout the building.", icon: <FaceSmileIcon className="w-6 h-6"/> }
+                    ].map((item, idx) => (
+                    <motion.div 
+                        key={idx}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: idx * 0.1 }}
+                        className="group p-8 bg-gradient-to-b from-white/[0.02] to-transparent border border-white/5 hover:border-cyan-500/30 rounded-[2rem] transition-all duration-500 hover:bg-white/[0.03] hover:-translate-y-2"
+                    >
+                        <div className="w-12 h-12 rounded-xl bg-cyan-900/20 text-cyan-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        {item.icon}
+                        </div>
+                        <h3 className="text-xl font-serif text-white mb-4 group-hover:text-cyan-200 transition-colors">{item.title}</h3>
+                        <p className="text-sm text-slate-400 leading-relaxed">{item.desc}</p>
+                    </motion.div>
+                    ))}
+                </div>
+            </div>
           </div>
         </section>
 
@@ -207,44 +260,16 @@ export default function HVACSolutionsPage() {
           </div>
         </section>
 
-        {/* ================= SECTION 6: COMPARISON TABLE (Modernized) ================= */}
+        {/* ================= SECTION 7: TECHNOLOGY (Dark Card with Texture) ================= */}
         <section className="py-24">
-          <h2 className="text-3xl md:text-4xl font-serif text-white mb-16 text-center">HVAC Scenting vs Standalone Commercial Diffusers</h2>
-          
-          <div className="overflow-hidden bg-white/[0.02] rounded-[2rem] border border-white/10 backdrop-blur-sm shadow-2xl">
-            <table className="w-full text-left border-collapse">
-              <thead>
-                <tr className="border-b border-white/10 text-xs uppercase tracking-widest text-slate-500 bg-black/20">
-                  <th className="p-6 font-medium">Feature</th>
-                  <th className="p-6 font-medium">Standalone Diffuser</th>
-                  <th className="p-6 font-bold text-cyan-400">HVAC Scenting System</th>
-                </tr>
-              </thead>
-              <tbody className="text-slate-300">
-                {[
-                  { feature: "Coverage", std: "Limited to one area", hvac: "Multi-zone coverage" },
-                  { feature: "Control", std: "Individual units", hvac: "Centralized control" },
-                  { feature: "Visual Presence", std: "Visible devices", hvac: "Hidden integration" },
-                  { feature: "Best For", std: "Small–medium spaces", hvac: "Large facilities" },
-                  { feature: "Maintenance", std: "Multiple units", hvac: "Central system" },
-                ].map((row, idx) => (
-                  <tr key={idx} className="border-b border-white/5 hover:bg-white/[0.02] transition-colors">
-                    <td className="p-6 font-serif text-slate-400">{row.feature}</td>
-                    <td className="p-6 text-slate-500">{row.std}</td>
-                    <td className="p-6 text-white font-medium bg-cyan-500/5 border-l border-cyan-500/10">{row.hvac}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-center mt-10 text-slate-400 text-sm font-medium">
-            For large environments, HVAC scenting is the most efficient and professional solution.
-          </p>
-        </section>
-
-        {/* ================= SECTION 7: TECHNOLOGY (Dark Card) ================= */}
-        <section className="py-24">
+          {/* --- IMAGE 4: TEXTURE BACKGROUND --- */}
           <div className="bg-gradient-to-br from-cyan-900/20 to-indigo-900/10 rounded-[3rem] border border-white/10 p-10 md:p-20 relative overflow-hidden">
+            
+            {/* Background Texture Image */}
+            <div className="absolute inset-0 opacity-20 mix-blend-overlay">
+                <img src={TextureImg} alt="" className="w-full h-full object-cover grayscale" />
+            </div>
+
             <div className="grid lg:grid-cols-2 gap-16 relative z-10 items-center">
               <div>
                 <h2 className="text-3xl md:text-4xl font-serif text-white mb-8">Technology Behind Our HVAC Scent Diffusers</h2>

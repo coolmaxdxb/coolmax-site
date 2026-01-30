@@ -1,5 +1,5 @@
-import React from "react";
-import { ArrowLongRightIcon, SparklesIcon, Squares2X2Icon } from "@heroicons/react/24/solid";
+import React, { useState } from "react";
+import { ArrowLongRightIcon, SparklesIcon } from "@heroicons/react/24/solid";
 
 // ================= IMAGE IMPORTS =================
 import ProdHome from "../../asset/hero/vs-160_converted.webp"; 
@@ -15,7 +15,6 @@ const categories = [
     id: 1,
     title: "Home & Small Space Aroma Diffusers",
     desc: "Compact and efficient home diffuser machines that are ideal for bedrooms, living rooms, small offices, and personal spaces. These systems deliver controlled fragrance without being too strong.",
-    // Placeholder: Using the same image 4 times. Replace with unique images for this category.
     gallery: [ProdHome, ProdHVAC, ProdComm, ProdFloor] 
   },
   {
@@ -52,122 +51,137 @@ const categories = [
 
 export default function Products() {
   return (
-    <section className="relative w-full py-24 bg-[#020617] overflow-hidden" id="products">
+    <section className="relative w-full py-32 bg-[#02040a] text-white overflow-hidden" id="products">
       
-      {/* ================= BACKGROUND (UNCHANGED) ================= */}
-      <div
-        className="absolute inset-0 z-0 pointer-events-none"
-        style={{
-          background: "#020617",
-          backgroundImage: `
-            linear-gradient(to right, rgba(71,85,105,0.2) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(71,85,105,0.3) 1px, transparent 1px),
-            radial-gradient(circle at 50% 50%, rgba(139,92,246,0.15) 0%, transparent 70%)
-          `,
-          backgroundSize: "32px 32px, 32px 32px, 100% 100%",
-        }}
+      {/* ================= AMBIENT BACKGROUND ================= */}
+      <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-blue-900/20 rounded-full blur-[120px] pointer-events-none animate-pulse" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[40vw] h-[40vw] bg-cyan-900/20 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 
+           style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }} 
       />
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12">
         
-        {/* ================= HEADER SECTION ================= */}
-        <div className="mb-20 max-w-5xl mx-auto text-center md:text-left">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 backdrop-blur-md mb-6">
-             <SparklesIcon className="w-4 h-4 text-indigo-400" />
-             <span className="text-indigo-200 text-xs font-bold tracking-widest uppercase">
+        {/* ================= HEADER ================= */}
+        <div className="mb-32 max-w-5xl mx-auto text-center md:text-left">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 backdrop-blur-md mb-6">
+             <SparklesIcon className="w-4 h-4 text-blue-400" />
+             <span className="text-blue-200 text-xs font-bold tracking-widest uppercase">
                Our Collection
              </span>
           </div>
           
-          <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight leading-tight">
+          <h2 className="text-4xl md:text-6xl font-medium text-white mb-6 tracking-tight leading-tight">
             Aroma Diffusers for <br className="hidden md:block"/> 
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-400 animate-gradient">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-white to-cyan-200">
               Every Space
             </span>
           </h2>
           
           <div className="space-y-4">
-            <p className="text-xl text-white font-semibold">
+            <p className="text-xl text-white font-normal">
               From Small Rooms to Large Commercial Areas
             </p>
-            <p className="text-lg text-slate-400 leading-relaxed max-w-3xl mx-auto md:mx-0">
+            <p className="text-lg text-slate-400 leading-relaxed max-w-3xl mx-auto md:mx-0 font-light">
               Cool Max offers a wide range of scent diffuser machines designed to suit different environments and coverage requirements. Our product range includes:
             </p>
           </div>
         </div>
 
-        {/* ================= CATEGORY LIST ================= */}
-        <div className="flex flex-col gap-16">
+        {/* ================= LIST ================= */}
+        <div className="flex flex-col gap-32">
           {categories.map((cat, index) => (
-            <div 
-              key={cat.id} 
-              className="group relative p-8 md:p-10 rounded-[2.5rem] border border-white/5 bg-white/[0.02] backdrop-blur-md hover:border-indigo-500/30 transition-all duration-500"
-            >
-              {/* Hover Glow Background */}
-              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 rounded-[2.5rem] transition-opacity duration-500" />
-
-              <div className="relative z-10 grid grid-cols-1 xl:grid-cols-12 gap-10 items-center">
-                
-                {/* --- Text Content (Left/Top) --- */}
-                <div className="xl:col-span-4 space-y-4">
-                  <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-2 group-hover:bg-indigo-500 group-hover:text-white transition-colors duration-300">
-                    <Squares2X2Icon className="w-6 h-6 text-slate-400 group-hover:text-white" />
-                  </div>
-                  <h3 className="text-3xl font-bold text-white group-hover:text-indigo-200 transition-colors">
-                    {cat.title}
-                  </h3>
-                  <p className="text-slate-400 leading-relaxed text-sm md:text-base border-l-2 border-white/10 pl-4 group-hover:border-indigo-500/50 transition-colors">
-                    {cat.desc}
-                  </p>
-                  
-                  <button className="mt-4 inline-flex items-center gap-2 text-indigo-400 text-xs font-bold uppercase tracking-widest hover:text-white transition-colors">
-                    View Models <ArrowLongRightIcon className="w-5 h-5" />
-                  </button>
-                </div>
-
-                {/* --- 4-Image Grid (Right/Bottom) --- */}
-                <div className="xl:col-span-8">
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    {cat.gallery.map((img, imgIdx) => (
-                      <div 
-                        key={imgIdx} 
-                        className="relative aspect-square rounded-2xl overflow-hidden border border-white/10 bg-black/20 group/img"
-                      >
-                        <img 
-                          src={img} 
-                          alt={`${cat.title} ${imgIdx + 1}`} 
-                          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover/img:scale-110 opacity-90 group-hover/img:opacity-100"
-                        />
-                        {/* Overlay on individual image hover */}
-                        <div className="absolute inset-0 bg-indigo-900/40 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                          <div className="p-2 bg-white/10 backdrop-blur-md rounded-full">
-                            <ArrowLongRightIcon className="w-4 h-4 text-white" />
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-              </div>
-            </div>
+            <ProductCard key={cat.id} data={cat} index={index} />
           ))}
         </div>
 
-        {/* ================= BOTTOM CTA ================= */}
-        <div className="mt-24 text-center">
-          <div className="inline-block p-[1px] rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-            <button className="px-12 py-4 bg-[#0F172A] text-white font-bold rounded-full hover:bg-transparent transition-all duration-300 relative group overflow-hidden">
-              <span className="relative z-10 flex items-center gap-2">
-                Explore All Diffuser Categories and Find the Right Solution for Your Space
-                <ArrowLongRightIcon className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-0" />
-            </button>
-          </div>
+        {/* ================= BOTTOM BUTTON ================= */}
+        <div className="mt-32 text-center">
+            <a href="/contact" className="inline-block group relative px-10 py-5 bg-white text-black rounded-full font-bold overflow-hidden transition-all hover:scale-105 duration-300 shadow-[0_0_40px_-10px_rgba(56,189,248,0.3)]">
+                <span className="relative z-10 flex items-center gap-3 text-sm tracking-widest uppercase">
+                    Explore All Diffuser Categories
+                    <ArrowLongRightIcon className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-200 to-cyan-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </a>
         </div>
 
       </div>
     </section>
   );
+}
+
+// ================= PRODUCT CARD COMPONENT =================
+function ProductCard({ data, index }) {
+    const isEven = index % 2 === 0;
+    const [activeImage, setActiveImage] = useState(data.gallery[0]);
+
+    return (
+        <div className={`flex flex-col lg:flex-row gap-12 lg:gap-20 items-center ${isEven ? '' : 'lg:flex-row-reverse'}`} id={`category-${data.id}`}>
+            
+            {/* --- IMAGE SECTION --- */}
+            <div className="w-full lg:w-3/5 relative group">
+                <div className="relative aspect-[4/3] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl bg-slate-900">
+                    <img 
+                        src={activeImage} 
+                        alt={data.title} 
+                        className="w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:scale-105 opacity-90 group-hover:opacity-100"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80" />
+                    
+                    {/* THUMBNAILS */}
+                    <div className="absolute bottom-6 left-6 flex gap-3 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100 z-20">
+                        {data.gallery.map((img, i) => (
+                             <button 
+                                key={i} 
+                                onClick={() => setActiveImage(img)} 
+                                className={`w-16 h-12 rounded-lg border overflow-hidden backdrop-blur-md transition-all cursor-pointer hover:scale-110 ${
+                                    activeImage === img ? "border-blue-400 opacity-100 ring-2 ring-blue-500/50" : "border-white/30 opacity-60 hover:opacity-100"
+                                }`}
+                             >
+                                <img src={img} alt="thumb" className="w-full h-full object-cover" />
+                             </button>
+                        ))}
+                    </div>
+                </div>
+                <div className={`absolute -z-10 w-full h-full top-4 ${isEven ? 'left-4' : 'right-4'} rounded-[2rem] border border-white/5 bg-white/[0.02]`} />
+            </div>
+
+            {/* --- TEXT SECTION --- */}
+            <div className="w-full lg:w-2/5 relative">
+                <div className="absolute -top-20 -left-10 text-[120px] font-bold text-white/[0.03] select-none pointer-events-none font-serif">
+                    0{data.id}
+                </div>
+
+                <div className="relative z-10">
+                    <div className="flex items-center gap-3 mb-6">
+                        <div className="h-px w-8 bg-blue-500" />
+                        <span className="text-blue-400 text-xs font-bold uppercase tracking-widest">
+                             Series {data.id}
+                        </span>
+                    </div>
+
+                    <h3 className="text-3xl lg:text-4xl font-medium text-white mb-6 leading-tight">
+                        {data.title}
+                    </h3>
+
+                    <p className="text-lg text-slate-400 leading-relaxed mb-8 font-light">
+                        {data.desc}
+                    </p>
+
+                    <div className="flex flex-col sm:flex-row gap-4">
+                        {/* === UPDATED BUTTON === */}
+                        <a 
+                            href="/contact" 
+                            className="px-8 py-4 rounded-full border border-blue-500/30 text-white font-medium text-xs uppercase tracking-widest hover:bg-blue-600 hover:border-blue-600 hover:text-white transition-all duration-300 flex items-center justify-center gap-2 group/btn shadow-[0_0_20px_-5px_rgba(59,130,246,0.3)]"
+                        >
+                            Contact
+                            <ArrowLongRightIcon className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    );
 }

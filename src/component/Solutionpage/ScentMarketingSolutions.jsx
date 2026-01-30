@@ -12,6 +12,12 @@ import {
   GlobeAsiaAustraliaIcon
 } from "@heroicons/react/24/outline";
 
+// --- IMAGE IMPORTS ---
+import HeroImg from "../../asset/hero/hero2.webp"; 
+import FeatureImg1 from "../../asset/hero/hero2.webp"; // For "What is it?" section
+import FeatureImg2 from "../../asset/hero/hero2.webp"; // For "Why it matters" section
+import TextureImg from "../../asset/hero/hero2.webp"; // For "CTA" background
+
 export default function ScentMarketingPage() {
   return (
     <div className="relative min-h-screen bg-[#020617] text-slate-300 font-sans selection:bg-indigo-500 selection:text-white overflow-hidden">
@@ -23,7 +29,8 @@ export default function ScentMarketingPage() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:80px_80px] opacity-30" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 pb-32">
+      {/* CHANGED: Increased max-width to 1600px */}
+      <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 pb-32">
 
         {/* ================= HERO SECTION ================= */}
         <section className="min-h-[90vh] flex flex-col justify-center items-center text-center pt-20 relative">
@@ -35,7 +42,7 @@ export default function ScentMarketingPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="relative z-10"
+            className="relative z-10 max-w-5xl"
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-950/30 backdrop-blur-md mb-8 shadow-[0_0_20px_rgba(99,102,241,0.3)]">
               <SparklesIcon className="w-4 h-4 text-indigo-400" />
@@ -51,21 +58,25 @@ export default function ScentMarketingPage() {
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-slate-400 font-light max-w-3xl mx-auto border-t border-white/10 pt-8 mt-8">
+            <p className="text-xl md:text-2xl text-slate-400 font-light max-w-3xl mx-auto border-t border-white/10 pt-8 mt-8 mb-12">
               Create Memorable Experiences with Professional Scent Systems
             </p>
-          </motion.div>
-          
-          {/* Scroll Indicator */}
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 1 }}
-            className="absolute bottom-10 animate-bounce"
-          >
-            <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center pt-2">
-              <div className="w-1 h-2 bg-white/50 rounded-full" />
-            </div>
+
+            {/* --- IMAGE 1: HERO VISUAL --- */}
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="relative w-full max-w-4xl mx-auto rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-indigo-900/50"
+            >
+              <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent z-10"></div>
+              <img 
+                src={HeroImg} 
+                alt="Scent Marketing" 
+                className="w-full h-auto object-cover opacity-90 hover:scale-105 transition-transform duration-700" 
+              />
+            </motion.div>
+
           </motion.div>
         </section>
 
@@ -75,9 +86,9 @@ export default function ScentMarketingPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="max-w-4xl mx-auto text-lg md:text-xl leading-relaxed text-slate-300 space-y-10"
+            className="max-w-5xl mx-auto text-lg md:text-xl leading-relaxed text-slate-300 space-y-10"
           >
-            <p className="first-letter:text-7xl first-letter:font-serif first-letter:text-indigo-400 first-letter:float-left first-letter:mr-4 first-letter:leading-none">
+            <p className="first-letter:text-7xl first-letter:font-serif first-letter:text-indigo-400 first-letter:float-left first-letter:mr-4 first-letter:leading-none text-justify">
               Scent marketing is more than adding fragrance to a space—it is about creating a consistent and positive experience that people remember. At Cool Max Scent, we provide professional scent marketing solutions in UAE designed for homes, hotels, offices, retail spaces, and commercial environments. Our solutions combine advanced scent diffuser machines, carefully selected fragrances, and ongoing support to help businesses create welcoming and pleasant indoor atmospheres.
             </p>
             <div className="p-8 bg-white/[0.02] border-l-2 border-indigo-500 rounded-r-2xl">
@@ -114,15 +125,23 @@ export default function ScentMarketingPage() {
                 </div>
               </motion.div>
               
-              {/* Visual Abstract */}
+              {/* --- IMAGE 2: FEATURE VISUAL --- */}
               <motion.div 
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                className="relative h-[400px] bg-gradient-to-br from-indigo-500/10 to-transparent rounded-[2rem] border border-white/5 flex items-center justify-center"
+                className="relative h-[500px] bg-gradient-to-br from-indigo-500/10 to-transparent rounded-[2rem] border border-white/5 flex items-center justify-center overflow-hidden"
               >
-                <GlobeAsiaAustraliaIcon className="w-40 h-40 text-white/10" />
-                <div className="absolute inset-0 bg-indigo-500/10 blur-[60px]" />
+                 <img src={FeatureImg1} alt="Scent Strategy" className="w-full h-full object-cover opacity-80" />
+                 <div className="absolute inset-0 bg-indigo-500/10 mix-blend-overlay"></div>
+                 <div className="absolute bottom-8 left-8 right-8">
+                   <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl flex items-center gap-4">
+                      <div className="p-3 bg-indigo-500/20 rounded-full">
+                        <GlobeAsiaAustraliaIcon className="w-6 h-6 text-indigo-300" />
+                      </div>
+                      <p className="text-white font-serif text-lg">Impacting perception through sense.</p>
+                   </div>
+                 </div>
               </motion.div>
             </div>
           </div>
@@ -130,46 +149,59 @@ export default function ScentMarketingPage() {
 
         {/* ================= SECTION 3: WHY IT MATTERS (Bento Grid) ================= */}
         <section className="py-24">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center max-w-3xl mx-auto mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Why Scent Marketing Matters</h2>
-            <p className="text-slate-400">
-              In today’s competitive environment, customer experience plays a key role in decision-making. Scent marketing supports this by influencing how people perceive a space the moment they enter.
-            </p>
-          </motion.div>
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+            
+            {/* --- IMAGE 3: CONTEXT VISUAL --- */}
+            <div className="lg:col-span-5 order-2 lg:order-1">
+                <motion.div 
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    className="relative h-[650px] rounded-[2.5rem] overflow-hidden border border-white/10"
+                >
+                    <img src={FeatureImg2} alt="Customer Experience" className="w-full h-full object-cover opacity-80" />
+                    <div className="absolute inset-0 bg-indigo-900/10 mix-blend-overlay"></div>
+                </motion.div>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              { title: "Creates a Positive First Impression", desc: "A pleasant fragrance immediately makes a space feel clean, comfortable, and professional. Whether it’s a hotel air freshener machine in a lobby or a commercial scent diffuser in an office, scent sets the tone instantly." },
-              { title: "Strengthens Brand Identity", desc: "Consistent fragrance helps businesses create a recognizable atmosphere. Many hotels and retail brands use a signature scent to reinforce brand memory and familiarity." },
-              { title: "Enhances Comfort and Well-being", desc: "A balanced scent environment supports relaxation and focus, making it suitable for offices, clinics, gyms, and hospitality spaces." },
-              { title: "Improves Overall Experience", desc: "From customers to employees, scent contributes to a more enjoyable indoor environment without visual or auditory distractions." }
-            ].map((item, idx) => (
-              <motion.div 
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="group p-8 bg-white/[0.02] border border-white/5 hover:border-indigo-500/30 rounded-3xl transition-all duration-300 hover:bg-white/[0.04] hover:-translate-y-1"
-              >
-                <div className="w-12 h-1 bg-indigo-500 rounded-full mb-6 group-hover:w-24 transition-all duration-300" />
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-indigo-200 transition-colors">{item.title}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{item.desc}</p>
-              </motion.div>
-            ))}
+            <div className="lg:col-span-7 order-1 lg:order-2">
+                <div className="mb-12">
+                    <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Why Scent Marketing Matters</h2>
+                    <p className="text-slate-400 text-lg">
+                    In today’s competitive environment, customer experience plays a key role in decision-making. Scent marketing supports this by influencing how people perceive a space the moment they enter.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {[
+                    { title: "Creates a Positive First Impression", desc: "A pleasant fragrance immediately makes a space feel clean, comfortable, and professional. Whether it’s a hotel air freshener machine in a lobby or a commercial scent diffuser in an office, scent sets the tone instantly." },
+                    { title: "Strengthens Brand Identity", desc: "Consistent fragrance helps businesses create a recognizable atmosphere. Many hotels and retail brands use a signature scent to reinforce brand memory and familiarity." },
+                    { title: "Enhances Comfort and Well-being", desc: "A balanced scent environment supports relaxation and focus, making it suitable for offices, clinics, gyms, and hospitality spaces." },
+                    { title: "Improves Overall Experience", desc: "From customers to employees, scent contributes to a more enjoyable indoor environment without visual or auditory distractions." }
+                    ].map((item, idx) => (
+                    <motion.div 
+                        key={idx}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: idx * 0.1 }}
+                        className="group p-8 bg-white/[0.02] border border-white/5 hover:border-indigo-500/30 rounded-3xl transition-all duration-300 hover:bg-white/[0.04] hover:-translate-y-1"
+                    >
+                        <div className="w-12 h-1 bg-indigo-500 rounded-full mb-6 group-hover:w-24 transition-all duration-300" />
+                        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-indigo-200 transition-colors">{item.title}</h3>
+                        <p className="text-sm text-slate-400 leading-relaxed">{item.desc}</p>
+                    </motion.div>
+                    ))}
+                </div>
+            </div>
           </div>
         </section>
 
         {/* ================= SECTION 4: SOLUTIONS (Timeline/Grid) ================= */}
         <section className="py-24 border-t border-white/5">
-          <div className="mb-16">
+          <div className="mb-16 max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Our Scent Marketing Solutions at Cool Max</h2>
-            <p className="text-slate-400 max-w-3xl">
+            <p className="text-slate-400">
               Cool Max provides end-to-end scent marketing services designed to be simple, reliable, and effective. We do not follow a one-size-fits-all approach—each solution is tailored to the space, usage, and expectations of the client.
             </p>
           </div>
@@ -319,25 +351,33 @@ export default function ScentMarketingPage() {
 
         {/* ================= SECTION 9: CTA (Premium) ================= */}
         <section className="pt-20 pb-32 text-center">
+          {/* --- IMAGE 4: CTA BACKGROUND --- */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="max-w-5xl mx-auto bg-gradient-to-b from-indigo-950/50 to-[#020617] p-12 rounded-[3rem] border border-indigo-500/30 shadow-2xl shadow-indigo-900/20"
+            className="max-w-5xl mx-auto bg-gradient-to-b from-indigo-950/50 to-[#020617] p-12 rounded-[3rem] border border-indigo-500/30 shadow-2xl shadow-indigo-900/20 relative overflow-hidden"
           >
-            <h2 className="text-5xl md:text-6xl font-serif text-white mb-8">Let’s Build a Memorable <br/> Scent Experience</h2>
-            <p className="text-xl text-slate-300 mb-10 max-w-3xl mx-auto font-light">
-              Whether you are looking for a scent machine for home, a hotel scent machine, or a full-scale scent machine for business, Cool Max is here to help. Our scent marketing solutions are designed to enhance environments, support comfort, and leave a lasting impression.
-            </p>
-            
-            <p className="text-indigo-400 font-bold mb-10 uppercase tracking-[0.2em] text-sm">
-              Looking for professional scent marketing solutions in UAE?
-            </p>
-            
-            <a href="/contact" className="group relative inline-flex items-center gap-3 px-12 py-5 bg-white text-[#020617] font-bold text-lg rounded-full overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.5)]">
-              <span className="relative z-10">Contact Cool Max Today</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-indigo-100 to-white opacity-0 group-hover:opacity-100 transition-opacity" />
-            </a>
+            {/* Texture Overlay */}
+            <div className="absolute inset-0 opacity-20 mix-blend-overlay">
+                <img src={TextureImg} alt="" className="w-full h-full object-cover grayscale" />
+            </div>
+
+            <div className="relative z-10">
+              <h2 className="text-5xl md:text-6xl font-serif text-white mb-8">Let’s Build a Memorable <br/> Scent Experience</h2>
+              <p className="text-xl text-slate-300 mb-10 max-w-3xl mx-auto font-light">
+                Whether you are looking for a scent machine for home, a hotel scent machine, or a full-scale scent machine for business, Cool Max is here to help. Our scent marketing solutions are designed to enhance environments, support comfort, and leave a lasting impression.
+              </p>
+              
+              <p className="text-indigo-400 font-bold mb-10 uppercase tracking-[0.2em] text-sm">
+                Looking for professional scent marketing solutions in UAE?
+              </p>
+              
+              <a href="/contact" className="group relative inline-flex items-center gap-3 px-12 py-5 bg-white text-[#020617] font-bold text-lg rounded-full overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_40px_-10px_rgba(255,255,255,0.5)]">
+                <span className="relative z-10">Contact Cool Max Today</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-indigo-100 to-white opacity-0 group-hover:opacity-100 transition-opacity" />
+              </a>
+            </div>
           </motion.div>
         </section>
 

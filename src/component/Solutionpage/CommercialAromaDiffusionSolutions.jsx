@@ -8,7 +8,15 @@ import {
   ChartBarIcon,
   ArrowRightIcon,
   ShieldCheckIcon,
+  
+  BoltIcon
 } from "@heroicons/react/24/outline";
+
+// --- IMAGE IMPORTS ---
+import HeroImg from "../../asset/hero/hero2.webp"; 
+import FeatureImg1 from "../../asset/hero/hero2.webp"; // For "What is it?" section
+import FeatureImg2 from "../../asset/hero/hero2.webp"; // For "Why it matters" section
+import TextureImg from "../../asset/hero/hero2.webp"; // For "Why Choose Us" background
 
 export default function CommercialDiffusionPage() {
   return (
@@ -21,7 +29,8 @@ export default function CommercialDiffusionPage() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:80px_80px] opacity-30" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 pb-32">
+      {/* CHANGED: Increased max-width to 1600px */}
+      <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-12 pb-32">
 
         {/* ================= HERO SECTION ================= */}
         <section className="min-h-[85vh] flex flex-col justify-center items-center text-center pt-24 relative">
@@ -33,7 +42,7 @@ export default function CommercialDiffusionPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="relative z-10"
+            className="relative z-10 max-w-5xl"
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-950/20 backdrop-blur-md mb-8 shadow-[0_0_20px_rgba(99,102,241,0.3)]">
               <span className="relative flex h-2 w-2">
@@ -52,9 +61,25 @@ export default function CommercialDiffusionPage() {
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-slate-400 font-light max-w-3xl mx-auto border-t border-white/10 pt-8 mt-8">
+            <p className="text-xl md:text-2xl text-slate-400 font-light max-w-3xl mx-auto border-t border-white/10 pt-8 mt-8 mb-12">
               Professional Scent Systems for Offices, Hotels & Commercial Spaces
             </p>
+
+            {/* --- IMAGE 1: HERO VISUAL --- */}
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="relative w-full max-w-4xl mx-auto rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-indigo-900/50"
+            >
+              <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent z-10"></div>
+              <img 
+                src={HeroImg} 
+                alt="Commercial Aroma Diffusion" 
+                className="w-full h-auto object-cover opacity-90 hover:scale-105 transition-transform duration-700" 
+              />
+            </motion.div>
+
           </motion.div>
         </section>
 
@@ -77,15 +102,25 @@ export default function CommercialDiffusionPage() {
               </div>
             </motion.div>
             
-            {/* Visual Abstract */}
+            {/* --- IMAGE 2: INTRO VISUAL --- */}
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="relative h-[500px] bg-gradient-to-br from-indigo-900/10 to-transparent rounded-[2.5rem] border border-white/5 flex items-center justify-center overflow-hidden"
+              className="relative h-[600px] rounded-[2.5rem] border border-white/10 overflow-hidden shadow-2xl shadow-indigo-900/20"
             >
-               <div className="absolute inset-0 bg-indigo-500/10 blur-[80px]" />
-               <BuildingOffice2Icon className="w-48 h-48 text-indigo-500/20 relative z-10" />
+               <img src={FeatureImg1} alt="Office Scenting" className="w-full h-full object-cover opacity-80" />
+               <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent"></div>
+               <div className="absolute bottom-8 left-8 right-8">
+                 <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl">
+                   <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 bg-indigo-500/20 rounded-full flex items-center justify-center">
+                          <BuildingOffice2Icon className="w-6 h-6 text-indigo-300" />
+                      </div>
+                      <p className="text-white font-serif text-lg">Engineered for professional environments.</p>
+                   </div>
+                 </div>
+               </div>
             </motion.div>
           </div>
         </section>
@@ -118,35 +153,53 @@ export default function CommercialDiffusionPage() {
           </div>
         </section>
 
-        {/* ================= SECTION 3: WHY IT MATTERS (Bento Grid) ================= */}
+        {/* ================= SECTION 3: WHY IT MATTERS ================= */}
         <section className="py-24">
-          <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Why Commercial Aroma Diffusion Matters</h2>
-            <p className="text-slate-400 text-lg">
-              A business environment is judged within seconds of entry. Smell plays a powerful role in shaping that perception.
-            </p>
-          </div>
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+            
+            {/* --- IMAGE 3: CONTEXT VISUAL --- */}
+            <div className="lg:col-span-5 order-2 lg:order-1">
+                <motion.div 
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    className="relative h-[650px] rounded-[2.5rem] overflow-hidden border border-white/10"
+                >
+                    <img src={FeatureImg2} alt="Hotel Lobby Scenting" className="w-full h-full object-cover opacity-80" />
+                    <div className="absolute inset-0 bg-indigo-900/10 mix-blend-overlay"></div>
+                </motion.div>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              { title: "Professional First Impressions", desc: "A clean and pleasant-smelling space immediately communicates professionalism. Using a commercial scent machine ensures your space smells fresh throughout the day, not just at specific times." },
-              { title: "Consistent Indoor Experience", desc: "Commercial aroma diffusion systems provide steady fragrance output, unlike manual sprays or traditional air fresheners that fade quickly." },
-              { title: "Supports Brand & Environment Identity", desc: "Many businesses use subtle fragrance to match their brand personality—calm, premium, energetic, or welcoming." },
-              { title: "Improved Comfort for Occupants", desc: "Balanced fragrance diffusion contributes to a comfortable environment for employees, customers, and visitors." }
-            ].map((item, idx) => (
-              <motion.div 
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="group p-10 bg-gradient-to-b from-white/[0.02] to-transparent border border-white/5 hover:border-indigo-500/30 rounded-[2rem] transition-all duration-500 hover:bg-white/[0.03] hover:-translate-y-2"
-              >
-                <div className="w-12 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mb-6 group-hover:w-24 transition-all duration-500" />
-                <h3 className="text-2xl font-serif text-white mb-4 group-hover:text-indigo-200 transition-colors">{item.title}</h3>
-                <p className="text-base text-slate-400 leading-relaxed group-hover:text-slate-300 transition-colors">{item.desc}</p>
-              </motion.div>
-            ))}
+            <div className="lg:col-span-7 order-1 lg:order-2">
+                <div className="text-left mb-12">
+                    <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">Why Commercial Aroma Diffusion Matters</h2>
+                    <p className="text-slate-400 text-lg">
+                    A business environment is judged within seconds of entry. Smell plays a powerful role in shaping that perception.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {[
+                    { title: "Professional First Impressions", desc: "A clean and pleasant-smelling space immediately communicates professionalism. Using a commercial scent machine ensures your space smells fresh throughout the day." },
+                    { title: "Consistent Indoor Experience", desc: "Commercial aroma diffusion systems provide steady fragrance output, unlike manual sprays or traditional air fresheners that fade quickly." },
+                    { title: "Supports Brand & Environment Identity", desc: "Many businesses use subtle fragrance to match their brand personality—calm, premium, energetic, or welcoming." },
+                    { title: "Improved Comfort for Occupants", desc: "Balanced fragrance diffusion contributes to a comfortable environment for employees, customers, and visitors." }
+                    ].map((item, idx) => (
+                    <motion.div 
+                        key={idx}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: idx * 0.1 }}
+                        className="group p-8 bg-gradient-to-b from-white/[0.02] to-transparent border border-white/5 hover:border-indigo-500/30 rounded-[2rem] transition-all duration-500 hover:bg-white/[0.03] hover:-translate-y-2"
+                    >
+                        <div className="w-12 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mb-6 group-hover:w-24 transition-all duration-500" />
+                        <h3 className="text-xl font-serif text-white mb-4 group-hover:text-indigo-200 transition-colors">{item.title}</h3>
+                        <p className="text-sm text-slate-400 leading-relaxed group-hover:text-slate-300 transition-colors">{item.desc}</p>
+                    </motion.div>
+                    ))}
+                </div>
+            </div>
           </div>
         </section>
 
@@ -161,10 +214,10 @@ export default function CommercialDiffusionPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Professional Commercial Scent Diffusers", desc: "We supply high-quality commercial scent diffusers suitable for offices, clinics, retail stores, gyms, and hospitality spaces. These systems are built for daily operation and consistent performance." },
-              { title: "Scalable Diffusion Systems", desc: "Our solutions can be scaled based on area size—from small offices to large commercial buildings—ensuring optimal fragrance coverage without wastage." },
-              { title: "HVAC-Compatible Aroma Diffusion", desc: "For larger spaces, we offer HVAC scent diffuser solutions that distribute fragrance through centralized air-conditioning systems, ensuring uniform coverage across multiple zones." },
-              { title: "Low-Noise, Energy-Efficient Operation", desc: "Our air scent machines are designed to operate quietly, making them suitable for professional environments where noise control is important." }
+              { title: "Professional Commercial Scent Diffusers", desc: "We supply high-quality commercial scent diffusers suitable for offices, clinics, retail stores, gyms, and hospitality spaces.", icon: <SparklesIcon className="w-6 h-6"/> },
+              { title: "Scalable Diffusion Systems", desc: "Our solutions can be scaled based on area size—from small offices to large commercial buildings—ensuring optimal fragrance coverage without wastage.", icon: <ChartBarIcon className="w-6 h-6"/> },
+              { title: "HVAC-Compatible Aroma Diffusion", desc: "For larger spaces, we offer HVAC scent diffuser solutions that distribute fragrance through centralized air-conditioning systems.", icon: <BoltIcon className="w-6 h-6"/> },
+              { title: "Low-Noise, Energy-Efficient Operation", desc: "Our air scent machines are designed to operate quietly, making them suitable for professional environments where noise control is important.", icon: <AdjustmentsHorizontalIcon className="w-6 h-6"/> }
             ].map((sol, idx) => (
               <motion.div 
                 key={idx}
@@ -175,7 +228,7 @@ export default function CommercialDiffusionPage() {
                 className="group relative p-8 bg-white/[0.02] border border-white/5 rounded-3xl hover:border-indigo-500/40 transition-all overflow-hidden"
               >
                 <div className="w-14 h-14 bg-indigo-900/20 text-indigo-400 flex items-center justify-center rounded-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all shadow-lg shadow-indigo-900/10">
-                  <SparklesIcon className="w-6 h-6" />
+                  {sol.icon}
                 </div>
                 <h3 className="text-lg font-bold text-white mb-4 font-serif">{sol.title}</h3>
                 <p className="text-sm text-slate-400 leading-relaxed">{sol.desc}</p>
@@ -251,11 +304,11 @@ export default function CommercialDiffusionPage() {
           </div>
         </section>
 
-        {/* ================= SECTION 7: COMPARISON TABLE (Modernized) ================= */}
+        {/* ================= SECTION 7: COMPARISON TABLE ================= */}
         <section className="py-24">
           <h2 className="text-3xl md:text-4xl font-serif text-white mb-16 text-center">Difference Between Commercial Aroma Diffusion & Regular Air Fresheners</h2>
           
-          <div className="overflow-hidden bg-white/[0.02] rounded-[2rem] border border-white/10 backdrop-blur-sm shadow-2xl">
+          <div className="overflow-hidden bg-white/[0.02] rounded-[2rem] border border-white/10 backdrop-blur-sm shadow-2xl max-w-5xl mx-auto">
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="border-b border-white/10 text-xs uppercase tracking-widest text-slate-500 bg-black/20">
@@ -308,7 +361,14 @@ export default function CommercialDiffusionPage() {
 
         {/* ================= SECTION 9: WHY CHOOSE US (Highlight Box) ================= */}
         <section className="py-24 border-t border-white/5">
+          {/* --- IMAGE 4: TEXTURE BACKGROUND --- */}
           <div className="bg-gradient-to-r from-[#0B0F19] to-black rounded-[3rem] p-10 md:p-16 border border-white/10 text-center relative overflow-hidden">
+            
+            {/* Background Texture Image */}
+            <div className="absolute inset-0 opacity-20 mix-blend-overlay">
+                <img src={TextureImg} alt="" className="w-full h-full object-cover grayscale" />
+            </div>
+
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-serif text-white mb-8">Why Choose Cool Max for Commercial Aroma Diffusion?</h2>
               <p className="text-slate-400 mb-12 max-w-3xl mx-auto text-lg">Businesses across the UAE trust Cool Max for our reliability and service-oriented approach. We focus on long-term performance rather than short-term fixes.</p>
