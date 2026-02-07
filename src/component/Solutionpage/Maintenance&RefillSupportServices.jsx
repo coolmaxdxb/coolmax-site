@@ -44,14 +44,14 @@ export default function MaintenancePage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 mb-6 shadow-sm">
+              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 mb-6 shadow-sm mt-16">
                 <WrenchScrewdriverIcon className="w-4 h-4 text-emerald-600" />
                 <span className="text-emerald-700 text-[10px] font-black uppercase tracking-[0.3em]">
                   Reliable Ongoing Care
                 </span>
               </div>
               
-              <h1 className="text-5xl md:text-7xl xl:text-8xl font-serif text-slate-900 tracking-tighter mb-6 leading-[0.95]">
+              <h1 className="text-5xl md:text-7xl xl:text-6xl font-serif text-slate-900 tracking-tighter mb-6 leading-[0.95]">
                 Maintenance & <br />
                 <span className="italic text-slate-400 font-light pr-2">Refill Support</span> <br />
                 Services in UAE.

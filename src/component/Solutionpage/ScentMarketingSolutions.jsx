@@ -42,14 +42,14 @@ export default function ScentMarketingPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6 shadow-sm">
+              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6 shadow-sm mt-16">
                 <SparklesIcon className="w-4 h-4 text-blue-600" />
                 <span className="text-blue-700 text-[10px] font-black uppercase tracking-[0.3em]">
                   Since 2020
                 </span>
               </div>
               
-              <h1 className="text-5xl md:text-7xl xl:text-8xl font-serif text-slate-900 tracking-tighter mb-6 leading-[0.95]">
+              <h1 className="text-5xl md:text-7xl xl:text-6xl font-serif text-slate-900 tracking-tighter mb-6 leading-[0.95]">
                 Scent Marketing <br />
                 <span className="italic text-slate-400 font-light pr-2">Solutions in UAE</span>
               </h1>

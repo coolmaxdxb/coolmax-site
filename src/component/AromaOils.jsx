@@ -73,13 +73,13 @@ export default function ProductCategories() {
           
           {/* LEFT: TEXT CONTENT */}
           <div className="lg:w-1/2 flex flex-col items-start z-20">
-            <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-8 shadow-sm">
+            <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-8 shadow-sm mt-16">
               <span className="text-blue-700 text-[10px] font-black uppercase tracking-[0.2em]">
                 The Atmospheric Standard
               </span>
             </div>
             
-            <h1 className="text-6xl md:text-8xl lg:text-7xl xl:text-9xl font-serif text-slate-900 tracking-tighter mb-8 leading-[0.95]">
+            <h1 className="text-6xl md:text-8xl lg:text-7xl xl:text-7xl font-serif text-slate-900 tracking-tighter mb-8 leading-[0.95]">
               Curated <br />
               <span className="italic text-slate-400 font-light pr-2">Aroma Oils</span> <br />
               Collections.

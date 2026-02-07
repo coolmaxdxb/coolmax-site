@@ -39,11 +39,11 @@ export default function LargeAreaDiffusersPage() {
         <section className="min-h-[80vh] flex flex-col lg:flex-row items-center pt-24 lg:pt-12 pb-12 gap-12 text-left">
           <div className="w-full lg:w-1/2 flex flex-col items-start z-20">
             <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
-              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6 shadow-sm">
+              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6 shadow-sm mt-16">
                 <SparklesIcon className="w-4 h-4 text-blue-600" />
                 <span className="text-blue-700 text-[10px] font-black uppercase tracking-[0.3em]">Powerful Scenting</span>
               </div>
-              <h1 className="text-5xl md:text-7xl xl:text-8xl font-serif text-slate-900 tracking-tighter mb-6 leading-[0.95]">
+              <h1 className="text-5xl md:text-7xl xl:text-7xl font-serif text-slate-900 tracking-tighter mb-6 leading-[0.95]">
                 Large Area & <br />
                 <span className="italic text-slate-400 font-light pr-2">HVAC Aroma</span> <br />
                 Diffusers in UAE.

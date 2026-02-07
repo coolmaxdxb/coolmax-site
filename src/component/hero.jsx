@@ -39,7 +39,7 @@ export default function EcommerceHero() {
   }, []);
 
   return (
-    <section className="relative w-full lg:h-[720px] flex items-center pt-12 pb-8 lg:py-0 bg-[#FDFDFD] overflow-hidden font-sans">
+    <section className="relative w-full lg:h-[720px] flex items-center pt-12 pb-8 lg:py-0 bg-[#FDFDFD] overflow-hidden font-sans mt-10">
       
       {/* Background Text Accent */}
       <div className="absolute top-1/2 lg:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none pointer-events-none w-full text-center z-0">
@@ -95,7 +95,7 @@ export default function EcommerceHero() {
 
         {/* --- PRODUCT STAGE: BOTTOM ON MOBILE (order-2) --- */}
         <div className="lg:col-span-6 relative order-2 lg:order-2 w-full flex flex-col items-center">
-          <div className="relative aspect-square w-full max-w-[280px] md:max-w-[400px] lg:max-w-[500px] lg:ml-auto bg-white rounded-[2.5rem] lg:rounded-[4rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.08)] border border-slate-50 flex items-center justify-center p-6 lg:p-14 overflow-hidden">
+          <div className="relative aspect-square w-full max-w-[280px] md:max-w-[400px] lg:max-w-[500px] lg:ml-auto bg-white rounded-[2.5rem] lg:rounded-[rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.08)] border border-slate-50 flex items-center justify-center p-6 lg:p-12 overflow-hidden mt-16">
             
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.06)_0%,transparent_75%)]" />
 
@@ -127,12 +127,12 @@ export default function EcommerceHero() {
           </div>
 
           {/* THUMBNAILS - Showing all 20 units */}
-          <div className="mt-6 lg:mt-8 flex justify-center lg:justify-end gap-2 overflow-x-auto no-scrollbar py-2 w-full scroll-smooth px-4">
+          <div className="mt-10 lg:mt-16 flex justify-center lg:justify-end gap-2 overflow-x-auto no-scrollbar py-2 w-full scroll-smooth px-4">
             {productImages.map((img, idx) => (
               <button 
                 key={idx} 
                 onClick={() => setCurrentIndex(idx)}
-                className={`flex-shrink-0 w-10 lg:w-14 h-14 lg:h-18 rounded-lg lg:rounded-xl bg-white p-1 border-2 transition-all duration-300 ${
+                className={`flex-shrink-0 w-10 lg:w-14 h-14 lg:h-16 rounded-lg lg:rounded-xl bg-white p-1 border-2 transition-all duration-300 ${
                   currentIndex === idx 
                   ? 'border-blue-600 shadow-md scale-105 -translate-y-1' 
                   : 'border-transparent opacity-40 hover:opacity-100'

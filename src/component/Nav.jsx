@@ -35,14 +35,13 @@ const navigation = [
     type: "dropdown",
     cols: 2,
     items: [
-      { label: "Fresh & Clean Scents", href: "/oils/fresh" },
-      { label: "Floral Comfort Scents", href: "/oils/floral" },
-      { label: "Energy & Citrus Scents", href: "/oils/citrus" },
-      { label: "Warm & Luxury Scents", href: "/oils/luxury" },
-      { label: "Relaxation & Wellness", href: "/oils/wellness" },
-      { label: "Signature Business Scents", href: "/oils/signature" },
-      { label: "Car & Personal Scents", href: "/oils/car" },
-      { label: "Trial & Sample Sets", href: "/oils/samples" },
+      { label: "Oriental Fragrances", href: "/Oriental-Fragrances" },
+      { label: "Fresh Fragrances", href: "/Fresh-Fragrances" },
+      { label: "Perfumers Choice", href: "/Perfumers-Choice" },
+      { label: "Fruity Fragrances", href: "/Fruity-Fragrances" },
+      { label: "Food & Beverage Fragrances", href: "/Food-BeverageFragrances" },
+      { label: "Premium Collection", href: "/Premium-Collection" },
+    
     ],
   },
   {

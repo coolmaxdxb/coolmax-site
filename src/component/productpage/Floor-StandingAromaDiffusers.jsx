@@ -51,7 +51,7 @@ export default function FloorStandingDiffusersPage() {
         <section className="min-h-[75vh] flex flex-col lg:flex-row items-center pt-24 lg:pt-12 pb-12 gap-12 text-left">
           <div className="lg:w-1/2 flex flex-col items-start z-20">
             <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
-              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6 shadow-sm">
+              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6 shadow-sm mt-16">
                 <SparklesIcon className="w-4 h-4 text-blue-600" />
                 <span className="text-blue-700 text-[10px] font-black uppercase tracking-[0.2em]">Premium Scent Machines</span>
               </div>

@@ -92,7 +92,7 @@ export default function BlogSection() {
                 </span>
               </div>
               
-              <h1 className="text-6xl md:text-8xl lg:text-7xl xl:text-9xl font-serif text-slate-900 tracking-tighter mb-8 leading-[0.95]">
+              <h1 className="text-6xl md:text-8xl lg:text-7xl xl:text-7xl font-serif text-slate-900 tracking-tighter mb-8 leading-[0.95]">
                 Latest Insights, <br />
                 <span className="italic text-slate-400 font-light pr-2">Expert Advice</span> <br />
                 & Trends.

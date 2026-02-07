@@ -32,6 +32,14 @@ import Passivenopower from "./component/productpage/Passive-No-PowerDiffusers";
 import WallmountedD from "./component/productpage/Wall-Mounted&CeilingAromaDiffusers";
 import Scrollup from "./component/scrolluparrow";
 
+// --- AROMA CATEGORY IMPORTS ---
+import OrientalFragrances from "./component/Aromaoilspage/Oriental Fragrances";
+import FreshFragrances from "./component/Aromaoilspage/Fresh Fragrances";
+import PerfumersChoice from "./component/Aromaoilspage/Perfumers Choice";
+import FruityFragrances from "./component/Aromaoilspage/Fruity Fragrances";
+import FoodBeverageFragrances from "./component/Aromaoilspage/Food & Beverage Fragrances";
+import PremiumCollection from "./component/Aromaoilspage/Premium Collection";
+
 // --- SEPARATE INDIVIDUAL PRODUCT IMPORTS (16 UNIQUE) ---
 import AeroBlackMed from "./component/separateproducts/AeroBlack Med Diffuser";
 import DriveMist from "./component/separateproducts/DriveScent Diffuser";
@@ -103,6 +111,17 @@ function App() {
         <Route path="/large-area-diffusers" element={<Largearea />} />
         <Route path="/passive-diffusers" element={<Passivenopower />} />
         <Route path="/wall-mounted-diffusers" element={<WallmountedD />} />
+
+
+ {/* --- PRODUCT CATEGORY ROUTES --- */}
+        <Route path="/Oriental-Fragrances" element={<OrientalFragrances />} />
+        <Route path="/Fresh-Fragrances" element={<FreshFragrances />} />
+        <Route path="/Perfumers-Choice" element={<PerfumersChoice />} />
+        <Route path="/Fruity-Fragrances" element={<FruityFragrances />} />
+        <Route path="/Food-BeverageFragrances" element={<FoodBeverageFragrances />} />
+        <Route path="/Premium-Collection" element={<PremiumCollection />} />
+
+
         
         {/* --- INDIVIDUAL PRODUCT ROUTES (16+ UNIQUE PATHS) --- */}
         <Route path="/product/aeroblack-med" element={<AeroBlackMed />} />

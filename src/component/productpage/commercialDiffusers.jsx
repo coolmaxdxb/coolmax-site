@@ -51,7 +51,7 @@ export default function CommercialDiffusersPage() {
               transition={{ duration: 0.6 }}
               style={{ willChange: "transform, opacity" }}
             >
-              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6 shadow-sm">
+              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6 shadow-sm mt-16">
                 <SparklesIcon className="w-4 h-4 text-blue-600" />
                 <span className="text-blue-700 text-[10px] font-black uppercase tracking-[0.3em]">
                   Boost Sales & Engagement
