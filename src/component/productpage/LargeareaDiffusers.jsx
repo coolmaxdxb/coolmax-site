@@ -1,15 +1,16 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom"; // Added for proper internal redirection
 import { 
   BuildingOffice2Icon, 
   CheckCircleIcon, 
   BuildingStorefrontIcon, 
-  GlobeAltIcon,
-  ChatBubbleLeftRightIcon,
-  SparklesIcon,
-  Cog6ToothIcon,
-  ShieldCheckIcon,
-  ArrowRightIcon
+  GlobeAltIcon, 
+  ChatBubbleLeftRightIcon, 
+  SparklesIcon, 
+  Cog6ToothIcon, 
+  ShieldCheckIcon, 
+  ArrowRightIcon 
 } from "@heroicons/react/24/outline";
 
 // --- UPDATED IMAGE IMPORTS ---
@@ -31,7 +32,7 @@ export default function LargeAreaDiffusersPage() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden">
+    <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
       {/* Canonical URL */}
       <link rel="canonical" href="https://coolmaxscent.com/large-area-and-hvac-aroma-diffusers" />
       
@@ -93,7 +94,7 @@ export default function LargeAreaDiffusersPage() {
               <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">AeroBlack Pro – HVAC-Integrated Scent Diffuser</h3>
               <p className="text-slate-600 mb-6 font-light">A professional **HVAC Scent Diffusers** unit designed to distribute fragrance through central air-conditioning systems. Ensures uniform scent coverage across large areas.</p>
               <p className="text-[10px] font-black uppercase text-blue-600 tracking-widest mb-4">Best suited for: Hotels • Malls • Airports • Corporate buildings</p>
-              <a href="/product/aeroblack-pro" className="inline-flex items-center gap-2 py-4 px-8 bg-slate-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest">View product details <ArrowRightIcon className="w-4 h-4"/></a>
+              <Link to="/aroma/splendor" className="inline-flex items-center gap-2 py-4 px-8 bg-slate-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest">View product details <ArrowRightIcon className="w-4 h-4"/></Link>
             </motion.div>
             <motion.div whileHover={{ y: -10 }} className="bg-slate-50 rounded-[3rem] p-10 border border-slate-100 shadow-sm text-left">
               <div className="h-64 bg-white rounded-[2rem] mb-8 flex items-center justify-center p-8">
@@ -102,7 +103,7 @@ export default function LargeAreaDiffusersPage() {
               <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4">AirPulse 150 – Large Area Aroma Diffuser</h3>
               <p className="text-slate-600 mb-6 font-light">A powerful standalone scent diffuser designed for large open spaces where **Commercial HVAC Scenting Solutions** integration is not required.</p>
               <p className="text-[10px] font-black uppercase text-blue-600 tracking-widest mb-4">Best suited for: Showrooms • Event halls • Large lobbies • Exhibition spaces</p>
-              <a href="/product/airpulse-150" className="inline-flex items-center gap-2 py-4 px-8 bg-slate-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest">View product details <ArrowRightIcon className="w-4 h-4"/></a>
+              <Link to="/aroma/passion" className="inline-flex items-center gap-2 py-4 px-8 bg-slate-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest">View product details <ArrowRightIcon className="w-4 h-4"/></Link>
             </motion.div>
           </div>
         </section>
@@ -110,7 +111,7 @@ export default function LargeAreaDiffusersPage() {
         {/* ================= SECTION 2: WHY USE ================= */}
         <section className="py-16">
           <div className="bg-slate-900 rounded-[3rem] p-10 md:p-16 text-left text-white overflow-hidden relative shadow-2xl">
-            <h2 className="text-3xl md:text-5xl font-serif mb-8 tracking-tighter">Why Use **Large Area & HVAC Aroma Diffusers in UAE**?</h2>
+            <h2 className="text-3xl md:text-5xl font-serif mb-8 tracking-tighter">Why Use Large Area & HVAC Aroma Diffusers in UAE?</h2>
             <p className="text-slate-400 mb-12 text-lg max-w-3xl">Large commercial environments require specialized scenting solutions that can handle scale and airflow variations.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
@@ -146,7 +147,7 @@ export default function LargeAreaDiffusersPage() {
               </div>
             ))}
           </div>
-          <p className="mt-12 text-slate-500 italic text-center">They are ideal for spaces where brand image and customer experience are critical and require **Commercial HVAC Scenting Solutions**.</p>
+          <p className="mt-12 text-slate-500 italic text-center text-left">They are ideal for spaces where brand image and customer experience are critical and require **Commercial HVAC Scenting Solutions**.</p>
         </section>
 
         {/* ================= SECTION 4: HOW IT WORKS ================= */}
@@ -174,7 +175,7 @@ export default function LargeAreaDiffusersPage() {
         </section>
 
         {/* ================= SECTION 5: CHOOSING THE RIGHT ONE ================= */}
-        <section className="py-16 border-t border-slate-100">
+        <section className="py-16 border-t border-slate-100 text-left">
           <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter text-center">Choosing the Right Large Area or **HVAC Scent Diffuser**</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
             {[
@@ -204,7 +205,7 @@ export default function LargeAreaDiffusersPage() {
                 "Ongoing maintenance and refill support",
                 "Trusted by commercial and institutional clients"
               ].map((reason, i) => (
-                <div key={i} className="flex items-center gap-4 bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <div key={i} className="flex items-center gap-4 bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
                   <ShieldCheckIcon className="w-6 h-6 text-blue-600 flex-shrink-0" />
                   <span className="text-slate-700 text-sm font-medium">{reason}</span>
                 </div>
@@ -227,7 +228,7 @@ export default function LargeAreaDiffusersPage() {
 
         {/* ================= SECTION 8: MASTER CTA ================= */}
         <section className="py-24 text-center relative px-4">
-          <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-4xl mx-auto relative z-10">
+          <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-4xl mx-auto relative z-10 text-center">
             <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-8 tracking-tighter leading-none">
               Need a Large Area or <br /> <span className="italic text-blue-600 font-light">HVAC Scenting Solution?</span>
             </h2>
