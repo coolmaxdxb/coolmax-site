@@ -12,17 +12,17 @@ import {
   UserGroupIcon
 } from "@heroicons/react/24/outline";
 
-// --- ASSET IMPORTS (Mapping P10-P19 for 10 Oils) ---
-import P10 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/1.webp"; 
-import P11 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/2.webp";
-import P12 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/3.webp";
-import P13 from "../../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/2.webp";
-import P14 from "../../asset/productimg/CMwebpimg/Air pole Pro Floor Diffuser/4.webp";
-import P15 from "../../asset/productimg/CMwebpimg/AirPulse 150/4.webp";
-import P16 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/3.webp";
-import P17 from "../../asset/productimg/CMwebpimg/DeskScent/3.webp";
-import P18 from "../../asset/productimg/CMwebpimg/LuxePanel Diffuser wtc/4.webp";
-import P19 from "../../asset/productimg/CMwebpimg/Mistbox X commercial Diffuser/2.webp";
+// --- CORRECTED ASSET IMPORTS (Mapping to asset/Aroma oils img) ---
+import HarmonyImg from "../../asset/Aroma oils img/HARMONY.webp"; 
+import EventImg from "../../asset/Aroma oils img/EVENT.webp";
+import ForYouImg from "../../asset/Aroma oils img/FOR YOU.webp";
+import PassionImg from "../../asset/Aroma oils img/LAVENDER.webp"; // Using Lavender for Passion as per previous pattern or generic filler
+import GoldImg from "../../asset/Aroma oils img/GOLD.webp";
+import TuscanImg from "../../asset/Aroma oils img/TUSCAN LEATHER.webp";
+import StoryImg from "../../asset/Aroma oils img/STORY.webp";
+import BrownOrchidImg from "../../asset/Aroma oils img/BROWN ORCHID.webp";
+import ScentsNaturalImg from "../../asset/Aroma oils img/SCENTS NATURAL.webp";
+import SplendorImg from "../../asset/Aroma oils img/SPLENDOR.webp";
 
 const PerfumersChoiceOilsPage = () => {
   const whatsappNumber = "971522286401";
@@ -36,7 +36,7 @@ const PerfumersChoiceOilsPage = () => {
   const oils = [
     {
       name: "Harmony Aroma Oil",
-      image: P10,
+      image: HarmonyImg,
       code: "CM-0107-OR",
       category: "Perfumers Choice",
       strength: "Medium",
@@ -47,7 +47,7 @@ const PerfumersChoiceOilsPage = () => {
     },
     {
       name: "Event Aroma Oil",
-      image: P11,
+      image: EventImg,
       code: "CM-0108-OR",
       category: "Perfumers Choice",
       strength: "Strong",
@@ -58,7 +58,7 @@ const PerfumersChoiceOilsPage = () => {
     },
     {
       name: "For You Aroma Oil",
-      image: P12,
+      image: ForYouImg,
       code: "CM-0109-OR",
       category: "Perfumers Choice",
       strength: "Medium",
@@ -69,7 +69,7 @@ const PerfumersChoiceOilsPage = () => {
     },
     {
       name: "Passion Aroma Oil",
-      image: P13,
+      image: PassionImg,
       code: "CM-0110-OR",
       category: "Perfumers Choice",
       strength: "Strong",
@@ -80,7 +80,7 @@ const PerfumersChoiceOilsPage = () => {
     },
     {
       name: "Gold Aroma Oil",
-      image: P14,
+      image: GoldImg,
       code: "CM-0111-OR",
       category: "Perfumers Choice",
       strength: "Strong",
@@ -91,7 +91,7 @@ const PerfumersChoiceOilsPage = () => {
     },
     {
       name: "Tuscan Leather Aroma Oil",
-      image: P15,
+      image: TuscanImg,
       code: "CM-0112-OR",
       category: "Perfumers Choice",
       strength: "Strong",
@@ -102,7 +102,7 @@ const PerfumersChoiceOilsPage = () => {
     },
     {
       name: "Story Aroma Oil",
-      image: P16,
+      image: StoryImg,
       code: "CM-0113-OR",
       category: "Perfumers Choice",
       strength: "Medium",
@@ -113,7 +113,7 @@ const PerfumersChoiceOilsPage = () => {
     },
     {
       name: "Brown Orchid Aroma Oil",
-      image: P17,
+      image: BrownOrchidImg,
       code: "CM-0114-OR",
       category: "Perfumers Choice",
       strength: "Medium",
@@ -124,7 +124,7 @@ const PerfumersChoiceOilsPage = () => {
     },
     {
       name: "Scents Natural Aroma Oil",
-      image: P18,
+      image: ScentsNaturalImg,
       code: "CM-0115-OR",
       category: "Perfumers Choice",
       strength: "Medium",
@@ -135,7 +135,7 @@ const PerfumersChoiceOilsPage = () => {
     },
     {
       name: "Splendor Aroma Oil",
-      image: P19,
+      image: SplendorImg,
       code: "CM-0116-OR",
       category: "Perfumers Choice",
       strength: "Strong",
@@ -225,11 +225,12 @@ const PerfumersChoiceOilsPage = () => {
                      </div>
                   </div>
                   
-                  <h3 className="text-2xl font-serif text-slate-900 mb-2 group-hover:text-blue-700 transition-colors tracking-tight italic">Product Card – {oil.name}</h3>
+                  <h3 className="text-2xl font-serif text-slate-900 mb-2 group-hover:text-blue-700 transition-colors tracking-tight italic">{oil.name}</h3>
                   <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Category: {oil.category}</p>
                   <p className="text-[10px] font-bold text-blue-600 uppercase tracking-[0.2em] mb-6">Item Code: {oil.code}</p>
                   
-                  <div className="space-y-5 mb-10 flex-grow">
+                  <div className="space-y-5 mb-10 flex-grow text-left">
+                    <h4 className="text-[11px] font-black uppercase text-slate-900 border-b border-slate-100 pb-2">Fragrance Notes:</h4>
                     {oil.top && (
                       <div className="pb-3 border-b border-slate-100">
                         <p className="text-[9px] font-bold uppercase text-slate-400 mb-1.5 tracking-widest text-left">Top Notes</p>
@@ -263,7 +264,7 @@ const PerfumersChoiceOilsPage = () => {
         </section>
 
         {/* ================= SECTION 2: ABOUT ================= */}
-        <section className="py-32 bg-white px-6">
+        <section className="py-32 bg-white px-6 text-center">
           <div className="max-w-[1000px] mx-auto text-center">
             <motion.div {...fadeUp}>
               <h2 className="text-3xl md:text-6xl font-serif mb-10 tracking-tight text-slate-950 leading-tight uppercase">
@@ -328,7 +329,7 @@ const PerfumersChoiceOilsPage = () => {
         </section>
 
         {/* ================= CTA SECTION ================= */}
-        <section className="py-24 px-6">
+        <section className="py-24 px-6 text-center">
           <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full" />
             <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase italic text-slate-200">Refine Your Environment</h2>

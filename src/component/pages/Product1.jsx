@@ -123,13 +123,14 @@ const productList = [
 
 const categories = [
   "All Systems", 
-  "Car Aroma Diffusers",
   "Commercial Aroma Diffusers", 
-  "Desktop & Small Space Aroma Diffusers", 
-  "Floor-Standing Aroma Diffusers", 
   "Large Area & HVAC Aroma Diffusers", 
+  "Car Aroma Diffusers",
+  "Desktop & Small Space Aroma Diffusers", 
+   "Wall-Mounted & Ceiling Aroma Diffusers",
+  "Floor-Standing Aroma Diffusers", 
   "Passive / No-Power Diffusers",
-  "Wall-Mounted & Ceiling Aroma Diffusers"
+ 
 ];
 
 export default function ArchitectStore() {

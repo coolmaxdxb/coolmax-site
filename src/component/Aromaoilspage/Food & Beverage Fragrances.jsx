@@ -13,7 +13,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORTS ---
-import P2 from "../../asset/productimg/CMwebpimg/NovaCar Diffuser/2.webp"; 
+import P2 from "../../asset/Aroma oils img/TRUE COFFEE.webp"; 
 
 const FoodAndBeverageOilsPage = () => {
   // Redirection Links
@@ -73,20 +73,20 @@ const FoodAndBeverageOilsPage = () => {
             <h1 className="text-5xl md:text-7xl font-serif text-slate-950 mb-4 leading-[1.1] tracking-tighter uppercase">
               Food & Beverage <span className="italic font-light text-slate-700">(F&B) Aroma Oils</span>
             </h1>
-            <p className="text-lg md:text-xl text-blue-600 font-medium mb-8 tracking-[0.05em] uppercase">
+            <p className="text-lg md:text-xl text-blue-600 font-medium mb-8 tracking-[0.05em] uppercase text-center">
               Warm, Inviting & Appetite-Enhancing Fragrances for Food Spaces
             </p>
-            <p className="text-base md:text-lg text-slate-500 max-w-3xl mx-auto leading-relaxed font-light mb-6">
+            <p className="text-base md:text-lg text-slate-500 max-w-3xl mx-auto leading-relaxed font-light mb-6 text-center">
               Food & Beverage aroma oils are specially designed to create a warm, comforting, and appetite-enhancing atmosphere. These fragrances are inspired by coffee, chocolate, and sweet gourmand notes that make spaces feel cozy and inviting.
             </p>
-            <p className="text-base md:text-lg text-slate-500 max-w-3xl mx-auto leading-relaxed font-light mb-10 italic">
+            <p className="text-base md:text-lg text-slate-500 max-w-3xl mx-auto leading-relaxed font-light mb-10 italic text-center">
               At Cool Max Scent, our F&B Aroma Oil collection helps food-related businesses enhance customer experience, increase comfort, and create a memorable sensory connection.
             </p>
             <div className="flex flex-wrap justify-center gap-5 font-sans">
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-blue-600 text-white rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-slate-900 transition-all flex items-center gap-2 shadow-xl shadow-blue-100">
                 <ChatBubbleLeftRightIcon className="w-4 h-4" /> Order via WhatsApp
               </a>
-              <Link to={contactPath} className="px-10 py-4 border border-slate-200 text-slate-900 rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-blue-50 hover:border-blue-300 transition-all">
+              <Link to={contactPath} className="px-10 py-4 border border-slate-200 text-slate-900 rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-blue-50 hover:border-blue-300 transition-all text-center">
                 Contact Expert
               </Link>
             </div>
@@ -105,7 +105,7 @@ const FoodAndBeverageOilsPage = () => {
                 <motion.div 
                   key={idx} 
                   {...fadeUp}
-                  className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-2xl hover:border-blue-200 transition-all group max-w-md"
+                  className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-2xl hover:border-blue-200 transition-all group max-w-md text-left"
                 >
                   <div className="aspect-square bg-slate-50 rounded-3xl mb-8 flex items-center justify-center relative overflow-hidden">
                      <img 
@@ -118,7 +118,7 @@ const FoodAndBeverageOilsPage = () => {
                      </div>
                   </div>
                   
-                  <h3 className="text-2xl font-serif text-slate-900 mb-2 group-hover:text-blue-700 transition-colors tracking-tight italic">Product Card – {oil.name}</h3>
+                  <h3 className="text-2xl font-serif text-slate-900 mb-2 group-hover:text-blue-700 transition-colors tracking-tight italic">{oil.name}</h3>
                   <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Category: {oil.category}</p>
                   <p className="text-[10px] font-bold text-blue-600 uppercase tracking-[0.2em] mb-6">Item Code: {oil.code}</p>
                   
@@ -160,7 +160,7 @@ const FoodAndBeverageOilsPage = () => {
               <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light mb-8 font-sans">
                 Our Food & Beverage aroma oils are professional-grade fragrances developed for use with advanced scent diffuser systems. These fragrances are carefully formulated to deliver consistent diffusion and balanced intensity without overpowering the food environment.
               </p>
-              <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light font-sans">
+              <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light font-sans text-center">
                 F&B aroma oils are widely used to create a welcoming ambiance that encourages customers to relax, stay longer, and enjoy their dining experience.
               </p>
             </motion.div>
@@ -191,7 +191,7 @@ const FoodAndBeverageOilsPage = () => {
         {/* ================= SECTION 4: EXPLORE CATEGORIES ================= */}
         <section className="py-32 bg-slate-50 px-6">
           <div className="max-w-[1400px] mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-serif mb-16 tracking-tight text-slate-950 uppercase">
+            <h2 className="text-3xl md:text-5xl font-serif mb-16 tracking-tight text-slate-950 uppercase text-center">
               Explore More <span className="italic font-light text-slate-700">Fragrance Categories</span>
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 font-sans">
@@ -207,8 +207,8 @@ const FoodAndBeverageOilsPage = () => {
                   to={cat.path}
                   className="p-6 bg-white border border-slate-200 rounded-2xl hover:border-blue-600 hover:shadow-xl transition-all group"
                 >
-                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 group-hover:text-blue-600 mb-2">Collection</p>
-                  <h4 className="text-sm font-bold text-slate-800">{cat.name}</h4>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 group-hover:text-blue-600 mb-2 text-center">Collection</p>
+                  <h4 className="text-sm font-bold text-slate-800 text-center">{cat.name}</h4>
                 </Link>
               ))}
             </div>
@@ -219,15 +219,15 @@ const FoodAndBeverageOilsPage = () => {
         <section className="py-24 px-6">
           <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full" />
-            <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase italic text-slate-200">Stimulate the Senses</h2>
+            <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase italic text-slate-200 text-center">Stimulate the Senses</h2>
             <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
               Looking to enhance your dining atmosphere? Our scent experts are ready to help you create a warm and memorable environment for your guests.
             </p>
             <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-center">
                  <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
               </a>
-              <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3">
+              <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 text-center">
                 Consultation & Installation <ArrowRightIcon className="w-5 h-5" />
               </Link>
             </div>

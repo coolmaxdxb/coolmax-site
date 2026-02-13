@@ -128,7 +128,17 @@ const productList = [
   { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling", images: [AeroMaxPro1, AeroMaxPro2], path: "/product/aeromax-pro" }
 ];
 
-const categories = ["All Systems", "Car Aroma Diffusers", "Desktop & Small Space", "Wall-Mounted & Ceiling", "Commercial Aroma Diffusers", "Large Area & HVAC", "Floor-Standing Aroma Diffusers", "Passive / No-Power Diffusers"];
+// CORRECTED CATEGORY ORDER BASED ON PROVIDED IMAGE
+const categories = [
+  "All Systems", 
+  "Commercial Aroma Diffusers", 
+  "Large Area & HVAC", 
+  "Car Aroma Diffusers", 
+  "Desktop & Small Space", 
+  "Wall-Mounted & Ceiling", 
+  "Floor-Standing Aroma Diffusers", 
+  "Passive / No-Power Diffusers"
+];
 
 export default function ArchitectStore() {
   const [activeCat, setActiveCat] = useState("All Systems");

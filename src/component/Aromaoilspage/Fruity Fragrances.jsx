@@ -14,7 +14,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORTS ---
-import P1 from "../../asset/productimg/CMwebpimg/Natural Fragrance Diffusion wtc/2.webp"; 
+import P1 from "../../asset/Aroma oils img/CLASSIC.webp"; // Mapping to Fruity/Crystal collection style
 
 const FruityAromaOilsPage = () => {
   const whatsappNumber = "971522286401";
@@ -77,10 +77,10 @@ const FruityAromaOilsPage = () => {
               At Cool Max Scent, our Fruity Aroma Oil collection is designed for environments where freshness and positivity play an important role in enhancing customer experience.
             </p>
             <div className="flex flex-wrap justify-center gap-5 font-sans">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-blue-600 text-white rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-slate-900 transition-all flex items-center gap-2 shadow-lg shadow-blue-100">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-blue-600 text-white rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-slate-900 transition-all flex items-center gap-2 shadow-lg shadow-blue-100 text-center">
                 <ChatBubbleLeftRightIcon className="w-4 h-4" /> Order via WhatsApp
               </a>
-              <Link to={contactPath} className="px-10 py-4 border border-slate-200 text-slate-900 rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-blue-50 hover:border-blue-300 transition-all">
+              <Link to={contactPath} className="px-10 py-4 border border-slate-200 text-slate-900 rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-blue-50 hover:border-blue-300 transition-all text-center">
                 Contact Expert
               </Link>
             </div>
@@ -91,7 +91,7 @@ const FruityAromaOilsPage = () => {
         <section className="py-20 bg-slate-50 px-6 lg:px-12" id="collection">
           <div className="max-w-[1400px] mx-auto">
             <h2 className="text-3xl md:text-5xl font-serif mb-16 text-center tracking-tight text-slate-950 uppercase">
-              Fruity <span className="italic font-light text-slate-700">Aroma Oil Collection</span>
+              Fruity <span className="italic font-light">Aroma Oil Collection</span>
             </h2>
             
             <div className="flex justify-center">
@@ -99,7 +99,7 @@ const FruityAromaOilsPage = () => {
                 <motion.div 
                   key={idx} 
                   {...fadeUp}
-                  className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-2xl hover:border-blue-200 transition-all group max-w-md flex flex-col h-full"
+                  className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-2xl hover:border-blue-200 transition-all group max-w-md flex flex-col h-full text-left"
                 >
                   <div className="aspect-square bg-slate-50 rounded-3xl mb-8 flex items-center justify-center relative overflow-hidden">
                      <img 
@@ -112,21 +112,21 @@ const FruityAromaOilsPage = () => {
                      </div>
                   </div>
                   
-                  <h3 className="text-2xl font-serif text-slate-900 mb-2 group-hover:text-blue-700 transition-colors tracking-tight italic">Product Card – {oil.name}</h3>
-                  <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1">Category: {oil.category}</p>
-                  <p className="text-[10px] font-bold text-blue-600 uppercase tracking-[0.2em] mb-6">Item Code: {oil.code}</p>
+                  <h3 className="text-2xl font-serif text-slate-900 mb-2 group-hover:text-blue-700 transition-colors tracking-tight italic text-left">{oil.name}</h3>
+                  <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1 text-left">Category: {oil.category}</p>
+                  <p className="text-[10px] font-bold text-blue-600 uppercase tracking-[0.2em] mb-6 text-left">Item Code: {oil.code}</p>
                   
-                  <div className="space-y-5 mb-10 flex-grow">
+                  <div className="space-y-5 mb-10 flex-grow text-left">
                     <h4 className="text-[11px] font-black uppercase text-slate-900 border-b border-slate-100 pb-2">Fragrance Notes:</h4>
-                     <div className="pb-3 border-b border-slate-100">
+                     <div className="pb-3 border-b border-slate-100 text-left">
                        <p className="text-[9px] font-bold uppercase text-slate-400 mb-1.5 tracking-widest text-left">Top Notes</p>
                        <p className="text-[12px] text-slate-600 leading-snug font-medium text-left">{oil.top}</p>
                      </div>
-                     <div className="pb-3 border-b border-slate-100">
+                     <div className="pb-3 border-b border-slate-100 text-left">
                        <p className="text-[9px] font-bold uppercase text-slate-400 mb-1.5 tracking-widest text-left">Middle Notes</p>
                        <p className="text-[12px] text-slate-600 leading-snug font-medium text-left">{oil.middle}</p>
                      </div>
-                     <div>
+                     <div className="text-left">
                        <p className="text-[9px] font-bold uppercase text-slate-400 mb-1.5 tracking-widest text-left">Base Notes</p>
                        <p className="text-[12px] text-slate-600 leading-snug font-medium text-left">{oil.base}</p>
                      </div>
@@ -134,9 +134,9 @@ const FruityAromaOilsPage = () => {
 
                   <Link 
                     to={oil.path}
-                    className="w-full py-4 bg-slate-50 text-slate-900 rounded-xl font-bold text-[10px] uppercase tracking-[0.2em] group-hover:bg-blue-600 group-hover:text-white transition-all flex items-center justify-center gap-2 shadow-sm font-sans"
+                    className="w-full py-4 bg-slate-50 text-slate-900 rounded-xl font-bold text-[10px] uppercase tracking-[0.2em] group-hover:bg-blue-600 group-hover:text-white transition-all flex items-center justify-center gap-2 shadow-sm font-sans text-center"
                   >
-                    [View Product Details] <ArrowRightIcon className="w-3.5 h-3.5" />
+                    View Product Details <ArrowRightIcon className="w-3.5 h-3.5" />
                   </Link>
                 </motion.div>
               ))}
@@ -148,10 +148,10 @@ const FruityAromaOilsPage = () => {
         <section className="py-32 bg-white px-6">
           <div className="max-w-[1000px] mx-auto text-center">
             <motion.div {...fadeUp}>
-              <h2 className="text-3xl md:text-6xl font-serif mb-10 tracking-tight text-slate-950 leading-tight uppercase">
+              <h2 className="text-2xl md:text-6xl font-serif mb-10 tracking-tight text-slate-950 leading-tight uppercase text-center">
                 About Our <span className="italic font-light text-slate-700">Fruity Aroma Oils</span>
               </h2>
-              <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light mb-8 font-sans">
+              <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light mb-8 font-sans text-center">
                 Our fruity aroma oils are professional-grade fragrances developed for use with advanced scent diffuser systems. These oils are formulated to deliver consistent diffusion and long-lasting freshness, making them ideal for spaces that require an energetic and uplifting scent presence.
               </p>
               <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light font-sans text-justify md:text-center">
@@ -164,7 +164,7 @@ const FruityAromaOilsPage = () => {
         {/* ================= SECTION 3: BEST USED FOR ================= */}
         <section className="py-24 bg-slate-950 text-white px-6">
           <div className="max-w-[1200px] mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase">Best Used For</h2>
+            <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase text-center">Best Used For</h2>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
               {[
                 { icon: ShoppingBagIcon, label: "Retail stores & boutiques" },
@@ -173,7 +173,7 @@ const FruityAromaOilsPage = () => {
                 { icon: UserGroupIcon, label: "Reception areas" },
                 { icon: SparklesIcon, label: "Youth-focused environments" }
               ].map((item, i) => (
-                <div key={i} className="p-8 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-blue-600/10 transition-colors group h-full">
+                <div key={i} className="p-8 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-blue-600/10 transition-colors group h-full text-center">
                    <item.icon className="w-12 h-12 text-blue-500 group-hover:scale-110 transition-transform duration-500 shrink-0" />
                    <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-slate-200 font-sans text-center">{item.label}</span>
                 </div>
@@ -185,7 +185,7 @@ const FruityAromaOilsPage = () => {
         {/* ================= SECTION 4: EXPLORE CATEGORIES ================= */}
         <section className="py-32 bg-slate-50 px-6">
           <div className="max-w-[1400px] mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-serif mb-16 tracking-tight text-slate-950 uppercase">
+            <h2 className="text-3xl md:text-5xl font-serif mb-16 tracking-tight text-slate-950 uppercase text-center">
               Explore More <span className="italic font-light text-slate-700">Fragrance Categories</span>
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 font-sans">
@@ -199,10 +199,10 @@ const FruityAromaOilsPage = () => {
                 <Link 
                   key={i} 
                   to={cat.path}
-                  className="p-6 bg-white border border-slate-200 rounded-2xl hover:border-blue-600 hover:shadow-xl transition-all group"
+                  className="p-6 bg-white border border-slate-200 rounded-2xl hover:border-blue-600 hover:shadow-xl transition-all group text-center"
                 >
-                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 group-hover:text-blue-600 mb-2">Collection</p>
-                  <h4 className="text-sm font-bold text-slate-800">{cat.name}</h4>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 group-hover:text-blue-600 mb-2 text-center">Collection</p>
+                  <h4 className="text-sm font-bold text-slate-800 text-center">{cat.name}</h4>
                 </Link>
               ))}
             </div>
@@ -213,15 +213,15 @@ const FruityAromaOilsPage = () => {
         <section className="py-24 px-6">
           <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full" />
-            <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase italic text-slate-200">Energize Your Atmosphere</h2>
+            <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase italic text-slate-200 text-center">Energize Your Atmosphere</h2>
             <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
               Ready to bring vibrant freshness to your space? Our scent architects will help you design a welcoming and cheerful experience.
             </p>
             <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-center">
                  <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
               </a>
-              <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3">
+              <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 text-center">
                 Consultation & Installation <ArrowRightIcon className="w-5 h-5" />
               </Link>
             </div>
