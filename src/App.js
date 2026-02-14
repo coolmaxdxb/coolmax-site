@@ -116,7 +116,7 @@ function App() {
       <Routes>
         {/* --- MAIN PAGES --- */}
         <Route path="/" element={<Homepage />} />
-        <Route path="/about" element={<AboutUs />} />
+        <Route path="/about-us/" element={<AboutUs />} />
         <Route path="/solutions" element={<SolutionsSection />} />
         <Route path="/products" element={<ProductPage />} />
         <Route path="/aromas" element={<Aroms />} />

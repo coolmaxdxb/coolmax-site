@@ -13,6 +13,7 @@ import {
   MapPinIcon, 
   ArrowLongRightIcon 
 } from "@heroicons/react/24/outline";
+import logo from "../asset/hero/coll-logo.png";
 
 export default function Footer() {
   return (
@@ -32,9 +33,14 @@ export default function Footer() {
           
           {/* Brand Statement */}
           <div className="max-w-2xl">
-            <h2 className="text-5xl md:text-7xl font-serif text-white tracking-tighter mb-4 leading-[0.9]">
-              COOL <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400 italic">MAX</span>
-            </h2>
+            {/* Logo replacement for text */}
+            <div className="mb-6">
+              <img 
+                src={logo} 
+                alt="Cool Max Logo" 
+                className="h-12 md:h-16 w-auto object-contain brightness-100 " 
+              />
+            </div>
             <p className="text-base text-slate-400 font-light leading-relaxed max-w-lg">
               Architects of atmosphere. Curating premium olfactory experiences for distinguished spaces.
             </p>
@@ -73,7 +79,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               {['About Cool Max', 'Our Technology', 'Fragrance Innovation', 'Industries We Serve', 'Sustainability'].map((item) => (
                 <li key={item}>
-                  <a href="/about" className="text-slate-400 hover:text-white transition-all font-medium flex items-center gap-2 group">
+                  <a href="/about-us/" className="text-slate-400 hover:text-white transition-all font-medium flex items-center gap-2 group">
                     <span className="w-0 h-px bg-indigo-500 group-hover:w-3 transition-all duration-300"></span>
                     {item}
                   </a>

@@ -14,7 +14,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORTS ---
-import P1 from "../../asset/Aroma oils img/CLASSIC.webp"; // Mapping to Fruity/Crystal collection style
+import P1 from "../../asset/Aroma oils img/Crystal.webp"; // Mapping to Fruity/Crystal collection style
 
 const FruityAromaOilsPage = () => {
   const whatsappNumber = "971522286401";

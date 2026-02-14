@@ -59,7 +59,7 @@ const navigation = [
     ],
   },
   { name: "Industries", href: "/industries", type: "link" },
-  { name: "About", href: "/about", type: "link" },
+  { name: "About", href: "/about-us/", type: "link" },
   { name: "Blog", href: "/blog", type: "link" },
 ];
 

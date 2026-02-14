@@ -15,7 +15,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- CORRECTED ASSET IMPORT ---
-import P1 from "../../../asset/Aroma oils img/ADDRESS.webp"; 
+import P1 from "../../../asset/Aroma oils img/Crystal.webp"; 
 
 const CrystalAromaOilDetail = () => {
   // Redirection Links

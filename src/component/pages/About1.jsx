@@ -28,7 +28,7 @@ export default function AboutUs() {
       
       {/* ================= ARCHITECTURAL GRID BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-40" />
+        <div className="absolute inset-0 bg-[gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-100" />
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-indigo-50/50 rounded-full blur-[120px]" />
       </div>
 

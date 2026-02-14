@@ -1,37 +1,20 @@
 import React from "react";
 
-/* ================= IMPORT CLIENT LOGOS ================= */
-
-import SharjahGov from "../asset/clientslogo/sharjah-gov.png";
-import AjmanPolice from "../asset/clientslogo/ajman-police.png";
-import Lulu from "../asset/clientslogo/lulu.png";
-import AnsarMall from "../asset/clientslogo/ansar-mall.png";
-import MPC from "../asset/clientslogo/mpc.png";
-import Ramada from "../asset/clientslogo/ramada.png";
-import Hilton from "../asset/clientslogo/hilton.png";
-import UmmAlQuwain from "../asset/clientslogo/umm-al-quwain.png";
-import EmiratesPark from "../asset/clientslogo/emirates-park.png";
-
-// // New Client Imports (Ensure these files exist in your directory)
-// import RetreatPalm from "../asset/clientslogo/retreat-palm.png";
-// import Mercure from "../asset/clientslogo/mercure.png";
-// import PanHome from "../asset/clientslogo/pan-home.png";
+import RetreatPalm from "../asset/clientslogo//The Retreat Palm Dubai.webp";
+import Mercure from "../asset/clientslogo/Mercure Hotels.webp";
+import PanHome from "../asset/clientslogo/PAN HOME.webp";
+import Lulu from "../asset/clientslogo/lulu.webp"
+import Ramada from "../asset/clientslogo/Ramada by Wyndham.webp";
 
 /* ================= LOGO ARRAY ================= */
 
 const logos = [
-  SharjahGov,
-  AjmanPolice,
-  Lulu,
-  AnsarMall,
-  MPC,
-  Ramada,
-  Hilton,
-  UmmAlQuwain,
-  EmiratesPark,
-  // RetreatPalm,
-  // Mercure,
-  // PanHome,
+  
+   RetreatPalm,
+   Mercure,
+   PanHome,
+   Lulu,
+   Ramada,
 ];
 
 export default function OurClienteles() {

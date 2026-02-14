@@ -11,7 +11,7 @@ import P4 from "../asset/productimg/CMwebpimg/VentoCar/2.webp";
 import P5 from "../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/1.webp"; 
 import P6 from "../asset/productimg/CMwebpimg/AeroMax Pro/2.webp"; 
 import P7 from "../asset/productimg/CMwebpimg/AeroBlack Med diffuser/1.webp"; 
-import P8 from "../asset/productimg/CMwebpimg/AromaDesk/3.webp"; 
+import P8 from "../asset/productimg/CMwebpimg/AromaDesk/4.webp"; 
 import P9 from "../asset/productimg/CMwebpimg/DriveScent/1.webp"; 
 import P10 from "../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/2.webp"; 
 // Assuming the remaining 10 follow your standard pathing or imports
@@ -97,7 +97,7 @@ export default function EcommerceHero() {
         <div className="lg:col-span-6 relative order-2 lg:order-2 w-full flex flex-col items-center">
           <div className="relative aspect-square w-full max-w-[280px] md:max-w-[400px] lg:max-w-[500px] lg:ml-auto bg-white rounded-[2.5rem] lg:rounded-[rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.08)] border border-slate-50 flex items-center justify-center p-6 lg:p-12 overflow-hidden mt-16">
             
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.06)_0%,transparent_75%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(circle_at_50%_50%,rgba(59,130,246,0.06)_0%,transparent_100%)]" />
 
             <AnimatePresence mode="wait">
               <motion.div
