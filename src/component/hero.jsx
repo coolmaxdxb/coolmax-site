@@ -51,7 +51,7 @@ export default function EcommerceHero() {
               className="w-full h-full object-cover"
             />
             {/* Overlay for contrast */}
-            <div className="absolute inset-0 bg-slate-900/30" />
+            <div className="absolute inset-0 bg-slate-800/20" />
           </div>
         ))}
 
@@ -76,7 +76,7 @@ export default function EcommerceHero() {
           <div className="max-w-3xl flex flex-col text-center lg:text-left">
             <div className="inline-flex items-center justify-center lg:justify-start gap-3 mb-6">
               <div className="hidden lg:block h-px w-8 bg-blue-400"></div>
-              <span className="text-[10px] lg:text-sm font-bold text-blue-600 lg:text-blue-100 uppercase tracking-[0.2em]">  
+              <span className="text-[10px] lg:text-sm font-bold text-blue-600 lg:text-blue-700 uppercase tracking-[0.2em]">  
                 Top Rated in UAE
               </span>
             </div>
@@ -84,7 +84,7 @@ export default function EcommerceHero() {
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-slate-900 lg:text-white leading-[1.1] mb-6 tracking-tighter">
               Professional <br className="hidden lg:block" />
               Scent Marketing & <br className="hidden lg:block" />
-              <span className="text-blue-600 lg:text-blue-400 italic font-serif font-light">Aroma Solutions.</span>
+              <span className="text-blue-600 lg:text-blue-800 italic font-serif font-light">Aroma Solutions.</span>
             </h1>
 
             <p className="text-base lg:text-xl text-slate-600 lg:text-slate-200 font-medium mb-10 lg:mb-12 max-w-lg mx-auto lg:mx-0 leading-relaxed">
