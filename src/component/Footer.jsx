@@ -111,7 +111,7 @@ export default function Footer() {
                 <h4 className="text-sm font-bold text-white">UAE Headquarters</h4>
               </div>
               <div className="space-y-3 text-xs text-slate-400">
-                <p className="leading-relaxed">Waha Al Reem Office, Muweilah – Sharjah</p>
+                <p className="leading-relaxed">Office no:501 Al Reem building , Bus station Road Muweilah, Sharjah -UAE</p>
                 <div className="h-px w-full bg-white/5"></div>
                 <a href="mailto:secretary@coolmaxscent.com" className="flex items-center gap-2 hover:text-indigo-300 transition-colors">
                   <EnvelopeIcon className="w-3 h-3"/> secretary@coolmaxscent.com

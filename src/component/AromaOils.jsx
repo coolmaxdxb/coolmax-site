@@ -1,12 +1,12 @@
 import React from "react";
 
 // ================= IMAGE IMPORTS =================
-import CarImg from "../../src/asset/categories/car.jpg";
-import LobbyImg from "../../src/asset/categories/lobby.jpg";
-import WallImg from "../../src/asset/categories/wall.jpg";
-import HvacImg from "../../src/asset/categories/hvac.jpg";
-import RoomImg from "../../src/asset/categories/room.jpg";
-import AerosolImg from "../../src/asset/categories/aerosol.jpg";
+import CarImg from "../../src/asset/Aroma oils img/ADDRESS.webp";
+import LobbyImg from "../../src/asset/Aroma oils img/ARABIAN  BAKHOOR.webp";
+import WallImg from "../../src/asset/Aroma oils img/BROWN ORCHID.webp";
+import HvacImg from "../../src/asset/Aroma oils img/Crystal.webp";
+import RoomImg from "../../src/asset//Aroma oils img/ENGLISH LAVENDER.webp";
+import AerosolImg from "../../src/asset/Aroma oils img/FLORAL.webp";
 
 // ================= DATA CONFIGURATION =================
 
