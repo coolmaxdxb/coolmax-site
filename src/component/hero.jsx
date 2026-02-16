@@ -70,7 +70,7 @@ export default function EcommerceHero() {
       </div>
 
       {/* ================= CONTENT BLOCK ================= */}
-      <div className="relative z-20 flex-1 bg-white lg:bg-transparent lg:mt-0 rounded-t-[50px] lg:rounded-none shadow-[0_-20px_40px_rgba(0,0,0,0.05)] lg:shadow-none mt-16">
+      <div className="relative z-20 flex-1 bg-white lg:bg-transparent lg:mt-0 rounded-t-[50px] lg:rounded-none shadow-[0_-20px_40px_rgba(0,0,0,0.05)] lg:shadow-none mt-0">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-12 w-full py-16 lg:py-0">
           
           <div className="max-w-3xl flex flex-col text-center lg:text-left">
