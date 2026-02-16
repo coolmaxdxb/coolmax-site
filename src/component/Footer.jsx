@@ -117,7 +117,7 @@ export default function Footer() {
                   <EnvelopeIcon className="w-3 h-3"/> secretary@coolmaxscent.com
                 </a>
                 <a href="tel:+971522286401" className="flex items-center gap-2 hover:text-indigo-300 transition-colors">
-                  <PhoneIcon className="w-3 h-3"/> +971 52 228 6401
+                  <PhoneIcon className="w-3 h-3"/> +971 50 928 2702
                 </a>
               </div>
             </div>

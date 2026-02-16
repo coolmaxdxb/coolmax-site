@@ -3,26 +3,41 @@ import { ArrowRightIcon, ShoppingBagIcon } from "@heroicons/react/24/solid";
 
 // --- ASSET IMPORTS ---
 import Banner1 from "../asset/hero/herobanner1.webp"; 
-import Banner2 from "../asset/hero/herobanner2 (1).webp"; 
+import Banner2 from "../asset/hero/herobanner2.webp"; 
+// --- NEW MOBILE ASSETS ---
+import MobileBanner1 from "../asset/hero/mobileherobanner1.webp"; 
+import MobileBanner2 from "../asset/hero/mobileherobanner2.webp"; 
 
-const carouselImages = [Banner1, Banner2];
+const desktopImages = [Banner1, Banner2];
+const mobileImages = [MobileBanner1, MobileBanner2];
 
 export default function EcommerceHero() {
   const [index, setIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Handle screen resize to swap image sets
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 1024);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  const currentImages = isMobile ? mobileImages : desktopImages;
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setIndex((prev) => (prev + 1) % carouselImages.length);
+      setIndex((prev) => (prev + 1) % currentImages.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [currentImages]);
 
   return (
     <section className="relative w-full h-[600px] lg:h-[800px] flex items-center overflow-hidden font-sans">
       
       {/* ================= BACKGROUND CAROUSEL (Static Transitions) ================= */}
       <div className="absolute inset-0 z-0">
-        {carouselImages.map((img, i) => (
+        {currentImages.map((img, i) => (
           <div
             key={i}
             className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
@@ -35,7 +50,7 @@ export default function EcommerceHero() {
               className="w-full h-full object-cover"
             />
             {/* Dark overlay for text contrast - Blur Removed */}
-            <div className="absolute inset-0 bg-slate-900/20" />
+            <div className="absolute inset-0 bg-slate-900/40" />
           </div>
         ))}
       </div>
@@ -77,7 +92,7 @@ export default function EcommerceHero() {
 
       {/* Progress Indicators */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3 z-30">
-        {carouselImages.map((_, i) => (
+        {currentImages.map((_, i) => (
           <button
             key={i}
             onClick={() => setIndex(i)}

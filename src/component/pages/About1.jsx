@@ -8,7 +8,6 @@ import {
   GlobeAltIcon,
   LightBulbIcon,
   BuildingLibraryIcon,
- 
 } from "@heroicons/react/24/outline";
 import AboutImg from "../../asset/about/about1.png";
 
@@ -26,16 +25,12 @@ export default function AboutUs() {
   return (
     <section className="relative min-h-screen bg-[#FAFAFA] text-slate-600 font-sans selection:bg-indigo-600 selection:text-white overflow-hidden">
       
-      {/* ================= ARCHITECTURAL GRID BACKGROUND ================= */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute inset-0 bg-[gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-100" />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-indigo-50/50 rounded-full blur-[120px]" />
-      </div>
+      {/* ================= BACKGROUND DECORATIONS REMOVED ================= */}
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 py-20 lg:py-28">
 
         {/* ================= 1. HERO SECTION ================= */}
-        <div className="flex flex-col items-start mb-32 relative">
+        <div className="flex flex-col items-start mb-32 relative text-left">
           <motion.div 
             {...fadeUp}
             className="inline-flex items-center gap-3 px-4 py-1.5 rounded-md bg-white border border-slate-200 shadow-sm mb-10"
@@ -46,14 +41,14 @@ export default function AboutUs() {
           
           <motion.h1 
             {...fadeUp}
-            className="text-4xl md:text-6xl lg:text-7xl font-serif text-slate-900 font-medium tracking-tighter leading-[1.1] mb-12 max-w-5xl"
+            className="text-4xl md:text-6xl lg:text-7xl font-serif text-slate-900 font-medium tracking-tighter leading-[1.1] mb-12 max-w-5xl text-left"
           >
             At Cool Max Scent, we specialize in delivering <span className="italic text-indigo-600 font-light">professional scent diffuser machines</span> and complete home fragrance systems.
           </motion.h1>
           
           <motion.div 
             {...fadeUp}
-            className="grid lg:grid-cols-2 gap-12 border-t border-slate-200 pt-12"
+            className="grid lg:grid-cols-2 gap-12 border-t border-slate-200 pt-12 text-left"
           >
             <p className="text-xl font-light leading-relaxed text-slate-500">
               We provide scenting solutions for homes, hotels, offices, retail spaces, and large commercial environments across the UAE. Based in Dubai, we help businesses and homeowners transform ordinary spaces into pleasant, welcoming environments using advanced aroma scent diffuser technology.
@@ -73,7 +68,7 @@ export default function AboutUs() {
         </div>
 
         {/* ================= 2. CONTENT SPLIT ================= */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center mb-40">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center mb-40 text-left">
           <motion.div 
             {...fadeUp}
             className="lg:col-span-5 relative"
@@ -128,8 +123,8 @@ export default function AboutUs() {
         </div>
 
         {/* ================= 3. EXPERTISE GRID ================= */}
-        <div className="mb-40">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+        <div className="mb-40 text-left">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 text-left">
             <h2 className="text-4xl md:text-5xl font-serif text-slate-900 tracking-tight">Our Expertise</h2>
             <p className="text-slate-500 text-lg max-w-md">End-to-end scenting ecosystems designed for performance.</p>
           </div>
@@ -137,8 +132,8 @@ export default function AboutUs() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 bg-white p-10 rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-xl transition-all">
               <div className="mb-8 p-4 bg-slate-50 w-fit rounded-xl border border-slate-100"><BuildingLibraryIcon className="w-8 h-8 text-indigo-600"/></div>
-              <h3 className="text-2xl font-serif text-slate-900 mb-4">Commercial Scent Strategy</h3>
-              <p className="leading-relaxed font-light mb-8">
+              <h3 className="text-2xl font-serif text-slate-900 mb-4 text-left">Commercial Scent Strategy</h3>
+              <p className="leading-relaxed font-light mb-8 text-left">
                 We design comprehensive scent maps for hotels, malls, and offices, utilizing HVAC scent diffusers to ensure uniform coverage without overwhelming the senses.
               </p>
               <div className="flex flex-wrap gap-3">
@@ -150,8 +145,8 @@ export default function AboutUs() {
             <div className="bg-slate-900 p-10 rounded-[2rem] text-white shadow-2xl flex flex-col justify-between">
               <div>
                 <div className="mb-8 p-4 bg-white/10 w-fit rounded-xl border border-white/10"><ChartBarIcon className="w-8 h-8 text-indigo-400"/></div>
-                <h3 className="text-xl font-serif mb-4">Ongoing Maintenance</h3>
-                <p className="text-slate-400 font-light leading-relaxed mb-8 text-sm">
+                <h3 className="text-xl font-serif mb-4 text-left">Ongoing Maintenance</h3>
+                <p className="text-slate-400 font-light leading-relaxed mb-8 text-sm text-left">
                   A scent machine is only as good as its service. We provide refill plans, cleaning, and technical calibration to ensure 24/7 uptime.
                 </p>
               </div>
@@ -160,17 +155,17 @@ export default function AboutUs() {
               </a>
             </div>
 
-            <div className="bg-white p-10 rounded-[2rem] border border-slate-200 shadow-sm">
-              <div className="mb-6 p-4 bg-slate-50 w-fit rounded-xl"><LightBulbIcon className="w-8 h-8 text-slate-400"/></div>
-              <h3 className="text-xl font-serif text-slate-900 mb-3">Residential Systems</h3>
-              <p className="font-light leading-relaxed text-sm">Discreet, quiet, and effective home diffusers that blend into your decor.</p>
+            <div className="bg-white p-10 rounded-[2rem] border border-slate-200 shadow-sm text-left">
+              <div className="mb-6 p-4 bg-slate-50 w-fit rounded-xl text-left"><LightBulbIcon className="w-8 h-8 text-slate-400"/></div>
+              <h3 className="text-xl font-serif text-slate-900 mb-3 text-left">Residential Systems</h3>
+              <p className="font-light leading-relaxed text-sm text-left">Discreet, quiet, and effective home diffusers that blend into your decor.</p>
             </div>
 
-            <div className="lg:col-span-2 bg-white p-10 rounded-[2rem] border border-slate-200 shadow-sm flex flex-col md:flex-row gap-8 items-center">
+            <div className="lg:col-span-2 bg-white p-10 rounded-[2rem] border border-slate-200 shadow-sm flex flex-col md:flex-row gap-8 items-center text-left">
               <div className="shrink-0 p-6 bg-indigo-50 rounded-full border border-indigo-100"><SparklesIcon className="w-10 h-10 text-indigo-600"/></div>
-              <div>
-                <h3 className="text-xl font-serif text-slate-900 mb-3">Scent Branding</h3>
-                <p className="font-light leading-relaxed text-sm">Create a signature scent identity that customers associate with your brand. We help you choose notes that define your ethos.</p>
+              <div className="text-left">
+                <h3 className="text-xl font-serif text-slate-900 mb-3 text-left">Scent Branding</h3>
+                <p className="font-light leading-relaxed text-sm text-left">Create a signature scent identity that customers associate with your brand. We help you choose notes that define your ethos.</p>
               </div>
             </div>
           </div>
@@ -212,7 +207,7 @@ export default function AboutUs() {
               Get a Free Consultation <ArrowRightIcon className="w-4 h-4" />
             </a>
             <a 
-              href="/contact"
+              href="/products"
               className="w-full sm:w-auto px-10 py-5 bg-white text-slate-900 border border-slate-200 font-bold text-xs uppercase tracking-[0.2em] hover:bg-slate-50 transition-all rounded-full flex items-center justify-center shadow-sm"
             >
               View Product Catalog

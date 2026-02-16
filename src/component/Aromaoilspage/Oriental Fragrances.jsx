@@ -45,7 +45,7 @@ const OrientalAromaOilsPage = () => {
       category: "Oriental",
       code: "CM-0102-OR",
       strength: "Strong",
-      path: "/aroma/arabian-bakhour",
+      path: "/aroma/arabian-peninsula",
       top: "Saffron, Oudh, Spiced Rose",
       middle: "Amber, Frankincense, Sandalwood",
       base: "Musk, Leather, Myrrh, Patchouli",

@@ -95,7 +95,7 @@ export default function IndustriesSection() {
       <section className="relative py-24 bg-white overflow-hidden text-slate-600">
          {/* Background Decoration */}
          <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
-         <div className="absolute right-0 top-0 w-[400px] h-[400px] bg-blue-50 rounded-full blur-[100px] opacity-60 pointer-events-none" />
+         <div className="absolute right-0 top-0 w-[400px] h-[400px]  opacity-60 pointer-events-none" />
 
          <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12">
             
