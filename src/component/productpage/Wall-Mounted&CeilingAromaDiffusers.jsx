@@ -20,7 +20,7 @@ import {
 // --- UPDATED IMAGE IMPORTS BASED ON YOUR DIRECTORY ---
 import HeroImg from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/1.webp"; 
 import Product1 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/2.webp"; 
-import Product2 from "../../asset/productimg/CMwebpimg/AeroMax Pro/1.webp"; 
+import Product2 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/5.webp"; 
 import FeatureImg from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/5.webp"; 
 
 // Optimized animation settings
