@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { 
   BuildingOfficeIcon, 
   WrenchScrewdriverIcon, 
@@ -32,7 +33,7 @@ const smoothFadeUp = {
 };
 
 export default function WallMountedDiffusersPage() {
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "971509282702";
 
   // --- SEO Implementation ---
   useEffect(() => {
@@ -44,7 +45,7 @@ export default function WallMountedDiffusersPage() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden">
+    <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
       <link rel="canonical" href="https://coolmaxscent.com/wall-mounted-and-ceiling-aroma-diffuser" />
       
       {/* ================= GLOBAL BACKGROUND ================= */}
@@ -66,12 +67,12 @@ export default function WallMountedDiffusersPage() {
             >
               <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6 shadow-sm mt-16 relative z-10">
                 <SparklesIcon className="w-4 h-4 text-blue-600" />
-                <span className="text-blue-700 text-[10px] font-black uppercase tracking-[0.2em]">
+                <span className="text-blue-700 text-[10px] font-black uppercase tracking-[0.3em]">
                   Wall-Mounted & Ceiling Aroma Diffusers in UAE
                 </span>
               </div>
               
-              <h1 className="text-5xl md:text-7xl lg:text-6xl xl:text-6xl font-serif text-slate-900 tracking-tighter mb-6 leading-[0.95]">
+              <h1 className="text-5xl md:text-7xl lg:text-6xl xl:text-7xl font-serif text-slate-900 tracking-tighter mb-6 leading-[0.95]">
                 Wall-Mounted & Ceiling <br />
                 <span className="italic text-slate-400 font-light pr-2">Aroma Diffusers in UAE.</span>
               </h1>
@@ -87,11 +88,11 @@ export default function WallMountedDiffusersPage() {
               </div>
 
               <div className="flex flex-wrap gap-4 font-sans">
-                <a href="/contact" className="px-10 py-5 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-600 transition-all shadow-xl">
+                <Link to="/contact" className="px-10 py-5 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-600 transition-all shadow-xl">
                   Get a Quote
-                </a>
+                </Link>
                 <a 
-                  href={`https://wa.me/${whatsappNumber}`}
+                  href={`https://wa.me/${whatsappNumber.replace(/\s/g, '')}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-10 py-5 bg-[#25D366] text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center gap-3"
@@ -120,7 +121,7 @@ export default function WallMountedDiffusersPage() {
         </section>
 
         {/* ================= SECTION 1: COLLECTION ================= */}
-        <section className="py-20 border-t border-slate-100">
+        <section className="py-20 border-t border-slate-100 text-left">
           <motion.div {...smoothFadeUp} className="mb-16 text-center max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-6xl font-serif text-slate-900 tracking-tighter leading-none">Our Wall-Mounted & Ceiling Diffuser Range</h2>
             <p className="text-lg text-slate-500 mt-4 font-light">Explore our range of fixed-installation aroma diffusers designed for reliable daily use in commercial and semi-commercial environments.</p>
@@ -133,14 +134,14 @@ export default function WallMountedDiffusersPage() {
                 name: "CeilAir Pro – Ceiling-Mounted Aroma Diffuser", 
                 desc: "A discreet Ceiling Aroma Diffusers unit designed for even fragrance distribution in enclosed commercial spaces. Ideal where minimal visual presence is required.",
                 suits: ["Corridors", "Clinics", "Small lobbies", "Office hallways"],
-                path: "/product/ceilair"
+                path: "/wall-mounted-and-ceiling-aroma-diffuser/ceil-air-pro-diffuser/"
               },
               { 
                 img: Product2, 
                 name: "AeroMax Pro – Wall-Mounted Professional Diffuser", 
                 desc: "A robust Wall-Mounted Aroma Diffusers unit designed for steady performance and consistent fragrance output throughout the day.",
                 suits: ["Offices", "Waiting areas", "Reception zones", "Meeting rooms"],
-                path: "/product/aeromax-pro"
+                path: "/wall-mounted-and-ceiling-aroma-diffuser/aeromax-pro-diffuser/"
               }
             ].map((product, idx) => (
               <motion.div 
@@ -153,7 +154,7 @@ export default function WallMountedDiffusersPage() {
                 </div>
                 <h3 className="text-2xl font-serif text-slate-900 mb-4">{product.name}</h3>
                 <p className="text-slate-600 mb-6 font-light flex-grow">{product.desc}</p>
-                <div className="bg-white border border-slate-100 rounded-2xl p-4 mb-8">
+                <div className="bg-white border border-slate-100 rounded-2xl p-4 mb-8 text-left">
                   <span className="text-[10px] font-black text-blue-600 uppercase tracking-widest block mb-2">Best suited for:</span>
                   <div className="flex flex-wrap gap-2">
                     {product.suits.map((suit, i) => (
@@ -161,16 +162,16 @@ export default function WallMountedDiffusersPage() {
                     ))}
                   </div>
                 </div>
-                <a href={product.path} className="w-full py-4 rounded-2xl bg-slate-900 text-white font-black uppercase text-center text-[10px] tracking-widest hover:bg-blue-600 transition-all">
+                <Link to={product.path} className="w-full py-4 rounded-2xl bg-slate-900 text-white font-black uppercase text-center text-[10px] tracking-widest hover:bg-blue-600 transition-all">
                   View product details
-                </a>
+                </Link>
               </motion.div>
             ))}
           </div>
         </section>
 
         {/* ================= SECTION 3: WHY CHOOSE ================= */}
-        <section className="py-16">
+        <section className="py-16 text-left">
           <div className="bg-slate-900 rounded-[3rem] p-10 md:p-20 text-left text-white relative overflow-hidden shadow-2xl">
             <h2 className="text-3xl md:text-5xl font-serif mb-8 tracking-tighter leading-none">Why Choose Wall-Mounted & Ceiling Aroma Diffusers in UAE?</h2>
             <p className="text-slate-400 mb-12 text-lg max-w-3xl">Fixed-installation aroma diffusers are preferred in professional environments where space efficiency and reliability are important.</p>
@@ -181,12 +182,12 @@ export default function WallMountedDiffusersPage() {
                 { title: "Professional Appearance", desc: "Clean installation enhances the overall look of the interior.", icon: <CheckCircleIcon /> },
                 { title: "Low Maintenance", desc: "Designed for continuous operation with minimal attention.", icon: <ClockIcon /> }
               ].map((item, i) => (
-                <div key={i} className="space-y-4">
+                <div key={i} className="space-y-4 text-left">
                   <div className="w-12 h-12 rounded-xl bg-blue-600/20 flex items-center justify-center text-blue-400">
                     {React.cloneElement(item.icon, { className: "w-6 h-6" })}
                   </div>
-                  <h3 className="font-bold text-lg leading-tight">{item.title}</h3>
-                  <p className="text-slate-400 text-sm font-light leading-relaxed">{item.desc}</p>
+                  <h3 className="font-bold text-lg leading-tight text-left">{item.title}</h3>
+                  <p className="text-slate-400 text-sm font-light leading-relaxed text-left">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -213,21 +214,22 @@ export default function WallMountedDiffusersPage() {
         </section>
 
         {/* ================= SECTION 5: HOW IT WORKS ================= */}
-        <section className="py-16 bg-slate-50 rounded-[4rem] border border-slate-100">
+        <section className="py-16 bg-slate-50 rounded-[4rem] border border-slate-100 text-left">
           <div className="grid lg:grid-cols-2 gap-16 items-center px-8 md:px-16 text-left shadow-sm">
             <div>
               <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none">How Wall-Mounted & Ceiling Aroma Diffusers Work</h2>
               <p className="text-slate-500 text-lg font-light leading-relaxed mb-8 text-justify md:text-left">
                 These aroma diffusers use controlled atomization technology to release fragrance evenly into the air. Their fixed position allows consistent diffusion without interference from movement or airflow changes.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
                 {[
                   { title: "Quiet operation", icon: <SpeakerXMarkIcon /> },
                   { title: "Controlled fragrance intensity", icon: <BoltIcon /> },
                   { title: "Durable design for daily use", icon: <WrenchScrewdriverIcon /> },
                   { title: "Efficient fragrance consumption", icon: <SparklesIcon /> }
                 ].map((feat, i) => (
-                  <div key={i} className="flex items-center gap-3">
+                  <div key={i} className="flex items-center gap-3 text-left">
                     <CheckCircleIcon className="w-5 h-5 text-blue-600 flex-shrink-0" />
                     <span className="text-sm font-bold text-slate-700">{feat.title}</span>
                   </div>
@@ -243,32 +245,32 @@ export default function WallMountedDiffusersPage() {
         {/* ================= SECTION 6: HOW TO CHOOSE ================= */}
         <section className="py-16 text-left">
           <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter text-center">How to Choose the Right Fixed Diffuser</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
             {[
               { title: "Space Layout", desc: "Wall or ceiling placement should allow even fragrance distribution." },
               { title: "Area Size", desc: "Choose a diffuser designed to match the room size." },
               { title: "Foot Traffic", desc: "High-traffic areas benefit from continuous diffusion." },
               { title: "Design Preference", desc: "Discreet designs work best in professional interiors." }
             ].map((item, i) => (
-              <div key={i} className="p-8 bg-white border border-slate-100 rounded-[2.5rem] shadow-sm">
-                <h3 className="text-blue-600 font-black text-[10px] uppercase tracking-widest mb-3">{item.title}</h3>
-                <p className="text-sm text-slate-500 font-light leading-relaxed">{item.desc}</p>
+              <div key={i} className="p-8 bg-white border border-slate-100 rounded-[2.5rem] shadow-sm text-left">
+                <h3 className="text-blue-600 font-black text-[10px] uppercase tracking-widest mb-3 text-left">{item.title}</h3>
+                <p className="text-sm text-slate-500 font-light leading-relaxed text-left">{item.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* ================= SECTION 7: WHY COOL MAX ================= */}
-        <section className="py-16">
-          <div className="bg-slate-50 rounded-[3rem] p-10 md:p-16 border border-slate-100 text-left shadow-sm">
-            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter text-center lg:text-left">Why Choose Cool Max Wall-Mounted & Ceiling Aroma Diffusers in UAE?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section className="py-16 text-left font-sans">
+          <div className="bg-slate-50 rounded-[3rem] p-10 md:p-16 border border-slate-100 shadow-sm text-left">
+            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter leading-none text-center lg:text-left">Why Choose Cool Max?</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
               {[
                 "UAE-based company with local support",
                 "Professional-grade scent diffuser machines",
                 "Suitable for offices, clinics, and commercial spaces",
                 "Easy maintenance and refill support",
-                "Trusted by businesses across multiple industries"
+                "Trusted by businesses across UAE industries"
               ].map((reason, i) => (
                 <div key={i} className="flex items-center gap-4 bg-white p-6 rounded-2xl border border-slate-100 shadow-sm transition-all hover:border-blue-200">
                   <ShieldCheckIcon className="w-6 h-6 text-blue-600 flex-shrink-0" />
@@ -276,40 +278,37 @@ export default function WallMountedDiffusersPage() {
                 </div>
               ))}
             </div>
-            <p className="mt-10 text-blue-600 font-serif italic text-lg text-center">We focus on long-term performance and reliability.</p>
           </div>
         </section>
 
         {/* ================= SECTION 8: RELATED ================= */}
         <section className="py-16 text-center">
-           <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter leading-tight">Related Scenting Solutions</h2>
+           <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter leading-tight text-center">Related Scenting Solutions</h2>
            <div className="flex flex-wrap justify-center gap-6">
              {[
-               { name: "Commercial Aroma Diffusers", path: "/commercial-aroma-diffuser" },
-               { name: "HVAC Scenting Solutions", path: "/large-area-hvac-aroma-diffuser" },
-               { name: "Maintenance & Refill Support", path: "/contact" }
+               { name: "Commercial Aroma Diffusers", path: "/commercial-aroma-diffuser/" },
+               { name: "Large Area & HVAC Aroma Diffusers", path: "/large-area-and-hvac-aroma-diffusers/" },
+               { name: "Maintenance & Refill Support", path: "/maintenance-and-refill-support-services/" }
              ].map((sol, i) => (
-               <a href={sol.path} key={i} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer">{sol.name}</a>
+               <Link key={i} to={sol.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer">{sol.name}</Link>
              ))}
            </div>
-           <p className="mt-8 text-slate-400 text-sm italic text-center">These solutions help maintain freshness across different environments.</p>
         </section>
 
         {/* ================= SECTION 9: MASTER CTA ================= */}
         <section className="py-24 text-center relative px-4">
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-5xl mx-auto relative z-10 text-center">
-            <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-8 tracking-tighter leading-none">
+            <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-center">
               Need Help Choosing the <br /> <span className="italic text-blue-600 font-light text-center">Right Fixed-Installation Diffuser?</span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-3xl mx-auto font-light leading-relaxed text-center font-sans">
-              Whether you are planning a new office setup or upgrading an existing commercial space, Cool Max offers reliable Wall-Mounted Aroma Diffusers and Ceiling Aroma Diffusers tailored to your needs. Our team will help you select the right solution and provide ongoing support.
+              Whether you are planning a new office setup or upgrading an existing commercial space, Cool Max offers reliable Wall-Mounted Aroma Diffusers and Ceiling Aroma Diffusers tailored to your needs.
             </p>
-            <p className="text-sm font-black uppercase text-blue-600 tracking-widest mb-8 text-center">Looking for wall-mounted and ceiling aroma diffusers in UAE?</p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 font-sans">
-              <a href="/contact" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 font-sans text-center">
+              <Link to="/contact" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
                 Contact Cool Max Today <ArrowRightIcon className="w-4 h-4"/>
-              </a>
-              <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3 text-center">
+              </Link>
+              <a href={`https://wa.me/${whatsappNumber.replace(/\s/g, '')}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3 text-center">
                 <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert
               </a>
             </div>

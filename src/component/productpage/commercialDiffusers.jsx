@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { 
   BuildingStorefrontIcon, 
   UserGroupIcon, 
@@ -30,7 +31,7 @@ const smoothFadeUp = {
 };
 
 export default function CommercialDiffusersPage() {
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "+971509282702";
 
   // --- SEO Implementation ---
   useEffect(() => {
@@ -87,7 +88,7 @@ export default function CommercialDiffusersPage() {
                   Explore Collection
                 </a>
                 <a 
-                  href={`https://wa.me/${whatsappNumber}`}
+                  href={`https://wa.me/${whatsappNumber.replace('+', '')}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-10 py-5 bg-[#25D366] text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center gap-3 font-sans"
@@ -119,7 +120,7 @@ export default function CommercialDiffusersPage() {
         <section className="py-20 border-t border-slate-100" id="collection">
           <motion.div {...smoothFadeUp} className="mb-16 text-center max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-6xl font-serif text-slate-900 tracking-tighter uppercase">Our Commercial Aroma Diffuser Collection</h2>
-            <p className="text-lg text-slate-500 mt-4 font-light text-center">
+            <p className="text-lg text-slate-500 mt-4 font-light text-center md:text-center">
               Explore our range of professional aroma diffusers designed for commercial and semi-commercial environments.
             </p>
           </motion.div>
@@ -131,16 +132,16 @@ export default function CommercialDiffusersPage() {
                 <img src={Product1Img} alt="AeroBlack Med" className="h-full object-contain group-hover:scale-105 transition-transform duration-500" />
               </div>
               <h3 className="text-3xl font-serif text-slate-900 mb-4">AeroBlack Med – Commercial Aroma Diffuser</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed font-light text-base flex-grow">
+              <p className="text-slate-600 mb-6 leading-relaxed font-light text-base flex-grow text-justify">
                 A reliable commercial scent diffuser designed for continuous use in offices and business interiors. Provides even fragrance distribution without overpowering the space.
               </p>
               <div className="bg-white border border-slate-100 rounded-2xl p-4 mb-6">
                 <span className="text-[10px] font-black text-slate-400 uppercase block mb-2 tracking-widest font-sans">Best suited for:</span>
-                <p className="text-xs font-bold text-slate-700 font-sans">Offices • Clinics • Training centers • Corporate spaces</p>
+                <p className="text-xs font-bold text-slate-700 font-sans text-left">Offices • Clinics • Training centers • Corporate spaces</p>
               </div>
-              <a href="/product/aeroblack-med" className="block w-full py-4 rounded-2xl bg-slate-900 text-white font-black tracking-widest uppercase text-[10px] hover:bg-blue-600 transition-all text-center font-sans shadow-lg">
+              <Link to="/commercial-aroma-diffusers/aeroblack-med-diffuser/" className="block w-full py-4 rounded-2xl bg-slate-900 text-white font-black tracking-widest uppercase text-[10px] hover:bg-blue-600 transition-all text-center font-sans shadow-lg">
                 View product details
-              </a>
+              </Link>
             </motion.div>
 
             {/* MistBox X */}
@@ -149,30 +150,30 @@ export default function CommercialDiffusersPage() {
                 <img src={Product2Img} alt="MistBox X" className="h-full object-contain group-hover:scale-105 transition-transform duration-500" />
               </div>
               <h3 className="text-3xl font-serif text-slate-900 mb-4">MistBox X – Mid-Size Commercial Diffuser</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed font-light text-base flex-grow">
+              <p className="text-slate-600 mb-6 leading-relaxed font-light text-base flex-grow text-justify">
                 A compact yet powerful aroma diffuser suitable for medium-sized commercial areas. Designed for steady performance and easy maintenance.
               </p>
               <div className="bg-white border border-slate-100 rounded-2xl p-4 mb-6">
                 <span className="text-[10px] font-black text-slate-400 uppercase block mb-2 tracking-widest font-sans">Best suited for:</span>
-                <p className="text-xs font-bold text-slate-700 font-sans">Retail stores • Reception areas • Waiting lounges • Salons</p>
+                <p className="text-xs font-bold text-slate-700 font-sans text-left">Retail stores • Reception areas • Waiting lounges • Salons</p>
               </div>
-              <a href="/product/mistbox" className="block w-full py-4 rounded-2xl bg-slate-900 text-white font-black tracking-widest uppercase text-[10px] hover:bg-blue-600 transition-all text-center font-sans shadow-lg">
+              <Link to="/commercial-aroma-diffusers/mistbox-x-diffuser/" className="block w-full py-4 rounded-2xl bg-slate-900 text-white font-black tracking-widest uppercase text-[10px] hover:bg-blue-600 transition-all text-center font-sans shadow-lg">
                 View product details
-              </a>
+              </Link>
             </motion.div>
           </div>
         </section>
 
         {/* ================= SECTION 2: WHY USE ================= */}
-        <section className="py-20">
-          <div className="bg-slate-900 rounded-[4rem] p-10 md:p-20 text-white overflow-hidden relative shadow-2xl">
-            <motion.div {...smoothFadeUp} className="relative z-10">
+        <section className="py-20 text-left">
+          <div className="bg-slate-900 rounded-[4rem] p-10 md:p-20 text-white overflow-hidden relative shadow-2xl text-left">
+            <motion.div {...smoothFadeUp} className="relative z-10 text-left">
               <h2 className="text-4xl md:text-6xl font-serif mb-8 tracking-tighter uppercase text-left">Why Use Commercial Aroma Diffusers?</h2>
               <p className="text-slate-400 mb-12 text-xl font-light max-w-3xl text-left">
                 Business environments require scenting solutions that go beyond basic air fresheners. Commercial aroma diffusers are designed to perform consistently throughout operating hours.
               </p>
               
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
                 {[
                   { title: "Consistent Fragrance Coverage", desc: "Ensures the space remains fresh from opening to closing time.", icon: <ClockIcon /> },
                   { title: "Professional & Balanced Scenting", desc: "Subtle fragrance that enhances comfort without distraction.", icon: <SparklesIcon /> },
@@ -180,11 +181,11 @@ export default function CommercialDiffusersPage() {
                   { title: "Low Maintenance", desc: "Reduced need for frequent refills and manual intervention.", icon: <Cog6ToothIcon /> }
                 ].map((item, i) => (
                   <div key={i} className="space-y-4 text-left">
-                    <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-blue-400 border border-white/10">
+                    <div className="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center text-blue-400 border border-white/10 text-left">
                       {item.icon}
                     </div>
-                    <h4 className="font-bold text-lg leading-tight font-sans">{item.title}</h4>
-                    <p className="text-slate-400 text-sm font-light leading-relaxed font-sans">{item.desc}</p>
+                    <h4 className="font-bold text-lg leading-tight font-sans text-left">{item.title}</h4>
+                    <p className="text-slate-400 text-sm font-light leading-relaxed font-sans text-left">{item.desc}</p>
                   </div>
                 ))}
               </div>
@@ -196,7 +197,7 @@ export default function CommercialDiffusersPage() {
         <section className="py-20 text-left font-sans">
           <motion.div {...smoothFadeUp}>
             <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-12 tracking-tighter uppercase text-center md:text-left">Where Commercial Aroma Diffusers Are Used</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
               {[
                 { title: "Corporate offices", icon: <BuildingOfficeIcon /> },
                 { title: "Clinics and healthcare centers", icon: <BeakerIcon /> },
@@ -204,11 +205,11 @@ export default function CommercialDiffusersPage() {
                 { title: "Educational institutions", icon: <AcademicCapIcon /> },
                 { title: "Business reception areas", icon: <UserGroupIcon /> }
               ].map((item, idx) => (
-                <div key={idx} className="p-8 bg-slate-50 border border-slate-100 rounded-[2.5rem] flex items-center gap-6 group hover:bg-white transition-all shadow-sm">
-                  <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-blue-600 border border-slate-100 shadow-sm group-hover:bg-blue-600 group-hover:text-white transition-all">
+                <div key={idx} className="p-8 bg-slate-50 border border-slate-100 rounded-[2.5rem] flex items-center gap-6 group hover:bg-white transition-all shadow-sm text-left">
+                  <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center text-blue-600 border border-slate-100 shadow-sm group-hover:bg-blue-600 group-hover:text-white transition-all text-left">
                     {React.cloneElement(item.icon, { className: "w-7 h-7" })}
                   </div>
-                  <h3 className="font-bold text-slate-800 text-lg">{item.title}</h3>
+                  <h3 className="font-bold text-slate-800 text-lg text-left">{item.title}</h3>
                 </div>
               ))}
             </div>
@@ -220,13 +221,14 @@ export default function CommercialDiffusersPage() {
 
         {/* ================= SECTION 4: HOW THEY WORK ================= */}
         <section className="py-20 border-t border-slate-100">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center text-left">
             <motion.div {...smoothFadeUp} className="text-left font-sans">
               <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-8 tracking-tighter uppercase text-left">How Commercial Aroma Diffusers Work</h2>
               <p className="text-slate-600 text-lg font-light leading-relaxed mb-8 text-left">
                 Commercial aroma diffusers use controlled atomization technology to disperse fragrance evenly across the space. The system releases fine fragrance particles that remain suspended in the air, ensuring uniform scent distribution.
               </p>
-              <div className="space-y-4">
+              
+              <div className="space-y-4 text-left">
                 {[
                   "Quiet operation suitable for workspaces",
                   "Adjustable fragrance intensity",
@@ -240,14 +242,14 @@ export default function CommercialDiffusersPage() {
               </div>
               <p className="mt-8 text-slate-500 italic text-left">This technology ensures reliable and comfortable scenting for business environments.</p>
             </motion.div>
-            <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} className="rounded-[3.5rem] overflow-hidden shadow-2xl border border-slate-100 flex items-center justify-center">
+            <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} className="rounded-[3.5rem] overflow-hidden shadow-2xl border border-slate-100 flex items-center justify-center text-left">
               <img src={FeatureImg} alt="Commercial Aroma Diffusion Technology" className="w-full h-auto object-cover" />
             </motion.div>
           </div>
         </section>
 
         {/* ================= SECTION 5: CHOOSING ================= */}
-        <section className="py-20 bg-slate-50 rounded-[4rem] px-8 md:px-16 border border-slate-200">
+        <section className="py-20 bg-slate-50 rounded-[4rem] px-8 md:px-16 border border-slate-200 text-left">
           <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-12 tracking-tighter text-center uppercase">Choosing the Right Commercial Aroma Diffuser</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-left font-sans">
             {[
@@ -271,7 +273,7 @@ export default function CommercialDiffusersPage() {
         {/* ================= SECTION 6: WHY COOL MAX ================= */}
         <section className="py-24 text-left font-sans">
           <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-12 tracking-tighter uppercase text-center md:text-left">Why Choose Cool Max Commercial Aroma Diffusers?</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
             {[
               "UAE-based company with local support",
               "Professional-grade commercial scent diffuser machines",
@@ -281,7 +283,7 @@ export default function CommercialDiffusersPage() {
             ].map((point, i) => (
               <div key={i} className="flex items-center gap-4 bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:border-blue-200 transition-all text-left">
                 <CheckCircleIcon className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                <span className="text-slate-700 font-medium">{point}</span>
+                <span className="text-slate-700 font-medium text-left">{point}</span>
               </div>
             ))}
           </div>
@@ -291,15 +293,15 @@ export default function CommercialDiffusersPage() {
         {/* ================= SECTION 7: RELATED ================= */}
         <section className="py-20 border-t border-slate-100 text-center font-sans">
           <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter uppercase text-center">Related Scenting Solutions</h2>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4 text-center">
             {[
-              { label: "Large Area & HVAC Aroma Diffusers", path: "/large-area-and-hvac-aroma-diffusers" },
-              { label: "Wall-Mounted & Ceiling Diffusers", path: "/wall-mounted-and-ceiling-aroma-diffuser" },
-              { label: "Maintenance & Refill Support", path: "/contact" }
+              { label: "Large Area & HVAC Aroma Diffusers", path: "/large-area-and-hvac-aroma-diffusers/" },
+              { label: "Wall-Mounted & Ceiling Diffusers", path: "/wall-mounted-and-ceiling-aroma-diffuser/" },
+              { label: "Maintenance & Refill Support", path: "/maintenance-and-refill-support-services/" }
             ].map((item, idx) => (
-              <a key={idx} href={item.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-xs font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm text-center">
+              <Link key={idx} to={item.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-xs font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm text-center">
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
           <p className="mt-8 text-slate-400 text-sm text-center italic">These solutions help create a complete scenting setup for business spaces.</p>
@@ -307,7 +309,7 @@ export default function CommercialDiffusersPage() {
 
         {/* ================= MASTER CTA ================= */}
         <section className="py-24 text-center bg-slate-900 rounded-[4rem] mb-20 text-white relative overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[100px] rounded-full" />
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[100px] rounded-full text-center" />
           <motion.div {...smoothFadeUp} className="max-w-4xl mx-auto px-6 relative z-10 text-center">
             <h2 className="text-4xl md:text-7xl font-serif mb-10 tracking-tighter leading-none uppercase text-center text-white">
               Need Help Choosing the <br/> 
@@ -320,11 +322,11 @@ export default function CommercialDiffusersPage() {
             <p className="text-sm font-black uppercase text-blue-500 tracking-widest mb-8 text-center">Looking for commercial aroma diffusers in UAE?</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 font-sans text-center">
-              <a href="/contact" className="w-full sm:w-auto px-12 py-6 bg-white text-slate-900 font-black text-xs uppercase tracking-[0.3em] rounded-2xl transition-all shadow-xl hover:bg-blue-600 hover:text-white flex items-center justify-center gap-3">
+              <Link to="/contact" className="w-full sm:w-auto px-12 py-6 bg-white text-slate-900 font-black text-xs uppercase tracking-[0.3em] rounded-2xl transition-all shadow-xl hover:bg-blue-600 hover:text-white flex items-center justify-center gap-3 text-center">
                 Contact Cool Max Today <ArrowRightIcon className="w-5 h-5 text-center"/>
-              </a>
+              </Link>
               <a 
-                href={`https://wa.me/${whatsappNumber}`}
+                href={`https://wa.me/${whatsappNumber.replace('+', '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-12 py-6 bg-[#25D366] text-white font-black text-xs uppercase tracking-[0.3em] rounded-2xl transition-all shadow-xl hover:bg-[#128C7E] flex items-center justify-center gap-3 text-center"

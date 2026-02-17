@@ -19,7 +19,7 @@ import FeatureImg1 from "../../asset/productimg/CMwebpimg/AirPulse 150/2.webp";
 import FeatureImg2 from "../../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/1.webp"; 
 
 export default function HVACSolutionsPage() {
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "+971509282702";
 
   // --- SEO METADATA IMPLEMENTATION ---
   useEffect(() => {
@@ -108,7 +108,7 @@ export default function HVACSolutionsPage() {
             viewport={{ once: true }}
             className="max-w-5xl mx-auto text-base md:text-lg leading-relaxed text-slate-600 space-y-8 text-left"
           >
-            <p className="first-letter:text-6xl md:first-letter:text-7xl first-letter:font-serif first-letter:text-cyan-600 first-letter:float-left first-letter:mr-4 first-letter:leading-none text-justify text-left">
+            <p className="first-letter:text-6xl md:first-letter:text-7xl first-letter:font-serif first-letter:text-cyan-600 first-letter:float-left first-letter:mr-4 first-letter:leading-none text-left">
               Scenting for Large Commercial Spaces requires a different approach. Standard air fresheners or small diffuser machines are not designed to cover wide areas or deliver consistent fragrance across multiple zones. At Cool Max Scent, we provide professional HVAC Scenting Solutions in UAE that allow fragrance to be evenly distributed through centralized air-conditioning systems.
             </p>
             <div className="p-6 bg-slate-50 border-l-4 border-cyan-600 rounded-r-2xl shadow-sm">
@@ -291,7 +291,7 @@ export default function HVACSolutionsPage() {
 
         {/* ================= SECTION 7: TECHNOLOGY ================= */}
         <section className="py-16">
-          <div className="bg-slate-900 rounded-[3rem] p-10 md:p-16 text-left relative overflow-hidden text-left">
+          <div className="bg-slate-900 rounded-[3rem] p-10 md:p-16 text-left relative overflow-hidden">
              <h2 className="text-3xl md:text-5xl font-serif text-white mb-8 tracking-tighter text-left">Technology Behind Our HVAC Scent Diffuser UAE Systems</h2>
              <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-4 text-left">
@@ -331,7 +331,7 @@ export default function HVACSolutionsPage() {
                 className="flex flex-col md:flex-row gap-6 md:gap-10 items-center p-8 rounded-[2.5rem] border border-slate-100 bg-slate-50 hover:bg-white hover:border-cyan-200 transition-all group text-left"
               >
                 <span className="text-4xl md:text-6xl font-serif text-slate-200 group-hover:text-cyan-100 transition-colors duration-500 text-left">{proc.step}</span>
-                <div className="flex-1 text-center md:text-left text-left">
+                <div className="flex-1 text-center md:text-left">
                   <h3 className="text-xl font-black uppercase tracking-tight text-slate-900 mb-1 text-left">{proc.title}</h3>
                   <p className="text-sm md:text-base text-slate-500 font-light text-left">{proc.desc}</p>
                 </div>

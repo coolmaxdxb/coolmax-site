@@ -18,7 +18,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- IMAGE ASSETS ---
-import HeroImg from "../../asset/productimg/CMwebpimg/AirPulse 150/1.webp"; 
+import HeroImg from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/5.webp"; 
 import FeatureImg1 from "../../asset/productimg/CMwebpimg/Mistbox X commercial Diffuser/1.webp"; 
 import FeatureImg2 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser/2.webp"; 
 
@@ -30,7 +30,7 @@ import FeatureImg2 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser
  */
 
 export default function MaintenancePage() {
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "+971509282702";
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-emerald-100 overflow-x-hidden text-left">
@@ -290,7 +290,7 @@ export default function MaintenancePage() {
                 className="flex flex-col md:flex-row gap-6 md:gap-10 items-center p-8 rounded-[2.5rem] border border-slate-100 bg-slate-50 hover:bg-white hover:border-emerald-200 transition-all group shadow-sm text-left"
               >
                 <span className="text-4xl md:text-6xl font-serif text-slate-200 group-hover:text-emerald-100 transition-colors duration-500 text-left">{proc.step}</span>
-                <div className="flex-1 text-center md:text-left text-left">
+                <div className="flex-1 text-center md:text-left">
                   <h3 className="text-xl font-black uppercase tracking-tight text-slate-900 mb-1 text-left">{proc.title}</h3>
                   <p className="text-sm md:text-base text-slate-500 font-light text-left">{proc.desc}</p>
                 </div>
@@ -338,7 +338,7 @@ export default function MaintenancePage() {
                    </li>
                  ))}
                </ul>
-               <p className="mt-8 text-emerald-400 font-serif italic text-lg relative z-10 text-left text-justify">"We focus on long-term partnerships, not one-time installations."</p>
+               <p className="mt-8 text-emerald-400 font-serif italic text-lg relative z-10 text-left">"We focus on long-term partnerships, not one-time installations."</p>
             </div>
           </div>
         </section>
@@ -362,14 +362,14 @@ export default function MaintenancePage() {
 
            <div className="max-w-4xl mx-auto p-10 bg-emerald-50 rounded-[3rem] border border-emerald-100 text-left">
              <h3 className="text-2xl md:text-4xl font-serif text-emerald-900 mb-6 text-left">Supporting Your Brand Through Consistent Scenting</h3>
-             <p className="text-emerald-800 leading-relaxed font-light text-left text-justify">
+             <p className="text-emerald-800 leading-relaxed font-light text-left">
                A scent system is part of your environment identity. With proper maintenance, your home fragrance system, commercial scent machine, or HVAC scent diffuser continues to support comfort, hygiene, and brand perception. Cool Max ensures your scenting investment delivers long-term value.
              </p>
            </div>
         </section>
 
         {/* ================= SECTION 12: MASTER CTA ================= */}
-        <section className="py-24 text-center relative px-4 text-center">
+        <section className="py-24 text-center relative px-4">
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-5xl mx-auto relative z-10 text-center">
             <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-center">
               Let’s Keep Your Scent Systems <br /> <span className="italic text-emerald-600 font-light text-center">Running Smoothly</span>

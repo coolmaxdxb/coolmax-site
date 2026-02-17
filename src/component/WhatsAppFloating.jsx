@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { PhoneIcon } from "@heroicons/react/24/solid";
 
 export default function FloatingContactButtons() {
-  const phoneNumber = "971522286401";
+  const phoneNumber = "+971509282702";
   const message = encodeURIComponent(
     "Hello Cool Max! I'm interested in your scenting solutions."
   );

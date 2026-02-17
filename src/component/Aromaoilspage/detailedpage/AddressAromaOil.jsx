@@ -18,7 +18,7 @@ import P1 from "../../../asset/Aroma oils img/ADDRESS.webp";
 
 const AddressAromaOilDetail = () => {
   // Redirection Links
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "+971509282702";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Address%20Aroma%20Oil%20(CM-0101-OR).`;
   const contactPath = "/contact";
 

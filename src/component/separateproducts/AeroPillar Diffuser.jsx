@@ -24,7 +24,7 @@ const AeroPillarPage = () => {
   const gallery = [AeroPillar1, AeroPillar2, AeroPillar3, AeroPillar4];
 
   // Redirection Links
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "+971509282702";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20AeroPillar%20Floor%20Diffuser.`;
   const contactPath = "/contact";
 

@@ -32,7 +32,7 @@ const fadeInUp = {
 };
 
 export default function CarAromaDiffusersPage() {
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "+971509282702";
 
   // --- SEO Implementation ---
   useEffect(() => {
@@ -129,10 +129,10 @@ export default function CarAromaDiffusersPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
-              { img: DriveMistProduct, name: "DriveScent – Compact Car Aroma Diffuser", path: "/product/drivemist", desc: "A sleek and portable car aroma diffuser designed for everyday driving. It delivers subtle, even fragrance and blends seamlessly into modern vehicle interiors.", suits: "Personal cars • Daily commuters • Small cabins" },
-              { img: VentoCarProduct, name: "VentoCar – Advanced Car & Personal Space Diffuser", path: "/product/ventocar", desc: "Designed for longer usage and consistent performance, this diffuser provides steady fragrance output throughout the day.", suits: "Company vehicles • Taxis • Ride-sharing cars" },
-              { img: DeskScentProduct, name: "Deskscent – Hybrid Personal Space Diffuser", path: "/product/deskscent", desc: "A high-performance hybrid diffuser engineered for seamless mobility between your vehicle and workspace. Featuring whisper-quiet operation and an elegant architectural design, it provides a consistent, sophisticated scent layer in confined environments without overpowering the senses.", suits: "Cars • Office desks • Meeting rooms • Small rooms" },
-              { img: NovaCarProduct, name: "NovaCar – Modern Vehicle Aroma Diffuser", path: "/product/novacar", desc: "A compact and efficient diffuser designed for shared and frequently used vehicles. Provides reliable fragrance diffusion with minimal attention.", suits: "Fleet vehicles • Service cars • Commercial use" },
+              { img: DriveMistProduct, name: "DriveScent – Compact Car Aroma Diffuser", path: "/car-aroma-diffusers/drive-scent-diffuser/", desc: "A sleek and portable car aroma diffuser designed for everyday driving. It delivers subtle, even fragrance and blends seamlessly into modern vehicle interiors.", suits: "Personal cars • Daily commuters • Small cabins" },
+              { img: VentoCarProduct, name: "VentoCar – Advanced Car & Personal Space Diffuser", path: "/car-aroma-diffusers/vento-car-diffuser/", desc: "Designed for longer usage and consistent performance, this diffuser provides steady fragrance output throughout the day.", suits: "Company vehicles • Taxis • Ride-sharing cars" },
+              { img: DeskScentProduct, name: "Deskscent – Hybrid Personal Space Diffuser", path: "/car-aroma-diffusers/desk-scent-diffuser/", desc: "A high-performance hybrid diffuser engineered for seamless mobility between your vehicle and workspace. Featuring whisper-quiet operation and an elegant architectural design, it provides a consistent, sophisticated scent layer in confined environments without overpowering the senses.", suits: "Cars • Office desks • Meeting rooms • Small rooms" },
+              { img: NovaCarProduct, name: "NovaCar – Modern Vehicle Aroma Diffuser", path: "/car-aroma-diffusers/nova-car-diffuser/", desc: "A compact and efficient diffuser designed for shared and frequently used vehicles. Provides reliable fragrance diffusion with minimal attention.", suits: "Fleet vehicles • Service cars • Commercial use" },
             ].map((product, idx) => (
               <motion.div key={idx} {...fadeInUp} className="group p-8 rounded-[3rem] bg-slate-50 border border-slate-100 transition-all hover:bg-white hover:shadow-2xl text-left flex flex-col h-full">
                 <div className="h-72 w-full bg-white rounded-[2rem] mb-8 flex items-center justify-center p-12 border border-slate-100">
@@ -276,7 +276,7 @@ export default function CarAromaDiffusersPage() {
              {[
                { label: "Desktop & Small Space Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser" },
                { label: "Commercial Aroma Diffusers", path: "/commercial-aroma-diffuser" },
-               { label: "Maintenance & Refill Support", path: "/contact" }
+               { label: "Maintenance & Refill Support", path: "/maintenance-and-refill-support-services/ " }
              ].map((sol, i) => (
                <Link key={i} to={sol.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer">{sol.label}</Link>
              ))}

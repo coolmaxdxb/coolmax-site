@@ -12,7 +12,7 @@ import {
 import AboutImg from "../../asset/about/about1.png";
 
 export default function AboutUs() {
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "+971509282702";
 
   // Animation Variant
   const fadeUp = {

@@ -74,7 +74,7 @@ export default function TalkToExpert() {
                 <div className="space-y-3 text-sm text-slate-500">
                    <div className="flex gap-3 items-start">
                       <MapPinIcon className="w-5 h-5 text-blue-600 shrink-0" />
-                      <span>Doha, Qatar</span>
+                      <span>Building Number: 64, Street:, Room No: 02, Office No:1, 7th Floor, 950 Zone: 27, Doha, Qatar</span>
                    </div>
                    <div className="flex gap-3 items-center">
                       <PhoneIcon className="w-5 h-5 text-blue-600 shrink-0" />

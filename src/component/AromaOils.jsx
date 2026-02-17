@@ -8,53 +8,61 @@ import HvacImg from "../../src/asset/Aroma oils img/Crystal.webp";
 import RoomImg from "../../src/asset//Aroma oils img/ENGLISH LAVENDER.webp";
 import AerosolImg from "../../src/asset/Aroma oils img/FLORAL.webp";
 
-// ================= DATA CONFIGURATION =================
+// ================= DATA CONFIGURATION (Paths Updated for SEO) =================
 
 const aromaCategories = [
   {
     title: "Fresh & Clean Scents",
     description: "Crisp, airy notes like linen, ocean breeze, and rain that evoke a sense of purity.",
     image: RoomImg,
+    path: "/fresh-aroma-oil/", // Updated SEO URL
   },
   {
     title: "Floral Comfort Scents",
     description: "Soft, blooming aromas like jasmine, rose, and lily designed for elegance and calm.",
     image: LobbyImg,
+    path: "/perfumers-choice-aroma-oil/", // Often mapped to floral/perfumer choice
   },
   {
     title: "Energy & Citrus Scents",
     description: "Zesty blends of lemon, orange, and bergamot to boost productivity and mood.",
     image: WallImg,
+    path: "/perfumers-choice-aroma-oil/", 
   },
   {
     title: "Warm & Luxury Scents",
     description: "Rich notes of oud, amber, leather, and spices for a sophisticated, high-end atmosphere.",
     image: HvacImg,
+    path: "/premium-aroma-oil/", // Updated SEO URL
   },
   {
     title: "Relaxation & Wellness",
     description: "Therapeutic blends featuring lavender, eucalyptus, and white tea for spas and homes.",
     image: RoomImg,
+    path: "/fresh-aroma-oil/", 
   },
   {
     title: "Signature Business Scents",
     description: "Bespoke olfactory logos created to define your brand identity.",
     image: LobbyImg,
+    path: "/oriental-aroma-oil/", // Updated SEO URL
   },
   {
     title: "Car & Personal Space",
     description: "Travel-friendly fragrance options for your commute and personal desk.",
     image: CarImg,
+    path: "/fresh-aroma-oil/", 
   },
   {
     title: "Trial & Sample Scents",
     description: "Discovery sets allowing you to experience our collection before committing.",
     image: AerosolImg,
+    path: "/perfumers-choice-aroma-oil/", 
   },
 ];
 
 export default function ProductCategories() {
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "+971509282702";
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
@@ -152,9 +160,12 @@ export default function ProductCategories() {
                     {cat.description}
                   </p>
                   
-                  <button className="mt-auto self-start text-[10px] font-black uppercase tracking-[0.2em] text-slate-900 border-b border-slate-200 pb-1 hover:text-blue-600 hover:border-blue-600 transition-all">
+                  <a 
+                    href={cat.path} 
+                    className="mt-auto self-start text-[10px] font-black uppercase tracking-[0.2em] text-slate-900 border-b border-slate-200 pb-1 hover:text-blue-600 hover:border-blue-600 transition-all"
+                  >
                     Discover Scent
-                  </button>
+                  </a>
                 </div>
               </div>
             ))}

@@ -22,7 +22,7 @@ import PersonalImg from "../../asset/productimg/CMwebpimg/NovaCar Diffuser/1.web
 import MaintenanceImg from "../../asset/productimg/CMwebpimg/Titan Diffuser/1.webp";
 
 export default function AllSolutionsPage() {
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "+971509282702";
 
   // --- SEO METADATA IMPLEMENTATION ---
   useEffect(() => {
@@ -42,7 +42,7 @@ export default function AllSolutionsPage() {
       focus: "Our scent marketing solutions focus on consistency, not overpowering fragrance, ensuring comfort for everyone in the space.",
       image: MarketingImg,
       icon: <SparklesIcon />,
-      link: "/scent-marketing"
+      link: "/scent-marketing-solutions/" // Updated URL
     },
     {
       id: "commercial",
@@ -52,7 +52,7 @@ export default function AllSolutionsPage() {
       focus: "These systems are ideal for businesses looking for a professional alternative to manual air fresheners.",
       image: CommercialImg,
       icon: <BuildingOffice2Icon />,
-      link: "/commercial-diffusion"
+      link: "/commercial-aroma-diffusion-solutions/" // Updated URL
     },
     {
       id: "hvac",
@@ -62,7 +62,7 @@ export default function AllSolutionsPage() {
       focus: "Using professional HVAC scent diffusers, fragrance is distributed discreetly and consistently without visible machines.",
       image: HVACImg,
       icon: <CloudIcon />,
-      link: "/hvac-scenting"
+      link: "/hvac-scenting-solutions/" // Updated URL
     },
     {
       id: "washroom",
@@ -72,7 +72,7 @@ export default function AllSolutionsPage() {
       usage: "Offices, Schools and colleges, Hospitals and clinics, Restaurants and food chains, Shopping malls.",
       image: WashroomImg,
       icon: <BoltIcon />,
-      link: "/washroom-hygiene"
+      link: "/washroom-hygiene-solutions/" // Updated URL
     },
     {
       id: "personal",
@@ -82,7 +82,7 @@ export default function AllSolutionsPage() {
       focus: "Our car aroma diffusers and compact home diffuser machines offer convenience, portability, and subtle fragrance output.",
       image: PersonalImg,
       icon: <TruckIcon />,
-      link: "/car-scenting"
+      link: "/car-and-personal-space-scenting-solutions/" // Updated URL
     },
     {
       id: "maintenance",
@@ -92,7 +92,7 @@ export default function AllSolutionsPage() {
       focus: "Whether you use a hotel scent diffuser, commercial scent machine, or home fragrance system, our service team ensures reliable performance.",
       image: MaintenanceImg,
       icon: <WrenchScrewdriverIcon />,
-      link: "/maintenance"
+      link: "/maintenance-and-refill-support-services/" // Updated URL
     }
   ];
 
@@ -197,9 +197,6 @@ export default function AllSolutionsPage() {
                 </div>
               ))}
             </div>
-            <p className="mt-10 text-slate-600 italic">
-              Whether you need a home scent system, a commercial scent machine, or a hotel air freshener machine, our solutions are designed for consistency and reliability.
-            </p>
           </div>
         </section>
 
@@ -261,9 +258,6 @@ export default function AllSolutionsPage() {
         <section className="py-16">
           <div className="bg-slate-900 rounded-[4rem] p-10 md:p-20 relative overflow-hidden shadow-2xl text-left font-sans">
             <h2 className="text-4xl md:text-5xl font-serif text-white mb-10 tracking-tight">Why Choose Cool Max Solutions?</h2>
-            <p className="text-slate-400 text-lg mb-12 max-w-2xl font-light">
-              Businesses choose Cool Max because we focus on long-term reliability and provide the most effective Scent Marketing Solutions UAE.
-            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 "UAE-based service and support",
@@ -279,7 +273,6 @@ export default function AllSolutionsPage() {
                 </div>
               ))}
             </div>
-            <p className="mt-12 text-blue-300 font-serif text-xl italic text-left">"Our goal is to deliver scent and hygiene solutions that work consistently, day after day."</p>
           </div>
         </section>
 
@@ -288,10 +281,8 @@ export default function AllSolutionsPage() {
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-6 tracking-tighter leading-none text-center">One Partner. <br/><span className="italic text-blue-600 font-light">Complete Professional Scent & Hygiene Solutions in UAE</span></h2>
             <p className="text-xl text-slate-500 mb-10 leading-relaxed font-light font-sans text-center">
-              From home scent diffusers and hotel scent machines to HVAC Scenting Solutions UAE and washroom hygiene systems, Cool Max provides end-to-end solutions under one roof. We help you select the right system, install it professionally, and support it long after installation.
+              From home scent diffusers and hotel scent machines to HVAC Scenting Solutions UAE and washroom hygiene systems, Cool Max provides end-to-end solutions under one roof.
             </p>
-            
-            <p className="text-sm font-black uppercase text-blue-600 tracking-widest mb-8 text-center">Looking for professional scent and hygiene solutions in UAE?</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 font-sans">
               <a href="/contact" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">

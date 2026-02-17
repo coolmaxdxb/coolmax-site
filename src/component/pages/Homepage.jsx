@@ -17,8 +17,6 @@ export default function Homepage() {
     <div>
       {/* Note: You usually don't need Nav/Footer here if they are already in App.js */}
       <HeroSection />
-    
-    
       <Product1 />
         <Clientsscroll />
       <About1 />

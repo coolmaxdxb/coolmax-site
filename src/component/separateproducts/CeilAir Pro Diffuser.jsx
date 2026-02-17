@@ -27,7 +27,7 @@ const CeilAirProPage = () => {
   const gallery = [CeilAirPro1, CeilAirPro2, CeilAirPro3, CeilAirPro4];
 
   // Redirection Links
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "+971509282702";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20CeilAir%20Pro%20Diffuser.`;
   const contactPath = "/contact";
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ArrowRightIcon, ShoppingBagIcon, SparklesIcon } from "@heroicons/react/24/solid";
-import { Link } from "react-router-dom"; // Added for internal redirection
+import { Link } from "react-router-dom";
 
 // ================= IMAGE ASSETS =================
 import DriveMist1 from "../../asset/productimg/CMwebpimg/AromaDesk/1.webp";
@@ -33,7 +33,7 @@ import AeroPillar2 from "../../asset/productimg/CMwebpimg/AeroPillar Floor Diffu
 import AeroPillar3 from "../../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/3.webp";
 import AeroPillar4 from "../../asset/productimg/CMwebpimg/AeroPillar Floor Diffuser/4.webp";
 
-
+// ================= UPDATED CATEGORY DATA =================
 const categories = [
   { 
     id: 1, 
@@ -41,7 +41,7 @@ const categories = [
     tag: "Personal", 
     img: ZenBoxMini1, 
     gallery: [ZenBoxMini1, ZenBoxMini2, ZenBoxMini3, ZenBoxMini4],
-    path: "/desktop-small-diffusers", // Appropriate page redirection
+    path: "/desktop-and-small-space-aroma-diffuser/", // Updated URL
     desc: "Compact and efficient home diffuser machines that are ideal for bedrooms, living rooms, small offices, and personal spaces. These systems deliver controlled fragrance without being too strong." 
   },
   { 
@@ -50,7 +50,7 @@ const categories = [
     tag: "Discreet", 
     img: CeilAirPro1, 
     gallery: [CeilAirPro1, CeilAirPro2, CeilAirPro3, CeilAirPro4],
-    path: "/wall-mounted-diffusers", // Appropriate page redirection
+    path: "/wall-mounted-and-ceiling-aroma-diffuser/", // Updated URL
     desc: "Perfect for corridors, washrooms, elevators, and common areas. These aroma scent diffusers are discreet, space-saving, and designed for continuous use." 
   },
   { 
@@ -59,7 +59,7 @@ const categories = [
     tag: "Professional", 
     img: Titan1, 
     gallery: [Titan1, Titan2, Titan3, Titan4],
-    path: "/commercial-diffusers", // Appropriate page redirection
+    path: "/commercial-aroma-diffuser/", // Updated URL
     desc: "Professional-grade commercial scent machines suitable for offices, clinics, gyms, and retail stores, ensuring consistent fragrance throughout working hours." 
   },
   { 
@@ -68,7 +68,7 @@ const categories = [
     tag: "Luxury", 
     img: AeroPillar1, 
     gallery: [AeroPillar1, AeroPillar2, AeroPillar3, AeroPillar4],
-    path: "/floor-standing-diffusers", // Appropriate page redirection
+    path: "/floor-standing-aroma-diffuser/", // Updated URL
     desc: "Elegant and powerful scent air machines designed for hotel lobbies, showrooms, and premium interiors where both performance and appearance matter." 
   },
   { 
@@ -77,7 +77,7 @@ const categories = [
     tag: "Industrial", 
     img: AirPulse1501, 
     gallery: [AirPulse1501, AirPulse1502, AirPulse1503, AirPulse1504],
-    path: "/large-area-diffusers", // Appropriate page redirection
+    path: "/large-area-and-hvac-aroma-diffusers/", // Updated URL
     desc: "High-capacity HVAC scent diffusers and hotel scent diffuser systems designed for large spaces ranging from 3,000 m³ to 15,000 m³." 
   },
   { 
@@ -86,7 +86,7 @@ const categories = [
     tag: "On-the-go", 
     img: DriveMist1, 
     gallery: [DriveMist1, DriveMist2, DriveMist3, DriveMist4],
-    path: "/car-diffusers", // Appropriate page redirection
+    path: "/car-aroma-diffusers/", // Updated URL
     desc: "Portable scent machines for home and car that keep vehicle interiors fresh and pleasant." 
   },
 ];
@@ -102,7 +102,7 @@ export default function EcommerceProducts() {
         
         {/* --- SECTION HEADER --- */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20 border-b border-slate-100 pb-12">
-          <div className="max-w-4xl">
+          <div className="max-w-4xl text-left">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/5 border border-blue-600/10 mb-6">
               <SparklesIcon className="w-4 h-4 text-blue-600" />
               <span className="text-blue-600 text-[10px] font-black uppercase tracking-widest">Cool Max 2026 Collection</span>
@@ -118,7 +118,6 @@ export default function EcommerceProducts() {
                </p>
             </div>
           </div>
-        
         </div>
 
         {/* --- ECOMMERCE GRID --- */}
@@ -141,7 +140,7 @@ export default function EcommerceProducts() {
           <h3 className="text-3xl md:text-5xl font-serif text-white mb-8 relative z-10 leading-tight">
             Need a Custom Scent <br /> <span className="italic text-blue-400 font-light">Solution for Your Business?</span>
           </h3>
-          <Link to="/solutions" className="inline-flex items-center gap-4 px-10 py-5 bg-white text-slate-900 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-blue-600 hover:text-white transition-all relative z-10">
+          <Link to="/solution" className="inline-flex items-center gap-4 px-10 py-5 bg-white text-slate-900 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-blue-600 hover:text-white transition-all relative z-10">
             Request Professional Quote <ArrowRightIcon className="w-5 h-5" />
           </Link>
         </div>
@@ -188,7 +187,7 @@ function ProductCard({ cat }) {
       </div>
 
       {/* Content Area */}
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col text-left">
         <h3 className="text-2xl font-serif font-medium text-slate-900 group-hover:text-blue-600 transition-colors mb-4 leading-tight">
           {cat.title}
         </h3>

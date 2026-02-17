@@ -21,7 +21,7 @@ import FeatureImg1 from "../../asset/productimg/CMwebpimg/AeroBlack Pro Diffuser
 import FeatureImg2 from "../../asset/productimg/CMwebpimg/Titan Diffuser/1.webp"; 
 
 export default function ScentMarketingPage() {
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "+971509282702";
 
   // --- SEO METADATA IMPLEMENTATION ---
   useEffect(() => {
@@ -111,7 +111,7 @@ export default function ScentMarketingPage() {
             viewport={{ once: true }}
             className="max-w-5xl mx-auto text-base md:text-lg leading-relaxed text-slate-600 space-y-8 text-left"
           >
-            <p className="first-letter:text-6xl md:first-letter:text-7xl first-letter:font-serif first-letter:text-blue-600 first-letter:float-left first-letter:mr-4 first-letter:leading-none text-justify text-left">
+            <p className="first-letter:text-6xl md:first-letter:text-7xl first-letter:font-serif first-letter:text-blue-600 first-letter:float-left first-letter:mr-4 first-letter:leading-none text-justify">
               Scent Marketing Solutions in UAE is more than adding fragrance to a space—it is about creating a consistent and positive experience that people remember. At Cool Max Scent, we provide professional scent marketing solutions in UAE designed for homes, hotels, offices, retail spaces, and commercial environments. Our solutions combine advanced scent diffuser machines, carefully selected fragrances, and ongoing support to help businesses create welcoming and pleasant indoor atmospheres.
             </p>
             <div className="p-6 bg-slate-50 border-l-4 border-blue-600 rounded-r-2xl shadow-sm text-left">
@@ -255,7 +255,7 @@ export default function ScentMarketingPage() {
               { icon: <BuildingOfficeIcon />, title: "Clinics & Healthcare Facilities", desc: "We design calming scent environments that support hygiene and patient comfort without overpowering sensitive spaces." },
               { icon: <SparklesIcon />, title: "Residential Homes & Apartments", desc: "Our scent machines for home and best home fragrance systems help homeowners enjoy a consistent, pleasant living environment." },
             ].map((space, i) => (
-              <div key={i} className="p-8 bg-slate-50 border border-slate-100 rounded-[2.5rem] flex flex-col items-center text-center hover:bg-white transition-all shadow-sm text-left">
+              <div key={i} className="p-8 bg-slate-50 border border-slate-100 rounded-[2.5rem] flex flex-col items-center hover:bg-white transition-all shadow-sm text-left">
                 <div className="w-10 h-10 text-blue-600 mb-6 text-left">
                   {React.cloneElement(space.icon, { className: "w-full h-full text-left" })}
                 </div>
@@ -268,7 +268,7 @@ export default function ScentMarketingPage() {
 
         {/* ================= SECTION 6: TECHNOLOGY ================= */}
         <section className="py-16 border-t border-slate-100 text-left">
-           <div className="bg-slate-900 rounded-[3rem] p-10 md:p-16 text-left relative overflow-hidden text-left">
+           <div className="bg-slate-900 rounded-[3rem] p-10 md:p-16 text-left relative overflow-hidden">
               <h2 className="text-3xl md:text-5xl font-serif text-white mb-8 tracking-tighter text-left">Technology Behind Our Professional Scent Systems UAE</h2>
               <p className="text-slate-400 mb-10 max-w-3xl text-left">Cool Max uses modern scent air machines and diffuser technologies designed for performance and efficiency.</p>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
@@ -291,8 +291,8 @@ export default function ScentMarketingPage() {
 
         {/* ================= SECTION 7: THE SCENT PROCESS ================= */}
         <section className="py-16 text-left">
-          <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-12 tracking-tighter text-center leading-none text-center">How Our Scent Marketing Process Works</h2>
-          <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto text-center">We follow a clear and transparent process to ensure the right solution for every client as a leading Scent Marketing Company in Dubai.</p>
+          <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-12 tracking-tighter text-center leading-none">How Our Scent Marketing Process Works</h2>
+          <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">We follow a clear and transparent process to ensure the right solution for every client as a leading Scent Marketing Company in Dubai.</p>
           <div className="max-w-5xl mx-auto space-y-4 text-left">
             {[
               { step: "Step 1", title: "Space Evaluation", desc: "We assess the size, layout, and purpose of your space." },
@@ -305,7 +305,7 @@ export default function ScentMarketingPage() {
                 className="flex flex-col md:flex-row gap-6 md:gap-10 items-center p-8 rounded-[2.5rem] border border-slate-100 bg-slate-50 hover:bg-white hover:border-blue-200 transition-all group text-left"
               >
                 <span className="text-4xl md:text-6xl font-serif text-slate-200 group-hover:text-blue-100 transition-colors duration-500 text-left">{proc.step}</span>
-                <div className="flex-1 text-center md:text-left text-left">
+                <div className="flex-1 text-center md:text-left">
                   <h3 className="text-xl font-black uppercase tracking-tight text-slate-900 mb-1 text-left">{proc.title}</h3>
                   <p className="text-sm md:text-base text-slate-500 font-light text-left">{proc.desc}</p>
                 </div>
@@ -339,7 +339,7 @@ export default function ScentMarketingPage() {
         </section>
 
         {/* ================= SECTION 9: MASTER CTA ================= */}
-        <section className="py-24 text-center relative px-4 text-left">
+        <section className="py-24 text-center relative px-4">
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}

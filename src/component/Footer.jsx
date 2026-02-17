@@ -129,7 +129,7 @@ export default function Footer() {
                 <h4 className="text-sm font-bold text-white">Qatar Branch</h4>
               </div>
               <div className="space-y-3 text-xs text-slate-400">
-                <p className="leading-relaxed">Doha, Qatar</p>
+                <p className="leading-relaxed">Building Number: 64, Street:, Room No: 02, Office No:1, 7th Floor, 950 Zone: 27, Doha, Qatar</p>
                 <div className="h-px w-full bg-white/5"></div>
                 <a href="mailto:salesqatar@coolmaxscent.com" className="flex items-center gap-2 hover:text-indigo-300 transition-colors">
                   <EnvelopeIcon className="w-3 h-3"/> salesqatar@coolmaxscent.com

@@ -20,7 +20,7 @@ import P15 from "../../../asset/Aroma oils img/TUSCAN LEATHER.webp";
 
 const TuscanLeatherAromaOilDetail = () => {
   // Redirection Links
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "+971509282702";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Tuscan%20Leather%20Aroma%20Oil%20(CM-0112-OR).`;
   const contactPath = "/contact";
 

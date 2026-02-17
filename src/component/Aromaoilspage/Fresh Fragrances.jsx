@@ -20,7 +20,7 @@ import P8 from "../../asset/Aroma oils img/FLORAL.webp";
 import P9 from "../../asset/Aroma oils img/LOTUS FLOWER.webp"; 
 
 const FreshAromaOilsPage = () => {
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "971509282702";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20your%20Fresh%20Aroma%20Oils%20Collection.`;
   const contactPath = "/contact";
 
@@ -35,7 +35,7 @@ const FreshAromaOilsPage = () => {
       category: "Fresh",
       code: "CM-0117-FH",
       strength: "Strong",
-      path: "/aroma/lavender",
+      path: "/fresh-aroma-oil/lavender/",
       top: "Eucalyptus Leaves",
       middle: "Lavender, Fresh Accord",
       base: "Tonka Bean, Oakmoss",
@@ -46,7 +46,7 @@ const FreshAromaOilsPage = () => {
       category: "Fresh",
       code: "CM-0118-FH",
       strength: "Strong",
-      path: "/aroma/english-lavender",
+      path: "/fresh-aroma-oil/english-lavender/",
       top: "Eucalyptus, Bergamot",
       middle: "Geranium, Lavender",
       base: "Patchouli, Tonka Bean, Musk",
@@ -57,7 +57,7 @@ const FreshAromaOilsPage = () => {
       category: "Fresh",
       code: "CM-0119-FH",
       strength: "Medium",
-      path: "/aroma/white-tea",
+      path: "/fresh-aroma-oil/white-tea/",
       top: "Rose, Jasmine",
       middle: "Apple, Lemon",
       base: "Lavender, Thyme",
@@ -68,7 +68,7 @@ const FreshAromaOilsPage = () => {
       category: "Fresh",
       code: "CM-0120-FH",
       strength: "Medium",
-      path: "/aroma/floral",
+      path: "/fresh-aroma-oil/floral/",
       top: "Orange Blossom, Bergamot",
       middle: "Tuberose, Indian Jasmine",
       base: "Madagascar Vanilla, White Musk, Virginia Cedar",
@@ -79,7 +79,7 @@ const FreshAromaOilsPage = () => {
       category: "Fresh",
       code: "CM-0121-FH",
       strength: "Medium",
-      path: "/aroma/lotus-flower",
+      path: "/fresh-aroma-oil/lotus-flower/",
       top: "Mandarin, Orange, Orange Peel, Bergamot, Fig Leaf, Pear, Apple",
       middle: "White Lotus, Lotus Flower, Jasmine, Gardenia, Freesia",
       base: "Vanilla, Patchouli, Musk, Cashmere, Iris",
@@ -204,7 +204,7 @@ const FreshAromaOilsPage = () => {
               <h2 className="text-3xl md:text-6xl font-serif mb-10 tracking-tight text-slate-950 leading-tight uppercase text-center">
                 About Our <span className="italic font-light text-slate-700">Fresh Aroma Oils</span>
               </h2>
-              <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light mb-8 font-sans text-center">
+              <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light mb-8 font-sans text-justify md:text-center">
                 Our fresh aroma oils are professional-grade fragrances developed for use with advanced scent diffuser systems. These fragrances are formulated to deliver consistent diffusion and balanced intensity, creating a pleasant and refreshing environment without being overpowering.
               </p>
               <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light font-sans text-justify md:text-center">
@@ -227,7 +227,7 @@ const FreshAromaOilsPage = () => {
                 { icon: BuildingOffice2Icon, label: "Offices & reception areas" }
               ].map((item, i) => (
                 <div key={i} className="p-8 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-blue-600/10 transition-colors group h-full">
-                   <item.icon className="w-12 h-12 text-blue-500 group-hover:scale-110 transition-transform duration-500 shrink-0" />
+                   <item.icon className="w-12 h-12 text-blue-500 group-hover:scale-110 transition-transform duration-500 shrink-0 mx-auto" />
                    <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-slate-200 font-sans text-center">{item.label}</span>
                 </div>
               ))}
@@ -243,11 +243,11 @@ const FreshAromaOilsPage = () => {
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 font-sans">
               {[
-                { name: "Oriental Aroma Oils", path: "/Oriental-Fragrances" },
-                { name: "Fruity Fragrances", path: "/Fruity-Fragrances" },
-                { name: "Perfumers Choice", path: "/Perfumers-Choice" },
-                { name: "Food & Beverage Fragrances", path: "/Food-BeverageFragrances" },
-                { name: "Premium Collection", path: "/Premium-Collection" }
+                { name: "Oriental Aroma Oils", path: "/oriental-aroma-oil/" },
+                { name: "Fruity Fragrances", path: "/fruity-aroma-oil/" },
+                { name: "Perfumers Choice", path: "/perfumers-choice-aroma-oil/" },
+                { name: "Food & Beverage Fragrances", path: "/food-and-beverage-aroma-oil/" },
+                { name: "Premium Collection", path: "/premium-aroma-oil/" }
               ].map((cat, i) => (
                 <Link 
                   key={i} 
@@ -266,7 +266,7 @@ const FreshAromaOilsPage = () => {
         <section className="py-24 px-6">
           <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full" />
-            <h2 className="text-4xl md:text-6xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase italic text-slate-200 text-center">Refresh Your Space</h2>
+            <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase italic text-slate-200 text-center">Refresh Your Space</h2>
             <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
               Ready to bring calm and freshness to your environment? Our specialists are here to help you select the perfect aroma system.
             </p>

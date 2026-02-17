@@ -22,7 +22,7 @@ import FeatureImg1 from "../../asset/productimg/CMwebpimg/VentoCar/4.webp";
 import FeatureImg2 from "../../asset/productimg/CMwebpimg/AeroMax Pro/3.webp"; 
 
 export default function CarPersonalScentingPage() {
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "+971509282702";
 
   // --- SEO Implementation ---
   useEffect(() => {
@@ -73,11 +73,11 @@ export default function CarPersonalScentingPage() {
               </h2>
 
               <div className="flex flex-wrap gap-4">
-                <a href="#explore" className="px-10 py-5 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-600 transition-all shadow-xl">
+                <a href="/car-aroma-diffusers/" className="px-10 py-5 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-600 transition-all shadow-xl">
                   View Catalogue
                 </a>
                 <a 
-                  href={`https://wa.me/${whatsappNumber}`}
+                  href={`https://wa.me/${whatsappNumber.replace(/\+/g, "")}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-10 py-5 bg-[#25D366] text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center gap-3 font-sans"
@@ -129,8 +129,8 @@ export default function CarPersonalScentingPage() {
           <div className="bg-slate-50 border border-slate-100 rounded-[3rem] p-8 md:p-16 overflow-hidden relative shadow-sm text-left">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
               <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-                <h2 className="text-4xl md:text-5xl font-serif text-slate-900 mb-6 tracking-tighter">What Is Personal Space Scenting Solutions?</h2>
-                <p className="text-slate-500 mb-6 leading-relaxed text-lg font-light">
+                <h2 className="text-4xl md:text-5xl font-serif text-slate-900 mb-6 tracking-tighter text-left">What Is Personal Space Scenting Solutions?</h2>
+                <p className="text-slate-500 mb-6 leading-relaxed text-lg font-light text-left">
                   Car and personal space scenting refers to the use of a Compact Scent Diffuser UAE or aroma diffusers designed for small, enclosed environments. Unlike large commercial scent machines, these systems focus on precise fragrance control without overpowering the space.
                 </p>
                 <div className="bg-white border border-slate-100 p-6 rounded-2xl shadow-sm">
@@ -143,7 +143,7 @@ export default function CarPersonalScentingPage() {
                     ))}
                   </div>
                 </div>
-                <p className="mt-6 text-blue-600 font-medium font-serif italic text-xl">At Cool Max, our solutions ensure freshness without strong or artificial smells.</p>
+                <p className="mt-6 text-blue-600 font-medium font-serif italic text-xl text-left">At Cool Max, our solutions ensure freshness without strong or artificial smells.</p>
               </motion.div>
               <div className="relative h-[450px] rounded-[2rem] border border-white overflow-hidden shadow-2xl group">
                  <img src={FeatureImg1} alt="Compact Scent Diffuser UAE at office desk" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
@@ -161,26 +161,26 @@ export default function CarPersonalScentingPage() {
         {/* ================= SECTION 3: WHY IT MATTERS ================= */}
         <section className="py-16">
           <div className="grid lg:grid-cols-12 gap-8 items-center text-left">
-            <div className="lg:col-span-5 hidden lg:block">
+            <div className="lg:col-span-5 hidden lg:block text-left">
                 <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative h-[650px] rounded-[3rem] overflow-hidden border border-slate-100 shadow-xl">
                     <img src={FeatureImg2} alt="Car Aroma Diffuser UAE in a luxury car" className="w-full h-full object-cover" />
                 </motion.div>
             </div>
-            <div className="lg:col-span-7">
-                <div className="mb-8">
-                    <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-4 tracking-tighter leading-none">Why Car & Personal Space Scenting Solutions in UAE Matter</h2>
+            <div className="lg:col-span-7 text-left">
+                <div className="mb-8 text-left">
+                    <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-4 tracking-tighter leading-none text-left">Why Car & Personal Space Scenting Solutions in UAE Matter</h2>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
                     {[
                       { title: "Comfort in Everyday Spaces", desc: "People spend a significant amount of time in cars and personal workspaces. A clean and pleasant scent improves comfort during daily use." },
                       { title: "Eliminate Unpleasant Odors", desc: "Compact scenting systems help neutralize odors caused by food, moisture, or long usage." },
                       { title: "Creates a Positive Experience", desc: "Whether it is a scent machine for home or a car scent diffuser, subtle fragrance helps create a calm and welcoming atmosphere." },
                       { title: "Professional Appearance", desc: "For businesses managing fleets or offices, well-maintained scenting reflects professionalism and care." }
                     ].map((item, idx) => (
-                    <motion.div key={idx} className="group p-6 bg-slate-50 border border-slate-100 hover:border-blue-200 rounded-[2rem] transition-all duration-300 shadow-sm">
+                    <motion.div key={idx} className="group p-6 bg-slate-50 border border-slate-100 hover:border-blue-200 rounded-[2rem] transition-all duration-300 shadow-sm text-left">
                         <div className="w-8 h-1 bg-blue-600 rounded-full mb-4 group-hover:w-full transition-all duration-500" />
-                        <h3 className="text-lg font-bold text-slate-900 mb-2 leading-tight font-serif">{item.title}</h3>
-                        <p className="text-xs text-slate-500 leading-relaxed font-light">{item.desc}</p>
+                        <h3 className="text-lg font-bold text-slate-900 mb-2 leading-tight font-serif text-left">{item.title}</h3>
+                        <p className="text-xs text-slate-500 leading-relaxed font-light text-left">{item.desc}</p>
                     </motion.div>
                     ))}
                 </div>
@@ -194,26 +194,26 @@ export default function CarPersonalScentingPage() {
             <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-blue-600 mb-4">Our Car Aroma Diffuser UAE & Personal Solutions</h2>
             <p className="text-lg text-slate-500 font-light max-w-2xl mx-auto">Cool Max provides a range of compact aroma diffusion systems suitable for different personal environments.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
             {[
-              { title: "Car Aroma Diffusers", desc: "Our car aroma diffusers are designed to fit seamlessly into vehicle interiors. These systems provide controlled fragrance diffusion without spills or overpowering scents.", icon: <TruckIcon /> },
-              { title: "Personal & Desk Aroma Diffusers", desc: "Compact home diffuser machines suitable for desks, cabins, and small rooms provide steady fragrance output while remaining quiet and discreet.", icon: <ComputerDesktopIcon /> },
-              { title: "Battery & USB-Powered Scent Systems", desc: "Many of our scent diffuser machines operate on battery or USB power, making them ideal for flexible and portable use.", icon: <Battery50Icon /> },
-              { title: "Low-Maintenance Operation", desc: "Designed for everyday use, these systems require minimal attention while delivering consistent freshness.", icon: <BoltIcon /> }
+              { title: "Car Aroma Diffusers", desc: "Our car aroma diffusers are designed to fit seamlessly into vehicle interiors. These systems provide controlled fragrance diffusion without spills or overpowering scents.", icon: <TruckIcon />, path: "/car-aroma-diffusers/" },
+              { title: "Personal & Desk Aroma Diffusers", desc: "Compact home diffuser machines suitable for desks, cabins, and small rooms provide steady fragrance output while remaining quiet and discreet.", icon: <ComputerDesktopIcon />, path: "/desktop-and-small-space-aroma-diffuser/" },
+              { title: "Battery & USB-Powered Scent Systems", desc: "Many of our scent diffuser machines operate on battery or USB power, making them ideal for flexible and portable use.", icon: <Battery50Icon />, path: "/car-aroma-diffusers/" },
+              { title: "Low-Maintenance Operation", desc: "Designed for everyday use, these systems require minimal attention while delivering consistent freshness.", icon: <BoltIcon />, path: "/maintenance-and-refill-support-services/" }
             ].map((sol, idx) => (
-              <div key={idx} className="p-8 bg-slate-50 border border-slate-100 rounded-[2.5rem] hover:bg-white hover:border-blue-200 transition-all shadow-sm">
+              <a href={sol.path} key={idx} className="p-8 bg-slate-50 border border-slate-100 rounded-[2.5rem] hover:bg-white hover:border-blue-200 transition-all shadow-sm block text-left">
                 <div className="w-12 h-12 bg-white text-blue-600 border border-slate-100 rounded-xl flex items-center justify-center mb-6">
-                   {React.cloneElement(sol.icon, { className: "w-6 h-6" })}
+                    {React.cloneElement(sol.icon, { className: "w-6 h-6" })}
                 </div>
-                <h3 className="text-base font-black uppercase text-slate-900 mb-4 leading-snug">{sol.title}</h3>
-                <p className="text-xs text-slate-500 leading-relaxed font-light">{sol.desc}</p>
-              </div>
+                <h3 className="text-base font-black uppercase text-slate-900 mb-4 leading-snug text-left">{sol.title}</h3>
+                <p className="text-xs text-slate-500 leading-relaxed font-light text-left">{sol.desc}</p>
+              </a>
             ))}
           </div>
         </section>
 
         {/* ================= SECTION 5: WHERE USED ================= */}
-        <section className="py-16">
+        <section className="py-16 text-left">
           <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter text-center">Where Our Personal Space Scenting Solutions Are Used</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
             {[
@@ -223,9 +223,9 @@ export default function CarPersonalScentingPage() {
               { title: "Home Offices & Study Rooms", desc: "Support comfort and concentration with a balanced home fragrance system.", icon: <ComputerDesktopIcon /> },
               { title: "Small Commercial Spaces", desc: "Used in reception desks, counters, and compact business environments.", icon: <MapPinIcon /> }
             ].map((space, i) => (
-              <div key={i} className="p-8 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:bg-white transition-all group shadow-sm">
+              <div key={i} className="p-8 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:bg-white transition-all group shadow-sm text-left">
                 <div className="w-12 h-12 bg-white text-blue-600 border border-slate-100 rounded-xl flex items-center justify-center mb-6 mx-auto group-hover:bg-blue-600 group-hover:text-white transition-all">
-                   {React.cloneElement(space.icon, { className: "w-6 h-6" })}
+                    {React.cloneElement(space.icon, { className: "w-6 h-6" })}
                 </div>
                 <h3 className="text-lg font-bold text-slate-900 mb-2 text-center font-serif">{space.title}</h3>
                 <p className="text-xs text-slate-500 leading-relaxed font-light text-center">{space.desc}</p>
@@ -235,18 +235,18 @@ export default function CarPersonalScentingPage() {
         </section>
 
         {/* ================= SECTION 6: COMPARISON ================= */}
-        <section className="py-16 overflow-x-auto">
+        <section className="py-16 overflow-x-auto text-left">
           <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 text-center tracking-tighter leading-none">Personal vs Commercial Systems</h2>
-          <div className="bg-white border border-slate-100 rounded-[2rem] shadow-xl max-w-5xl mx-auto min-w-[600px]">
+          <div className="bg-white border border-slate-100 rounded-[2rem] shadow-xl max-w-5xl mx-auto min-w-[600px] text-left">
             <table className="w-full text-left border-collapse">
               <thead>
-                <tr className="border-b border-slate-100 text-[10px] uppercase tracking-[0.2em] text-slate-400 bg-slate-50 font-black">
-                  <th className="p-6">Feature</th>
-                  <th className="p-6 text-blue-600">Personal Space Scenting</th>
-                  <th className="p-6">Commercial Scenting</th>
+                <tr className="border-b border-slate-100 text-[10px] uppercase tracking-[0.2em] text-slate-400 bg-slate-50 font-black text-left">
+                  <th className="p-6 text-left">Feature</th>
+                  <th className="p-6 text-blue-600 text-left">Personal Space Scenting</th>
+                  <th className="p-6 text-left">Commercial Scenting</th>
                 </tr>
               </thead>
-              <tbody className="text-slate-700 text-sm">
+              <tbody className="text-slate-700 text-sm text-left">
                 {[
                   { f: "Coverage", p: "Small areas", c: "Medium to large areas" },
                   { f: "Power", p: "Battery / USB", c: "Electric / HVAC" },
@@ -254,10 +254,10 @@ export default function CarPersonalScentingPage() {
                   { f: "Control", p: "Manual or basic", c: "Advanced" },
                   { f: "Best Use", p: "Personal & cabins", c: "Business environments" },
                 ].map((row, idx) => (
-                  <tr key={idx} className="border-b border-slate-50 hover:bg-slate-50 transition-colors">
-                    <td className="p-6 font-serif text-slate-400 text-base">{row.f}</td>
-                    <td className="p-6 text-blue-600 font-bold">{row.p}</td>
-                    <td className="p-6 text-slate-500">{row.c}</td>
+                  <tr key={idx} className="border-b border-slate-50 hover:bg-slate-50 transition-colors text-left">
+                    <td className="p-6 font-serif text-slate-400 text-base text-left">{row.f}</td>
+                    <td className="p-6 text-blue-600 font-bold text-left">{row.p}</td>
+                    <td className="p-6 text-slate-500 text-left">{row.c}</td>
                   </tr>
                 ))}
               </tbody>
@@ -267,11 +267,11 @@ export default function CarPersonalScentingPage() {
         </section>
 
         {/* ================= SECTION 7: TECHNOLOGY ================= */}
-        <section className="py-16">
+        <section className="py-16 text-left">
           <div className="bg-slate-900 rounded-[3rem] p-10 md:p-16 text-left relative overflow-hidden shadow-2xl">
-             <h2 className="text-3xl md:text-5xl font-serif text-white mb-8 tracking-tighter">Technology Behind Our Compact Scent Diffuser UAE Systems</h2>
-             <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div className="space-y-4">
+             <h2 className="text-3xl md:text-5xl font-serif text-white mb-8 tracking-tighter text-left">Technology Behind Our Compact Scent Diffuser UAE Systems</h2>
+             <div className="grid md:grid-cols-2 gap-12 items-center text-left">
+                <div className="space-y-4 text-left">
                   {[
                     "Controlled fragrance output",
                     "Low-noise operation",
@@ -279,13 +279,13 @@ export default function CarPersonalScentingPage() {
                     "Efficient oil usage",
                     "Compact and modern design"
                   ].map((tech, i) => (
-                    <div key={i} className="flex items-center gap-3">
+                    <div key={i} className="flex items-center gap-3 text-left">
                       <CheckCircleIcon className="w-5 h-5 text-blue-400" />
-                      <span className="text-white text-sm font-medium">{tech}</span>
+                      <span className="text-white text-sm font-medium text-left">{tech}</span>
                     </div>
                   ))}
                 </div>
-                <p className="text-slate-400 text-sm italic border-l border-slate-700 pl-6">
+                <p className="text-slate-400 text-sm italic border-l border-slate-700 pl-6 text-left">
                   These features ensure the fragrance remains pleasant and balanced for small spaces.
                 </p>
              </div>
@@ -295,7 +295,7 @@ export default function CarPersonalScentingPage() {
         {/* ================= SECTION 8: SELECTION STEPS ================= */}
         <section className="py-16 text-left">
           <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-12 tracking-tighter text-center">Choosing the Right Personal Scenting Solution</h2>
-          <div className="max-w-5xl mx-auto space-y-4">
+          <div className="max-w-5xl mx-auto space-y-4 text-left">
             {[
               { step: "Step 1", title: "Space Identification", desc: "We identify whether the solution is for a car, desk, or small room." },
               { step: "Step 2", title: "Usage Assessment", desc: "We recommend systems based on usage duration and personal preference." },
@@ -304,12 +304,12 @@ export default function CarPersonalScentingPage() {
             ].map((proc, idx) => (
               <motion.div 
                 key={idx}
-                className="flex flex-col md:flex-row gap-6 md:gap-10 items-center p-8 rounded-[2.5rem] border border-slate-100 bg-slate-50 hover:bg-white hover:border-blue-200 transition-all group shadow-sm"
+                className="flex flex-col md:flex-row gap-6 md:gap-10 items-center p-8 rounded-[2.5rem] border border-slate-100 bg-slate-50 hover:bg-white hover:border-blue-200 transition-all group shadow-sm text-left"
               >
                 <span className="text-4xl md:text-6xl font-serif text-slate-200 group-hover:text-blue-100 transition-colors duration-500">{proc.step}</span>
                 <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-lg md:text-xl font-black uppercase tracking-tight text-slate-900 mb-1">{proc.title}</h3>
-                  <p className="text-sm md:text-base text-slate-500 font-light">{proc.desc}</p>
+                  <h3 className="text-lg md:text-xl font-black uppercase tracking-tight text-slate-900 mb-1 text-left">{proc.title}</h3>
+                  <p className="text-sm md:text-base text-slate-500 font-light text-left">{proc.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -317,24 +317,24 @@ export default function CarPersonalScentingPage() {
         </section>
 
         {/* ================= SECTION 9/11: BENEFITS & WHO SHOULD USE ================= */}
-        <section className="py-16">
+        <section className="py-16 text-left">
           <div className="grid md:grid-cols-2 gap-8 text-left">
-            <div className="p-10 bg-slate-50 rounded-[3rem] border border-slate-100 shadow-sm">
-               <h2 className="text-3xl font-serif text-slate-900 mb-6">Benefits of Car Aroma Diffuser UAE Systems</h2>
-               <ul className="space-y-4">
+            <div className="p-10 bg-slate-50 rounded-[3rem] border border-slate-100 shadow-sm text-left">
+               <h2 className="text-3xl font-serif text-slate-900 mb-6 text-left">Benefits of Car Aroma Diffuser UAE Systems</h2>
+               <ul className="space-y-4 text-left">
                   {["Fresh and pleasant environments", "Eliminate everyday odors", "Portable and easy to use", "Low maintenance", "Suitable for daily use", "Cost-effective fragrance solution"].map((b, i) => (
-                    <li key={i} className="flex items-center gap-3 text-sm font-bold text-slate-700">
+                    <li key={i} className="flex items-center gap-3 text-sm font-bold text-slate-700 text-left">
                       <FaceSmileIcon className="w-5 h-5 text-blue-600" /> {b}
                     </li>
                   ))}
                </ul>
             </div>
-            <div className="p-10 bg-blue-600 rounded-[3rem] text-white shadow-xl">
-               <h2 className="text-3xl font-serif mb-6">Who Needs Personal Space Scenting Solutions?</h2>
-               <p className="text-blue-50 text-sm mb-6">Ideal if you:</p>
-               <ul className="space-y-4">
+            <div className="p-10 bg-blue-600 rounded-[3rem] text-white shadow-xl text-left">
+               <h2 className="text-3xl font-serif mb-6 text-left">Who Needs Personal Space Scenting Solutions?</h2>
+               <p className="text-blue-50 text-sm mb-6 text-left">Ideal if you:</p>
+               <ul className="space-y-4 text-left">
                   {["Spend long hours in your vehicle", "Work in a private cabin or desk", "Want a clean-smelling home office", "Manage company vehicles", "Prefer subtle and controlled fragrance"].map((s, i) => (
-                    <li key={i} className="flex items-center gap-3 text-sm font-bold">
+                    <li key={i} className="flex items-center gap-3 text-sm font-bold text-left">
                       <CheckCircleIcon className="w-5 h-5 text-white" /> {s}
                     </li>
                   ))}
@@ -344,10 +344,10 @@ export default function CarPersonalScentingPage() {
         </section>
 
         {/* ================= SECTION 10: WHY COOL MAX ================= */}
-        <section className="py-16">
+        <section className="py-16 text-left">
            <div className="bg-slate-50 rounded-[3rem] border border-slate-100 p-10 md:p-16 text-left">
-              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none">Why Choose Cool Max for Car & Personal Space Scenting Solutions in UAE?</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-left">Why Choose Cool Max for Car & Personal Space Scenting Solutions in UAE?</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
                 {[
                   "UAE-based service and support",
                   "High-quality home scent diffusers and car diffusers",
@@ -355,9 +355,9 @@ export default function CarPersonalScentingPage() {
                   "Practical solutions for real usage",
                   "Trusted by businesses and individuals"
                 ].map((point, i) => (
-                  <div key={i} className="flex items-center gap-4 bg-white p-5 rounded-2xl border border-slate-100 shadow-sm">
+                  <div key={i} className="flex items-center gap-4 bg-white p-5 rounded-2xl border border-slate-100 shadow-sm text-left">
                     <ShieldCheckIcon className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                    <span className="text-slate-700 text-[10px] font-black uppercase tracking-tight">{point}</span>
+                    <span className="text-slate-700 text-[10px] font-black uppercase tracking-tight text-left">{point}</span>
                   </div>
                 ))}
               </div>
@@ -366,22 +366,22 @@ export default function CarPersonalScentingPage() {
 
         {/* ================= SECTION 12: FINAL CTA ================= */}
         <section className="py-24 text-center px-4">
-          <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-5xl mx-auto">
-            <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-8 tracking-tighter leading-none">
+          <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-5xl mx-auto text-center">
+            <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-center">
               Let’s Create a <br /> <span className="italic text-blue-600 font-light">Fresher Personal Environment</span>
             </h2>
-            <p className="text-xl text-slate-500 mb-10 max-w-4xl mx-auto font-light leading-relaxed font-sans">
+            <p className="text-xl text-slate-500 mb-10 max-w-4xl mx-auto font-light leading-relaxed font-sans text-center">
               Whether you need a Car Aroma Diffuser UAE, a home scent system, or a Compact Scent Diffuser UAE for your personal space, Cool Max offers reliable solutions designed for everyday use. Our team will help you choose the right system and provide ongoing support to ensure consistent performance.
             </p>
             
-            <p className="text-sm font-black uppercase text-blue-600 tracking-widest mb-8">Looking for car and personal space scenting solutions in UAE?</p>
+            <p className="text-sm font-black uppercase text-blue-600 tracking-widest mb-8 text-center">Looking for car and personal space scenting solutions in UAE?</p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
               <a href="/contact" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
                 Contact Cool Max Today <ArrowRightIcon className="w-4 h-4" />
               </a>
               <a 
-                href={`https://wa.me/${whatsappNumber}`}
+                href={`https://wa.me/${whatsappNumber.replace(/\+/g, "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-2 font-sans"

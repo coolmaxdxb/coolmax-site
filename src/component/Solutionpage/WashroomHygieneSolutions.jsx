@@ -18,7 +18,7 @@ import FeatureImg1 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/2.we
 import FeatureImg2 from "../../asset/productimg/CMwebpimg/Mistbox X commercial Diffuser/2.webp"; 
 
 export default function WashroomHygienePage() {
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "+971509282702";
 
   // --- SEO Implementation ---
   useEffect(() => {
