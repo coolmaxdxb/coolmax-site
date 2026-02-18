@@ -3,7 +3,7 @@ import { ArrowRightIcon, ShoppingBagIcon } from "@heroicons/react/24/solid";
 
 // --- ASSET IMPORTS ---
 import Banner1 from "../asset/hero/herobanner1.webp"; 
-import Banner2 from "../asset/hero/herobanner2.webp"; 
+import Banner2 from "../asset/hero/herobanner2 (2).webp"; 
 // --- NEW MOBILE ASSETS ---
 import MobileBanner1 from "../asset/hero/mobileherobanner1.webp"; 
 import MobileBanner2 from "../asset/hero/mobileherobanner2.webp"; 
