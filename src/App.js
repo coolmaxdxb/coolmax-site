@@ -88,6 +88,13 @@ import AeroCubePage from "./component/separateproducts/AeroCube Diffuser";
 import Aeromaxpro from "./component/separateproducts/AeroMax Pro";
 import DeskScentPage from "./component/separateproducts/DeskScent";
 import AerosolDispensersPage from "./component/productpage/Aerosol Dispensers";
+import ThankYouPage from "./component/Thankyoupage";
+
+
+
+import Blog1 from "../src/component/blogs/blog1";
+import Blog2 from "../src/component/blogs/blog2";
+
 
 // --- HELPER: SCROLL TO TOP ---
 const ScrollToTop = () => {
@@ -125,6 +132,12 @@ function App() {
         <Route path="/contact" element={<TalkToExpert />} />
         <Route path="/solution" element={<Solution />} />
         
+
+         <Route path="/thank-you" element={<ThankYouPage />} />
+
+
+
+
         {/* --- SOLUTION ROUTES --- */}
         <Route path="/scent-marketing-solutions/" element={<ScentMarketingPage />} />
         <Route path="/commercial-aroma-diffusion-solutions/" element={<Commercial />} />
@@ -220,6 +233,12 @@ function App() {
 <Route path="/food-and-beverage-aroma-oil/true-coffee/" element={<TrueCoffeeAromaOil />} />
 <Route path="/premium-aroma-oil/taj-sunset/" element={<TajSunsetAromaOil />} />
 <Route path="/premium-aroma-oil/classic/" element={<ClassicAromaOil />} />
+
+
+<Route path="/blog1/" element={<Blog1 />} />
+<Route path="/blog2/" element={<Blog2 />} />
+
+
 
       </Routes>
 
