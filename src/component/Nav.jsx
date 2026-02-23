@@ -45,6 +45,7 @@ const navigation = [
     
     ],
   },
+  { name: "Spray", href: "/spray/", type: "link" }, // Added Spray here
   {
     name: "Solution",
     href: "/solution/",

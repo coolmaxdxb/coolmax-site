@@ -13,6 +13,7 @@ import Blog from "./component/blog";
 import TalkToExpert from "./component/TalkToExpert";
 import Homepage from "./component/pages/Homepage"; 
 import Aroms from "./component/AromaOils";
+import SprayCollectionPage from "./component/Spray/spraypage";
 
 // --- SOLUTION PAGE IMPORTS ---
 import ScentMarketingPage from "./component/Solutionpage/ScentMarketingSolutions";
@@ -64,12 +65,34 @@ import TajSunsetAromaOil from "./component/Aromaoilspage/detailedpage/TajSunsetA
 import TrueCoffeeAromaOil from "./component/Aromaoilspage/detailedpage/TrueCoffeeAromaOil";
 import TuscanLeatherAromaOil from "./component/Aromaoilspage/detailedpage/TuscanLeatherAromaOil";
 import WhiteTeaAromaOil from "./component/Aromaoilspage/detailedpage/WhiteTeaAromaOil";
+import SweetOudAromaOilDetail from "./component/Aromaoilspage/detailedpage/SweetOudAromaOil";
 
-// --- SEPARATE INDIVIDUAL PRODUCT IMPORTS (16 UNIQUE) ---
+// --- AEROSOL SPRAY DETAILED PAGE IMPORTS ---
+import FloraSpray from "./component/Spray/Flora";
+import ForYouSpray from "./component/Spray/ForYouAerosolSpray";
+import SenseSpray from "./component/Spray/SenseAerosolSpray";
+import EventSpray from "./component/Spray/EventAerosolSpray";
+import VanillaSpray from "./component/Spray/VarillaIceCreamAerosolSpray";
+import PassionSpray from "./component/Spray/PassionAerosolSpray";
+import ParisSpray from "./component/Spray/ParisAerosolSpray";
+import FreshBakhoorSpray from "./component/Spray/FreshBakhoorAerosolSpray";
+import FreshJasmineSpray from "./component/Spray/FreshJasmineAerosolSpray";
+import ClassicSpray from "./component/Spray/ClassicAerosolSpray";
+import StrawberrySpray from "./component/Spray/StrawberryAerosolSpray";
+import RoseSpray from "./component/Spray/RoseAerosolSpray";
+import TraditionSpray from "./component/Spray/TraditionAerosolSpray";
+import FreshLavenderSpray from "./component/Spray/FreshLavenderAerosolSpray";
+import AuraSpray from "./component/Spray/AuraAerosolSpray";
+import ProfumoSpray from "./component/Spray/ProfumoAerosolSpray";
+import FantasticSpray from "./component/Spray/FantasticAerosolSpray";
+import FloralSpray from "./component/Spray/FloralAerosolSpray";
+import VoyageSpray from "./component/Spray/VoyageAerosolSpray";
+
+// --- SEPARATE INDIVIDUAL PRODUCT IMPORTS ---
 import AeroBlackMed from "./component/separateproducts/AeroBlack Med Diffuser";
 import DriveMist from "./component/separateproducts/DriveScent Diffuser";
 import NovaCar from "./component/separateproducts/NovaCar Diffuser";
-import AeroBlackpro from "./component/separateproducts/AeroBlack Pro Diffuser"; // Using Pro content for AutoLux
+import AeroBlackpro from "./component/separateproducts/AeroBlack Pro Diffuser"; 
 import VentoCar from "./component/separateproducts/VentoCar Diffuser";
 import OpalMist from "./component/separateproducts/OpalMist Clock Diffuser";
 import DeskMist from "./component/separateproducts/AromaDesk Diffuser";
@@ -90,11 +113,8 @@ import DeskScentPage from "./component/separateproducts/DeskScent";
 import AerosolDispensersPage from "./component/productpage/Aerosol Dispensers";
 import ThankYouPage from "./component/Thankyoupage";
 
-
-
 import Blog1 from "../src/component/blogs/blog1";
 import Blog2 from "../src/component/blogs/blog2";
-
 
 // --- HELPER: SCROLL TO TOP ---
 const ScrollToTop = () => {
@@ -131,12 +151,8 @@ function App() {
         <Route path="/blog/" element={<Blog />} />
         <Route path="/contact/" element={<TalkToExpert />} />
         <Route path="/solution/" element={<Solution />} />
-        
-
-         <Route path="/thank-you/" element={<ThankYouPage />} />
-
-
-
+        <Route path="/spray/" element={<SprayCollectionPage />} />
+        <Route path="/thank-you/" element={<ThankYouPage />} />
 
         {/* --- SOLUTION ROUTES --- */}
         <Route path="/scent-marketing-solutions/" element={<ScentMarketingPage />} />
@@ -164,82 +180,78 @@ function App() {
         <Route path="/food-and-beverage-aroma-oil/" element={<FoodBeverageFragrances />} />
         <Route path="/premium-aroma-oil/" element={<PremiumCollection />} />
         
-       {/* --- INDIVIDUAL PRODUCT ROUTES (SEO-FRIENDLY CATEGORY PATHS) --- */}
+        {/* --- INDIVIDUAL PRODUCT ROUTES --- */}
+        <Route path="/commercial-aroma-diffusers/aeroblack-med-diffuser/" element={<AeroBlackMed />} />
+        <Route path="/commercial-aroma-diffusers/mistbox-x-diffuser/" element={<MistBox />} />
+        <Route path="/commercial-aroma-diffusers/aeroblack-pro/" element={<AeroBlackpro />} />
+        <Route path="/large-area-and-hvac-aroma-diffusers/aeroblack-pro-diffuser/" element={<AeroPillar />} />
+        <Route path="/large-area-and-hvac-aroma-diffusers/air-pulse-150-diffuser/" element={<AirPulse />} />
+        <Route path="/car-aroma-diffusers/vento-car-diffuser/" element={<VentoCar />} />
+        <Route path="/car-aroma-diffusers/drive-scent-diffuser/" element={<DriveMist />} />
+        <Route path="/car-aroma-diffusers/desk-scent-diffuser/" element={<DeskScentPage />} />
+        <Route path="/car-aroma-diffusers/nova-car-diffuser/" element={<NovaCar />} />
+        <Route path="/desktop-and-small-space-aroma-diffuser/aero-cube-diffuser/" element={<AeroCubePage />} />
+        <Route path="/desktop-and-small-space-aroma-diffuser/Zembox-mini-diffuser/" element={<ZenBoxMini />} />
+        <Route path="/desktop-and-small-space-aroma-diffuser/aroma-desk-diffuser/" element={<DeskMist />} />
+        <Route path="/desktop-and-small-space-aroma-diffuser/luxepanel-diffuser/" element={<LuxePanel />} />
+        <Route path="/desktop-and-small-space-aroma-diffuser/opalmist-clock-diffuser/" element={<OpalMist />} />
+        <Route path="/wall-mounted-and-ceiling-aroma-diffuser/ceil-air-pro-diffuser/" element={<CeilAir />} />
+        <Route path="/wall-mounted-and-ceiling-aroma-diffuser/aeromax-pro-diffuser/" element={<Aeromaxpro />} />
+        <Route path="/floor-standing-aroma-diffuser/nano-pillar-diffuser/" element={<NanoPillar />} />
+        <Route path="/floor-standing-aroma-diffuser/titan-diffuser/" element={<Titan />} />
+        <Route path="/floor-standing-aroma-diffuser/aeropillar-diffuser/" element={<AeroPillar />} />
+        <Route path="/floor-standing-aroma-diffuser/airpole-pro-diffuser/" element={<AirPole />} />
+        <Route path="/no-power-diffuser/natural-fragrance-diffuser/" element={<NaturalFlow />} />
 
-{/* Commercial Aroma Diffusers */}
-<Route path="/commercial-aroma-diffusers/aeroblack-med-diffuser/" element={<AeroBlackMed />} />
-<Route path="/commercial-aroma-diffusers/mistbox-x-diffuser/" element={<MistBox />} />
-<Route path="/commercial-aroma-diffusers/aeroblack-pro/" element={<AeroBlackpro />} />
-{/* Large Area & HVAC */}
-<Route path="/large-area-and-hvac-aroma-diffusers/aeroblack-pro-diffuser/" element={<AeroPillar />} /> {/* Assuming component based on logic */}
-<Route path="/large-area-and-hvac-aroma-diffusers/air-pulse-150-diffuser/" element={<AirPulse />} />
+        {/* --- AROMA DETAILED PAGES ROUTES --- */}
+        <Route path="/oriental-aroma-oil/address/" element={<AddressAromaOilDetail />} />
+        <Route path="/oriental-aroma-oil/arabian-peninsula/" element={<ArabianPeninsulaAromaOil />} />
+        <Route path="/oriental-aroma-oil/arabian-bakhour/" element={<ArabianBakhourAromaOil />} />
+        <Route path="/oriental-aroma-oil/emaar/" element={<EmaarAromaOil />} />
+        <Route path="/oriental-aroma-oil/sweet-oud/" element={<SweetOudAromaOilDetail/>} />
+        <Route path="/fresh-aroma-oil/lavender/" element={<LavenderAromaOil />} />
+        <Route path="/fresh-aroma-oil/english-lavender/" element={<EnglishLavenderAromaOil />} />
+        <Route path="/fresh-aroma-oil/white-tea/" element={<WhiteTeaAromaOil />} />
+        <Route path="/fresh-aroma-oil/floral/" element={<FloralAromaOil />} />
+        <Route path="/fresh-aroma-oil/lotus-flower/" element={<LotusFlowerAromaOil />} />
+        <Route path="/perfumers-choice-aroma-oil/harmony/" element={<HarmonyAromaOil />} />
+        <Route path="/perfumers-choice-aroma-oil/event/" element={<EventAromaOil />} />
+        <Route path="/perfumers-choice-aroma-oil/for-you/" element={<ForYouAromaOil />} />
+        <Route path="/perfumers-choice-aroma-oil/passion/" element={<PassionAromaOil />} />
+        <Route path="/perfumers-choice-aroma-oil/gold/" element={<GoldAromaOil />} />
+        <Route path="/perfumers-choice-aroma-oil/tuscan-leather/" element={<TuscanLeatherAromaOil />} />
+        <Route path="/perfumers-choice-aroma-oil/story/" element={<StoryAromaOil />} />
+        <Route path="/perfumers-choice-aroma-oil/brown-orchid/" element={<BrownOrchidAromaOil />} />
+        <Route path="/perfumers-choice-aroma-oil/scents-natural/" element={<ScentsNaturalAromaOil />} />
+        <Route path="/perfumers-choice-aroma-oil/splendor/" element={<SplendorAromaOil />} />
+        <Route path="/fruity-aroma-oil/crystal/" element={<CrystalAromaOil />} />
+        <Route path="/food-and-beverage-aroma-oil/true-coffee/" element={<TrueCoffeeAromaOil />} />
+        <Route path="/premium-aroma-oil/taj-sunset/" element={<TajSunsetAromaOil />} />
+        <Route path="/premium-aroma-oil/classic/" element={<ClassicAromaOil />} />
 
-{/* Car Aroma Diffusers */}
-<Route path="/car-aroma-diffusers/vento-car-diffuser/" element={<VentoCar />} />
-<Route path="/car-aroma-diffusers/drive-scent-diffuser/" element={<DriveMist />} />
-<Route path="/car-aroma-diffusers/desk-scent-diffuser/" element={<DeskScentPage />} />
-<Route path="/car-aroma-diffusers/nova-car-diffuser/" element={<NovaCar />} />
+        {/* --- AEROSOL SPRAY COLLECTION ROUTES --- */}
+        <Route path="/aroma-oil-spray/flora/" element={<FloraSpray />} />
+        <Route path="/aroma-oil-spray/for-you/" element={<ForYouSpray />} />
+        <Route path="/aroma-oil-spray/sense/" element={<SenseSpray />} />
+        <Route path="/aroma-oil-spray/event/" element={<EventSpray />} />
+        <Route path="/aroma-oil-spray/vanilla-ice-cream/" element={<VanillaSpray />} />
+        <Route path="/aroma-oil-spray/passion/" element={<PassionSpray />} />
+        <Route path="/aroma-oil-spray/paris/" element={<ParisSpray />} />
+        <Route path="/aroma-oil-spray/fresh-bakhoor/" element={<FreshBakhoorSpray />} />
+        <Route path="/aroma-oil-spray/fresh-jasmine/" element={<FreshJasmineSpray />} />
+        <Route path="/aroma-oil-spray/classic/" element={<ClassicSpray />} />
+        <Route path="/aroma-oil-spray/strawberry/" element={<StrawberrySpray />} />
+        <Route path="/aroma-oil-spray/rose/" element={<RoseSpray />} />
+        <Route path="/aroma-oil-spray/tradition/" element={<TraditionSpray />} />
+        <Route path="/aroma-oil-spray/fresh-lavender/" element={<FreshLavenderSpray />} />
+        <Route path="/aroma-oil-spray/aura/" element={<AuraSpray />} />
+        <Route path="/aroma-oil-spray/profumo/" element={<ProfumoSpray />} />
+        <Route path="/aroma-oil-spray/fantastic/" element={<FantasticSpray />} />
+        <Route path="/aroma-oil-spray/floral/" element={<FloralSpray />} />
+        <Route path="/aroma-oil-spray/voyage/" element={<VoyageSpray />} />
 
-{/* Desktop & Small Space */}
-<Route path="/desktop-and-small-space-aroma-diffuser/aero-cube-diffuser/" element={<AeroCubePage />} />
-<Route path="/desktop-and-small-space-aroma-diffuser/Zembox-mini-diffuser/" element={<ZenBoxMini />} />
-<Route path="/desktop-and-small-space-aroma-diffuser/aroma-desk-diffuser/" element={<DeskMist />} />
-<Route path="/desktop-and-small-space-aroma-diffuser/luxepanel-diffuser/" element={<LuxePanel />} />
-<Route path="/desktop-and-small-space-aroma-diffuser/opalmist-clock-diffuser/" element={<OpalMist />} />
-
-{/* Wall-Mounted & Ceiling */}
-<Route path="/wall-mounted-and-ceiling-aroma-diffuser/ceil-air-pro-diffuser/" element={<CeilAir />} />
-<Route path="/wall-mounted-and-ceiling-aroma-diffuser/aeromax-pro-diffuser/" element={<Aeromaxpro />} />
-
-{/* Floor Standing */}
-<Route path="/floor-standing-aroma-diffuser/nano-pillar-diffuser/" element={<NanoPillar />} />
-<Route path="/floor-standing-aroma-diffuser/titan-diffuser/" element={<Titan />} />
-<Route path="/floor-standing-aroma-diffuser/aeropillar-diffuser/" element={<AeroPillar />} />
-<Route path="/floor-standing-aroma-diffuser/airpole-pro-diffuser/" element={<AirPole />} />
-
-{/* No Power */}
-<Route path="/no-power-diffuser/natural-fragrance-diffuser/" element={<NaturalFlow />} />
-
-
-{/* --- AROMA DETAILED PAGES ROUTES --- */}
-
-{/* Oriental Aroma Oils */}
-<Route path="/oriental-aroma-oil/address/" element={<AddressAromaOilDetail />} />
-<Route path="/oriental-aroma-oil/arabian-peninsula/" element={<ArabianPeninsulaAromaOil />} />
-<Route path="/oriental-aroma-oil/arabian-bakhour/" element={<ArabianBakhourAromaOil />} />
-<Route path="/oriental-aroma-oil/emaar/" element={<EmaarAromaOil />} />
-
-{/* Fresh Aroma Oils */}
-<Route path="/fresh-aroma-oil/lavender/" element={<LavenderAromaOil />} />
-<Route path="/fresh-aroma-oil/english-lavender/" element={<EnglishLavenderAromaOil />} />
-<Route path="/fresh-aroma-oil/white-tea/" element={<WhiteTeaAromaOil />} />
-<Route path="/fresh-aroma-oil/floral/" element={<FloralAromaOil />} />
-<Route path="/fresh-aroma-oil/lotus-flower/" element={<LotusFlowerAromaOil />} />
-
-{/* Perfumer's Choice */}
-<Route path="/perfumers-choice-aroma-oil/harmony/" element={<HarmonyAromaOil />} />
-<Route path="/perfumers-choice-aroma-oil/event/" element={<EventAromaOil />} />
-<Route path="/perfumers-choice-aroma-oil/for-you/" element={<ForYouAromaOil />} />
-<Route path="/perfumers-choice-aroma-oil/passion/" element={<PassionAromaOil />} />
-<Route path="/perfumers-choice-aroma-oil/gold/" element={<GoldAromaOil />} />
-<Route path="/perfumers-choice-aroma-oil/tuscan-leather/" element={<TuscanLeatherAromaOil />} />
-<Route path="/perfumers-choice-aroma-oil/story/" element={<StoryAromaOil />} />
-<Route path="/perfumers-choice-aroma-oil/brown-orchid/" element={<BrownOrchidAromaOil />} />
-<Route path="/perfumers-choice-aroma-oil/scents-natural/" element={<ScentsNaturalAromaOil />} />
-<Route path="/perfumers-choice-aroma-oil/splendor/" element={<SplendorAromaOil />} />
-
-{/* Other Categories */}
-<Route path="/fruity-aroma-oil/crystal/" element={<CrystalAromaOil />} />
-<Route path="/food-and-beverage-aroma-oil/true-coffee/" element={<TrueCoffeeAromaOil />} />
-<Route path="/premium-aroma-oil/taj-sunset/" element={<TajSunsetAromaOil />} />
-<Route path="/premium-aroma-oil/classic/" element={<ClassicAromaOil />} />
-
-
-<Route path="/blog1/" element={<Blog1 />} />
-<Route path="/blog2/" element={<Blog2 />} />
-
-
-
+        <Route path="/blog1/" element={<Blog1 />} />
+        <Route path="/blog2/" element={<Blog2 />} />
       </Routes>
 
       <Footer />
