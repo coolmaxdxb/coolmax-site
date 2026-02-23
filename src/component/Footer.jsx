@@ -11,7 +11,7 @@ import {
   EnvelopeIcon, 
   PhoneIcon, 
   MapPinIcon, 
-  ArrowLongRightIcon 
+ 
 } from "@heroicons/react/24/outline";
 import logo from "../asset/hero/coll-logo.png";
 
@@ -28,9 +28,8 @@ export default function Footer() {
 
       <div className="max-w-[1600px] mx-auto px-6 md:px-12 relative z-10">
         
-        {/* ================= 1. HEADER & NEWSLETTER ================= */}
-        <div className="grid lg:grid-cols-2 gap-10 mb-12 items-end">
-          
+        {/* ================= 1. HEADER ================= */}
+        <div className="mb-12">
           {/* Brand Statement */}
           <div className="max-w-2xl">
             {/* Logo replacement for text */}
@@ -44,29 +43,6 @@ export default function Footer() {
             <p className="text-base text-slate-400 font-light leading-relaxed max-w-lg">
               Architects of atmosphere. Curating premium olfactory experiences for distinguished spaces.
             </p>
-          </div>
-
-          {/* Premium Newsletter Card (Compacted) */}
-          <div className="bg-white/[0.03] backdrop-blur-xl border border-white/10 p-6 rounded-3xl relative overflow-hidden group">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/20 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-indigo-500/30 transition-all duration-500"></div>
-            
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-              <div>
-                <h3 className="text-lg font-serif text-white">Join our Journal</h3>
-                <p className="text-slate-400 text-xs">Latest trends in scent marketing.</p>
-              </div>
-              
-              <div className="relative flex-1 max-w-md">
-                <input 
-                  type="email" 
-                  placeholder="Email address" 
-                  className="w-full bg-[#020617]/50 border border-white/10 rounded-full py-3 px-5 text-sm text-white placeholder:text-slate-600 focus:outline-none focus:border-indigo-500 transition-all"
-                />
-                <button className="absolute right-1 top-1 bg-white text-[#020617] p-2 rounded-full hover:bg-indigo-50 transition-colors">
-                  <ArrowLongRightIcon className="w-4 h-4" />
-                </button>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -116,7 +92,7 @@ export default function Footer() {
                 <a href="mailto:secretary@coolmaxscent.com" className="flex items-center gap-2 hover:text-indigo-300 transition-colors">
                   <EnvelopeIcon className="w-3 h-3"/> secretary@coolmaxscent.com
                 </a>
-                <a href="tel:+971522286401" className="flex items-center gap-2 hover:text-indigo-300 transition-colors">
+                <a href="tel:+971509282702" className="flex items-center gap-2 hover:text-indigo-300 transition-colors">
                   <PhoneIcon className="w-3 h-3"/> +971 50 928 2702
                 </a>
               </div>
@@ -150,7 +126,7 @@ export default function Footer() {
             {/* WHATSAPP */}
             <motion.a 
               whileHover={{ y: -2 }}
-              href="https://wa.me/971522286401" 
+              href="https://wa.me/971509282702" 
               target="_blank"
               rel="noopener noreferrer"
               className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-white hover:text-black transition-all duration-300"
@@ -210,7 +186,7 @@ export default function Footer() {
             <div className="flex gap-4 justify-center md:justify-end text-[10px] text-slate-600 font-medium">
               <a href="/contact/" className="hover:text-indigo-400 transition-colors">Privacy</a>
               <a href="/contact/" className="hover:text-indigo-400 transition-colors">Terms</a>
-              <a href="/contact/" className="hover:text-indigo-400 transition-colors">Sitemap</a>
+              <a href="/sitemap/" className="hover:text-indigo-400 transition-colors">Sitemap</a>
             </div>
           </div>
 
