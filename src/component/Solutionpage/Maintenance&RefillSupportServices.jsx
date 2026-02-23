@@ -381,7 +381,7 @@ export default function MaintenancePage() {
             <p className="text-sm font-black uppercase text-emerald-600 tracking-widest mb-8 text-center">Looking for reliable maintenance and refill support in UAE?</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
-              <a href="/contact" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-emerald-600 transition-all shadow-xl flex items-center justify-center gap-3 font-sans">
+              <a href="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-emerald-600 transition-all shadow-xl flex items-center justify-center gap-3 font-sans">
                 Contact Today <ArrowRightIcon className="w-4 h-4"/>
               </a>
               <a 

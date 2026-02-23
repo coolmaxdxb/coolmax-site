@@ -16,7 +16,7 @@ const navigation = [
   { name: "Home", href: "/", type: "link" },
   {
     name: "Products",
-    href: "/products",
+    href: "/products/",
     type: "dropdown",
     cols: 2,
     items: [
@@ -47,7 +47,7 @@ const navigation = [
   },
   {
     name: "Solution",
-    href: "/solution",
+    href: "/solution/",
     type: "dropdown",
     cols: 1,
     items: [
@@ -59,9 +59,9 @@ const navigation = [
       { label: "Maintenance & Refill Support", href: "/maintenance-and-refill-support-services/" },
     ],
   },
-  { name: "Industries", href: "/industries", type: "link" },
+  { name: "Industries", href: "/industries/", type: "link" },
   { name: "About", href: "/about-us/", type: "link" },
-  { name: "Blog", href: "/blog", type: "link" },
+  { name: "Blog", href: "/blog/", type: "link" },
 ];
 
 export default function Header() {
@@ -84,7 +84,7 @@ export default function Header() {
     { icon: FaFacebookF, href: "https://www.facebook.com/coolmaxscent" },
     { icon: FaInstagram, href: "https://www.instagram.com/coolmaxscent/" },
     { icon: FaLinkedinIn, href: "https://www.linkedin.com/company/cool-max-scent/" },
-    { icon: FaWhatsapp, href: "https://wa.me/971522286401" }
+    { icon: FaWhatsapp, href: "https://wa.me/971509282702" }
   ];
 
   return (
@@ -171,7 +171,7 @@ export default function Header() {
               ))}
             </div>
             <Link
-              to="/contact"
+              to="/contact/"
               className={`hidden lg:flex items-center gap-2 px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-widest transition-all duration-300
                 ${scrolled ? "bg-blue-600 text-white hover:bg-blue-700 shadow-lg shadow-blue-900/10" : "bg-slate-900 text-white hover:bg-blue-600"}`}
             >
@@ -222,7 +222,7 @@ export default function Header() {
             </div>
           </div>
           <div className="absolute bottom-0 left-0 right-0 p-6 bg-white border-t border-slate-100">
-            <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
+            <Link to="/contact/" onClick={() => setMobileMenuOpen(false)}>
               <button className="w-full py-4 bg-slate-900 text-white font-bold uppercase tracking-widest text-xs rounded-xl shadow-lg">Get A Quote</button>
             </Link>
           </div>

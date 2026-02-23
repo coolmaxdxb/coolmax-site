@@ -150,7 +150,7 @@ export default function AboutUs() {
                   A scent machine is only as good as its service. We provide refill plans, cleaning, and technical calibration to ensure 24/7 uptime.
                 </p>
               </div>
-              <a href="/Maintenance" className="text-xs font-bold uppercase tracking-[0.2em] text-indigo-400 flex items-center gap-3 hover:text-white transition-colors">
+              <a href="/contact/" className="text-xs font-bold uppercase tracking-[0.2em] text-indigo-400 flex items-center gap-3 hover:text-white transition-colors">
                 View Plans <ArrowRightIcon className="w-4 h-4" />
               </a>
             </div>

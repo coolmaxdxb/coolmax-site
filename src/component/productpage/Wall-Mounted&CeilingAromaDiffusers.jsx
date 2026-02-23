@@ -88,7 +88,7 @@ export default function WallMountedDiffusersPage() {
               </div>
 
               <div className="flex flex-wrap gap-4 font-sans">
-                <Link to="/contact" className="px-10 py-5 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-600 transition-all shadow-xl">
+                <Link to="/contact/" className="px-10 py-5 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-600 transition-all shadow-xl">
                   Get a Quote
                 </Link>
                 <a 
@@ -305,7 +305,7 @@ export default function WallMountedDiffusersPage() {
               Whether you are planning a new office setup or upgrading an existing commercial space, Cool Max offers reliable Wall-Mounted Aroma Diffusers and Ceiling Aroma Diffusers tailored to your needs.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 font-sans text-center">
-              <Link to="/contact" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
+              <Link to="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
                 Contact Cool Max Today <ArrowRightIcon className="w-4 h-4"/>
               </Link>
               <a href={`https://wa.me/${whatsappNumber.replace(/\s/g, '')}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3 text-center">

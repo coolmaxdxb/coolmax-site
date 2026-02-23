@@ -134,7 +134,7 @@ export default function HotelScentMarketingBlog() {
                   <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 bg-white text-blue-600 w-full py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all">
                     <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Us
                   </a>
-                  <Link to="/contact" className="flex items-center justify-center gap-3 bg-blue-700 text-white w-full py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-800 transition-all border border-blue-500">
+                  <Link to="/contact/" className="flex items-center justify-center gap-3 bg-blue-700 text-white w-full py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-800 transition-all border border-blue-500">
                     Get Site Assessment
                   </Link>
                 </div>
@@ -323,7 +323,7 @@ export default function HotelScentMarketingBlog() {
               <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-12 py-6 bg-blue-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-700 transition-all shadow-xl flex items-center justify-center gap-3">
                 <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert
               </a>
-              <Link to="/contact" className="w-full sm:w-auto px-12 py-6 bg-white text-slate-900 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-slate-100 transition-all flex items-center justify-center gap-3">
+              <Link to="/contact/" className="w-full sm:w-auto px-12 py-6 bg-white text-slate-900 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-slate-100 transition-all flex items-center justify-center gap-3">
                 Design Your Strategy <ArrowRightIcon className="w-4 h-4" />
               </Link>
             </div>

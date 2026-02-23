@@ -284,7 +284,7 @@ export default function PassiveDiffusersPage() {
               If you need a simple, electricity-free fragrance solution for washrooms, elevators, or enclosed spaces, Natural Fragrance Diffusion from Cool Max is the right choice. Our team will help you understand whether this solution fits your space or if another option is better.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
-              <Link to="/contact" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
+              <Link to="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
                 Contact Cool Max Today <ArrowRightIcon className="w-4 h-4 text-center"/>
               </Link>
               <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3">

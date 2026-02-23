@@ -267,7 +267,7 @@ export default function ArchitectStore() {
               WhatsApp Inquiry
             </a>
             <Link 
-              to="/contact"
+              to="/contact/"
               className="w-full sm:w-64 flex items-center justify-center gap-3 py-5 bg-slate-900 text-white rounded-full font-black uppercase tracking-widest text-xs hover:scale-[1.03] transition-all shadow-xl shadow-slate-200 font-sans"
             >
               <EnvelopeIcon className="w-5 h-5" />

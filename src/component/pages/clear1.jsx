@@ -188,7 +188,7 @@ const ProcessAndInsights = () => {
                       Looking for professional scent solutions in the UAE?
                    </p>
 
-                   <Link to="/contact">
+                   <Link to="/contact/">
                      <button className="px-10 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-blue-50 transition-all flex items-center gap-3 transform hover:scale-105 duration-300 shadow-[0_0_20px_-5px_rgba(255,255,255,0.3)]">
                        Contact Cool Max today for a consultation
                        <ArrowLongRightIcon className="w-4 h-4" />

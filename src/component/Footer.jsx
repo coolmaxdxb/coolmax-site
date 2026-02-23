@@ -208,9 +208,9 @@ export default function Footer() {
               © {new Date().getFullYear()} Cool Max General Trading.
             </p>
             <div className="flex gap-4 justify-center md:justify-end text-[10px] text-slate-600 font-medium">
-              <a href="/contact" className="hover:text-indigo-400 transition-colors">Privacy</a>
-              <a href="/contact" className="hover:text-indigo-400 transition-colors">Terms</a>
-              <a href="/contact" className="hover:text-indigo-400 transition-colors">Sitemap</a>
+              <a href="/contact/" className="hover:text-indigo-400 transition-colors">Privacy</a>
+              <a href="/contact/" className="hover:text-indigo-400 transition-colors">Terms</a>
+              <a href="/contact/" className="hover:text-indigo-400 transition-colors">Sitemap</a>
             </div>
           </div>
 

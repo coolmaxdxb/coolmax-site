@@ -99,7 +99,7 @@ export default function ProductCategories() {
 
             <div className="flex flex-wrap gap-4">
               <a 
-                href="/contact" 
+                href="/contact/" 
                 className="px-10 py-5 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-600 transition-all shadow-xl"
               >
                 Contact Expert
@@ -231,7 +231,7 @@ export default function ProductCategories() {
                     
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
                       <a 
-                        href="/contact"
+                        href="/contact/"
                         className="px-14 py-6 rounded-3xl bg-blue-600 text-white font-black text-xs uppercase tracking-[0.3em] hover:bg-white hover:text-slate-900 transition-all shadow-2xl"
                       >
                         Request Custom Scent Curation

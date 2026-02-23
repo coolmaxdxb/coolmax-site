@@ -124,16 +124,16 @@ function App() {
         {/* --- MAIN PAGES --- */}
         <Route path="/" element={<Homepage />} />
         <Route path="/about-us/" element={<AboutUs />} />
-        <Route path="/solutions" element={<SolutionsSection />} />
-        <Route path="/products" element={<ProductPage />} />
-        <Route path="/aromas" element={<Aroms />} />
-        <Route path="/industries" element={<IndustriesWeServe />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<TalkToExpert />} />
-        <Route path="/solution" element={<Solution />} />
+        <Route path="/solutions/" element={<SolutionsSection />} />
+        <Route path="/products/" element={<ProductPage />} />
+        <Route path="/aromas/" element={<Aroms />} />
+        <Route path="/industries/" element={<IndustriesWeServe />} />
+        <Route path="/blog/" element={<Blog />} />
+        <Route path="/contact/" element={<TalkToExpert />} />
+        <Route path="/solution/" element={<Solution />} />
         
 
-         <Route path="/thank-you" element={<ThankYouPage />} />
+         <Route path="/thank-you/" element={<ThankYouPage />} />
 
 
 

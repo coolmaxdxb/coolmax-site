@@ -36,7 +36,7 @@ export default function TalkToExpert() {
     if (data.success) {
       setResult("Form Submitted Successfully");
       event.target.reset();
-      navigate("/thank-you"); // Redirect on success
+      navigate("/thank-you/"); // Redirect on success
     } else {
       console.log("Error", data);
       setResult(data.message);
@@ -86,7 +86,7 @@ export default function TalkToExpert() {
                    </div>
                    <div className="flex gap-3 items-center">
                       <PhoneIcon className="w-5 h-5 text-blue-600 shrink-0" />
-                      <span className="group-hover:text-slate-900 transition-colors font-medium">+971 52 228 6401</span>
+                      <span className="group-hover:text-slate-900 transition-colors font-medium">+971 50 928 2702</span>
                    </div>
                    <div className="flex gap-3 items-center">
                       <EnvelopeIcon className="w-5 h-5 text-blue-600 shrink-0" />

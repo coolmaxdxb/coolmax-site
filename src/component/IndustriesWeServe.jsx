@@ -7,7 +7,7 @@ import Client4 from "../asset/clientslogo/The Retreat Palm Dubai.webp";
 import Client5 from "../asset/clientslogo/lulu.webp";
 
 export default function IndustriesSection() {
-  const whatsappNumber = "971522286401";
+  const whatsappNumber = "+971509282702";
   
   const clientLogos = [Client1, Client2, Client3, Client4, Client5];
 
@@ -85,7 +85,7 @@ export default function IndustriesSection() {
             </p>
 
             <div className="flex flex-wrap gap-5 mb-16">
-              <a href="/contact" className="px-12 py-5 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-full hover:bg-blue-600 transition-all shadow-2xl">
+              <a href="/contact/" className="px-12 py-5 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-full hover:bg-blue-600 transition-all shadow-2xl">
                 Contact Us
               </a>
               <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white border-2 border-slate-900 text-slate-900 font-black text-xs uppercase tracking-widest rounded-full hover:bg-slate-50 transition-all flex items-center gap-3">
@@ -195,7 +195,7 @@ export default function IndustriesSection() {
                     <p className="text-3xl font-serif italic text-blue-50 mb-16 opacity-80">“Designing the invisible world of your brand.”</p>
                     
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-8">
-                        <a href="/contact" className="px-16 py-7 rounded-full bg-white text-slate-900 font-black text-xs uppercase tracking-[0.3em] hover:scale-110 transition-transform shadow-2xl">
+                        <a href="/contact/" className="px-16 py-7 rounded-full bg-white text-slate-900 font-black text-xs uppercase tracking-[0.3em] hover:scale-110 transition-transform shadow-2xl">
                             Request Custom Scent Audit
                         </a>
                         <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="px-16 py-7 rounded-full bg-transparent border-2 border-white text-white font-black text-xs uppercase tracking-[0.3em] hover:bg-white hover:text-blue-600 transition-all">

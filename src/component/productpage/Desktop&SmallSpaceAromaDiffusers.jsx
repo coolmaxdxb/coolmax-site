@@ -80,7 +80,7 @@ export default function DesktopSmallSpacePage() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-4 font-sans">
-                <Link to="/contact" className="px-10 py-5 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-600 transition-all shadow-xl text-center">Get a Quote</Link>
+                <Link to="/contact/" className="px-10 py-5 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-600 transition-all shadow-xl text-center">Get a Quote</Link>
                 <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-[#25D366] text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center gap-3 justify-center">
                   <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Us
                 </a>
@@ -256,7 +256,7 @@ export default function DesktopSmallSpacePage() {
               Whether you are setting up a single workstation or multiple office cabins, Cool Max offers reliable Desktop & Small Space Aroma Diffusers in UAE tailored to your needs.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
-              <Link to="/contact" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
+              <Link to="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
                 Contact Cool Max Today <ArrowRightIcon className="w-4 h-4"/>
               </Link>
               <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3">

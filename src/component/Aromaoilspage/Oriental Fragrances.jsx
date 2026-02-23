@@ -21,7 +21,7 @@ const OrientalAromaOilsPage = () => {
   // Redirection Links
   const whatsappNumber = "971509282702";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20your%20Oriental%20Aroma%20Oils%20Collection.`;
-  const contactPath = "/contact";
+  const contactPath = "/contact/";
 
   useEffect(() => {
     window.scrollTo(0, 0);

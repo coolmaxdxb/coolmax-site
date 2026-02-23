@@ -71,6 +71,7 @@ export default function ScentMarketingPage() {
               </p>
 
               <div className="flex flex-wrap gap-4 text-left">
+                {/* Fixed the anchor link here */}
                 <a href="#explore" className="px-8 py-4 bg-slate-900 text-white font-black text-[10px] uppercase tracking-widest rounded-2xl hover:bg-blue-600 transition-all shadow-xl text-left">
                   Explore Services
                 </a>
@@ -104,7 +105,8 @@ export default function ScentMarketingPage() {
         </section>
 
         {/* ================= SECTION 1: INTRO ================= */}
-        <section className="py-16 border-t border-slate-100 text-left">
+        {/* Added id="explore" here to catch the button click */}
+        <section id="explore" className="py-16 border-t border-slate-100 text-left scroll-mt-20">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -356,7 +358,7 @@ export default function ScentMarketingPage() {
             <p className="text-sm font-black uppercase text-blue-600 tracking-widest mb-8 text-center">Looking for professional scent marketing solutions in UAE?</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
-              <a href="/contact" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3 text-center">
+              <a href="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3 text-center">
                 Contact Cool Max Today <ArrowRightIcon className="w-4 h-4 text-center"/>
               </a>
               <a 

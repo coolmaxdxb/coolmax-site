@@ -22,7 +22,7 @@ const EventAromaOilDetail = () => {
   // Redirection Links
   const whatsappNumber = "+971509282702";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Event%20Aroma%20Oil%20(CM-0108-OR).`;
-  const contactPath = "/contact";
+  const contactPath = "/contact/";
 
   const fadeUp = {
     initial: { opacity: 0, y: 20 },

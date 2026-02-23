@@ -16,7 +16,7 @@ import {
   ClockIcon,
 } from "@heroicons/react/24/outline";
 
-// --- IMAGE IMPORTS ---
+// --- IMAGE ASSETS ---
 import HeroImg from "../../asset/productimg/CMwebpimg/Mistbox X commercial Diffuser/7.webp"; 
 import FeatureImg2 from "../../asset/productimg/CMwebpimg/AeroBlack Med diffuser/5.webp"; 
 
@@ -266,7 +266,7 @@ export default function CommercialDiffusersPage() {
         </section>
 
         {/* ================= STEPS: IMPLEMENTATION ================= */}
-        <section className="py-24">
+        <section id="collection" className="py-24 scroll-mt-24">
           <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-20 tracking-tighter text-center">Our Implementation Strategy</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
@@ -315,7 +315,7 @@ export default function CommercialDiffusersPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 font-sans">
-              <a href="/contact" className="w-full sm:w-auto px-12 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.4em] rounded-full hover:bg-blue-600 transition-all shadow-2xl flex items-center justify-center gap-3">
+              <a href="/contact/" className="w-full sm:w-auto px-12 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.4em] rounded-full hover:bg-blue-600 transition-all shadow-2xl flex items-center justify-center gap-3">
                 Contact Today <ArrowRightIcon className="w-4 h-4"/>
               </a>
               <a 

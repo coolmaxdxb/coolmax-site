@@ -383,7 +383,7 @@ export default function AboutUs() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Link to="/contact">
+              <Link to="/contact/">
                 <button className="px-12 py-5 bg-slate-900 text-white rounded-full font-bold hover:bg-slate-800 transition shadow-2xl text-lg uppercase tracking-wider transform hover:-translate-y-1">
                   Contact Cool Max Today
                 </button>

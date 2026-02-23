@@ -29,7 +29,7 @@ const CeilAirProPage = () => {
   // Redirection Links
   const whatsappNumber = "+971509282702";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20CeilAir%20Pro%20Diffuser.`;
-  const contactPath = "/contact";
+  const contactPath = "/contact/";
 
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
@@ -276,7 +276,7 @@ const CeilAirProPage = () => {
             CeilAir Pro Diffuser belongs to Cool Max’s Wall-Mounted & Ceiling Aroma Diffusers collection—designed for efficient scenting without compromising space or safety.
           </p>
           <div className="max-w-xs mx-auto">
-            <Link to="/product/aeromax-pro" className="block p-6 rounded-2xl bg-white border border-slate-100 hover:border-blue-600 transition-all font-bold uppercase tracking-widest text-[9px] text-slate-500 cursor-pointer">
+            <Link to="/wall-mounted-and-ceiling-aroma-diffuser/aeromax-pro-diffuser/" className="block p-6 rounded-2xl bg-white border border-slate-100 hover:border-blue-600 transition-all font-bold uppercase tracking-widest text-[9px] text-slate-500 cursor-pointer">
               Explore AeroMax Pro Diffuser
             </Link>
           </div>

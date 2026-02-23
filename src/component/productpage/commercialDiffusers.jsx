@@ -322,7 +322,7 @@ export default function CommercialDiffusersPage() {
             <p className="text-sm font-black uppercase text-blue-500 tracking-widest mb-8 text-center">Looking for commercial aroma diffusers in UAE?</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 font-sans text-center">
-              <Link to="/contact" className="w-full sm:w-auto px-12 py-6 bg-white text-slate-900 font-black text-xs uppercase tracking-[0.3em] rounded-2xl transition-all shadow-xl hover:bg-blue-600 hover:text-white flex items-center justify-center gap-3 text-center">
+              <Link to="/contact/" className="w-full sm:w-auto px-12 py-6 bg-white text-slate-900 font-black text-xs uppercase tracking-[0.3em] rounded-2xl transition-all shadow-xl hover:bg-blue-600 hover:text-white flex items-center justify-center gap-3 text-center">
                 Contact Cool Max Today <ArrowRightIcon className="w-5 h-5 text-center"/>
               </Link>
               <a 

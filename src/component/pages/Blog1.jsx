@@ -72,7 +72,7 @@ export default function EcommerceBlog() {
               Expert advice on scent marketing, technology, and creating the perfect atmosphere for your brand or home.
             </p>
           </div>
-          <a href="/blog" className="px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold text-xs uppercase tracking-[0.2em] hover:bg-blue-600 transition-all shadow-xl shadow-slate-200">
+          <a href="/blog/" className="px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold text-xs uppercase tracking-[0.2em] hover:bg-blue-600 transition-all shadow-xl shadow-slate-200">
             Browse All Articles
           </a>
         </div>
@@ -98,7 +98,7 @@ export default function EcommerceBlog() {
                   </span>
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-slate-900/20 backdrop-blur-[2px]">
-                   <a href="/blog" className="px-6 py-3 bg-white text-slate-900 rounded-full text-xs font-bold shadow-2xl flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                   <a href="/blog/" className="px-6 py-3 bg-white text-slate-900 rounded-full text-xs font-bold shadow-2xl flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform">
                      Read Article <ArrowRightIcon className="w-4 h-4" />
                    </a>
                 </div>

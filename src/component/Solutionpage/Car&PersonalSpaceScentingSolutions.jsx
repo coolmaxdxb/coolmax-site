@@ -377,7 +377,7 @@ export default function CarPersonalScentingPage() {
             <p className="text-sm font-black uppercase text-blue-600 tracking-widest mb-8 text-center">Looking for car and personal space scenting solutions in UAE?</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
-              <a href="/contact" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
+              <a href="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
                 Contact Cool Max Today <ArrowRightIcon className="w-4 h-4" />
               </a>
               <a 
