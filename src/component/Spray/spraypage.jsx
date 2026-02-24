@@ -55,19 +55,15 @@ const sprayProducts = [
   { id: 19, name: "Voyage", cat: "Premium", code: "AS-19", img: voyageImg, path: "/aroma-oil-spray/voyage/" },
 ];
 
-const categories = ["All Scents", "Floral", "Oriental", "Perfume", "Fresh", "Premium", "Fruity", "Sweet"];
-
 export default function SprayCollectionPage() {
-  const [activeCat, setActiveCat] = useState("All Scents");
   const [search, setSearch] = useState("");
   const whatsappNumber = "971509282702";
 
   const filtered = useMemo(() => {
     return sprayProducts.filter(p => 
-      (activeCat === "All Scents" || p.cat === activeCat) &&
-      (p.name.toLowerCase().includes(search.toLowerCase()))
+      p.name.toLowerCase().includes(search.toLowerCase())
     );
-  }, [activeCat, search]);
+  }, [search]);
 
   return (
     <div className="min-h-screen bg-[#fcfcfc] text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden">
@@ -84,7 +80,7 @@ export default function SprayCollectionPage() {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-blue-50 border border-blue-100 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-blue-50 border border-blue-200 mb-6">
               <CloudIcon className="w-3.5 h-3.5 text-blue-600" />
               <span className="text-[9px] font-bold uppercase tracking-widest text-blue-700">Atmospheric Mist Series</span>
             </div>
@@ -98,25 +94,9 @@ export default function SprayCollectionPage() {
         </div>
       </section>
 
-      {/* ================= SEARCH & FILTER (COMPACT) ================= */}
+      {/* ================= SEARCH (COMPACT) ================= */}
       <section className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 py-4 px-6 lg:px-16">
-        <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row gap-4 justify-between items-center">
-          <div className="flex overflow-x-auto no-scrollbar gap-1.5 w-full md:w-auto">
-            {categories.map(cat => (
-              <button
-                key={cat}
-                onClick={() => setActiveCat(cat)}
-                className={`whitespace-nowrap px-4 py-1.5 rounded-lg text-[9px] font-bold uppercase tracking-wider transition-all ${
-                  activeCat === cat 
-                  ? "bg-blue-600 text-white shadow-md" 
-                  : "bg-slate-50 text-slate-400 hover:bg-slate-100 border border-transparent"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
-          
+        <div className="max-w-[1600px] mx-auto flex justify-end items-center">
           <div className="relative w-full md:w-64 group">
             <MagnifyingGlassIcon className="w-3.5 h-3.5 absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
             <input 
@@ -145,7 +125,7 @@ export default function SprayCollectionPage() {
                   exit={{ opacity: 0, scale: 0.9 }}
                   className="group"
                 >
-                  <div className="bg-white rounded-3xl p-3 border border-slate-100 transition-all duration-300 hover:shadow-xl">
+                  <div className="bg-white rounded-3xl p-3 border border-slate-100 transition-all duration-300 hover:shadow-xl text-left">
                     {/* Visual Container */}
                     <Link to={item.path} className="block aspect-[4/5] rounded-2xl bg-slate-50 mb-4 overflow-hidden flex items-center justify-center relative group-hover:bg-blue-50/30 transition-colors">
                       <img 
@@ -163,13 +143,12 @@ export default function SprayCollectionPage() {
                     
                     {/* Information Area */}
                     <div className="px-2">
-                      <p className="text-[8px] font-bold text-blue-500 uppercase tracking-widest mb-1">{item.cat}</p>
                       <h3 className="text-sm font-serif text-slate-900 truncate">
                         {item.name}
                       </h3>
                     </div>
 
-                    {/* Footer Actions (Condensed) */}
+                    {/* Footer Actions */}
                     <div className="mt-3 pt-3 border-t border-slate-50 flex items-center justify-between">
                       <span className="text-[8px] font-bold text-slate-300 uppercase">{item.code}</span>
                       <div className="flex gap-1.5">
@@ -196,8 +175,8 @@ export default function SprayCollectionPage() {
           </div>
 
           {filtered.length === 0 && (
-            <div className="py-32 text-center">
-              <SparklesIcon className="w-10 h-10 text-slate-200 mx-auto mb-4" />
+            <div className="py-32 text-center text-left">
+              <SparklesIcon className="w-10 h-10 text-slate-200 mx-auto mb-4 text-left" />
               <p className="text-slate-400 font-light text-sm italic">No matching fragrances found.</p>
             </div>
           )}
@@ -209,12 +188,12 @@ export default function SprayCollectionPage() {
         <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[3rem] p-10 md:p-16 text-left text-white relative overflow-hidden shadow-xl">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/5 blur-[120px] rounded-full" />
           
-          <div className="relative z-10">
-            <h2 className="text-3xl md:text-5xl font-serif mb-6 tracking-tight">
+          <div className="relative z-10 text-left">
+            <h2 className="text-3xl md:text-5xl font-serif mb-6 tracking-tight text-left">
               Elevate Your <br />
               <span className="italic text-blue-400 font-light">Space Instantly.</span>
             </h2>
-            <p className="text-sm md:text-base text-slate-400 mb-10 font-light leading-relaxed max-w-xl">
+            <p className="text-sm md:text-base text-slate-400 mb-10 font-light leading-relaxed max-w-xl text-left">
               Our aerosol sprays are IFRA-compliant and formulated for professional performance. Available for bulk supply across the UAE and Qatar.
             </p>
             
@@ -223,13 +202,13 @@ export default function SprayCollectionPage() {
                 href={`https://wa.me/${whatsappNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 px-8 py-3.5 bg-blue-600 text-white rounded-2xl font-bold text-[10px] uppercase tracking-widest hover:bg-white hover:text-slate-950 transition-all duration-500 shadow-lg"
+                className="inline-flex items-center gap-3 px-8 py-3.5 bg-blue-600 text-white rounded-2xl font-bold text-[10px] uppercase tracking-widest hover:bg-white hover:text-slate-950 transition-all duration-500 shadow-lg text-left"
               >
                 <ChatBubbleLeftRightIcon className="w-4 h-4" /> Request Quote
               </a>
               <Link 
                 to="/contact" 
-                className="flex items-center gap-2 text-slate-500 hover:text-white transition-colors uppercase text-[9px] font-bold tracking-widest"
+                className="flex items-center gap-2 text-slate-500 hover:text-white transition-colors uppercase text-[9px] font-bold tracking-widest text-left"
               >
                 Specifications <ArrowUpRightIcon className="w-3 h-3" />
               </Link>
