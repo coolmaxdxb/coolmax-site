@@ -48,7 +48,7 @@ export default function FloorStandingDiffusersPage() {
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
       {/* Canonical URL */}
-      <link rel="canonical" href="https://coolmaxscent.com/floor-standing-aroma-diffuser" />
+      <link rel="canonical" href="https://www.coolmaxscent.com/floor-standing-aroma-diffusers/" />
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -83,9 +83,9 @@ export default function FloorStandingDiffusersPage() {
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-4 font-sans">
+              <div className="flex flex-wrap gap-4 font-sans text-left">
                 <Link to="/contact/" className="px-10 py-5 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-600 transition-all shadow-xl text-center">Get a Quote</Link>
-                <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-[#25D366] text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center gap-3 justify-center">
+                <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-[#25D366] text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center gap-3 justify-center text-center">
                   <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Us
                 </a>
               </div>
@@ -103,25 +103,25 @@ export default function FloorStandingDiffusersPage() {
         {/* ================= SECTION 1: COLLECTION ================= */}
         <section id="collection" className="py-20 border-t border-slate-100 text-left">
           <motion.div {...smoothFadeUp} className="mb-16 text-center max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-6xl font-serif text-slate-900 tracking-tighter leading-none">Our Floor-Standing Aroma Diffuser Collection</h2>
-            <p className="text-lg text-slate-500 mt-4 font-light">Explore our range of Premium Aroma Diffusers designed for commercial and semi-commercial use.</p>
+            <h2 className="text-4xl md:text-6xl font-serif text-slate-900 tracking-tighter leading-none text-center uppercase">Our Floor-Standing Aroma Diffuser Collection</h2>
+            <p className="text-lg text-slate-500 mt-4 font-light text-center">Explore our range of Premium Aroma Diffusers designed for commercial and semi-commercial use.</p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
             {[
-              { img: Product1, name: "AeroPillar Diffuser", path: "/floor-standing-aroma-diffuser/aeropillar-diffuser/", desc: "A sleek floor-standing aroma diffuser designed to deliver consistent fragrance while blending seamlessly into modern interiors. Its vertical design makes it ideal for spaces where aesthetics matter.", suits: "Hotel lobbies • Showrooms • Reception areas • Sales offices" },
-              { img: Product2, name: "AirPole Pro Diffuser", path: "/floor-standing-aroma-diffuser/airpole-pro-diffuser/", desc: "A powerful floor-standing scent diffuser built for open spaces that require steady and noticeable fragrance diffusion. Designed for professional environments with continuous foot traffic.", suits: "Shopping malls • Large retail spaces • Exhibition areas" },
-              { img: Product3, name: "Titan Diffuser", path: "/floor-standing-aroma-diffuser/titan-diffuser/", desc: "A high-performance floor-standing aroma diffuser designed for wide coverage and long operating hours. Ideal for environments where strong scent presence is required without overpowering the space.", suits: "Corporate lobbies • Event venues • Hospitality spaces" },
-              { img: Product4, name: "NanoPillar Diffuser", path: "/floor-standing-aroma-diffuser/nano-pillar-diffuser/", desc: "A compact yet powerful floor-standing aroma diffuser that combines modern design with efficient fragrance diffusion. Suitable for medium to large spaces where subtle elegance is preferred.", suits: "Boutiques • Premium offices • Small hotel lobbies" }
+              { img: Product1, name: "AeroPillar Diffuser", path: "/floor-standing-aroma-diffusers/aeropillar-diffuser/", desc: "A sleek floor-standing aroma diffuser designed to deliver consistent fragrance while blending seamlessly into modern interiors. Its vertical design makes it ideal for spaces where aesthetics matter.", suits: "Hotel lobbies • Showrooms • Reception areas • Sales offices" },
+              { img: Product2, name: "AirPole Pro Diffuser", path: "/floor-standing-aroma-diffurers/airpole-pro-diffuser/", desc: "A powerful floor-standing scent diffuser built for open spaces that require steady and noticeable fragrance diffusion. Designed for professional environments with continuous foot traffic.", suits: "Shopping malls • Large retail spaces • Exhibition areas" },
+              { img: Product3, name: "Titan Diffuser", path: "/floor-standing-aroma-diffurers/titan-diffuser/", desc: "A high-performance floor-standing aroma diffuser designed for wide coverage and long operating hours. Ideal for environments where strong scent presence is required without overpowering the space.", suits: "Corporate lobbies • Event venues • Hospitality spaces" },
+              { img: Product4, name: "NanoPillar Diffuser", path: "/floor-standing-aroma-diffurers/nano-pillar-diffuser/", desc: "A compact yet powerful floor-standing aroma diffuser that combines modern design with efficient fragrance diffusion. Suitable for medium to large spaces where subtle elegance is preferred.", suits: "Boutiques • Premium offices • Small hotel lobbies" }
             ].map((product, idx) => (
               <motion.div key={idx} {...smoothFadeUp} className="group p-8 rounded-[3.5rem] bg-slate-50 border border-slate-200 transition-all hover:bg-white hover:shadow-2xl text-left flex flex-col h-full">
-                <div className="h-80 w-full bg-white rounded-[2rem] mb-8 flex items-center justify-center p-8 border border-slate-100">
-                  <img src={product.img} alt={product.name} className="h-full object-contain group-hover:scale-105 transition-transform" />
+                <div className="h-80 w-full bg-white rounded-[2rem] mb-8 flex items-center justify-center p-8 border border-slate-100 text-center">
+                  <img src={product.img} alt={product.name} className="h-full object-contain group-hover:scale-105 transition-transform mx-auto" />
                 </div>
                 <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4 text-left">{product.name}</h3>
-                <p className="text-slate-600 mb-6 font-light leading-relaxed flex-grow text-left">{product.desc}</p>
-                <div className="bg-white border border-slate-100 rounded-2xl p-4 mb-8">
-                  <span className="text-[10px] font-black text-blue-600 uppercase tracking-widest block mb-2">Best suited for:</span>
+                <p className="text-slate-600 mb-6 font-light leading-relaxed flex-grow text-left text-justify md:text-left">{product.desc}</p>
+                <div className="bg-white border border-slate-100 rounded-2xl p-4 mb-8 text-left">
+                  <span className="text-[10px] font-black text-blue-600 uppercase tracking-widest block mb-2 font-sans text-left">Best suited for:</span>
                   <p className="text-sm font-bold text-slate-700 font-sans text-left">{product.suits}</p>
                 </div>
                 <Link to={product.path} className="w-full py-4 rounded-2xl bg-slate-900 text-white font-black uppercase text-center text-[10px] tracking-widest hover:bg-blue-600 transition-all font-sans">View product details</Link>
@@ -133,7 +133,7 @@ export default function FloorStandingDiffusersPage() {
         {/* ================= SECTION 2: WHY CHOOSE ================= */}
         <section className="py-20 text-left">
           <div className="bg-slate-900 rounded-[3.5rem] p-10 md:p-20 text-left text-white relative overflow-hidden shadow-2xl">
-            <h2 className="text-3xl md:text-5xl font-serif mb-8 tracking-tighter leading-none text-left">Why Choose Floor-Standing Scent Diffusers?</h2>
+            <h2 className="text-3xl md:text-5xl font-serif mb-8 tracking-tighter leading-none text-left uppercase">Why Choose Floor-Standing Scent Diffusers?</h2>
             <p className="text-slate-400 mb-12 text-lg max-w-3xl text-left">Our Aroma Diffusers for Large Spaces are ideal for environments where fragrance needs to be noticeable, balanced, and visually integrated into the space.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
               {[
@@ -156,8 +156,8 @@ export default function FloorStandingDiffusersPage() {
 
         {/* ================= SECTION 3: WHERE USED ================= */}
         <section className="py-20 text-left">
-          <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter text-center">Where Our Floor diffusers Are Used</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 text-left">
+          <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter text-center uppercase">Where Our Floor diffusers Are Used</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 text-center">
             {[
               { icon: <BuildingOffice2Icon />, title: "Hotel and resort lobbies" },
               { icon: <ShoppingBagIcon />, title: "Shopping malls and retail chains" },
@@ -165,9 +165,9 @@ export default function FloorStandingDiffusersPage() {
               { icon: <GlobeAltIcon />, title: "Event halls and exhibition spaces" },
               { icon: <UserGroupIcon />, title: "Corporate reception areas" }
             ].map((item, i) => (
-              <div key={i} className="p-8 bg-slate-50 border border-slate-100 rounded-[2.5rem] flex flex-col items-center hover:bg-white transition-all shadow-sm text-left">
-                <div className="w-12 h-12 text-blue-600 mb-6 text-left">{item.icon}</div>
-                <h3 className="text-xs font-black uppercase tracking-widest text-slate-900 text-center leading-tight">{item.title}</h3>
+              <div key={i} className="p-8 bg-slate-50 border border-slate-100 rounded-[2.5rem] flex flex-col items-center hover:bg-white transition-all shadow-sm text-center">
+                <div className="w-12 h-12 text-blue-600 mb-6 text-center">{item.icon}</div>
+                <h3 className="text-xs font-black uppercase tracking-widest text-slate-900 text-center leading-tight font-sans">{item.title}</h3>
               </div>
             ))}
           </div>
@@ -178,8 +178,8 @@ export default function FloorStandingDiffusersPage() {
         <section className="py-16 bg-slate-50 rounded-[4rem] border border-slate-100 shadow-sm text-left font-sans">
           <div className="grid lg:grid-cols-2 gap-16 items-center px-8 md:px-16 text-left">
             <div className="text-left">
-              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-left">How Floor-Standing Aroma Diffusers Work</h2>
-              <p className="text-slate-500 text-lg font-light leading-relaxed mb-8 text-left">
+              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-left uppercase">How Floor-Standing Aroma Diffusers Work</h2>
+              <p className="text-slate-500 text-lg font-light leading-relaxed mb-8 text-left text-justify md:text-left">
                 Floor-standing diffusers use advanced atomization technology to break fragrance oil into fine particles that spread evenly across open spaces. This ensures consistent scent diffusion without sudden intensity changes.
               </p>
               
@@ -192,20 +192,20 @@ export default function FloorStandingDiffusersPage() {
                 ].map((feat, i) => (
                   <div key={i} className="flex items-center gap-3 text-left">
                     <CheckCircleIcon className="w-5 h-5 text-blue-600 flex-shrink-0" />
-                    <span className="text-sm font-bold text-slate-700 text-left">{feat.title}</span>
+                    <span className="text-sm font-bold text-slate-700 font-sans text-left">{feat.title}</span>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="rounded-[3rem] overflow-hidden shadow-2xl relative text-left">
+            <div className="rounded-[3rem] overflow-hidden shadow-2xl relative text-center">
               <img src={FeatureImg} alt="Floor-Standing Scent Diffusers technology" className="w-full h-auto object-cover mx-auto" />
             </div>
           </div>
         </section>
 
         {/* ================= SECTION 5: CHOOSING THE RIGHT ONE ================= */}
-        <section className="py-20 text-left font-sans">
-          <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter text-center">How to Choose the Right Lobby Aroma Diffusers</h2>
+        <section className="py-20 text-left font-sans text-left border-t border-slate-100">
+          <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter text-center uppercase">How to Choose the Right Lobby Aroma Diffusers</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
             {[
               { title: "Space Size", desc: "Larger areas need higher diffusion capacity." },
@@ -214,64 +214,43 @@ export default function FloorStandingDiffusersPage() {
               { title: "Maintenance Preference", desc: "High-capacity units reduce servicing needs." }
             ].map((item, i) => (
               <div key={i} className="p-8 bg-white border border-slate-100 rounded-[2.5rem] shadow-sm text-left">
-                <h3 className="text-blue-600 font-black text-[10px] uppercase mb-3 leading-tight text-left">{item.title}</h3>
-                <p className="text-sm text-slate-500 font-light leading-relaxed text-left">{item.desc}</p>
+                <h3 className="text-blue-600 font-black text-[10px] uppercase mb-3 leading-tight text-left tracking-widest font-sans">{item.title}</h3>
+                <p className="text-sm text-slate-500 font-light leading-relaxed text-left text-justify md:text-left font-sans">{item.desc}</p>
               </div>
             ))}
           </div>
-          <p className="mt-10 text-center text-slate-600 font-medium">Our team can help you choose the most suitable Aroma Diffusers for Large Spaces based on your environment.</p>
-        </section>
-
-        {/* ================= SECTION 6: WHY COOL MAX ================= */}
-        <section className="py-16 text-left font-sans">
-          <div className="bg-slate-50 rounded-[3rem] p-10 md:p-16 border border-slate-100 text-left shadow-sm">
-            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter leading-tight text-center lg:text-left">Why Choose Cool Max?</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
-              {[
-                "UAE-based company with local expertise",
-                "Premium Aroma Diffusers and scent machines",
-                "Suitable for hospitality, retail, and corporate spaces",
-                "Maintenance and refill support available",
-                "Trusted by leading UAE businesses"
-              ].map((reason, i) => (
-                <div key={i} className="flex items-center gap-4 bg-white p-6 rounded-2xl border border-slate-100 shadow-sm transition-all hover:border-blue-200 text-left">
-                  <ShieldCheckIcon className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                  <span className="text-slate-700 text-sm font-medium text-left">{reason}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+          <p className="mt-10 text-center text-slate-600 font-medium font-sans">Our team can help you choose the most suitable Aroma Diffusers for Large Spaces based on your environment.</p>
         </section>
 
         {/* ================= SECTION 7: RELATED ================= */}
-        <section className="py-16 text-center font-sans">
-           <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter leading-tight text-center">Related Scenting Solutions</h2>
-           <div className="flex flex-wrap justify-center gap-6">
+        <section className="py-16 text-center font-sans border-t border-slate-100">
+           <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter text-center uppercase">Related Scenting Solutions</h2>
+           <div className="flex flex-wrap justify-center gap-6 text-center">
              {[
-               { name: "Large Area & HVAC Aroma Diffusers", path: "/large-area-and-hvac-aroma-diffusers/" },
-               { name: "Commercial Aroma Diffusers", path: "/commercial-aroma-diffuser/" },
+               { name: "Large Area & HVAC Aroma Diffusers", path: "/large-area-and-hvac-aroma-diffurers/" },
+               { name: "Commercial Aroma Diffusers", path: "/commercial-aroma-diffurers/" },
                { name: "Scent Marketing Solutions", path: "/scent-marketing-solutions/" }
              ].map((sol, i) => (
-               <Link key={i} to={sol.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer">{sol.name}</Link>
+               <Link key={i} to={sol.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer text-center">{sol.name}</Link>
              ))}
            </div>
         </section>
 
         {/* ================= SECTION 8: MASTER CTA ================= */}
-        <section className="py-24 text-center relative px-4 font-sans">
+        <section className="py-24 text-center relative px-4 font-sans border-t border-slate-100">
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-5xl mx-auto relative z-10 text-center">
             <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-center">
               Need a Floor-Standing <br /> <span className="italic text-blue-600 font-light text-center">Aroma Diffuser?</span>
             </h2>
-            <p className="text-xl text-slate-500 mb-10 max-w-3xl mx-auto font-light leading-relaxed text-center">
+            <p className="text-xl text-slate-500 mb-10 max-w-3xl mx-auto font-light leading-relaxed text-center text-justify md:text-center">
               Whether you are upgrading a lobby, showroom, or commercial space, Cool Max offers professional Floor-Standing Aroma Diffusers in UAE tailored to your needs.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
-              <Link to="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
+              <Link to="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3 text-center">
                 Contact Cool Max Today <ArrowRightIcon className="w-4 h-4 text-center"/>
               </Link>
-              <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3">
-                <ChatBubbleLeftRightIcon className="w-5 h-5 text-center" /> WhatsApp Expert
+              <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3 text-center">
+                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert
               </a>
             </div>
           </motion.div>

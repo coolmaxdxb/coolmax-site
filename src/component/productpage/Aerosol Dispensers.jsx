@@ -9,6 +9,7 @@ import {
   ClockIcon,
   ShieldCheckIcon,
   BoltIcon,
+
   WrenchScrewdriverIcon,
   CpuChipIcon,
   EyeIcon
@@ -42,6 +43,7 @@ export default function AerosolDispensersPage() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
+      <link rel="canonical" href="https://www.coolmaxscent.com/aerosol-dispensers/" />
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -283,6 +285,30 @@ export default function AerosolDispensersPage() {
           </div>
         </section>
 
+        {/* ================= RELATED CATEGORIES SECTION ================= */}
+        <section className="py-20 text-left">
+          <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter text-center">Explore More Scenting Solutions</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { name: "Commercial Diffusers", path: "/commercial-aroma-diffusers/" },
+              { name: "HVAC Scenting", path: "/large-area-and-hvac-aroma-diffusers/" },
+              { name: "Desktop Diffusers", path: "/desktop-and-small-space-aroma-diffusers/" },
+              { name: "Wall & Ceiling units", path: "/wall-mounted-and-ceiling-aroma-diffusers/" }
+            ].map((cat, i) => (
+              <Link 
+                key={i} 
+                to={cat.path} 
+                className="group p-8 bg-white border border-slate-200 rounded-[2.5rem] flex flex-col items-center hover:border-blue-500 transition-all shadow-sm text-center"
+              >
+                <span className="text-xs font-black uppercase tracking-widest text-slate-900 group-hover:text-blue-600 transition-colors">
+                  {cat.name}
+                </span>
+                <ArrowRightIcon className="w-5 h-5 mt-4 text-slate-300 group-hover:text-blue-500 group-hover:translate-x-2 transition-all" />
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* ================= SECTION 4: MASTER CTA (H2) ================= */}
         <section className="py-24 text-center relative px-4 font-sans">
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-5xl mx-auto relative z-10 text-center">
@@ -313,3 +339,4 @@ export default function AerosolDispensersPage() {
     </div>
   );
 }
+

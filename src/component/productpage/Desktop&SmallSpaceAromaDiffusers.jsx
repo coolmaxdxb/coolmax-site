@@ -10,7 +10,6 @@ import {
   SparklesIcon,
   ArrowRightIcon,
   ShieldCheckIcon,
-  SpeakerXMarkIcon,
   Cog6ToothIcon,
   HomeIcon,
   BeakerIcon,
@@ -21,9 +20,7 @@ import {
 import HeroImg from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/1.webp"; 
 import Product1 from "../../asset/productimg/CMwebpimg/OpalMist Clock Diffuser/1.webp"; 
 import Product2 from "../../asset/productimg/CMwebpimg/AromaDesk/2.webp"; 
-import Product3 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/1.webp"; 
-import Product4 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/2.webp"; 
-import Product5 from "../../asset/productimg/CMwebpimg/LuxePanel Diffuser wtc/1.webp"; 
+
 import FeatureImg from "../../asset/productimg/CMwebpimg/AromaDesk/4.webp"; 
 
 const smoothFadeUp = {
@@ -47,7 +44,7 @@ export default function DesktopSmallSpacePage() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
-      <link rel="canonical" href="https://coolmaxscent.com/desktop-and-small-space-aroma-diffuser" />
+      <link rel="canonical" href="https://www.coolmaxscent.com/desktop-and-small-space-aroma-diffusers/" />
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -79,9 +76,9 @@ export default function DesktopSmallSpacePage() {
                   Office Desk Aroma Diffusers from Cool Max are designed to create fresh, calm, and comfortable environments in compact areas. These scent diffuser machines are ideal for office desks, cabins, meeting rooms, home offices, and other small indoor spaces where subtle and controlled fragrance is required.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-4 font-sans">
+              <div className="flex flex-wrap gap-4 font-sans text-left">
                 <Link to="/contact/" className="px-10 py-5 bg-slate-900 text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-600 transition-all shadow-xl text-center">Get a Quote</Link>
-                <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-[#25D366] text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center gap-3 justify-center">
+                <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-[#25D366] text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center gap-3 justify-center text-center">
                   <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Us
                 </a>
               </div>
@@ -102,13 +99,10 @@ export default function DesktopSmallSpacePage() {
             <p className="text-lg text-slate-500 mt-4 font-light text-center">Explore our range of compact Desktop Aroma Diffusers designed for desks, cabins, and small rooms.</p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
             {[
-              { img: Product1, name: "OpalMist Clock Diffuser– Smart Desk Aroma Diffuser", path: "/desktop-and-small-space-aroma-diffuser/opalmist-clock-diffuser/", desc: "A modern Office Desk Aroma Diffusers unit designed for office desks and study tables. It delivers gentle fragrance diffusion while operating quietly in the background.", suits: "Office desks • Study rooms • Home offices" },
-              { img: Product2, name: "AromaDesk – Compact Personal Space Diffuser", path: "/desktop-and-small-space-aroma-diffuser/aroma-desk-diffuser/", desc: "A small yet efficient Small Space Aroma Diffusers unit built for cabins and personal workspaces. Easy to maintain and visually minimal.", suits: "Office cabins • Small rooms • Workstations" },
-              { img: Product3, name: "ZenBox Mini – Small Room Aroma Diffuser", path: "/desktop-and-small-space-aroma-diffuser/Zembox-mini-diffuser/", desc: "A compact diffuser designed for enclosed spaces where consistent fragrance is needed without overwhelming the environment.", suits: "Small rooms • Meeting rooms • Personal spaces" },
-              { img: Product4, name: "AeroCube – Professional Desktop Diffuser", path: "/desktop-and-small-space-aroma-diffuser/aero-cube-diffuser/", desc: "Designed for steady daily use, this diffuser provides reliable fragrance output for professional environments.", suits: "Corporate desks • Clinics • Reception counters" },
-              { img: Product5, name: "LuxePanel – Premium Desk & Cabin Diffuser", path: "/desktop-and-small-space-aroma-diffuser/luxepanel-diffuser/", desc: "A refined aroma diffuser with a clean, modern design. Ideal for users who want both performance and aesthetics.", suits: "Executive desks • Cabins • Premium workspaces" }
+              { img: Product1, name: "OpalMist Clock Diffuser– Smart Desk Aroma Diffuser", path: "/desktop-and-small-space-aroma-diffusers/opalmist-clock-diffuser/", desc: "A modern Office Desk Aroma Diffusers unit designed for office desks and study tables. It delivers gentle fragrance diffusion while operating quietly in the background.", suits: "Office desks • Study rooms • Home offices" },
+              { img: Product2, name: "AromaDesk – Compact Personal Space Diffuser", path: "/desktop-and-small-space-aroma-diffusers/aroma-desk-diffuser/", desc: "A small yet efficient Small Space Aroma Diffusers unit built for cabins and personal workspaces. Easy to maintain and visually minimal.", suits: "Office cabins • Small rooms • Workstations" },
             ].map((product, idx) => (
               <motion.div key={idx} {...smoothFadeUp} className="group p-6 rounded-[3rem] bg-slate-50 border border-slate-200 transition-all hover:bg-white hover:shadow-2xl text-left flex flex-col h-full">
                 <div className="h-64 w-full bg-white rounded-[2rem] mb-8 overflow-hidden flex items-center justify-center p-8 border border-slate-100">
@@ -116,11 +110,11 @@ export default function DesktopSmallSpacePage() {
                 </div>
                 <h3 className="text-xl font-serif text-slate-900 mb-4 text-left">{product.name}</h3>
                 <p className="text-slate-600 mb-6 font-light text-sm flex-grow text-left">{product.desc}</p>
-                <div className="bg-white border border-slate-100 rounded-2xl p-4 mb-6">
-                  <span className="text-[10px] font-black text-blue-600 uppercase tracking-widest block mb-2 text-left">Best suited for:</span>
+                <div className="bg-white border border-slate-100 rounded-2xl p-4 mb-6 text-left">
+                  <span className="text-[10px] font-black text-blue-600 uppercase tracking-widest block mb-2 text-left font-sans">Best suited for:</span>
                   <p className="text-sm font-bold text-slate-700 font-sans text-left">{product.suits}</p>
                 </div>
-                <Link to={product.path} className="w-full py-4 rounded-2xl bg-slate-900 text-white font-black tracking-widest uppercase text-center text-[10px] hover:bg-blue-600 transition-all">View product details</Link>
+                <Link to={product.path} className="w-full py-4 rounded-2xl bg-slate-900 text-white font-black tracking-widest uppercase text-center text-[10px] hover:bg-blue-600 transition-all font-sans">View product details</Link>
               </motion.div>
             ))}
           </div>
@@ -129,9 +123,9 @@ export default function DesktopSmallSpacePage() {
         {/* ================= SECTION 3: WHY USE ================= */}
         <section className="py-20 text-left">
           <div className="bg-slate-900 rounded-[3rem] p-10 md:p-20 text-left text-white relative overflow-hidden shadow-2xl">
-            <h2 className="text-3xl md:text-5xl font-serif mb-8 tracking-tighter text-left">Why Use Desktop & Small Space Aroma Diffusers in UAE?</h2>
+            <h2 className="text-3xl md:text-5xl font-serif mb-8 tracking-tighter text-left uppercase">Why Use Desktop & Small Space Aroma Diffusers in UAE?</h2>
             <p className="text-slate-400 mb-12 text-lg max-w-3xl text-left">Small indoor spaces require a different approach to scenting. Ordinary air fresheners often create uneven or strong smells.</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
               {[
                 { title: "Balanced Fragrance Output", desc: "Desktop aroma diffusers release fragrance evenly, creating a pleasant atmosphere.", icon: <CheckCircleIcon /> },
                 { title: "Quiet & Discreet Operation", desc: "Designed for work environments where silence and focus are important.", icon: <SpeakerXMarkIcon /> },
@@ -139,9 +133,11 @@ export default function DesktopSmallSpacePage() {
                 { title: "Consistent Freshness", desc: "Provides long-lasting fragrance compared to sprays or plug-in fresheners.", icon: <SparklesIcon /> }
               ].map((item, i) => (
                 <div key={i} className="space-y-4 text-left">
-                  <div className="w-10 h-10 text-blue-400 text-left">{item.icon}</div>
-                  <h3 className="font-bold text-lg leading-tight text-left">{item.title}</h3>
-                  <p className="text-slate-400 text-sm font-light leading-relaxed text-left">{item.desc}</p>
+                  <div className="w-10 h-10 text-blue-400 text-left">
+                    {React.cloneElement(item.icon, { className: "w-6 h-6" })}
+                  </div>
+                  <h3 className="font-bold text-lg leading-tight text-left font-sans">{item.title}</h3>
+                  <p className="text-slate-400 text-sm font-light leading-relaxed text-left font-sans">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -150,7 +146,7 @@ export default function DesktopSmallSpacePage() {
 
         {/* ================= SECTION 4: WHERE USED ================= */}
         <section className="py-16 text-left">
-          <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter text-center">Where Desktop Aroma Diffusers Are Used</h2>
+          <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter text-center uppercase">Where Desktop Aroma Diffusers Are Used</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
             {[
               { title: "Office desks and workstations", icon: <ComputerDesktopIcon /> },
@@ -163,7 +159,7 @@ export default function DesktopSmallSpacePage() {
                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-blue-600 shadow-sm group-hover:bg-blue-600 group-hover:text-white transition-all text-left">
                   {React.cloneElement(space.icon, { className: "w-6 h-6" })}
                 </div>
-                <h3 className="text-base font-bold text-slate-700 text-left">{space.title}</h3>
+                <h3 className="text-base font-bold text-slate-700 text-left font-sans">{space.title}</h3>
               </div>
             ))}
           </div>
@@ -173,7 +169,7 @@ export default function DesktopSmallSpacePage() {
         <section className="py-16 text-left font-sans">
           <div className="grid lg:grid-cols-2 gap-16 items-center text-left">
             <div className="text-left">
-              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-left">How Desktop Aroma Diffusers Work</h2>
+              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-left uppercase">How Desktop Aroma Diffusers Work</h2>
               <p className="text-slate-500 text-lg font-light leading-relaxed mb-8 text-left">
                 Small Space Aroma Diffusers use controlled atomization technology to release fragrance in fine particles. This allows the scent to spread gently within enclosed areas without becoming overpowering.
               </p>
@@ -188,14 +184,14 @@ export default function DesktopSmallSpacePage() {
               </div>
             </div>
             <div className="rounded-[3rem] overflow-hidden shadow-2xl relative text-left">
-              <img src={FeatureImg} alt="Desktop & Small Space Aroma Diffusers in UAE Technology" className="w-full h-auto object-cover mx-auto" />
+              <img src={FeatureImg} alt="Desktop & Small Space Aroma Diffusers Technology" className="w-full h-auto object-cover mx-auto" />
             </div>
           </div>
         </section>
 
         {/* ================= SECTION 6: CHOOSING THE RIGHT ONE ================= */}
         <section className="py-16 border-t border-slate-100 text-left font-sans">
-          <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter text-center">How to Choose the Right Desktop Aroma Diffuser</h2>
+          <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-12 tracking-tighter text-center uppercase">How to Choose the Right Desktop Aroma Diffuser</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
             {[
               { title: "Space Size", desc: "Designed for desks, cabins, and small enclosed rooms." },
@@ -204,8 +200,8 @@ export default function DesktopSmallSpacePage() {
               { title: "Ease of Maintenance", desc: "Low-maintenance systems are ideal for daily use." }
             ].map((item, i) => (
               <div key={i} className="p-8 bg-slate-50 border border-slate-100 rounded-[2.5rem] shadow-sm text-left">
-                <h3 className="text-blue-600 font-black text-xs uppercase mb-3 text-left">{item.title}</h3>
-                <p className="text-sm text-slate-500 font-light leading-relaxed text-left">{item.desc}</p>
+                <h3 className="text-blue-600 font-black text-[10px] uppercase mb-3 text-left tracking-widest">{item.title}</h3>
+                <p className="text-sm text-slate-500 font-light leading-relaxed text-left text-justify">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -214,7 +210,7 @@ export default function DesktopSmallSpacePage() {
         {/* ================= SECTION 7: WHY COOL MAX ================= */}
         <section className="py-16 text-left font-sans">
           <div className="bg-slate-50 rounded-[3rem] p-10 md:p-16 border border-slate-100 text-left shadow-sm">
-            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter leading-none text-center lg:text-left">Why Choose Cool Max?</h2>
+            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter leading-none text-center lg:text-left uppercase">Why Choose Cool Max?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
               {[
                 "UAE-based company with local support",
@@ -233,15 +229,15 @@ export default function DesktopSmallSpacePage() {
         </section>
 
         {/* ================= SECTION 8: RELATED ================= */}
-        <section className="py-16 text-center font-sans">
-           <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter text-center">Related Scenting Solutions</h2>
-           <div className="flex flex-wrap justify-center gap-6">
+        <section className="py-16 text-center font-sans border-t border-slate-100">
+           <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter text-center uppercase">Related Scenting Solutions</h2>
+           <div className="flex flex-wrap justify-center gap-6 text-center">
              {[
                { name: "Car & Personal Space Scenting Solutions", path: "/car-and-personal-space-scenting-solutions/" },
-               { name: "Commercial Aroma Diffusers", path: "/commercial-aroma-diffuser/" },
+               { name: "Commercial Aroma Diffusers", path: "/commercial-aroma-diffusers/" },
                { name: "Maintenance & Refill Support", path: "/maintenance-and-refill-support-services/" }
              ].map((sol, i) => (
-               <Link key={i} to={sol.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer">{sol.name}</Link>
+               <Link key={i} to={sol.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer text-center">{sol.name}</Link>
              ))}
            </div>
         </section>
@@ -256,11 +252,11 @@ export default function DesktopSmallSpacePage() {
               Whether you are setting up a single workstation or multiple office cabins, Cool Max offers reliable Desktop & Small Space Aroma Diffusers in UAE tailored to your needs.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
-              <Link to="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
-                Contact Cool Max Today <ArrowRightIcon className="w-4 h-4"/>
+              <Link to="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3 text-center">
+                Contact Cool Max Today <ArrowRightIcon className="w-4 h-4 text-center"/>
               </Link>
-              <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3">
-                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert
+              <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3 text-center">
+                <ChatBubbleLeftRightIcon className="w-5 h-5 text-center" /> WhatsApp Expert
               </a>
             </div>
           </motion.div>
@@ -268,5 +264,14 @@ export default function DesktopSmallSpacePage() {
 
       </div>
     </div>
+  );
+}
+
+// Dummy component for missing icon in source but referenced in code
+function SpeakerXMarkIcon({ className }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 9.75L19.5 12m0 0l2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6.75h3l5.063-3.038A.468.468 0 0115 4.5v15a.468.468 0 01-.687.412L9.25 16.875h-3a1.125 1.125 0 01-1.125-1.125v-4.5A1.125 1.125 0 015.125 10.125z" />
+    </svg>
   );
 }

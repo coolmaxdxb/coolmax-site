@@ -45,6 +45,7 @@ export default function CarAromaDiffusersPage() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
+      <link rel="canonical" href="https://www.coolmaxscent.com/car-aroma-diffusers/" />
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -90,7 +91,7 @@ export default function CarAromaDiffusersPage() {
                   View Collection
                 </a>
                 <a 
-                  href={`https://wa.me/${whatsappNumber}`}
+                  href={`https://wa.me/${whatsappNumber.replace(/\+/g, '')}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-10 py-5 bg-[#25D366] text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center gap-3"
@@ -246,37 +247,14 @@ export default function CarAromaDiffusersPage() {
           <p className="mt-8 text-center text-slate-600 font-medium">If you’re unsure, our team can help you select the right option.</p>
         </section>
 
-        {/* ================= SECTION 6: WHY COOL MAX ================= */}
-        <section className="py-16 text-left font-sans">
-          <div className="bg-slate-50 rounded-[3rem] p-10 md:p-16 border border-slate-100 text-left shadow-sm">
-            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter text-center md:text-left">Why Choose Cool Max Car Aroma Diffusers?</h2>
-            <p className="text-slate-500 mb-10 max-w-3xl text-left">Customers across the UAE trust Cool Max because we focus on reliability and real-world usage.</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                "UAE-based company with local support",
-                "Professional-grade scent diffuser machines",
-                "Suitable for personal and commercial use",
-                "Easy maintenance and refill support",
-                "Trusted by businesses across multiple industries"
-              ].map((reason, i) => (
-                <div key={i} className="flex items-center gap-4 bg-white p-6 rounded-2xl border border-slate-100 shadow-sm transition-all hover:border-blue-100">
-                  <ShieldCheckIcon className="w-6 h-6 text-blue-600 flex-shrink-0" />
-                  <span className="text-slate-700 text-sm font-medium">{reason}</span>
-                </div>
-              ))}
-            </div>
-            <p className="mt-10 text-blue-600 font-serif italic text-lg text-center">We don’t just sell products — we support them.</p>
-          </div>
-        </section>
-
         {/* ================= SECTION 7: RELATED ================= */}
-        <section className="py-16 text-center font-sans">
+        <section className="py-16 text-center font-sans border-t border-slate-100">
            <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter text-center">Related Scenting Solutions</h2>
            <div className="flex flex-wrap justify-center gap-6">
              {[
-               { label: "Desktop & Small Space Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffuser" },
-               { label: "Commercial Aroma Diffusers", path: "/commercial-aroma-diffuser" },
-               { label: "Maintenance & Refill Support", path: "/maintenance-and-refill-support-services/ " }
+               { label: "Desktop & Small Space Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffusers/" },
+               { label: "Commercial Aroma Diffusers", path: "/commercial-aroma-diffusers/" },
+               { label: "Maintenance & Refill Support", path: "/maintenance-and-refill-support-services/" }
              ].map((sol, i) => (
                <Link key={i} to={sol.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer">{sol.label}</Link>
              ))}
@@ -298,7 +276,7 @@ export default function CarAromaDiffusersPage() {
               <Link to="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
                 Contact Cool Max Today <ArrowRightIcon className="w-4 h-4"/>
               </Link>
-              <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3">
+              <a href={`https://wa.me/${whatsappNumber.replace(/\+/g, '')}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3">
                 <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert
               </a>
             </div>
