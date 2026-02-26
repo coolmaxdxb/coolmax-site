@@ -98,7 +98,7 @@ export default function EcommerceHero() {
               <a href="/contact/" className="w-full sm:w-auto px-10 py-5 bg-blue-600 text-white rounded-2xl font-bold text-[10px] lg:text-xs uppercase tracking-widest transition-all hover:bg-slate-900 lg:hover:bg-white lg:hover:text-blue-600 flex items-center justify-center gap-3 shadow-lg">
                 Talk to an Expert <ArrowRightIcon className="w-4 h-4" />
               </a>
-              <a href="/products" className="w-full sm:w-auto px-10 py-5 bg-slate-100 lg:bg-white/10 border border-slate-200 lg:border-white/20 text-slate-900 lg:text-white rounded-2xl font-bold text-[10px] lg:text-xs uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all flex items-center justify-center gap-3 shadow-sm">
+              <a href="/products/" className="w-full sm:w-auto px-10 py-5 bg-slate-100 lg:bg-white/10 border border-slate-200 lg:border-white/20 text-slate-900 lg:text-white rounded-2xl font-bold text-[10px] lg:text-xs uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all flex items-center justify-center gap-3 shadow-sm">
                 <ShoppingBagIcon className="w-4 h-4" /> Shop Range
               </a>
             </div>

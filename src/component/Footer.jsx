@@ -11,7 +11,6 @@ import {
   EnvelopeIcon, 
   PhoneIcon, 
   MapPinIcon, 
- 
 } from "@heroicons/react/24/outline";
 import logo from "../asset/hero/coll-logo.png";
 
@@ -53,11 +52,17 @@ export default function Footer() {
           <div className="md:col-span-3">
             <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-indigo-400 mb-6">Company</h4>
             <ul className="space-y-3 text-sm">
-              {['About Cool Max', 'Our Technology', 'Fragrance Innovation', 'Industries We Serve', 'Sustainability'].map((item) => (
-                <li key={item}>
-                  <a href="/about-us/" className="text-slate-400 hover:text-white transition-all font-medium flex items-center gap-2 group">
+              {[
+                { name: 'About Cool Max', url: '/about-us/' },
+                { name: 'Our Solutions', url: '/solutions/' },
+                { name: 'Fragrance Innovation', url: '/aromas/' },
+                { name: 'Industries We Serve', url: '/industries/' },
+                { name: 'Spray', url: '/spray/' }
+              ].map((item) => (
+                <li key={item.name}>
+                  <a href={item.url} className="text-slate-400 hover:text-white transition-all font-medium flex items-center gap-2 group">
                     <span className="w-0 h-px bg-indigo-500 group-hover:w-3 transition-all duration-300"></span>
-                    {item}
+                    {item.name}
                   </a>
                 </li>
               ))}
@@ -67,11 +72,17 @@ export default function Footer() {
           <div className="md:col-span-3">
             <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-indigo-400 mb-6">Collections</h4>
             <ul className="space-y-3 text-sm">
-              {['Car Scent Diffusers', 'Lobby & HVAC Systems', 'Wall Mount Diffusers', 'Room Solutions', 'Automatic Dispensers'].map((item) => (
-                <li key={item}>
-                  <a href="/products" className="text-slate-400 hover:text-white transition-all font-medium flex items-center gap-2 group">
+              {[
+                { name: 'Car Scent Diffusers', url: '/car-aroma-diffusers/' },
+                { name: 'Lobby & HVAC Systems', url: '/large-area-and-hvac-aroma-diffusers/' },
+                { name: 'Wall Mount Diffusers', url: '/wall-mounted-and-ceiling-aroma-diffusers/' },
+                { name: 'Room Solutions', url: '/desktop-and-small-space-aroma-diffusers/' },
+                { name: 'Automatic Dispensers', url: '/aerosol-dispensers/' }
+              ].map((item) => (
+                <li key={item.name}>
+                  <a href={item.url} className="text-slate-400 hover:text-white transition-all font-medium flex items-center gap-2 group">
                     <span className="w-0 h-px bg-indigo-500 group-hover:w-3 transition-all duration-300"></span>
-                    {item}
+                    {item.name}
                   </a>
                 </li>
               ))}
@@ -186,7 +197,7 @@ export default function Footer() {
             <div className="flex gap-4 justify-center md:justify-end text-[10px] text-slate-600 font-medium">
               <a href="/contact/" className="hover:text-indigo-400 transition-colors">Privacy</a>
               <a href="/contact/" className="hover:text-indigo-400 transition-colors">Terms</a>
-              <a href="/sitemap/" className="hover:text-indigo-400 transition-colors">Sitemap</a>
+            
             </div>
           </div>
 
