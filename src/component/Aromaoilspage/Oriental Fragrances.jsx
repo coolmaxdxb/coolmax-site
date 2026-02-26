@@ -16,7 +16,7 @@ import P1 from "../../asset/Aroma oils img/ADDRESS.webp";
 import P2 from "../../asset/Aroma oils img/ARABIAN PENSUILA.webp"; 
 import P3 from "../../asset/Aroma oils img/ARABIAN  BAKHOOR.webp"; 
 import P4 from "../../asset/Aroma oils img/EMAAR.webp"; 
-import P5 from "../../asset/Aroma oils img/TUSCAN LEATHER.webp"; // Added import for Sweet Oud
+import P5 from "../../asset/Aroma oils img/Sweet Oud.webp"; // Added import for Sweet Oud
 
 const OrientalAromaOilsPage = () => {
   // Redirection Links

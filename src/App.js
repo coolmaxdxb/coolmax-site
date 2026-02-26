@@ -164,9 +164,9 @@ function App() {
 
        {/* --- PRODUCT CATEGORY ROUTES (Plural Version) --- */}
 <Route path="/car-aroma-diffusers/" element={<CarAaromaD />} />
-<Route path="/commercial-aroma-diffurers/" element={<CommercialD />} />
+<Route path="/commercial-aroma-diffusers/" element={<CommercialD />} />
 <Route path="/desktop-and-small-space-aroma-diffusers/" element={<Desktopsmall />} />
-<Route path="/floor-standing-aroma-diffurers/" element={<Floorstanding />} />
+<Route path="/floor-standing-aroma-diffusers/" element={<Floorstanding />} />
 <Route path="/large-area-and-hvac-aroma-diffusers/" element={<Largearea />} />
 <Route path="/no-power-diffusers/" element={<Passivenopower />} />
 <Route path="/wall-mounted-and-ceiling-aroma-diffusers/" element={<WallmountedD />} />
@@ -181,9 +181,9 @@ function App() {
         <Route path="/premium-aroma-oil/" element={<PremiumCollection />} />
         
       {/* Commercial Aroma Diffusers */}
-<Route path="/commercial-aroma-diffurers/aeroblack-med-diffuser/" element={<AeroBlackMed />} />
-<Route path="/commercial-aroma-diffurers/mistbox-x-diffuser/" element={<MistBox />} />
-<Route path="/commercial-aroma-diffurers/aeroblack-pro/" element={<AeroBlackpro />} />
+<Route path="/commercial-aroma-diffusers/aeroblack-med-diffuser/" element={<AeroBlackMed />} />
+<Route path="/commercial-aroma-diffusers/mistbox-x-diffuser/" element={<MistBox />} />
+<Route path="/commercial-aroma-diffusers/aeroblack-pro/" element={<AeroBlackpro />} />
 
 {/* Large Area & HVAC */}
 <Route path="/large-area-and-hvac-aroma-diffusers/aeroblack-pro-diffuser/" element={<AeroPillar />} />

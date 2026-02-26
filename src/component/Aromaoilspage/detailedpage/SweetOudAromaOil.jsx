@@ -15,7 +15,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORT ---
-import P17 from "../../../asset/Aroma oils img/TUSCAN LEATHER.webp"; 
+import P17 from "../../../asset/Aroma oils img/Sweet Oud.webp"; 
 
 const SweetOudAromaOilDetail = () => {
   // Redirection Links
