@@ -16,7 +16,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORT ---
-import P_Varilla from "../../asset/Aerosol Spray/tradition.webp"; 
+import P_Varilla from "../../asset/Aerosol Spray/Varilla Ice-Cream.webp"; 
 
 const VarillaIceCreamAerosolSprayDetail = () => {
     // Redirection Links

@@ -86,6 +86,10 @@ import NaturalFragrance2 from "../../asset/productimg/CMwebpimg/Natural Fragranc
 import CeilAirPro1 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/4.webp";
 import CeilAirPro2 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/5.webp";
 
+
+import Aeromax1 from "../../asset/productimg/CMwebpimg/AeroMax Pro/2.webp";
+import Aeromax2 from "../../asset/productimg/CMwebpimg/AeroMax Pro/3.webp";
+
 // 21. Aerosol Dispensers (Aerosol assets)
 import Aerosol1 from "../../asset/productimg/CMwebpimg/Aerosol Dispensers/1.webp";
 import Aerosol2 from "../../asset/productimg/CMwebpimg/Aerosol Dispensers/2.webp";
@@ -116,7 +120,7 @@ const productList = [
   { id: 8, name: "ZenBox Mini Diffuser", model: "D50mini", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/wall-mounted-and-ceiling-aroma-diffusers/zenbox-mini-diffuser/", images: [ZenBoxMini1, ZenBoxMini2] },
   { id: 10, name: "LuxePanel Diffuser", model: "OV-5/5Pro", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/wall-mounted-and-ceiling-aroma-diffusers/luxepanel-diffuser/", images: [LuxePanel1, LuxePanel2] },
   { id: 19, name: "CeilAir Pro Diffuser", model: "M45", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/wall-mounted-and-ceiling-aroma-diffusers/ceil-air-pro-diffuser/", images: [CeilAirPro1, CeilAirPro2] },
-  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/wall-mounted-and-ceiling-aroma-diffusers/aeromax-pro-diffuser/", images: [CeilAirPro1, CeilAirPro2] },
+  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling Aroma Diffusers", path: "/wall-mounted-and-ceiling-aroma-diffusers/aeromax-pro-diffuser/", images: [Aeromax1, Aeromax2] },
 
   // --- 6. DESKTOP & SMALL SPACE AROMA DIFFUSERS ---
   { id: 9, name: "AromaDesk", model: "H10-A-2026", cat: "Desktop & Small Space Aroma Diffusers", path: "/desktop-and-small-space-aroma-diffusers/aroma-desk-diffuser/", images: [AromaDesk1, AromaDesk2] },

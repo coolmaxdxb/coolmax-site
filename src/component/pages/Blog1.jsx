@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRightIcon, CalendarDaysIcon, EnvelopeIcon, TagIcon } from "@heroicons/react/24/outline";
+import { ArrowRightIcon, CalendarDaysIcon,TagIcon } from "@heroicons/react/24/outline";
 
 /* ================= UPDATED DATA STRUCTURE (5 ITEMS) ================= */
 const blogPosts = [
@@ -135,38 +135,8 @@ export default function EcommerceBlog() {
           ))}
         </div>
 
-        {/* Newsletter Section */}
-        <div className="mt-24 bg-slate-50 rounded-[3rem] p-10 md:p-20 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-12">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100/50 rounded-full blur-[100px] -mr-48 -mt-48" />
-          
-          <div className="relative z-10 max-w-xl text-center lg:text-left">
-            <div className="flex justify-center lg:justify-start mb-6">
-              <div className="p-4 bg-white rounded-2xl shadow-sm">
-                <EnvelopeIcon className="w-8 h-8 text-blue-600" />
-              </div>
-            </div>
-            <h3 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tighter mb-4 font-sans uppercase">
-              Join the <span className="text-blue-600">Scent List</span>
-            </h3>
-            <p className="text-slate-500 font-medium font-sans">
-              Get exclusive offers, new fragrance alerts, and scenting tips delivered weekly.
-            </p>
-          </div>
-
-          <div className="relative z-10 w-full max-w-md">
-            <div className="flex p-2 bg-white rounded-3xl shadow-2xl shadow-slate-200">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="flex-1 px-6 py-4 bg-transparent text-slate-900 text-sm focus:outline-none font-bold placeholder:font-normal font-sans" 
-              />
-              <button className="bg-slate-900 text-white px-8 py-4 rounded-2xl text-xs font-bold hover:bg-blue-600 transition-all uppercase tracking-widest font-sans">
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </div>
-
+       
+        
       </div>
 
       <style>{`

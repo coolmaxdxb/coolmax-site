@@ -17,7 +17,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORT ---
-import P_Voyage from "../../asset/Aerosol Spray/tradition.webp"; 
+import P_Voyage from "../../asset/Aerosol Spray/Voyage.webp"; 
 
 const VoyageAerosolSprayDetail = () => {
     // Redirection Links

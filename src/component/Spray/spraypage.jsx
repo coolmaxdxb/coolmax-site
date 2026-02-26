@@ -30,8 +30,8 @@ import roseImg from "../../asset/Aerosol Spray/rose.webp";
 import senseImg from "../../asset/Aerosol Spray/sense.webp";
 import strawberryImg from "../../asset/Aerosol Spray/strawberry.webp";
 import traditionImg from "../../asset/Aerosol Spray/tradition.webp";
-import voyageImg from "../../asset/Aerosol Spray/tradition.webp";
-import vanillaImg from "../../asset/Aerosol Spray/tradition.webp"; 
+import voyageImg from "../../asset/Aerosol Spray/Voyage.webp";
+import vanillaImg from "../../asset/Aerosol Spray/Varilla Ice-Cream.webp"; 
 
 const sprayProducts = [
   { id: 1, name: "Flora", cat: "Floral", code: "AS-01", img: floraImg, path: "/spray/flora-aerosol-spray/" },
