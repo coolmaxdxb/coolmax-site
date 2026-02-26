@@ -220,8 +220,8 @@ export default function LargeAreaDiffusersPage() {
            <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter text-center uppercase">Related Scenting Solutions</h2>
            <div className="flex flex-wrap justify-center gap-6 text-center">
              {[
-               { name: "Commercial Aroma Diffusers", path: "/commercial-aroma-diffurers/" },
-               { name: "Floor-Standing Aroma Diffusers", path: "/floor-standing-aroma-diffurers/" },
+               { name: "Commercial Aroma Diffusers", path: "/commercial-aroma-diffusers/" },
+               { name: "Floor-Standing Aroma Diffusers", path: "/floor-standing-aroma-diffusers/" },
                { name: "Scent Marketing Solutions", path: "/scent-marketing-solutions/" }
              ].map((sol, i) => (
                <Link key={i} to={sol.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer text-center">{sol.name}</Link>

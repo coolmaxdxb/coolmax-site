@@ -204,17 +204,17 @@ function App() {
 
 {/* Wall-Mounted & Ceiling */}
 <Route path="/wall-mounted-and-ceiling-aroma-diffusers/ceil-air-pro-diffuser/" element={<CeilAir />} />
-<Route path="/wall-mounted-and-ceiling-aroma-diffurers/aeromax-pro-diffuser/" element={<Aeromaxpro />} />
+<Route path="/wall-mounted-and-ceiling-aroma-diffusers/aeromax-pro-diffuser/" element={<Aeromaxpro />} />
 {/* These two were requested in the sitemap for wall-mounted category */}
 <Route path="/wall-mounted-and-ceiling-aroma-diffusers/aerocube-diffuser/" element={<AeroCubePage />} />
-<Route path="/wall-mounted-and-ceiling-aroma-diffurers/zenbox-mini-diffuser/" element={<ZenBoxMini />} />
-<Route path="/wall-mounted-and-ceiling-aroma-diffurers/luxepanel-diffuser/" element={<LuxePanel />} />
+<Route path="/wall-mounted-and-ceiling-aroma-diffusers/zenbox-mini-diffuser/" element={<ZenBoxMini />} />
+<Route path="/wall-mounted-and-ceiling-aroma-diffusers/luxepanel-diffuser/" element={<LuxePanel />} />
 
 {/* Floor Standing */}
-<Route path="/floor-standing-aroma-diffurers/nano-pillar-diffuser/" element={<NanoPillar />} />
-<Route path="/floor-standing-aroma-diffurers/titan-diffuser/" element={<Titan />} />
-<Route path="/floor-standing-aroma-diffurers/aeropillar-diffuser/" element={<AeroPillar />} />
-<Route path="/floor-standing-aroma-diffurers/airpole-pro-diffuser/" element={<AirPole />} />
+<Route path="/floor-standing-aroma-diffusers/nano-pillar-diffuser/" element={<NanoPillar />} />
+<Route path="/floor-standing-aroma-diffusers/titan-diffuser/" element={<Titan />} />
+<Route path="/floor-standing-aroma-diffusers/aeropillar-diffuser/" element={<AeroPillar />} />
+<Route path="/floor-standing-aroma-diffusers/airpole-pro-diffuser/" element={<AirPole />} />
 
 {/* No Power */}
 <Route path="/no-power-diffusers/natural-fragrance-diffuser/" element={<NaturalFlow />} />

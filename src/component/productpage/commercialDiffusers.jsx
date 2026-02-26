@@ -44,7 +44,7 @@ export default function CommercialDiffusersPage() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
-      <link rel="canonical" href="https://www.coolmaxscent.com/commercial-aroma-diffurers/" />
+      <link rel="canonical" href="https://www.coolmaxscent.com/commercial-aroma-diffusers/" />
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -158,7 +158,7 @@ export default function CommercialDiffusersPage() {
                 <span className="text-[10px] font-black text-slate-400 uppercase block mb-2 tracking-widest font-sans text-left">Best suited for:</span>
                 <p className="text-xs font-bold text-slate-700 font-sans text-left">Retail stores • Reception areas • Waiting lounges • Salons</p>
               </div>
-              <Link to="/commercial-aroma-diffurers/mistbox-x-diffuser/" className="block w-full py-4 rounded-2xl bg-slate-900 text-white font-black tracking-widest uppercase text-[10px] hover:bg-blue-600 transition-all text-center font-sans shadow-lg">
+              <Link to="/commercial-aroma-diffusers/mistbox-x-diffuser/" className="block w-full py-4 rounded-2xl bg-slate-900 text-white font-black tracking-widest uppercase text-[10px] hover:bg-blue-600 transition-all text-center font-sans shadow-lg">
                 View product details
               </Link>
             </motion.div>
@@ -296,8 +296,8 @@ export default function CommercialDiffusersPage() {
           <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter uppercase text-center">Related Scenting Solutions</h2>
           <div className="flex flex-wrap justify-center gap-4 text-center">
             {[
-              { label: "Large Area & HVAC Aroma Diffurers", path: "/large-area-and-hvac-aroma-diffusers/" },
-              { label: "Wall-Mounted & Ceiling Diffurers", path: "/wall-mounted-and-ceiling-aroma-diffusers/" },
+              { label: "Large Area & HVAC Aroma diffusers", path: "/large-area-and-hvac-aroma-diffusers/" },
+              { label: "Wall-Mounted & Ceiling diffusers", path: "/wall-mounted-and-ceiling-aroma-diffusers/" },
               { label: "Maintenance & Refill Support", path: "/maintenance-and-refill-support-services/" }
             ].map((item, idx) => (
               <Link key={idx} to={item.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-xs font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm text-center cursor-pointer">

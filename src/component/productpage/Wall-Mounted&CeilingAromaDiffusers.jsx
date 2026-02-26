@@ -144,12 +144,12 @@ export default function WallMountedDiffusersPage() {
                 name: "AeroMax Pro – Wall-Mounted Professional Diffuser", 
                 desc: "A robust Wall-Mounted Aroma Diffusers unit designed for steady performance and consistent fragrance output throughout the day.",
                 suits: "Offices • Waiting areas • Reception zones • Meeting rooms",
-                path: "/wall-mounted-and-ceiling-aroma-diffurers/aeromax-pro-diffuser/"
+                path: "/wall-mounted-and-ceiling-aroma-diffusers/aeromax-pro-diffuser/"
               },
               { 
                 img: Product3, 
                 name: "ZenBox Mini – Small Room Aroma Diffuser", 
-                path: "/wall-mounted-and-ceiling-aroma-diffurers/zenbox-mini-diffuser/", 
+                path: "/wall-mounted-and-ceiling-aroma-diffusers/zenbox-mini-diffuser/", 
                 desc: "A compact diffuser designed for enclosed spaces where consistent fragrance is needed without overwhelming the environment.", 
                 suits: "Small rooms • Meeting rooms • Personal spaces" 
               },
@@ -163,7 +163,7 @@ export default function WallMountedDiffusersPage() {
               { 
                 img: Product5, 
                 name: "LuxePanel – Premium Desk & Cabin Diffuser", 
-                path: "/wall-mounted-and-ceiling-aroma-diffurers/luxepanel-diffuser/", 
+                path: "/wall-mounted-and-ceiling-aroma-diffusers/luxepanel-diffuser/", 
                 desc: "A refined aroma diffuser with a clean, modern design. Ideal for users who want both performance and aesthetics.", 
                 suits: "Executive desks • Cabins • Premium workspaces" 
               }
@@ -306,8 +306,8 @@ export default function WallMountedDiffusersPage() {
             <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter leading-tight text-center uppercase">Related Scenting Solutions</h2>
             <div className="flex flex-wrap justify-center gap-6 text-center">
               {[
-                { name: "Commercial Aroma Diffurers", path: "/commercial-aroma-diffurers/" },
-                { name: "Large Area & HVAC Aroma Diffurers", path: "/large-area-and-hvac-aroma-diffusers/" },
+                { name: "Commercial Aroma diffusers", path: "/commercial-aroma-diffusers/" },
+                { name: "Large Area & HVAC Aroma diffusers", path: "/large-area-and-hvac-aroma-diffusers/" },
                 { name: "Maintenance & Refill Support", path: "/maintenance-and-refill-support-services/" }
               ].map((sol, i) => (
                 <Link key={i} to={sol.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer text-center font-sans">{sol.name}</Link>
