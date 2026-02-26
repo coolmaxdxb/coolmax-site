@@ -12,7 +12,7 @@ const blogPosts = [
     category: "Hospitality",
     date: "Feb 20, 2026",
     readTime: "6 min read",
-    path: "/blog1/", // Blog 1 Redirect
+    path: "/blog/scent-marketing-hotels-uae/", // Blog 1 Redirect
     image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=900",
   },
   {
@@ -22,7 +22,7 @@ const blogPosts = [
     category: "Business Guide",
     date: "Feb 18, 2026",
     readTime: "7 min read",
-    path: "/blog2/", // Blog 2 Redirect
+    path: "/blog/scent-marketing-hotels-uae/", // Blog 2 Redirect
     image: "https://images.unsplash.com/photo-1508090228729-c062eefc9bef?q=80&w=1170&auto=format&fit=crop",
   },
   {
@@ -32,7 +32,7 @@ const blogPosts = [
     category: "Scent Marketing",
     date: "Mar 15, 2025",
     readTime: "5 min read",
-    path: "/blog1/",
+    path: "/blog/scent-marketing-hotels-uae/",
     image: "https://plus.unsplash.com/premium_photo-1664303418178-b8767b25f646?w=500&auto=format&fit=crop&q=60",
   },
   {
@@ -42,7 +42,7 @@ const blogPosts = [
     category: "Science",
     date: "Feb 15, 2025",
     readTime: "6 min read",
-    path: "/blog1/",
+    path: "/blog/choose-commercial-aroma-diffuser-uae/",
     image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=900",
   },
   {
@@ -52,7 +52,7 @@ const blogPosts = [
     category: "Sustainability",
     date: "Feb 10, 2025",
     readTime: "4 min read",
-    path: "/blog1/",
+    path: "/blog/scent-marketing-hotels-uae/",
     image: "https://media.istockphoto.com/id/1265249156/photo/portrait-of-a-beautiful-woman-enjoying-the-smell-of-fresh-flowers.webp?a=1&b=1&s=612x612&w=0&k=20&c=MH8YmLhSjKnY2T6kQ93z_WRzf_lOEg-L1P7WNaNaW8c=",
   },
   {
@@ -62,7 +62,7 @@ const blogPosts = [
     category: "Lifestyle",
     date: "Jan 25, 2025",
     readTime: "5 min read",
-    path: "/blog1/",
+    path: "/blog/scent-marketing-hotels-uae/",
     image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=900",
   },
 ];

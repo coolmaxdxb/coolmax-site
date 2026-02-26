@@ -266,8 +266,8 @@ function App() {
 <Route path="/spray/floral-aerosol-spray/" element={<FloralSpray />} />
 <Route path="/spray/voyage-aerosol-spray/" element={<VoyageSpray />} />
 
-        <Route path="/blog1/" element={<Blog1 />} />
-        <Route path="/blog2/" element={<Blog2 />} />
+        <Route path="/blog/scent-marketing-hotels-uae/" element={<Blog1 />} />
+        <Route path="/blog/choose-commercial-aroma-diffuser-uae/" element={<Blog2 />} />
       </Routes>
 
       <Footer />
