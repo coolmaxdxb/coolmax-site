@@ -115,6 +115,7 @@ import ThankYouPage from "./component/Thankyoupage";
 
 import Blog1 from "../src/component/blogs/blog1";
 import Blog2 from "../src/component/blogs/blog2";
+import Blog3 from "../src/component/blogs/blog3";
 
 // --- HELPER: SCROLL TO TOP ---
 const ScrollToTop = () => {
@@ -186,7 +187,7 @@ function App() {
 <Route path="/commercial-aroma-diffusers/aeroblack-pro/" element={<AeroBlackpro />} />
 
 {/* Large Area & HVAC */}
-<Route path="/large-area-and-hvac-aroma-diffusers/aeroblack-pro-diffuser/" element={<AeroPillar />} />
+<Route path="/large-area-and-hvac-aroma-diffusers/aeroblack-pro-diffuser/" element={<AeroBlackpro />} />
 <Route path="/large-area-and-hvac-aroma-diffusers/air-pulse-150-diffuser/" element={<AirPulse />} />
 
 {/* Car Aroma Diffusers */}
@@ -268,6 +269,7 @@ function App() {
 
         <Route path="/blog/scent-marketing-hotels-uae/" element={<Blog1 />} />
         <Route path="/blog/choose-commercial-aroma-diffuser-uae/" element={<Blog2 />} />
+        <Route path="/blog/scent-marketing-101-uae/" element={<Blog3 />} />
       </Routes>
 
       <Footer />

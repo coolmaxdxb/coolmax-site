@@ -32,7 +32,7 @@ const blogPosts = [
     category: "Scent Marketing",
     date: "Mar 15, 2025",
     readTime: "5 min read",
-    path: "/blog/scent-marketing-hotels-uae/",
+    path: "/blog/scent-marketing-101-uae/",
     image: "https://plus.unsplash.com/premium_photo-1664303418178-b8767b25f646?w=500&auto=format&fit=crop&q=60",
   },
   {
