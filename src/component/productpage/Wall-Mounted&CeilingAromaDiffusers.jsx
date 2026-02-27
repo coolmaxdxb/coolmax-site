@@ -21,7 +21,7 @@ import {
 // --- UPDATED IMAGE IMPORTS BASED ON YOUR DIRECTORY ---
 import HeroImg from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/1.webp"; 
 import Product1 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/2.webp"; 
-import Product2 from "../../asset/productimg/CMwebpimg/CeilAir Pro Diffuser/5.webp"; 
+import Product2 from "../../asset/productimg/CMwebpimg/AeroMax Pro/4.webp"; 
 import Product3 from "../../asset/productimg/CMwebpimg/ZenBox Mini Diffuser/1.webp"; 
 import Product4 from "../../asset/productimg/CMwebpimg/AeroCube Diffuser/2.webp"; 
 import Product5 from "../../asset/productimg/CMwebpimg/LuxePanel Diffuser wtc/1.webp"; 
