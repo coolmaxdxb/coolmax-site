@@ -22,8 +22,12 @@ export default function TalkToExpert() {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
-
+     
     // Replace with your actual Web3Forms Access Key
+    // ADD THESE TWO LINES
+  formData.append("from_name", "Cool Max Scent Enquiry");
+  formData.append("replyto", formData.get("email"));
+
     formData.append("access_key", "c2be2763-1280-4ce9-b9b3-898c99dac4ca");
 
     const response = await fetch("https://api.web3forms.com/submit", {
