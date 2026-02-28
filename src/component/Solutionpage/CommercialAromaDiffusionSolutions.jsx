@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet"; // Added for dynamic canonical link
 import { 
   SparklesIcon, 
   CheckCircleIcon,
@@ -33,7 +34,10 @@ export default function CommercialDiffusersPage() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
-      <link rel="canonical" href="https://coolmaxscent.com/commercial-aroma-diffusion-solutions" />
+      {/* ================= SEO METADATA ================= */}
+      <Helmet>
+        <link rel="canonical" href="https://www.coolmaxscent.com/commercial-aroma-diffusion-solutions/" />
+      </Helmet>
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -51,7 +55,7 @@ export default function CommercialDiffusersPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-200 mb-8">
+              <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-8">
                 <SparklesIcon className="w-4 h-4 text-blue-600" />
                 <span className="text-blue-700 text-[10px] font-black uppercase tracking-[0.3em]">
                   Commercial Aroma Diffusion Solutions in UAE

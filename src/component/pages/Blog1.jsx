@@ -26,9 +26,9 @@ const blogPosts = [
   },
   {
     id: 3,
-    title: "Top 5 Fragrance Trends for Luxury Hotels",
-    excerpt: "Explore the trending olfactory notes defining luxury hospitality and guest experience for the 2026 season.",
-    category: "Hospitality",
+    title: "Scent Marketing 101 Solutions in UAE | Cool Max Scent",
+    excerpt: "Scent Marketing 101: How Dubai Businesses Use.",
+    category: "Marketing Mastery",
     date: "Feb 28, 2026",
     readTime: "4 min",
     image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=900",

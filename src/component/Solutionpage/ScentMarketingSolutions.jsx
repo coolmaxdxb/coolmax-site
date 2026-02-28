@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet"; // Added for SEO Meta implementation
 import { 
   SparklesIcon, 
   BuildingOffice2Icon, 
@@ -34,7 +35,9 @@ export default function ScentMarketingPage() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
-      <link rel="canonical" href="https://coolmaxscent.com/scent-marketing-solutions/" />
+      <Helmet>
+        <link rel="canonical" href="https://coolmaxscent.com/scent-marketing-solutions/" />
+      </Helmet>
 
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0 text-left">
@@ -71,7 +74,6 @@ export default function ScentMarketingPage() {
               </p>
 
               <div className="flex flex-wrap gap-4 text-left">
-                {/* Fixed the anchor link here */}
                 <a href="#explore" className="px-8 py-4 bg-slate-900 text-white font-black text-[10px] uppercase tracking-widest rounded-2xl hover:bg-blue-600 transition-all shadow-xl text-left">
                   Explore Services
                 </a>
@@ -105,7 +107,6 @@ export default function ScentMarketingPage() {
         </section>
 
         {/* ================= SECTION 1: INTRO ================= */}
-        {/* Added id="explore" here to catch the button click */}
         <section id="explore" className="py-16 border-t border-slate-100 text-left scroll-mt-20">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -367,7 +368,7 @@ export default function ScentMarketingPage() {
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-widest rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center gap-3 font-sans text-center"
               >
-                <ChatBubbleLeftRightIcon className="w-5 h-5 text-center" /> WhatsApp Expert
+                <ChatBubbleLeftRightIcon className="w-5 h-5" text-center /> WhatsApp Expert
               </a>
             </div>
           </motion.div>

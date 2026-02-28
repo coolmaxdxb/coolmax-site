@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet"; // Added for SEO
 import { 
   TruckIcon, 
   ComputerDesktopIcon, 
@@ -35,7 +36,10 @@ export default function CarPersonalScentingPage() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden">
-      <link rel="canonical" href="https://coolmaxscent.com/car-and-personal-space-scenting-solutions" />
+      {/* ================= SEO METADATA ================= */}
+      <Helmet>
+        <link rel="canonical" href="https://www.coolmaxscent.com/car-and-personal-space-scenting-solutions/" />
+      </Helmet>
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -62,7 +66,7 @@ export default function CarPersonalScentingPage() {
                 </span>
               </div>
               
-              <h1 className="text-5xl md:text-7xl lg:text-6xl xl:text-6xl font-serif text-slate-900 tracking-tighter mb-6 leading-[0.95]">
+              <h1 className="text-5xl md:text-7xl lg:text-6xl xl:text-7xl font-serif text-slate-900 tracking-tighter mb-6 leading-[0.95]">
                 Car & <br />
                 <span className="italic text-slate-400 font-light pr-2">Personal Space</span> <br />
                 Scenting Solutions in UAE.
@@ -197,7 +201,7 @@ export default function CarPersonalScentingPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
             {[
               { title: "Car Aroma Diffusers", desc: "Our car aroma diffusers are designed to fit seamlessly into vehicle interiors. These systems provide controlled fragrance diffusion without spills or overpowering scents.", icon: <TruckIcon />, path: "/car-aroma-diffusers/" },
-              { title: "Personal & Desk Aroma Diffusers", desc: "Compact home diffuser machines suitable for desks, cabins, and small rooms provide steady fragrance output while remaining quiet and discreet.", icon: <ComputerDesktopIcon />, path: "/desktop-and-small-space-aroma-diffuser/" },
+              { title: "Personal & Desk Aroma Diffusers", desc: "Compact home diffuser machines suitable for desks, cabins, and small rooms provide steady fragrance output while remaining quiet and discreet.", icon: <ComputerDesktopIcon />, path: "/desktop-and-small-space-aroma-diffusers/" },
               { title: "Battery & USB-Powered Scent Systems", desc: "Many of our scent diffuser machines operate on battery or USB power, making them ideal for flexible and portable use.", icon: <Battery50Icon />, path: "/car-aroma-diffusers/" },
               { title: "Low-Maintenance Operation", desc: "Designed for everyday use, these systems require minimal attention while delivering consistent freshness.", icon: <BoltIcon />, path: "/maintenance-and-refill-support-services/" }
             ].map((sol, idx) => (

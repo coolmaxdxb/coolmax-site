@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom"; 
+import { Helmet } from "react-helmet"; // Added for canonical link
 import { 
   SparklesIcon, 
   UserGroupIcon, 
@@ -34,6 +35,11 @@ export default function AboutUs() {
   return (
     <section id="about" className="relative bg-white overflow-hidden font-sans selection:bg-indigo-500 selection:text-white text-slate-600">
       
+      {/* ================= SEO METADATA ================= */}
+      <Helmet>
+        <link rel="canonical" href="https://www.coolmaxscent.com/about-us/" />
+      </Helmet>
+
       {/* ================= GLOBAL BACKGROUND (White & Grey Gradient) ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-[-10%] right-[-10%] w-[800px] h-[800px] bg-slate-100 rounded-full blur-[120px]" />
@@ -257,7 +263,7 @@ export default function AboutUs() {
               { title: "Residential Homes", desc: "Upgrade everyday living with reliable home diffuser machines and best home fragrance systems.", icon: <ArrowRightIcon className="w-6 h-6"/> },
             ].map((industry, idx) => (
               <motion.div 
-                key={idx}
+                key={idx} 
                 variants={fadeUp}
                 className="group p-8 bg-white border border-slate-100 rounded-[2rem] hover:border-indigo-300 shadow-sm hover:shadow-md transition-all duration-300 hover:bg-slate-50"
               >
@@ -402,6 +408,6 @@ export default function AboutUs() {
         </motion.div>
 
       </div>
-    </section>
+   </section>
   );
 }

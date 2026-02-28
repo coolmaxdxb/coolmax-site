@@ -54,7 +54,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               {[
                 { name: 'About Cool Max', url: '/about-us/' },
-                { name: 'Our Solutions', url: '/solutions/' },
+                { name: 'Our Solutions', url: '/solution/' },
                 { name: 'Fragrance Innovation', url: '/aromas/' },
                 { name: 'Industries We Serve', url: '/industries/' },
                 { name: 'Spray', url: '/spray/' }
@@ -197,7 +197,6 @@ export default function Footer() {
             <div className="flex gap-4 justify-center md:justify-end text-[10px] text-slate-600 font-medium">
               <a href="/contact/" className="hover:text-indigo-400 transition-colors">Privacy</a>
               <a href="/contact/" className="hover:text-indigo-400 transition-colors">Terms</a>
-            
             </div>
           </div>
 

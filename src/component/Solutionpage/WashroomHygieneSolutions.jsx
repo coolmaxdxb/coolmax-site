@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet"; 
 import { 
   SparklesIcon, 
   ShieldCheckIcon, 
@@ -31,8 +32,10 @@ export default function WashroomHygienePage() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-teal-100 overflow-x-hidden text-left">
-      {/* Canonical URL for SEO */}
-      <link rel="canonical" href="https://coolmaxscent.com/washroom-hygiene-solutions" />
+      {/* ================= SEO METADATA ================= */}
+      <Helmet>
+        <link rel="canonical" href="https://www.coolmaxscent.com/washroom-hygiene-solutions/" />
+      </Helmet>
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -326,7 +329,7 @@ export default function WashroomHygienePage() {
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-2 font-sans text-left"
               >
-                <ChatBubbleLeftRightIcon className="w-5 h-5 text-left" /> WhatsApp Expert
+                <ChatBubbleLeftRightIcon className="w-5 h-5" text-left /> WhatsApp Expert
               </a>
             </div>
           </motion.div>

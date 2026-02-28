@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet"; // Added for SEO
 
 // ================= IMAGE IMPORTS =================
 import CarImg from "../../src/asset/Aroma oils img/ADDRESS.webp";
@@ -67,6 +68,11 @@ export default function ProductCategories() {
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
       
+      {/* ================= SEO METADATA ================= */}
+      <Helmet>
+        <link rel="canonical" href="https://www.coolmaxscent.com/aromas/" />
+      </Helmet>
+
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-slate-50 rounded-full blur-[150px]" />

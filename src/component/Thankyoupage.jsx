@@ -24,6 +24,7 @@ export default function ThankYouPage() {
       <Helmet>
         <title>Thank You | Cool Max Scent Solutions</title>
         <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/thank-you/" />
       </Helmet>
 
       {/* ================= GLOBAL BACKGROUND ================= */}

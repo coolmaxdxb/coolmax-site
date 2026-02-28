@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet"; // Added for SEO
 import { 
   BuildingStorefrontIcon, 
   UserGroupIcon, 
@@ -44,7 +45,10 @@ export default function CommercialDiffusersPage() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
-      <link rel="canonical" href="https://www.coolmaxscent.com/commercial-aroma-diffusers/" />
+      {/* ================= SEO METADATA ================= */}
+      <Helmet>
+        <link rel="canonical" href="https://www.coolmaxscent.com/commercial-aroma-diffurers/" />
+      </Helmet>
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -140,14 +144,14 @@ export default function CommercialDiffusersPage() {
                 <span className="text-[10px] font-black text-slate-400 uppercase block mb-2 tracking-widest font-sans text-left">Best suited for:</span>
                 <p className="text-xs font-bold text-slate-700 font-sans text-left">Offices • Clinics • Training centers • Corporate spaces</p>
               </div>
-              <Link to="/commercial-aroma-diffusers/aeroblack-med-diffuser/" className="block w-full py-4 rounded-2xl bg-slate-900 text-white font-black tracking-widest uppercase text-[10px] hover:bg-blue-600 transition-all text-center font-sans shadow-lg">
+              <Link to="/commercial-aroma-diffurers/aeroblack-med-diffuser/" className="block w-full py-4 rounded-2xl bg-slate-900 text-white font-black tracking-widest uppercase text-[10px] hover:bg-blue-600 transition-all text-center font-sans shadow-lg">
                 View product details
               </Link>
             </motion.div>
 
             {/* MistBox X */}
             <motion.div {...smoothFadeUp} transition={{ delay: 0.2 }} className="group p-8 rounded-[3rem] bg-slate-50 border border-slate-200 hover:bg-white hover:shadow-2xl transition-all flex flex-col text-left">
-              <div className="h-72 w-full bg-white rounded-[2.5rem] mb-8 flex items-center justify-center p-12 border border-slate-50 shadow-sm text-center">
+              <div className="h-72 w-full bg-white rounded-[2.5rem] mb-8 flex items-center justify-center p-12 border border-slate-100 shadow-sm text-center">
                 <img src={Product2Img} alt="MistBox X" className="h-full object-contain group-hover:scale-105 transition-transform duration-500 mx-auto" />
               </div>
               <h3 className="text-3xl font-serif text-slate-900 mb-4 text-left">MistBox X – Mid-Size Commercial Diffuser</h3>
@@ -158,7 +162,7 @@ export default function CommercialDiffusersPage() {
                 <span className="text-[10px] font-black text-slate-400 uppercase block mb-2 tracking-widest font-sans text-left">Best suited for:</span>
                 <p className="text-xs font-bold text-slate-700 font-sans text-left">Retail stores • Reception areas • Waiting lounges • Salons</p>
               </div>
-              <Link to="/commercial-aroma-diffusers/mistbox-x-diffuser/" className="block w-full py-4 rounded-2xl bg-slate-900 text-white font-black tracking-widest uppercase text-[10px] hover:bg-blue-600 transition-all text-center font-sans shadow-lg">
+              <Link to="/commercial-aroma-diffurers/mistbox-x-diffuser/" className="block w-full py-4 rounded-2xl bg-slate-900 text-white font-black tracking-widest uppercase text-[10px] hover:bg-blue-600 transition-all text-center font-sans shadow-lg">
                 View product details
               </Link>
             </motion.div>
@@ -296,8 +300,8 @@ export default function CommercialDiffusersPage() {
           <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter uppercase text-center">Related Scenting Solutions</h2>
           <div className="flex flex-wrap justify-center gap-4 text-center">
             {[
-              { label: "Large Area & HVAC Aroma diffusers", path: "/large-area-and-hvac-aroma-diffusers/" },
-              { label: "Wall-Mounted & Ceiling diffusers", path: "/wall-mounted-and-ceiling-aroma-diffusers/" },
+              { label: "Large Area & HVAC Aroma diffurers", path: "/large-area-and-hvac-aroma-diffusers/" },
+              { label: "Wall-Mounted & Ceiling diffurers", path: "/wall-mounted-and-ceiling-aroma-diffusers/" },
               { label: "Maintenance & Refill Support", path: "/maintenance-and-refill-support-services/" }
             ].map((item, idx) => (
               <Link key={idx} to={item.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-xs font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm text-center cursor-pointer">
@@ -332,7 +336,7 @@ export default function CommercialDiffusersPage() {
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-12 py-6 bg-[#25D366] text-white font-black text-xs uppercase tracking-[0.3em] rounded-2xl transition-all shadow-xl hover:bg-[#128C7E] flex items-center justify-center gap-3 text-center"
               >
-                <ChatBubbleLeftRightIcon className="w-5 h-5 text-center" /> WhatsApp Expert
+                <ChatBubbleLeftRightIcon className="w-5 h-5" text-center /> WhatsApp Expert
               </a>
             </div>
           </motion.div>

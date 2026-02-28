@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet"; // Added for SEO
 import { 
   BuildingOffice2Icon, 
   CheckCircleIcon, 
@@ -33,8 +34,10 @@ export default function LargeAreaDiffusersPage() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://www.coolmaxscent.com/large-area-and-hvac-aroma-diffusers/" />
+      {/* ================= SEO METADATA ================= */}
+      <Helmet>
+        <link rel="canonical" href="https://www.coolmaxscent.com/large-area-and-hvac-aroma-diffurers/" />
+      </Helmet>
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -94,7 +97,7 @@ export default function LargeAreaDiffusersPage() {
               <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4 text-left">AeroBlack Pro – HVAC-Integrated Scent Diffuser</h3>
               <p className="text-slate-600 mb-6 font-light text-left md:text-left flex-grow">A professional HVAC Scent Diffusers unit designed to distribute fragrance through central air-conditioning systems. Ensures uniform scent coverage across large areas.</p>
               <p className="text-[10px] font-black uppercase text-blue-600 tracking-widest mb-4 text-left">Best suited for: Hotels • Malls • Airports • Corporate buildings</p>
-              <Link to="/large-area-and-hvac-aroma-diffusers/aeroblack-pro-diffuser/" className="inline-flex items-center justify-center gap-2 py-4 px-8 bg-slate-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-blue-600 transition-all font-sans">View product details <ArrowRightIcon className="w-4 h-4"/></Link>
+              <Link to="/large-area-and-hvac-aroma-diffurers/aeroblack-pro-diffuser/" className="inline-flex items-center justify-center gap-2 py-4 px-8 bg-slate-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-blue-600 transition-all font-sans">View product details <ArrowRightIcon className="w-4 h-4"/></Link>
             </motion.div>
             
             <motion.div whileHover={{ y: -10 }} className="bg-slate-50 rounded-[3rem] p-10 border border-slate-100 shadow-sm text-left flex flex-col h-full">
@@ -104,7 +107,7 @@ export default function LargeAreaDiffusersPage() {
               <h3 className="text-2xl font-serif font-bold text-slate-900 mb-4 text-left">AirPulse 150 – Large Area Aroma Diffuser</h3>
               <p className="text-slate-600 mb-6 font-light text-left md:text-left flex-grow">A powerful standalone scent diffuser designed for large open spaces where Commercial HVAC Scenting Solutions integration is not required.</p>
               <p className="text-[10px] font-black uppercase text-blue-600 tracking-widest mb-4 text-left">Best suited for: Showrooms • Event halls • Large lobbies • Exhibition spaces</p>
-              <Link to="/large-area-and-hvac-aroma-diffusers/air-pulse-150-diffuser/" className="inline-flex items-center justify-center gap-2 py-4 px-8 bg-slate-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-blue-600 transition-all font-sans">View product details <ArrowRightIcon className="w-4 h-4"/></Link>
+              <Link to="/large-area-and-hvac-aroma-diffurers/air-pulse-150-diffuser/" className="inline-flex items-center justify-center gap-2 py-4 px-8 bg-slate-900 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-blue-600 transition-all font-sans">View product details <ArrowRightIcon className="w-4 h-4"/></Link>
             </motion.div>
           </div>
         </section>
@@ -220,8 +223,8 @@ export default function LargeAreaDiffusersPage() {
            <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter text-center uppercase">Related Scenting Solutions</h2>
            <div className="flex flex-wrap justify-center gap-6 text-center">
              {[
-               { name: "Commercial Aroma Diffusers", path: "/commercial-aroma-diffusers/" },
-               { name: "Floor-Standing Aroma Diffusers", path: "/floor-standing-aroma-diffusers/" },
+               { name: "Commercial Aroma Diffusers", path: "/commercial-aroma-diffurers/" },
+               { name: "Floor-Standing Aroma Diffusers", path: "/floor-standing-aroma-diffurers/" },
                { name: "Scent Marketing Solutions", path: "/scent-marketing-solutions/" }
              ].map((sol, i) => (
                <Link key={i} to={sol.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer text-center">{sol.name}</Link>

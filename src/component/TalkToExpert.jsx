@@ -1,5 +1,6 @@
 import React, { useState } from "react"; // Added useState
 import { useNavigate } from "react-router-dom"; // Added useNavigate
+import { Helmet } from "react-helmet"; // Added for SEO
 import {
   PhoneIcon,
   EnvelopeIcon,
@@ -22,9 +23,6 @@ export default function TalkToExpert() {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
-     
-    // Replace with your actual Web3Forms Access Key
-    // ADD THESE TWO LINES
   formData.append("from_name", "Cool Max Scent Enquiry");
   formData.append("replyto", formData.get("email"));
 
@@ -50,6 +48,11 @@ export default function TalkToExpert() {
   return (
     <section id="contact" className="relative bg-white py-24 lg:py-32 overflow-hidden selection:bg-blue-100 selection:text-blue-900">
       
+      {/* ================= SEO METADATA ================= */}
+      <Helmet>
+        <link rel="canonical" href="https://www.coolmaxscent.com/contact/" />
+      </Helmet>
+
       {/* ================= BACKGROUND ATMOSPHERE (WHITE & GREY GRADIENT) ================= */}
       <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-gray-100" />
@@ -144,6 +147,9 @@ export default function TalkToExpert() {
               <div className="group text-left">
                 <label className="text-xs uppercase tracking-widest text-slate-400 mb-2 block group-focus-within:text-blue-600 transition-colors font-bold">Message</label>
                 <textarea name="message" required rows="4" className="w-full bg-transparent border-b border-slate-200 py-3 text-slate-900 focus:outline-none focus:border-blue-600 transition-colors resize-none placeholder:text-slate-300" placeholder="Tell us about your space..." />
+              </div>
+              <div className="group text-left hidden">
+                  <input type="checkbox" name="botcheck" style={{ display: 'none' }} />
               </div>
               <div className="pt-4 text-left">
                 <button type="submit" className="w-full md:w-auto px-10 py-4 bg-blue-600 hover:bg-slate-900 text-white font-bold uppercase tracking-widest transition-all duration-300 rounded-sm flex items-center justify-center gap-4 group shadow-lg shadow-blue-600/20">

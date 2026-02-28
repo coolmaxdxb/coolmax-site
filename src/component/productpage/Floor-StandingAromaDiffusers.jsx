@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet"; // Added for SEO
 import { 
   BuildingOffice2Icon, 
   ShoppingBagIcon, 
@@ -47,13 +48,15 @@ export default function FloorStandingDiffusersPage() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
-      {/* Canonical URL */}
-      <link rel="canonical" href="https://www.coolmaxscent.com/floor-standing-aroma-diffusers/" />
+      {/* ================= SEO METADATA ================= */}
+      <Helmet>
+        <link rel="canonical" href="https://www.coolmaxscent.com/floor-standing-aroma-diffurers/" />
+      </Helmet>
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-slate-100/50 rounded-full blur-[150px]" />
-        <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-blue-50/30 rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-blue-50/50 rounded-full blur-[120px]" />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.01)_1px,transparent_1px)] bg-[size:100px_100px]" />
       </div>
 
@@ -109,10 +112,10 @@ export default function FloorStandingDiffusersPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
             {[
-              { img: Product1, name: "AeroPillar Diffuser", path: "/floor-standing-aroma-diffusers/aeropillar-diffuser/", desc: "A sleek floor-standing aroma diffuser designed to deliver consistent fragrance while blending seamlessly into modern interiors. Its vertical design makes it ideal for spaces where aesthetics matter.", suits: "Hotel lobbies • Showrooms • Reception areas • Sales offices" },
-              { img: Product2, name: "AirPole Pro Diffuser", path: "/floor-standing-aroma-diffusers/airpole-pro-diffuser/", desc: "A powerful floor-standing scent diffuser built for open spaces that require steady and noticeable fragrance diffusion. Designed for professional environments with continuous foot traffic.", suits: "Shopping malls • Large retail spaces • Exhibition areas" },
-              { img: Product3, name: "Titan Diffuser", path: "/floor-standing-aroma-diffusers/titan-diffuser/", desc: "A high-performance floor-standing aroma diffuser designed for wide coverage and long operating hours. Ideal for environments where strong scent presence is required without overpowering the space.", suits: "Corporate lobbies • Event venues • Hospitality spaces" },
-              { img: Product4, name: "NanoPillar Diffuser", path: "/floor-standing-aroma-diffusers/nano-pillar-diffuser/", desc: "A compact yet powerful floor-standing aroma diffuser that combines modern design with efficient fragrance diffusion. Suitable for medium to large spaces where subtle elegance is preferred.", suits: "Boutiques • Premium offices • Small hotel lobbies" }
+              { img: Product1, name: "AeroPillar Diffuser", path: "/floor-standing-aroma-diffurers/aeropillar-diffuser/", desc: "A sleek floor-standing aroma diffuser designed to deliver consistent fragrance while blending seamlessly into modern interiors. Its vertical design makes it ideal for spaces where aesthetics matter.", suits: "Hotel lobbies • Showrooms • Reception areas • Sales offices" },
+              { img: Product2, name: "AirPole Pro Diffuser", path: "/floor-standing-aroma-diffurers/airpole-pro-diffuser/", desc: "A powerful floor-standing scent diffuser built for open spaces that require steady and noticeable fragrance diffusion. Designed for professional environments with continuous foot traffic.", suits: "Shopping malls • Large retail spaces • Exhibition areas" },
+              { img: Product3, name: "Titan Diffuser", path: "/floor-standing-aroma-diffurers/titan-diffuser/", desc: "A high-performance floor-standing aroma diffuser designed for wide coverage and long operating hours. Ideal for environments where strong scent presence is required without overpowering the space.", suits: "Corporate lobbies • Event venues • Hospitality spaces" },
+              { img: Product4, name: "NanoPillar Diffuser", path: "/floor-standing-aroma-diffurers/nano-pillar-diffuser/", desc: "A compact yet powerful floor-standing aroma diffuser that combines modern design with efficient fragrance diffusion. Suitable for medium to large spaces where subtle elegance is preferred.", suits: "Boutiques • Premium offices • Small hotel lobbies" }
             ].map((product, idx) => (
               <motion.div key={idx} {...smoothFadeUp} className="group p-8 rounded-[3.5rem] bg-slate-50 border border-slate-200 transition-all hover:bg-white hover:shadow-2xl text-left flex flex-col h-full">
                 <div className="h-80 w-full bg-white rounded-[2rem] mb-8 flex items-center justify-center p-8 border border-slate-100 text-center">
@@ -227,8 +230,8 @@ export default function FloorStandingDiffusersPage() {
            <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter text-center uppercase">Related Scenting Solutions</h2>
            <div className="flex flex-wrap justify-center gap-6 text-center">
              {[
-               { name: "Large Area & HVAC Aroma Diffusers", path: "/large-area-and-hvac-aroma-diffusers/" },
-               { name: "Commercial Aroma Diffusers", path: "/commercial-aroma-diffusers/" },
+               { name: "Large Area & HVAC Aroma Diffurers", path: "/large-area-and-hvac-aroma-diffurers/" },
+               { name: "Commercial Aroma Diffurers", path: "/commercial-aroma-diffurers/" },
                { name: "Scent Marketing Solutions", path: "/scent-marketing-solutions/" }
              ].map((sol, i) => (
                <Link key={i} to={sol.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer text-center">{sol.name}</Link>

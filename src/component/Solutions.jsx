@@ -1,7 +1,7 @@
 import React from "react";
+import { Helmet } from "react-helmet"; // Added for dynamic canonical link
 
-// You can use lucide-react or heroicons. 
-// I have embedded SVGs below to ensure this works immediately without installing packages.
+
 
 const solutions = [
   {
@@ -51,6 +51,11 @@ const solutions = [
 export default function SolutionsSection() {
   return (
     <section className="py-24 bg-gray-50 text-gray-900" id="solutions">
+      {/* ================= SEO METADATA ================= */}
+      <Helmet>
+        <link rel="canonical" href="https://www.coolmaxscent.com/solution/" />
+      </Helmet>
+
       {/* --- Changed max-w-7xl to max-w-[1600px] --- */}
       <div className="max-w-[1600px] mx-auto px-6 md:px-12 mt-16">
         

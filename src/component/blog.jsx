@@ -27,9 +27,9 @@ const blogPosts = [
   },
   {
     id: 3,
-    title: "The Psychology of Scent in Retail",
-    excerpt: "Discover how the right fragrance can increase customer dwell time, boost sales, and create lasting emotional connections with your brand.",
-    category: "Scent Marketing",
+    title: "Scent Marketing 101 Solutions in UAE | Cool Max Scent",
+    excerpt: "Scent Marketing 101: How Dubai Businesses Use.",
+    category: "Marketing Mastery",
     date: "Mar 15, 2025",
     readTime: "5 min read",
     path: "/blog/scent-marketing-101-uae/",

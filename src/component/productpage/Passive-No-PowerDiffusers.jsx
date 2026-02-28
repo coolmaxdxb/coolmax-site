@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet"; // Added for dynamic canonical link
 import { 
   SparklesIcon, 
   BuildingOffice2Icon, 
@@ -31,13 +32,16 @@ export default function PassiveDiffusersPage() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
-      <link rel="canonical" href="https://www.coolmaxscent.com/no-power-diffusers/" />
+      {/* ================= SEO METADATA ================= */}
+      <Helmet>
+        <link rel="canonical" href="https://www.coolmaxscent.com/no-power-diffusers/" />
+      </Helmet>
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-slate-100/50 rounded-full blur-[150px]" />
         <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-blue-50/50 rounded-full blur-[120px]" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.01)_1px,transparent_1px)] bg-[size:100px_100px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.02)_1px,transparent_1px)] bg-[size:80px_80px] opacity-100" />
       </div>
 
       <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-16">
@@ -181,7 +185,7 @@ export default function PassiveDiffusersPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 text-left">
                 {["Continuous fragrance release", "No mechanical parts", "No power dependency", "Long-lasting performance"].map((f, i) => (
                   <div key={i} className="flex items-center gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-100 font-sans text-left">
-                    <CheckCircleIcon className="w-5 h-5 text-blue-600 flex-shrink-0 text-left" />
+                    <CheckCircleIcon className="w-5 h-5 text-blue-600 flex-shrink-0" text-left />
                     <span className="text-sm font-bold text-slate-700 text-left">{f}</span>
                   </div>
                 ))}
@@ -289,7 +293,7 @@ export default function PassiveDiffusersPage() {
                 Contact Cool Max Today <ArrowRightIcon className="w-4 h-4 text-center"/>
               </Link>
               <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3 text-center">
-                <ChatBubbleLeftRightIcon className="w-5 h-5 text-center" /> WhatsApp Expert
+                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert
               </a>
             </div>
           </motion.div>

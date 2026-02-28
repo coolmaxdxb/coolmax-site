@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet"; // Added for SEO Meta implementation
+import { Helmet } from "react-helmet";
 import { 
   WrenchScrewdriverIcon, 
   ArrowPathIcon, 
@@ -39,7 +39,7 @@ export default function MaintenancePage() {
       <Helmet>
         <title>Maintenance & Refill Support Services in UAE | Cool Max</title>
         <meta name="description" content="Maintenance and refill support services in UAE for scent and hygiene systems. Reliable servicing, fragrance refills, and HVAC diffuser maintenance by Cool Max." />
-        <link rel="canonical" href="https://coolmaxscent.com/maintenance-and-refill-support-services" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/maintenance-and-refill-support-services/" />
       </Helmet>
 
       {/* ================= GLOBAL BACKGROUND ================= */}
@@ -194,7 +194,7 @@ export default function MaintenancePage() {
             <div className="lg:col-span-7 text-left">
                 <div className="mb-8">
                     <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-4 tracking-tighter leading-none">What Is Maintenance & Refill Support?</h2>
-                    <p className="text-slate-500 text-base md:text-lg font-light leading-relaxed max-w-xl text-left">
+                    <p className="text-slate-500 text-base md:text-lg font-light leading-relaxed max-xl text-left">
                       Maintenance and refill support involves ongoing service care for scent and hygiene systems. At Cool Max, we offer structured maintenance programs designed to suit different environments and usage levels.
                     </p>
                 </div>
@@ -234,7 +234,7 @@ export default function MaintenancePage() {
               { title: "Scheduled Fragrance Refills", desc: "We provide timely refilling of fragrance oils for commercial scent machines, hotel scent machines, and home fragrance systems, ensuring uninterrupted operation.", icon: <BeakerIcon /> },
               { title: "System Inspection & Cleaning", desc: "Our technicians inspect and clean diffuser components to maintain optimal diffusion and prevent residue buildup.", icon: <ClipboardDocumentCheckIcon /> },
               { title: "Performance Monitoring", desc: "We check fragrance output, coverage consistency, and system settings to ensure even distribution across the space.", icon: <ClockIcon /> },
-              { title: "Intensity Adjustment", desc: "Fragrance intensity can be adjusted based on seasonal needs, foot traffic, or space usage.", icon: <ArrowPathIcon /> },
+              { title: "Intensity Adjustment", desc: "Fragrance intensity can be adjusted based on seasonal needs, font traffic, or space usage.", icon: <ArrowPathIcon /> },
               { title: "Replacement of Consumables", desc: "Where required, we replace consumable parts to maintain system efficiency and reliability.", icon: <Cog6ToothIcon /> }
             ].map((srv, idx) => (
               <motion.div 

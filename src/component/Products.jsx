@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet"; // Added for SEO
 import {
   MagnifyingGlassIcon,
   ArrowUpRightIcon,
@@ -96,35 +97,35 @@ import Aerosol2 from "../asset/productimg/CMwebpimg/Aerosol Dispensers/2.webp";
 
 const productList = [
   // --- 1. COMMERCIAL AROMA DIFFUSERS ---
-  { id: 5, name: "AeroBlack Med diffuser", model: "Q500", cat: "Commercial Aroma Diffusers", images: [AeroBlackMed1, AeroBlackMed2], path: "/commercial-aroma-diffusers/aeroblack-med-diffuser/" },
-  { id: 6, name: "MistBox X Diffuser", model: "OV-10", cat: "Commercial Aroma Diffusers", images: [MistBoxX1, MistBoxX2], path: "/commercial-aroma-diffusers/mistbox-x-diffuser/" },
+  { id: 5, name: "AeroBlack Med diffuser", model: "Q500", cat: "Commercial Aroma Diffusers", images: [AeroBlackMed1, AeroBlackMed2], path: "/commercial-aroma-diffurers/aeroblack-med-diffuser/" },
+  { id: 6, name: "MistBox X Diffuser", model: "OV-10", cat: "Commercial Aroma Diffusers", images: [MistBoxX1, MistBoxX2], path: "/commercial-aroma-diffurers/mistbox-x-diffuser/" },
 
   // --- 2. LARGE AREA & HVAC AROMA DIFFUSERS ---
   { id: 16, name: "AeroBlack Pro Diffuser", model: "Q3000Pro", cat: "Large Area & HVAC", images: [AeroBlackPro1, AeroBlackPro2], path: "/large-area-and-hvac-aroma-diffusers/aeroblack-pro-diffuser/" },
   { id: 17, name: "AirPulse 150", model: "VS-160", cat: "Large Area & HVAC", images: [AirPulse1501, AirPulse1502], path: "/large-area-and-hvac-aroma-diffusers/air-pulse-150-diffuser/" },
 
   // --- 3. FLOOR-STANDING AROMA DIFFUSERS ---
-  { id: 12, name: "NanoPillar Diffuser", model: "A500", cat: "Floor-Standing Aroma Diffusers", images: [NanoPillar1, NanoPillar2], path: "/floor-standing-aroma-diffusers/nano-pillar-diffuser/" },
-  { id: 13, name: "Titan Diffuser", model: "A700", cat: "Floor-Standing Aroma Diffusers", images: [Titan1, Titan2], path: "/floor-standing-aroma-diffusers/titan-diffuser/" },
-  { id: 14, name: "AeroPillar Diffuser", model: "F-Air", cat: "Floor-Standing Aroma Diffusers", images: [AeroPillar1, AeroPillar2], path: "/floor-standing-aroma-diffusers/aeropillar-diffuser/" },
-  { id: 15, name: "AirPole Pro Diffuser", model: "G-Air", cat: "Floor-Standing Aroma Diffusers", images: [AirPolePro1, AirPolePro2], path: "/floor-standing-aroma-diffusers/airpole-pro-diffuser/" },
+  { id: 12, name: "NanoPillar Diffuser", model: "A500", cat: "Floor-Standing Aroma Diffusers", images: [NanoPillar1, NanoPillar2], path: "/floor-standing-aroma-diffurers/nano-pillar-diffuser/" },
+  { id: 13, name: "Titan Diffuser", model: "A700", cat: "Floor-Standing Aroma Diffusers", images: [Titan1, Titan2], path: "/floor-standing-aroma-diffurers/titan-diffuser/" },
+  { id: 14, name: "AeroPillar Diffuser", model: "F-Air", cat: "Floor-Standing Aroma Diffusers", images: [AeroPillar1, AeroPillar2], path: "/floor-standing-aroma-diffurers/aeropillar-diffuser/" },
+  { id: 15, name: "AirPole Pro Diffuser", model: "G-Air", cat: "Floor-Standing Aroma Diffusers", images: [AirPolePro1, AirPolePro2], path: "/floor-standing-aroma-diffurers/airpole-pro-diffuser/" },
 
   // --- 4. CAR AROMA DIFFUSERS ---
   { id: 1, name: "Vento Car", model: "H11-B-2026", cat: "Car Aroma Diffusers", images: [VentoCar1, VentoCar2], path: "/car-aroma-diffusers/vento-car-diffuser/" },
   { id: 2, name: "DriveScent", model: "H11-A-2026", cat: "Car Aroma Diffusers", images: [DriveScent1, DriveScent2], path: "/car-aroma-diffusers/drive-scent-diffuser/" },
   { id: 3, name: "DeskScent", model: "H19", cat: "Car Aroma Diffusers", images: [DeskScent1, DeskScent2], path: "/car-aroma-diffusers/desk-scent-diffuser/" },
-  { id: 4, name: "NovaCarDiffuser", model: "DA1004-2026", cat: "Car Aroma Diffusers", images: [NovaCar1, NovaCar2], path: "/car-aroma-diffusers/nova-car-diffuser/" },
+  { id: 4, name: "NovaCarDiffuser", model: "DA1004-2026", cat: "Car Aroma Diffusers", images: [NovaCar1, NovaCar2], path: "/car-aroma-diffurers/nova-car-diffuser/" },
 
   // --- 5. WALL-MOUNTED & CEILING AROMA DIFFUSERS ---
   { id: 7, name: "AeroCube Diffuser", model: "M41-B", cat: "Wall-Mounted & Ceiling", images: [AeroCube1, AeroCube2], path: "/wall-mounted-and-ceiling-aroma-diffusers/aerocube-diffuser/" },
-  { id: 8, name: "ZenBox Mini Diffuser", model: "D50mini", cat: "Wall-Mounted & Ceiling", images: [ZenBoxMini1, ZenBoxMini2], path: "/wall-mounted-and-ceiling-aroma-diffusers/zenbox-mini-diffuser/" },
-  { id: 10, name: "LuxePanel Diffuser", model: "OV-5/5Pro", cat: "Wall-Mounted & Ceiling", images: [LuxePanel1, LuxePanel2], path: "/wall-mounted-and-ceiling-aroma-diffusers/luxepanel-diffuser/" },
+  { id: 8, name: "ZenBox Mini Diffuser", model: "D50mini", cat: "Wall-Mounted & Ceiling", images: [ZenBoxMini1, ZenBoxMini2], path: "/wall-mounted-and-ceiling-aroma-diffurers/zenbox-mini-diffuser/" },
+  { id: 10, name: "LuxePanel Diffuser", model: "OV-5/5Pro", cat: "Wall-Mounted & Ceiling", images: [LuxePanel1, LuxePanel2], path: "/wall-mounted-and-ceiling-aroma-diffurers/luxepanel-diffuser/" },
   { id: 19, name: "CeilAir Pro Diffuser", model: "M45", cat: "Wall-Mounted & Ceiling", images: [CeilAirPro1, CeilAirPro2], path: "/wall-mounted-and-ceiling-aroma-diffusers/ceil-air-pro-diffuser/" },
-  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling", images: [Aeromax1, Aeromax2 ], path: "/wall-mounted-and-ceiling-aroma-diffusers/aeromax-pro-diffuser/" },
+  { id: 20, name: "AeroMax Pro", model: "A315L", cat: "Wall-Mounted & Ceiling", images: [Aeromax1, Aeromax2 ], path: "/wall-mounted-and-ceiling-aroma-diffurers/aeromax-pro-diffuser/" },
 
   // --- 6. DESKTOP & SMALL SPACE AROMA DIFFUSERS ---
-  { id: 9, name: "AromaDesk", model: "H10-A-2026", cat: "Desktop & Small Space", images: [AromaDesk1, AromaDesk2], path: "/desktop-and-small-space-aroma-diffusers/aroma-desk-diffuser/" },
-  { id: 11, name: "OpalMist Clock Diffuser", model: "U2", cat: "Desktop & Small Space", images: [OpalMist1, OpalMist2], path: "/desktop-and-small-space-aroma-diffusers/opalmist-clock-diffuser/" },
+  { id: 9, name: "AromaDesk", model: "H10-A-2026", cat: "Desktop & Small Space", images: [AromaDesk1, AromaDesk2], path: "/desktop-and-small-space-aroma-diffurers/aroma-desk-diffuser/" },
+  { id: 11, name: "OpalMist Clock Diffuser", model: "U2", cat: "Desktop & Small Space", images: [OpalMist1, OpalMist2], path: "/desktop-and-small-space-aroma-diffurers/opalmist-clock-diffuser/" },
 
   // --- 7. PASSIVE / NO-POWER DIFFUSERS ---
   { id: 18, name: "Natural Fragrance Diffusion", model: "M10", cat: "Passive / No-Power Diffusers", images: [NaturalFragrance1, NaturalFragrance2], path: "/no-power-diffusers/natural-fragrance-diffuser/" },
@@ -159,6 +160,11 @@ export default function ArchitectStore() {
   return (
     <div className="min-h-screen bg-[#FAF9F6] text-slate-900 font-sans text-left">
       
+      {/* ================= SEO METADATA ================= */}
+      <Helmet>
+        <link rel="canonical" href="https://www.coolmaxscent.com/products/" />
+      </Helmet>
+
       {/* ================= SECTION 1: MINIMAL HERO ================= */}
       <section className="relative pt-32 pb-20 px-6 lg:px-16 overflow-hidden bg-white text-left">
         <div className="max-w-[1600px] mx-auto grid lg:grid-cols-2 items-end gap-12 text-left">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet"; // Added for SEO
 // --- ASSET IMPORTS ---
 import Client1 from "../asset/clientslogo/Mercure Hotels.webp";
 import Client2 from "../asset/clientslogo/PAN HOME.webp";
@@ -59,6 +60,11 @@ export default function IndustriesSection() {
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white overflow-hidden">
       
+      {/* ================= SEO METADATA ================= */}
+      <Helmet>
+        <link rel="canonical" href="https://www.coolmaxscent.com/industries/" />
+      </Helmet>
+
       {/* ================= BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-[-5%] right-[-5%] w-[60%] h-[60%] bg-blue-50/50 rounded-full blur-[120px]" />

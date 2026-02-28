@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet"; // Added for dynamic canonical link
 import { 
   CloudIcon, 
   ArrowsPointingOutIcon, 
@@ -32,7 +33,10 @@ export default function HVACSolutionsPage() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-cyan-100 overflow-x-hidden">
-      <link rel="canonical" href="https://coolmaxscent.com/hvac-scenting-solutions" />
+      {/* ================= SEO METADATA ================= */}
+      <Helmet>
+        <link rel="canonical" href="https://www.coolmaxscent.com/hvac-scenting-solutions/" />
+      </Helmet>
 
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -131,7 +135,7 @@ export default function HVACSolutionsPage() {
                 <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-6 tracking-tighter text-left">What Is HVAC Scenting?</h2>
                 <div className="space-y-6 text-slate-500 text-base md:text-lg font-light leading-relaxed text-left">
                   <p>
-                    HVAC scenting is a professional fragrance distribution method that uses a Commercial HVAC Aroma Diffuser connected to centralized air-conditioning systems. Instead of scenting a single room, fragrance is delivered through the air ducts and circulated evenly across multiple areas.
+                    HVAC scenting is a professional fragrance distribution method that uses a Commercial HVAC Aroma Diffuser compressed air or dry-mist delivery connected to centralized air-conditioning systems. Instead of scenting a single room, fragrance is delivered through the air ducts and circulated evenly across multiple areas.
                   </p>
                   <div className="bg-white border border-slate-100 p-6 rounded-2xl shadow-sm">
                     <h4 className="text-cyan-600 font-black mb-4 uppercase text-[10px] tracking-widest border-b border-slate-50 pb-2 text-left">This method ensures</h4>
@@ -230,7 +234,7 @@ export default function HVACSolutionsPage() {
             ].map((sol, idx) => (
               <div key={idx} className="p-8 bg-slate-50 border border-slate-100 rounded-[2.5rem] hover:bg-white hover:border-cyan-200 transition-all shadow-sm text-left">
                 <div className="w-12 h-12 bg-white text-cyan-600 border border-slate-100 rounded-xl flex items-center justify-center mb-6">
-                   {React.cloneElement(sol.icon, { className: "w-6 h-6" })}
+                    {React.cloneElement(sol.icon, { className: "w-6 h-6" })}
                 </div>
                 <h3 className="text-base font-black uppercase text-slate-900 mb-4 leading-snug text-left">{sol.title}</h3>
                 <p className="text-xs text-slate-500 leading-relaxed font-light text-left">{sol.desc}</p>

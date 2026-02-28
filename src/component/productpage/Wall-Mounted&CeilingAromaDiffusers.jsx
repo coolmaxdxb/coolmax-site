@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { 
   BuildingOfficeIcon, 
   WrenchScrewdriverIcon, 
@@ -49,7 +50,10 @@ export default function WallMountedDiffusersPage() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
-      <link rel="canonical" href="https://www.coolmaxscent.com/wall-mounted-and-ceiling-aroma-diffusers/" />
+      {/* ================= SEO METADATA ================= */}
+      <Helmet>
+        <link rel="canonical" href="https://www.coolmaxscent.com/wall-mounted-and-ceiling-aroma-diffurers/" />
+      </Helmet>
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -144,12 +148,12 @@ export default function WallMountedDiffusersPage() {
                 name: "AeroMax Pro – Wall-Mounted Professional Diffuser", 
                 desc: "A robust Wall-Mounted Aroma Diffusers unit designed for steady performance and consistent fragrance output throughout the day.",
                 suits: "Offices • Waiting areas • Reception zones • Meeting rooms",
-                path: "/wall-mounted-and-ceiling-aroma-diffusers/aeromax-pro-diffuser/"
+                path: "/wall-mounted-and-ceiling-aroma-diffurers/aeromax-pro-diffuser/"
               },
               { 
                 img: Product3, 
                 name: "ZenBox Mini – Small Room Aroma Diffuser", 
-                path: "/wall-mounted-and-ceiling-aroma-diffusers/zenbox-mini-diffuser/", 
+                path: "/wall-mounted-and-ceiling-aroma-diffurers/zenbox-mini-diffuser/", 
                 desc: "A compact diffuser designed for enclosed spaces where consistent fragrance is needed without overwhelming the environment.", 
                 suits: "Small rooms • Meeting rooms • Personal spaces" 
               },
@@ -163,7 +167,7 @@ export default function WallMountedDiffusersPage() {
               { 
                 img: Product5, 
                 name: "LuxePanel – Premium Desk & Cabin Diffuser", 
-                path: "/wall-mounted-and-ceiling-aroma-diffusers/luxepanel-diffuser/", 
+                path: "/wall-mounted-and-ceiling-aroma-diffurers/luxepanel-diffuser/", 
                 desc: "A refined aroma diffuser with a clean, modern design. Ideal for users who want both performance and aesthetics.", 
                 suits: "Executive desks • Cabins • Premium workspaces" 
               }
@@ -206,7 +210,7 @@ export default function WallMountedDiffusersPage() {
                   <div className="w-12 h-12 rounded-xl bg-blue-600/20 flex items-center justify-center text-blue-400 text-left">
                     {React.cloneElement(item.icon, { className: "w-6 h-6" })}
                   </div>
-                  <h3 className="font-bold text-lg leading-tight text-left font-sans">{item.title}</h3>
+                  <h3 className="font-bold text-lg leading-tight font-sans text-left">{item.title}</h3>
                   <p className="text-slate-400 text-sm font-light leading-relaxed text-left font-sans">{item.desc}</p>
                 </div>
               ))}
@@ -250,7 +254,7 @@ export default function WallMountedDiffusersPage() {
                   { title: "Efficient fragrance consumption", icon: <SparklesIcon /> }
                 ].map((feat, i) => (
                   <div key={i} className="flex items-center gap-3 text-left">
-                    <CheckCircleIcon className="w-5 h-5 text-blue-600 flex-shrink-0 text-left" />
+                    <CheckCircleIcon className="w-5 h-5 text-blue-600 flex-shrink-0" text-left />
                     <span className="text-sm font-bold text-slate-700 font-sans text-left">{feat.title}</span>
                   </div>
                 ))}
@@ -293,7 +297,7 @@ export default function WallMountedDiffusersPage() {
                 "Trusted by businesses across UAE industries"
               ].map((reason, i) => (
                 <div key={i} className="flex items-center gap-4 bg-white p-6 rounded-2xl border border-slate-100 shadow-sm transition-all hover:border-blue-100 text-left">
-                  <ShieldCheckIcon className="w-6 h-6 text-blue-600 flex-shrink-0 text-left" />
+                  <ShieldCheckIcon className="w-6 h-6 text-blue-600 flex-shrink-0" text-left />
                   <span className="text-slate-700 text-sm font-medium text-left font-sans">{reason}</span>
                 </div>
               ))}
@@ -306,8 +310,8 @@ export default function WallMountedDiffusersPage() {
             <h2 className="text-2xl md:text-4xl font-serif text-slate-900 mb-12 tracking-tighter leading-tight text-center uppercase">Related Scenting Solutions</h2>
             <div className="flex flex-wrap justify-center gap-6 text-center">
               {[
-                { name: "Commercial Aroma diffusers", path: "/commercial-aroma-diffusers/" },
-                { name: "Large Area & HVAC Aroma diffusers", path: "/large-area-and-hvac-aroma-diffusers/" },
+                { name: "Commercial Aroma diffurers", path: "/commercial-aroma-diffurers/" },
+                { name: "Large Area & HVAC Aroma diffurers", path: "/large-area-and-hvac-aroma-diffurers/" },
                 { name: "Maintenance & Refill Support", path: "/maintenance-and-refill-support-services/" }
               ].map((sol, i) => (
                 <Link key={i} to={sol.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer text-center font-sans">{sol.name}</Link>
@@ -326,10 +330,10 @@ export default function WallMountedDiffusersPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 font-sans text-center">
               <Link to="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3 text-center">
-                Contact Cool Max Today <ArrowRightIcon className="w-4 h-4 text-center"/>
+                Contact Cool Max Today <ArrowRightIcon className="w-4 h-4" text-center/>
               </Link>
               <a href={`https://wa.me/${whatsappNumber.replace(/\s/g, '')}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3 text-center">
-                <ChatBubbleLeftRightIcon className="w-5 h-5 text-center" /> WhatsApp Expert
+                <ChatBubbleLeftRightIcon className="w-5 h-5" text-center /> WhatsApp Expert
               </a>
             </div>
           </motion.div>
