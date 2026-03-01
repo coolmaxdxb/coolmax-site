@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet"; // Added for SEO
 import { 
   SparklesIcon, 
   CheckBadgeIcon, 
   ArrowRightIcon, 
   BuildingOffice2Icon,
   HomeIcon,
- 
   ChatBubbleLeftRightIcon,
   BeakerIcon,
   ShieldCheckIcon,
@@ -32,6 +32,11 @@ const AddressAromaOilDetail = () => {
   return (
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
       
+      {/* ================= SEO METADATA ================= */}
+     <Helmet>
+  <link rel="canonical" href="https://www.coolmaxscent.com/oriental-aroma-oil/address/" />
+</Helmet>
+
       {/* ================= HERO SECTION ================= */}
       <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -128,19 +133,19 @@ const AddressAromaOilDetail = () => {
              </p>
            </div>
            <div className="grid grid-cols-2 gap-4">
-              <div className="aspect-square bg-blue-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left text-left">
+              <div className="aspect-square bg-blue-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left">
                 <BuildingOffice2Icon className="w-10 h-10 text-blue-600 group-hover:text-white" />
                 <span className="text-[10px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Hotels & Hospitality</span>
               </div>
-              <div className="aspect-square bg-slate-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left text-left">
+              <div className="aspect-square bg-slate-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left">
                 <BuildingOffice2Icon className="w-10 h-10 text-blue-600 group-hover:text-white" />
                 <span className="text-[10px] font-bold uppercase text-slate-400 group-hover:text-blue-100 font-sans">Premium Offices</span>
               </div>
-              <div className="aspect-square bg-slate-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left text-left">
+              <div className="aspect-square bg-slate-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left">
                 <HomeIcon className="w-10 h-10 text-blue-600 group-hover:text-white" />
                 <span className="text-[10px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Luxury Residential</span>
               </div>
-              <div className="aspect-square bg-blue-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left text-left">
+              <div className="aspect-square bg-blue-50 rounded-3xl p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left">
                 <SparklesIcon className="w-10 h-10 text-blue-600 group-hover:text-white" />
                 <span className="text-[10px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Showrooms</span>
               </div>
@@ -159,7 +164,7 @@ const AddressAromaOilDetail = () => {
                     { title: "Scent System Ready", desc: "Works seamlessly with advanced automated Cool Max scent diffuser systems." },
                     { title: "Consistent Performance", desc: "Designed for consistent and long-lasting fragrance performance." }
                 ].map((item, i) => (
-                    <div key={i} className="p-8 rounded-[2rem] bg-white/5 border border-white/10 text-left flex flex-col gap-4 text-left">
+                    <div key={i} className="p-8 rounded-[2rem] bg-white/5 border border-white/10 text-left flex flex-col gap-4">
                         <CheckBadgeIcon className="w-8 h-8 text-blue-500" />
                         <h4 className="text-sm font-bold uppercase tracking-widest text-slate-100 font-sans">{item.title}</h4>
                         <p className="text-xs text-slate-400 leading-relaxed font-sans">{item.desc}</p>
