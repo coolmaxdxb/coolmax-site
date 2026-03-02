@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet"; // Added for SEO
+import { Helmet } from "react-helmet-async"; // Added for SEO
 // --- ASSET IMPORTS ---
 import Client1 from "../asset/clientslogo/Mercure Hotels.webp";
 import Client2 from "../asset/clientslogo/PAN HOME.webp";

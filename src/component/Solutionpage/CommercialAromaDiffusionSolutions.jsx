@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet"; // Added for dynamic canonical link
+import { Helmet } from "react-helmet-async"; // Added for dynamic canonical link
 import { 
   SparklesIcon, 
   CheckCircleIcon,

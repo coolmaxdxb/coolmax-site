@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet"; // Added for SEO Meta implementation
+import { Helmet } from "react-helmet-async"; // Added for SEO Meta implementation
 import { 
   SparklesIcon, 
   BuildingOffice2Icon, 

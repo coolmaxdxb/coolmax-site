@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet"; // Added for dynamic canonical link
+import { Helmet } from "react-helmet-async"; // Added for dynamic canonical link
 
 
 

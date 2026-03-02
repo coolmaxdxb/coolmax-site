@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet"; // Added for SEO
+import { Helmet } from "react-helmet-async"; // Added for SEO
 import {
   MagnifyingGlassIcon,
   ArrowUpRightIcon,

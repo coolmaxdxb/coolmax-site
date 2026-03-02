@@ -1,6 +1,6 @@
 import React, { useState } from "react"; // Added useState
 import { useNavigate } from "react-router-dom"; // Added useNavigate
-import { Helmet } from "react-helmet"; // Added for SEO
+import { Helmet } from "react-helmet-async"; // Added for SEO
 import {
   PhoneIcon,
   EnvelopeIcon,

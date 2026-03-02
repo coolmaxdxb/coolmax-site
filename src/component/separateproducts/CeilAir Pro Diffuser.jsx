@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 // Add 'Link' inside the curly braces
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet"; // Added for SEO
+import { Helmet } from "react-helmet-async"; // Added for SEO
 import { 
   SpeakerXMarkIcon, 
   SparklesIcon, 

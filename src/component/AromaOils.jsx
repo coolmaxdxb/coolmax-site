@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet"; // Added for SEO
+import { Helmet } from "react-helmet-async"; // Added for SEO
 
 // ================= IMAGE IMPORTS =================
 import CarImg from "../../src/asset/Aroma oils img/ADDRESS.webp";

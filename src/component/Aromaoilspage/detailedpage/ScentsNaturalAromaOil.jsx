@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion"; // Changed from "motion/react" to "framer-motion"
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet"; // Added for SEO
+import { Helmet } from "react-helmet-async"; // Added for SEO
 import { 
   CheckBadgeIcon, 
   ArrowRightIcon, 
