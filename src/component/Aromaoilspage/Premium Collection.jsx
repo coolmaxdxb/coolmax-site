@@ -65,7 +65,7 @@ const PremiumCollectionOilsPage = () => {
       <Helmet>
         <title>Premium Aroma Oils for Luxury Hotels | Cool Max Scent</title>
         <meta name="description" content="Explore the Premium Collection aroma oils by Cool Max Scent, featuring signature fragrances like Taj Sunset & Classic crafted for luxury hotels, premium brands." />
-        <link rel="canonical" href="https://coolmaxscent.com/premium-aroma-oil" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/premium-aroma-oil" />
       </Helmet>
 
       {/* ================= GLOBAL BACKGROUND ================= */}

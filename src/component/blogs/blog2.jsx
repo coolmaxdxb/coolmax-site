@@ -40,7 +40,7 @@ export default function ChooseCommercialDiffuserBlog() {
       <Helmet>
         <title>How to Choose a Commercial Aroma Diffuser in UAE | Cool Max Scent</title>
         <meta name="description" content="Learn what to consider when choosing a commercial aroma diffuser in UAE, including coverage, HVAC compatibility, maintenance, and long-term ROI." />
-        <link rel="canonical" href="https://coolmaxscent.com/blog/choose-commercial-aroma-diffuser-uae" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/blog/choose-commercial-aroma-diffuser-uae" />
       </Helmet>
 
       {/* ================= GLOBAL BACKGROUND ================= */}

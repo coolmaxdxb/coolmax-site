@@ -37,7 +37,7 @@ const EventAerosolSprayDetail = () => {
             <Helmet>
                 <title>Event Aerosol Spray | Fresh Woody Amber Air Freshener</title>
                 <meta name="description" content="Event Aerosol Spray by Cool Max Scent blends bergamot, birch, and ambergris to deliver a refined, long-lasting fragrance for professional spaces." />
-                <link rel="canonical" href="https://coolmaxscent.com/event-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/event-aerosol-spray" />
             </Helmet>
 
             {/* ================= HERO SECTION ================= */}

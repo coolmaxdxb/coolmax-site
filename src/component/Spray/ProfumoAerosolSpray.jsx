@@ -37,7 +37,7 @@ const ProfumoAerosolSprayDetail = () => {
             <Helmet>
                 <title>Profumo Aerosol Spray | Herbal Citrus Air Freshener</title>
                 <meta name="description" content="Profumo Aerosol Spray by Cool Max blends lavender, lemon, geranium, cedarwood, and sandalwood for clean, balanced, long-lasting freshness." />
-                <link rel="canonical" href="https://coolmaxscent.com/profumo-aerosol-spray" />
+                <link rel="canonical" href="https://www.coolmaxscent.com/profumo-aerosol-spray" />
             </Helmet>
 
             {/* ================= HERO SECTION ================= */}

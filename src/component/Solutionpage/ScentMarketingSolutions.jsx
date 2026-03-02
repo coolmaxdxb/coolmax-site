@@ -36,7 +36,7 @@ export default function ScentMarketingPage() {
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
       <Helmet>
-        <link rel="canonical" href="https://coolmaxscent.com/scent-marketing-solutions/" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/scent-marketing-solutions/" />
       </Helmet>
 
       {/* ================= GLOBAL BACKGROUND ================= */}

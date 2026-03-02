@@ -100,7 +100,7 @@ const FreshAromaOilsPage = () => {
       <Helmet>
         <title>Fresh Aroma Oils for Home, Spas & Wellness Space | Cool Max</title>
         <meta name="description" content="Discover fresh aroma oils by Cool Max Scent, featuring clean, calming fragrances like Lavender, English Lavender, & etch for homes, clinics, and wellness space." />
-        <link rel="canonical" href="https://coolmaxscent.com/fresh-aroma-oil" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/fresh-aroma-oil" />
       </Helmet>
 
       {/* ================= GLOBAL BACKGROUND ================= */}
