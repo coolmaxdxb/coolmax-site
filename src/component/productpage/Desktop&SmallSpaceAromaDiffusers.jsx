@@ -237,7 +237,7 @@ export default function DesktopSmallSpacePage() {
            <div className="flex flex-wrap justify-center gap-6 text-center">
              {[
                { name: "Car & Personal Space Scenting Solutions", path: "/car-and-personal-space-scenting-solutions/" },
-               { name: "Commercial Aroma Diffurers", path: "/commercial-aroma-diffurers/" },
+               { name: "Commercial Aroma Diffurers", path: "/commercial-aroma-diffusers/" },
                { name: "Maintenance & Refill Support", path: "/maintenance-and-refill-support-services/" }
              ].map((sol, i) => (
                <Link key={i} to={sol.path} className="px-8 py-5 bg-white border border-slate-200 rounded-2xl text-sm font-black uppercase tracking-widest text-slate-700 hover:text-blue-600 hover:border-blue-200 transition-all shadow-sm cursor-pointer text-center">{sol.name}</Link>

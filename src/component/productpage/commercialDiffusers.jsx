@@ -144,7 +144,7 @@ export default function CommercialDiffusersPage() {
                 <span className="text-[10px] font-black text-slate-400 uppercase block mb-2 tracking-widest font-sans text-left">Best suited for:</span>
                 <p className="text-xs font-bold text-slate-700 font-sans text-left">Offices • Clinics • Training centers • Corporate spaces</p>
               </div>
-              <Link to="/commercial-aroma-diffurers/aeroblack-med-diffuser/" className="block w-full py-4 rounded-2xl bg-slate-900 text-white font-black tracking-widest uppercase text-[10px] hover:bg-blue-600 transition-all text-center font-sans shadow-lg">
+              <Link to="/commercial-aroma-diffusers/aeroblack-med-diffuser/" className="block w-full py-4 rounded-2xl bg-slate-900 text-white font-black tracking-widest uppercase text-[10px] hover:bg-blue-600 transition-all text-center font-sans shadow-lg">
                 View product details
               </Link>
             </motion.div>
@@ -162,7 +162,7 @@ export default function CommercialDiffusersPage() {
                 <span className="text-[10px] font-black text-slate-400 uppercase block mb-2 tracking-widest font-sans text-left">Best suited for:</span>
                 <p className="text-xs font-bold text-slate-700 font-sans text-left">Retail stores • Reception areas • Waiting lounges • Salons</p>
               </div>
-              <Link to="/commercial-aroma-diffurers/mistbox-x-diffuser/" className="block w-full py-4 rounded-2xl bg-slate-900 text-white font-black tracking-widest uppercase text-[10px] hover:bg-blue-600 transition-all text-center font-sans shadow-lg">
+              <Link to="/commercial-aroma-diffusers/mistbox-x-diffuser/" className="block w-full py-4 rounded-2xl bg-slate-900 text-white font-black tracking-widest uppercase text-[10px] hover:bg-blue-600 transition-all text-center font-sans shadow-lg">
                 View product details
               </Link>
             </motion.div>
