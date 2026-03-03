@@ -46,15 +46,13 @@ const FoodAndBeverageOilsPage = () => {
     transition: { duration: 0.6 }
   };
 
-  return (
+ return (
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
       
-    {/* ================= SEO METADATA ================= */}
-    
-        <title>Food & Beverage Aroma Oils | Cool Max Scent</title>
-        <meta name="description" content="Explore Food & Beverage aroma oils by Cool Max Scent, featuring warm and inviting fragrances like True Coffee, ideal for cafes, restaurants, bakeries & etc." />
-        {/* Updated with www and trailing slash to match sitemap exactness */}
-        <link rel="canonical" href="https://www.coolmaxscent.com/food-and-beverage-aroma-oil/" />
+      {/* ================= SEO METADATA (React 19 Native) ================= */}
+      <title>Food & Beverage Aroma Oils | Cool Max Scent</title>
+      <meta name="description" content="Explore Food & Beverage aroma oils by Cool Max Scent, featuring warm and inviting fragrances like True Coffee, ideal for cafes, restaurants, bakeries & etc." />
+      <link rel="canonical" href="https://www.coolmaxscent.com/food-and-beverage-aroma-oil/" />
      
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
