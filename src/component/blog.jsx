@@ -37,12 +37,12 @@ const blogPosts = [
   },
   {
     id: 4,
-    title: "The Science of Memory: Why Scent Sticks",
-    excerpt: "Olfactory memory is the strongest type of recall. Learn the biology behind why specific scents trigger vivid memories.",
+    title: "Why 5-Star Hotels in Dubai Use Scent Diffusers - The Power of Scent Marketing in Luxury Hospitality",
+    excerpt: "Discover why leading 5-star hotels in Dubai invest in hotel scent diffuser systems.",
     category: "Science",
     date: "Feb 15, 2025",
     readTime: "6 min read",
-    path: "/blog/choose-commercial-aroma-diffuser-uae/",
+    path: "/blog/why-5-star-hotels-dubai-use-scent-diffusers/",
     image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=900",
   },
   {

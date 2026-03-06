@@ -36,8 +36,8 @@ const blogPosts = [
   },
   {
     id: 4,
-    title: "Cold-Air Nebulization: The Future of Diffusion",
-    excerpt: "Why heat-free technology is essential for preserving the therapeutic properties and purity of essential oils.",
+    title: "Why 5-Star Hotels in Dubai Use Scent Diffusers - The Power of Scent Marketing in Luxury Hospitality",
+    excerpt: "Discover why leading 5-star hotels in Dubai invest in hotel scent diffuser systems.",
     category: "Technology",
     date: "Feb 15, 2026",
     readTime: "6 min",
