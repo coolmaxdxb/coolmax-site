@@ -46,8 +46,8 @@ const blogPosts = [
   },
   {
     id: 5,
-    title: "Designing a Signature Scent for Your Home",
-    excerpt: "A guide to selecting base and top notes that reflect your interior design aesthetic and personal style.",
+    title: "How to Choose the Best Scent Diffuser Machine for Homes, Offices, and Commercial Spaces",
+    excerpt: "Many homes, offices, hotels, and retail spaces struggle with maintaining a pleasant and consistent atmosphere.",
     category: "Lifestyle",
     date: "Feb 05, 2026",
     readTime: "7 min",
