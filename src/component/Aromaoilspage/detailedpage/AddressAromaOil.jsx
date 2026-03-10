@@ -34,7 +34,7 @@ const AddressAromaOilDetail = () => {
       
       {/* ================= SEO METADATA ================= */}
    
-  <link rel="canonical" href="https://www.coolmaxscent.com/oriental-aroma-oil/address/" />
+  <link rel="canonical" href="https://www.coolmaxscent.com/oriental-aroma-oil/address/"/>
 
       {/* ================= HERO SECTION ================= */}
       <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">

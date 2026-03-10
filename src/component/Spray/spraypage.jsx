@@ -71,7 +71,7 @@ export default function SprayCollectionPage() {
         <title>Aerosol Spray Collection | Cool Max Scent Solutions</title>
         <meta name="description" content="Explore our wide range of premium aerosol sprays in UAE. From Fresh Bakhoor to Floral Jasmine, find the perfect scent for your space." />
         {/* CORRECT CANONICAL LINK RE-IMPLEMENTED HERE */}
-        <link rel="canonical" href="https://www.coolmaxscent.com/spray/" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/spray"/>
     
 
       {/* ================= HERO SECTION (SMALLER TYPOGRAPHY) ================= */}

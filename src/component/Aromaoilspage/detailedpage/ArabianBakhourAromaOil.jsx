@@ -36,7 +36,7 @@ const ArabianBakhourAromaOilDetail = () => {
       
 
      
-  <link rel="canonical" href="https://www.coolmaxscent.com/oriental-aroma-oil/arabian-bakhour/" />
+  <link rel="canonical" href="https://www.coolmaxscent.com/oriental-aroma-oil/arabian-bakhour/"/>
 
 
 

@@ -70,7 +70,7 @@ export default function ProductCategories() {
       
       {/* ================= SEO METADATA ================= */}
  
-        <link rel="canonical" href="https://www.coolmaxscent.com/aromas/" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/aromas/"/>
      
 
       {/* ================= GLOBAL BACKGROUND ================= */}

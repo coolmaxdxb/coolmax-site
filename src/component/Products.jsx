@@ -162,7 +162,7 @@ export default function ArchitectStore() {
       
       {/* ================= SEO METADATA ================= */}
     
-        <link rel="canonical" href="https://www.coolmaxscent.com/products/" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/products/"/>
     
 
       {/* ================= SECTION 1: MINIMAL HERO ================= */}

@@ -28,7 +28,7 @@ export default function ScentDiffuserMachineBlog() {
       {/* ================= SEO METADATA ================= */}
       <title>Best Scent Diffuser Machine Guide | Cool Max Scent UAE & QATAR</title>
       <meta name="description" content="Learn how to choose the best scent diffuser machine for homes, offices, and commercial spaces. Discover advanced scent solutions by Cool Max Scent in UAE & Qatar." />
-      <link rel="canonical" href="https://www.coolmaxscent.com/blog/how-to-choose-best-scent-diffuser-machine" />
+      <link rel="canonical" href="https://www.coolmaxscent.com/blog/how-to-choose-best-scent-diffuser-machine"/>
 
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">

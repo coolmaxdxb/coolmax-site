@@ -34,7 +34,7 @@ const ForYouAromaOilDetail = () => {
   return (
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
     
-  <link rel="canonical" href="https://www.coolmaxscent.com/perfumers-choice-aroma-oil/for-you/" />
+  <link rel="canonical" href="https://www.coolmaxscent.com/perfumers-choice-aroma-oil/for-you/"/>
 
 
       {/* ================= HERO SECTION ================= */}

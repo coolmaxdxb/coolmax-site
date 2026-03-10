@@ -35,7 +35,7 @@ export default function HVACSolutionsPage() {
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-cyan-100 overflow-x-hidden">
       {/* ================= SEO METADATA ================= */}
    
-        <link rel="canonical" href="https://www.coolmaxscent.com/hvac-scenting-solutions/" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/hvac-scenting-solutions/"/>
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">

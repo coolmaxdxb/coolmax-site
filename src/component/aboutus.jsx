@@ -37,7 +37,7 @@ export default function AboutUs() {
       
       {/* ================= SEO METADATA ================= */}
     
-        <link rel="canonical" href="https://www.coolmaxscent.com/about-us/" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/about-us/"/>
    
       {/* ================= GLOBAL BACKGROUND (White & Grey Gradient) ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">

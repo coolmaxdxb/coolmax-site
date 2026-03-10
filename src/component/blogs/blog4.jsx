@@ -28,7 +28,7 @@ export default function ScentMarketingBlog() {
      {/* 2. Use native React tags (React 19) or standard meta tags */}
       <title>Why 5-Star Hotels in Dubai Use Scent Diffusers | Cool Max Scent</title>
       <meta name="description" content="Discover why leading 5-star hotels in Dubai invest in hotel scent diffuser systems." />
-      <link rel="canonical" href="https://www.coolmaxscent.com/blog/why-5-star-hotels-dubai-use-scent-diffusers" />
+      <link rel="canonical" href="https://www.coolmaxscent.com/blog/why-5-star-hotels-dubai-use-scent-diffusers"/>
 
       {/* Rest of your component content */}
       

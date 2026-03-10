@@ -53,7 +53,7 @@ export default function SolutionsSection() {
     <section className="py-24 bg-gray-50 text-gray-900" id="solutions">
       {/* ================= SEO METADATA ================= */}
      
-        <link rel="canonical" href="https://www.coolmaxscent.com/solution/" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/solution/"/>
    
 
       {/* --- Changed max-w-7xl to max-w-[1600px] --- */}

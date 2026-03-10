@@ -39,7 +39,7 @@ export default function MaintenancePage() {
  
         <title>Maintenance & Refill Support Services in UAE | Cool Max</title>
         <meta name="description" content="Maintenance and refill support services in UAE for scent and hygiene systems. Reliable servicing, fragrance refills, and HVAC diffuser maintenance by Cool Max." />
-        <link rel="canonical" href="https://www.coolmaxscent.com/maintenance-and-refill-support-services/" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/maintenance-and-refill-support-services/"/>
 
 
       {/* ================= GLOBAL BACKGROUND ================= */}

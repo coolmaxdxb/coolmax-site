@@ -35,7 +35,7 @@ const WhiteTeaAromaOilDetail = () => {
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-50 overflow-hidden tracking-tight">
 
      
-  <link rel="canonical" href="https://www.coolmaxscent.com/fresh-aroma-oil/white-tea/" />
+  <link rel="canonical" href="https://www.coolmaxscent.com/fresh-aroma-oil/white-tea/"/>
 
       {/* ================= HERO SECTION ================= */}
       <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">

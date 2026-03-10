@@ -50,7 +50,7 @@ export default function TalkToExpert() {
       
       {/* ================= SEO METADATA ================= */}
    
-        <link rel="canonical" href="https://www.coolmaxscent.com/contact/" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/contact/"/>
     
 
       {/* ================= BACKGROUND ATMOSPHERE (WHITE & GREY GRADIENT) ================= */}

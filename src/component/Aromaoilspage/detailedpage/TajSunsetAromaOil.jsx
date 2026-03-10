@@ -33,7 +33,7 @@ const TajSunsetAromaOilDetail = () => {
   return (
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
      
-  <link rel="canonical" href="https://www.coolmaxscent.com/premium-aroma-oil/taj-sunset/" />
+  <link rel="canonical" href="https://www.coolmaxscent.com/premium-aroma-oil/taj-sunset/"/>
 
       
       {/* ================= HERO SECTION ================= */}

@@ -33,7 +33,7 @@ const LavenderAromaOilDetail = () => {
   return (
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-50 overflow-hidden tracking-tight text-left">
      
-  <link rel="canonical" href="https://www.coolmaxscent.com/fresh-aroma-oil/lavender/" />
+  <link rel="canonical" href="https://www.coolmaxscent.com/fresh-aroma-oil/lavender/"/>
 
       {/* ================= HERO SECTION ================= */}
       <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">

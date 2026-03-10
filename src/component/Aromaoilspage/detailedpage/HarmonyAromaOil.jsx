@@ -34,7 +34,7 @@ const HarmonyAromaOilDetail = () => {
   return (
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-50 overflow-hidden tracking-tight text-left">
      
-  <link rel="canonical" href="https://www.coolmaxscent.com/perfumers-choice-aroma-oil/harmony/" />
+  <link rel="canonical" href="https://www.coolmaxscent.com/perfumers-choice-aroma-oil/harmony/"/>
 
       {/* ================= HERO SECTION ================= */}
       <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">

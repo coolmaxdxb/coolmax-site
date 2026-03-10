@@ -52,7 +52,7 @@ const FoodAndBeverageOilsPage = () => {
       {/* ================= SEO METADATA (React 19 Native) ================= */}
       <title>Food & Beverage Aroma Oils | Cool Max Scent</title>
       <meta name="description" content="Explore Food & Beverage aroma oils by Cool Max Scent, featuring warm and inviting fragrances like True Coffee, ideal for cafes, restaurants, bakeries & etc." />
-      <link rel="canonical" href="https://www.coolmaxscent.com/food-and-beverage-aroma-oil/" />
+      <link rel="canonical" href="https://www.coolmaxscent.com/food-and-beverage-aroma-oil/"/>
      
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">

@@ -31,7 +31,7 @@ export default function ScentMarketingBlog() {
     
         <title>Scent Marketing 101 Solutions in UAE | Cool Max Scent</title>
         <meta name="description" content="Discover how scent marketing solutions in UAE help hotels and businesses increase sales using commercial scent diffusers and HVAC scent systems." />
-        <link rel="canonical" href="https://www.coolmaxscent.com/blog/scent-marketing-101-uae" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/blog/scent-marketing-101-uae"/>
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">

@@ -61,7 +61,7 @@ export default function IndustriesSection() {
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white overflow-hidden">
       
       
-        <link rel="canonical" href="https://www.coolmaxscent.com/industries/" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/industries/"/>
     
 
       {/* ================= BACKGROUND ================= */}

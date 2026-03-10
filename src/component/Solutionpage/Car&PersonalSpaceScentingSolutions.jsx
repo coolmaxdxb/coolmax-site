@@ -38,7 +38,7 @@ export default function CarPersonalScentingPage() {
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden">
       {/* ================= SEO METADATA ================= */}
   
-        <link rel="canonical" href="https://www.coolmaxscent.com/car-and-personal-space-scenting-solutions/" />
+        <link rel="canonical" href="https://www.coolmaxscent.com/car-and-personal-space-scenting-solutions/"/>
     
       
       {/* ================= GLOBAL BACKGROUND ================= */}

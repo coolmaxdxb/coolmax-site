@@ -131,6 +131,19 @@ const ScrollToTop = () => {
   return null;
 };
 
+// --- NEW SEO HELPER: CANONICAL URL ---
+const CanonicalURL = () => {
+  const location = useLocation();
+  const siteUrl = "https://www.coolmaxscent.com";
+  // Ensure the URL doesn't end with double slashes if pathname is "/"
+  const cleanPath = location.pathname === "/" ? "" : location.pathname;
+  const canonicalUrl = `${siteUrl}${cleanPath}${location.pathname.endsWith('/') ? '' : '/'}`;
+  
+  return (
+    <link rel="canonical" href={canonicalUrl} />
+  );
+};
+
 const ProductPage = () => (
   <Suspense fallback={<PageLoader />}>
     <Products />
@@ -147,6 +160,9 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      {/* Dynamic Canonical Link for every route */}
+      <CanonicalURL />
+      
       <Nav />
       <WhatsAppFloating />
       <Scrollup />
@@ -204,7 +220,7 @@ function App() {
           {/* Car Aroma Diffusers */}
           <Route path="/car-aroma-diffusers/vento-car-diffuser/" element={<VentoCar />} />
           <Route path="/car-aroma-diffusers/drive-scent-diffuser/" element={<DriveMist />} />
-          <Route path="/car-aroma-diffusers/desk-scent-diffuser/" element={<DeskScentPage />} />
+          <Route path="/car-aroma-diffusers/desktop-scent-diffuser/" element={<DeskScentPage />} />
           <Route path="/car-aroma-diffusers/nova-car-diffuser/" element={<NovaCar />} />
 
           {/* Desktop & Small Space */}
@@ -282,7 +298,7 @@ function App() {
           <Route path="/blog/choose-commercial-aroma-diffuser-uae/" element={<Blog2 />} />
           <Route path="/blog/scent-marketing-101-uae/" element={<Blog3 />} />
           <Route path="/blog/why-5-star-hotels-dubai-use-scent-diffusers/" element={<Blog4 />} />
-           <Route path="/blog/how-to-choose-best-scent-diffuser-machine/" element={<Blog5 />} />
+          <Route path="/blog/how-to-choose-best-scent-diffuser-machine/" element={<Blog5 />} />
         </Routes>
       </Suspense>
 
