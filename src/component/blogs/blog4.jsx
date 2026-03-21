@@ -73,8 +73,10 @@ export default function ScentMarketingBlog() {
                 </p>
                 <p className="text-justify">
                   In this blog, we'll explore why Dubai's most prestigious hotels invest in professional scenting, how commercial aroma diffusers in UAE transform guest experiences, and why floor-standing aroma diffusers in UAE have become the preferred choice for luxury lobbies.
-                </p>
+                </p>  
               </div>
+              
+              
 
               {/* THE SCIENCE BEHIND (H2) */}
               <div className="py-10 text-left">

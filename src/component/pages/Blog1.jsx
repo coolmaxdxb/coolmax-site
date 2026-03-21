@@ -46,8 +46,8 @@ const blogPosts = [
   },
   {
     id: 5,
-    title: "How to Choose the Best Scent Diffuser Machine for Homes, Offices, and Commercial Spaces",
-    excerpt: "Many homes, offices, hotels, and retail spaces struggle with maintaining a pleasant and consistent atmosphere.",
+    title: "First Impressions Matter: Scent Solutions for Corporate Reception Areas",
+    excerpt: "How Commercial Scent Diffuser Machines Transform Business Environments.",
     category: "Lifestyle",
     date: "Feb 05, 2026",
     readTime: "7 min",
