@@ -122,6 +122,8 @@ const Blog3 = lazy(() => import("../src/component/blogs/blog3"));
 const Blog4 = lazy(() => import("../src/component/blogs/blog4"));
 const Blog5 = lazy(() => import("../src/component/blogs/blog5"));
 const Blog6 = lazy(() => import("../src/component/blogs/blog6"));
+const Blog7 = lazy(() => import("../src/component/blogs/blog7"));
+const Blog8 = lazy(() => import("../src/component/blogs/blog8"));
 
 // --- HELPERS ---
 const ScrollToTop = () => {
@@ -286,6 +288,8 @@ function App() {
           <Route path="/blog/why-5-star-hotels-dubai-use-scent-diffusers/" element={<Blog4 />} />
           <Route path="/blog/scent-solutions-corporate-reception-areas/" element={<Blog5 />} />
            <Route path="/blog/large-area-hvac-aroma-diffusers-commercial-spaces/" element={<Blog6 />} />
+           <Route path="/blog/why-modern-offices-use-scent-systems/" element={<Blog7 />} />
+           <Route path="/blog/seasonal-scenting-with-aroma-diffusers/" element={<Blog8 />} />
         </Routes>
       </Suspense>
 

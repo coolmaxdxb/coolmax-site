@@ -5,6 +5,7 @@ import { ArrowRightIcon, CalendarDaysIcon, ClockIcon} from "@heroicons/react/24/
 
 
 const blogPosts = [
+
   {
     id: 1,
     title: "Scent Marketing for Hotels: Improve Guest Experience & Loyalty",
@@ -12,7 +13,7 @@ const blogPosts = [
     category: "Hospitality",
     date: "Feb 20, 2026",
     readTime: "6 min read",
-    path: "/blog/scent-marketing-hotels-uae/", // Blog 1 Redirect
+    path: "/blog/scent-marketing-hotels-uae/",
     image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=900",
   },
   {
@@ -22,13 +23,13 @@ const blogPosts = [
     category: "Business Guide",
     date: "Feb 18, 2026",
     readTime: "7 min read",
-    path: "/blog/scent-marketing-hotels-uae/", // Blog 2 Redirect
+    path: "/blog/choose-commercial-aroma-diffuser-uae/",
     image: "https://images.unsplash.com/photo-1508090228729-c062eefc9bef?q=80&w=1170&auto=format&fit=crop",
   },
   {
     id: 3,
     title: "Scent Marketing 101 Solutions in UAE | Cool Max Scent",
-    excerpt: "Scent Marketing 101: How Dubai Businesses Use.",
+    excerpt: "Scent Marketing 101: How Dubai Businesses Use olfactory branding to dominate the market.",
     category: "Marketing Mastery",
     date: "Mar 15, 2025",
     readTime: "5 min read",
@@ -48,7 +49,7 @@ const blogPosts = [
   {
     id: 5,
     title: "First Impressions Matter: Scent Solutions for Corporate Reception Area",
-    excerpt: "How Commercial Scent Diffuser Machines Transform Business Environments",
+    excerpt: "How Commercial Scent Diffuser Machines Transform Business Environments and brand perception.",
     category: "scent diffuser machines",
     date: "Feb 10, 2025",
     readTime: "4 min read",
@@ -58,12 +59,32 @@ const blogPosts = [
   {
     id: 6,
     title: "How Large Area & HVAC Aroma Diffusers Transform Commercial Spaces | Cool Max",
-    excerpt: "How Hotels Use Scent to Improve Guest Experience & Loyalty.",
+    excerpt: "Discover how industrial HVAC scenting creates seamless fragrance coverage for malls and towers.",
     category: "Lifestyle",
     date: "Jan 25, 2025",
     readTime: "5 min read",
     path: "/blog/large-area-hvac-aroma-diffusers-commercial-spaces/",
     image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=900",
+  },
+  {
+    id: 7,
+    title: "Best Aroma Diffuser in Dubai – How to Choose Scents for Every Season",
+    excerpt: "A complete seasonal scenting guide for facility managers. Learn what to diffuse from spring florals to winter woods.",
+    category: "Strategy",
+    date: "Mar 10, 2026",
+    readTime: "8 min read",
+    path: "/blog/seasonal-scenting-with-aroma-diffusers/",
+    image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=900",
+  },
+  {
+    id: 8,
+    title: "Why Modern Offices Use Scent Systems - The Strategic Advantage",
+    excerpt: "Discover the measurable ROI of office scenting, from 20% increased focus to improved employee retention in the UAE.",
+    category: "Corporate",
+    date: "Mar 12, 2026",
+    readTime: "7 min read",
+    path: "/blog/why-modern-offices-use-scent-systems/",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=900",
   },
 ];
 
