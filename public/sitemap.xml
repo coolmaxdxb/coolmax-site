@@ -489,4 +489,22 @@
   <priority>1.00</priority>
   <changefreq>weekly</changefreq>
 </url>
+<url>
+  <loc>https://www.coolmaxscent.com/blog/why-modern-offices-use-scent-systems/
+</loc>
+  <priority>1.00</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.coolmaxscent.com/blog/seasonal-scenting-with-aroma-diffusers/
+</loc>
+  <priority>1.00</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.coolmaxscent.com/blog/commercial-scent-diffuser-vs-air-freshener
+</loc>
+  <priority>1.00</priority>
+  <changefreq>weekly</changefreq>
+</url>
 </urlset>
