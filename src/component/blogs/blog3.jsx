@@ -28,7 +28,6 @@ export default function ScentMarketingBlog() {
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left pt-16">
       
       {/* ================= SEO METADATA ================= */}
-    
         <title>Scent Marketing 101 Solutions in UAE | Cool Max Scent</title>
         <meta name="description" content="Discover how scent marketing solutions in UAE help hotels and businesses increase sales using commercial scent diffusers and HVAC scent systems." />
         <link rel="canonical" href="https://www.coolmaxscent.com/blog/scent-marketing-101-uae"/>
@@ -65,7 +64,7 @@ export default function ScentMarketingBlog() {
           <div className="grid lg:grid-cols-12 gap-16">
             <div className="lg:col-span-8 space-y-8 text-lg text-slate-600 font-light leading-relaxed text-left">
               <p className="text-justify">
-                This is not accidental. It is intentional. This is scent marketing at work. Across retail stores, hotels, offices, and commercial buildings, businesses in the UAE are using Scent Marketing Solutions in UAE to influence customer mood, improve brand perception, and ultimately increase sales — without saying a single word.
+                This is not accidental. It is intentional. This is scent marketing at work. Across retail stores, hotels, offices, and commercial buildings, businesses in the UAE are using <Link to="/scent-marketing-solutions/" className="text-blue-600 font-medium underline hover:text-blue-800 transition-colors">Scent Marketing Solutions in UAE</Link> to influence customer mood, improve brand perception, and ultimately increase sales — without saying a single word.
               </p>
 
               {/* WHAT IS SCENT MARKETING (H2) */}
@@ -113,7 +112,7 @@ export default function ScentMarketingBlog() {
                     <ShoppingBagIcon className="w-10 h-10 text-blue-400 shrink-0" />
                     <div>
                       <h4 className="text-xl font-bold">Retail & Malls</h4>
-                      <p className="text-slate-400 text-base">Retail brands in Dubai use Commercial Scent Diffusers to create a mood that matches their identity. Soft floral notes for fashion stores, woody tones for men’s sections, fresh citrus for lifestyle brands.</p>
+                      <p className="text-slate-400 text-base">Retail brands in Dubai use <Link to="/commercial-aroma-diffusers/" className="text-blue-400 font-medium underline hover:text-blue-300 transition-colors">Commercial Scent Diffusers</Link> to create a mood that matches their identity. Soft floral notes for fashion stores, woody tones for men’s sections, fresh citrus for lifestyle brands.</p>
                     </div>
                   </div>
                   <div className="flex gap-6 items-start">
@@ -157,7 +156,7 @@ export default function ScentMarketingBlog() {
               <div className="py-16 text-left border-t border-slate-100">
                 <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 text-left">The Technology Behind Professional Scenting</h2>
                 <p className="mb-6 text-justify">Effective scent marketing depends on the right equipment. Household plug-in air fresheners are not designed for commercial use. They lack consistency, control, and coverage.</p>
-                <p className="mb-6 text-justify">Professional Commercial Scent Diffuser systems use cold-air diffusion technology. This process breaks fragrance oil into ultra-fine particles that remain suspended in the air without leaving residue on furniture or surfaces.</p>
+                <p className="mb-6 text-justify">Professional Commercial Scent Diffuser systems use cold-air diffusion technology. In larger buildings, <Link to="/hvac-scenting-solutions/" className="text-blue-600 font-medium underline hover:text-blue-800 transition-colors">HVAC-integrated scent diffusers</Link> process fragrance oil into ultra-fine particles that remain suspended in the air without leaving residue on furniture or surfaces.</p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 font-sans uppercase text-[10px] font-black tracking-widest text-blue-600">
                    <div className="p-4 bg-blue-50 rounded-xl text-center">Even distribution</div>
                    <div className="p-4 bg-blue-50 rounded-xl text-center">Adjustable intensity</div>
@@ -223,8 +222,8 @@ export default function ScentMarketingBlog() {
 
               {/* WHY CHOOSE COOL MAX (H2) */}
               <div className="py-16 text-left bg-blue-600 rounded-[3rem] p-10 md:p-16 text-white">
-                <h2 className="text-3xl md:text-4xl font-serif mb-8 tracking-tight text-white text-left uppercase font-bold">Why Businesses Choose Cool Max Scent</h2>
-                <p className="mb-10 text-blue-100">At Cool Max Scent, we provide customized Scent Marketing Solutions in UAE designed for real commercial environments.</p>
+                <h2 className="text-3xl md:text-4xl font-serif mb-8 tracking-tight text-white text-left uppercase font-bold">Why Businesses Choose <Link to="/" className="text-white underline decoration-blue-300 underline-offset-4">Cool Max Scent</Link></h2>
+                <p className="mb-10 text-blue-100">At <Link to="/" className="text-blue-50 font-bold hover:text-white">Cool Max Scent</Link>, we provide customized Scent Marketing Solutions in UAE designed for real commercial environments.</p>
                 <div className="grid md:grid-cols-2 gap-8 text-left">
                   <div className="space-y-4">
                     <h4 className="text-xs font-black uppercase tracking-widest text-blue-200">Supporting:</h4>
@@ -251,10 +250,10 @@ export default function ScentMarketingBlog() {
               <div className="py-16 text-left">
                  <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 text-left uppercase">Final Thought</h2>
                  <p className="text-xl font-serif italic text-slate-400 mb-6 text-justify">
-                   Scent marketing is not about strong smells or noticeable fragrance. It is about creating an environment where people feel good without knowing exactly why.
+                    Scent marketing is not about strong smells or noticeable fragrance. It is about creating an environment where people feel good without knowing exactly why.
                  </p>
                  <p className="text-justify">
-                   Sometimes, the smallest changes create the strongest impressions. And sometimes, that change is simply the air your customers breathe. If you’re exploring scent marketing solutions in UAE, Cool Max Scent is here to help you design an experience that lasts long after your customers leave the space.
+                    Sometimes, the smallest changes create the strongest impressions. And sometimes, that change is simply the air your customers breathe. If you’re exploring scent marketing solutions in UAE, Cool Max Scent is here to help you design an experience that lasts long after your customers leave the space.
                  </p>
               </div>
 
@@ -285,7 +284,7 @@ export default function ScentMarketingBlog() {
                  </div>
                  <h5 className="font-serif text-lg mb-2">AeroBlack Series</h5>
                  <p className="text-slate-500 text-xs font-light mb-6">Industrial-grade performance for malls and large lobbies.</p>
-                 <Link to="/commercial-aroma-diffurers/" className="text-[10px] font-black uppercase text-blue-600 flex items-center gap-2 hover:gap-3 transition-all">
+                 <Link to="/commercial-aroma-diffusers/" className="text-[10px] font-black uppercase text-blue-600 flex items-center gap-2 hover:gap-3 transition-all">
                     View Systems <ArrowRightIcon className="w-3 h-3" />
                  </Link>
               </div>
@@ -305,14 +304,25 @@ export default function ScentMarketingBlog() {
               Join leading Dubai brands using Cool Max Scent Marketing Solutions to create unforgettable customer journeys.
             </p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10">
-              <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-12 py-6 bg-[#25D366] text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all shadow-xl flex items-center justify-center gap-3">
-                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Specialist
-              </a>
-              <Link to="/contact/" className="w-full sm:w-auto px-12 py-6 bg-white text-slate-900 border border-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all flex items-center justify-center gap-3">
-                Request Consultation <ArrowRightIcon className="w-4 h-4" />
-              </Link>
-            </div>
+           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10 w-full max-w-2xl mx-auto">
+  <a 
+    href={`https://wa.me/${whatsappNumber}`} 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="flex-1 w-full sm:w-auto px-12 py-6 bg-[#25D366] text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all shadow-xl flex items-center justify-center gap-3 border border-transparent"
+  >
+    <ChatBubbleLeftRightIcon className="w-5 h-5" /> 
+    <span className="whitespace-nowrap">WhatsApp Specialist</span>
+  </a>
+
+  <Link 
+    to="/contact/" 
+    className="flex-1 w-full sm:w-auto px-12 py-6 bg-white text-slate-900 border border-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all flex items-center justify-center gap-3 shadow-xl"
+  >
+    <span className="whitespace-nowrap">Request Consultation</span>
+    <ArrowRightIcon className="w-4 h-4" />
+  </Link>
+</div>
           </motion.div>
         </section>
 

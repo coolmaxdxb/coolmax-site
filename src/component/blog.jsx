@@ -86,6 +86,17 @@ const blogPosts = [
     path: "/blog/why-modern-offices-use-scent-systems/",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=900",
   },
+
+   {
+    id: 9,
+    title: "Commercial Scent Diffuser vs Air Freshener | Cool max",
+    excerpt: "Compare commercial scent diffuser vs air freshener and find what works best for your business. Improve customer experience with the right scent solution.",
+    category: "Strategy",
+    date: "Mar 10, 2026",
+    readTime: "8 min read",
+    path: "/blog/commercial-scent-diffuser-vs-air-freshener",
+    image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=900",
+  },
 ];
 
 export default function BlogSection() {

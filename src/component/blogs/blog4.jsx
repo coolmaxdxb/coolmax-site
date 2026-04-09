@@ -72,7 +72,7 @@ export default function ScentMarketingBlog() {
                   Dubai's luxury hotel scene is among the most competitive in the world. With over 700 hotels and 140,000 rooms, standing out requires more than just beautiful decor. It requires creating memories. And nothing triggers memory quite like fragrance.
                 </p>
                 <p className="text-justify">
-                  In this blog, we'll explore why Dubai's most prestigious hotels invest in professional scenting, how commercial aroma diffusers in UAE transform guest experiences, and why floor-standing aroma diffusers in UAE have become the preferred choice for luxury lobbies.
+                  In this blog, we'll explore why Dubai's most prestigious hotels invest in professional scenting, how commercial aroma diffusers in UAE transform guest experiences, and why <Link to="/floor-standing-aroma-diffusers/" className="text-blue-600 font-medium underline hover:text-blue-800 transition-colors">floor-standing aroma diffusers</Link> in UAE have become the preferred choice for luxury lobbies.
                 </p>  
               </div>
               
@@ -147,7 +147,7 @@ export default function ScentMarketingBlog() {
                 {/* H3 Section 2 */}
                 <div className="mb-12">
                     <h3 className="text-2xl font-serif mb-4 text-blue-600">2. HVAC Scent Diffuser Systems</h3>
-                    <p className="mb-6 text-justify">For hotels seeking whole-building fragrance coverage, HVAC scent diffuser technology is the answer. These systems integrate directly with existing heating, ventilation, and air conditioning infrastructure.</p>
+                    <p className="mb-6 text-justify">For hotels seeking whole-building fragrance coverage, <Link to="/hvac-scenting-solutions/" className="text-blue-600 font-medium underline hover:text-blue-800 transition-colors">HVAC scent diffuser systems</Link> technology is the answer. These systems integrate directly with existing heating, ventilation, and air conditioning infrastructure.</p>
                     <p className="mb-4 font-bold text-slate-900 text-base">Benefits of HVAC-integrated scenting:</p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                         {[
@@ -245,7 +245,7 @@ export default function ScentMarketingBlog() {
               {/* COOL MAX (H2) */}
               <div className="py-16 text-left bg-blue-600 rounded-[3rem] p-10 md:p-16 text-white">
                 <h2 className="text-3xl md:text-4xl font-serif mb-8 tracking-tight text-white text-left uppercase font-bold">Cool Max: Trusted by Dubai's Finest Hotels</h2>
-                <p className="mb-10 text-blue-100">Since 2020, Cool Max Scent has provided commercial scent diffusers in UAE to some of the region's most prestigious properties. Our approach is simple—understand the space, understand the brand, and recommend the right solution.</p>
+                <p className="mb-10 text-blue-100">Since 2020, <Link to="/" className="text-white font-bold underline decoration-blue-300 underline-offset-4">Cool Max Scent</Link> has provided commercial scent diffusers in UAE to some of the region's most prestigious properties. Our approach is simple—understand the space, understand the brand, and recommend the right solution.</p>
                 <p className="mb-6 font-bold uppercase tracking-widest text-xs text-blue-200">We offer:</p>
                 <div className="grid md:grid-cols-2 gap-4 text-sm">
                     <ul className="space-y-3">
@@ -266,7 +266,7 @@ export default function ScentMarketingBlog() {
               <div className="py-16 text-left">
                  <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 text-left uppercase">Final Thoughts</h2>
                  <p className="text-xl font-serif italic text-slate-400 mb-6 text-justify leading-relaxed">
-                   Why do 5-star hotels in Dubai use scent diffusers? Because in luxury hospitality, every detail matters. Because guests remember how you made them feel. Because in a city of architectural wonders, the invisible details create the most lasting impressions.
+                    Why do 5-star hotels in Dubai use scent diffusers? Because in luxury hospitality, every detail matters. Because guests remember how you made them feel. Because in a city of architectural wonders, the invisible details create the most lasting impressions.
                  </p>
                  <p className="text-justify mb-4">
                     Commercial aroma diffusers in UAE have evolved from luxury additions to essential investments. Whether through elegant floor-standing units or integrated HVAC systems, professional scenting delivers measurable returns—in guest satisfaction, brand loyalty, and revenue.
@@ -323,14 +323,25 @@ export default function ScentMarketingBlog() {
               Deploy professional hotel scent diffuser systems and create signature experiences that your guests will associate with your brand forever.
             </p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10">
-              <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-12 py-6 bg-[#25D366] text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all shadow-xl flex items-center justify-center gap-3">
-                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Specialist
-              </a>
-              <Link to="/contact/" className="w-full sm:w-auto px-12 py-6 bg-white text-slate-900 border border-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all flex items-center justify-center gap-3">
-                Get a Custom Proposal <ArrowRightIcon className="w-4 h-4" />
-              </Link>
-            </div>
+           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10 w-full max-w-2xl mx-auto">
+  <a 
+    href={`https://wa.me/${whatsappNumber}`} 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="flex-1 w-full px-12 py-6 bg-[#25D366] text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all shadow-xl flex items-center justify-center gap-3 border border-transparent"
+  >
+    <ChatBubbleLeftRightIcon className="w-5 h-5" /> 
+    <span className="whitespace-nowrap">WhatsApp Specialist</span>
+  </a>
+
+  <Link 
+    to="/contact/" 
+    className="flex-1 w-full px-12 py-6 bg-white text-slate-900 border border-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all flex items-center justify-center gap-3 shadow-xl"
+  >
+    <span className="whitespace-nowrap">Get a Custom Proposal</span>
+    <ArrowRightIcon className="w-4 h-4" />
+  </Link>
+</div>
           </motion.div>
         </section>
 

@@ -8,9 +8,7 @@ import {
   ChartBarIcon,
   UserGroupIcon,
   BriefcaseIcon,
- 
 } from "@heroicons/react/24/outline";
-
 
 import BlogHeroImg from "../../asset/hero/hero3.gif"; 
 
@@ -145,15 +143,21 @@ export default function CorporateOfficeScentBlog() {
                 <div className="space-y-10 mt-8">
                     <div>
                         <h4 className="text-xl font-bold text-slate-900 mb-2">For Corporate Headquarters</h4>
-                        <p className="text-base text-justify">HVAC-integrated scent diffusers connect directly to existing infrastructure, offering: Complete coverage, Invisible integration (no visible equipment), Centralized control, and Scalable architecture for multiple floors.</p>
+                        <p className="text-base text-justify">
+                          <Link to="/hvac-scenting-solutions/" className="text-blue-600 font-medium underline hover:text-blue-800 transition-colors">HVAC-integrated scent diffusers</Link> connect directly to existing infrastructure, offering: Complete coverage, Invisible integration (no visible equipment), Centralized control, and Scalable architecture for multiple floors.
+                        </p>
                     </div>
                     <div>
                         <h4 className="text-xl font-bold text-slate-900 mb-2">For Executive Floors and Boardrooms</h4>
-                        <p className="text-base text-justify">Floor-standing aroma diffusers combine elegant design with powerful performance for executive reception areas, boardrooms, VIP spaces, and C-suite corridors.</p>
+                        <p className="text-base text-justify">
+                          Where high-stakes meetings occur, presentation matters. <Link to="/floor-standing-aroma-diffusers/" className="text-blue-600 font-medium underline hover:text-blue-800 transition-colors">Floor-standing aroma diffusers</Link> combine elegant design with powerful performance. These units serve as design elements while delivering targeted coverage for Executive reception areas, Boardrooms, VIP client spaces, and C-suite corridors.
+                        </p>
                     </div>
                     <div>
                         <h4 className="text-xl font-bold text-slate-900 mb-2">For Departmental Zones</h4>
-                        <p className="text-base text-justify">Different departments have different needs. Creative teams may benefit from energizing fragrances while finance prefers focus-enhancing profiles. Wall-mounted diffusers allow zone-specific scenting.</p>
+                        <p className="text-base text-justify">
+                          Different departments have different needs. Creative teams may benefit from energizing fragrances while finance prefers focus-enhancing profiles. <Link to="/wall-mounted-and-ceiling-aroma-diffusers/" className="text-blue-600 font-medium underline hover:text-blue-800 transition-colors">Wall-mounted diffusers</Link> allow zone-specific scenting without affecting adjacent areas.
+                        </p>
                     </div>
                 </div>
               </div>
@@ -261,14 +265,25 @@ export default function CorporateOfficeScentBlog() {
               Discover how strategic scenting can elevate your workplace. Deploy the right scent system for office in UAE.
             </p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10">
-              <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-12 py-6 bg-blue-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all shadow-xl flex items-center justify-center gap-3">
-                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Strategy Team
-              </a>
-              <Link to="/contact/" className="w-full sm:w-auto px-12 py-6 bg-white text-slate-900 border border-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all flex items-center justify-center gap-3">
-                Request Corporate Audit <ArrowRightIcon className="w-4 h-4" />
-              </Link>
-            </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10 w-full max-w-2xl mx-auto">
+  <a 
+    href={`https://wa.me/${whatsappNumber}`} 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="flex-1 flex items-center justify-center gap-3 bg-blue-600 text-white w-full py-6 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all shadow-xl border border-transparent"
+  >
+    <ChatBubbleLeftRightIcon className="w-5 h-5" /> 
+    <span className="whitespace-nowrap">WhatsApp Strategy Team</span>
+  </a>
+
+  <Link 
+    to="/contact/" 
+    className="flex-1 flex items-center justify-center gap-3 bg-white text-slate-900 w-full py-6 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all border border-white shadow-xl"
+  >
+    <span className="whitespace-nowrap">Request Corporate Audit</span>
+    <ArrowRightIcon className="w-5 h-5" />
+  </Link>
+</div>
           </motion.div>
         </section>
 
