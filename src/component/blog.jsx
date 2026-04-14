@@ -97,6 +97,16 @@ const blogPosts = [
     path: "/blog/commercial-scent-diffuser-vs-air-freshener",
     image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=900",
   },
+   {
+    id: 10,
+    title: "Best Scent Diffuser Machine Guide | Cool Max Scent UAE & QATAR",
+    excerpt: "Learn how to choose the best scent diffuser machine for homes, offices, and commercial spaces. Discover advanced scent solutions by Cool Max Scent in UAE & Qatar.",
+    category: "Strategy",
+    date: "April 14, 2026",
+    readTime: "8 min read",
+    path: "/blog/how-to-choose-best-scent-diffuser-machine/",
+    image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=900",
+  },
 ];
 
 export default function BlogSection() {
