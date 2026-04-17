@@ -95,7 +95,7 @@ const blogPosts = [
     date: "Mar 10, 2026",
     readTime: "8 min read",
     path: "/blog/commercial-scent-diffuser-vs-air-freshener",
-    image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=900",
+    image: "https://images.pexels.com/photos/6914876/pexels-photo-6914876.jpeg",
   },
    {
     id: 10,
@@ -105,7 +105,17 @@ const blogPosts = [
     date: "April 14, 2026",
     readTime: "8 min read",
     path: "/blog/how-to-choose-best-scent-diffuser-machine/",
-    image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=900",
+    image: "https://images.pexels.com/photos/10507487/pexels-photo-10507487.jpeg",
+  },
+    {
+    id: 11,
+    title: "5 Simple Steps to Clean and Maintain Your Diffuser for Long-Lasting Performance",
+    excerpt: "A good scent diffuser helps spread a pleasant fragrance evenly and makes any space feel more inviting—whether it’s your home, hotel, office, or shop. At Cool Max, our diffusers are made to run for long hours with very little maintenance, so you can enjoy a fresh environment without any hassle.",
+    category: "Strategy",
+    date: "April 18, 2026",
+    readTime: "8 min read",
+    path: "/blog/clean-and-maintain-your-diffuser-for-long-lasting-performance/",
+    image: "https://images.pexels.com/photos/29255492/pexels-photo-29255492.jpeg",
   },
 ];
 

@@ -126,6 +126,7 @@ const Blog7 = lazy(() => import("../src/component/blogs/blog7"));
 const Blog8 = lazy(() => import("../src/component/blogs/blog8"));
 const Blog9 = lazy(() => import("../src/component/blogs/blog9"));
 const Blog10 = lazy(() => import("../src/component/blogs/blog10"));
+const Blog11 = lazy(() => import("../src/component/blogs/blog11"));
 
 // --- HELPERS ---
 const ScrollToTop = () => {
@@ -294,6 +295,7 @@ function App() {
            <Route path="/blog/seasonal-scenting-with-aroma-diffusers/" element={<Blog8 />} />
            <Route path="/blog/commercial-scent-diffuser-vs-air-freshener" element={<Blog9 />} />
            <Route path="/blog/how-to-choose-best-scent-diffuser-machine/" element={<Blog10 />} />
+           <Route path="/blog/clean-and-maintain-your-diffuser-for-long-lasting-performance/" element={<Blog11 />} />
         </Routes>
       </Suspense>
 
