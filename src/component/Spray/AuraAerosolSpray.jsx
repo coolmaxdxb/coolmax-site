@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; // Added useEffect
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -19,6 +19,28 @@ import {
 import P_Aura from "../../asset/Aerosol Spray/aura.webp"; 
 
 const AuraAerosolSprayDetail = () => {
+    // --- SEO FIX START ---
+    useEffect(() => {
+        // Set the tab title
+        document.title = "Aura Aerosol Spray | Fresh Citrus Musk Air Freshener";
+        
+        // Update Meta Description
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute("content", "Aura Aerosol Spray by Cool Max blends bergamot, lavender, white musk, and sandalwood with citrus notes for clean, balanced freshness.");
+        }
+
+        // Update Canonical Link
+        let link = document.querySelector("link[rel='canonical']");
+        if (!link) {
+            link = document.createElement("link");
+            link.setAttribute("rel", "canonical");
+            document.head.appendChild(link);
+        }
+        link.setAttribute("href", "https://www.coolmaxscent.com/spray/aura-aerosol-spray");
+    }, []);
+    // --- SEO FIX END ---
+
     // Redirection Links
     const whatsappNumber = "+971509282702";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Aura%20Aerosol%20Spray.`;
@@ -34,11 +56,6 @@ const AuraAerosolSprayDetail = () => {
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
         
-                <title>Aura Aerosol Spray | Fresh Citrus Musk Air Freshener</title>
-                <meta name="description" content="Aura Aerosol Spray by Cool Max blends bergamot, lavender, white musk, and sandalwood with citrus notes for clean, balanced freshness." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/spray/aura-aerosol-spray"/>
-      
-
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -78,7 +95,7 @@ const AuraAerosolSprayDetail = () => {
                             <img 
                                 src={P_Aura} 
                                 alt="Aura Aerosol Spray" 
-                                className="relative w-full max-w-md rounded-[3rem] shadow-2xl z-10 group-hover:scale-105 transition-transform duration-700 object-cover text-left" 
+                                className="relative w-full max-md rounded-[3rem] shadow-2xl z-10 group-hover:scale-105 transition-transform duration-700 object-cover text-left" 
                             />
                         </div>
                     </motion.div>
@@ -91,7 +108,7 @@ const AuraAerosolSprayDetail = () => {
                     <h2 className="text-3xl md:text-5xl font-serif mb-16 text-slate-950 uppercase text-center text-left">
                         Fragrance <span className="italic font-light text-blue-700 font-serif text-left">Notes</span>
                     </h2>
-                    <div className="grid md:grid-cols-3 gap-8 mb-16 font-sans text-left">
+                    <div className="grid md:grid-cols-3 gap-8 mb-16 font-sans text-left text-center">
                         {[
                             { label: "Opening", notes: "Bergamot, Lemon Zest", color: "bg-blue-400" },
                             { label: "Heart", notes: "Lavender", color: "bg-blue-600" },

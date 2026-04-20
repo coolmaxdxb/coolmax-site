@@ -32,8 +32,9 @@ export default function PassiveDiffusersPage() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left">
-      {/* ================= SEO METADATA ================= */}
-   
+      
+<title>Passive Diffusers UAE | No-Power Fragrance | Cool Max</title>
+<meta name="description" content="Discover passive diffusers UAE for electricity-free fragrance. Natural aroma diffusion for washrooms, elevators & small spaces. Silent, low-maintenance & reliable."/>
         <link rel="canonical" href="https://www.coolmaxscent.com/no-power-diffusers/"/>
     
       {/* ================= GLOBAL BACKGROUND ================= */}

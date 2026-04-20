@@ -40,7 +40,10 @@ const DriveScentPage = () => {
 
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
-  
+  {/* ================= SEO METADATA ================= */}
+<title>Car Aroma Diffuser – DriveScent Diffuser | Cool Max</title>
+<meta name="description" content="DriveScent Diffuser is a premium car aroma diffuser with rechargeable battery, quiet operation and smart fragrance control for cars and desks."/>
+
   <link rel="canonical" href="https://www.coolmaxscent.com/car-aroma-diffusers/drive-scent-diffuser/"/>
 
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}

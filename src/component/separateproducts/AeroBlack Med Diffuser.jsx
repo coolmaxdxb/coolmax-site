@@ -39,7 +39,10 @@ const AeroBlackMedPage = () => {
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
     
-  <link rel="canonical" href="https://www.coolmaxscent.com/commercial-aroma-diffusers/aeroblack-med-diffuser/"/>
+      {/* ================= SEO METADATA ================= */}
+      <title>AeroBlack Med Diffuser | Commercial Aroma Diffuser UAE</title>
+      <meta name="description" content="AeroBlack Med Diffuser is a professional commercial aroma diffuser for medium to large spaces with HVAC support, quiet operation, and smart control."/>
+      <link rel="canonical" href="https://www.coolmaxscent.com/commercial-aroma-diffusers/aeroblack-med-diffuser/"/>
 
       {/* ================= HERO SECTION (REDUCED HEIGHT) ================= */}
       <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto text-left">

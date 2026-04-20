@@ -38,7 +38,9 @@ const AeroPillarPage = () => {
 
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
-
+    {/* ================= SEO METADATA ================= */}
+<title>AeroPillar Diffuser – Floor-Standing Aroma System</title>
+<meta name="description" content="AeroPillar Diffuser is a smart floor-standing aroma diffuser with app control, 2000m³ coverage, and elegant aluminum design for homes and commercial spaces."/>
   <link rel="canonical" href="https://www.coolmaxscent.com/floor-standing-aroma-diffusers/aeropillar-diffuser/"/>
 
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}

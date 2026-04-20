@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; // Added useEffect
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -19,6 +19,28 @@ import {
 import P_Tradition from "../../asset/Aerosol Spray/tradition.webp"; 
 
 const TraditionAerosolSprayDetail = () => {
+    // --- SEO FIX LOGIC START ---
+    useEffect(() => {
+        // Sets the Window Title in the browser tab
+        document.title = "Tradition Aerosol Spray | Rich Oriental Air Freshener";
+        
+        // Updates the Meta Description in the <head>
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute("content", "Tradition Aerosol Spray by Cool Max blends bergamot, oud, patchouli, musk, sandalwood, and vanilla for a deep, warm, long-lasting oriental fragrance.");
+        }
+
+        // Sets/Updates the Canonical Link in the <head>
+        let link = document.querySelector("link[rel='canonical']");
+        if (!link) {
+            link = document.createElement("link");
+            link.setAttribute("rel", "canonical");
+            document.head.appendChild(link);
+        }
+        link.setAttribute("href", "https://www.coolmaxscent.com/spray/tradition-aerosol-spray");
+    }, []);
+    // --- SEO FIX LOGIC END ---
+
     // Redirection Links
     const whatsappNumber = "+971509282702";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Tradition%20Aerosol%20Spray.`;
@@ -34,11 +56,6 @@ const TraditionAerosolSprayDetail = () => {
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
             
-                <title>Tradition Aerosol Spray | Rich Oriental Air Freshener</title>
-                <meta name="description" content="Tradition Aerosol Spray by Cool Max blends bergamot, oud, patchouli, musk, sandalwood, and vanilla for a deep, warm, long-lasting oriental fragrance." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/spray/tradition-aerosol-spray"/>
-           
-
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -59,7 +76,7 @@ const TraditionAerosolSprayDetail = () => {
                         <p className="text-base md:text-lg text-slate-500 leading-relaxed font-light mb-8 font-sans">
                             Tradition Aerosol Spray by Cool Max Scent is crafted for spaces that demand richness, warmth, and character. Inspired by classic oriental perfumery, this fragrance combines fresh citrus brightness with deep woody and musky tones to create a strong yet refined atmosphere.
                         </p>
-                        <p className="text-base text-slate-500 leading-relaxed font-light mb-10 italic font-sans">
+                        <p className="text-base text-slate-500 leading-relaxed font-light mb-10 italic font-sans text-justify">
                             Designed for professional and daily use, Tradition delivers consistent fragrance performance that feels luxurious, grounded, and long-lasting without becoming overpowering.
                         </p>
                         <div className="flex flex-wrap gap-5 font-sans">
@@ -73,8 +90,8 @@ const TraditionAerosolSprayDetail = () => {
                     </motion.div>
 
                     <motion.div {...fadeUp} className="order-1 lg:order-2 flex justify-center">
-                        <div className="relative group font-sans">
-                            <div className="absolute -inset-4 bg-blue-100/50 rounded-[4rem] blur-2xl group-hover:bg-blue-200/50 transition-all duration-1000"></div>
+                        <div className="relative group font-sans text-left">
+                            <div className="absolute -inset-4 bg-blue-100/50 rounded-[4rem] blur-2xl group-hover:bg-blue-200/50 transition-all duration-1000 text-left"></div>
                             <img 
                                 src={P_Tradition} 
                                 alt="Tradition Aerosol Spray" 
@@ -104,8 +121,8 @@ const TraditionAerosolSprayDetail = () => {
                                 <div className={`w-10 h-10 rounded-full ${note.color} mx-auto mb-4 flex items-center justify-center text-white`}>
                                     <BeakerIcon className="w-5 h-5" />
                                 </div>
-                                <h3 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">{note.label}</h3>
-                                <p className="text-base font-serif text-slate-900 leading-snug">{note.notes}</p>
+                                <h3 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2 text-center">{note.label}</h3>
+                                <p className="text-base font-serif text-slate-900 leading-snug text-center">{note.notes}</p>
                             </div>
                         ))}
                     </div>
@@ -118,8 +135,8 @@ const TraditionAerosolSprayDetail = () => {
             {/* ================= SECTION 2: PRODUCT HIGHLIGHTS ================= */}
             <section className="py-24 bg-white px-6 font-sans">
                 <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
-                    <div className="text-left">
-                        <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase">
+                    <div className="text-left text-justify">
+                        <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase text-left">
                             Product <br/><span className="italic font-light text-slate-700 font-serif">Highlights</span>
                         </h2>
                         <ul className="space-y-6">
@@ -131,7 +148,7 @@ const TraditionAerosolSprayDetail = () => {
                                 "Leaves no residue",
                                 "Suitable for continuous and daily use"
                             ].map((text, i) => (
-                                <li key={i} className="flex items-center gap-4 text-lg text-slate-700 font-light font-sans">
+                                <li key={i} className="flex items-center gap-4 text-lg text-slate-700 font-light font-sans text-left">
                                     <div className="w-2.5 h-2.5 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.4)]" /> {text}
                                 </li>
                             ))}
@@ -161,11 +178,11 @@ const TraditionAerosolSprayDetail = () => {
             {/* ================= SECTION 3: IDEAL FOR ================= */}
             <section className="py-24 bg-slate-950 text-white px-6 font-sans">
                 <div className="max-w-[1200px] mx-auto text-center">
-                    <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase text-center">Ideal For</h2>
-                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto text-center">Tradition Aerosol Spray is ideal for environments that require a warm, premium fragrance to enhance comfort, elegance, and hygiene perception.</p>
+                    <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase text-center text-left">Ideal For</h2>
+                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto text-center text-left">Tradition Aerosol Spray is ideal for environments that require a warm, premium fragrance to enhance comfort, elegance, and hygiene perception.</p>
                     <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
                         {["Washrooms & Restrooms", "Hotels & Hospitality", "Offices & Corporate", "Retail & Showrooms", "Corridors & Lifts"].map((item, i) => (
-                            <div key={i} className="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors">
+                            <div key={i} className="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors text-center">
                                 <CheckBadgeIcon className="w-10 h-10 text-blue-400" />
                                 <h4 className="text-xs font-bold uppercase tracking-widest text-white text-center leading-tight">{item}</h4>
                             </div>
@@ -176,14 +193,14 @@ const TraditionAerosolSprayDetail = () => {
 
             {/* ================= SECTION 4: WHY CHOOSE ================= */}
             <section className="py-28 bg-white px-6 font-sans">
-                <div className="max-w-[1000px] mx-auto">
-                    <div className="bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-center md:text-left">
+                <div className="max-w-[1000px] mx-auto text-left">
+                    <div className="bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-center md:text-left text-left">
                         <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                         </div>
-                        <div className="text-left">
-                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
-                            <p className="text-slate-500 font-light leading-relaxed font-sans">
+                        <div className="text-left text-justify">
+                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Why Choose <span className="italic font-light text-blue-700 text-left">Cool Max Aerosol Sprays?</span></h2>
+                            <p className="text-slate-500 font-light leading-relaxed font-sans text-left">
                                 Cool Max aerosol sprays are selected for reliable performance in professional dispenser systems. They help maintain consistent scent quality, support odor control, and enhance the overall atmosphere with minimal maintenance.
                             </p>
                         </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; // Added useEffect
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -13,13 +13,34 @@ import {
     UserGroupIcon,
     SparklesIcon,
     HomeIcon,
- 
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORT ---
 import P_Passion from "../../asset/Aerosol Spray/passion.webp"; 
 
 const PassionAerosolSprayDetail = () => {
+    // --- SEO FIX LOGIC START ---
+    useEffect(() => {
+        // Sets the Window Title in the browser tab
+        document.title = "Passion Aerosol Spray | Fresh Citrus Floral Air Freshener";
+        
+        // Updates the Meta Description in the <head>
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute("content", "Passion Aerosol Spray by Cool Max Scent blends lime, mandarin, lily-of-the-valley, and bois de rose for a fresh, uplifting fragrance with lasting comfort.");
+        }
+
+        // Sets the Canonical Link in the <head>
+        let link = document.querySelector("link[rel='canonical']");
+        if (!link) {
+            link = document.createElement("link");
+            link.setAttribute("rel", "canonical");
+            document.head.appendChild(link);
+        }
+        link.setAttribute("href", "https://www.coolmaxscent.com/spray/passion-aerosol-spray");
+    }, []);
+    // --- SEO FIX LOGIC END ---
+
     // Redirection Links
     const whatsappNumber = "+971509282702";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Passion%20Aerosol%20Spray.`;
@@ -34,10 +55,6 @@ const PassionAerosolSprayDetail = () => {
 
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
-        
-                <title>Passion Aerosol Spray | Fresh Citrus Floral Air Freshener</title>
-                <meta name="description" content="Passion Aerosol Spray by Cool Max Scent blends lime, mandarin, lily-of-the-valley, and bois de rose for a fresh, uplifting fragrance with lasting comfort." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/spray/passion-aerosol-spray"/>
         
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
@@ -107,7 +124,7 @@ const PassionAerosolSprayDetail = () => {
                             </div>
                         ))}
                     </div>
-                    <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light italic">
+                    <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light italic text-center">
                         "The fragrance opens with bright citrus energy, transitions into soft floral freshness, and settles into a gentle woody base that feels calm and sophisticated."
                     </p>
                 </div>
@@ -129,7 +146,7 @@ const PassionAerosolSprayDetail = () => {
                                 "Leaves no residue",
                                 "Suitable for daily and continuous use"
                             ].map((text, i) => (
-                                <li key={i} className="flex items-center gap-4 text-lg text-slate-700 font-light">
+                                <li key={i} className="flex items-center gap-4 text-lg text-slate-700 font-light text-left">
                                     <div className="w-2.5 h-2.5 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.4)]" /> {text}
                                 </li>
                             ))}
@@ -138,19 +155,19 @@ const PassionAerosolSprayDetail = () => {
                     <div className="grid grid-cols-2 gap-6 text-left">
                         <div className="aspect-square bg-slate-950 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500">
                             <BuildingOffice2Icon className="w-12 h-12 text-blue-400 group-hover:text-white" />
-                            <span className="text-[11px] font-bold uppercase text-slate-200">Corporate Environments</span>
+                            <span className="text-[11px] font-bold uppercase text-slate-200 text-left">Corporate Environments</span>
                         </div>
                         <div className="aspect-square bg-blue-50 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500">
                             <HomeIcon className="w-12 h-12 text-blue-600 group-hover:text-white" />
-                            <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Hotels & Resorts</span>
+                            <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-100 text-left">Hotels & Resorts</span>
                         </div>
                         <div className="aspect-square bg-slate-100 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500">
                             <ShoppingBagIcon className="w-12 h-12 text-blue-600 group-hover:text-white" />
-                            <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-50">Retail Stores</span>
+                            <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-50 text-left">Retail Stores</span>
                         </div>
                         <div className="aspect-square bg-blue-600 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-slate-950 transition-all duration-500">
                             <UserGroupIcon className="w-12 h-12 text-white" />
-                            <span className="text-[11px] font-bold uppercase text-blue-50">Common Areas</span>
+                            <span className="text-[11px] font-bold uppercase text-blue-50 text-left">Common Areas</span>
                         </div>
                     </div>
                 </div>
@@ -159,11 +176,11 @@ const PassionAerosolSprayDetail = () => {
             {/* ================= SECTION 3: IDEAL FOR ================= */}
             <section className="py-24 bg-slate-950 text-white px-6 text-left">
                 <div className="max-w-[1200px] mx-auto text-center">
-                    <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase">Ideal For</h2>
-                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto">Passion Aerosol Spray is ideal for spaces that require a fresh, uplifting scent while maintaining a professional and comfortable environment throughout the day.</p>
+                    <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase text-center">Ideal For</h2>
+                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto text-center">Passion Aerosol Spray is ideal for spaces that require a fresh, uplifting scent while maintaining a professional and comfortable environment throughout the day.</p>
                     <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
                         {["Washrooms & Restrooms", "Offices & Corporate", "Hotels & Hospitality", "Retail & Showrooms", "Elevators & Corridors"].map((item, i) => (
-                            <div key={i} className="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors">
+                            <div key={i} className="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors text-center">
                                 <CheckBadgeIcon className="w-10 h-10 text-blue-400" />
                                 <h4 className="text-xs font-bold uppercase tracking-widest text-white text-center leading-tight">{item}</h4>
                             </div>
@@ -174,14 +191,14 @@ const PassionAerosolSprayDetail = () => {
 
             {/* ================= SECTION 4: WHY CHOOSE ================= */}
             <section className="py-28 bg-white px-6 text-left">
-                <div className="max-w-[1000px] mx-auto">
+                <div className="max-w-[1000px] mx-auto text-left">
                     <div className="bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-center md:text-left">
                         <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                         </div>
-                        <div>
-                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
-                            <p className="text-slate-500 font-light leading-relaxed">
+                        <div className="text-left">
+                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left text-balance">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
+                            <p className="text-slate-500 font-light leading-relaxed text-justify">
                                 Cool Max aerosol sprays are designed to deliver reliable fragrance performance in professional settings. Engineered to work seamlessly with commercial dispenser systems, they help businesses maintain clean, fresh environments with minimal maintenance.
                             </p>
                         </div>
@@ -193,11 +210,11 @@ const PassionAerosolSprayDetail = () => {
             <section className="py-24 px-6 text-center">
                 <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
-                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100">Looking for a <br/><span className="italic font-light text-slate-300">complete solution?</span></h2>
+                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center">Looking for a <br/><span className="italic font-light text-slate-300">complete solution?</span></h2>
                     <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
                         For automated scent control and consistent results, pair Passion Aerosol Spray with Cool Max LED or LCD Aerosol Dispensers.
                     </p>
-                    <div className="flex flex-wrap justify-center gap-6 relative z-10">
+                    <div className="flex flex-wrap justify-center gap-6 relative z-10 text-center">
                         <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 font-sans">
                             <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
                         </a>

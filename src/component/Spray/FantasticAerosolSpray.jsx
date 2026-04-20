@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; // Added useEffect here
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -11,7 +11,6 @@ import {
     ShieldCheckIcon,
     ShoppingBagIcon,
     UserGroupIcon,
-   
     SparklesIcon,
     HomeIcon
 } from "@heroicons/react/24/outline";
@@ -20,6 +19,27 @@ import {
 import P_Fantastic from "../../asset/Aerosol Spray/fantastic.webp"; 
 
 const FantasticAerosolSprayDetail = () => {
+    // --- SEO LOGIC ADDED ---
+    useEffect(() => {
+        // Set Page Title
+        document.title = "Fantastic Aerosol Spray | Fresh Citrus Apple Air Freshener";
+        
+        // Set Meta Description
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) {
+            metaDesc.setAttribute("content", "Fantastic Aerosol Spray by Cool Max blends lemon zest, orange peel, green apple, jasmine, and light lavender for bright, refreshing freshness.");
+        }
+
+        // Set Canonical Link
+        let link = document.querySelector("link[rel='canonical']");
+        if (!link) {
+            link = document.createElement("link");
+            link.setAttribute("rel", "canonical");
+            document.head.appendChild(link);
+        }
+        link.setAttribute("href", "https://www.coolmaxscent.com/spray/fantastic-aerosol-spray");
+    }, []);
+
     // Redirection Links
     const whatsappNumber = "+971509282702";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Fantastic%20Aerosol%20Spray.`;
@@ -35,11 +55,6 @@ const FantasticAerosolSprayDetail = () => {
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
     
-                <title>Fantastic Aerosol Spray | Fresh Citrus Apple Air Freshener</title>
-                <meta name="description" content="Fantastic Aerosol Spray by Cool Max blends lemon zest, orange peel, green apple, jasmine, and light lavender for bright, refreshing freshness." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/spray/fantastic-aerosol-spray"/>
-      
-
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">

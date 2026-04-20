@@ -39,7 +39,10 @@ const AeroCubePage = () => {
 
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
-    
+    {/* ================= SEO METADATA ================= */}
+<title>AeroCube Aroma Diffuser for Small Spaces</title>
+<meta name="description" content="AeroCube Aroma Diffuser for small spaces with low noise, adjustable scent control and 300 m³ coverage. Ideal for offices, corridors and washrooms."/>
+
   <link rel="canonical" href="https://www.coolmaxscent.com/wall-mounted-and-ceiling-aroma-diffusers/aerocube-diffuser/"/>
 
       {/* ================= HERO SECTION (REDUCED HEIGHT) ================= */}

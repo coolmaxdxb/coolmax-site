@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; // Added useEffect here
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -19,6 +19,27 @@ import {
 import P_Varilla from "../../asset/Aerosol Spray/Varilla Ice-Cream.webp"; 
 
 const VarillaIceCreamAerosolSprayDetail = () => {
+    // --- SEO FIX LOGIC ---
+    useEffect(() => {
+        // Set the browser tab title
+        document.title = "Varilla Ice-Cream Aerosol Spray | Sweet Dessert Air Freshener";
+        
+        // Update Meta Description
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute("content", "Varilla Ice-Cream Aerosol Spray by Cool Max Scent blends vanilla, caramel, coconut, and berries to create a playful, long-lasting sweet fragrance for interiors.");
+        }
+
+        // Update Canonical Link
+        let link = document.querySelector("link[rel='canonical']");
+        if (!link) {
+            link = document.createElement("link");
+            link.setAttribute("rel", "canonical");
+            document.head.appendChild(link);
+        }
+        link.setAttribute("href", "https://www.coolmaxscent.com/spray/varilla-ice-cream-aerosol-spray");
+    }, []);
+
     // Redirection Links
     const whatsappNumber = "+971509282702";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Varilla%20Ice-Cream%20Aerosol%20Spray.`;
@@ -34,11 +55,6 @@ const VarillaIceCreamAerosolSprayDetail = () => {
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
         
-                <title>Varilla Ice-Cream Aerosol Spray | Sweet Dessert Air Freshener</title>
-                <meta name="description" content="Varilla Ice-Cream Aerosol Spray by Cool Max Scent blends vanilla, caramel, coconut, and berries to create a playful, long-lasting sweet fragrance for interiors." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/spray/varilla-ice-cream-aerosol-spray"/>
-           
-
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -88,10 +104,10 @@ const VarillaIceCreamAerosolSprayDetail = () => {
             {/* ================= SECTION 1: FRAGRANCE NOTES ================= */}
             <section className="py-24 bg-slate-50 px-6 lg:px-12 text-center">
                 <div className="max-w-[1200px] mx-auto">
-                    <h2 className="text-3xl md:text-5xl font-serif mb-16 text-slate-950 uppercase">
-                        Fragrance <span className="italic font-light text-blue-700">Notes</span>
+                    <h2 className="text-3xl md:text-5xl font-serif mb-16 text-slate-950 uppercase text-center">
+                        Fragrance <span className="italic font-light text-blue-700 text-center">Notes</span>
                     </h2>
-                    <div className="flex flex-wrap justify-center gap-4 mb-16">
+                    <div className="flex flex-wrap justify-center gap-4 mb-16 text-center">
                         {[
                             { notes: "Vanilla", color: "bg-blue-300" },
                             { notes: "Sweet Sugar", color: "bg-blue-400" },
@@ -109,7 +125,7 @@ const VarillaIceCreamAerosolSprayDetail = () => {
                             </div>
                         ))}
                     </div>
-                    <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light italic">
+                    <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light italic text-center">
                         "This fragrance opens with creamy vanilla sweetness, layered with fruity highlights and finished with soft caramel notes that create a comforting and cheerful scent experience."
                     </p>
                 </div>
@@ -131,7 +147,7 @@ const VarillaIceCreamAerosolSprayDetail = () => {
                                 "Leaves no residue",
                                 "Designed for regular and continuous use"
                             ].map((text, i) => (
-                                <li key={i} className="flex items-center gap-4 text-lg text-slate-700 font-light">
+                                <li key={i} className="flex items-center gap-4 text-lg text-slate-700 font-light text-left">
                                     <div className="w-2.5 h-2.5 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.4)]" /> {text}
                                 </li>
                             ))}
@@ -161,11 +177,11 @@ const VarillaIceCreamAerosolSprayDetail = () => {
             {/* ================= SECTION 3: IDEAL FOR ================= */}
             <section className="py-24 bg-slate-950 text-white px-6 text-left">
                 <div className="max-w-[1200px] mx-auto text-center">
-                    <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase">Ideal For</h2>
-                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto">Varilla Ice-Cream Aerosol Spray is ideal for environments that want to create a warm, friendly, and inviting atmosphere while maintaining professional hygiene standards.</p>
+                    <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase text-center">Ideal For</h2>
+                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto text-center">Varilla Ice-Cream Aerosol Spray is ideal for environments that want to create a warm, friendly, and inviting atmosphere while maintaining professional hygiene standards.</p>
                     <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
                         {["Washrooms & Restrooms", "Offices & Corporate", "Retail & Boutiques", "Cafés, Lounges & Waiting Areas", "Shared Spaces & Elevators"].map((item, i) => (
-                            <div key={i} className="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors">
+                            <div key={i} className="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors text-center">
                                 <CheckBadgeIcon className="w-10 h-10 text-blue-400" />
                                 <h4 className="text-xs font-bold uppercase tracking-widest text-white text-center leading-tight">{item}</h4>
                             </div>
@@ -176,14 +192,14 @@ const VarillaIceCreamAerosolSprayDetail = () => {
 
             {/* ================= SECTION 4: WHY CHOOSE ================= */}
             <section className="py-28 bg-white px-6 text-left">
-                <div className="max-w-[1000px] mx-auto">
+                <div className="max-w-[1000px] mx-auto text-left">
                     <div className="bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-center md:text-left">
                         <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                         </div>
-                        <div>
-                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
-                            <p className="text-slate-500 font-light leading-relaxed">
+                        <div className="text-left">
+                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
+                            <p className="text-slate-500 font-light leading-relaxed text-left text-justify">
                                 Cool Max aerosol sprays are developed for consistent fragrance delivery in professional settings. Designed to work seamlessly with commercial dispenser systems, they help businesses maintain pleasant environments with minimal effort and reliable performance.
                             </p>
                         </div>
@@ -195,15 +211,15 @@ const VarillaIceCreamAerosolSprayDetail = () => {
             <section className="py-24 px-6 text-center">
                 <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
-                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100">Looking for a <br/><span className="italic font-light text-slate-300">complete solution?</span></h2>
-                    <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans">
+                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center">Looking for a <br/><span className="italic font-light text-slate-300">complete solution?</span></h2>
+                    <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
                         For automated fragrance control and consistent results, pair Varilla Ice-Cream Aerosol Spray with Cool Max LED or LCD Aerosol Dispensers.
                     </p>
-                    <div className="flex flex-wrap justify-center gap-6 relative z-10">
-                        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">
+                    <div className="flex flex-wrap justify-center gap-6 relative z-10 text-center">
+                        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-center">
                             <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
                         </a>
-                        <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3">
+                        <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 text-center">
                             Consultation & Installation <ArrowRightIcon className="w-5 h-5" />
                         </Link>
                     </div>

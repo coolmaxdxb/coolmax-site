@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; // Added useEffect
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -12,7 +12,6 @@ import {
     ShoppingBagIcon,
     UserGroupIcon,
     SparklesIcon,
-   
     HomeIcon
 } from "@heroicons/react/24/outline";
 
@@ -20,6 +19,27 @@ import {
 import P_Classic_Spray from "../../asset/Aerosol Spray/classic.webp"; 
 
 const ClassicAerosolSprayDetail = () => {
+    // --- SEO FIX LOGIC ---
+    useEffect(() => {
+        // Set Page Title
+        document.title = "Classic Aerosol Spray | Citrus Floral Air Freshener";
+        
+        // Update Meta Description
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute("content", "Classic Aerosol Spray by Cool Max blends lemon zest, lavender, rose, and soft woods to deliver balanced, long-lasting freshness for professional spaces.");
+        }
+
+        // Set Canonical Link
+        let link = document.querySelector("link[rel='canonical']");
+        if (!link) {
+            link = document.createElement("link");
+            link.setAttribute("rel", "canonical");
+            document.head.appendChild(link);
+        }
+        link.setAttribute("href", "https://www.coolmaxscent.com/spray/classic-aerosol-spray");
+    }, []);
+
     // Redirection Links
     const whatsappNumber = "+971509282702";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Classic%20Aerosol%20Spray.`;
@@ -34,11 +54,6 @@ const ClassicAerosolSprayDetail = () => {
 
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
- 
-                <title>Classic Aerosol Spray | Citrus Floral Air Freshener</title>
-                <meta name="description" content="Classic Aerosol Spray by Cool Max blends lemon zest, lavender, rose, and soft woods to deliver balanced, long-lasting freshness for professional spaces." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/spray/classic-aerosol-spray"/>
-  
 
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
@@ -98,7 +113,7 @@ const ClassicAerosolSprayDetail = () => {
                             { label: "Heart Notes", notes: "Lavender, Rose", color: "bg-blue-600" },
                             { label: "Base Notes", notes: "Sandalwood, Cedarwood", color: "bg-blue-800" }
                         ].map((note, i) => (
-                            <div key={i} className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-blue-300 transition-all group font-sans">
+                            <div key={i} className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:border-blue-300 transition-all group font-sans text-center">
                                 <div className={`w-12 h-12 rounded-full ${note.color} mx-auto mb-6 flex items-center justify-center text-white`}>
                                     <BeakerIcon className="w-6 h-6" />
                                 </div>
@@ -117,7 +132,7 @@ const ClassicAerosolSprayDetail = () => {
             <section className="py-24 bg-white px-6 font-sans">
                 <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
                     <div className="text-left">
-                        <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase">
+                        <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase text-left">
                             Product <br/><span className="italic font-light text-slate-700 font-serif">Highlights</span>
                         </h2>
                         <ul className="space-y-6">
@@ -129,7 +144,7 @@ const ClassicAerosolSprayDetail = () => {
                                 "Leaves no residue",
                                 "Suitable for daily and continuous use"
                             ].map((text, i) => (
-                                <li key={i} className="flex items-center gap-4 text-lg text-slate-700 font-light font-sans">
+                                <li key={i} className="flex items-center gap-4 text-lg text-slate-700 font-light font-sans text-left">
                                     <div className="w-2.5 h-2.5 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.4)]" /> {text}
                                 </li>
                             ))}
@@ -163,7 +178,7 @@ const ClassicAerosolSprayDetail = () => {
                     <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto text-center">Classic Aerosol Spray supports a professional fragrance environment where consistency and comfort are important throughout the day.</p>
                     <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
                         {["Washrooms & Restrooms", "Offices & Corporate", "Hotels & Hospitality", "Retail Stores", "Meeting Rooms"].map((item, i) => (
-                            <div key={i} className="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors">
+                            <div key={i} className="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors text-center">
                                 <CheckBadgeIcon className="w-10 h-10 text-blue-400" />
                                 <h4 className="text-xs font-bold uppercase tracking-widest text-white text-center leading-tight">{item}</h4>
                             </div>
@@ -180,8 +195,8 @@ const ClassicAerosolSprayDetail = () => {
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                         </div>
                         <div className="text-left">
-                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
-                            <p className="text-slate-500 font-light leading-relaxed font-sans">
+                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
+                            <p className="text-slate-500 font-light leading-relaxed font-sans text-left">
                                 Cool Max aerosol sprays are developed for reliable performance in professional scenting systems. They help maintain a fresh, clean atmosphere while supporting hygiene perception and ease of maintenance.
                             </p>
                         </div>

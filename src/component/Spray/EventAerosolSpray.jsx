@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; // Added useEffect here
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -10,9 +10,7 @@ import {
     BeakerIcon,
     ShieldCheckIcon,
     ShoppingBagIcon,
-   
-    SparklesIcon,
-  
+    SparklesIcon, 
     HomeIcon
 } from "@heroicons/react/24/outline";
 
@@ -20,6 +18,28 @@ import {
 import P_Event from "../../asset/Aerosol Spray/event.webp"; 
 
 const EventAerosolSprayDetail = () => {
+    
+    useEffect(() => {
+       
+        document.title = "Event Aerosol Spray | Fresh Woody Amber Air Freshener";
+        
+      
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute("content", "Event Aerosol Spray by Cool Max Scent blends bergamot, birch, and ambergris to deliver a refined, long-lasting fragrance for professional spaces.");
+        }
+
+        // Update Canonical Link
+        let link = document.querySelector("link[rel='canonical']");
+        if (!link) {
+            link = document.createElement("link");
+            link.setAttribute("rel", "canonical");
+            document.head.appendChild(link);
+        }
+        link.setAttribute("href", "https://www.coolmaxscent.com/spray/event-aerosol-spray");
+    }, []);
+    // --- SEO FIX END ---
+
     // Redirection Links
     const whatsappNumber = "+971509282702";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Event%20Aerosol%20Spray.`;
@@ -35,11 +55,6 @@ const EventAerosolSprayDetail = () => {
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
        
-                <title>Event Aerosol Spray | Fresh Woody Amber Air Freshener</title>
-                <meta name="description" content="Event Aerosol Spray by Cool Max Scent blends bergamot, birch, and ambergris to deliver a refined, long-lasting fragrance for professional spaces." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/spray/event-aerosol-spray"/>
-       
-
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">

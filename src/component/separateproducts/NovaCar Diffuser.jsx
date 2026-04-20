@@ -41,7 +41,10 @@ const NovaCarPage = () => {
 
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
-    
+   {/* ================= SEO METADATA ================= */}
+<title>NovaCar Diffuser | Smart Car Aroma Diffuser</title>
+<meta name="description" content="NovaCar Diffuser is a smart car aroma diffuser with automatic start-stop, premium metal body and efficient aromatherapy for vehicles."/>
+
   <link rel="canonical" href="https://www.coolmaxscent.com/car-aroma-diffusers/nova-car-diffuser/"/>
 
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}

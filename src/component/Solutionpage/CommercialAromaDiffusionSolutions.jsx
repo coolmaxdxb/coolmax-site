@@ -25,10 +25,10 @@ export default function CommercialDiffusersPage() {
   const whatsappNumber = "+971509282702";
 
   useEffect(() => {
-    document.title = "Commercial Aroma Diffusion Solutions in UAE | Cool Max";
+    document.title = "Commercial Aroma Diffusers in UAE | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Commercial aroma diffusion solutions in UAE for offices, hotels, & healthcare spaces. Explore professional scent diffusers and HVAC aroma systems by Cool Max.");
+      metaDesc.setAttribute("content", "Explore commercial aroma diffusers in UAE for offices and business spaces. Professional scent diffuser machines with reliable performance & support by Cool Max.");
     }
   }, []);
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; // Added useEffect
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -20,6 +20,28 @@ import {
 import P_Rose_Spray from "../../asset/Aerosol Spray/rose.webp"; 
 
 const RoseAerosolSprayDetail = () => {
+    // --- SEO FIX LOGIC START ---
+    useEffect(() => {
+        // Sets the Browser Tab Title
+        document.title = "Rose Aerosol Spray | Fresh Floral Air Freshener";
+        
+        // Updates the Meta Description in the <head>
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute("content", "Rose Aerosol Spray by Cool Max blends fresh rose petals, green leaves, jasmine, and sandalwood to deliver a soft, elegant, and long-lasting floral freshness.");
+        }
+
+        // Sets/Updates the Canonical Link in the <head>
+        let link = document.querySelector("link[rel='canonical']");
+        if (!link) {
+            link = document.createElement("link");
+            link.setAttribute("rel", "canonical");
+            document.head.appendChild(link);
+        }
+        link.setAttribute("href", "https://www.coolmaxscent.com/spray/rose-aerosol-spray");
+    }, []);
+    // --- SEO FIX LOGIC END ---
+
     // Redirection Links
     const whatsappNumber = "+971509282702";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Rose%20Aerosol%20Spray.`;
@@ -34,12 +56,7 @@ const RoseAerosolSprayDetail = () => {
 
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
-       
-                <title>Rose Aerosol Spray | Fresh Floral Air Freshener</title>
-                <meta name="description" content="Rose Aerosol Spray by Cool Max blends fresh rose petals, green leaves, jasmine, and sandalwood to deliver a soft, elegant, and long-lasting floral freshness." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/spray/rose-aerosol-spray"/>
         
-
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -60,7 +77,7 @@ const RoseAerosolSprayDetail = () => {
                         <p className="text-base md:text-lg text-slate-500 leading-relaxed font-light mb-8 font-sans">
                             Rose Aerosol Spray by Cool Max Scent captures the timeless beauty of fresh rose petals combined with soft green and woody notes. Designed to create a calm, refined atmosphere, this fragrance delivers gentle floral freshness that feels natural, clean, and sophisticated.
                         </p>
-                        <p className="text-base text-slate-500 leading-relaxed font-light mb-10 italic font-sans">
+                        <p className="text-base text-slate-500 leading-relaxed font-light mb-10 italic font-sans text-justify">
                             Ideal for daily and professional use, Rose Aerosol Spray enhances indoor spaces with consistent fragrance while maintaining a balanced and comfortable scent presence.
                         </p>
                         <div className="flex flex-wrap gap-5 font-sans">
@@ -103,8 +120,8 @@ const RoseAerosolSprayDetail = () => {
                                 <div className={`w-12 h-12 rounded-full ${note.color} mx-auto mb-6 flex items-center justify-center text-white`}>
                                     <BeakerIcon className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">{note.label}</h3>
-                                <p className="text-xl font-serif text-slate-900 leading-snug">{note.notes}</p>
+                                <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4 text-center">{note.label}</h3>
+                                <p className="text-xl font-serif text-slate-900 leading-snug text-center">{note.notes}</p>
                             </div>
                         ))}
                     </div>
@@ -115,11 +132,11 @@ const RoseAerosolSprayDetail = () => {
             </section>
 
             {/* ================= SECTION 2: PRODUCT HIGHLIGHTS ================= */}
-            <section className="py-24 bg-white px-6 font-sans">
-                <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
-                    <div className="text-left">
-                        <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase">
-                            Product <br/><span className="italic font-light text-slate-700 font-serif">Highlights</span>
+            <section className="py-24 bg-white px-6 font-sans text-left">
+                <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center text-left">
+                    <div className="text-left text-justify">
+                        <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase text-left">
+                            Product <br/><span className="italic font-light text-slate-700 font-serif text-left">Highlights</span>
                         </h2>
                         <ul className="space-y-6">
                             {[
@@ -130,8 +147,8 @@ const RoseAerosolSprayDetail = () => {
                                 "Leaves no residue",
                                 "Suitable for continuous and daily use"
                             ].map((text, i) => (
-                                <li key={i} className="flex items-center gap-4 text-lg text-slate-700 font-light font-sans">
-                                    <div className="w-2.5 h-2.5 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.4)]" /> {text}
+                                <li key={i} className="flex items-center gap-4 text-lg text-slate-700 font-light font-sans text-left">
+                                    <div className="w-2.5 h-2.5 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.4)] text-left" /> {text}
                                 </li>
                             ))}
                         </ul>
@@ -159,10 +176,10 @@ const RoseAerosolSprayDetail = () => {
 
             {/* ================= SECTION 3: IDEAL FOR ================= */}
             <section className="py-24 bg-slate-950 text-white px-6 font-sans">
-                <div className="max-w-[1200px] mx-auto text-center">
-                    <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase text-center">Ideal For</h2>
-                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto text-center">Rose Aerosol Spray is well suited for environments that require a soft, elegant fragrance that supports cleanliness and a premium feel.</p>
-                    <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div className="max-w-[1200px] mx-auto text-center text-left">
+                    <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase text-center text-left text-balance">Ideal For</h2>
+                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto text-center text-left">Rose Aerosol Spray is well suited for environments that require a soft, elegant fragrance that supports cleanliness and a premium feel.</p>
+                    <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 text-left">
                         {["Washrooms & Restrooms", "Offices & Corporate", "Hotels & Hospitality", "Retail & Showrooms", "Reception Areas"].map((item, i) => (
                             <div key={i} className="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors text-center">
                                 <CheckBadgeIcon className="w-10 h-10 text-blue-400" />
@@ -174,15 +191,15 @@ const RoseAerosolSprayDetail = () => {
             </section>
 
             {/* ================= SECTION 4: WHY CHOOSE ================= */}
-            <section className="py-28 bg-white px-6 font-sans">
-                <div className="max-w-[1000px] mx-auto">
-                    <div className="bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-center md:text-left">
+            <section className="py-28 bg-white px-6 font-sans text-left">
+                <div className="max-w-[1000px] mx-auto text-left">
+                    <div className="bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-center md:text-left text-left">
                         <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                         </div>
-                        <div className="text-left">
-                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
-                            <p className="text-slate-500 font-light leading-relaxed font-sans">
+                        <div className="text-left text-justify">
+                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Why Choose <span className="italic font-light text-blue-700 text-left">Cool Max Aerosol Sprays?</span></h2>
+                            <p className="text-slate-500 font-light leading-relaxed font-sans text-left">
                                 Cool Max aerosol sprays are developed for dependable performance in professional dispenser systems. They help businesses maintain consistent fragrance quality while enhancing hygiene perception and indoor comfort.
                             </p>
                         </div>
@@ -191,18 +208,18 @@ const RoseAerosolSprayDetail = () => {
             </section>
 
             {/* ================= SECTION 5: CTA ================= */}
-            <section className="py-24 px-6 text-center">
-                <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl font-sans">
-                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
-                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center">Looking for a <br/><span className="italic font-light text-slate-300 font-serif">complete solution?</span></h2>
-                    <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
+            <section className="py-24 px-6 text-center text-left">
+                <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl font-sans text-left">
+                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full text-left"></div>
+                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center text-left text-balance">Looking for a <br/><span className="italic font-light text-slate-300 font-serif">complete solution?</span></h2>
+                    <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center text-left">
                         For automated fragrance delivery and reliable freshness, pair Rose Aerosol Spray with Cool Max LED or LCD Aerosol Dispensers.
                     </p>
-                    <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans">
-                        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">
+                    <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans text-center">
+                        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-left">
                             <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
                         </a>
-                        <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3">
+                        <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 text-left">
                             Consultation & Installation <ArrowRightIcon className="w-5 h-5" />
                         </Link>
                     </div>

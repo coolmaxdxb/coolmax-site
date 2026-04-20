@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; // Added useEffect
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -11,7 +11,6 @@ import {
     ShieldCheckIcon,
     ShoppingBagIcon,
     UserGroupIcon,
-   
     SparklesIcon,
     HomeIcon
 } from "@heroicons/react/24/outline";
@@ -20,6 +19,27 @@ import {
 import P_Floral_Spray from "../../asset/Aerosol Spray/floral.webp"; 
 
 const FloralAerosolSprayDetail = () => {
+    // --- SEO FIX LOGIC ---
+    useEffect(() => {
+        // Sets the browser tab title
+        document.title = "Floral Aerosol Spray | Citrus Lily Air Freshener";
+        
+        // Updates the Meta Description
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute("content", "Floral Aerosol Spray by Cool Max blends Sicilian orange, lily of the valley, musk, and cedar for a soft citrus-floral freshness with lasting performance.");
+        }
+
+        // Updates the Canonical Link
+        let link = document.querySelector("link[rel='canonical']");
+        if (!link) {
+            link = document.createElement("link");
+            link.setAttribute("rel", "canonical");
+            document.head.appendChild(link);
+        }
+        link.setAttribute("href", "https://www.coolmaxscent.com/spray/floral-aerosol-spray");
+    }, []);
+
     // Redirection Links
     const whatsappNumber = "+971509282702";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Floral%20Aerosol%20Spray.`;
@@ -34,12 +54,7 @@ const FloralAerosolSprayDetail = () => {
 
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
-         
-                <title>Floral Aerosol Spray | Citrus Lily Air Freshener</title>
-                <meta name="description" content="Floral Aerosol Spray by Cool Max blends Sicilian orange, lily of the valley, musk, and cedar for a soft citrus-floral freshness with lasting comfort." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/spray/floral-aerosol-spray"/>
-           
-
+          
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -92,7 +107,7 @@ const FloralAerosolSprayDetail = () => {
                     <h2 className="text-3xl md:text-5xl font-serif mb-16 text-slate-950 uppercase text-center">
                         Fragrance <span className="italic font-light text-blue-700 font-serif">Notes</span>
                     </h2>
-                    <div className="grid md:grid-cols-3 gap-8 mb-16 font-sans">
+                    <div className="grid md:grid-cols-3 gap-8 mb-16 font-sans text-center">
                         {[
                             { label: "Top Notes", notes: "Sicilian Orange", color: "bg-blue-400" },
                             { label: "Heart Notes", notes: "Lily of the Valley, Lily", color: "bg-blue-600" },
@@ -102,8 +117,8 @@ const FloralAerosolSprayDetail = () => {
                                 <div className={`w-12 h-12 rounded-full ${note.color} mx-auto mb-6 flex items-center justify-center text-white`}>
                                     <BeakerIcon className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4 text-center">{note.label}</h3>
-                                <p className="text-xl font-serif text-slate-900 leading-snug text-center">{note.notes}</p>
+                                <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">{note.label}</h3>
+                                <p className="text-xl font-serif text-slate-900 leading-snug">{note.notes}</p>
                             </div>
                         ))}
                     </div>
@@ -117,8 +132,8 @@ const FloralAerosolSprayDetail = () => {
             <section className="py-24 bg-white px-6 font-sans">
                 <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
                     <div className="text-left">
-                        <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase text-left">
-                            Product <br/><span className="italic font-light text-slate-700 font-serif text-left">Highlights</span>
+                        <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase">
+                            Product <br/><span className="italic font-light text-slate-700 font-serif">Highlights</span>
                         </h2>
                         <ul className="space-y-6">
                             {[
@@ -129,28 +144,28 @@ const FloralAerosolSprayDetail = () => {
                                 "Leaves no residue",
                                 "Suitable for daily and continuous use"
                             ].map((text, i) => (
-                                <li key={i} className="flex items-center gap-4 text-lg text-slate-700 font-light font-sans text-left">
+                                <li key={i} className="flex items-center gap-4 text-lg text-slate-700 font-light font-sans">
                                     <div className="w-2.5 h-2.5 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.4)]" /> {text}
                                 </li>
                             ))}
                         </ul>
                     </div>
                     <div className="grid grid-cols-2 gap-6 text-left">
-                        <div className="aspect-square bg-slate-950 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500 font-sans">
+                        <div className="aspect-square bg-slate-950 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500 font-sans text-left">
                             <BuildingOffice2Icon className="w-12 h-12 text-blue-400 group-hover:text-white" />
                             <span className="text-[11px] font-bold uppercase text-slate-200">Offices & Corporate</span>
                         </div>
-                        <div className="aspect-square bg-blue-50 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500 font-sans">
+                        <div className="aspect-square bg-blue-50 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500 font-sans text-left">
                             <HomeIcon className="w-12 h-12 text-blue-600 group-hover:text-white" />
                             <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Restrooms</span>
                         </div>
-                        <div className="aspect-square bg-slate-100 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 font-sans">
+                        <div className="aspect-square bg-slate-100 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 font-sans text-left">
                             <ShoppingBagIcon className="w-12 h-12 text-blue-600 group-hover:text-white" />
-                            <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-50 text-left">Retail Stores</span>
+                            <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-50">Retail & Stores</span>
                         </div>
-                        <div className="aspect-square bg-blue-600 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-slate-950 transition-all duration-500 font-sans">
-                            <UserGroupIcon className="w-12 h-12 text-white text-left" />
-                            <span className="text-[11px] font-bold uppercase text-blue-50 text-left">Hotel Lobbies</span>
+                        <div className="aspect-square bg-blue-600 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-slate-950 transition-all duration-500 font-sans text-left">
+                            <UserGroupIcon className="w-12 h-12 text-white" />
+                            <span className="text-[11px] font-bold uppercase text-blue-50">Hotel Lobbies</span>
                         </div>
                     </div>
                 </div>
@@ -174,14 +189,14 @@ const FloralAerosolSprayDetail = () => {
 
             {/* ================= SECTION 4: WHY CHOOSE ================= */}
             <section className="py-28 bg-white px-6 font-sans">
-                <div className="max-w-[1000px] mx-auto">
+                <div className="max-w-[1000px] mx-auto text-left">
                     <div className="bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-center md:text-left">
                         <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                         </div>
                         <div className="text-left">
                             <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
-                            <p className="text-slate-500 font-light leading-relaxed font-sans text-left">
+                            <p className="text-slate-500 font-light leading-relaxed font-sans text-left text-justify">
                                 Cool Max aerosol sprays are developed to ensure reliable fragrance delivery in professional dispenser systems. They help maintain clean, pleasant environments while supporting hygiene perception and operational ease.
                             </p>
                         </div>
@@ -193,7 +208,7 @@ const FloralAerosolSprayDetail = () => {
             <section className="py-24 px-6 text-center">
                 <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl font-sans">
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
-                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center">Looking for a <br/><span className="italic font-light text-slate-300 font-serif text-left">complete solution?</span></h2>
+                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center">Looking for a <br/><span className="italic font-light text-slate-300 font-serif">complete solution?</span></h2>
                     <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
                         For automated fragrance control and dependable freshness, pair Floral Aerosol Spray with Cool Max LED or LCD Aerosol Dispensers.
                     </p>
@@ -201,7 +216,7 @@ const FloralAerosolSprayDetail = () => {
                         <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">
                             <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
                         </a>
-                        <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3">
+                        <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 text-center">
                             Consultation & Installation <ArrowRightIcon className="w-5 h-5" />
                         </Link>
                     </div>

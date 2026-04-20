@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; // Added useEffect here
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -11,16 +11,36 @@ import {
     ShieldCheckIcon,
     ShoppingBagIcon,
     UserGroupIcon,
-
     SparklesIcon,
     HomeIcon,
-   
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORT ---
 import P_Strawberry from "../../asset/Aerosol Spray/strawberry.webp"; 
 
 const StrawberryAerosolSprayDetail = () => {
+    // --- SEO FIX LOGIC START ---
+    useEffect(() => {
+        // Sets the Browser Tab Title
+        document.title = "Strawberry Aerosol Spray | Sweet Berry Air Freshener";
+        
+        // Updates the Meta Description
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute("content", "Strawberry Aerosol Spray by Cool Max blends ripe strawberry, red berries, vanilla, and musk to create a warm, sweet, long-lasting fragrance for daily freshness.");
+        }
+
+        // Sets the Canonical Link
+        let link = document.querySelector("link[rel='canonical']");
+        if (!link) {
+            link = document.createElement("link");
+            link.setAttribute("rel", "canonical");
+            document.head.appendChild(link);
+        }
+        link.setAttribute("href", "https://www.coolmaxscent.com/spray/strawberry-aerosol-spray");
+    }, []);
+    // --- SEO FIX LOGIC END ---
+
     // Redirection Links
     const whatsappNumber = "+971509282702";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Strawberry%20Aerosol%20Spray.`;
@@ -36,16 +56,11 @@ const StrawberryAerosolSprayDetail = () => {
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
        
-                <title>Strawberry Aerosol Spray | Sweet Berry Air Freshener</title>
-                <meta name="description" content="Strawberry Aerosol Spray by Cool Max blends ripe strawberry, red berries, vanilla, and musk to create a warm, sweet, long-lasting fragrance for daily freshness." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/spray/strawberry-aerosol-spray"/>
-   
-
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     <motion.div {...fadeUp} className="order-2 lg:order-1">
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-[10px] font-bold uppercase tracking-[0.3em] mb-8 font-sans">
+                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-[10px] font-bold uppercase tracking-[0.3em] mb-8 font-sans text-left">
                             <SparklesIcon className="w-4 h-4" /> Category: Sweet Berry Aerosol Air Freshener
                         </div>
                         <h1 className="text-5xl md:text-7xl font-serif text-slate-950 mb-6 leading-[1.1] tracking-tighter uppercase text-left">
@@ -184,7 +199,7 @@ const StrawberryAerosolSprayDetail = () => {
                         <div className="text-left">
                             <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Why Choose <span className="italic font-light text-blue-700 text-left">Cool Max Aerosol Sprays?</span></h2>
                             <p className="text-slate-500 font-light leading-relaxed font-sans text-left">
-                                Cool Max aerosol sprays are selected for reliable performance in professional dispenser systems. They support consistent fragrance delivery while enhancing hygiene perception and overall comfort.
+                                Cool Max aerosol sprays are selected for reliable performance in professional dispenser systems. They help maintain consistent fragrance delivery while enhancing hygiene perception and overall comfort.
                             </p>
                         </div>
                     </div>
@@ -201,7 +216,7 @@ const StrawberryAerosolSprayDetail = () => {
                     </p>
                     <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans text-left text-center">
                         <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-left">
-                            <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
+                            <ChatBubbleLeftRightIcon className="w-5 h-5 text-left" /> WhatsApp Scent Expert
                         </a>
                         <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 text-left">
                             Consultation & Installation <ArrowRightIcon className="w-5 h-5" />

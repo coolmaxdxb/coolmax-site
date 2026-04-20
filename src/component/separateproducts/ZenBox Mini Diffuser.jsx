@@ -39,7 +39,10 @@ const ZenBoxMiniPage = () => {
 
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
-    
+  {/* ================= SEO METADATA ================= */}
+<title>ZenBox Mini Aroma Diffuser for Small Space</title>
+<meta name="description" content="ZenBox Mini Aroma Diffuser is a battery operated small space aroma diffuser with desktop & wall mount use. Ideal for homes, offices and washrooms."/>
+
   <link rel="canonical" href="https://www.coolmaxscent.com/wall-mounted-and-ceiling-aroma-diffusers/zenbox-mini-diffuser/"/>
 
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}

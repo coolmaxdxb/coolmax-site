@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; // Added useEffect
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -6,13 +6,12 @@ import {
     CheckBadgeIcon, 
     ArrowRightIcon, 
     BuildingOffice2Icon,
-    ChatBubbleLeftRightIcon,
+    ChatBubbleLeftRightIcon, 
     BeakerIcon,
     ShieldCheckIcon,
     ShoppingBagIcon,
     UserGroupIcon,
     SparklesIcon,
-
     HomeIcon
 } from "@heroicons/react/24/outline";
 
@@ -20,6 +19,28 @@ import {
 import P_ForYou from "../../asset/Aerosol Spray/foryou.webp"; 
 
 const ForYouAerosolSprayDetail = () => {
+    // --- SEO FIX LOGIC START ---
+    useEffect(() => {
+        // Sets the Browser Tab Title
+        document.title = "For You Aerosol Spray | Soft Floral Air Freshener";
+        
+        // Updates the Meta Description
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute("content", "For You Aerosol Spray by Cool Max Scent offers a soft floral fragrance for offices, hotels, and washrooms. Compatible with LED & LCD aerosol dispensers.");
+        }
+
+        // Sets the Canonical Link
+        let link = document.querySelector("link[rel='canonical']");
+        if (!link) {
+            link = document.createElement("link");
+            link.setAttribute("rel", "canonical");
+            document.head.appendChild(link);
+        }
+        link.setAttribute("href", "https://www.coolmaxscent.com/spray/for-you-aerosol-spray");
+    }, []);
+    // --- SEO FIX LOGIC END ---
+
     // Redirection Links
     const whatsappNumber = "+971509282702";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20For%20You%20Aerosol%20Spray.`;
@@ -35,11 +56,6 @@ const ForYouAerosolSprayDetail = () => {
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
      
-                <title>For You Aerosol Spray | Soft Floral Air Freshener</title>
-                <meta name="description" content="For You Aerosol Spray by Cool Max Scent offers a soft floral fragrance for offices, hotels, and washrooms. Compatible with LED & LCD aerosol dispensers." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/spray/for-you-aerosol-spray"/>
-    
-
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -57,7 +73,7 @@ const ForYouAerosolSprayDetail = () => {
                             <span>Type: <span className="text-slate-900">Commercial air freshener spray</span></span>
                             <span>Compatibility: <span className="text-blue-500 font-black">LED & LCD dispensers</span></span>
                         </div>
-                        <p className="text-base md:text-lg text-slate-500 leading-relaxed font-light mb-8">
+                        <p className="text-base md:text-lg text-slate-500 leading-relaxed font-light mb-8 font-sans text-justify">
                             For You Aerosol Spray by Cool Max Scent is crafted to create a gentle, comforting fragrance that enhances indoor spaces with warmth and elegance. Designed for daily and continuous use, this aerosol air freshener supports a calm and welcoming atmosphere in professional and shared environments.
                         </p>
                         <p className="text-base text-slate-500 leading-relaxed font-light mb-10 italic">
@@ -103,12 +119,12 @@ const ForYouAerosolSprayDetail = () => {
                                 <div className={`w-12 h-12 rounded-full ${note.color} mx-auto mb-6 flex items-center justify-center text-white`}>
                                     <BeakerIcon className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">{note.label}</h3>
-                                <p className="text-xl font-serif text-slate-900 leading-snug">{note.notes}</p>
+                                <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4 text-center">{note.label}</h3>
+                                <p className="text-xl font-serif text-slate-900 leading-snug text-center">{note.notes}</p>
                             </div>
                         ))}
                     </div>
-                    <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light italic">
+                    <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light italic text-center">
                         "This composition opens with light floral freshness, followed by smooth jasmine and rose notes, gently balanced with the warmth of white honey for a soft, lasting impression."
                     </p>
                 </div>
@@ -118,10 +134,10 @@ const ForYouAerosolSprayDetail = () => {
             <section className="py-24 bg-white px-6">
                 <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
                     <div className="text-left">
-                        <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase">
+                        <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase text-left">
                             Product <br/><span className="italic font-light text-slate-700">Highlights</span>
                         </h2>
-                        <ul className="space-y-6">
+                        <ul className="space-y-6 text-left">
                             {[
                                 "Compatible with LED & LCD aerosol dispensers",
                                 "Helps neutralize everyday odors",
@@ -130,7 +146,7 @@ const ForYouAerosolSprayDetail = () => {
                                 "No residue after use",
                                 "Suitable for continuous and regular operation"
                             ].map((text, i) => (
-                                <li key={i} className="flex items-center gap-4 text-lg text-slate-700 font-light">
+                                <li key={i} className="flex items-center gap-4 text-lg text-slate-700 font-light text-left">
                                     <div className="w-2.5 h-2.5 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.4)]" /> {text}
                                 </li>
                             ))}
@@ -139,19 +155,19 @@ const ForYouAerosolSprayDetail = () => {
                     <div className="grid grid-cols-2 gap-6 text-left">
                         <div className="aspect-square bg-slate-950 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500">
                             <BuildingOffice2Icon className="w-12 h-12 text-blue-400 group-hover:text-white" />
-                            <span className="text-[11px] font-bold uppercase text-slate-200">Corporate Offices</span>
+                            <span className="text-[11px] font-bold uppercase text-slate-200 text-left">Corporate Offices</span>
                         </div>
                         <div className="aspect-square bg-blue-50 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-700 transition-all duration-500">
                             <HomeIcon className="w-12 h-12 text-blue-600 group-hover:text-white" />
-                            <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-100">Hotels & Hospitality</span>
+                            <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-100 text-left">Hotels & Hospitality</span>
                         </div>
                         <div className="aspect-square bg-slate-100 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500">
                             <ShoppingBagIcon className="w-12 h-12 text-blue-600 group-hover:text-white" />
-                            <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-50">Retail Stores</span>
+                            <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-50 text-left">Retail Stores</span>
                         </div>
                         <div className="aspect-square bg-blue-600 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-slate-950 transition-all duration-500">
                             <UserGroupIcon className="w-12 h-12 text-white" />
-                            <span className="text-[11px] font-bold uppercase text-blue-50">Customer Areas</span>
+                            <span className="text-[11px] font-bold uppercase text-blue-50 text-left">Customer Areas</span>
                         </div>
                     </div>
                 </div>
@@ -160,11 +176,11 @@ const ForYouAerosolSprayDetail = () => {
             {/* ================= SECTION 3: IDEAL FOR ================= */}
             <section className="py-24 bg-slate-950 text-white px-6 text-left">
                 <div className="max-w-[1200px] mx-auto text-center">
-                    <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase">Ideal For</h2>
-                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto">For You Aerosol Spray works efficiently with Cool Max aerosol dispenser systems, making it a reliable solution for automated fragrance delivery.</p>
+                    <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase text-center">Ideal For</h2>
+                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto text-center">For You Aerosol Spray works efficiently with Cool Max aerosol dispenser systems, making it a reliable solution for automated fragrance delivery.</p>
                     <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
                         {["Washrooms & Restrooms", "Offices & Corporate", "Hotels & Hospitality", "Retail & Showrooms", "Elevators & Waiting Zones"].map((item, i) => (
-                            <div key={i} className="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors">
+                            <div key={i} className="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors text-center">
                                 <CheckBadgeIcon className="w-10 h-10 text-blue-400" />
                                 <h4 className="text-xs font-bold uppercase tracking-widest text-white text-center leading-tight">{item}</h4>
                             </div>
@@ -177,12 +193,12 @@ const ForYouAerosolSprayDetail = () => {
             <section className="py-28 bg-white px-6 text-left">
                 <div className="max-w-[1000px] mx-auto">
                     <div className="bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-center md:text-left">
-                        <div className="w-24 h-24 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
+                        <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                         </div>
-                        <div>
-                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
-                            <p className="text-slate-500 font-light leading-relaxed">
+                        <div className="text-left">
+                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left text-balance">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
+                            <p className="text-slate-500 font-light leading-relaxed text-justify">
                                 Cool Max aerosol sprays are designed to support hygiene perception, comfort, and consistency across commercial environments. Our sprays are optimized for professional dispenser systems, helping facilities maintain a pleasant atmosphere throughout operating hours.
                             </p>
                         </div>
@@ -194,11 +210,11 @@ const ForYouAerosolSprayDetail = () => {
             <section className="py-24 px-6 text-center">
                 <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
-                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100">Looking for a <br/><span className="italic font-light text-slate-300">complete solution?</span></h2>
-                    <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans">
+                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center">Looking for a <br/><span className="italic font-light text-slate-300">complete solution?</span></h2>
+                    <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
                         Combine For You Aerosol Spray with Cool Max Scent LED or LCD aerosol dispensers for controlled, automated fragrance management.
                     </p>
-                    <div className="flex flex-wrap justify-center gap-6 relative z-10">
+                    <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans text-center">
                         <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">
                             <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
                         </a>

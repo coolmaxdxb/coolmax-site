@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; 
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -19,6 +19,27 @@ import {
 import P_Flora from "../../asset/Aerosol Spray/flora.webp"; 
 
 const FloraAerosolSprayDetail = () => {
+   
+    useEffect(() => {
+       
+        document.title = "Flora Aerosol Spray | Fresh Floral Air Freshener";
+        
+        // Updates the Meta Description
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute("content", "Flora Aerosol Spray by Cool Max delivers a fresh floral fragrance for washrooms, offices, and hotels. Compatible with LED & LCD dispensers.");
+        }
+
+        // Handles Canonical Link
+        let link = document.querySelector("link[rel='canonical']");
+        if (!link) {
+            link = document.createElement("link");
+            link.setAttribute("rel", "canonical");
+            document.head.appendChild(link);
+        }
+        link.setAttribute("href", "https://www.coolmaxscent.com/spray/flora-aerosol-spray");
+    }, []);
+
     // Redirection Links
     const whatsappNumber = "+971509282702";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Flora%20Aerosol%20Spray.`;
@@ -33,11 +54,7 @@ const FloraAerosolSprayDetail = () => {
 
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
-         
-                <title>Flora Aerosol Spray | Fresh Floral Air Freshener</title>
-                <meta name="description" content="Flora Aerosol Spray by Cool Max delivers a fresh floral fragrance for washrooms, offices, and hotels. Compatible with LED & LCD dispensers." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/spray/flora-aerosol-spray"/>
-          
+            {/* Note: I removed the static title/meta tags from here as they are now handled by useEffect */}
 
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
@@ -114,6 +131,8 @@ const FloraAerosolSprayDetail = () => {
                 </div>
             </section>
 
+            {/* ... Rest of your sections remain exactly the same ... */}
+            
             {/* ================= SECTION 2: PRODUCT HIGHLIGHTS ================= */}
             <section className="py-24 bg-white px-6">
                 <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
@@ -157,7 +176,7 @@ const FloraAerosolSprayDetail = () => {
                 </div>
             </section>
 
-            {/* ================= SECTION 3: IDEAL FOR ================= */}
+            {/* ... SECTION 3, 4, 5 & 6 ... */}
             <section className="py-24 bg-slate-950 text-white px-6 text-left">
                 <div className="max-w-[1200px] mx-auto text-center">
                     <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase">Ideal For</h2>
@@ -180,7 +199,6 @@ const FloraAerosolSprayDetail = () => {
                 </div>
             </section>
 
-            {/* ================= SECTION 4: WHY CHOOSE ================= */}
             <section className="py-28 bg-white px-6 text-left">
                 <div className="max-w-[1000px] mx-auto">
                     <div className="bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-center md:text-left">
@@ -197,7 +215,6 @@ const FloraAerosolSprayDetail = () => {
                 </div>
             </section>
 
-            {/* ================= SECTION 5 & 6: CTA ================= */}
             <section className="py-24 px-6 text-center">
                 <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
@@ -215,7 +232,6 @@ const FloraAerosolSprayDetail = () => {
                     </div>
                 </div>
             </section>
-
         </div>
     );
 };

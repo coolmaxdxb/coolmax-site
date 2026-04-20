@@ -39,7 +39,10 @@ const TitanDiffuserPage = () => {
 
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
-    
+    {/* ================= SEO METADATA ================= */}
+<title>Titan Diffuser – Floor-Standing Aroma System</title>
+<meta name="description" content="Titan Diffuser is a premium floor-standing aroma diffuser with quiet operation, cold-air atomization, and elegant aluminum design for modern spaces."/>
+
   <link rel="canonical" href="https://www.coolmaxscent.com/floor-standing-aroma-diffusers/titan-diffuser/"/>
 
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}

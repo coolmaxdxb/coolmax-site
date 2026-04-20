@@ -40,7 +40,10 @@ const MistBoxXPage = () => {
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
     
-  <link rel="canonical" href="https://www.coolmaxscent.com/commercial-aroma-diffusers/mistbox-x-diffuser/"/>
+      {/* ================= SEO METADATA ================= */}
+      <title>MistBox X Diffuser Dubai | Commercial Aroma Diffuser</title>
+      <meta name="description" content="High-performance commercial aroma diffuser for large spaces and HVAC systems. Ideal for hotels, offices, malls & professional scent marketing needs."/>
+      <link rel="canonical" href="https://www.coolmaxscent.com/commercial-aroma-diffusers/mistbox-x-diffuser/"/>
 
       
       {/* ================= HERO SECTION (REDUCED HEIGHT) ================= */}

@@ -42,7 +42,10 @@ const LuxePanelPage = () => {
 
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
-     
+   {/* ================= SEO METADATA ================= */}
+<title>LuxePanel Diffuser Dubai | Battery Aroma Diffuser</title>
+<meta name="description" content="LuxePanel Diffuser in Dubai is a battery-powered aroma diffuser for small spaces. Quiet, Bluetooth-controlled scenting solution available across UAE."/>
+
   <link rel="canonical" href="https://www.coolmaxscent.com/wall-mounted-and-ceiling-aroma-diffusers/luxepanel-diffuser/"/>
 
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}

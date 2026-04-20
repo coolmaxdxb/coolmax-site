@@ -42,7 +42,7 @@ export default function LargeAreaDiffusersPage() {
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-full lg:w-[1000px] h-[1000px] bg-slate-100/50 rounded-full blur-[150px]" />
-        <div className="absolute bottom-0 left-0 w-full lg:w-[800px] h-[800px] bg-blue-50/50 rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 left-0 w-full lg:w-[800px] h-[800px] bg-blue-50/30 rounded-full blur-[120px]" />
       </div>
 
       <div className="relative z-10 max-w-[1600px] mx-auto px-6 md:px-16">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; // Added useEffect
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -11,7 +11,7 @@ import {
     ShieldCheckIcon,
     ShoppingBagIcon,
     UserGroupIcon,
-   
+    
     SparklesIcon,
     HomeIcon
 } from "@heroicons/react/24/outline";
@@ -20,6 +20,28 @@ import {
 import P_Lavender_Spray from "../../asset/Aerosol Spray/fresh lavender.webp"; 
 
 const FreshLavenderAerosolSprayDetail = () => {
+    // --- SEO FIX LOGIC START ---
+    useEffect(() => {
+        // Sets the Browser Tab Title
+        document.title = "Fresh Lavender Aerosol Spray | Clean Herbal Air Freshener";
+        
+        // Updates the Meta Description in the <head>
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute("content", "Fresh Lavender Aerosol Spray by Cool Max blends eucalyptus, lavender, and thyme for a calm, herbal freshness ideal for daily professional use.");
+        }
+
+        // Sets/Updates the Canonical Link in the <head>
+        let link = document.querySelector("link[rel='canonical']");
+        if (!link) {
+            link = document.createElement("link");
+            link.setAttribute("rel", "canonical");
+            document.head.appendChild(link);
+        }
+        link.setAttribute("href", "https://www.coolmaxscent.com/spray/fresh-lavender-aerosol-spray");
+    }, []);
+    // --- SEO FIX LOGIC END ---
+
     // Redirection Links
     const whatsappNumber = "+971509282702";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Fresh%20Lavender%20Aerosol%20Spray.`;
@@ -35,11 +57,6 @@ const FreshLavenderAerosolSprayDetail = () => {
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
   
-                <title>Fresh Lavender Aerosol Spray | Clean Herbal Air Freshener</title>
-                <meta name="description" content="Fresh Lavender Aerosol Spray by Cool Max blends eucalyptus, lavender, and thyme for a calm, herbal freshness ideal for daily professional use." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/spray/fresh-lavender-aerosol-spray"/>
-      
-
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -53,14 +70,14 @@ const FreshLavenderAerosolSprayDetail = () => {
                         <p className="text-xl text-blue-600 font-medium mb-4 uppercase tracking-wider font-sans">
                             Herbal Calm Air Freshener – Pure, Clean Freshness with a Relaxing Herbal Touch
                         </p>
-                        <div className="flex gap-6 mb-8 text-[11px] font-bold uppercase tracking-widest text-slate-400 font-sans">
+                        <div className="flex gap-6 mb-8 text-[11px] font-bold uppercase tracking-widest text-slate-400 font-sans text-left">
                             <span>Type: <span className="text-slate-900">Commercial Aerosol Dispenser Refill</span></span>
                             <span>System: <span className="text-blue-500 font-black">Automatic Air Freshener Spray</span></span>
                         </div>
-                        <p className="text-base md:text-lg text-slate-500 leading-relaxed font-light mb-8 font-sans">
+                        <p className="text-base md:text-lg text-slate-500 leading-relaxed font-light mb-8 font-sans text-justify">
                             Fresh Lavender Aerosol Spray by Cool Max Scent is created to deliver a soothing and refreshing fragrance that promotes calm, cleanliness, and comfort. The blend of eucalyptus, lavender, and gentle herbal notes provides a crisp yet relaxing scent profile—perfect for environments where freshness and balance matter.
                         </p>
-                        <p className="text-base text-slate-500 leading-relaxed font-light mb-10 italic font-sans">
+                        <p className="text-base text-slate-500 leading-relaxed font-light mb-10 italic font-sans text-left">
                             Designed for professional and continuous use, Fresh Lavender maintains a clean atmosphere without overpowering the space.
                         </p>
                         <div className="flex flex-wrap gap-5 font-sans">
@@ -90,7 +107,7 @@ const FreshLavenderAerosolSprayDetail = () => {
             <section className="py-24 bg-slate-50 px-6 lg:px-12 text-center">
                 <div className="max-w-[1200px] mx-auto font-sans">
                     <h2 className="text-3xl md:text-5xl font-serif mb-16 text-slate-950 uppercase text-center">
-                        Fragrance <span className="italic font-light text-blue-700 font-serif">Notes</span>
+                        Fragrance <span className="italic font-light text-blue-700 font-serif text-left">Notes</span>
                     </h2>
                     <div className="grid md:grid-cols-3 gap-6 mb-16 font-sans">
                         {[
@@ -114,23 +131,23 @@ const FreshLavenderAerosolSprayDetail = () => {
             </section>
 
             {/* ================= SECTION 2: PRODUCT HIGHLIGHTS ================= */}
-            <section className="py-24 bg-white px-6 font-sans">
-                <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
-                    <div className="text-left">
-                        <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase">
-                            Product <br/><span className="italic font-light text-slate-700 font-serif">Highlights</span>
+            <section className="py-24 bg-white px-6 font-sans text-left">
+                <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center text-left">
+                    <div className="text-left text-justify">
+                        <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase text-left">
+                            Product <br/><span className="italic font-light text-slate-700 font-serif text-left">Highlights</span>
                         </h2>
                         <ul className="space-y-6">
                             {[
                                 "Compatible with LED & LCD aerosol dispensers",
                                 "Provides instant freshness and calming aroma",
                                 "Balanced herbal fragrance for daily use",
-                                "Wide dispersion for even scent coverage",
+                                "Wide fragrance dispersion for even scent coverage",
                                 "Leaves no residue",
                                 "Suitable for continuous and professional environments"
                             ].map((text, i) => (
-                                <li key={i} className="flex items-center gap-4 text-lg text-slate-700 font-light font-sans">
-                                    <div className="w-2.5 h-2.5 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.4)]" /> {text}
+                                <li key={i} className="flex items-center gap-4 text-lg text-slate-700 font-light font-sans text-left">
+                                    <div className="w-2.5 h-2.5 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.4)] text-left" /> {text}
                                 </li>
                             ))}
                         </ul>
@@ -150,7 +167,7 @@ const FreshLavenderAerosolSprayDetail = () => {
                         </div>
                         <div className="aspect-square bg-blue-600 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-slate-950 transition-all duration-500 font-sans">
                             <UserGroupIcon className="w-12 h-12 text-white" />
-                            <span className="text-[11px] font-bold uppercase text-blue-50">Hotels & Resorts</span>
+                            <span className="text-[11px] font-bold uppercase text-blue-50 text-left">Hotels & Resorts</span>
                         </div>
                     </div>
                 </div>
@@ -158,10 +175,10 @@ const FreshLavenderAerosolSprayDetail = () => {
 
             {/* ================= SECTION 3: IDEAL FOR ================= */}
             <section className="py-24 bg-slate-950 text-white px-6 font-sans">
-                <div className="max-w-[1200px] mx-auto text-center">
-                    <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase text-center">Ideal For</h2>
-                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto text-center">Fresh Lavender Aerosol Spray supports hygiene perception while creating a relaxed and comfortable indoor environment.</p>
-                    <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div className="max-w-[1200px] mx-auto text-center text-left">
+                    <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase text-center text-left text-balance">Ideal For</h2>
+                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto text-center text-left">Fresh Lavender Aerosol Spray supports hygiene perception while creating a relaxed and comfortable indoor environment.</p>
+                    <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 text-left">
                         {["Washrooms & Restrooms", "Offices & Corporate", "Hospitals & Clinics", "Hotels & Hospitality", "Corridors & Lifts"].map((item, i) => (
                             <div key={i} className="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors text-center">
                                 <CheckBadgeIcon className="w-10 h-10 text-blue-400" />
@@ -173,15 +190,15 @@ const FreshLavenderAerosolSprayDetail = () => {
             </section>
 
             {/* ================= SECTION 4: WHY CHOOSE ================= */}
-            <section className="py-28 bg-white px-6 font-sans">
-                <div className="max-w-[1000px] mx-auto">
-                    <div className="bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-center md:text-left">
+            <section className="py-28 bg-white px-6 font-sans text-left">
+                <div className="max-w-[1000px] mx-auto text-left">
+                    <div className="bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-center md:text-left text-left">
                         <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                         </div>
-                        <div className="text-left">
-                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
-                            <p className="text-slate-500 font-light leading-relaxed font-sans">
+                        <div className="text-left text-justify">
+                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Why Choose <span className="italic font-light text-blue-700 text-left">Cool Max Aerosol Sprays?</span></h2>
+                            <p className="text-slate-500 font-light leading-relaxed font-sans text-left">
                                 Cool Max aerosol sprays are developed for consistent performance in professional scenting systems. They help maintain freshness, support odor control, and deliver reliable results with minimal maintenance effort.
                             </p>
                         </div>
@@ -190,18 +207,18 @@ const FreshLavenderAerosolSprayDetail = () => {
             </section>
 
             {/* ================= SECTION 5: CTA ================= */}
-            <section className="py-24 px-6 text-center">
-                <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl font-sans">
-                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
-                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center">Looking for a <br/><span className="italic font-light text-slate-300 font-serif">complete solution?</span></h2>
-                    <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
+            <section className="py-24 px-6 text-center text-left">
+                <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl font-sans text-left">
+                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full text-left"></div>
+                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center text-left text-balance">Looking for a <br/><span className="italic font-light text-slate-300 font-serif text-left">complete solution?</span></h2>
+                    <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center text-left">
                         For automated fragrance control and consistent results, pair Fresh Lavender Aerosol Spray with Cool Max LED or LCD Aerosol Dispensers.
                     </p>
-                    <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans">
-                        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 font-sans">
+                    <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans text-center">
+                        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-left text-center">
                             <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
                         </a>
-                        <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 font-sans">
+                        <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 text-center">
                             Consultation & Installation <ArrowRightIcon className="w-5 h-5" />
                         </Link>
                     </div>

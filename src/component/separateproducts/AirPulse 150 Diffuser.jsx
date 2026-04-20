@@ -39,6 +39,10 @@ const AirPulse150Page = () => {
 
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
+
+    {/* ================= SEO METADATA ================= */}
+<title>High Capacity HVAC Aroma Diffuser | AirPulse 150</title>
+<meta name="description" content="High capacity HVAC aroma diffuser for mega commercial spaces. Covers 5,000–15,000 m³ with industrial performance, dual atomization, and precise scent control."/>
     
   <link rel="canonical" href="https://www.coolmaxscent.com/large-area-and-hvac-aroma-diffusers/air-pulse-150-diffuser/"/>
 

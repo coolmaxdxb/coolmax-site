@@ -40,7 +40,9 @@ const AirPoleProPage = () => {
 
   return (
 <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
- 
+     {/* ================= SEO METADATA ================= */}
+<title>AirPole Pro Diffuser – Floor-Standing Aroma System</title>
+<meta name="description" content="AirPole Pro Diffuser is a smart floor-standing aroma diffuser with app control, 2000m³ coverage, and elegant aluminum design for homes and commercial spaces."/>
   <link rel="canonical" href="https://www.coolmaxscent.com/floor-standing-aroma-diffusers/airpole-pro-diffuser/"/>
 
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT & SMALLER IMAGE) ================= */}

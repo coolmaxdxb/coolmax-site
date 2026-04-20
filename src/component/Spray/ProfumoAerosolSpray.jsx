@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; // Added useEffect
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -20,6 +20,28 @@ import {
 import P_Profumo from "../../asset/Aerosol Spray/profumo.webp"; 
 
 const ProfumoAerosolSprayDetail = () => {
+    // --- SEO FIX LOGIC START ---
+    useEffect(() => {
+        // Sets the browser tab title
+        document.title = "Profumo Aerosol Spray | Herbal Citrus Air Freshener";
+        
+        // Updates the Meta Description in the <head>
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute("content", "Profumo Aerosol Spray by Cool Max blends lavender, lemon, geranium, cedarwood, and sandalwood for clean, balanced, long-lasting freshness.");
+        }
+
+        // Sets/Updates the Canonical Link in the <head>
+        let link = document.querySelector("link[rel='canonical']");
+        if (!link) {
+            link = document.createElement("link");
+            link.setAttribute("rel", "canonical");
+            document.head.appendChild(link);
+        }
+        link.setAttribute("href", "https://www.coolmaxscent.com/spray/profumo-aerosol-spray");
+    }, []);
+    // --- SEO FIX LOGIC END ---
+
     // Redirection Links
     const whatsappNumber = "+971509282702";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Profumo%20Aerosol%20Spray.`;
@@ -35,11 +57,6 @@ const ProfumoAerosolSprayDetail = () => {
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
         
-                <title>Profumo Aerosol Spray | Herbal Citrus Air Freshener</title>
-                <meta name="description" content="Profumo Aerosol Spray by Cool Max blends lavender, lemon, geranium, cedarwood, and sandalwood for clean, balanced, long-lasting freshness." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/spray/profumo-aerosol-spray"/>
-         
-
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -53,14 +70,14 @@ const ProfumoAerosolSprayDetail = () => {
                         <p className="text-xl text-blue-600 font-medium mb-4 uppercase tracking-wider font-sans">
                             Fresh Citrus Energy with a Refined Woody Finish
                         </p>
-                        <div className="flex gap-6 mb-8 text-[11px] font-bold uppercase tracking-widest text-slate-400 font-sans">
+                        <div className="flex gap-6 mb-8 text-[11px] font-bold uppercase tracking-widest text-slate-400 font-sans text-left">
                             <span>Type: <span className="text-slate-900">Commercial Aerosol Dispenser Refill</span></span>
                             <span>System: <span className="text-blue-500 font-black">Automatic Air Freshener Spray</span></span>
                         </div>
-                        <p className="text-base md:text-lg text-slate-500 leading-relaxed font-light mb-8 font-sans">
+                        <p className="text-base md:text-lg text-slate-500 leading-relaxed font-light mb-8 font-sans text-justify">
                             Profumo Aerosol Spray by Cool Max Scent is crafted to create a crisp and professional indoor atmosphere. Blending fresh citrus, calming lavender, and smooth woody notes, this fragrance delivers a clean and balanced scent profile that feels modern and refreshing.
                         </p>
-                        <p className="text-base text-slate-500 leading-relaxed font-light mb-10 italic font-sans">
+                        <p className="text-base text-slate-500 leading-relaxed font-light mb-10 italic font-sans text-left">
                             Designed for both commercial and daily use, Profumo offers consistent freshness while maintaining a subtle, well-controlled fragrance presence suitable for professional environments.
                         </p>
                         <div className="flex flex-wrap gap-5 font-sans">
@@ -89,7 +106,7 @@ const ProfumoAerosolSprayDetail = () => {
             {/* ================= SECTION 1: FRAGRANCE PROFILE ================= */}
             <section className="py-24 bg-slate-50 px-6 lg:px-12 text-center">
                 <div className="max-w-[1200px] mx-auto font-sans">
-                    <h2 className="text-3xl md:text-5xl font-serif mb-16 text-slate-950 uppercase text-center">
+                    <h2 className="text-3xl md:text-5xl font-serif mb-16 text-slate-950 uppercase text-center text-left">
                         Fragrance <span className="italic font-light text-blue-700 font-serif">Notes</span>
                     </h2>
                     <div className="grid md:grid-cols-3 gap-8 mb-16 font-sans">
@@ -102,8 +119,8 @@ const ProfumoAerosolSprayDetail = () => {
                                 <div className={`w-12 h-12 rounded-full ${note.color} mx-auto mb-6 flex items-center justify-center text-white`}>
                                     <BeakerIcon className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4 text-center">{note.label}</h3>
-                                <p className="text-xl font-serif text-slate-900 leading-snug text-center">{note.notes}</p>
+                                <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">{note.label}</h3>
+                                <p className="text-xl font-serif text-slate-900 leading-snug">{note.notes}</p>
                             </div>
                         ))}
                     </div>
@@ -116,7 +133,7 @@ const ProfumoAerosolSprayDetail = () => {
             {/* ================= SECTION 2: PRODUCT HIGHLIGHTS ================= */}
             <section className="py-24 bg-white px-6 font-sans">
                 <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
-                    <div className="text-left">
+                    <div className="text-left text-justify">
                         <h2 className="text-3xl md:text-5xl font-serif mb-10 text-slate-950 leading-tight uppercase text-left">
                             Product <br/><span className="italic font-light text-slate-700 font-serif">Highlights</span>
                         </h2>
@@ -146,11 +163,11 @@ const ProfumoAerosolSprayDetail = () => {
                         </div>
                         <div className="aspect-square bg-slate-100 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 font-sans">
                             <ShoppingBagIcon className="w-12 h-12 text-blue-600 group-hover:text-white" />
-                            <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-50 text-left">Retail Areas</span>
+                            <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-50">Retail Areas</span>
                         </div>
                         <div className="aspect-square bg-blue-600 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-slate-950 transition-all duration-500 font-sans">
                             <UserGroupIcon className="w-12 h-12 text-white" />
-                            <span className="text-[11px] font-bold uppercase text-blue-50 text-left">Meeting Rooms</span>
+                            <span className="text-[11px] font-bold uppercase text-blue-50">Meeting Rooms</span>
                         </div>
                     </div>
                 </div>
@@ -159,9 +176,9 @@ const ProfumoAerosolSprayDetail = () => {
             {/* ================= SECTION 3: IDEAL FOR ================= */}
             <section className="py-24 bg-slate-950 text-white px-6 font-sans">
                 <div className="max-w-[1200px] mx-auto text-center">
-                    <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase text-center">Ideal For</h2>
-                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto text-center">Profumo Aerosol Spray is ideal for spaces that require a clean, energizing fragrance that supports comfort and hygiene perception throughout the day.</p>
-                    <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase text-center text-left text-balance">Ideal For</h2>
+                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto text-center text-left">Profumo Aerosol Spray is ideal for spaces that require a clean, energizing fragrance that supports comfort and hygiene perception throughout the day.</p>
+                    <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 text-left">
                         {["Washrooms & Restrooms", "Offices & Corporate", "Clinics & Healthcare", "Hotels & Hospitality", "Corridors & Common Zones"].map((item, i) => (
                             <div key={i} className="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors text-center">
                                 <CheckBadgeIcon className="w-10 h-10 text-blue-400" />
@@ -173,14 +190,14 @@ const ProfumoAerosolSprayDetail = () => {
             </section>
 
             {/* ================= SECTION 4: WHY CHOOSE ================= */}
-            <section className="py-28 bg-white px-6 font-sans">
-                <div className="max-w-[1000px] mx-auto">
-                    <div className="bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-center md:text-left">
+            <section className="py-28 bg-white px-6 font-sans text-left">
+                <div className="max-w-[1000px] mx-auto text-left">
+                    <div className="bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-center md:text-left text-left">
                         <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                         </div>
-                        <div className="text-left">
-                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
+                        <div className="text-left text-justify">
+                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Why Choose <span className="italic font-light text-blue-700 text-left">Cool Max Aerosol Sprays?</span></h2>
                             <p className="text-slate-500 font-light leading-relaxed font-sans text-left">
                                 Cool Max aerosol sprays are developed to perform reliably in professional dispenser systems. They help maintain consistent fragrance quality, reduce odor concerns, and create welcoming indoor environments with minimal maintenance.
                             </p>
@@ -190,11 +207,11 @@ const ProfumoAerosolSprayDetail = () => {
             </section>
 
             {/* ================= SECTION 5: CTA ================= */}
-            <section className="py-24 px-6 text-center">
-                <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl font-sans">
-                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
-                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center">Looking for a <br/><span className="italic font-light text-slate-300 font-serif">complete solution?</span></h2>
-                    <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
+            <section className="py-24 px-6 text-center text-left">
+                <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl font-sans text-left">
+                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full text-left"></div>
+                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center text-left text-balance">Looking for a <br/><span className="italic font-light text-slate-300 font-serif text-left">complete solution?</span></h2>
+                    <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light text-center text-left">
                         For automated fragrance control and consistent results, pair Profumo Aerosol Spray with Cool Max LED or LCD Aerosol Dispensers.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans text-center">

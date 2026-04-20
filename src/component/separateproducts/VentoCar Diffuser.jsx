@@ -43,7 +43,9 @@ const VentoCarPage = () => {
 
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
-    
+    {/* ================= SEO METADATA ================= */}
+<title>VentoCar Diffuser – Smart Rechargeable Car Aroma Diffuser</title>
+<meta name="description" content="VentoCar Diffuser is a smart rechargeable car aroma diffuser with quiet operation, aluminum body, and balanced fragrance for cars and desks."/>
   <link rel="canonical" href="https://www.coolmaxscent.com/car-aroma-diffusers/vento-car-diffuser/"/>
 
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}

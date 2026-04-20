@@ -41,7 +41,10 @@ const CeilAirProPage = () => {
 
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
-     
+     {/* ================= SEO METADATA ================= */}
+<title>CeilAir Pro Diffuser in Dubai | Commercial Scenting </title>
+<meta name="description" content="Smart CeilAir Pro Diffuser in Dubai for commercial spaces. Wall-mounted design, Bluetooth control, low noise, and easy maintenance across UAE."/>
+
   <link rel="canonical" href="https://www.coolmaxscent.com/wall-mounted-and-ceiling-aroma-diffusers/ceil-air-pro-diffuser/"/>
 
 

@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react"; // Added useEffect
 import { motion, AnimatePresence } from "framer-motion";
 
 import { Link } from "react-router-dom"; 
@@ -59,6 +59,26 @@ export default function SprayCollectionPage() {
   const [search, setSearch] = useState("");
   const whatsappNumber = "971509282702";
 
+  // --- SEO FIX LOGIC ---
+  useEffect(() => {
+  
+    document.title = "Aerosol Spray Collection | Cool Max Scent Solutions";
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Explore our wide range of premium aerosol sprays in UAE. From Fresh Bakhoor to Floral Jasmine, find the perfect scent for your space.");
+    }
+
+    // Updates/Creates the Canonical Link
+    let link = document.querySelector("link[rel='canonical']");
+    if (!link) {
+      link = document.createElement("link");
+      link.setAttribute("rel", "canonical");
+      document.head.appendChild(link);
+    }
+    link.setAttribute("href", "https://www.coolmaxscent.com/spray");
+  }, []);
+
   const filtered = useMemo(() => {
     return sprayProducts.filter(p => 
       p.name.toLowerCase().includes(search.toLowerCase())
@@ -67,16 +87,10 @@ export default function SprayCollectionPage() {
 
   return (
     <div className="min-h-screen bg-[#fcfcfc] text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden">
-   
-        <title>Aerosol Spray Collection | Cool Max Scent Solutions</title>
-        <meta name="description" content="Explore our wide range of premium aerosol sprays in UAE. From Fresh Bakhoor to Floral Jasmine, find the perfect scent for your space." />
-        {/* CORRECT CANONICAL LINK RE-IMPLEMENTED HERE */}
-        <link rel="canonical" href="https://www.coolmaxscent.com/spray"/>
-    
 
       {/* ================= HERO SECTION (SMALLER TYPOGRAPHY) ================= */}
       <section className="relative pt-24 pb-12 px-6 lg:px-16 overflow-hidden bg-white">
-        <div className="max-w-[1600px] mx-auto relative z-10">
+        <div className="max-w-[1600px] mx-auto relative z-10 text-left">
           <motion.div 
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -177,9 +191,9 @@ export default function SprayCollectionPage() {
           </div>
 
           {filtered.length === 0 && (
-            <div className="py-32 text-center text-left">
-              <SparklesIcon className="w-10 h-10 text-slate-200 mx-auto mb-4 text-left" />
-              <p className="text-slate-400 font-light text-sm italic">No matching fragrances found.</p>
+            <div className="py-32 text-center">
+              <SparklesIcon className="w-10 h-10 text-slate-200 mx-auto mb-4" />
+              <p className="text-slate-400 font-light text-sm italic text-center">No matching fragrances found.</p>
             </div>
           )}
         </div>
@@ -204,13 +218,13 @@ export default function SprayCollectionPage() {
                 href={`https://wa.me/${whatsappNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 px-8 py-3.5 bg-blue-600 text-white rounded-2xl font-bold text-[10px] uppercase tracking-widest hover:bg-white hover:text-slate-950 transition-all duration-500 shadow-lg text-left"
+                className="inline-flex items-center gap-3 px-8 py-3.5 bg-blue-600 text-white rounded-2xl font-bold text-[10px] uppercase tracking-widest hover:bg-white hover:text-slate-950 transition-all duration-500 shadow-lg"
               >
                 <ChatBubbleLeftRightIcon className="w-4 h-4" /> Request Quote
               </a>
               <Link 
                 to="/contact" 
-                className="flex items-center gap-2 text-slate-500 hover:text-white transition-colors uppercase text-[9px] font-bold tracking-widest text-left"
+                className="flex items-center gap-2 text-slate-500 hover:text-white transition-colors uppercase text-[9px] font-bold tracking-widest"
               >
                 Specifications <ArrowUpRightIcon className="w-3 h-3" />
               </Link>

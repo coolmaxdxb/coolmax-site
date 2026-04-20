@@ -39,6 +39,7 @@ const AromaDeskPage = () => {
 
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
+      
     
   <link rel="canonical" href="https://www.coolmaxscent.com/desktop-and-small-space-aroma-diffusers/aroma-desk-diffuser/"/>
 

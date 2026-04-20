@@ -162,6 +162,8 @@ export default function ArchitectStore() {
       
       {/* ================= SEO METADATA ================= */}
     
+<title>Cool Max | Premium Scenting Solutions for Homes & Businesses</title>
+<meta name="description" content="Cool Max provides premium scent diffusers and fragrance solutions for homes, hotels, offices, retail spaces, HVAC systems, and automobiles across UAE & Qatar."/>
         <link rel="canonical" href="https://www.coolmaxscent.com/products/"/>
     
 

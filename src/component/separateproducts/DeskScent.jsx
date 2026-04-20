@@ -41,7 +41,10 @@ const DeskScentPage = () => {
 
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
-    
+    {/* ================= SEO METADATA ================= */}
+<title>Car Aroma Diffuser for Desk & Car | DeskScent Diffuser</title>
+<meta name="description" content="DeskScent Diffuser is a compact car aroma diffuser with aluminum body, quiet operation, and fan atomization for cars, desks, and personal spaces."/>
+
   <link rel="canonical" href="https://www.coolmaxscent.com/car-aroma-diffusers/desk-scent-diffuser/"/>
 
       {/* ================= HERO SECTION ================= */}

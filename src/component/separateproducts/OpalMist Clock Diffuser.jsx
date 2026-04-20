@@ -42,7 +42,10 @@ const OpalMistClockPage = () => {
 
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
-     
+    {/* ================= SEO METADATA ================= */}
+<title>OpalMist Clock Diffuser | Smart Desktop Aroma Diffuser</title>
+<meta name="description" content="OpalMist Clock Diffuser is a smart desktop aroma diffuser with WiFi app control, clock display and cold atomization for small spaces."/>
+
   <link rel="canonical" href="https://www.coolmaxscent.com/desktop-and-small-space-aroma-diffusers/opalmist-clock-diffuser/"/>
 
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}

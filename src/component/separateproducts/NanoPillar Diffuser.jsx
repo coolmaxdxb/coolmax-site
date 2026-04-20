@@ -38,7 +38,9 @@ const NanoPillarPage = () => {
 
   return (
     <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
-
+{/* ================= SEO METADATA ================= */}
+<title>NanoPillar Aroma Diffuser | Cool max scent</title>
+<meta name="description" content="The NanoPillar Diffuser is a sleek, floor-standing aroma diffuser crafted for boutique commercial spaces and upscale residential interiors."/>
   <link rel="canonical" href="https://www.coolmaxscent.com/floor-standing-aroma-diffusers/nano-pillar-diffuser/"/>
 
       {/* ================= HERO SECTION (OPTIMIZED HEIGHT) ================= */}

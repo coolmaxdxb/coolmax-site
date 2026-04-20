@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"; // Added useEffect
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -6,12 +6,11 @@ import {
     CheckBadgeIcon, 
     ArrowRightIcon, 
     BuildingOffice2Icon,
-    ChatBubbleLeftRightIcon,
+    ChatBubbleLeftRightIcon, 
     BeakerIcon,
     ShieldCheckIcon,
     ShoppingBagIcon,
     UserGroupIcon,
- 
     SparklesIcon,
     HomeIcon
 } from "@heroicons/react/24/outline";
@@ -20,6 +19,27 @@ import {
 import P_Voyage from "../../asset/Aerosol Spray/Voyage.webp"; 
 
 const VoyageAerosolSprayDetail = () => {
+    // --- SEO FIX LOGIC ---
+    useEffect(() => {
+        // Set Page Title
+        document.title = "Voyage Aerosol Spray | Fresh Apple Air Freshener";
+        
+        // Update Meta Description
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute("content", "Voyage Aerosol Spray by Cool Max delivers a crisp fresh apple fragrance for clean, uplifting, long-lasting freshness in professional spaces.");
+        }
+
+        // Handle Canonical Link
+        let link = document.querySelector("link[rel='canonical']");
+        if (!link) {
+            link = document.createElement("link");
+            link.setAttribute("rel", "canonical");
+            document.head.appendChild(link);
+        }
+        link.setAttribute("href", "https://www.coolmaxscent.com/spray/voyage-aerosol-spray");
+    }, []);
+
     // Redirection Links
     const whatsappNumber = "+971509282702";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Voyage%20Aerosol%20Spray.`;
@@ -35,11 +55,6 @@ const VoyageAerosolSprayDetail = () => {
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
         
-                <title>Voyage Aerosol Spray | Fresh Apple Air Freshener</title>
-                <meta name="description" content="Voyage Aerosol Spray by Cool Max delivers a crisp fresh apple fragrance for clean, uplifting, long-lasting freshness in professional spaces." />
-                <link rel="canonical" href="https://www.coolmaxscent.com/spray/voyage-aerosol-spray"/>
-         
-
             {/* ================= HERO SECTION ================= */}
             <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -151,15 +166,15 @@ const VoyageAerosolSprayDetail = () => {
             </section>
 
             {/* ================= SECTION 3: IDEAL FOR ================= */}
-            <section className="py-24 bg-slate-950 text-white px-6 font-sans">
+            <section className="py-24 bg-slate-950 text-white px-6 font-sans text-left">
                 <div className="max-w-[1200px] mx-auto text-center">
-                    <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase text-center">Ideal For</h2>
+                    <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase text-center text-left">Ideal For</h2>
                     <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto text-center">Voyage Aerosol Spray is perfect for high-traffic areas where a fresh, neutral scent helps maintain hygiene perception and comfort.</p>
-                    <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 text-left">
                         {["Washrooms & Restrooms", "Offices & Corporate", "Retail & Showrooms", "Hotels & Hospitality", "Corridors & Elevators"].map((item, i) => (
-                            <div key={i} className="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors text-center">
-                                <CheckBadgeIcon className="w-10 h-10 text-blue-400" />
-                                <h4 className="text-xs font-bold uppercase tracking-widest text-white text-center leading-tight">{item}</h4>
+                            <div key={i} className="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors text-center text-left">
+                                <CheckBadgeIcon className="w-10 h-10 text-blue-400 text-left" />
+                                <h4 className="text-xs font-bold uppercase tracking-widest text-white text-center text-left leading-tight">{item}</h4>
                             </div>
                         ))}
                     </div>
@@ -167,16 +182,16 @@ const VoyageAerosolSprayDetail = () => {
             </section>
 
             {/* ================= SECTION 4: WHY CHOOSE ================= */}
-            <section className="py-28 bg-white px-6 font-sans">
-                <div className="max-w-[1000px] mx-auto">
-                    <div className="bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-center md:text-left">
-                        <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
-                            <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
+            <section className="py-28 bg-white px-6 font-sans text-left">
+                <div className="max-w-[1000px] mx-auto text-left">
+                    <div className="bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-center md:text-left text-left">
+                        <div className="w-24 h-24 rounded-full bg-blue-100 flex items-center justify-center shrink-0 text-left">
+                            <ShieldCheckIcon className="w-12 h-12 text-blue-600 text-left" />
                         </div>
                         <div className="text-left">
                             <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Why Choose <span className="italic font-light text-blue-700 text-left">Cool Max Aerosol Sprays?</span></h2>
                             <p className="text-slate-500 font-light leading-relaxed font-sans text-left">
-                                Cool Max aerosol sprays are designed for reliable performance in professional dispenser systems. They support clean, pleasant environments with controlled fragrance delivery and minimal maintenance effort.
+                                Cool Max aerosol sprays are designed for reliable performance in professional dispenser systems. They help maintain clean, pleasant environments with controlled fragrance delivery and minimal maintenance effort.
                             </p>
                         </div>
                     </div>
@@ -184,18 +199,18 @@ const VoyageAerosolSprayDetail = () => {
             </section>
 
             {/* ================= SECTION 5: CTA ================= */}
-            <section className="py-24 px-6 text-center">
-                <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl font-sans">
-                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
-                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center">Looking for a <br/><span className="italic font-light text-slate-300 font-serif text-left">complete solution?</span></h2>
-                    <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
+            <section className="py-24 px-6 text-center text-left">
+                <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl font-sans text-left">
+                    <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full text-left"></div>
+                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center text-left">Looking for a <br/><span className="italic font-light text-slate-300 font-serif text-left">complete solution?</span></h2>
+                    <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center text-left">
                         For automated fragrance control and consistent freshness, pair Voyage Aerosol Spray with Cool Max LED or LCD Aerosol Dispensers.
                     </p>
-                    <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans text-center">
+                    <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans text-center text-left">
                         <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-left">
                             <ChatBubbleLeftRightIcon className="w-5 h-5 text-left" /> WhatsApp Scent Expert
                         </a>
-                        <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all flex items-center gap-3 text-left">
+                        <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 text-left">
                             Consultation & Installation <ArrowRightIcon className="w-5 h-5 text-left" />
                         </Link>
                     </div>
