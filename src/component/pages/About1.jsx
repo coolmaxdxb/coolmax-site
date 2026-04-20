@@ -1,14 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
+// Switched to Lucide for a more high-end, studio-consistent icon set
 import { 
-  ArrowRightIcon, 
-  SparklesIcon, 
-  ChartBarIcon, 
-  UserGroupIcon,
-  GlobeAltIcon,
-  LightBulbIcon,
-  BuildingLibraryIcon,
-} from "@heroicons/react/24/outline";
+  ArrowUpRight, 
+  Target,  
+  Users2, 
+  Globe2, 
+  Zap, 
+  Building2,
+  Fingerprint,
+  Wrench,
+  Eye
+} from "lucide-react";
 import AboutImg from "../../asset/about/about1.png";
 
 export default function AboutUs() {
@@ -25,8 +28,6 @@ export default function AboutUs() {
   return (
     <section className="relative min-h-screen bg-[#FAFAFA] text-slate-600 font-sans selection:bg-indigo-600 selection:text-white overflow-hidden">
       
-      {/* ================= BACKGROUND DECORATIONS REMOVED ================= */}
-
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 py-20 lg:py-28">
 
         {/* ================= 1. HERO SECTION ================= */}
@@ -35,7 +36,7 @@ export default function AboutUs() {
             {...fadeUp}
             className="inline-flex items-center gap-3 px-4 py-1.5 rounded-md bg-white border border-slate-200 shadow-sm mb-10"
           >
-            <span className="w-2 h-2 rounded-full bg-indigo-600"></span>
+            <span className="w-2 h-2 rounded-full bg-indigo-600 animate-pulse"></span>
             <span className="text-[10px] font-black tracking-[0.2em] text-slate-900 uppercase">Established 2020 • Dubai, UAE</span>
           </motion.div>
           
@@ -96,7 +97,7 @@ export default function AboutUs() {
               </h3>
             </div>
             
-            <div className="space-y-6 text-lg font-light leading-relaxed">
+            <div className="space-y-6 text-lg font-light leading-relaxed text-justify">
               <p>
                 Cool Max is a solution-driven company. We don't just sell machines; we analyze your space, understand your airflow, and design a scenting strategy that works silently in the background.
               </p>
@@ -108,14 +109,14 @@ export default function AboutUs() {
             <div className="grid grid-cols-2 gap-10 pt-10 border-t border-slate-200">
               <div>
                 <h4 className="text-4xl font-serif text-slate-900 mb-2">500+</h4>
-                <p className="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
-                  <GlobeAltIcon className="w-4 h-4 text-indigo-600" /> Projects Delivered
+                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                  <Globe2 className="w-4 h-4 text-indigo-600 stroke-[1.5]" /> Projects Delivered
                 </p>
               </div>
               <div>
                 <h4 className="text-4xl font-serif text-slate-900 mb-2">98%</h4>
-                <p className="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
-                  <UserGroupIcon className="w-4 h-4 text-indigo-600" /> Client Retention
+                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                  <Users2 className="w-4 h-4 text-indigo-600 stroke-[1.5]" /> Client Retention
                 </p>
               </div>
             </div>
@@ -130,8 +131,10 @@ export default function AboutUs() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-2 bg-white p-10 rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-xl transition-all">
-              <div className="mb-8 p-4 bg-slate-50 w-fit rounded-xl border border-slate-100"><BuildingLibraryIcon className="w-8 h-8 text-indigo-600"/></div>
+            <div className="lg:col-span-2 bg-white p-10 rounded-[2.5rem] border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
+              <div className="mb-8 p-4 bg-slate-50 w-fit rounded-xl border border-slate-100 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                <Building2 className="w-8 h-8 stroke-[1.5]"/>
+              </div>
               <h3 className="text-2xl font-serif text-slate-900 mb-4 text-left">Commercial Scent Strategy</h3>
               <p className="leading-relaxed font-light mb-8 text-left">
                 We design comprehensive scent maps for hotels, malls, and offices, utilizing HVAC scent diffusers to ensure uniform coverage without overwhelming the senses.
@@ -142,30 +145,36 @@ export default function AboutUs() {
               </div>
             </div>
 
-            <div className="bg-slate-900 p-10 rounded-[2rem] text-white shadow-2xl flex flex-col justify-between">
+            <div className="bg-slate-900 p-10 rounded-[2.5rem] text-white shadow-2xl flex flex-col justify-between group">
               <div>
-                <div className="mb-8 p-4 bg-white/10 w-fit rounded-xl border border-white/10"><ChartBarIcon className="w-8 h-8 text-indigo-400"/></div>
+                <div className="mb-8 p-4 bg-white/10 w-fit rounded-xl border border-white/10 group-hover:bg-indigo-500 transition-colors">
+                  <Wrench className="w-8 h-8 stroke-[1.5] text-indigo-400 group-hover:text-white"/>
+                </div>
                 <h3 className="text-xl font-serif mb-4 text-left">Ongoing Maintenance</h3>
                 <p className="text-slate-400 font-light leading-relaxed mb-8 text-sm text-left">
                   A scent machine is only as good as its service. We provide refill plans, cleaning, and technical calibration to ensure 24/7 uptime.
                 </p>
               </div>
-              <a href="maintenance-and-refill-support-services/" className="text-xs font-bold uppercase tracking-[0.2em] text-indigo-400 flex items-center gap-3 hover:text-white transition-colors">
-                View Plans <ArrowRightIcon className="w-4 h-4" />
+              <a href="maintenance-and-refill-support-services/" className="text-[10px] font-bold uppercase tracking-[0.2em] text-indigo-400 flex items-center gap-3 hover:text-white transition-colors">
+                View Plans <ArrowUpRight className="w-4 h-4 stroke-[2]" />
               </a>
             </div>
 
-            <div className="bg-white p-10 rounded-[2rem] border border-slate-200 shadow-sm text-left">
-              <div className="mb-6 p-4 bg-slate-50 w-fit rounded-xl text-left"><LightBulbIcon className="w-8 h-8 text-slate-400"/></div>
+            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-200 shadow-sm text-left group">
+              <div className="mb-6 p-4 bg-slate-50 w-fit rounded-xl group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                <Zap className="w-8 h-8 stroke-[1.5]"/>
+              </div>
               <h3 className="text-xl font-serif text-slate-900 mb-3 text-left">Residential Systems</h3>
               <p className="font-light leading-relaxed text-sm text-left">Discreet, quiet, and effective home diffusers that blend into your decor.</p>
             </div>
 
-            <div className="lg:col-span-2 bg-white p-10 rounded-[2rem] border border-slate-200 shadow-sm flex flex-col md:flex-row gap-8 items-center text-left">
-              <div className="shrink-0 p-6 bg-indigo-50 rounded-full border border-indigo-100"><SparklesIcon className="w-10 h-10 text-indigo-600"/></div>
+            <div className="lg:col-span-2 bg-white p-10 rounded-[2.5rem] border border-slate-200 shadow-sm flex flex-col md:flex-row gap-8 items-center text-left group">
+              <div className="shrink-0 p-6 bg-indigo-50 rounded-full border border-indigo-100 group-hover:bg-indigo-600 transition-colors">
+                <Fingerprint className="w-10 h-10 text-indigo-600 group-hover:text-white stroke-[1.5]"/>
+              </div>
               <div className="text-left">
                 <h3 className="text-xl font-serif text-slate-900 mb-3 text-left">Scent Branding</h3>
-                <p className="font-light leading-relaxed text-sm text-left">Create a signature scent identity that customers associate with your brand. We help you choose notes that define your ethos.</p>
+                <p className="font-light leading-relaxed text-sm text-left text-justify">Create a signature scent identity that customers associate with your brand. We help you choose notes that define your ethos.</p>
               </div>
             </div>
           </div>
@@ -174,13 +183,15 @@ export default function AboutUs() {
         {/* ================= 4. VISION & MISSION ================= */}
         <div className="mb-40">
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="p-12 bg-white border border-slate-200 rounded-[2.5rem] shadow-sm flex flex-col items-center text-center">
+            <div className="p-12 bg-white border border-slate-200 rounded-[2.5rem] shadow-sm flex flex-col items-center text-center group">
+               <div className="mb-8 text-indigo-600"><Eye className="w-8 h-8 stroke-[1.5]"/></div>
                <h2 className="text-sm font-black text-indigo-600 uppercase tracking-widest mb-10">Our Vision</h2>
                <p className="text-xl md:text-2xl font-serif text-slate-900 leading-relaxed font-light">
                  To become a trusted provider of professional, cost-effective scent and hygiene solutions that support cleaner, healthier environments for future generations.
                </p>
             </div>
-            <div className="p-12 bg-indigo-600 rounded-[2.5rem] shadow-2xl flex flex-col items-center text-center text-white">
+            <div className="p-12 bg-indigo-600 rounded-[2.5rem] shadow-2xl flex flex-col items-center text-center text-white group">
+               <div className="mb-8 text-white/70"><Target className="w-8 h-8 stroke-[1.5]"/></div>
                <h2 className="text-sm font-black text-white/70 uppercase tracking-widest mb-10">Our Mission</h2>
                <p className="text-xl md:text-2xl font-serif leading-relaxed font-light">
                  To deliver reliable, eco-conscious, and high-quality home scent systems, commercial scent diffusers, and fragrance solutions with a strong focus on customer satisfaction and consistent service.
@@ -202,13 +213,13 @@ export default function AboutUs() {
               href={`https://wa.me/${whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-10 py-5 bg-slate-900 text-white font-bold text-xs uppercase tracking-[0.2em] hover:bg-indigo-600 transition-all shadow-xl flex items-center justify-center gap-3 rounded-full"
+              className="w-full sm:w-auto px-10 py-5 bg-slate-900 text-white font-bold text-[10px] uppercase tracking-[0.2em] hover:bg-indigo-600 transition-all shadow-xl flex items-center justify-center gap-3 rounded-full"
             >
-              Get a Free Consultation <ArrowRightIcon className="w-4 h-4" />
+              Get a Free Consultation <ArrowUpRight className="w-4 h-4 stroke-[2]" />
             </a>
             <a 
               href="/products"
-              className="w-full sm:w-auto px-10 py-5 bg-white text-slate-900 border border-slate-200 font-bold text-xs uppercase tracking-[0.2em] hover:bg-slate-50 transition-all rounded-full flex items-center justify-center shadow-sm"
+              className="w-full sm:w-auto px-10 py-5 bg-white text-slate-900 border border-slate-200 font-bold text-[10px] uppercase tracking-[0.2em] hover:bg-slate-50 transition-all rounded-full flex items-center justify-center shadow-sm"
             >
               View Product Catalog
             </a>
