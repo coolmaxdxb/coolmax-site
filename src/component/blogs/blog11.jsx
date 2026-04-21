@@ -18,18 +18,37 @@ import BlogHeroImg from "../../asset/hero/hero3.gif";
 export default function DiffuserMaintenanceBlog() {
   const whatsappNumber = "971509282702";
 
+  // --- SEO Implementation & Scroll Fix ---
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    // Dynamic SEO update
+    document.title = "5 Simple Steps to Clean and Maintain Your Diffuser | Cool Max";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Learn 5 simple steps to clean and maintain your diffuser for long-lasting performance. Improve efficiency and scent quality with expert tips from Cool Max Scent UAE & Qatar.");
+    }
+    
+    // Canonical link handling
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.coolmaxscent.com/blog/clean-and-maintain-your-diffuser-for-long-lasting-performance/');
   }, []);
 
-  return (
-    <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left pt-16">
-      
-      {/* ================= SEO METADATA ================= */}
-      <title>5 Simple Steps to Clean and Maintain Your Diffuser | Cool Max</title>
-      <meta name="description" content="Learn 5 simple steps to clean and maintain your diffuser for long-lasting performance. Improve efficiency and scent quality with expert tips from Cool Max Scent UAE & Qatar." />
-      <link rel="canonical" href="https://www.coolmaxscent.com/blog/clean-and-maintain-your-diffuser-for-long-lasting-performance/"/>
+  const fadeInUp = {
+    initial: { opacity: 0, y: 20 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true },
+    transition: { duration: 0.6 }
+  };
 
+  return (
+    <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden pt-16">
+      
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-slate-50 rounded-full blur-[150px]" />
@@ -39,19 +58,19 @@ export default function DiffuserMaintenanceBlog() {
       <div className="relative z-10">
         
         {/* ================= HERO SECTION (H1) ================= */}
-        <section className="pt-20 pb-16 px-6 lg:px-16 max-w-[1400px] mx-auto">
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="max-w-5xl text-left">
+        <section className="pt-20 pb-16 px-6 lg:px-16 max-w-[1400px] mx-auto text-left">
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="max-w-5xl">
             <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-8">
               <WrenchScrewdriverIcon className="w-4 h-4 text-blue-600" />
               <span className="text-blue-700 text-[10px] font-black uppercase tracking-[0.3em]">Maintenance Guide</span>
             </div>
             
-            <h1 className="text-4xl md:text-7xl font-serif text-slate-900 tracking-tighter leading-[1.1] mb-8 text-left text-balance">
+            <h1 className="text-4xl md:text-7xl font-serif text-slate-900 tracking-tighter leading-[1.1] mb-8 text-balance">
               5 Simple Steps to Clean and Maintain Your Diffuser for <br />
-              <span className="italic text-slate-400 font-light text-left">Long-Lasting Performance</span>
+              <span className="italic text-slate-400 font-light">Long-Lasting Performance</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-slate-600 font-light leading-relaxed mb-10 text-left">
+            <p className="text-xl md:text-2xl text-slate-600 font-light leading-relaxed mb-10">
               A good scent diffuser helps spread a pleasant fragrance evenly and makes any space feel more inviting—whether it’s your home, hotel, office, or shop.
             </p>
           </motion.div>
@@ -60,7 +79,7 @@ export default function DiffuserMaintenanceBlog() {
         {/* ================= MAIN CONTENT SECTION ================= */}
         <section className="pb-24 px-6 lg:px-16 max-w-[1400px] mx-auto">
           <div className="grid lg:grid-cols-12 gap-16">
-            <div className="lg:col-span-8 space-y-8 text-lg text-slate-600 font-light leading-relaxed text-left">
+            <div className="lg:col-span-8 space-y-8 text-lg text-slate-600 font-light leading-relaxed">
               
               <div className="space-y-6">
                 <p className="text-justify">
@@ -72,8 +91,8 @@ export default function DiffuserMaintenanceBlog() {
               </div>
 
               {/* MAINTENANCE STEPS (H2) */}
-              <div className="py-10 text-left border-t border-slate-100">
-                <h2 className="text-3xl md:text-4xl font-serif mb-10 tracking-tight text-slate-900 text-left">Here are 5 easy steps to keep your diffuser running like new.</h2>
+              <motion.div {...fadeInUp} className="py-10 border-t border-slate-100">
+                <h2 className="text-3xl md:text-4xl font-serif mb-10 tracking-tight text-slate-900">Here are 5 easy steps to keep your diffuser running like new.</h2>
                 
                 <div className="space-y-16">
                   {/* Step 1 */}
@@ -135,7 +154,7 @@ export default function DiffuserMaintenanceBlog() {
                     <p className="text-justify">
                       Maintaining the correct oil level is essential for smooth and efficient diffuser operation. Overfilling can disrupt the atomization process, leading to uneven fragrance output and potential system strain. Cool Max diffuser systems are designed to perform best within recommended capacity limits.
                     </p>
-                    <div className="p-6 bg-amber-50 border border-amber-100 rounded-2xl flex items-start gap-4">
+                    <div className="p-6 bg-amber-50 border border-amber-100 rounded-2xl flex items-start gap-4 shadow-sm">
                         <ExclamationTriangleIcon className="w-6 h-6 text-amber-600 shrink-0"/>
                         <p className="text-sm text-amber-900 font-medium">Avoid adding excess oil beyond capacity. Filling beyond the recommended level may cause leakage or clogging over time.</p>
                     </div>
@@ -152,26 +171,26 @@ export default function DiffuserMaintenanceBlog() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
               {/* CONCLUSION (H2) */}
-              <div className="py-16 text-left border-t border-slate-100">
-                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 text-left uppercase">Conclusion</h2>
+              <motion.div {...fadeInUp} className="py-16 border-t border-slate-100">
+                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 uppercase">Conclusion</h2>
                 <p className="text-justify mb-4">
                   Maintaining your diffuser doesn’t require complex routines—just a few smart steps can make a significant difference. By keeping the system clean, using high-quality oils, managing fill levels, and optimizing usage and timing, you can ensure consistent performance and long-lasting efficiency.
                 </p>
                 <p className="text-justify">
                   Cool Max Scent UAE & Qatar offers advanced scenting solutions designed for reliable, low-maintenance operation. With proper care and the right usage practices, you can maximize performance, extend the lifespan of your system, and enjoy a premium, consistent fragrance experience across any space.
                 </p>
-              </div>
+              </motion.div>
 
             </div>
 
             {/* SIDEBAR WIDGETS */}
-            <aside className="lg:col-span-4 lg:sticky lg:top-32 h-fit text-left">
-              <div className="bg-slate-950 rounded-[2.5rem] p-8 text-white shadow-xl text-left overflow-hidden relative">
+            <aside className="lg:col-span-4 lg:sticky lg:top-32 h-fit">
+              <div className="bg-slate-950 rounded-[2.5rem] p-8 text-white shadow-xl overflow-hidden relative">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/20 blur-2xl rounded-full" />
-                <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-left text-blue-400 relative z-10">Care Support</h4>
+                <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-blue-400 relative z-10">Care Support</h4>
                 <p className="text-slate-400 text-sm leading-relaxed mb-8 text-justify relative z-10">
                   Having trouble with your device? Contact our technical team in UAE or Qatar for expert maintenance assistance.
                 </p>
@@ -180,7 +199,7 @@ export default function DiffuserMaintenanceBlog() {
                     <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Support
                   </a>
                   <Link to="/contact/" className="flex items-center justify-center gap-3 bg-white text-slate-900 w-full py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all">
-                    Get Maintenance Help
+                    Maintenance Help
                   </Link>
                 </div>
               </div>
@@ -200,15 +219,15 @@ export default function DiffuserMaintenanceBlog() {
           </div>
         </section>
 
-        {/* ================= FINAL CTA (H2) ================= */}
-        <section className="pb-32 px-6 text-center">
+        {/* ================= FINAL CTA ================= */}
+        <section className="pb-32 px-6">
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-[1200px] mx-auto bg-slate-900 rounded-[4rem] p-16 md:p-24 text-center text-white relative shadow-2xl overflow-hidden">
             <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 blur-3xl rounded-full -translate-y-1/2 translate-x-1/2" />
             
-            <h2 className="text-4xl md:text-6xl font-serif mb-8 tracking-tighter leading-tight relative z-10 text-center uppercase font-bold text-white">
+            <h2 className="text-4xl md:text-6xl font-serif mb-8 tracking-tighter leading-tight relative z-10 uppercase font-bold">
               Consistent <br />Atmospheres
             </h2>
-            <p className="text-xl text-slate-400 mb-12 max-w-3xl mx-auto font-light leading-relaxed relative z-10 text-center font-sans">
+            <p className="text-xl text-slate-400 mb-12 max-w-3xl mx-auto font-light leading-relaxed relative z-10">
               Experience the premium fragrance quality of a perfectly maintained Cool Max system.
             </p>
             

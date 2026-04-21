@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react"; // Added useEffect
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -150,6 +150,24 @@ export default function ArchitectStore() {
   const [activeCat, setActiveCat] = useState("All Systems");
   const [search, setSearch] = useState("");
 
+  // --- SEO Implementation ---
+  useEffect(() => {
+    document.title = "Cool Max | Premium Scenting Solutions for Homes & Businesses";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Cool Max provides premium scent diffusers and fragrance solutions for homes, hotels, offices, retail spaces, HVAC systems, and automobiles across UAE & Qatar.");
+    }
+    
+    // Canonical link handling
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.coolmaxscent.com/products/');
+  }, []);
+
   const filtered = useMemo(() => {
     return productList.filter(p => 
       (activeCat === "All Systems" || p.cat === activeCat) &&
@@ -160,13 +178,6 @@ export default function ArchitectStore() {
   return (
     <div className="min-h-screen bg-[#FAF9F6] text-slate-900 font-sans text-left">
       
-      {/* ================= SEO METADATA ================= */}
-    
-<title>Cool Max | Premium Scenting Solutions for Homes & Businesses</title>
-<meta name="description" content="Cool Max provides premium scent diffusers and fragrance solutions for homes, hotels, offices, retail spaces, HVAC systems, and automobiles across UAE & Qatar."/>
-        <link rel="canonical" href="https://www.coolmaxscent.com/products/"/>
-    
-
       {/* ================= SECTION 1: MINIMAL HERO ================= */}
       <section className="relative pt-32 pb-20 px-6 lg:px-16 overflow-hidden bg-white text-left">
         <div className="max-w-[1600px] mx-auto grid lg:grid-cols-2 items-end gap-12 text-left">

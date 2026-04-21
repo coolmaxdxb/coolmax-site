@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react"; // Added useEffect here
 import { motion } from "framer-motion";
 
 import { 
@@ -25,6 +25,24 @@ const MistBoxXPage = () => {
   const [activeImg, setActiveImg] = useState(MistBox1);
   const gallery = [MistBox1, MistBox2, MistBox3, MistBox4];
 
+  // --- SEO Implementation ---
+  useEffect(() => {
+    document.title = "MistBox X Diffuser Dubai | Commercial Aroma Diffuser";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "High-performance commercial aroma diffuser for large spaces and HVAC systems. Ideal for hotels, offices, malls & professional scent marketing needs.");
+    }
+    
+    // Canonical link handling
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.coolmaxscent.com/commercial-aroma-diffusers/mistbox-x-diffuser/');
+  }, []);
+
   // Redirection Links
   const whatsappNumber = "+971509282702";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20MistBox%20X%20Diffuser.`;
@@ -38,34 +56,28 @@ const MistBoxXPage = () => {
   };
 
   return (
-    <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden">
+    <div className="bg-[#FAF9F6] text-slate-900 font-sans selection:bg-blue-100 overflow-hidden text-left">
     
-      {/* ================= SEO METADATA ================= */}
-      <title>MistBox X Diffuser Dubai | Commercial Aroma Diffuser</title>
-      <meta name="description" content="High-performance commercial aroma diffuser for large spaces and HVAC systems. Ideal for hotels, offices, malls & professional scent marketing needs."/>
-      <link rel="canonical" href="https://www.coolmaxscent.com/commercial-aroma-diffusers/mistbox-x-diffuser/"/>
-
-      
       {/* ================= HERO SECTION (REDUCED HEIGHT) ================= */}
       <section className="relative pt-24 pb-12 px-6 lg:px-12 max-w-[1600px] mx-auto text-left">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <motion.div {...fadeIn}>
-            <div className="inline-block px-4 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+            <div className="inline-block px-4 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] font-black uppercase tracking-[0.2em] mb-6 text-left">
               High-Capacity Commercial System
             </div>
-            <h1 className="text-4xl md:text-6xl font-serif mb-4 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-serif mb-4 leading-tight text-left">
               MistBox X Diffuser
             </h1>
-            <p className="text-lg text-slate-600 font-medium mb-6 leading-relaxed">
+            <p className="text-lg text-slate-600 font-medium mb-6 leading-relaxed text-left">
               High-Capacity Commercial Aroma Diffuser for Large Spaces & HVAC Systems
             </p>
-            <p className="text-sm text-slate-500 mb-4 leading-relaxed font-light">
+            <p className="text-sm text-slate-500 mb-4 leading-relaxed font-light text-left">
               The MistBox X Diffuser is a powerful commercial aroma diffuser designed for businesses that require wide-area fragrance coverage, stable performance, and advanced control options. Built for demanding commercial environments, this scent diffuser machine delivers consistent scent diffusion across large indoor spaces while maintaining low energy consumption and quiet operation.
             </p>
-            <p className="text-sm text-slate-500 mb-8 leading-relaxed border-l-4 border-blue-600 pl-6 italic font-light">
+            <p className="text-sm text-slate-500 mb-8 leading-relaxed border-l-4 border-blue-600 pl-6 italic font-light text-left">
               Ideal for hotels, office buildings, hospitals, theatres, shopping areas, and commercial facilities, MistBox X Diffuser supports both standalone use and HVAC scenting, making it a flexible and scalable solution for professional scent marketing needs.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 text-left">
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-slate-900 text-white rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-blue-600 transition-all flex items-center gap-3 shadow-lg">
                 Talk to Scent Expert <ChatBubbleLeftRightIcon className="w-4 h-4" />
               </a>
@@ -75,11 +87,11 @@ const MistBoxXPage = () => {
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="relative">
-            <div className="aspect-[4/3] bg-white rounded-[2.5rem] border border-slate-100 shadow-xl flex items-center justify-center p-8 overflow-hidden">
+          <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="relative text-left">
+            <div className="aspect-[4/3] bg-white rounded-[2.5rem] border border-slate-100 shadow-xl flex items-center justify-center p-8 overflow-hidden text-left">
               <img src={activeImg} alt="MistBox X Diffuser" className="w-full h-full object-contain transition-all duration-700 hover:scale-110" />
             </div>
-            <div className="flex gap-3 mt-4 justify-center">
+            <div className="flex gap-3 mt-4 justify-center text-left">
               {gallery.map((img, i) => (
                 <button key={i} onClick={() => setActiveImg(img)} className={`w-14 h-14 rounded-lg border-2 overflow-hidden transition-all ${activeImg === img ? "border-blue-600 shadow-md" : "border-transparent opacity-60 hover:opacity-100"}`}>
                   <img src={img} className="w-full h-full object-cover" alt="variant-thumb" />
@@ -91,11 +103,11 @@ const MistBoxXPage = () => {
       </section>
 
       {/* ================= SECTION 1: PRODUCT OVERVIEW ================= */}
-      <section className="py-16 bg-white px-6">
+      <section className="py-16 bg-white px-6 text-left">
         <div className="max-w-[1000px] mx-auto text-center">
           <motion.div {...fadeIn}>
-            <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Product Overview</h2>
-            <p className="text-base text-slate-600 leading-relaxed max-w-4xl mx-auto font-light text-justify md:text-center">
+            <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 text-center">Product Overview</h2>
+            <p className="text-base text-slate-600 leading-relaxed max-w-4xl mx-auto font-light text-justify md:text-center text-center">
               The MistBox X Diffuser is engineered with nano-level fine atomization technology that transforms fragrance oil into ultra-fine particles. This allows the scent to spread evenly and naturally without residue or overpowering concentration.
               Designed with industrial-grade materials and a built-in power pump, the system ensures reliable fragrance diffusion even in large commercial spaces. Its clean, modern design integrates seamlessly into professional interiors while remaining discreet and functional.
             </p>
@@ -104,10 +116,10 @@ const MistBoxXPage = () => {
       </section>
 
       {/* ================= SECTION 2: KEY HIGHLIGHTS ================= */}
-      <section className="py-16 bg-[#0c101b] text-white px-6">
+      <section className="py-16 bg-[#0c101b] text-white px-6 text-left">
         <div className="max-w-[1400px] mx-auto text-center">
-          <h2 className="text-2xl md:text-4xl font-serif mb-12 tracking-tight">Key Highlights</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <h2 className="text-2xl md:text-4xl font-serif mb-12 tracking-tight text-center text-white">Key Highlights</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             {[
               { icon: BuildingOfficeIcon, text: "Commercial-grade aroma scent diffuser" },
               { icon: BeakerIcon, text: "Covers up to 4,000 m³" },
@@ -117,9 +129,9 @@ const MistBoxXPage = () => {
               { icon: CpuChipIcon, text: "Ultra-fine nano atomization technology" },
               { icon: SpeakerXMarkIcon, text: "Low noise operation for professional spaces" }
             ].map((item, i) => (
-              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+              <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors text-center">
                 <item.icon className="w-8 h-8 text-blue-500 mx-auto mb-4" />
-                <p className="text-[11px] font-bold uppercase tracking-widest leading-relaxed">{item.text}</p>
+                <p className="text-[11px] font-bold uppercase tracking-widest leading-relaxed text-center">{item.text}</p>
               </div>
             ))}
           </div>
@@ -128,40 +140,40 @@ const MistBoxXPage = () => {
 
       {/* ================= SECTION 3: CORE FEATURES ================= */}
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">
-        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight">Key Features & Benefits</h2>
-        <div className="grid gap-16">
+        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight text-center">Key Features & Benefits</h2>
+        <div className="grid gap-16 text-left">
           <div className="grid md:grid-cols-2 gap-10 items-center text-left">
-            <div className="order-2 md:order-1">
-              <h3 className="text-xl font-serif mb-4">Nano-Level Fine Atomization</h3>
-              <p className="text-sm text-slate-500 leading-relaxed mb-4 font-light">
+            <div className="order-2 md:order-1 text-left">
+              <h3 className="text-xl font-serif mb-4 text-left">Nano-Level Fine Atomization</h3>
+              <p className="text-sm text-slate-500 leading-relaxed mb-4 font-light text-left">
                 MistBox X Diffuser uses advanced nano-level atomization technology, breaking fragrance oil into extremely small particles. This ensures:
               </p>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-left">
                 {["Even scent distribution", "Faster diffusion across large spaces", "No wet mist or residue"].map((li, i) => (
-                  <li key={i} className="flex items-center gap-2 text-slate-600 font-medium text-xs">
+                  <li key={i} className="flex items-center gap-2 text-slate-600 font-medium text-xs text-left">
                     <CheckCircleIcon className="w-4 h-4 text-blue-600" /> {li}
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-xs text-blue-600 font-bold italic">Balance and consistency for professional commercial applications.</p>
+              <p className="mt-4 text-xs text-blue-600 font-bold italic text-left">Balance and consistency for professional commercial applications.</p>
             </div>
-            <div className="rounded-3xl bg-slate-100 p-6 order-1 md:order-2 h-64 flex items-center justify-center">
+            <div className="rounded-3xl bg-slate-100 p-6 order-1 md:order-2 h-64 flex items-center justify-center text-left">
                <img src={MistBox2} alt="Nano Atomization" className="w-full h-full object-contain" />
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-10 items-center text-left">
-            <div className="rounded-3xl bg-slate-100 p-6 h-64 flex items-center justify-center">
+            <div className="rounded-3xl bg-slate-100 p-6 h-64 flex items-center justify-center text-left">
                <img src={MistBox3} alt="Smart Control" className="w-full h-full object-contain" />
             </div>
-            <div>
-              <h3 className="text-xl font-serif mb-4 text-slate-900">WiFi & Bluetooth Remote Control</h3>
-              <p className="text-sm text-slate-500 mb-4 font-light">The diffuser supports WiFi and Bluetooth control, allowing facility managers to:</p>
-              <div className="grid grid-cols-2 gap-2">
+            <div className="text-left">
+              <h3 className="text-xl font-serif mb-4 text-slate-900 text-left">WiFi & Bluetooth Remote Control</h3>
+              <p className="text-sm text-slate-500 mb-4 font-light text-left">The diffuser supports WiFi and Bluetooth control, allowing facility managers to:</p>
+              <div className="grid grid-cols-2 gap-2 text-left">
                 {["Set working schedules", "Adjust fragrance concentration", "Control multiple units", "Manage 24h cycles"].map((li, i) => (
-                   <div key={i} className="flex items-center gap-2 p-3 bg-white border border-slate-100 rounded-xl shadow-sm">
+                   <div key={i} className="flex items-center gap-2 p-3 bg-white border border-slate-100 rounded-xl shadow-sm text-left">
                       <WifiIcon className="w-4 h-4 text-blue-600" />
-                      <span className="text-slate-700 text-[10px] font-bold uppercase">{li}</span>
+                      <span className="text-slate-700 text-[10px] font-bold uppercase text-left">{li}</span>
                    </div>
                 ))}
               </div>
@@ -169,19 +181,19 @@ const MistBoxXPage = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 text-left">
-            <div className="bg-slate-900 text-white p-8 rounded-[2rem] col-span-2">
-              <h3 className="text-xl font-serif mb-4 text-blue-400">HVAC Connection Capability</h3>
-              <p className="text-sm text-slate-300 leading-relaxed mb-6 font-light">Connect directly to HVAC systems to distribute fragrance through existing airflow, ensuring uniform coverage across multiple zones without fluctuation.</p>
-              <div className="flex gap-4 text-[9px] font-black uppercase tracking-widest text-blue-200">
+            <div className="bg-slate-900 text-white p-8 rounded-[2rem] col-span-2 text-left shadow-xl">
+              <h3 className="text-xl font-serif mb-4 text-blue-400 text-left">HVAC Connection Capability</h3>
+              <p className="text-sm text-slate-300 leading-relaxed mb-6 font-light text-left">Connect directly to HVAC systems to distribute fragrance through existing airflow, ensuring uniform coverage across multiple zones without fluctuation.</p>
+              <div className="flex gap-4 text-[9px] font-black uppercase tracking-widest text-blue-200 text-left">
                 <p>• Standalone Mode</p>
                 <p>• HVAC Integration</p>
                 <p>• High-Power Built-In Pump</p>
               </div>
             </div>
-            <div className="bg-white border border-slate-100 p-8 rounded-[2rem] shadow-sm flex flex-col justify-center">
-              <ShieldCheckIcon className="w-10 h-10 text-blue-600 mb-4" />
-              <h3 className="text-lg font-serif mb-2">Industrial Build</h3>
-              <p className="text-slate-500 text-xs font-light leading-relaxed">Anti-corrosive materials ensuring long service life and continuous commercial operation.</p>
+            <div className="bg-white border border-slate-100 p-8 rounded-[2rem] shadow-sm flex flex-col justify-center text-left">
+              <ShieldCheckIcon className="w-10 h-10 text-blue-600 mb-4 text-left" />
+              <h3 className="text-lg font-serif mb-2 text-slate-900 text-left">Industrial Build</h3>
+              <p className="text-slate-500 text-xs font-light leading-relaxed text-left text-justify">Anti-corrosive materials ensuring long service life and continuous commercial operation.</p>
             </div>
           </div>
         </div>
@@ -189,14 +201,14 @@ const MistBoxXPage = () => {
 
       {/* ================= SECTION 4: TECHNICAL SPECIFICATIONS ================= */}
       <section className="py-16 bg-slate-50 px-6 text-left">
-        <div className="max-w-[800px] mx-auto">
-          <h2 className="text-2xl md:text-4xl font-serif mb-10 text-center tracking-tight text-slate-900">Technical Specifications</h2>
-          <div className="bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm">
-            <table className="w-full text-left border-collapse">
+        <div className="max-w-[800px] mx-auto text-left">
+          <h2 className="text-2xl md:text-4xl font-serif mb-10 text-center tracking-tight text-slate-900 text-center text-left">Technical Specifications</h2>
+          <div className="bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm text-left">
+            <table className="w-full text-left border-collapse text-left">
               <thead>
-                <tr className="bg-slate-900 text-white">
-                  <th className="p-4 font-bold uppercase tracking-widest text-[10px]">Specification</th>
-                  <th className="p-4 font-bold uppercase tracking-widest text-[10px]">Details</th>
+                <tr className="bg-slate-900 text-white text-left">
+                  <th className="p-4 font-bold uppercase tracking-widest text-[10px] text-left">Specification</th>
+                  <th className="p-4 font-bold uppercase tracking-widest text-[10px] text-left">Details</th>
                 </tr>
               </thead>
               <tbody className="text-xs text-left">
@@ -210,9 +222,9 @@ const MistBoxXPage = () => {
                   ["Installation", "Standalone or HVAC Connection"],
                   ["Control Options", "WiFi & Bluetooth Remote"]
                 ].map((row, i) => (
-                  <tr key={i} className="border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                    <td className="p-4 font-bold text-slate-400 uppercase tracking-widest text-[9px]">{row[0]}</td>
-                    <td className="p-4 text-slate-700 font-medium">{row[1]}</td>
+                  <tr key={i} className="border-b border-slate-100 hover:bg-slate-50 transition-colors text-left">
+                    <td className="p-4 font-bold text-slate-400 uppercase tracking-widest text-[9px] text-left">{row[0]}</td>
+                    <td className="p-4 text-slate-700 font-medium text-left">{row[1]}</td>
                   </tr>
                 ))}
               </tbody>
@@ -222,9 +234,9 @@ const MistBoxXPage = () => {
       </section>
 
       {/* ================= SECTION 5: APPLICATIONS & HOW IT WORKS ================= */}
-      <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-center">
-        <h2 className="text-2xl md:text-4xl font-serif mb-10 tracking-tight text-slate-900">Ideal Applications</h2>
-        <div className="flex flex-wrap justify-center gap-3 mb-16 max-w-4xl mx-auto">
+      <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-center text-left">
+        <h2 className="text-2xl md:text-4xl font-serif mb-10 tracking-tight text-slate-900 text-center">Ideal Applications</h2>
+        <div className="flex flex-wrap justify-center gap-3 mb-16 max-w-4xl mx-auto text-center">
           {[
             "Office buildings", "Hotel lobbies", "Hospitals", "Cinemas", 
             "Shopping malls", "KTVs", "Airports"
@@ -235,30 +247,30 @@ const MistBoxXPage = () => {
           ))}
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-10 items-center text-left bg-slate-900 rounded-[3rem] p-8 md:p-16 text-white">
-          <div>
-            <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight">How MistBox X Works</h2>
-            <p className="text-slate-400 text-sm leading-relaxed mb-6 font-light">
+        <div className="grid lg:grid-cols-2 gap-10 items-center text-left bg-slate-900 rounded-[3rem] p-8 md:p-16 text-white text-left">
+          <div className="text-left">
+            <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight text-left">How MistBox X Works</h2>
+            <p className="text-slate-400 text-sm leading-relaxed mb-6 font-light text-left text-justify">
               Using cold-air atomization without heat or water, fragrance quality remains intact while oil is converted into micro-particles for consistent coverage through internal pumps or HVAC.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 text-left">
                {["Consistent", "Natural", "Residue-Free"].map((val, idx) => (
-                 <div key={idx} className="p-3 bg-white/5 rounded-xl text-[9px] font-black uppercase text-blue-400 border border-white/10">{val}</div>
+                 <div key={idx} className="p-3 bg-white/5 rounded-xl text-[9px] font-black uppercase text-blue-400 border border-white/10 text-center">{val}</div>
                ))}
             </div>
           </div>
-          <div className="bg-blue-600/10 p-10 rounded-[2rem] border border-blue-500/20 text-center">
-             <BeakerIcon className="w-12 h-12 text-blue-500 mb-6 mx-auto" />
-             <h4 className="text-lg font-serif mb-2">Cold-Air Nano Tech</h4>
-             <p className="text-[10px] font-light text-blue-100">Cleaner, longer-lasting wide-area scent experience.</p>
+          <div className="bg-blue-600/10 p-10 rounded-[2rem] border border-blue-500/20 text-center text-left">
+             <BeakerIcon className="w-12 h-12 text-blue-500 mb-6 mx-auto text-center" />
+             <h4 className="text-lg font-serif mb-2 text-center">Cold-Air Nano Tech</h4>
+             <p className="text-[10px] font-light text-blue-100 text-center">Cleaner, longer-lasting wide-area scent experience.</p>
           </div>
         </div>
       </section>
 
       {/* ================= SECTION 7: WHY CHOOSE ================= */}
       <section className="py-16 px-6 lg:px-12 max-w-[1400px] mx-auto text-left">
-        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight">Why Choose MistBox X?</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <h2 className="text-2xl md:text-4xl font-serif mb-12 text-center tracking-tight text-center text-slate-900">Why Choose MistBox X?</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
           {[
             "Designed for large-area commercial scenting",
             "Flexible installation for multi-zone spaces",
@@ -267,9 +279,9 @@ const MistBoxXPage = () => {
             "Supports professional scent marketing",
             "Backed by technical expertise"
           ].map((text, i) => (
-            <div key={i} className="p-8 bg-white border border-slate-100 rounded-2xl shadow-sm">
-              <CheckCircleIcon className="w-6 h-6 text-blue-600 mb-4" />
-              <p className="text-slate-700 text-sm font-medium leading-relaxed">{text}</p>
+            <div key={i} className="p-8 bg-white border border-slate-100 rounded-2xl shadow-sm text-left">
+              <CheckCircleIcon className="w-6 h-6 text-blue-600 mb-4 text-left" />
+              <p className="text-slate-700 text-sm font-medium leading-relaxed text-left">{text}</p>
             </div>
           ))}
         </div>
@@ -277,37 +289,39 @@ const MistBoxXPage = () => {
 
       {/* ================= MAINTENANCE & SUPPORT ================= */}
       <section className="py-16 bg-slate-50 px-6 text-left">
-        <div className="max-w-[1000px] mx-auto grid lg:grid-cols-2 gap-6">
-          <div className="p-8 bg-white rounded-3xl shadow-sm border border-slate-100">
-            <h4 className="text-lg font-bold mb-4 flex items-center gap-2">
+        <div className="max-w-[1000px] mx-auto grid lg:grid-cols-2 gap-6 text-left">
+          <div className="p-8 bg-white rounded-3xl shadow-sm border border-slate-100 text-left">
+            <h4 className="text-lg font-bold mb-4 flex items-center gap-2 text-left text-slate-900">
               <WrenchScrewdriverIcon className="w-5 h-5 text-blue-600" /> Maintenance
             </h4>
-            <ul className="space-y-2 text-xs text-slate-500 font-light">
-               <li>• Simple fragrance oil replacement</li>
-               <li>• Minimal cleaning requirements</li>
-               <li>• Long-lasting internal components</li>
+            <ul className="space-y-2 text-xs text-slate-500 font-light text-left">
+               <li className="text-left">• Simple fragrance oil replacement</li>
+               <li className="text-left">• Minimal cleaning requirements</li>
+               <li className="text-left">• Long-lasting internal components</li>
             </ul>
           </div>
-          <div className="p-8 bg-blue-600 text-white rounded-3xl shadow-xl">
-            <h4 className="text-lg font-bold mb-4 flex items-center gap-2 text-white">Cool Max Support</h4>
-            <ul className="space-y-2 text-xs text-blue-50 font-light">
-               <li>• HVAC Installation & Usage guidance</li>
-               <li>• Ongoing refill & maintenance support</li>
-               <li>• Custom scent strategy consulting</li>
+          <div className="p-8 bg-blue-600 text-white rounded-3xl shadow-xl text-left text-white">
+            <h4 className="text-lg font-bold mb-4 flex items-center gap-2 text-left text-white">
+              <ShieldCheckIcon className="w-5 h-5 text-white" /> Cool Max Support
+            </h4>
+            <ul className="space-y-2 text-xs text-blue-50 font-light text-left">
+               <li className="text-left">• HVAC Installation & Usage guidance</li>
+               <li className="text-left">• Ongoing refill & maintenance support</li>
+               <li className="text-left">• Custom scent strategy consulting</li>
             </ul>
           </div>
         </div>
       </section>
 
       {/* ================= SECTION: CTA ================= */}
-      <section className="py-20 px-6">
-        <div className="max-w-[1200px] mx-auto bg-[#0c101b] rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-600/20 blur-[100px] rounded-full" />
-          <h2 className="text-3xl md:text-5xl font-serif mb-6 relative z-10 tracking-tight leading-tight">Speak with Our Scent Specialists</h2>
-          <p className="text-slate-400 text-lg mb-10 relative z-10 max-w-2xl mx-auto leading-relaxed font-light">
+      <section className="py-20 px-6 text-left">
+        <div className="max-w-[1200px] mx-auto bg-[#0c101b] rounded-[3rem] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-2xl text-left">
+          <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-600/20 blur-[100px] rounded-full text-left" />
+          <h2 className="text-3xl md:text-5xl font-serif mb-6 relative z-10 tracking-tight leading-tight text-center">Speak with Our Scent Specialists</h2>
+          <p className="text-slate-400 text-lg mb-10 relative z-10 max-w-2xl mx-auto leading-relaxed font-light text-center">
             Need a commercial aroma diffuser that fits your space perfectly? Our experts will help you choose the right configuration and fragrance solution.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 relative z-10 font-sans">
+          <div className="flex flex-wrap justify-center gap-4 relative z-10 font-sans text-center">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-white text-slate-900 rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-2">
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert
             </a>

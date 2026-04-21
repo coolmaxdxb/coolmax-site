@@ -117,6 +117,16 @@ const blogPosts = [
     path: "/blog/clean-and-maintain-your-diffuser-for-long-lasting-performance/",
     image: "https://images.pexels.com/photos/29255492/pexels-photo-29255492.jpeg",
   },
+   {
+    id: 12,
+    title: " Aroma Diffuser Machine UAE | Fragrance Solutions in UAE",
+    excerpt: "Discover the best aroma diffuser machine UAE solutions for homes, offices, hotels, and retail spaces. Explore professional fragrance solutions in UAE.",
+    category: "Strategy",
+    date: "April 21,2026",
+    readTime: "8 min read",
+    path: "/blog/aroma-diffuser-machine-uae-fragrance-solutions-in-uae/",
+    image: "https://images.pexels.com/photos/965990/pexels-photo-965990.jpeg",
+  },
 ];
 
 export default function BlogSection() {

@@ -20,18 +20,30 @@ import BlogHeroImg from "../../asset/hero/hero3.gif";
 export default function ScentDiffuserMachineGuide() {
   const whatsappNumber = "971509282702";
 
+  // --- SEO Implementation & Scroll Fix ---
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    // Dynamic SEO update
+    document.title = "Best Scent Diffuser Machine Guide | Cool Max Scent UAE & QATAR";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Learn how to choose the best scent diffuser machine for homes, offices, and commercial spaces. Discover advanced scent solutions by Cool Max Scent in UAE & Qatar.");
+    }
+    
+    // Canonical link handling
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.coolmaxscent.com/blog/how-to-choose-best-scent-diffuser-machine/');
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left pt-16">
+    <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden pt-16">
       
-      {/* ================= SEO METADATA ================= */}
-      <title>Best Scent Diffuser Machine Guide | Cool Max Scent UAE & QATAR</title>
-      <meta name="description" content="Learn how to choose the best scent diffuser machine for homes, offices, and commercial spaces. Discover advanced scent solutions by Cool Max Scent in UAE & Qatar." />
-      <link rel="canonical" href="https://www.coolmaxscent.com/blog/how-to-choose-best-scent-diffuser-machine/"/>
-
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-slate-50 rounded-full blur-[150px]" />
@@ -41,19 +53,19 @@ export default function ScentDiffuserMachineGuide() {
       <div className="relative z-10">
         
         {/* ================= HERO SECTION (H1) ================= */}
-        <section className="pt-20 pb-16 px-6 lg:px-16 max-w-[1400px] mx-auto">
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="max-w-5xl text-left">
+        <section className="pt-20 pb-16 px-6 lg:px-16 max-w-[1400px] mx-auto text-left">
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="max-w-5xl">
             <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-8">
               <SparklesIcon className="w-4 h-4 text-blue-600" />
               <span className="text-blue-700 text-[10px] font-black uppercase tracking-[0.3em]">2026 Technology Guide</span>
             </div>
             
-            <h1 className="text-4xl md:text-7xl font-serif text-slate-900 tracking-tighter leading-[1.1] mb-8 text-left text-balance">
+            <h1 className="text-4xl md:text-7xl font-serif text-slate-900 tracking-tighter leading-[1.1] mb-8 text-balance">
               How to Choose the Best Scent Diffuser Machine for <br />
-              <span className="italic text-slate-400 font-light text-left">Homes, Offices, and Commercial Spaces</span>
+              <span className="italic text-slate-400 font-light">Homes, Offices, and Commercial Spaces</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-slate-600 font-light leading-relaxed mb-10 text-left">
+            <p className="text-xl md:text-2xl text-slate-600 font-light leading-relaxed mb-10">
               Many homes, offices, hotels, and retail spaces struggle with maintaining a pleasant and consistent atmosphere. Traditional air fresheners often fade quickly and fail to cover larger areas, leaving spaces without a lasting impression.
             </p>
           </motion.div>
@@ -62,7 +74,7 @@ export default function ScentDiffuserMachineGuide() {
         {/* ================= MAIN CONTENT SECTION ================= */}
         <section className="pb-24 px-6 lg:px-16 max-w-[1400px] mx-auto">
           <div className="grid lg:grid-cols-12 gap-16">
-            <div className="lg:col-span-8 space-y-8 text-lg text-slate-600 font-light leading-relaxed text-left">
+            <div className="lg:col-span-8 space-y-8 text-lg text-slate-600 font-light leading-relaxed">
               
               <div className="space-y-6">
                 <p className="text-justify">
@@ -74,8 +86,8 @@ export default function ScentDiffuserMachineGuide() {
               </div>
 
               {/* WHY ESSENTIAL (H2) */}
-              <div className="py-10 text-left border-t border-slate-100">
-                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 text-left">Why Scent Diffuser Machines Are Essential for Modern Spaces</h2>
+              <div className="py-10 border-t border-slate-100">
+                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Why Scent Diffuser Machines Are Essential for Modern Spaces</h2>
                 <p className="mb-6 text-justify">
                   Many modern spaces such as offices, hotels, retail stores, and homes face a common problem — the environment can feel plain or lack a welcoming atmosphere. In workplaces especially, poor indoor ambiance may affect employee comfort and leave visitors with an average first impression.
                 </p>
@@ -103,8 +115,8 @@ export default function ScentDiffuserMachineGuide() {
               </div>
 
               {/* DIFFUSION TECH (H2) */}
-              <div className="py-10 text-left border-t border-slate-100">
-                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 text-left">Choose the Right Diffusion Technology</h2>
+              <div className="py-10 border-t border-slate-100">
+                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Choose the Right Diffusion Technology</h2>
                 <p className="mb-6 text-justify">
                   Many people buy scent diffusers but later realize the fragrance does not spread properly or fades too quickly. This usually happens because the diffuser uses basic heat or water-based technology, which can weaken the fragrance and limit coverage.
                 </p>
@@ -123,8 +135,8 @@ export default function ScentDiffuserMachineGuide() {
               </div>
 
               {/* SMART FEATURES (H2) */}
-              <div className="py-10 text-left border-t border-slate-100">
-                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 text-left">Consider Smart Features and Control Options</h2>
+              <div className="py-10 border-t border-slate-100">
+                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Consider Smart Features and Control Options</h2>
                 <p className="mb-8 text-justify">Modern scent diffuser machines offer intelligent control systems that make scent management easier than ever. Look for machines with features such as:</p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                     {[
@@ -145,8 +157,8 @@ export default function ScentDiffuserMachineGuide() {
               </div>
 
               {/* CAPACITY (H2) */}
-              <div className="py-16 text-left border-t border-slate-100">
-                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 text-left">Choose Fragrance Capacity and Refill Efficiency</h2>
+              <div className="py-16 border-t border-slate-100">
+                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Choose Fragrance Capacity and Refill Efficiency</h2>
                 <p className="mb-8 text-justify">Another important factor is the fragrance oil capacity of the diffuser. Larger fragrance containers mean the machine can operate for longer periods without needing frequent refills. This is especially important for commercial spaces such as:</p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {[
@@ -162,8 +174,8 @@ export default function ScentDiffuserMachineGuide() {
               </div>
 
               {/* RELIABLE SOLUTIONS (H2) */}
-              <div className="py-16 text-left bg-blue-600 rounded-[3rem] p-10 md:p-16 text-white shadow-xl">
-                <h2 className="text-3xl md:text-4xl font-serif mb-8 tracking-tight text-white text-left uppercase font-bold">Cool Max Scent for Reliable and Professional Scenting Solutions</h2>
+              <div className="py-16 bg-blue-600 rounded-[3rem] p-10 md:p-16 text-white shadow-xl">
+                <h2 className="text-3xl md:text-4xl font-serif mb-8 tracking-tight text-white uppercase font-bold">Cool Max Scent for Reliable and Professional Scenting Solutions</h2>
                 <p className="mb-6 text-justify opacity-90">Many businesses invest in scent diffuser machines but face problems such as poor fragrance quality, inconsistent scent coverage, or lack of technical support. The solution is working with a trusted scenting brand that offers reliable technology, quality fragrances, and professional support.</p>
                 <p className="mb-10 text-justify opacity-90">Cool Max Scent specializes in providing advanced fragrance solutions for homes, offices, hotels, retail stores, and large commercial environments across the UAE and Qatar. Our scent diffuser machines are designed for precision, durability, and consistent scent performance.</p>
                 
@@ -182,8 +194,8 @@ export default function ScentDiffuserMachineGuide() {
               </div>
 
               {/* CONCLUSION (H2) */}
-              <div className="py-16 text-left">
-                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 text-left uppercase">Conclusion</h2>
+              <div className="py-16 border-t border-slate-100">
+                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 uppercase">Conclusion</h2>
                 <p className="text-justify mb-4">Many homes, offices, and commercial spaces want to create a welcoming atmosphere but often struggle with scent solutions that do not last long or do not cover the space properly. Choosing the right scent diffuser machine helps distribute fragrance evenly and maintain a pleasant environment.</p>
                 <p className="text-justify mb-4">When selecting a scent diffuser, it is important to consider factors such as space size, diffusion technology, smart features, fragrance capacity, and a reliable brand. These elements help ensure consistent fragrance performance in homes, offices, hotels, and retail spaces.</p>
                 <p className="text-justify">At Cool Max Scent, we provide advanced fragrance solutions for homes and businesses across the UAE and Qatar. Our scent diffuser machines are designed for reliable and consistent scent performance. <Link to="/contact/" className="text-blue-600 font-medium underline hover:text-blue-800 transition-colors">Contact Cool Max Scent experts today</Link> to find the right solution for your space.</p>
@@ -192,10 +204,10 @@ export default function ScentDiffuserMachineGuide() {
             </div>
 
             {/* SIDEBAR WIDGETS */}
-            <aside className="lg:col-span-4 lg:sticky lg:top-32 h-fit text-left">
-              <div className="bg-slate-950 rounded-[2.5rem] p-8 text-white shadow-xl text-left overflow-hidden relative">
+            <aside className="lg:col-span-4 lg:sticky lg:top-32 h-fit">
+              <div className="bg-slate-950 rounded-[2.5rem] p-8 text-white shadow-xl overflow-hidden relative">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/20 blur-2xl rounded-full" />
-                <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-left text-blue-400 relative z-10">Equipment Guide</h4>
+                <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-blue-400 relative z-10">Equipment Guide</h4>
                 <p className="text-slate-400 text-sm leading-relaxed mb-8 text-justify relative z-10">
                   Ready to choose the perfect scent diffuser machine for your property? Our specialists are available for consultation in UAE & Qatar.
                 </p>
@@ -203,20 +215,20 @@ export default function ScentDiffuserMachineGuide() {
                   <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 bg-[#25D366] text-white w-full py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all">
                     <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Specialist
                   </a>
-                  <Link to="/contact/" className="flex items-center justify-center gap-3 bg-white text-slate-900 w-full py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all">
+                  <Link to="/contact/" className="flex items-center justify-center gap-3 bg-white text-slate-900 w-full py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all text-center">
                     Get Free Quote
                   </Link>
                 </div>
               </div>
 
-              <div className="mt-8 bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm">
+              <div className="mt-8 bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm text-center">
                 <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-slate-400">Atmospheric Tech</h4>
                 <div className="h-40 bg-slate-50 rounded-2xl mb-4 flex items-center justify-center overflow-hidden p-6">
-                  <img src={BlogHeroImg} alt="Scenting Technology" className="h-full object-contain" />
+                  <img src={BlogHeroImg} alt="Scenting Technology" className="h-full object-contain mx-auto" />
                 </div>
                 <h5 className="font-serif text-lg mb-2">Cold-Air Atomization</h5>
                 <p className="text-slate-500 text-xs font-light mb-6">Fragrance oil converted into micro-particles for even distribution.</p>
-                <Link to="/products/" className="text-[10px] font-black uppercase text-blue-600 flex items-center gap-2 hover:gap-3 transition-all">
+                <Link to="/products/" className="text-[10px] font-black uppercase text-blue-600 flex items-center justify-center gap-2 hover:gap-3 transition-all">
                   Browse Machines <ArrowRightIcon className="w-3 h-3" />
                 </Link>
               </div>
@@ -225,14 +237,14 @@ export default function ScentDiffuserMachineGuide() {
         </section>
 
         {/* ================= FINAL CTA (H2) ================= */}
-        <section className="pb-32 px-6 text-center">
+        <section className="pb-32 px-6">
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-[1200px] mx-auto bg-slate-900 rounded-[4rem] p-16 md:p-24 text-center text-white relative shadow-2xl overflow-hidden">
             <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 blur-3xl rounded-full -translate-y-1/2 translate-x-1/2" />
             
-            <h2 className="text-4xl md:text-6xl font-serif mb-8 tracking-tighter leading-tight relative z-10 text-center uppercase font-bold">
+            <h2 className="text-4xl md:text-6xl font-serif mb-8 tracking-tighter leading-tight relative z-10 uppercase font-bold text-white">
               Distinguished <br />Environments
             </h2>
-            <p className="text-xl text-slate-400 mb-12 max-w-3xl mx-auto font-light leading-relaxed relative z-10 text-center font-sans">
+            <p className="text-xl text-slate-400 mb-12 max-w-3xl mx-auto font-light leading-relaxed relative z-10 text-center">
               Contact Cool Max Scent experts today to find the right scent solution for your space in the UAE and Qatar.
             </p>
             
