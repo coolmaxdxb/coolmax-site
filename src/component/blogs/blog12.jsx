@@ -7,12 +7,10 @@ import {
   ChatBubbleLeftRightIcon, 
   ArrowRightIcon,
   CheckCircleIcon,
+  BuildingOfficeIcon,
   HomeIcon,
   UserGroupIcon,
-  ShieldCheckIcon,
-  ClockIcon,
-  CpuChipIcon,
-  LightBulbIcon
+  ShieldCheckIcon
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORTS ---
@@ -48,7 +46,7 @@ export default function AromaDiffuserMachineUAEBlog() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden text-left pt-16">
+    <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden pt-16">
       
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -63,12 +61,11 @@ export default function AromaDiffuserMachineUAEBlog() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="max-w-5xl">
             <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-8">
               <SparklesIcon className="w-4 h-4 text-blue-600" />
-              <span className="text-blue-700 text-[10px] font-black uppercase tracking-[0.3em]">Lifestyle Innovation 2026</span>
+              <span className="text-blue-700 text-[10px] font-black uppercase tracking-[0.3em]">Strategy Insight 2026</span>
             </div>
             
             <h1 className="text-4xl md:text-7xl font-serif text-slate-900 tracking-tighter leading-[1.1] mb-8 uppercase">
-              <Link to="/products/" className="hover:text-blue-600 transition-colors">Aroma Diffuser Machine UAE</Link>: <br />
-              <span className="italic text-slate-400 font-light lowercase">How Fragrance Solutions are Transforming Modern Spaces</span>
+              <Link to="/products/" className="hover:text-blue-600 transition-colors">Aroma Diffuser Machine UAE</Link>: How <Link to="/scent-marketing-solutions/" className="hover:text-blue-600 transition-colors">Fragrance Solutions in UAE</Link> Are Transforming Modern Spaces
             </h1>
 
             <p className="text-xl md:text-2xl text-slate-500 font-light leading-relaxed mb-10">
@@ -82,193 +79,219 @@ export default function AromaDiffuserMachineUAEBlog() {
           <div className="grid lg:grid-cols-12 gap-16">
             <div className="lg:col-span-8 space-y-8 text-lg text-slate-600 font-light leading-relaxed">
               <p className="text-justify">
-                A clean, fresh, and welcoming environment can leave a stronger impression than decoration alone. This is one reason why more businesses and homeowners are searching for the right <strong><Link to="/products/" className="text-blue-600 font-medium underline hover:text-blue-800 transition-colors">Aroma Diffuser Machine UAE</Link></strong> solutions. From luxury hotels and offices to homes and retail stores, fragrance is becoming an important part of the overall experience.
+                Creating a great space is no longer only about interiors, lighting, or furniture. Today, people remember how a place feels. A clean, fresh, and welcoming environment can leave a stronger impression than decoration alone. This is one reason why more businesses and homeowners are searching for the right <strong><Link to="/products/" className="text-blue-600 font-medium underline">Aroma Diffuser Machine UAE</Link></strong> solutions. From luxury hotels and offices to homes and retail stores, fragrance is becoming an important part of the overall experience.
               </p>
               <p className="text-justify">
-                At the same time, demand for professional <strong><Link to="/scent-marketing-solutions/" className="text-blue-600 font-medium underline hover:text-blue-800 transition-colors">Fragrance Solutions in UAE</Link></strong> is growing because people want more than a temporary air freshener. They want reliable systems that create a lasting atmosphere.
+                At the same time, demand for professional <strong><Link to="/scent-marketing-solutions/" className="text-blue-600 font-medium underline">Fragrance Solutions in UAE</Link></strong> is growing because people want more than a temporary air freshener. They want reliable systems that create a lasting atmosphere.
               </p>
 
               {/* WHY FRAGRANCE MATTERS (H2) */}
               <motion.div {...fadeInUp} className="py-12 border-t border-slate-100">
                 <h2 className="text-3xl md:text-4xl font-serif text-slate-900 mb-6">Why Fragrance Matters in Modern Spaces</h2>
                 <p className="mb-8 text-justify">
-                  Walk into two similar spaces. One looks beautiful but feels plain. The other feels fresh, welcoming, and comfortable the moment you enter. What creates the difference? Often, it is scent. Fragrance can influence how people feel, creating comfort, calmness, energy, or a sense of luxury.
+                  Walk into two similar spaces. One looks beautiful but feels plain. The other feels fresh, welcoming, and comfortable the moment you enter. What creates the difference? Often, it is scent. Fragrance can influence how people feel in a space. It can help create comfort, calmness, energy, or a sense of luxury. This is why scent is now used in both personal and commercial environments.
                 </p>
+                <div className="bg-white border border-slate-100 p-8 rounded-[2.5rem] shadow-sm">
+                  <p className="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest">Common benefits of professional fragrance systems:</p>
+                  <div className="grid md:grid-cols-1 gap-4">
+                    {[
+                      "Creates a positive first impression",
+                      "Makes spaces feel clean and inviting",
+                      "Improves comfort for guests and staff",
+                      "Supports brand image",
+                      "Helps people remember the experience"
+                    ].map((item, i) => (
+                      <div key={i} className="flex gap-3 items-center text-sm">
+                        <CheckCircleIcon className="w-5 h-5 text-blue-600 shrink-0" /> {item}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* WHAT IS AN AROMA DIFFUSER MACHINE (H2) */}
+              <motion.div {...fadeInUp} className="py-12 border-t border-slate-100">
+                <h2 className="text-3xl md:text-4xl font-serif text-slate-900 mb-6">What Is an Aroma Diffuser Machine?</h2>
+                <p className="mb-6 text-justify">
+                  An aroma diffuser machine is a device designed to spread fragrance evenly through a space using advanced diffusion technology. Unlike traditional sprays or plug-ins that may fade quickly, professional systems are built for consistency and better coverage.
+                </p>
+                <div className="bg-slate-900 rounded-[3rem] p-10 text-white relative overflow-hidden">
+                   <p className="mb-6 relative z-10 text-slate-300">Depending on the model, these machines can be used in:</p>
+                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 relative z-10">
+                      {["Homes", "Offices", "Hotels", "Clinics", "Retail stores", "Restaurants", "Commercial Buildings"].map((place, i) => (
+                        <div key={i} className="bg-white/5 border border-white/10 p-4 rounded-xl text-center text-xs font-black uppercase tracking-widest text-blue-400">{place}</div>
+                      ))}
+                   </div>
+                   <p className="mt-8 relative z-10 text-sm italic opacity-80">The right machine depends on your space size, usage needs, and fragrance goals.</p>
+                </div>
+              </motion.div>
+
+              {/* WHY BUSINESSES (H2) */}
+              <motion.div {...fadeInUp} className="py-12 border-t border-slate-100">
+                <h2 className="text-3xl md:text-4xl font-serif text-slate-900 mb-6">Why Businesses in UAE Are Choosing Aroma Diffuser Machines</h2>
+                <p className="mb-8">Businesses in the UAE understand that customer experience matters. In competitive markets, small details can create a big advantage. A professional <strong>Aroma Diffuser Machine UAE</strong> solution helps businesses maintain an atmosphere that feels premium and professional.</p>
+                <div className="grid md:grid-cols-2 gap-6">
+                   {[
+                     { t: "1. Better Customer Experience", d: "Customers notice environments that feel pleasant and comfortable. A balanced fragrance can improve their overall impression." },
+                     { t: "2. Stronger Brand Identity", d: "Many brands use scent as part of their identity. A signature fragrance can help customers remember the business." },
+                     { t: "3. Comfortable Work Environment", d: "Offices and workspaces benefit from fresh and welcoming surroundings that support employee comfort." },
+                     { t: "4. Consistent Atmosphere", d: "Unlike manual sprays, professional machines provide steady fragrance throughout the day." }
+                   ].map((item, i) => (
+                     <div key={i} className="p-6 bg-slate-50 rounded-3xl border border-slate-100">
+                        <h4 className="font-bold text-slate-900 mb-2">{item.t}</h4>
+                        <p className="text-sm text-slate-500 leading-relaxed">{item.d}</p>
+                     </div>
+                   ))}
+                </div>
+              </motion.div>
+
+              {/* INDUSTRIES (H2) */}
+              <motion.div {...fadeInUp} className="py-12 border-t border-slate-100">
+                <h2 className="text-3xl md:text-4xl font-serif text-slate-900 mb-6">How Fragrance Solutions in UAE Help Different Industries</h2>
+                <p className="mb-8">Every space has different needs. That is why professional <strong>Fragrance Solutions in UAE</strong> are designed for different industries.</p>
+                <div className="space-y-8">
+                   {[
+                     { t: "Hotels & Hospitality", i: <SparklesIcon />, d: "Hotels use fragrance to create a premium welcome experience in lobbies, corridors, and guest areas." },
+                     { t: "Retail Stores", i: <UserGroupIcon />, d: "Retail spaces use scent to make the environment more enjoyable and encourage customers to stay longer." },
+                     { t: "Corporate Offices", i: <BuildingOfficeIcon />, d: "Offices use fragrance systems to create clean, professional, and pleasant surroundings." },
+                     { t: "Clinics & Healthcare", i: <ShieldCheckIcon />, d: "Healthcare environments often prefer soft, calming scents that help reduce stress." },
+                     { t: "Homes", i: <HomeIcon />, d: "Many homeowners use aroma diffuser machines to create relaxing and fresh living spaces." }
+                   ].map((ind, i) => (
+                     <div key={i} className="flex gap-6 items-start">
+                        <div className="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 shrink-0">
+                          {ind.i}
+                        </div>
+                        <div>
+                           <h4 className="font-bold text-slate-900 text-lg">{ind.t}</h4>
+                           <p className="text-base text-slate-500">{ind.d}</p>
+                        </div>
+                     </div>
+                   ))}
+                </div>
+              </motion.div>
+
+              {/* CHOOSING (H2) */}
+              <motion.div {...fadeInUp} className="py-12 border-t border-slate-100">
+                <h2 className="text-3xl md:text-4xl font-serif text-slate-900 mb-6">Choosing the Right Aroma Diffuser Machine in UAE</h2>
+                <p className="mb-6">Not every machine is suitable for every space. Choosing the right system is important for performance and long-term value. Consider these factors:</p>
                 <div className="grid md:grid-cols-2 gap-4">
                   {[
-                    "Creates a positive first impression",
-                    "Makes spaces feel clean and inviting",
-                    "Improves comfort for guests and staff",
-                    "Supports brand image",
-                    "Helps people remember the experience"
-                  ].map((item, i) => (
-                    <div key={i} className="flex gap-3 items-center text-sm bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                      <CheckCircleIcon className="w-5 h-5 text-blue-600 shrink-0" /> {item}
+                    "Space Size: A small room needs a different solution than a hotel lobby.",
+                    "Coverage Area: Check the square footage capacity.",
+                    "Control Features: Timers, adjustable intensity, Bluetooth/App, smart scheduling.",
+                    "Refill Capacity: Larger tanks reduce maintenance frequency.",
+                    "Maintenance Support: Reliable after-sales service is vital."
+                  ].map((fact, i) => (
+                    <div key={i} className="flex gap-3 p-4 bg-slate-50 rounded-xl border border-slate-100">
+                      <CheckCircleIcon className="w-5 h-5 text-blue-600 shrink-0" />
+                      <span className="text-sm font-medium text-slate-700">{fact}</span>
                     </div>
                   ))}
                 </div>
               </motion.div>
 
-              {/* WHAT IS AN AROMA DIFFUSER MACHINE (H2) */}
-              <motion.div {...fadeInUp} className="bg-slate-900 rounded-[3rem] p-10 md:p-16 text-white mt-16 shadow-2xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 blur-3xl rounded-full" />
-                <h2 className="text-3xl md:text-4xl font-serif mb-8 tracking-tight relative z-10">What Is an Aroma Diffuser Machine?</h2>
-                <p className="text-slate-400 mb-8 relative z-10 text-justify">
-                  An aroma diffuser machine is a device designed to spread fragrance evenly through a space using advanced diffusion technology. Professional systems are built for consistency and better coverage, suitable for:
+              {/* PRO VS BASIC (H2) */}
+              <motion.div {...fadeInUp} className="py-12 border-t border-slate-100">
+                <h2 className="text-3xl md:text-4xl font-serif text-slate-900 mb-6">Why Professional Systems Are Better Than Basic Air Fresheners</h2>
+                <p className="mb-8">Many people begin with sprays or plug-in air fresheners. These may work for temporary needs, but they often have limitations. For long-term results, professional systems are usually the smarter choice.</p>
+                <div className="grid md:grid-cols-2 gap-4">
+                   <div className="p-8 bg-blue-50 rounded-3xl">
+                      <h4 className="font-black text-blue-900 uppercase text-xs mb-4">Professional Machines</h4>
+                      <ul className="text-sm space-y-2 text-blue-800">
+                         <li>• Even fragrance distribution</li>
+                         <li>• Long-lasting performance</li>
+                         <li>• Better control of intensity</li>
+                         <li>• Suitable for larger spaces</li>
+                         <li>• More premium experience</li>
+                      </ul>
+                   </div>
+                   <div className="p-8 bg-slate-50 rounded-3xl opacity-60">
+                      <h4 className="font-black text-slate-900 uppercase text-xs mb-4">Basic Air Fresheners</h4>
+                      <ul className="text-sm space-y-2 text-slate-500">
+                         <li>• Short-lasting effect</li>
+                         <li>• Uneven fragrance spread</li>
+                         <li>• Strong first spray, then fades</li>
+                         <li>• Limited coverage</li>
+                      </ul>
+                   </div>
+                </div>
+              </motion.div>
+
+              {/* PARTNER & FUTURE (H2) */}
+              <motion.div {...fadeInUp} className="py-12 border-t border-slate-100">
+                <h2 className="text-3xl md:text-4xl font-serif text-slate-900 mb-6 text-left">What Makes a Good Fragrance Partner?</h2>
+                <p className="text-justify mb-12">
+                  Choosing the right machine matters, but choosing the right provider matters too. A trusted fragrance partner should offer Quality machines, Premium oils, Guidance based on space, Installation support, and reliable Customer service.
                 </p>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 relative z-10 text-center">
-                   {["Homes", "Offices", "Hotels", "Retail"].map((place, i) => (
-                     <div key={i} className="bg-white/5 border border-white/10 p-4 rounded-xl text-xs font-black uppercase tracking-widest text-blue-400">{place}</div>
+                
+                <h2 className="text-3xl md:text-4xl font-serif text-slate-900 mb-6 text-left">The Future of Scented Spaces in UAE</h2>
+                <p className="text-justify mb-8">
+                  As expectations continue to grow, more people are paying attention to complete experiences. Visual design alone is no longer enough. Fragrance is becoming a valuable part of how spaces are designed, managed, and remembered. From homes to hotels, the demand for reliable <strong><Link to="/scent-marketing-solutions/" className="text-blue-600 underline">Fragrance Solutions in UAE</Link></strong> will continue to grow because people value spaces that feel welcoming and memorable.
+                </p>
+              </motion.div>
+
+              {/* CONCLUSION (H2) */}
+              <motion.div {...fadeInUp} className="py-16 bg-blue-600 rounded-[3rem] p-10 md:p-16 text-white shadow-xl">
+                <h2 className="text-3xl md:text-4xl font-serif mb-8 uppercase font-bold">Conclusion</h2>
+                <p className="mb-6 opacity-90 text-justify">
+                  The right scent can change how people experience a space. Whether you manage a home, office, retail store, or hotel, choosing a professional <strong><Link to="/products/" className="text-white underline">Aroma Diffuser Machine UAE</Link></strong> solution can help create a fresh, comfortable, and lasting impression.
+                </p>
+                <p className="opacity-90 text-justify">
+                  With the right system and the right fragrance strategy, even simple spaces can feel more premium, more welcoming, and more memorable. If you are looking for trusted <strong><Link to="/scent-marketing-solutions/" className="text-white underline">Fragrance Solutions in UAE</Link></strong>, Cool Max Scent is ready to help you find the best fit for your space.
+                </p>
+              </motion.div>
+
+              {/* FAQ Section */}
+              <motion.div {...fadeInUp} className="py-12 bg-slate-50 rounded-[2.5rem] p-10 border border-slate-100">
+                <h2 className="text-2xl font-serif mb-8 text-slate-900 uppercase">FAQ Section (AEO Friendly)</h2>
+                <div className="space-y-6">
+                   {[
+                     { q: "What is an aroma diffuser machine?", a: "An aroma diffuser machine spreads fragrance evenly through a space using advanced diffusion technology for consistent scent coverage." },
+                     { q: "Where can aroma diffuser machines be used?", a: "They can be used in homes, offices, hotels, clinics, retail stores, and commercial spaces." },
+                     { q: "Why are fragrance solutions important for businesses?", a: "They improve customer experience, create a better atmosphere, and strengthen brand perception." },
+                     { q: "How do I choose the right aroma diffuser machine in UAE?", a: "Choose based on space size, coverage area, features, refill capacity, and support service." },
+                     { q: "Are professional diffuser machines better than air fresheners?", a: "Yes, they provide longer-lasting fragrance, better coverage, and more control than basic air fresheners." }
+                   ].map((faq, i) => (
+                     <div key={i} className="border-b border-slate-200 pb-4">
+                        <h4 className="font-bold text-slate-900 mb-1">Q: {faq.q}</h4>
+                        <p className="text-sm text-slate-500">A: {faq.a}</p>
+                     </div>
                    ))}
                 </div>
               </motion.div>
             </div>
 
-            {/* SIDEBAR WIDGET */}
+            {/* SIDEBAR WIDGETS */}
             <aside className="lg:col-span-4 lg:sticky lg:top-32 h-fit">
-              <div className="bg-blue-600 rounded-[2.5rem] p-8 text-white shadow-xl">
-                <h4 className="font-bold mb-6 uppercase text-xs tracking-widest">Dubai Fragrance Experts</h4>
-                <p className="text-blue-100 text-sm leading-relaxed mb-8">
-                  Transform your space with a custom scent strategy designed for the UAE climate and market.
+              <div className="bg-slate-950 rounded-[2.5rem] p-8 text-white shadow-xl overflow-hidden relative">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/20 blur-2xl rounded-full" />
+                <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-blue-400 relative z-10">Get Expert Help</h4>
+                <p className="text-slate-400 text-sm leading-relaxed mb-8 text-justify relative z-10">
+                  Ready to transform your business atmosphere? Let our specialists design a custom scent strategy for your brand.
                 </p>
-                <div className="space-y-4">
-                  <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 bg-white text-blue-600 w-full py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all text-center">
-                    <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Us
+                <div className="space-y-4 relative z-10">
+                  <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 bg-[#25D366] text-white w-full py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all text-center">
+                    <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Experts
                   </a>
-                  <Link to="/contact/" className="flex items-center justify-center gap-3 bg-blue-700 text-white w-full py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-800 transition-all border border-blue-500 text-center">
-                    Get Site Assessment
+                  <Link to="/contact/" className="flex items-center justify-center gap-3 bg-white text-slate-900 w-full py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all text-center">
+                    Get Free Quote
                   </Link>
                 </div>
               </div>
+
+              <div className="mt-8 bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm">
+                 <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-slate-400">Trusted in UAE</h4>
+                 <div className="h-40 bg-slate-50 rounded-2xl mb-4 flex items-center justify-center overflow-hidden">
+                    <img src={BlogHeroImg} alt="Commercial Diffuser" className="h-full object-contain" />
+                 </div>
+                 <h5 className="font-serif text-lg mb-2">Cool Max Scent</h5>
+                 <p className="text-slate-500 text-xs font-light mb-6">Providing HVAC and standalone scenting solutions across UAE.</p>
+                 <Link to="/products/" className="text-[10px] font-black uppercase text-blue-600 flex items-center gap-2 hover:gap-3 transition-all">
+                    Browse Systems <ArrowRightIcon className="w-3 h-3" />
+                 </Link>
+              </div>
             </aside>
           </div>
-        </section>
-
-        {/* ================= BUSINESSES CHOICE (H2) ================= */}
-        <section className="py-24 bg-slate-50 px-6 lg:px-16 text-left">
-          <div className="max-w-[1400px] mx-auto">
-            <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-20 tracking-tighter">Why Businesses in UAE <br/><span className="text-blue-600 italic font-light text-7xl leading-none">Choose Aroma Diffuser Machines</span></h2>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-              {[
-                { title: "Better Experience", icon: <UserGroupIcon />, desc: "Customers notice environments that feel pleasant. A balanced fragrance improves overall impressions." },
-                { title: "Brand Identity", icon: <SparklesIcon />, desc: "Many brands use scent as part of their identity to help customers remember the business." },
-                { title: "Employee Comfort", icon: <HomeIcon />, desc: "Offices benefit from fresh surroundings that support employee comfort and focus." },
-                { title: "Consistency", icon: <ClockIcon />, desc: "Unlike manual sprays, professional machines provide steady fragrance throughout the day." }
-              ].map((item, i) => (
-                <motion.div key={i} {...fadeInUp} className="bg-white p-10 rounded-[3rem] shadow-sm border border-slate-100 hover:shadow-xl transition-all group flex flex-col h-full">
-                  <div className="text-blue-600 w-12 h-12 mb-6 group-hover:scale-110 transition-transform">{item.icon}</div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-4">{item.title}</h3>
-                  <p className="text-slate-500 text-sm leading-relaxed text-justify">{item.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ================= INDUSTRIES SECTION (H2) ================= */}
-        <section className="py-24 px-6 lg:px-16 max-w-[1400px] mx-auto text-left">
-           <div className="grid lg:grid-cols-2 gap-20 items-center">
-              <motion.div {...fadeInUp} className="space-y-8">
-                <h2 className="text-4xl md:text-5xl font-serif text-slate-900 tracking-tighter">How <Link to="/scent-marketing-solutions/" className="text-blue-600 hover:underline">Fragrance Solutions in UAE</Link> Help Different Industries</h2>
-                <div className="space-y-6">
-                  {[
-                    { t: "Hotels & Hospitality", d: "Creating premium welcome experiences in lobbies and guest areas." },
-                    { t: "Retail Stores", d: "Making environments more enjoyable to encourage longer dwell times." },
-                    { t: "Corporate Offices", d: "Designing clean, professional surroundings for visitors and staff." },
-                    { t: "Clinics & Healthcare", d: "Utilizing soft, calming scents to help reduce patient stress." }
-                  ].map((ind, i) => (
-                    <div key={i} className="flex gap-4 items-start">
-                      <CheckCircleIcon className="w-6 h-6 text-blue-600 shrink-0" />
-                      <div>
-                         <h4 className="font-bold text-slate-900 text-sm">{ind.t}</h4>
-                         <p className="text-xs text-slate-500">{ind.d}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-              <motion.div initial={{opacity:0}} whileInView={{opacity:1}} className="relative">
-                <div className="bg-slate-100 rounded-[4rem] p-12 overflow-hidden shadow-inner text-center">
-                  <img src={BlogHeroImg} alt="Hotel Scent Solution" className="w-full h-auto rounded-[2rem] shadow-2xl transform rotate-2 mx-auto" />
-                </div>
-              </motion.div>
-           </div>
-        </section>
-
-        {/* ================= CHOOSING FACTORS & PRO VS BASIC (H2) ================= */}
-        <section className="py-24 bg-slate-900 text-white px-6 lg:px-16 text-left">
-           <div className="max-w-[1400px] mx-auto">
-              <motion.h2 {...fadeInUp} className="text-3xl md:text-5xl font-serif mb-12 tracking-tighter text-white">Choosing the Right System & Why Professional Matters</motion.h2>
-              <div className="grid md:grid-cols-2 gap-16">
-                 <motion.div {...fadeInUp}>
-                    <h3 className="text-xl font-bold text-blue-400 mb-6 uppercase tracking-widest">Selection Criteria</h3>
-                    <ul className="space-y-4">
-                       <li className="text-slate-300 text-sm"><strong className="text-white">Space Size:</strong> Match the solution to your square footage.</li>
-                       <li className="text-slate-300 text-sm"><strong className="text-white">Control Features:</strong> Look for Bluetooth, app control, and smart scheduling.</li>
-                       <li className="text-slate-300 text-sm"><strong className="text-white">Refill Capacity:</strong> Larger tanks reduce maintenance frequency.</li>
-                       <li className="text-slate-300 text-sm"><strong className="text-white">Support:</strong> Ensure reliable after-sales and installation service.</li>
-                    </ul>
-                 </motion.div>
-                 <motion.div {...fadeInUp}>
-                    <h3 className="text-xl font-bold text-blue-400 mb-6 uppercase tracking-widest">Professional vs Basic</h3>
-                    <div className="grid grid-cols-1 gap-4">
-                       <div className="p-6 bg-white/5 rounded-2xl border border-white/10">
-                          <p className="text-blue-200 text-xs font-black uppercase mb-2">Professional Systems</p>
-                          <p className="text-slate-400 text-sm">Even distribution, long-lasting performance, and full intensity control for large spaces.</p>
-                       </div>
-                       <div className="p-6 bg-red-900/10 rounded-2xl border border-red-500/10">
-                          <p className="text-red-400 text-xs font-black uppercase mb-2">Basic Air Fresheners</p>
-                          <p className="text-slate-400 text-sm">Short-lasting effects, uneven spread, and limited coverage that fades quickly.</p>
-                       </div>
-                    </div>
-                 </motion.div>
-              </div>
-           </div>
-        </section>
-
-        {/* ================= COOL MAX VALUE SECTION (H2) ================= */}
-        <section className="py-24 px-6 lg:px-16 max-w-5xl mx-auto text-left">
-           <motion.div {...fadeInUp}>
-              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter text-center">Why Cool Max Scent Is Trusted</h2>
-              <p className="text-lg text-slate-500 font-light mb-12 text-center">
-                We focus on recommending the right solution based on real needs, not one-size-fits-all products.
-              </p>
-              <div className="grid md:grid-cols-3 gap-6">
-                {[
-                  { t: "Quality Gear", i: <CpuChipIcon />, d: "Advanced diffusion machines for homes and offices." },
-                  { t: "Expert Guidance", i: <LightBulbIcon />, d: "Personalized advice based on your unique space." },
-                  { t: "Full Support", i: <ShieldCheckIcon />, d: "Ongoing maintenance and refill assistance across UAE." }
-                ].map((val, i) => (
-                  <div key={i} className="p-8 bg-slate-50 rounded-[2.5rem] border border-slate-100">
-                    <div className="text-blue-600 w-8 h-8 mb-4">{val.i}</div>
-                    <h4 className="font-bold text-slate-900 mb-2">{val.t}</h4>
-                    <p className="text-xs text-slate-500">{val.d}</p>
-                  </div>
-                ))}
-              </div>
-           </motion.div>
-        </section>
-
-        {/* ================= FAQ SECTION ================= */}
-        <section className="py-24 bg-white px-6 lg:px-16 border-t border-slate-100 text-left">
-           <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-serif text-slate-900 mb-12 uppercase font-bold">Frequently Asked Questions</h2>
-              <div className="space-y-6">
-                 {[
-                   { q: `What is an aroma diffuser machine?`, a: `An aroma diffuser machine spreads fragrance evenly through a space using advanced diffusion technology for consistent scent coverage.` },
-                   { q: "Where can aroma diffuser machines be used?", a: "They can be used in homes, offices, hotels, clinics, retail stores, and commercial spaces." },
-                   { q: "Why are fragrance solutions important for businesses?", a: "They improve customer experience, create a better atmosphere, and strengthen brand perception." },
-                   { q: "How do I choose the right aroma diffuser machine in UAE?", a: "Choose based on space size, coverage area, features, refill capacity, and support service." },
-                   { q: "Are professional diffuser machines better than air fresheners?", a: "Yes, they provide longer-lasting fragrance, better coverage, and more control than basic air fresheners." }
-                 ].map((faq, i) => (
-                   <motion.div key={i} {...fadeInUp} className="p-6 bg-slate-50 rounded-2xl">
-                      <h4 className="font-bold text-slate-900 mb-2">Q: {faq.q}</h4>
-                      <p className="text-sm text-slate-500">A: {faq.a}</p>
-                   </motion.div>
-                 ))}
-              </div>
-           </div>
         </section>
 
         {/* ================= FINAL CTA ================= */}
@@ -277,18 +300,20 @@ export default function AromaDiffuserMachineUAEBlog() {
             <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/20 blur-3xl rounded-full -translate-y-1/2 translate-x-1/2" />
             
             <h2 className="text-4xl md:text-6xl font-serif mb-8 tracking-tighter leading-tight relative z-10 text-center uppercase font-bold text-white">
-              Elevate Your <br />Atmosphere Today
+              Transform Your <br />Space Today
             </h2>
             <p className="text-xl text-slate-400 mb-12 max-w-3xl mx-auto font-light leading-relaxed relative z-10 text-center">
-              The right scent can change how people experience your space. Cool Max Scent is ready to help you find the best fit for your space in UAE.
+              Discover why leading businesses trust Cool Max for professional fragrance solutions.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10">
-              <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-12 py-6 bg-blue-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-700 transition-all shadow-xl flex items-center justify-center gap-3">
-                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Support
+              <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="flex-1 px-12 py-6 bg-blue-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-700 transition-all shadow-xl flex items-center justify-center gap-3">
+                <ChatBubbleLeftRightIcon className="w-5 h-5" /> 
+                <span className="whitespace-nowrap">WhatsApp Specialist</span>
               </a>
-              <Link to="/contact/" className="w-full sm:w-auto px-12 py-6 bg-white text-slate-900 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-slate-100 transition-all flex items-center justify-center gap-3">
-                Request Consultation <ArrowRightIcon className="w-4 h-4" />
+              <Link to="/contact/" className="flex-1 px-12 py-6 bg-white text-slate-900 border border-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all flex items-center justify-center gap-3 shadow-xl">
+                <span className="whitespace-nowrap">Get Free Consultation</span>
+                <ArrowRightIcon className="w-4 h-4" />
               </Link>
             </div>
           </motion.div>
