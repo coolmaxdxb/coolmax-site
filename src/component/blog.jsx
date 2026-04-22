@@ -119,12 +119,22 @@ const blogPosts = [
   },
    {
     id: 12,
-    title: " Aroma Diffuser Machine UAE | Fragrance Solutions in UAE",
+    title: "Aroma Diffuser Machine UAE | Fragrance Solutions in UAE",
     excerpt: "Discover the best aroma diffuser machine UAE solutions for homes, offices, hotels, and retail spaces. Explore professional fragrance solutions in UAE.",
     category: "Strategy",
     date: "April 21,2026",
     readTime: "8 min read",
     path: "/blog/aroma-diffuser-machine-uae-fragrance-solutions-in-uae/",
+    image: "https://images.pexels.com/photos/965990/pexels-photo-965990.jpeg",
+  },
+   {
+    id: 12,
+    title: "HVAC Scent Diffuser System UAE for Better Business Experience",
+    excerpt: " Discover how HVAC scent diffuser system UAE helps hotels, malls, and offices improve customer experience with consistent fragrance solutions.",
+    category: "Strategy",
+    date: "April 22,2026",
+    readTime: "8 min read",
+    path: "/blog/hvac-scent-diffuser-system-uae/",
     image: "https://images.pexels.com/photos/965990/pexels-photo-965990.jpeg",
   },
 ];
