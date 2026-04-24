@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -24,6 +24,18 @@ const ClassicAromaOilDetail = () => {
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Classic%20Aroma%20Oil%20(CM-0123-PC).`;
     const contactPath = "/contact/";
 
+    // --- SEO Implementation & Scroll Fix ---
+    useEffect(() => {
+        window.scrollTo(0, 0);
+
+        // Dynamic SEO update
+        document.title = "Classic Aroma Oil | Timeless Luxury Scent | Cool Max Scent";
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) {
+            metaDesc.setAttribute("content", "Experience Classic Aroma Oil (CM-0123-PC), a timeless fragrance with Blood Orange, Indian Jasmine, and Amberwood notes for high-end luxury spaces.");
+        }
+    }, []);
+
     const fadeUp = {
         initial: { opacity: 0, y: 20 },
         whileInView: { opacity: 1, y: 0 },
@@ -33,7 +45,7 @@ const ClassicAromaOilDetail = () => {
 
     return (
         <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
-       
+        
   <link rel="canonical" href="https://www.coolmaxscent.com/premium-aroma-oil/classic/"/>
 
             {/* ================= HERO SECTION ================= */}
@@ -155,7 +167,7 @@ const ClassicAromaOilDetail = () => {
             {/* ================= SECTION 4: WHY CHOOSE ================= */}
             <section className="py-24 bg-slate-950 text-white px-6 text-left">
                 <div className="max-w-[1200px] mx-auto text-center">
-                    <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase">Why Choose Classic Aroma?</h2>
+                    <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase text-center">Why Choose Classic Aroma?</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
                             { title: "Balanced Diffusion", desc: "Medium strength intensity designed for perfectly controlled and inviting area coverage." },
@@ -195,7 +207,7 @@ const ClassicAromaOilDetail = () => {
             <section className="py-24 px-6 text-center">
                 <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
-                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100">Interested in <br/><span className="italic font-light text-slate-300">this fragrance?</span></h2>
+                    <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100">Interested in <br/><span className="italic font-light text-slate-300 text-center">this fragrance?</span></h2>
                     <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans">
                         Our team can help you select the right diffuser system and customize fragrance intensity for your space.
                     </p>

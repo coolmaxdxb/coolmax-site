@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -16,13 +16,25 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- CORRECTED ASSET IMPORT ---
-import P4 from "../../../asset/Aroma oils img/EMAAR.webp"; 
+import P4 from "../../../asset/Aroma oils img/ADDRESS.webp"; 
 
 const EmaarAromaOilDetail = () => {
   // Redirection Links
   const whatsappNumber = "+971509282702";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Emaar%20Aroma%20Oil%20(CM-0104-OR).`;
   const contactPath = "/contact/";
+
+  // --- SEO Implementation & Scroll Fix ---
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    // Dynamic SEO update
+    document.title = "Emaar Aroma Oil | Refined Oriental Fragrance | Cool Max Scent";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Experience Emaar Aroma Oil (CM-0104-OR), a smooth oriental fragrance with Rose, Cedarwood, and Saffron notes, perfect for calm and premium environments.");
+    }
+  }, []);
 
   const fadeUp = {
     initial: { opacity: 0, y: 20 },
@@ -43,7 +55,7 @@ const EmaarAromaOilDetail = () => {
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-[10px] font-bold uppercase tracking-[0.3em] mb-8">
               <StarIcon className="w-4 h-4" /> Category: Oriental
             </div>
-            <h1 className="text-5xl md:text-7xl font-serif text-blue-900 mb-6 leading-[1.1] tracking-tighter uppercase text-left">
+            <h1 className="text-5xl md:text-7xl font-serif text-slate-950 mb-6 leading-[1.1] tracking-tighter uppercase text-left">
               EMAAR <span className="italic font-light text-slate-700">AROMA OIL</span>
             </h1>
             <p className="text-xl text-blue-600 font-medium mb-4 uppercase tracking-wider text-left">
@@ -144,7 +156,7 @@ const EmaarAromaOilDetail = () => {
                 <ShoppingBagIcon className="w-12 h-12 text-blue-600 group-hover:text-white" />
                 <span className="text-[11px] font-bold uppercase text-slate-400 group-hover:text-blue-50">Retail Areas</span>
               </div>
-              <div className="aspect-square bg-blue-600 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-slate-950 transition-all duration-500 text-left">
+              <div className="aspect-square bg-blue-600 rounded-[2.5rem] p-8 flex flex-col justify-end gap-3 group hover:bg-blue-600 transition-all duration-500 text-left">
                 <UserGroupIcon className="w-12 h-12 text-white" />
                 <span className="text-[11px] font-bold uppercase text-blue-50">Reception Areas</span>
               </div>

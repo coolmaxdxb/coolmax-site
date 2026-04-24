@@ -95,17 +95,17 @@ const FreshAromaOilsPage = () => {
 
   return (
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
-     <Helmet>
-  <title>Fresh Aroma Oils for Home, Spas & Wellness Space | Cool Max</title>
-  <meta
-    name="description"
-    content="Discover fresh aroma oils by Cool Max Scent..."
-  />
-  <link
-    rel="canonical"
-    href="https://www.coolmaxscent.com/fresh-aroma-oil/"
-  />
-</Helmet>
+      <Helmet>
+        <title>Fresh Aroma Oils for Home, Spas & Wellness Space | Cool Max</title>
+        <meta
+          name="description"
+          content="Discover fresh aroma oils by Cool Max Scent. Clean, calm, and refreshing fragrances ideal for homes, spas, and wellness spaces. Explore our Lavender, White Tea, and Lotus Flower collections."
+        />
+        <link
+          rel="canonical"
+          href="https://www.coolmaxscent.com/fresh-aroma-oil/"
+        />
+      </Helmet>
 
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
@@ -275,10 +275,10 @@ const FreshAromaOilsPage = () => {
               Ready to bring calm and freshness to your environment? Our specialists are here to help you select the perfect aroma system.
             </p>
             <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-center">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center justify-center gap-3 text-center">
                  <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
               </a>
-              <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 text-center">
+              <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center justify-center gap-3 text-center">
                 Consultation & Installation <ArrowRightIcon className="w-5 h-5" />
               </Link>
             </div>

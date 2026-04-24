@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -22,6 +22,27 @@ const AddressAromaOilDetail = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Address%20Aroma%20Oil%20(CM-0101-OR).`;
   const contactPath = "/contact/";
 
+  // --- SEO Implementation & Scroll Fix ---
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    // Dynamic SEO update
+    document.title = "Address Aroma Oil | Luxury Oriental Fragrance | Cool Max Scent";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Experience Address Aroma Oil (CM-0101-OR), a sophisticated oriental fragrance with mango, myrrh, and agarwood notes for premium environments.");
+    }
+    
+    // Canonical link handling
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.coolmaxscent.com/oriental-aroma-oil/address/');
+  }, []);
+
   const fadeUp = {
     initial: { opacity: 0, y: 20 },
     whileInView: { opacity: 1, y: 0 },
@@ -32,10 +53,6 @@ const AddressAromaOilDetail = () => {
   return (
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
       
-      {/* ================= SEO METADATA ================= */}
-   
-  <link rel="canonical" href="https://www.coolmaxscent.com/oriental-aroma-oil/address/"/>
-
       {/* ================= HERO SECTION ================= */}
       <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">

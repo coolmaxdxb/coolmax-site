@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -23,6 +23,18 @@ const FloralAromaOilDetail = () => {
   const whatsappNumber = "+971509282702";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Floral%20Aroma%20Oil%20(CM-0120-FH).`;
   const contactPath = "/contact/";
+
+  // --- SEO Implementation & Scroll Fix ---
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    // Dynamic SEO update
+    document.title = "Floral Aroma Oil | Soft Floral Fragrance UAE | Cool Max Scent";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Discover Floral Aroma Oil (CM-0120-FH). A gentle fresh fragrance with Orange Blossom, Tuberose, and Vanilla notes for comfortable commercial and residential spaces.");
+    }
+  }, []);
 
   const fadeUp = {
     initial: { opacity: 0, y: 20 },
@@ -159,7 +171,7 @@ const FloralAromaOilDetail = () => {
       {/* ================= SECTION 4: WHY CHOOSE ================= */}
       <section className="py-24 bg-slate-950 text-white px-6 text-left">
         <div className="max-w-[1200px] mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-serif mb-20 text-center tracking-tight text-blue-400 italic font-light uppercase">Why Choose Floral Aroma?</h2>
+            <h2 className="text-3xl md:text-5xl font-serif mb-20 text-center tracking-tight text-blue-400 italic font-light uppercase text-center">Why Choose Floral Aroma?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
                 {[
                     { title: "Balanced Diffusion", desc: "Medium strength for a perfectly controlled and elegant aromatic coverage." },
@@ -208,10 +220,10 @@ const FloralAromaOilDetail = () => {
             Our team can help you select the right diffuser system and customize fragrance intensity for your space.
           </p>
           <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-center">
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-center font-sans">
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
             </a>
-            <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3">
+            <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all flex items-center gap-3 text-center font-sans">
               Consultation & Installation <ArrowRightIcon className="w-5 h-5" />
             </Link>
           </div>

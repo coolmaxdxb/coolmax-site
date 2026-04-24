@@ -22,8 +22,25 @@ const PremiumCollectionOilsPage = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20your%20Premium%20Collection%20Aroma%20Oils.`;
   const contactPath = "/contact/";
 
+  // --- SEO Implementation & Scroll Fix ---
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    // Dynamic SEO update
+    document.title = "Premium Aroma Oils for Luxury Hotels | Cool Max Scent";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Explore the Premium Collection aroma oils by Cool Max Scent, featuring signature fragrances like Taj Sunset & Classic crafted for luxury hotels and premium brands.");
+    }
+    
+    // Canonical link handling
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.coolmaxscent.com/premium-aroma-oil/');
   }, []);
 
   const oils = [
@@ -61,13 +78,6 @@ const PremiumCollectionOilsPage = () => {
   return (
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
       
-      {/* ================= SEO METADATA ================= */}
-    
-        <title>Premium Aroma Oils for Luxury Hotels | Cool Max Scent</title>
-        <meta name="description" content="Explore the Premium Collection aroma oils by Cool Max Scent, featuring signature fragrances like Taj Sunset & Classic crafted for luxury hotels, premium brands." />
-        <link rel="canonical" href="https://www.coolmaxscent.com/premium-aroma-oil/"/>
-     
-
       {/* ================= GLOBAL BACKGROUND ================= */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-slate-100/50 rounded-full blur-[150px]" />
@@ -95,7 +105,7 @@ const PremiumCollectionOilsPage = () => {
               This collection is ideal for brands and environments that want to create a strong emotional connection and a memorable signature scent.
             </p>
             <div className="flex flex-wrap justify-center gap-5 font-sans">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-blue-600 text-white rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-slate-900 transition-all flex items-center gap-2 shadow-lg shadow-blue-100">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-blue-600 text-white rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-slate-900 transition-all flex items-center justify-center gap-2 shadow-lg shadow-blue-100">
                 <ChatBubbleLeftRightIcon className="w-4 h-4" /> Order via WhatsApp
               </a>
               <Link to={contactPath} className="px-10 py-4 border border-slate-200 text-slate-900 rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-blue-50 hover:border-blue-300 transition-all">
@@ -191,7 +201,7 @@ const PremiumCollectionOilsPage = () => {
         <section className="py-24 bg-slate-950 text-white px-6">
           <div className="max-w-[1200px] mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase">Best Used For</h2>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
               {[
                 { icon: BuildingOffice2Icon, label: "Luxury hotels & resorts" },
                 { icon: ShoppingBagIcon, label: "Premium brand showrooms" },
@@ -200,7 +210,7 @@ const PremiumCollectionOilsPage = () => {
                 { icon: SparklesIcon, label: "Signature commercial interiors" }
               ].map((item, i) => (
                 <div key={i} className="p-8 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-blue-600/10 transition-colors group h-full">
-                   <item.icon className="w-12 h-12 text-blue-500 group-hover:scale-110 transition-transform duration-500 shrink-0" />
+                   <item.icon className="w-12 h-12 text-blue-500 group-hover:scale-110 transition-transform duration-500 shrink-0 mx-auto" />
                    <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-slate-200 font-sans text-center">{item.label}</span>
                 </div>
               ))}
@@ -214,7 +224,7 @@ const PremiumCollectionOilsPage = () => {
             <h2 className="text-3xl md:text-5xl font-serif mb-16 tracking-tight text-slate-950 uppercase">
               Explore More <span className="italic font-light text-slate-700">Fragrance Categories</span>
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 font-sans">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 font-sans text-center">
               {[
                 { name: "Oriental Aroma Oils", path: "/oriental-aroma-oil/" },
                 { name: "Fresh Aroma Oils", path: "/fresh-aroma-oil/" },
@@ -236,7 +246,7 @@ const PremiumCollectionOilsPage = () => {
         </section>
 
         {/* ================= CTA SECTION ================= */}
-        <section className="py-24 px-6">
+        <section className="py-24 px-6 text-center">
           <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full" />
             <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase italic text-slate-200">The Ultimate Signature Scent</h2>
@@ -244,10 +254,10 @@ const PremiumCollectionOilsPage = () => {
               Elevate your brand with our most exclusive fragrances. Our specialists will help you design a signature atmosphere that leaves a lasting legacy.
             </p>
             <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center justify-center gap-3">
                  <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
               </a>
-              <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3">
+              <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center justify-center gap-3">
                 Elite Consultation <ArrowRightIcon className="w-5 h-5" />
               </Link>
             </div>

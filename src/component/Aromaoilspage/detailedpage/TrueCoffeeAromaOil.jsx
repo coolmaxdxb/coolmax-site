@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -12,7 +12,6 @@ import {
   UserGroupIcon,
   FaceSmileIcon,
   ShoppingBagIcon,
- 
 } from "@heroicons/react/24/outline";
 
 // --- CORRECTED ASSET IMPORT ---
@@ -24,6 +23,18 @@ const TrueCoffeeAromaOilDetail = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20True%20Coffee%20Aroma%20Oil%20(CM-0106-OR).`;
   const contactPath = "/contact/";
 
+  // --- SEO Implementation & Scroll Fix ---
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    // Dynamic SEO update
+    document.title = "True Coffee Aroma Oil | Coffee Scent for Cafes | Cool Max Scent";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Experience True Coffee Aroma Oil (CM-0106-OR). A rich coffee-inspired fragrance with chocolate, honey, and caramel notes, perfect for cafes and dining spaces.");
+    }
+  }, []);
+
   const fadeUp = {
     initial: { opacity: 0, y: 20 },
     whileInView: { opacity: 1, y: 0 },
@@ -33,7 +44,7 @@ const TrueCoffeeAromaOilDetail = () => {
 
   return (
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
-     
+      
   <link rel="canonical" href="https://www.coolmaxscent.com/food-and-beverage-aroma-oil/true-coffee/"/>
 
       {/* ================= HERO SECTION ================= */}
@@ -167,7 +178,7 @@ const TrueCoffeeAromaOilDetail = () => {
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors text-left">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400" />
                         <h4 className="text-base font-bold uppercase tracking-widest text-white font-serif italic text-left">{item.title}</h4>
-                        <p className="text-sm text-slate-400 leading-relaxed font-light font-sans">{item.desc}</p>
+                        <p className="text-sm text-slate-400 leading-relaxed font-sans">{item.desc}</p>
                     </div>
                 ))}
             </div>

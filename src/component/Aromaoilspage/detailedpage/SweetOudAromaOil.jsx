@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -24,6 +24,27 @@ const SweetOudAromaOilDetail = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Sweet%20Oud%20Aroma%20Oil%20(CM-0105-OR).`;
   const contactPath = "/contact/";
 
+  // --- SEO Implementation & Scroll Fix ---
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    // Dynamic SEO update
+    document.title = "Sweet Oud Aroma Oil | Luxury Oriental Scent | Cool Max Scent";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Explore Sweet Oud aroma oil by Cool Max Scent (CM-0105-OR). A strong oriental fragrance with rich oud, praline, and rose notes, ideal for hotels and premium spaces.");
+    }
+    
+    // Canonical link handling
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.coolmaxscent.com/oriental-aroma-oil/sweet-oud/');
+  }, []);
+
   const fadeUp = {
     initial: { opacity: 0, y: 20 },
     whileInView: { opacity: 1, y: 0 },
@@ -33,11 +54,6 @@ const SweetOudAromaOilDetail = () => {
 
   return (
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
-     
-        <title>Sweet Oud Aroma Oil for Luxury Spaces | Cool Max Scent</title>
-        <meta name="description" content="Explore Sweet Oud aroma oil by Cool Max Scent, a strong oriental fragrance with rich oud, praline, clove, and rose notes, ideal for hotels and premium spaces." />
-        <link rel="canonical" href="https://www.coolmaxscent.com/oriental-aroma-oil/sweet-oud/"/>
- 
       
       {/* ================= HERO SECTION ================= */}
       <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
@@ -63,7 +79,7 @@ const SweetOudAromaOilDetail = () => {
               Designed for premium environments, Sweet Oud delivers a long-lasting scent experience that leaves a strong impression without losing balance or elegance.
             </p>
             <div className="flex flex-wrap gap-5 font-sans text-left">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-blue-600 text-white rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-slate-900 transition-all flex items-center gap-2 shadow-lg shadow-blue-100 text-left">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-blue-600 text-white rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-slate-900 transition-all flex items-center gap-2 shadow-lg shadow-blue-100 text-left text-center">
                 <ChatBubbleLeftRightIcon className="w-4 h-4" /> Order Now
               </a>
               <Link to={contactPath} className="px-10 py-4 border border-slate-200 text-slate-900 rounded-full font-bold text-[11px] uppercase tracking-widest hover:bg-blue-50 transition-all text-left">
@@ -86,12 +102,12 @@ const SweetOudAromaOilDetail = () => {
       </section>
 
       {/* ================= SECTION 1: FRAGRANCE PROFILE ================= */}
-      <section className="py-24 bg-slate-50 px-6 lg:px-12 text-center text-left">
+      <section className="py-24 bg-slate-50 px-6 lg:px-12 text-left">
         <div className="max-w-[1200px] mx-auto font-sans text-left">
-          <h2 className="text-3xl md:text-5xl font-serif mb-8 text-slate-950 uppercase text-center text-left">
-            Fragrance <span className="italic font-light text-blue-700 font-serif text-left">Profile</span>
+          <h2 className="text-3xl md:text-5xl font-serif mb-8 text-slate-950 uppercase text-center">
+            Fragrance <span className="italic font-light text-blue-700 font-serif">Profile</span>
           </h2>
-          <p className="text-xs uppercase tracking-[0.4em] text-slate-400 font-bold mb-16 text-center text-left">Fragrance Notes Breakdown</p>
+          <p className="text-xs uppercase tracking-[0.4em] text-slate-400 font-bold mb-16 text-center">Fragrance Notes Breakdown</p>
           <div className="grid md:grid-cols-3 gap-8 mb-16 font-sans text-left">
              {[
                { label: "Top Notes", notes: "Agarwood (Oud), Praline", color: "bg-blue-400" },
@@ -102,12 +118,12 @@ const SweetOudAromaOilDetail = () => {
                  <div className={`w-12 h-12 rounded-full ${note.color} mx-auto mb-6 flex items-center justify-center text-white text-left`}>
                     <BeakerIcon className="w-6 h-6 text-left" />
                  </div>
-                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4 text-center text-left">{note.label}</h3>
-                 <p className="text-xl font-serif text-slate-900 leading-snug text-center text-left">{note.notes}</p>
+                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4 text-center">{note.label}</h3>
+                 <p className="text-xl font-serif text-slate-900 leading-snug text-center">{note.notes}</p>
                </div>
              ))}
           </div>
-          <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light italic font-sans text-center text-left">
+          <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light italic font-sans text-center">
             "The fragrance opens with the richness of oud blended with subtle sweetness from praline, moves into warm spicy clove, and settles into a smooth floral rose base that adds depth and sophistication."
           </p>
         </div>
@@ -131,7 +147,7 @@ const SweetOudAromaOilDetail = () => {
                     </li>
                 ))}
              </ul>
-             <p className="mt-10 text-slate-500 leading-relaxed font-light font-sans text-left">
+             <p className="mt-10 text-slate-500 leading-relaxed font-light font-sans text-left text-left">
                 Sweet Oud Aroma Oil is designed for spaces where fragrance plays a central role in defining identity and ambiance.
              </p>
            </div>
@@ -164,8 +180,8 @@ const SweetOudAromaOilDetail = () => {
 
       {/* ================= SECTION 4: WHY CHOOSE ================= */}
       <section className="py-24 bg-slate-950 text-white px-6 font-sans text-left">
-        <div className="max-w-[1200px] mx-auto text-center font-sans text-left">
-            <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase text-center text-left">Why Choose Sweet Oud Aroma Oil?</h2>
+        <div className="max-w-[1200px] mx-auto text-left">
+            <h2 className="text-3xl md:text-5xl font-serif mb-20 tracking-tight text-blue-400 italic font-light uppercase text-center">Why Choose Sweet Oud Aroma Oil?</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
                 {[
                     { title: "Strong Strength", desc: "Strong fragrance strength for impactful diffusion in high-traffic or large spaces." },
@@ -177,7 +193,7 @@ const SweetOudAromaOilDetail = () => {
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors text-left">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400 text-left" />
                         <h4 className="text-base font-bold uppercase tracking-widest text-white font-serif italic text-left">{item.title}</h4>
-                        <p className="text-sm text-slate-400 leading-relaxed font-sans font-light text-left">{item.desc}</p>
+                        <p className="text-sm text-slate-400 leading-relaxed font-sans font-light text-left text-center">{item.desc}</p>
                     </div>
                 ))}
             </div>
@@ -185,7 +201,7 @@ const SweetOudAromaOilDetail = () => {
       </section>
 
       {/* ================= SECTION 5: SAFETY & USAGE ================= */}
-      <section className="py-28 bg-slate-50 px-6 font-sans text-left text-left">
+      <section className="py-28 bg-slate-50 px-6 font-sans text-left">
         <div className="max-w-[1000px] mx-auto text-left">
             <div className="bg-white rounded-[3rem] p-12 md:p-16 border border-slate-100 shadow-sm flex flex-col md:flex-row gap-12 items-center text-left">
                 <div className="w-24 h-24 rounded-full bg-blue-50 flex items-center justify-center shrink-0 text-left">
@@ -193,7 +209,7 @@ const SweetOudAromaOilDetail = () => {
                 </div>
                 <div className="text-left">
                     <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Professional Usage & <span className="italic font-light text-left">Safety</span></h2>
-                    <p className="text-slate-500 font-light leading-relaxed font-sans text-left">
+                    <p className="text-slate-500 font-light leading-relaxed font-sans text-left text-justify md:text-left">
                       Sweet Oud Aroma Oil is a professional fragrance oil developed for use with automated scent diffuser machines. Diffusion intensity and coverage can be adjusted based on space size, airflow, and usage needs to ensure a controlled and comfortable scent experience.
                     </p>
                 </div>
@@ -202,18 +218,18 @@ const SweetOudAromaOilDetail = () => {
       </section>
 
       {/* ================= SECTION 6: CTA ================= */}
-      <section className="py-24 px-6 text-center text-left">
+      <section className="py-24 px-6 text-center">
         <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl font-sans text-left">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full text-left"></div>
-          <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center text-left">Interested in <br/><span className="italic font-light text-slate-300 font-serif text-left">this fragrance?</span></h2>
-          <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center text-left">
+          <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center">Interested in <br/><span className="italic font-light text-slate-300 font-serif text-left">this fragrance?</span></h2>
+          <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
             Our team can help you choose the right diffuser system and fine-tune the fragrance strength based on your space requirements.
           </p>
-          <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans text-left">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-left">
+          <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans text-center">
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-left text-center">
                <ChatBubbleLeftRightIcon className="w-5 h-5 text-left" /> WhatsApp Scent Expert
             </a>
-            <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 text-left">
+            <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 text-left text-center">
               Consultation & Installation <ArrowRightIcon className="w-5 h-5 text-left" />
             </Link>
           </div>

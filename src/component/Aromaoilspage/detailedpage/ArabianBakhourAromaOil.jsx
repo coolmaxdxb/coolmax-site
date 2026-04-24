@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -24,6 +24,27 @@ const ArabianBakhourAromaOilDetail = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%20Cool%20Max%20Scent,%20I%20am%20interested%20in%20the%20Arabian%20Bakhour%20Aroma%20Oil%20(CM-0103-OR).`;
   const contactPath = "/contact/";
 
+  // --- SEO Implementation & Scroll Fix ---
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    // Dynamic SEO update
+    document.title = "Arabian Bakhour Aroma Oil | Traditional Oriental Scent | Cool Max Scent";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Discover Arabian Bakhour Aroma Oil (CM-0103-OR). A traditional oriental fragrance with jasmine, rose, and saffron notes, perfect for cultural interiors and luxury hotels.");
+    }
+    
+    // Canonical link handling
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.coolmaxscent.com/oriental-aroma-oil/arabian-bakhour/');
+  }, []);
+
   const fadeUp = {
     initial: { opacity: 0, y: 20 },
     whileInView: { opacity: 1, y: 0 },
@@ -34,12 +55,6 @@ const ArabianBakhourAromaOilDetail = () => {
   return (
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
       
-
-     
-  <link rel="canonical" href="https://www.coolmaxscent.com/oriental-aroma-oil/arabian-bakhour/"/>
-
-
-
       {/* ================= HERO SECTION ================= */}
       <section className="relative pt-24 pb-16 px-6 lg:px-12 max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -107,7 +122,7 @@ const ArabianBakhourAromaOilDetail = () => {
                </div>
              ))}
           </div>
-          <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light italic">
+          <p className="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed font-light italic text-center">
             "This fragrance opens with gentle floral notes, develops into a warm spicy heart, and finishes with a smooth, slightly sweet base that lingers comfortably in the space."
           </p>
         </div>
@@ -198,16 +213,16 @@ const ArabianBakhourAromaOilDetail = () => {
       {/* ================= SECTION 6: CTA ================= */}
       <section className="py-24 px-6 text-center">
         <div className="max-w-[1200px] mx-auto bg-slate-950 rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full" />
-          <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase">Interested in <br/><span className="italic font-light text-slate-300">this fragrance?</span></h2>
-          <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans">
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full text-center" />
+          <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-center">Interested in <br/><span className="italic font-light text-slate-300">this fragrance?</span></h2>
+          <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
             Our team can help you select the right diffuser system and customize the fragrance intensity for your space.
           </p>
           <div className="flex flex-wrap justify-center gap-6 relative z-10">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 font-sans">
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
             </a>
-            <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 font-sans text-center">
+            <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center justify-center gap-3 font-sans text-center">
               Consultation & Installation <ArrowRightIcon className="w-5 h-5" />
             </Link>
           </div>
