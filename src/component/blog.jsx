@@ -3,9 +3,23 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom"; 
 import { ArrowRightIcon, CalendarDaysIcon, ClockIcon} from "@heroicons/react/24/outline";
 
+// --- ASSET IMPORTS ---
+import Blog1 from "../asset/blogimg/blog1.webp";
+import Blog2 from "../asset/blogimg/blog2.webp";
+import Blog3 from "../asset/blogimg/blog3.webp";
+import Blog4 from "../asset/blogimg/blog4.webp";
+import Blog5 from "../asset/blogimg/blog5.webp";
+import Blog6 from "../asset/blogimg/blog6.webp";
+import Blog7 from "../asset/blogimg/blog7.webp";
+import Blog8 from "../asset/blogimg/blog8.webp";
+import Blog9 from "../asset/blogimg/blog9.webp";
+import Blog10 from "../asset/blogimg/blog10.webp";
+import Blog11 from "../asset/blogimg/blog11.webp";
+import Blog12 from "../asset/blogimg/blog12.webp";
+// Reusing blog12 for the 13th post or you can import blog13 if available
+import Blog13 from "../asset/blogimg/blog1.webp"; 
 
 const blogPosts = [
-
   {
     id: 1,
     title: "Scent Marketing for Hotels: Improve Guest Experience & Loyalty",
@@ -14,7 +28,7 @@ const blogPosts = [
     date: "Feb 20, 2026",
     readTime: "6 min read",
     path: "/blog/scent-marketing-hotels-uae/",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=900",
+    image: Blog1,
   },
   {
     id: 2,
@@ -24,7 +38,7 @@ const blogPosts = [
     date: "Feb 18, 2026",
     readTime: "7 min read",
     path: "/blog/choose-commercial-aroma-diffuser-uae/",
-    image: "https://images.unsplash.com/photo-1508090228729-c062eefc9bef?q=80&w=1170&auto=format&fit=crop",
+    image: Blog2,
   },
   {
     id: 3,
@@ -34,7 +48,7 @@ const blogPosts = [
     date: "Mar 15, 2025",
     readTime: "5 min read",
     path: "/blog/scent-marketing-101-uae/",
-    image: "https://plus.unsplash.com/premium_photo-1664303418178-b8767b25f646?w=500&auto=format&fit=crop&q=60",
+    image: Blog3,
   },
   {
     id: 4,
@@ -44,7 +58,7 @@ const blogPosts = [
     date: "Feb 15, 2025",
     readTime: "6 min read",
     path: "/blog/why-5-star-hotels-dubai-use-scent-diffusers/",
-    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=900",
+    image: Blog4,
   },
   {
     id: 5,
@@ -54,7 +68,7 @@ const blogPosts = [
     date: "Feb 10, 2025",
     readTime: "4 min read",
     path: "/blog/scent-solutions-corporate-reception-areas/",
-    image: "https://media.istockphoto.com/id/1265249156/photo/portrait-of-a-beautiful-woman-enjoying-the-smell-of-fresh-flowers.webp?a=1&b=1&s=612x612&w=0&k=20&c=MH8YmLhSjKnY2T6kQ93z_WRzf_lOEg-L1P7WNaNaW8c=",
+    image: Blog5,
   },
   {
     id: 6,
@@ -64,7 +78,7 @@ const blogPosts = [
     date: "Jan 25, 2025",
     readTime: "5 min read",
     path: "/blog/large-area-hvac-aroma-diffusers-commercial-spaces/",
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=900",
+    image: Blog6,
   },
   {
     id: 7,
@@ -74,7 +88,7 @@ const blogPosts = [
     date: "Mar 10, 2026",
     readTime: "8 min read",
     path: "/blog/seasonal-scenting-with-aroma-diffusers/",
-    image: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=900",
+    image: Blog7,
   },
   {
     id: 8,
@@ -84,10 +98,9 @@ const blogPosts = [
     date: "Mar 12, 2026",
     readTime: "7 min read",
     path: "/blog/why-modern-offices-use-scent-systems/",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=900",
+    image: Blog8,
   },
-
-   {
+  {
     id: 9,
     title: "Commercial Scent Diffuser vs Air Freshener | Cool max",
     excerpt: "Compare commercial scent diffuser vs air freshener and find what works best for your business. Improve customer experience with the right scent solution.",
@@ -95,9 +108,9 @@ const blogPosts = [
     date: "Mar 10, 2026",
     readTime: "8 min read",
     path: "/blog/commercial-scent-diffuser-vs-air-freshener",
-    image: "https://images.pexels.com/photos/6914876/pexels-photo-6914876.jpeg",
+    image: Blog9,
   },
-   {
+  {
     id: 10,
     title: "Best Scent Diffuser Machine Guide | Cool Max Scent UAE & QATAR",
     excerpt: "Learn how to choose the best scent diffuser machine for homes, offices, and commercial spaces. Discover advanced scent solutions by Cool Max Scent in UAE & Qatar.",
@@ -105,37 +118,37 @@ const blogPosts = [
     date: "April 14, 2026",
     readTime: "8 min read",
     path: "/blog/how-to-choose-best-scent-diffuser-machine/",
-    image: "https://images.pexels.com/photos/10507487/pexels-photo-10507487.jpeg",
+    image: Blog10,
   },
-    {
+  {
     id: 11,
     title: "5 Simple Steps to Clean and Maintain Your Diffuser for Long-Lasting Performance",
-    excerpt: "A good scent diffuser helps spread a pleasant fragrance evenly and makes any space feel more inviting—whether it’s your home, hotel, office, or shop. At Cool Max, our diffusers are made to run for long hours with very little maintenance, so you can enjoy a fresh environment without any hassle.",
+    excerpt: "A good scent diffuser helps spread a pleasant fragrance evenly and makes any space feel more inviting—whether it’s your home, hotel, office, or shop.",
     category: "Strategy",
     date: "April 18, 2026",
     readTime: "8 min read",
     path: "/blog/clean-and-maintain-your-diffuser-for-long-lasting-performance/",
-    image: "https://images.pexels.com/photos/29255492/pexels-photo-29255492.jpeg",
+    image: Blog11,
   },
-   {
+  {
     id: 12,
     title: "Aroma Diffuser Machine UAE | Fragrance Solutions in UAE",
     excerpt: "Discover the best aroma diffuser machine UAE solutions for homes, offices, hotels, and retail spaces. Explore professional fragrance solutions in UAE.",
     category: "Strategy",
-    date: "April 21,2026",
+    date: "April 21, 2026",
     readTime: "8 min read",
     path: "/blog/aroma-diffuser-machine-uae-fragrance-solutions-in-uae/",
-    image: "https://images.pexels.com/photos/965990/pexels-photo-965990.jpeg",
+    image: Blog12,
   },
-   {
-    id: 12,
+  {
+    id: 13,
     title: "HVAC Scent Diffuser System UAE for Better Business Experience",
-    excerpt: " Discover how HVAC scent diffuser system UAE helps hotels, malls, and offices improve customer experience with consistent fragrance solutions.",
+    excerpt: "Discover how HVAC scent diffuser system UAE helps hotels, malls, and offices improve customer experience with consistent fragrance solutions.",
     category: "Strategy",
-    date: "April 22,2026",
+    date: "April 22, 2026",
     readTime: "8 min read",
     path: "/blog/hvac-scent-diffuser-system-uae/",
-    image: "https://images.pexels.com/photos/965990/pexels-photo-965990.jpeg",
+    image: Blog13,
   },
 ];
 
