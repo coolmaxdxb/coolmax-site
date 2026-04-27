@@ -1,48 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WVMPRDWR');</script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <link rel="preload" as="image" href="/static/media/mobileherobanner2.ad258cdee23354773cd5.webp" fetchpriority="high">
-
-    <title>Cool Max | Premium Scenting Solutions for Homes & Businesses</title>
-    <meta name="description" content="Cool Max provides premium scent diffusers and fragrance solutions for homes, hotels, offices, retail spaces, HVAC systems, and automobiles across UAE & Qatar." />
-    <meta name="keywords" content="scent diffuser, fragrance solutions, HVAC scenting, hotel scent marketing, car scent diffuser, office fragrance, Cool Max scent, spray" />
-    <meta name="author" content="Cool Max Scent Solutions" />
-    <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#ffffff" />
 
+    <title>Cool Max | Premium Scenting Solutions for Homes & Businesses</title>
+    <meta
+      name="description"
+      content="Cool Max provides premium scent diffusers and fragrance solutions for homes, hotels, offices, retail spaces, HVAC systems, and automobiles across UAE & Qatar."
+    />
+    <meta
+      name="keywords"
+      content="scent diffuser, fragrance solutions, HVAC scenting, hotel scent marketing, car scent diffuser, office fragrance, Cool Max scent"
+    />
+    <meta name="author" content="Cool Max Scent Solutions" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Critical image preload -->
+    <link
+      rel="preload"
+      as="image"
+      href="/static/media/mobileherobanner2.ad258cdee23354773cd5.webp"
+      fetchpriority="high"
+    />
+
+    <!-- Self-host fonts if possible. If not, keep this minimal -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Cool Max | Premium Scenting Solutions" />
-    <meta property="og:description" content="Transform spaces with intelligent scent solutions for homes, hotels, offices, and commercial environments." />
+    <meta
+      property="og:description"
+      content="Transform spaces with intelligent scent solutions for homes, hotels, offices, and commercial environments."
+    />
     <meta property="og:url" content="https://www.coolmaxscent.com/" />
-    <meta property="og:image" content="%PUBLIC_URL%/seo/og-image.jpg" />
+    <meta property="og:image" content="https://www.coolmaxscent.com/seo/og-image.jpg" />
     <meta property="og:site_name" content="Cool Max" />
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Cool Max | Premium Scenting Solutions" />
-    <meta name="twitter:description" content="Smart scent diffusers and fragrance systems for modern environments." />
-    <meta name="twitter:image" content="%PUBLIC_URL%/seo/twitter-image.jpg" />
+    <meta
+      name="twitter:description"
+      content="Smart scent diffusers and fragrance systems for modern environments."
+    />
+    <meta name="twitter:image" content="https://www.coolmaxscent.com/seo/twitter-image.jpg" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-
+    <!-- Schema -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -50,11 +65,6 @@
         "name": "Cool Max Scent Solutions",
         "url": "https://www.coolmaxscent.com",
         "logo": "https://www.coolmaxscent.com/logo.png",
-        "sameAs": [
-          "https://www.facebook.com/coolmax",
-          "https://www.instagram.com/coolmax",
-          "https://www.linkedin.com/company/coolmax"
-        ],
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+971509282702",
@@ -64,12 +74,27 @@
         }
       }
     </script>
+
+    <!-- Delay GTM -->
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+            var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s),
+              dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+          })(window, document, "script", "dataLayer", "GTM-WVMPRDWR");
+        }, 2000);
+      });
+    </script>
   </head>
 
   <body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVMPRDWR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <div id="root"></div>
