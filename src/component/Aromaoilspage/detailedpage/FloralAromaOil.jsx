@@ -29,10 +29,10 @@ const FloralAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Floral Aroma Oil | Soft Floral Fragrance UAE | Cool Max Scent";
+    document.title = "Floral Aroma Oil | Fresh Elegant Floral Fragrance";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Discover Floral Aroma Oil (CM-0120-FH). A gentle fresh fragrance with Orange Blossom, Tuberose, and Vanilla notes for comfortable commercial and residential spaces.");
+      metaDesc.setAttribute("content", "Discover Floral aroma oil by Cool Max Scent, a medium-strength fresh fragrance with orange blossom, jasmine, and soft musky notes, ideal for homes & offices.");
     }
   }, []);
 

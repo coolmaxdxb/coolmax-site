@@ -29,10 +29,10 @@ const ClassicAromaOilDetail = () => {
         window.scrollTo(0, 0);
 
         // Dynamic SEO update
-        document.title = "Classic Aroma Oil | Timeless Luxury Scent | Cool Max Scent";
+        document.title = "Classic Aroma Oil | Premium Collection Signature Scent";
         const metaDesc = document.querySelector('meta[name="description"]');
         if (metaDesc) {
-            metaDesc.setAttribute("content", "Experience Classic Aroma Oil (CM-0123-PC), a timeless fragrance with Blood Orange, Indian Jasmine, and Amberwood notes for high-end luxury spaces.");
+            metaDesc.setAttribute("content", "Discover Classic aroma oil by Cool Max Scent, a medium-strength Premium Collection fragrance with citrus spice, rich florals, & woody notes for luxury spaces.");
         }
     }, []);
 

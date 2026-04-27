@@ -29,10 +29,10 @@ const CrystalAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Crystal Aroma Oil | Vibrant Fruity Fragrance | Cool Max Scent";
+    document.title = "Crystal Aroma Oil | Fruity Bold Signature Fragrance";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Experience Crystal Aroma Oil (CM-0100-FR), a vibrant fruity fragrance with zesty bergamot, ylang ylang, and caramel notes for energetic spaces.");
+      metaDesc.setAttribute("content", "Discover Crystal aroma oil by Cool Max Scent, a strong fruity fragrance with zesty bergamot, sweet caramel, and warm vanilla musky notes.");
     }
     
     // Canonical link handling

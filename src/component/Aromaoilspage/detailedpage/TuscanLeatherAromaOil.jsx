@@ -29,10 +29,10 @@ const TuscanLeatherAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Tuscan Leather Aroma Oil | Bold Leather Fragrance | Cool Max Scent";
+    document.title = "Tuscan Leather Aroma Oil | Bold Perfumers Choice";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Experience Tuscan Leather Aroma Oil (CM-0112-OR). A distinctive and powerful fragrance with green aromatic tones and a rich leather-woody base for premium spaces.");
+      metaDesc.setAttribute("content", "Discover Tuscan Leather aroma oil by Cool Max Scent, a strong Perfumers Choice fragrance with leather, woody, and musky notes, ideal for premium offices.");
     }
     
     // Canonical link handling

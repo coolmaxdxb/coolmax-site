@@ -29,10 +29,10 @@ const ForYouAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "For You Aroma Oil | Soft & Elegant Fragrance | Cool Max Scent";
+    document.title = "For You Aroma Oil | Elegant Perfumers Choice Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Discover For You Aroma Oil (CM-0109-OR). A refined Perfumers Choice fragrance with Yuzu, Lotus Flower, and White Musk notes for everyday elegance.");
+      metaDesc.setAttribute("content", "Discover For You aroma oil by Cool Max Scent, a medium-strength Perfumers Choice fragrance with fruity florals and warm musky notes.");
     }
     
     // Canonical link handling

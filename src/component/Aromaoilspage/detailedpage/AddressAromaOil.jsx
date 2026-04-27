@@ -27,10 +27,10 @@ const AddressAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Address Aroma Oil | Luxury Oriental Fragrance | Cool Max Scent";
+    document.title = "Address Aroma Oil for Premium Spaces | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Experience Address Aroma Oil (CM-0101-OR), a sophisticated oriental fragrance with mango, myrrh, and agarwood notes for premium environments.");
+      metaDesc.setAttribute("content", "Discover Address aroma oil by Cool Max Scent, a medium-strength oriental fragrance with rich oud, amber, and spice notes, ideal for hotels, and offices.");
     }
     
     // Canonical link handling

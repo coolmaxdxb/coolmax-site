@@ -28,10 +28,10 @@ const TajSunsetAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Taj Sunset Aroma Oil | Luxury Signature Fragrance | Cool Max Scent";
+    document.title = "Taj Sunset Aroma Oil | Premium Luxury Signature Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Experience Taj Sunset Aroma Oil (CM-0122-PC), a signature premium fragrance with Blood Orange, Indian Jasmine, and Amberwood notes for iconic luxury spaces.");
+      metaDesc.setAttribute("content", "Discover Taj Sunset aroma oil by Cool Max Scent, a strong Premium Collection fragrance with citrus spice, rich florals, and warm woody notes.");
     }
     
     // Canonical link handling

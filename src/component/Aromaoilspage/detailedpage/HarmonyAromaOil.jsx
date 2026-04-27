@@ -29,10 +29,10 @@ const HarmonyAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Harmony Aroma Oil | Balanced Perfumers Choice | Cool Max Scent";
+    document.title = "Harmony Aroma Oil | Elegant Perfumers Choice Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Discover Harmony Aroma Oil (CM-0107-OR). A balanced Perfumers Choice fragrance with Bergamot, Rose, and Sandalwood notes for everyday elegance and refined spaces.");
+      metaDesc.setAttribute("content", "Discover Harmony aroma oil by Cool Max Scent, a medium-strength Perfumers Choice fragrance with citrus, floral, and woody notes, ideal for premium interiors.");
     }
     
     // Canonical link handling

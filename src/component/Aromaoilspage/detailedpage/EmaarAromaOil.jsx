@@ -29,10 +29,10 @@ const EmaarAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Emaar Aroma Oil | Refined Oriental Fragrance | Cool Max Scent";
+    document.title = "Emaar Aroma Oil | Elegant Oriental Premium Spaces";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Experience Emaar Aroma Oil (CM-0104-OR), a smooth oriental fragrance with Rose, Cedarwood, and Saffron notes, perfect for calm and premium environments.");
+      metaDesc.setAttribute("content", "Discover Emaar aroma oil by Cool Max Scent, a medium-strength oriental fragrance with floral, woody, and musky notes, ideal for offices & residences.");
     }
   }, []);
 

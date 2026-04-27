@@ -29,10 +29,10 @@ const GoldAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Gold Aroma Oil | Luxury Perfumers Choice Scent | Cool Max Scent";
+    document.title = "Gold Aroma Oil | Luxury Perfumers Choice Fragrance";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Experience Gold Aroma Oil (CM-0111-OR). A rich and luxurious fragrance with Mandarin, Patchouli, and Oud notes, perfect for high-end retail and executive lounges.");
+      metaDesc.setAttribute("content", "Discover Gold aroma oil by Cool Max Scent, a strong Perfumers Choice fragrance with citrus, floral, & oud, ideal for luxury offices and premium spaces.");
     }
     
     // Canonical link handling

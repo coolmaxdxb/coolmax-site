@@ -29,10 +29,10 @@ const LotusFlowerAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Lotus Flower Aroma Oil | Elegant Fresh Fragrance | Cool Max Scent";
+    document.title = "Lotus Flower Aroma Oil | Fresh Floral Indoor Spaces";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Experience Lotus Flower Aroma Oil (CM-0121-FH), an elegant fresh fragrance with Mandarin, White Lotus, and Vanilla notes for calm and graceful environments.");
+      metaDesc.setAttribute("content", "Discover Lotus Flower aroma oil by Cool Max Scent, a medium-strength fresh fragrance with floral, fruity, and soft musky notes, ideal for homes & calm spaces.");
     }
     
     // Canonical link handling

@@ -150,6 +150,16 @@ const blogPosts = [
     path: "/blog/hvac-scent-diffuser-system-uae/",
     image: Blog13,
   },
+    {
+    id: 14,
+    title: "Best Aroma Oil Scent Diffuser Guide for Every Room | Cool Max",
+    excerpt: "Find the perfect aroma oil diffuser for your space. Explore premium aroma oils like oud, lavender, white tea, and more to create a relaxing atmosphere. Contact Us Today!",
+    category: "Strategy",
+    date: "April 27, 2026",
+    readTime: "8 min read",
+    path: "/blog/best-essential-aroma-oil-diffuser-for-any-room/",
+    image: Blog13,
+  },
 ];
 
 export default function BlogSection() {

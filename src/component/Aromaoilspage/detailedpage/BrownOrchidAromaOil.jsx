@@ -29,10 +29,10 @@ const BrownOrchidAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Brown Orchid Aroma Oil | Soft Floral Fragrance | Cool Max Scent";
+    document.title = "Brown Orchid Aroma Oil | Perfumers Choice Floral Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Experience Brown Orchid Aroma Oil (CM-0114-OR), an elegant floral fragrance with orange, violet, and cedarwood notes for professional and residential spaces.");
+      metaDesc.setAttribute("content", "Discover Brown Orchid aroma oil by Cool Max Scent, a medium-strength Perfumers Choice fragrance with floral, citrus, and warm woody notes for homes today.");
     }
     
     // Canonical link handling

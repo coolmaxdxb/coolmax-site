@@ -29,10 +29,10 @@ const SplendorAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Splendor Aroma Oil | Vibrant Perfumers Choice Scent | Cool Max Scent";
+    document.title = "Splendor Aroma Oil | Perfumers Choice Luxury Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Experience Splendor Aroma Oil (CM-0116-OR), a vibrant fragrance with Bergamot, Green Apple, and Cedarwood notes for premium and elegant commercial spaces.");
+      metaDesc.setAttribute("content", "Discover Splendor aroma oil by Cool Max Scent, a strong Perfumers Choice fragrance with fresh citrus, floral elegance, & warm woody notes for premium interiors.  ");
     }
     
     // Canonical link handling

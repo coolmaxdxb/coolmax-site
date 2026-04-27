@@ -29,10 +29,10 @@ const SweetOudAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Sweet Oud Aroma Oil | Luxury Oriental Scent | Cool Max Scent";
+    document.title = "Sweet Oud Aroma Oil for Luxury Spaces | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Explore Sweet Oud aroma oil by Cool Max Scent (CM-0105-OR). A strong oriental fragrance with rich oud, praline, and rose notes, ideal for hotels and premium spaces.");
+      metaDesc.setAttribute("content", "Explore Sweet Oud aroma oil by Cool Max Scent, a strong oriental fragrance with rich oud, praline, clove, and rose notes, ideal for hotels and premium spaces.");
     }
     
     // Canonical link handling

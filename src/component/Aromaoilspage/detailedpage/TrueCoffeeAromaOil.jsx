@@ -28,10 +28,10 @@ const TrueCoffeeAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "True Coffee Aroma Oil | Coffee Scent for Cafes | Cool Max Scent";
+    document.title = "True Coffee Aroma Oil | F&B Warm Coffee Fragrance";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Experience True Coffee Aroma Oil (CM-0106-OR). A rich coffee-inspired fragrance with chocolate, honey, and caramel notes, perfect for cafes and dining spaces.");
+      metaDesc.setAttribute("content", "Discover True Coffee aroma oil by Cool Max Scent, a medium-strength food and beverage fragrance with coffee, chocolate, and sweet vanilla caramel notes.");
     }
   }, []);
 

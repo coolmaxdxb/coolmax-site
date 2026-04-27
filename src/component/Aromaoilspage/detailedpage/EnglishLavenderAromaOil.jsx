@@ -28,10 +28,10 @@ const EnglishLavenderAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "English Lavender Aroma Oil | Fresh Herbal Scent | Cool Max Scent";
+    document.title = "English Lavender Aroma Oil | Fresh Relaxing Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Discover English Lavender Aroma Oil (CM-0118-FH). A fresh herbal fragrance with eucalyptus, bergamot, and geranium notes for calm and balanced environments.");
+      metaDesc.setAttribute("content", "Discover English Lavender aroma oil by Cool Max Scent, strong fresh fragrance with eucalyptus, bergamot, and lavender notes for spas and wellness spaces.");
     }
     
     // Canonical link handling

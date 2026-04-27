@@ -29,10 +29,10 @@ const PassionAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Passion Aroma Oil | Bold Perfumers Choice Scent | Cool Max Scent";
+    document.title = "Passion Aroma Oil | Bold Perfumers Choice Fragrance";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Discover Passion Aroma Oil (CM-0110-OR). A powerful and expressive perfumers-style fragrance designed to create a strong, professional atmosphere for elite spaces.");
+      metaDesc.setAttribute("content", "Discover Passion aroma oil by Cool Max Scent, a strong Perfumers Choice fragrance crafted for impactful scent diffusion in offices, and showrooms.");
     }
     
     // Canonical link handling

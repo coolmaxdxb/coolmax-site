@@ -29,10 +29,10 @@ const StoryAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Story Aroma Oil | Refined Perfumers Choice Scent | Cool Max Scent";
+    document.title = "Story Aroma Oil | Perfumers Choice Premium Fragrance";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Experience Story Aroma Oil (CM-0113-OR), a refined fragrance with Citrus Zest, Rosewood, and Sandalwood notes, perfect for elegant business and home environments.");
+      metaDesc.setAttribute("content", "Discover Story aroma oil by Cool Max Scent, a medium-strength Perfumers Choice fragrance with citrus spice, floral warmth, and smooth woody musky notes.");
     }
     
     // Canonical link handling

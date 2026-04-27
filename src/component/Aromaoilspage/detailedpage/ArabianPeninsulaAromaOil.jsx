@@ -28,10 +28,10 @@ const ArabianPeninsulaAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Arabian Peninsula Aroma Oil | Premium Oriental Scent | Cool Max Scent";
+    document.title = "Arabian Peninsula Aroma Oil | Oriental Luxury Fragrance";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Explore Arabian Peninsula Aroma Oil (CM-0102-OR). A powerful oriental fragrance with oud, saffron, and sandalwood for grand commercial spaces.");
+      metaDesc.setAttribute("content", "Discover Arabian Peninsula aroma oil by Cool Max Scent, a strong oriental fragrance with oud, amber, leather, and spice notes, ideal for hotels, & showrooms.");
     }
     
     // Canonical link handling

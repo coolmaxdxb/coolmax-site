@@ -29,10 +29,10 @@ const ArabianBakhourAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Arabian Bakhour Aroma Oil | Traditional Oriental Scent | Cool Max Scent";
+    document.title = "Arabian Bakhour Aroma Oil | Traditional Oriental Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Discover Arabian Bakhour Aroma Oil (CM-0103-OR). A traditional oriental fragrance with jasmine, rose, and saffron notes, perfect for cultural interiors and luxury hotels.");
+      metaDesc.setAttribute("content", "Explore Arabian Bakhour aroma oil by Cool Max Scent, a strong oriental fragrance with floral, spicy & sweet notes, ideal for showrooms, hotels & premium spaces.");
     }
     
     // Canonical link handling

@@ -28,10 +28,10 @@ const LavenderAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Lavender Aroma Oil | Calming Wellness Fragrance | Cool Max Scent";
+    document.title = "Lavender Aroma Oil | Fresh Calming Fragrance";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Experience Lavender Aroma Oil (CM-0117-FH), a clean and calming fresh fragrance with Eucalyptus and Tonka Bean notes for spas, clinics, and wellness spaces.");
+      metaDesc.setAttribute("content", "Discover Lavender aroma oil by Cool Max Scent, a strong fresh fragrance with eucalyptus and lavender notes, ideal for spas, clinics, homes, & wellness spaces.");
     }
     
     // Canonical link handling

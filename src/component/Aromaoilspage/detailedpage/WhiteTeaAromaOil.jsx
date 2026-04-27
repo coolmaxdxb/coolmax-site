@@ -29,10 +29,10 @@ const WhiteTeaAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "White Tea Aroma Oil | Clean & Refreshing Scent | Cool Max Scent";
+    document.title = "White Tea Aroma Oil | Fresh Clean Fragrance Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Experience White Tea Aroma Oil (CM-0119-FH). A clean, refreshing fragrance with Jasmine, Apple, and Thyme notes, perfect for wellness spaces and modern interiors.");
+      metaDesc.setAttribute("content", "Discover White Tea aroma oil by Cool Max Scent, a medium-strength fresh fragrance with floral and citrus notes, ideal for offices and homes wellness");
     }
   }, []);
 

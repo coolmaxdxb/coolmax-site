@@ -29,10 +29,10 @@ const EventAromaOilDetail = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Event Aroma Oil | Bold Perfumers Choice Fragrance | Cool Max Scent";
+    document.title = "Event Aroma Oil | Bold Perfumers Choice Fragrance";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Experience Event Aroma Oil (CM-0108-OR), a bold and professional fragrance with Lavender, Rosemary, and Cedar notes designed for dynamic commercial spaces.");
+      metaDesc.setAttribute("content", "Discover Event aroma oil by Cool Max Scent, a strong Perfumers Choice fragrance with lavender, rosemary, woody, and spicy notes, ideal for events and offices.");
     }
   }, []);
 
