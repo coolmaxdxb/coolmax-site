@@ -158,7 +158,17 @@ const blogPosts = [
     date: "April 27, 2026",
     readTime: "8 min read",
     path: "/blog/best-essential-aroma-oil-diffuser-for-any-room/",
-    image: Blog13,
+    image: Blog1,
+  },
+    {
+    id: 15,
+    title: "Stop Summer Odors Fast with Smart Scent Solutions I Cool Max Scent",
+    excerpt: "Beat summer odors in homes, offices, and malls. Discover diffuser solutions for long-lasting freshness. Contact Cool Max Scent experts today.",
+    category: "Strategy",
+    date: "April 28, 2026",
+    readTime: "8 min read",
+    path: "/blog/summer-odor-control-homes-offices-malls-with-cool-max-scent/",
+    image: Blog2,
   },
 ];
 
