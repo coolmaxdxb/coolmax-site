@@ -18,6 +18,7 @@ import Blog11 from "../asset/blogimg/blog11.webp";
 import Blog12 from "../asset/blogimg/blog12.webp";
 // Reusing blog12 for the 13th post or you can import blog13 if available
 import Blog13 from "../asset/blogimg/blog1.webp"; 
+import Blog16 from "../asset/blogimg/blog16.webp"; 
 
 const blogPosts = [
   {
@@ -169,6 +170,16 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/summer-odor-control-homes-offices-malls-with-cool-max-scent/",
     image: Blog2,
+  },
+    {
+    id: 16,
+    title: "Air Fragrance Diffusers in Dubai Hospitality Industry: How Hotels Create Premium Guest Experiences",
+    excerpt: "Dubai is known for luxury, innovation, and world-class hospitality. From premium hotels and resorts to boutique stays and serviced apartments, every hospitality brand in the city competes to deliver memorable guest experiences.",
+    category: "Strategy",
+    date: "April 28, 2026",
+    readTime: "8 min read",
+    path: "/blog/Air-Fragrance-Diffusers-in-Dubai/",
+    image: Blog16,
   },
 ];
 
