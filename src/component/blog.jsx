@@ -19,6 +19,7 @@ import Blog12 from "../asset/blogimg/blog12.webp";
 // Reusing blog12 for the 13th post or you can import blog13 if available
 import Blog13 from "../asset/blogimg/blog1.webp"; 
 import Blog16 from "../asset/blogimg/blog16.webp"; 
+import Blog17 from "../asset/blogimg/blog16.webp";
 
 const blogPosts = [
   {
@@ -180,6 +181,16 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/Air-Fragrance-Diffusers-in-Dubai/",
     image: Blog16,
+  },
+      {
+    id: 17,
+    title: " Why Floor standing diffusers are ideal for commercial spaces",
+    excerpt: " Discover why Floor-Standing Aroma Diffusers in UAE are ideal for luxury hotels, offices, showrooms, and large commercial spaces with premium scent coverage.",
+    category: "Strategy",
+    date: "April 09, 2026",
+    readTime: "8 min read",
+    path: "/blog/why-floor-standing-diffusers-are-ideal-for-commercial-space/",
+    image: Blog17,
   },
 ];
 
