@@ -21,6 +21,7 @@ import Blog13 from "../asset/blogimg/blog1.webp";
 import Blog16 from "../asset/blogimg/blog16.webp"; 
 import Blog17 from "../asset/blogimg/blog16.webp";
 
+
 const blogPosts = [
   {
     id: 1,
@@ -191,6 +192,16 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/why-floor-standing-diffusers-are-ideal-for-commercial-space/",
     image: Blog17,
+  },
+   {
+    id: 18,
+    title: "Aroma Oil Diffusers in Dubai for Better Mood & Comfort",
+    excerpt: " Discover how Aroma Oil Diffusers in Dubai improve mood, comfort, and indoor atmosphere in homes, offices, hotels, and commercial spaces across UAE.",
+    category: "Strategy",
+    date: "April 09, 2026",
+    readTime: "8 min read",
+    path: "/blog/aroma-oil-diffusers-dubai-for-better-mode-and-comfort/",
+    image: Blog16,
   },
 ];
 
