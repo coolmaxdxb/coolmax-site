@@ -44,7 +44,7 @@ export default function AromaMoodComfortBlog() {
       canonical.setAttribute('rel', 'canonical');
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute('href', 'https://www.coolmaxscent.com/blog/air-diffuser-machine-in-dubai-retail-and-hospitality-spaces');
+    canonical.setAttribute('href', 'https://www.coolmaxscent.com/blog/air-diffuser-machine-in-dubai-retail-and-hospitality-spaces/');
   }, []);
 
   return (

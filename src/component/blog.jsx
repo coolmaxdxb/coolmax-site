@@ -17,9 +17,12 @@ import Blog10 from "../asset/blogimg/blog10.webp";
 import Blog11 from "../asset/blogimg/blog11.webp";
 import Blog12 from "../asset/blogimg/blog12.webp";
 // Reusing blog12 for the 13th post or you can import blog13 if available
-import Blog13 from "../asset/blogimg/blog1.webp"; 
+import Blog13 from "../asset/blogimg/blog13.webp"; 
 import Blog16 from "../asset/blogimg/blog16.webp"; 
-import Blog17 from "../asset/blogimg/blog16.webp";
+import Blog17 from "../asset/blogimg/blog17.webp";
+import Blog15 from "../asset/blogimg/blog15.webp";
+import Blog18 from "../asset/blogimg/blog18.webp";
+import Blog19 from "../asset/blogimg/blog19.webp";
 
 
 const blogPosts = [
@@ -156,7 +159,7 @@ const blogPosts = [
     date: "April 28, 2026",
     readTime: "8 min read",
     path: "/blog/summer-odor-control-homes-offices-malls-with-cool-max-scent/",
-    image: Blog2,
+    image: Blog15,
   },
   {
     id: 16,
@@ -183,7 +186,7 @@ const blogPosts = [
     date: "April 09, 2026",
     readTime: "8 min read",
     path: "/blog/aroma-oil-diffusers-dubai-for-better-mode-and-comfort/",
-    image: Blog16,
+    image: Blog18,
   },
   {
     id: 19,
@@ -192,7 +195,7 @@ const blogPosts = [
     date: "April 09, 2026",
     readTime: "8 min read",
     path: "/blog/air-diffuser-machine-in-dubai-retail-and-hospitality-spaces/",
-    image: Blog16,
+    image: Blog19,
   },
 ];
 
