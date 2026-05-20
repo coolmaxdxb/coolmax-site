@@ -23,6 +23,7 @@ import Blog17 from "../asset/blogimg/blog17.webp";
 import Blog15 from "../asset/blogimg/blog15.webp";
 import Blog18 from "../asset/blogimg/blog18.webp";
 import Blog19 from "../asset/blogimg/blog19.webp";
+import Blog20 from "../asset/blogimg/blog20.webp";
 
 
 const blogPosts = [
@@ -204,7 +205,7 @@ const blogPosts = [
     
     readTime: "8 min read",
     path: "/blog/aroma-diffuser-solutions-in-dubai-for-shopping-malls/",
-    image: Blog19,
+    image: Blog20,
   },
 ];
 
