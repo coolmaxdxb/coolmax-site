@@ -24,6 +24,7 @@ import Blog15 from "../asset/blogimg/blog15.webp";
 import Blog18 from "../asset/blogimg/blog18.webp";
 import Blog19 from "../asset/blogimg/blog19.webp";
 import Blog20 from "../asset/blogimg/blog20.webp";
+import Blog21 from "../asset/blogimg/blog21.webp";
 
 
 const blogPosts = [
@@ -206,6 +207,15 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/aroma-diffuser-solutions-in-dubai-for-shopping-malls/",
     image: Blog20,
+  },
+   {
+    id: 21,
+    title: " Aroma Diffuser Solutions in Dubai for Modern Office Workspaces",
+    excerpt: "Discover how modern offices in Dubai use aroma diffuser solutions, HVAC scent systems, & commercial aroma diffusers to improve workplace atmosphere & employee experience.",
+    
+    readTime: "8 min read",
+    path: "/blog/aroma-diffuser-solutions-in-dubai-for-offices/",
+    image: Blog21,
   },
 ];
 

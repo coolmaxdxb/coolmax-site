@@ -9,12 +9,10 @@ import {
   SparklesIcon,
   AdjustmentsHorizontalIcon,
   FaceSmileIcon,
-
   BuildingOffice2Icon,
   CloudIcon,
   HeartIcon,
   UserGroupIcon,
- 
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORTS ---
@@ -46,7 +44,7 @@ export default function MallAromaSolutionsBlog() {
       canonical.setAttribute('rel', 'canonical');
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute('href', 'https://www.coolmaxscent.com/blog/aroma-diffuser-solutions-in-dubai-for-shopping-malls');
+    canonical.setAttribute('href', 'https://www.coolmaxscent.com/blog/aroma-diffuser-solutions-in-dubai-for-shopping-malls/');
   }, []);
 
   return (
@@ -83,21 +81,22 @@ export default function MallAromaSolutionsBlog() {
           <div className="grid lg:grid-cols-12 gap-16">
             <div className="lg:col-span-8 space-y-8 text-lg text-slate-600 font-light leading-relaxed">
               <p className="text-justify">
-                Today, modern malls are investing heavily in <strong><Link to="/" className="text-blue-600 font-medium underline">Aroma diffuser solutions in Dubai</Link></strong> to improve customer comfort, create brand memory, and enhance the overall shopping atmosphere. From entrances and luxury boutiques to food courts and VIP lounges, every zone inside a mall requires a different scenting strategy.
+                Today, modern malls are investing heavily in <strong><Link to="/" className="text-blue-600 font-medium underline">Aroma diffuser solutions in Dubai</Link></strong> to improve customer comfort, create brand memory, and enhance the overall shopping atmosphere. From entrances and luxury boutiques to food courts and VIP lounges, every zone inside a mall requires a different scenting strategy. This is where professional <strong>mall fragrance solutions</strong> and advanced scent diffusion technology play a major role.
               </p>
 
               {/* WHY IT MATTERS (H2) */}
               <motion.div {...fadeInUp} className="py-12 border-t border-slate-100">
                 <h2 className="text-3xl md:text-4xl font-serif text-slate-900 mb-6 text-left">Why Aroma Diffuser Solutions Matter in Modern Shopping Malls</h2>
                 <p className="mb-8 text-justify">
-                  Modern shopping malls are designed to deliver experiences, not just shopping. A properly planned fragrance strategy helps malls improve customer mood, increase visitor engagement, and enhance luxury perception.
+                  Modern shopping malls are designed to deliver experiences, not just shopping. Customers today expect comfortable indoor environments and a premium ambiance. Because of this, malls across the UAE are now adopting professional <strong>scent marketing for malls</strong> using customized aroma diffuser systems.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4">
                    {[
                      "Comfortable indoor environments",
                      "Premium ambiance & Fresh spaces",
                      "Support for brand identity",
-                     "Increased visitor engagement"
+                     "Increased visitor engagement",
+                     "Memorable shopping experiences"
                    ].map((item, i) => (
                      <div key={i} className="flex gap-3 items-center p-4 bg-slate-50 rounded-xl border border-slate-100">
                         <CheckCircleIcon className="w-5 h-5 text-blue-600" />
@@ -110,40 +109,82 @@ export default function MallAromaSolutionsBlog() {
               {/* 1. HVAC SECTIONS (H2) */}
               <motion.div {...fadeInUp} className="space-y-6">
                 <h2 className="text-3xl font-serif text-slate-900 text-left">1. Mall Entrance & Central Atrium</h2>
+                <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">Best Solution: <Link to="/" className="underline">Large Area & HVAC Aroma Diffusers</Link></p>
                 <p className="text-justify">
-                  The entrance creates the first impression. For these wide open areas, malls use professional <strong><Link to="/" className="text-blue-600 font-medium underline">Large Area & HVAC Aroma Diffuser</Link></strong> systems connected directly to existing air systems. Recommended products include the <strong><Link to="/" className="text-blue-600 font-medium">AeroBlack Pro Diffuser</Link></strong> and <strong><Link to="/" className="text-blue-600 font-medium">AirPulse 150</Link></strong>.
+                  The entrance creates the first impression. For these wide open areas, malls use professional <strong>Large area aroma diffuser</strong> systems connected directly to HVAC systems. These advanced <strong><Link to="/" className="text-blue-600 font-medium underline">HVAC aroma diffuser</Link></strong> solutions help distribute fragrance evenly throughout massive spaces.
                 </p>
+                <div className="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+                  <h4 className="font-bold text-slate-900 mb-2">Recommended Products:</h4>
+                  <ul className="space-y-2 text-slate-700">
+                    <li>• <Link to="/" className="text-blue-600 font-semibold underline">AeroBlack Pro Diffuser</Link></li>
+                    <li>• <Link to="/" className="text-blue-600 font-semibold underline">AirPulse 150</Link></li>
+                  </ul>
+                </div>
               </motion.div>
 
               {/* 2. COMMERCIAL SECTIONS (H2) */}
               <motion.div {...fadeInUp} className="py-12 border-t border-slate-100">
                 <h2 className="text-3xl font-serif text-slate-900 text-left">2. Luxury Brand Stores & Premium Retail Outlets</h2>
+                <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">Best Solution: <Link to="/" className="underline">Commercial Aroma Diffusers</Link></p>
                 <p className="text-justify">
-                  Luxury stores require targeted scent control to influence buying behavior. This is where <strong><Link to="/" className="text-blue-600 font-medium underline">Commercial Aroma Diffusers</Link></strong> like the <strong><Link to="/" className="text-blue-600 font-medium">AeroBlack Med Diffuser</Link></strong> or <strong><Link to="/" className="text-blue-600 font-medium">MistBox X Diffuser</Link></strong> become essential for improved customer comfort.
+                  Luxury stores require targeted scent control to influence buying behavior. Professional <strong><Link to="/" className="text-blue-600 font-medium underline">Commercial aroma diffusers</Link></strong> create subtle yet noticeable scent diffusion that enhances luxury appeal and brand memory.
                 </p>
+                <div className="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+                  <h4 className="font-bold text-slate-900 mb-2">Recommended Products:</h4>
+                  <ul className="space-y-2 text-slate-700">
+                    <li>• <Link to="/" className="text-blue-600 font-semibold underline">AeroBlack Med Diffuser</Link></li>
+                    <li>• <Link to="/" className="text-blue-600 font-semibold underline">MistBox X Diffuser</Link></li>
+                  </ul>
+                </div>
               </motion.div>
 
               {/* 3. WALL MOUNTED (H2) */}
-              <motion.div {...fadeInUp} className="space-y-6">
+              <motion.div {...fadeInUp} className="space-y-6 py-12 border-t border-slate-100">
                 <h2 className="text-3xl font-serif text-slate-900 text-left">3. Food Courts & Dining Zones</h2>
+                <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">Best Solution: <Link to="/" className="underline">Wall Mounted & Ceiling Aroma Diffusers</Link></p>
                 <p className="text-justify">
-                  Dining zones need to manage multiple food aromas. To maintain freshness, malls install <strong><Link to="/" className="text-blue-600 font-medium underline">Wall Mounted & Ceiling Aroma Diffusers</Link></strong>. High-performance units like the <strong><Link to="/" className="text-blue-600 font-medium">CeilAir Pro Diffuser</Link></strong> and <strong><Link to="/" className="text-blue-600 font-medium">AeroMax Pro</Link></strong> manage odor balance efficiently.
+                  Dining zones need to manage multiple food aromas. To maintain freshness, malls install <strong>Wall mounted aroma diffuser</strong> systems that manage odor balance without occupying floor space.
                 </p>
+                <div className="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+                  <h4 className="font-bold text-slate-900 mb-2">Recommended Products:</h4>
+                  <ul className="space-y-2 text-slate-700">
+                    <li>• <Link to="/" className="text-blue-600 font-semibold underline">CeilAir Pro Diffuser</Link></li>
+                    <li>• <Link to="/" className="text-blue-600 font-semibold underline">AeroMax Pro</Link></li>
+                  </ul>
+                </div>
               </motion.div>
 
               {/* 4. DESKTOP (H2) */}
               <motion.div {...fadeInUp} className="py-12 border-t border-slate-100">
                 <h2 className="text-3xl font-serif text-slate-900 text-left">4. Small Kiosks & Customer Service Desks</h2>
+                <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">Best Solution: <Link to="/" className="underline">Desktop & Small Space Aroma Diffusers</Link></p>
                 <p className="text-justify">
-                  Small kiosks and concierge desks need compact fragrance solutions. <strong><Link to="/" className="text-blue-600 font-medium underline">Desktop & Small Space Aroma Diffusers</Link></strong> like the <strong><Link to="/" className="text-blue-600 font-medium">AromaDesk</Link></strong> are perfect for these enclosed areas.
+                  Compact fragrance solutions are ideal for counters. The <strong><Link to="/" className="text-blue-600 font-semibold underline">AromaDesk</Link></strong> provides controlled output suitable for small enclosed environments.
                 </p>
               </motion.div>
 
               {/* 5. FLOOR STANDING (H2) */}
-              <motion.div {...fadeInUp} className="space-y-6">
+              <motion.div {...fadeInUp} className="space-y-6 py-12 border-t border-slate-100">
                 <h2 className="text-3xl font-serif text-slate-900 text-left">5. Mall Corridors & Waiting Lounges</h2>
+                <p className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-1">Best Solution: <Link to="/" className="underline">Floor-Standing Aroma Diffusers</Link></p>
                 <p className="text-justify">
-                  Transition spaces require aesthetics and performance. <strong><Link to="/" className="text-blue-600 font-medium underline">Floor-Standing Aroma Diffusers</Link></strong> such as the <strong><Link to="/" className="text-blue-600 font-medium">NanoPillar Diffuser</Link></strong>, <strong><Link to="/" className="text-blue-600 font-medium">AeroPillar Diffuser</Link></strong>, and <strong><Link to="/" className="text-blue-600 font-medium">Titan Diffuser</Link></strong> provide effective coverage and luxury appeal.
+                  Professional <strong><Link to="/" className="text-blue-600 font-medium underline">Floor-Standing Aroma Diffusers</Link></strong> provide aesthetics and performance. These units can be positioned without complex installation to cover open transition spaces.
+                </p>
+                <div className="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+                  <h4 className="font-bold text-slate-900 mb-2">Recommended Products:</h4>
+                  <ul className="space-y-2 text-slate-700">
+                    <li>• <Link to="/" className="text-blue-600 font-semibold underline">NanoPillar Diffuser</Link></li>
+                    <li>• <Link to="/" className="text-blue-600 font-semibold underline">AeroPillar Diffuser</Link></li>
+                    <li>• <Link to="/" className="text-blue-600 font-semibold underline">Titan Diffuser</Link></li>
+                  </ul>
+                </div>
+              </motion.div>
+
+              {/* 6. VIP LOUNGES (H2) */}
+              <motion.div {...fadeInUp} className="py-12 border-t border-slate-100">
+                <h2 className="text-3xl font-serif text-slate-900 text-left">6. VIP Lounges & Premium Experience Areas</h2>
+                <p className="text-justify">
+                  VIP zones require a layered approach, combining <strong>Commercial aroma diffusers</strong> for control and <strong>Floor-standing aroma diffusers</strong> for broader ambient coverage, creating a signature premium atmosphere.
                 </p>
               </motion.div>
 
@@ -154,7 +195,7 @@ export default function MallAromaSolutionsBlog() {
               <div className="bg-slate-900 rounded-[2.5rem] p-8 text-white shadow-xl">
                 <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-blue-400">Strategic Choice</h4>
                 <p className="text-sm text-slate-300 mb-8 text-left">
-                  Malls today are adopting complete <strong><Link to="/" className="text-blue-400">Mall fragrance solutions</Link></strong> to create consistent sensory experiences across multiple floors.
+                  Malls today are adopting complete <strong><Link to="/" className="text-blue-400">Mall fragrance solutions</Link></strong> to create consistent sensory experiences.
                 </p>
                 <div className="space-y-4">
                   <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 bg-blue-600 text-white w-full py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white hover:text-blue-600 transition-all text-center">
@@ -166,17 +207,17 @@ export default function MallAromaSolutionsBlog() {
           </div>
         </section>
 
-        {/* ================= BENEFITS SECTION ================= */}
+        {/* ================= STRATEGIC PLANNING SECTION ================= */}
         <section className="py-24 bg-slate-50 px-6 lg:px-16 text-left">
           <div className="max-w-[1400px] mx-auto">
             <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-16 tracking-tighter text-left">Benefits of Strategic <br/><span className="text-blue-600 italic font-light">Mall Fragrance Solutions</span></h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {[
-                  { t: "Better Customer Experience", d: "Creates a more relaxing and enjoyable environment for long shopping trips.", i: <FaceSmileIcon /> },
-                  { t: "Stronger Brand Memory", d: "Customers remember spaces through specific signature scent associations.", i: <HeartIcon /> },
+                  { t: "Better Experience", d: "Creates a more relaxing and enjoyable environment for visitors.", i: <FaceSmileIcon /> },
+                  { t: "Stronger Brand Memory", d: "Customers remember spaces through unique signature scent association.", i: <HeartIcon /> },
                   { t: "Increased Engagement", d: "Pleasant environments encourage longer visits and higher dwell times.", i: <AdjustmentsHorizontalIcon /> },
                   { t: "Enhanced Luxury Perception", d: "Premium fragrance improves the overall quality perception of the mall.", i: <SparklesIcon /> },
-                  { t: "Strategic Scent Marketing", d: "Professional scenting strengthens commercial branding across large areas.", i: <UserGroupIcon /> },
+                  { t: "Strategic Branding", d: "Professional scenting strengthens commercial branding across large areas.", i: <UserGroupIcon /> },
                   { t: "Optimized Atmosphere", d: "Different zones get precisely the right scent strength they require.", i: <CloudIcon /> }
                 ].map((item, i) => (
                   <motion.div key={i} {...fadeInUp} className="bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100">
@@ -189,16 +230,16 @@ export default function MallAromaSolutionsBlog() {
           </div>
         </section>
 
-        {/* ================= CONCLUSION (H2) ================= */}
+        {/* ================= CONCLUSION ================= */}
         <section className="py-24 px-6 lg:px-16 border-t border-slate-100 text-left">
            <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-serif text-slate-900 mb-6 uppercase text-left">Conclusion</h2>
               <p className="text-lg text-slate-600 font-light leading-relaxed mb-8 text-justify">
-                Every section inside a modern shopping mall serves a different purpose. From powerful <strong>HVAC aroma diffuser</strong> systems in atriums to elegant units in lounges, professional fragrance planning helps malls create immersive customer experiences. Successful malls are no longer relying on basic air fresheners. They are investing in complete Mall fragrance solutions designed specifically for high-traffic environments. <strong>Cool Max</strong> helps businesses choose the right systems based on space size, customer flow, and brand goals to transform how customers experience a space.
+                Every section inside a modern shopping mall serves a different purpose, and each space requires a different scenting solution. From powerful <strong>HVAC aroma diffuser</strong> systems in central atriums to elegant <strong>floor-standing aroma diffuser</strong> units in lounges, professional fragrance planning helps malls create immersive customer experiences. Successful malls are no longer relying on basic air fresheners; they are investing in complete <strong>Mall fragrance solutions</strong> designed specifically for commercial environments. Cool Max helps businesses choose the right systems to transform how customers experience a space.
               </p>
               <div className="relative">
                 <div className="bg-slate-100 rounded-[4rem] p-12 overflow-hidden shadow-inner text-center">
-                  <img src={BlogHeroImg} alt="Mall Scent Experience" className="w-full h-auto rounded-[2rem] shadow-2xl mx-auto max-w-2xl" />
+                  <img src={BlogHeroImg} alt="Dubai Mall Aroma Experience" className="w-full h-auto rounded-[2rem] shadow-2xl mx-auto max-w-2xl" />
                 </div>
               </div>
            </div>
@@ -212,7 +253,7 @@ export default function MallAromaSolutionsBlog() {
               Plan Your Mall <br />Scent Strategy
             </h2>
             <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto font-light leading-relaxed relative z-10 text-center">
-              Transform your commercial environment with advanced scent diffusion from Cool Max Scent.
+              Upgrade your commercial environment with advanced scent diffusion from Cool Max Scent.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10">
               <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-12 py-6 bg-white text-blue-600 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all shadow-xl flex items-center justify-center gap-3">
