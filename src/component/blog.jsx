@@ -25,8 +25,9 @@ import Blog18 from "../asset/blogimg/blog18.webp";
 import Blog19 from "../asset/blogimg/blog19.webp";
 import Blog20 from "../asset/blogimg/blog20.webp";
 import Blog21 from "../asset/blogimg/blog21.webp";
-
-
+import Blog22 from "../asset/blogimg/blog22.webp";
+import Blog23 from "../asset/blogimg/blog23.webp";
+import Blog24 from "../asset/blogimg/blog24.webp";
 const blogPosts = [
   {
     id: 1,
@@ -217,6 +218,46 @@ const blogPosts = [
     path: "/blog/aroma-diffuser-solutions-in-dubai-for-offices/",
     image: Blog21,
   },
+   {
+    id: 22,
+    title: " Small Space Scent Diffuser Guide | Choose the Best One for Your Home or Office",
+    excerpt: "Discover how to choose the best scent diffuser for small spaces. Learn tips on selecting the right scent diffuser machine and aroma diffuser machine UAE.",
+    
+    readTime: "8 min read",
+    path: "/blog/small-space-scent-diffuser-guide/",
+    image: Blog22,
+  },
+    {
+    id: 23,
+    title: " Gym Scent Diffusers in Dubai | Improve Gym Ambience ",
+    excerpt: "Improve gym ambience and customer satisfaction with professional scent diffusers and air freshener machines for gyms in Dubai.",
+    
+    readTime: "8 min read",
+    path: "/blog/improve-gym-ambience-scent-diffusers-dubai/",
+    image: Blog23,
+  },
+    {
+    id: 24,
+    title: "Aerosol Spray Dispenser vs Automatic Scent Diffuser | UAE & Qatar",
+    excerpt: "Compare aerosol spray dispensers vs automatic scent diffusers to find the best long-lasting fragrance solution for homes, offices, hotels, and commercial spaces across UAE and Qatar. ",
+    
+    readTime: "8 min read",
+    path: "/blog/uae-qatar-aerosol-spray-dispenser-vs-automatic-scent-diffuser/",
+    image: Blog24,
+  },
+   {
+    id: 25,
+    title: "Dubai Hotel Scent Secrets | Luxury Home Fragrance UAE",
+    excerpt: "Learn how UAE hotels create unforgettable scent experiences and transform your home or business with premium fragrance solutions from Cool Max Scent.  ",
+    
+    readTime: "8 min read",
+    path: "/blog/dubai-hotel-scent-marketing-home-fragrance-uae/",
+    image: Blog21,
+  },
+
+  
+
+
 ];
 
 export default function BlogSection() {
