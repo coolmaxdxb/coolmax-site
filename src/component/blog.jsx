@@ -254,8 +254,16 @@ const blogPosts = [
     path: "/blog/dubai-hotel-scent-marketing-home-fragrance-uae/",
     image: Blog21,
   },
+   {
+    id: 26,
+    title: "Cool Max Scent Diffusers for Dubai Supermarket Stores ",
+    excerpt: " Transform your supermarket atmosphere with premium scent diffusers in Dubai that improve customer experience, boost engagement, and create fresh shopping environments. Contact Us Today!",
+    
+    readTime: "8 min read",
+    path: "/blog/supermarkets-dubai-scent-diffusers-shopping-experience/",
+    image: Blog10,
+  },
 
-  
 
 
 ];
