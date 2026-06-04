@@ -28,6 +28,8 @@ import Blog21 from "../asset/blogimg/blog21.webp";
 import Blog22 from "../asset/blogimg/blog22.webp";
 import Blog23 from "../asset/blogimg/blog23.webp";
 import Blog24 from "../asset/blogimg/blog24.webp";
+import Blog27 from "../asset/blogimg/blog27.webp";
+
 const blogPosts = [
   {
     id: 1,
@@ -263,6 +265,16 @@ const blogPosts = [
     path: "/blog/supermarkets-dubai-scent-diffusers-shopping-experience/",
     image: Blog10,
   },
+   {
+    id: 27,
+    title: "How to Use Aroma Diffusers Effectively | coolmax",
+    excerpt: "Learn how to use aroma diffuser machines in UAE effectively for homes, offices, hotels, & commercial spaces. Discover expert tips for better fragrance coverage.",
+    
+    readTime: "8 min read",
+    path: "/blog/how-to-use-aroma-diffusers-effectively/",
+    image: Blog27,
+  },
+    
 
 
 

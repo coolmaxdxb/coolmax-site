@@ -142,6 +142,7 @@ const Blog17 = lazy(() => import("../src/component/blogs/blog17"));
   const Blog24 = lazy(() => import("../src/component/blogs/blog24"));
   const Blog25 = lazy(() => import("../src/component/blogs/blog25"));
   const Blog26 = lazy(() => import("../src/component/blogs/blog26"));
+    const Blog27 = lazy(() => import("../src/component/blogs/blog27"));
 // --- HELPERS ---
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -325,6 +326,7 @@ function App() {
                          <Route path="/blog/uae-qatar-aerosol-spray-dispenser-vs-automatic-scent-diffuser/" element={<Blog24 />} />
                             <Route path="/blog/dubai-hotel-scent-marketing-home-fragrance-uae/" element={<Blog25 />} />
                                <Route path="/blog/supermarkets-dubai-scent-diffusers-shopping-experience/" element={<Blog26 />} />
+                                  <Route path="/blog/how-to-use-aroma-diffusers-effectively/" element={<Blog27 />} />
 
         </Routes>
       </Suspense>
