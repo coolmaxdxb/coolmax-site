@@ -6,11 +6,7 @@ import {
   ArrowRightIcon,
   CheckCircleIcon,
   WrenchScrewdriverIcon,
-  ClockIcon,
-  BeakerIcon,
-  ExclamationTriangleIcon,
-  AdjustmentsHorizontalIcon
-} from "@heroicons/react/24/outline";
+  } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORTS ---
 import BlogHeroImg from "../../asset/blogimg/blog30.webp"; 
