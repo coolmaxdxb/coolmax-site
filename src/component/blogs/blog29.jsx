@@ -17,7 +17,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORTS ---
-import BlogHeroImg from "../../asset/blogimg/CMblog29.webp";
+import BlogHeroImg from "../../asset/blogimg/blog29.webp";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },

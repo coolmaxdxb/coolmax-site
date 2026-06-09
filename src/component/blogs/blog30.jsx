@@ -13,7 +13,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 // --- ASSET IMPORTS ---
-import BlogHeroImg from "../../asset/blogimg/CMblog30.webp"; 
+import BlogHeroImg from "../../asset/blogimg/blog30.webp"; 
 
 export default function DiffuserMaintenanceBlog() {
   const whatsappNumber = "971509282702";
