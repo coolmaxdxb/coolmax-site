@@ -30,6 +30,8 @@ import Blog23 from "../asset/blogimg/blog23.webp";
 import Blog24 from "../asset/blogimg/blog24.webp";
 import Blog27 from "../asset/blogimg/blog27.webp";
 import Blog28 from "../asset/blogimg/blog28.webp";
+import Blog29 from "../asset/blogimg/blog29.webp";
+import Blog30 from "../asset/blogimg/blog30.webp";
 
 const blogPosts = [
   {
