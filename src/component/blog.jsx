@@ -29,6 +29,7 @@ import Blog22 from "../asset/blogimg/blog22.webp";
 import Blog23 from "../asset/blogimg/blog23.webp";
 import Blog24 from "../asset/blogimg/blog24.webp";
 import Blog27 from "../asset/blogimg/blog27.webp";
+import Blog28 from "../asset/blogimg/blog28.webp";
 
 const blogPosts = [
   {
@@ -274,7 +275,15 @@ const blogPosts = [
     path: "/blog/how-to-use-aroma-diffusers-effectively/",
     image: Blog27,
   },
+       {
+    id: 28,
+    title: "Premium Essential Oils for Diffusers in Dubai | CoolMax",
+    excerpt: "Upgrade your environment with the best essential oils for diffusers in Dubai. Discover premium scents from Cool Max Scent. Contact Us Today!",
     
+    readTime: "8 min read",
+    path: "/blog/premium-essential-oils-for-diffusers-dubai/",
+    image: Blog28,
+  },
 
 
 
