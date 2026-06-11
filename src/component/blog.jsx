@@ -29,6 +29,9 @@ import Blog22 from "../asset/blogimg/blog22.webp";
 import Blog23 from "../asset/blogimg/blog23.webp";
 import Blog24 from "../asset/blogimg/blog24.webp";
 import Blog27 from "../asset/blogimg/blog27.webp";
+import Blog28 from "../asset/blogimg/blog28.webp";
+import Blog29 from "../asset/blogimg/blog29.webp";
+import Blog30 from "../asset/blogimg/blog30.webp";
 
 const blogPosts = [
   {
@@ -285,11 +288,40 @@ const blogPosts = [
     image: Blog27,
 
   },
+   {
+    id: 28,
+    title: "Premium Essential Oils for Diffusers in Dubai | CoolMax",
+    excerpt: "Upgrade your environment with the best essential oils for diffusers in Dubai. Discover premium scents from Cool Max Scent. Contact Us Today!",
     
+<<<<<<< HEAD
     
 
 
 
+=======
+    readTime: "8 min read",
+    path: "/blog/premium-essential-oils-for-diffusers-dubai/",
+    image: Blog28,
+  },
+   {
+    id: 29,
+    title: "10 Best Summer Fragrance Oils for Dubai Diffusers | CoolMax",
+    excerpt: "Looking for the perfect summer scent? Discover the 10 best fragrance oils for diffusers in Dubai, with fresh, long-lasting options for UAE spaces. Contact Us Today!",
+    
+    readTime: "8 min read",
+    path: "/blog/best-summer-fragrance-oils-for-diffusers-dubai/",
+    image: Blog29,
+  },
+   {
+    id: 30,
+    title: "Scent Aroma Oil Diffusers for Clinics & Wellness Centers | CoolMax",
+    excerpt: "Learn how aroma oil diffusers help clinics and wellness centers create calming environments, improve patient comfort, and enhance visitor experiences. Contact Us Today!",
+    
+    readTime: "8 min read",
+    path: "/blog/aroma-oil-diffusers-for-clinics-and-wellness-centers/",
+    image: Blog30,
+  },
+>>>>>>> 9f0faa4b04c3b7f937451e2ad324c637d2eb695f
 
 ];
 
