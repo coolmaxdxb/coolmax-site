@@ -273,8 +273,21 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/how-to-use-aroma-diffusers-effectively/",
     image: Blog27,
+
+  },
+    {
+    id: 28,
+    title: "Top 10 Aroma Diffusers in UAE for Commercial Spaces",
+    excerpt: "Discover the best Aroma Diffuser Machines in UAE for hotels, offices, malls, and retail spaces. Explore premium scenting solutions from CoolMaxScent.",
+    
+    readTime: "8 min read",
+    path: "/blog/10-best-aroma-diffuser-machines-in-uae/",
+    image: Blog27,
+
   },
     
+    
+
 
 
 
