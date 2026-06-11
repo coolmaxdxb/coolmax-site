@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom"; 
 import { ArrowRightIcon, CalendarDaysIcon, ClockIcon} from "@heroicons/react/24/outline";
 
@@ -285,24 +284,10 @@ const blogPosts = [
     
     readTime: "8 min read",
     path: "/blog/10-best-aroma-diffuser-machines-in-uae/",
-    image: Blog27,
-
-  },
-   {
-    id: 28,
-    title: "Premium Essential Oils for Diffusers in Dubai | CoolMax",
-    excerpt: "Upgrade your environment with the best essential oils for diffusers in Dubai. Discover premium scents from Cool Max Scent. Contact Us Today!",
-    
-<<<<<<< HEAD
-    
-
-
-
-=======
-    readTime: "8 min read",
-    path: "/blog/premium-essential-oils-for-diffusers-dubai/",
     image: Blog28,
+
   },
+ 
    {
     id: 29,
     title: "10 Best Summer Fragrance Oils for Dubai Diffusers | CoolMax",
@@ -321,7 +306,6 @@ const blogPosts = [
     path: "/blog/aroma-oil-diffusers-for-clinics-and-wellness-centers/",
     image: Blog30,
   },
->>>>>>> 9f0faa4b04c3b7f937451e2ad324c637d2eb695f
 
 ];
 
@@ -341,13 +325,9 @@ export default function BlogSection() {
         {/* ================= ARTICLES GRID SECTION ================= */}
         <section id="articles" className="py-24 border-t border-slate-100">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
-            {blogPosts.map((post, index) => (
-              <motion.article 
+            {blogPosts.map((post) => (
+              <article 
                 key={post.id} 
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
                 className="group relative flex flex-col h-full bg-white border border-slate-100 rounded-none overflow-hidden hover:border-blue-200 hover:shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)] transition-all duration-500 max-w-md w-full"
               >
                 {/* Image Container - Adjusted to aspect-video and changed from contain to cover to eliminate black bars */}
@@ -393,21 +373,21 @@ export default function BlogSection() {
                     </Link>
                   </div>
                 </div>
-              </motion.article>
+              </article>
             ))}
           </div>
         </section>
 
         {/* ================= FOOTER CTA ================= */}
         <section className="py-32 text-center bg-slate-50 rounded-none mb-20 border border-slate-200 shadow-sm">
-          <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-4xl mx-auto px-6">
+          <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-5xl md:text-7xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-center">
               Stay Informed on <br /> <span className="italic text-blue-600 font-light">Scent Excellence.</span>
             </h2>
             <p className="text-xl text-slate-500 mb-12 leading-relaxed font-light max-w-2xl mx-auto text-center">
               Whether you are looking for a scent machine for home or a full-scale machine for business, our blog provides the knowledge you need.
             </p>
-          </motion.div>
+          </div>
         </section>
 
       </div>

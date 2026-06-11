@@ -142,14 +142,12 @@ const Blog17 = lazy(() => import("../src/component/blogs/blog17"));
   const Blog24 = lazy(() => import("../src/component/blogs/blog24"));
   const Blog25 = lazy(() => import("../src/component/blogs/blog25"));
   const Blog26 = lazy(() => import("../src/component/blogs/blog26"));
-    const Blog27 = lazy(() => import("../src/component/blogs/blog27"));
-<<<<<<< HEAD
-     const Blog28 = lazy(() => import("../src/component/blogs/blog28"));
-=======
-    const Blog28 = lazy(() => import("../src/component/blogs/blog28"));
+  const Blog27 = lazy(() => import("../src/component/blogs/blog27"));
+  const Blog28 = lazy(() => import("../src/component/blogs/blog28"));
+
     const Blog29 = lazy(() => import("../src/component/blogs/blog29"));
     const Blog30 = lazy(() => import("../src/component/blogs/blog30"));
->>>>>>> 9f0faa4b04c3b7f937451e2ad324c637d2eb695f
+
 // --- HELPERS ---
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -334,13 +332,11 @@ function App() {
                             <Route path="/blog/dubai-hotel-scent-marketing-home-fragrance-uae/" element={<Blog25 />} />
                                <Route path="/blog/supermarkets-dubai-scent-diffusers-shopping-experience/" element={<Blog26 />} />
                                   <Route path="/blog/how-to-use-aroma-diffusers-effectively/" element={<Blog27 />} />
-<<<<<<< HEAD
                                    <Route path="/blog/10-best-aroma-diffuser-machines-in-uae/" element={<Blog28 />} />
-=======
                                   <Route path="/blog/premium-essential-oils-for-diffusers-dubai/" element={<Blog28 />} />
                                   <Route path="/blog/best-summer-fragrance-oils-for-diffusers-dubai/" element={<Blog29 />} />
                                   <Route path="/blog/aroma-oil-diffusers-for-clinics-and-wellness-centers/" element={<Blog30 />} />
->>>>>>> 9f0faa4b04c3b7f937451e2ad324c637d2eb695f
+
 
         </Routes>
       </Suspense>
