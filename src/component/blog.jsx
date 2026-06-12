@@ -31,6 +31,8 @@ import Blog27 from "../asset/blogimg/blog27.webp";
 import Blog28 from "../asset/blogimg/blog28.webp";
 import Blog29 from "../asset/blogimg/blog29.webp";
 import Blog30 from "../asset/blogimg/blog30.webp";
+import Blog31 from "../asset/blogimg/blog31.webp";
+
 
 const blogPosts = [
   {
@@ -305,6 +307,15 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/aroma-oil-diffusers-for-clinics-and-wellness-centers/",
     image: Blog30,
+  },
+     {
+    id: 31,
+    title: "Create a Luxurious Home with Professional Aroma Diffusers | CoolMax",
+    excerpt: "Discover how essential oil diffusers and premium fragrance oils create a luxurious, welcoming, and relaxing atmosphere throughout your home.",
+    
+    readTime: "8 min read",
+    path: "/blog/luxury-home-fragrance-with-essential-oil-diffusers/",
+    image: Blog31,
   },
 
 ];
