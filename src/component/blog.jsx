@@ -32,6 +32,7 @@ import Blog28 from "../asset/blogimg/blog28.webp";
 import Blog29 from "../asset/blogimg/blog29.webp";
 import Blog30 from "../asset/blogimg/blog30.webp";
 import Blog31 from "../asset/blogimg/blog31.webp";
+import Blog32 from "../asset/blogimg/blog32.webp";
 
 
 const blogPosts = [
@@ -316,6 +317,15 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/luxury-home-fragrance-with-essential-oil-diffusers/",
     image: Blog31,
+  },
+  {
+    id: 32,
+    title: "Maximize Your Workouts with Cool Max Scent Solutions for Gyms",
+    excerpt: "Boost member experience with Cool Max Scent Solutions, delivering consistent fragrance and a clean, welcoming gym environment every day.",
+    
+    readTime: "7 min read",
+    path: "/blog/cool-max-scent-solutions-for-gyms/",
+    image: Blog32,
   },
 
 ];
