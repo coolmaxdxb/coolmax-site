@@ -165,7 +165,7 @@ export default function GymScentSolutionsBlog() {
               <div className="mt-8 bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm">
                 <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-slate-400">System Tech</h4>
                 <div className="h-40 bg-slate-50 rounded-2xl mb-4 flex items-center justify-center overflow-hidden">
-                  <img src={BlogHeroImg} alt="Gym fragrance diffusion image" className="w-full h-full object-cover" />
+                  <img src={BlogHeroImg} alt="Gym fragrance diffusion" className="w-full h-full object-cover" />
                 </div>
                 <h5 className="font-serif text-lg mb-2">Atomization Core</h5>
                 <p className="text-slate-500 text-xs font-light mb-6">Engineered for performance and low-maintenance longevity.</p>
