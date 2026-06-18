@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import {
   ChatBubbleLeftRightIcon,
   ArrowRightIcon,
-  CheckCircleIcon,
   WrenchScrewdriverIcon,
 } from "@heroicons/react/24/outline";
 
