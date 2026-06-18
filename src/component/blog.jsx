@@ -33,6 +33,7 @@ import Blog29 from "../asset/blogimg/blog29.webp";
 import Blog30 from "../asset/blogimg/blog30.webp";
 import Blog31 from "../asset/blogimg/blog31.webp";
 import Blog32 from "../asset/blogimg/blog32.webp";
+import Blog33 from "../asset/blogimg/blog33.webp";
 
 
 const blogPosts = [
@@ -326,6 +327,15 @@ const blogPosts = [
     readTime: "7 min read",
     path: "/blog/cool-max-scent-solutions-for-gyms/",
     image: Blog32,
+  },
+  {
+    id: 33,
+    title: "Why Every Modern Cinema in Dubai Needs the Right Aroma Diffuser",
+    excerpt: "Explore professional aroma diffuser solutions for Dubai cinemas, entertainment venues, and large commercial spaces to create a premium visitor experience.",
+    
+    readTime: "8 min read",
+    path: "/blog/aroma-diffuser-for-cinema-in-dubai/",
+    image: Blog33,
   },
 
 ];
