@@ -34,6 +34,7 @@ import Blog30 from "../asset/blogimg/blog30.webp";
 import Blog31 from "../asset/blogimg/blog31.webp";
 import Blog32 from "../asset/blogimg/blog32.webp";
 import Blog33 from "../asset/blogimg/blog33.webp";
+import Blog34 from "../asset/blogimg/blog34.webp";
 
 
 const blogPosts = [
@@ -336,6 +337,15 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/aroma-diffuser-for-cinema-in-dubai/",
     image: Blog33,
+  },
+  {
+    id: 34,
+    title: "How an Aroma Diffuser for Clinics in Dubai Enhances Patient Comfort",
+    excerpt: "Discover how clinics in Dubai improve patient comfort, reduce stress, and create a welcoming healthcare environment with professional aroma diffusers.",
+    
+    readTime: "8 min read",
+    path: "/blog/aroma-diffuser-for-clinics-in-dubai/",
+    image: Blog34,
   },
 
 ];
