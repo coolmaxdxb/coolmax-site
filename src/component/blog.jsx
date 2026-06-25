@@ -35,6 +35,7 @@ import Blog31 from "../asset/blogimg/blog31.webp";
 import Blog32 from "../asset/blogimg/blog32.webp";
 import Blog33 from "../asset/blogimg/blog33.webp";
 import Blog34 from "../asset/blogimg/blog34.webp";
+import Blog35 from "../asset/blogimg/blog35.webp";
 
 
 const blogPosts = [
@@ -346,6 +347,15 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/aroma-diffuser-for-clinics-in-dubai/",
     image: Blog34,
+  },
+  {
+    id: 35,
+    title: "How an Aroma Diffuser for Salons in Dubai Helps Increase Repeat Visits",
+    excerpt: "Discover how an aroma diffuser for salons in Dubai enhances ambiance, strengthens client loyalty, and encourages repeat salon visits.",
+    
+    readTime: "8 min read",
+    path: "/blog/aroma-diffuser-for-salon-in-dubai/",
+    image: Blog35,
   },
 
 ];
