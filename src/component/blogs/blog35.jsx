@@ -58,7 +58,7 @@ export default function SalonAromaDiffuserBlog() {
             </h1>
 
             <p className="text-xl md:text-2xl text-slate-600 font-light leading-relaxed mb-10">
-              The beauty industry in Dubai is highly competitive, with salons constantly looking for ways to attract new clients and retain existing ones. While great beauty services remain essential, todays customers expect a complete experience that feels relaxing, memorable, and luxurious.
+              The beauty industry in Dubai is highly competitive, with salons constantly looking for ways to attract new clients and retain existing ones. While great beauty services remain essential, today's customers expect a complete experience that feels relaxing, memorable, and luxurious.
             </p>
 
             <p className="text-xl md:text-2xl text-slate-600 font-light leading-relaxed mb-10">
@@ -133,7 +133,7 @@ export default function SalonAromaDiffuserBlog() {
                   Many salon treatments last for hours. Hair coloring, styling, facials, and beauty services require clients to stay in the salon and feel relaxed throughout the process.
                 </p>
                 <p className="text-justify">
-                  A professional aroma diffuser maintains a comfortable atmosphere all day long, helping clients stay calm and enjoy their treatments. Consistent scent delivery reinforces the salons premium image.
+                  A professional aroma diffuser maintains a comfortable atmosphere all day long, helping clients stay calm and enjoy their treatments. Consistent scent delivery reinforces the salon's premium image.
                 </p>
               </motion.div>
 
