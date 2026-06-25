@@ -166,7 +166,7 @@ export default function SalonAromaDiffuserBlog() {
                   <a href="https://www.coolmaxscent.com/floor-standing-aroma-diffusers/aeropillar-diffuser/" className="text-blue-600 hover:underline font-bold">AeroPillar Diffuser</a> and <a href="https://www.coolmaxscent.com/floor-standing-aroma-diffusers/titan-diffuser/" className="text-blue-600 hover:underline font-bold">Titan Diffuser</a> are designed to deliver consistent fragrance distribution across larger salon environments.
                 </p>
                 <p className="text-justify">
-                  These floor-standing systems help create a cohesive atmosphere in every client-facing area, supporting both comfort and the salons premium image.
+                  These floor-standing systems help create a cohesive atmosphere in every client-facing area, supporting both comfort and the salons premium image.
                 </p>
               </motion.div>
 
