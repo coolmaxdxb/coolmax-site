@@ -36,6 +36,8 @@ import Blog32 from "../asset/blogimg/blog32.webp";
 import Blog33 from "../asset/blogimg/blog33.webp";
 import Blog34 from "../asset/blogimg/blog34.webp";
 import Blog35 from "../asset/blogimg/blog35.webp";
+import Blog36 from "../asset/blogimg/blog36.webp";
+import Blog37 from "../asset/blogimg/blog37.webp";
 
 
 const blogPosts = [
@@ -356,6 +358,24 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/aroma-diffuser-for-salon-in-dubai/",
     image: Blog35,
+  },
+  {
+    id: 36,
+    title: "How an Aroma Diffuser for Fashion Avenue in Dubai Enhances the Shopping Experience",
+    excerpt: "Discover how an aroma diffuser for Fashion Avenue in Dubai enhances retail atmosphere, customer experience, and brand perception.",
+    
+    readTime: "8 min read",
+    path: "/blog/aroma-diffuser-for-fashion-avenue-in-dubai/",
+    image: Blog36,
+  },
+  {
+    id: 37,
+    title: "How Wellness Spaces in Dubai Benefit from Professional Aroma Diffusers",
+    excerpt: "Discover how an Aroma Diffuser for Wellness Space in Dubai enhances visitor comfort, creates a welcoming atmosphere, and supports modern wellness businesses.",
+    
+    readTime: "8 min read",
+    path: "/blog/aroma-diffuser-for-wellness-space-in-dubai/",
+    image: Blog37,
   },
 
 ];

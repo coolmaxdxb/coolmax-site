@@ -152,15 +152,16 @@ const Blog17 = lazy(() => import("../src/component/blogs/blog17"));
     const Blog33 = lazy(() => import("../src/component/blogs/blog33"));
     const Blog34 = lazy(() => import("../src/component/blogs/blog34"));
     const Blog35 = lazy(() => import("../src/component/blogs/blog35"));
+    const Blog36 = lazy(() => import("../src/component/blogs/blog36"));
+    const Blog37 = lazy(() => import("../src/component/blogs/blog37"));
 
-// --- HELPERS ---
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return null;
-};
+    const ScrollToTop = () => {
+      const { pathname } = useLocation();
+      useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [pathname]);
+      return null;
+    };
 
 const ProductPage = () => (
   <Suspense fallback={<PageLoader />}>
@@ -346,6 +347,8 @@ function App() {
                                   <Route path="/blog/aroma-diffuser-for-cinema-in-dubai/" element={<Blog33 />} />
                                   <Route path="/blog/aroma-diffuser-for-clinics-in-dubai/" element={<Blog34 />} />
                                   <Route path="/blog/aroma-diffuser-for-salon-in-dubai/" element={<Blog35 />} />
+                                  <Route path="/blog/aroma-diffuser-for-fashion-avenue-in-dubai/" element={<Blog36 />} />
+                                  <Route path="/blog/aroma-diffuser-for-wellness-space-in-dubai/" element={<Blog37 />} />
 
 
         </Routes>
