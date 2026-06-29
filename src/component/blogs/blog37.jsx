@@ -37,15 +37,6 @@ export default function WellnessSpaceAromaDiffuserBlog() {
     transition: { duration: 0.6 },
   };
 
-  const quickLinks = [
-    { href: "#environment", label: "Creating an Environment That Supports Wellness" },
-    { href: "#atmosphere", label: "Why Atmosphere Is an Important Part of the Wellness Journey" },
-    { href: "#experience", label: "Maintaining a Consistent Experience Across Every Area" },
-    { href: "#solutions", label: "Professional Diffuser Solutions for Different Wellness Spaces" },
-    { href: "#investment", label: "Why Professional Aroma Diffusers Are a Smart Investment" },
-    { href: "#benefits", label: "The Benefits of Using Commercial Diffusers in Wellness Facilities" },
-    { href: "#coolmaxscent", label: "Enhancing Wellness Environments with Coolmaxscent" },
-  ];
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-x-hidden pt-16">
