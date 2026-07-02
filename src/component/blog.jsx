@@ -38,6 +38,7 @@ import Blog34 from "../asset/blogimg/blog34.webp";
 import Blog35 from "../asset/blogimg/blog35.webp";
 import Blog36 from "../asset/blogimg/blog36.webp";
 import Blog37 from "../asset/blogimg/blog37.webp";
+import Blog38 from "../asset/blogimg/blog38.webp";
 
 
 const blogPosts = [
@@ -376,6 +377,15 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/aroma-diffuser-for-wellness-space-in-dubai/",
     image: Blog37,
+  },
+  {
+    id: 38,
+    title: "Stop Restroom Odors Before They Start with an Aroma Diffuser for Commercial Restrooms in Dubai",
+    excerpt: "Discover how an aroma diffuser for commercial restrooms in Dubai keeps restrooms fresh, controls odors, and enhances customer experience.",
+    
+    readTime: "8 min read",
+    path: "/blog/aroma-diffuser-for-commercial-restrooms-in-dubai/",
+    image: Blog38,
   },
 
 ];
