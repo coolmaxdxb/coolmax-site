@@ -39,6 +39,8 @@ import Blog35 from "../asset/blogimg/blog35.webp";
 import Blog36 from "../asset/blogimg/blog36.webp";
 import Blog37 from "../asset/blogimg/blog37.webp";
 import Blog38 from "../asset/blogimg/blog38.webp";
+import Blog39 from "../asset/blogimg/blog39.webp";
+import Blog40 from "../asset/blogimg/blog40.webp";
 
 
 const blogPosts = [
@@ -387,6 +389,24 @@ const blogPosts = [
     path: "/blog/aroma-diffuser-for-commercial-restrooms-in-dubai/",
     image: Blog38,
   },
+  {
+    id: 39,
+    title: "How an Aroma Diffuser for Restaurants in Dubai Enhances the Dining Experience",
+    excerpt: "Discover how an aroma diffuser for restaurants in Dubai enhances ambience, reduces odours, and creates memorable dining experiences.",
+    
+    readTime: "8 min read",
+    path: "/blog/aroma-diffuser-for-restaurants-in-dubai/",
+    image: Blog39,
+  },
+  {
+    id: 40,
+    title: "Why the AeroPillar Diffuser is the Preferred Aroma Diffuser for Luxury Spaces in Dubai",
+    excerpt: "Discover why the AeroPillar Diffuser is the preferred aroma diffuser in Dubai's luxury spaces for homes, hotels, offices, and retail environments.",
+    
+    readTime: "8 min read",
+    path: "/blog/aeropillar-diffuser-luxury-aroma-diffuser-dubai/",
+    image: Blog40,
+  },
 
 ];
 
@@ -409,10 +429,10 @@ export default function BlogSection() {
             {blogPosts.map((post) => (
               <article 
                 key={post.id} 
-                className="group relative flex flex-col h-full bg-white border border-slate-100 rounded-none overflow-hidden hover:border-blue-200 hover:shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)] transition-all duration-500 max-w-md w-full"
+                className="group relative flex flex-col h-full bg-white border border-slate-100 rounded-[2rem] overflow-hidden hover:border-blue-200 hover:shadow-[0_40px_100px_-20px_rgba(0,0,0,0.08)] transition-all duration-500 max-w-md w-full"
               >
                 {/* Image Container - Adjusted to aspect-video and changed from contain to cover to eliminate black bars */}
-                <Link to={post.path} className="relative aspect-video w-full overflow-hidden block rounded-none">
+                <Link to={post.path} className="relative aspect-video w-full overflow-hidden block rounded-t-[2rem]">
                   <img
                     src={post.image}
                     alt={post.title}
@@ -422,7 +442,7 @@ export default function BlogSection() {
                 </Link>
 
                 {/* Content Body */}
-                <div className="flex-1 flex flex-col p-8 pt-8 text-left">
+                <div className="flex-1 flex flex-col p-8 pt-8 text-left bg-gradient-to-b from-white via-white to-blue-50/40">
                   <div className="flex items-center gap-4 text-[10px] text-slate-400 font-black uppercase tracking-widest mb-6">
                     <div className="flex items-center gap-1.5">
                       <CalendarDaysIcon className="w-3.5 h-3.5 text-blue-500" />
