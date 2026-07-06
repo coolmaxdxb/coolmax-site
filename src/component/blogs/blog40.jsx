@@ -7,6 +7,7 @@ import BlogHeroImg from "../../asset/blogimg/blog40.webp";
 export default function AeroPillarDiffuserBlog() {
   const whatsappNumber = "971509282702";
 
+  
   useEffect(() => {
     window.scrollTo(0, 0);
 
