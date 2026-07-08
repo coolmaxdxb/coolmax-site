@@ -8,10 +8,8 @@ import {
   CubeTransparentIcon,
   ShieldCheckIcon,
   SparklesIcon,
-  ArrowRightIcon,
 } from "@heroicons/react/24/outline";
-
-import heroImage from "../asset/hero/office1.webp";
+ import heroImage from "../asset/hero/office1.webp";
 import heroImage2 from "../asset/hero/office2.webp";
 
 export default function OfficesCorporateSpaces() {
