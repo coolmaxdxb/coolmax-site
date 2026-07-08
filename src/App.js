@@ -158,6 +158,7 @@ const Blog17 = lazy(() => import("../src/component/blogs/blog17"));
     const Blog38 = lazy(() => import("../src/component/blogs/blog38"));
     const Blog39 = lazy(() => import("../src/component/blogs/blog39"));
     const Blog40 = lazy(() => import("../src/component/blogs/blog40"));
+    const Blog41 = lazy(() => import("../src/component/blogs/blog41"));
 
     const ScrollToTop = () => {
       const { pathname } = useLocation();
@@ -357,6 +358,7 @@ function App() {
                                   <Route path="/blog/aroma-diffuser-for-commercial-restrooms-in-dubai/" element={<Blog38 />} />
                                   <Route path="/blog/aroma-diffuser-for-restaurants-in-dubai/" element={<Blog39 />} />
                                   <Route path="/blog/aeropillar-diffuser-luxury-aroma-diffuser-dubai/" element={<Blog40 />} />
+                                  <Route path="/blog/5-ways-aroma-diffusers-essential-oils-enhance-customer-satisfaction-in-grocery-stores/" element={<Blog41 />} />
 
 
         </Routes>

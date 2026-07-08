@@ -41,6 +41,7 @@ import Blog37 from "../asset/blogimg/blog37.webp";
 import Blog38 from "../asset/blogimg/blog38.webp";
 import Blog39 from "../asset/blogimg/blog39.webp";
 import Blog40 from "../asset/blogimg/blog40.webp";
+import Blog41 from "../asset/blogimg/blog41.webp";
 
 
 const blogPosts = [
@@ -406,6 +407,15 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/aeropillar-diffuser-luxury-aroma-diffuser-dubai/",
     image: Blog40,
+  },
+  {
+    id: 41,
+    title: "5 Ways Aroma Diffusers with Essential Oils Enhance Customer Satisfaction in Grocery Stores",
+    excerpt: "Learn how commercial aroma diffusers and premium essential oils improve freshness, comfort, brand loyalty, and shopping behavior in grocery stores.",
+    
+    readTime: "8 min read",
+    path: "/blog/5-ways-aroma-diffusers-essential-oils-enhance-customer-satisfaction-in-grocery-stores/",
+    image: Blog41,
   },
 
 ];

@@ -145,7 +145,7 @@ export default function OfficesCorporateSpaces() {
       </div>
 
       <main className="mx-auto max-w-7xl px-6 md:px-10 lg:px-16 pt-24 pb-20">
-        <section className="grid items-center gap-14 py-16 lg:grid-cols-[1.08fr_0.92fr] lg:py-24">
+        <section className="relative grid items-center gap-14 rounded-[3rem] border border-slate-100 bg-[linear-gradient(135deg,#ffffff_0%,#f8fbff_55%,#eef7ff_100%)] p-6 shadow-[0_35px_90px_-35px_rgba(15,23,42,0.25)] sm:p-8 lg:grid-cols-[1.08fr_0.92fr] lg:py-24 lg:px-10">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-4 py-2 text-[11px] font-black uppercase tracking-[0.28em] text-blue-700">
               <SparklesIcon className="h-4 w-4" />
@@ -184,7 +184,7 @@ export default function OfficesCorporateSpaces() {
           </motion.div>
         </section>
 
-        <section className="rounded-[3rem] border border-slate-100 bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 p-8 text-white shadow-[0_30px_70px_-25px_rgba(15,23,42,0.45)] md:p-12">
+        <section className="mt-8 rounded-[3rem] border border-slate-200/80 bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 p-8 text-white shadow-[0_30px_80px_-25px_rgba(15,23,42,0.45)] md:p-12">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
             <div className="max-w-2xl">
               <p className="text-sm font-black uppercase tracking-[0.3em] text-blue-300">Create a workplace that leaves a lasting impression</p>
@@ -246,7 +246,7 @@ export default function OfficesCorporateSpaces() {
           </div>
           <div className="grid gap-6 md:grid-cols-2">
             {recommendedDiffusers.map((item) => (
-              <div key={item.subtitle} className="rounded-[2rem] border border-slate-100 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+              <div key={item.subtitle} className="rounded-[2rem] border border-slate-100 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-[0_25px_70px_-25px_rgba(2,132,199,0.28)]">
                 <div className="mb-4 inline-flex rounded-2xl bg-blue-50 p-3 text-blue-600">
                   <CubeTransparentIcon className="h-6 w-6" />
                 </div>
@@ -271,7 +271,7 @@ export default function OfficesCorporateSpaces() {
             </div>
             <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
               {solutions.map((item) => (
-                <div key={item.title} className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6 transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-md">
+                <div key={item.title} className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:bg-white hover:shadow-[0_20px_45px_-25px_rgba(15,23,42,0.22)]">
                   <div className="mb-4 inline-flex rounded-2xl bg-blue-50 p-3 text-blue-600">
                     <BuildingOffice2Icon className="h-5 w-5" />
                   </div>
@@ -295,7 +295,7 @@ export default function OfficesCorporateSpaces() {
           </div>
           <div className="grid gap-6 lg:grid-cols-2">
             {features.map((item) => (
-              <div key={item.title} className="rounded-[2rem] border border-slate-100 bg-white p-6 shadow-sm">
+              <div key={item.title} className="rounded-[2rem] border border-slate-100 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-[0_20px_50px_-25px_rgba(15,23,42,0.2)]">
                 <div className="mb-3 inline-flex rounded-2xl bg-blue-50 p-2 text-blue-600">
                   <CheckCircleIcon className="h-5 w-5" />
                 </div>
@@ -320,7 +320,7 @@ export default function OfficesCorporateSpaces() {
                 "Quiet, energy-efficient, and low maintenance",
                 "Multiple installation options, including HVAC systems",
               ].map((item) => (
-                <div key={item} className="flex items-start gap-3 rounded-2xl bg-white p-4 shadow-sm">
+                <div key={item} className="flex items-start gap-3 rounded-2xl border border-slate-100 bg-white p-4 shadow-sm transition duration-300 hover:border-blue-200 hover:shadow-[0_15px_40px_-20px_rgba(2,132,199,0.25)]">
                   <CheckCircleIcon className="mt-0.5 h-5 w-5 shrink-0 text-blue-600" />
                   <span className="text-slate-700">{item}</span>
                 </div>
@@ -340,7 +340,7 @@ export default function OfficesCorporateSpaces() {
                 <span>CoolMax Scent Office Aroma Diffusers</span>
               </div>
               {comparisonRows.map((row) => (
-                <div key={row.left} className="grid grid-cols-2 border-t border-slate-200 text-sm text-slate-700">
+                <div key={row.left} className="grid grid-cols-2 border-t border-slate-200 bg-white/70 text-sm text-slate-700 last:rounded-b-[2rem]">
                   <div className="border-r border-slate-200 px-6 py-4">{row.left}</div>
                   <div className="px-6 py-4 text-slate-900">{row.right}</div>
                 </div>
@@ -360,7 +360,7 @@ export default function OfficesCorporateSpaces() {
             {faqs.map((item, index) => {
               const isOpen = openFaq === index;
               return (
-                <div key={item.question} className="rounded-[2rem] border border-slate-100 bg-white p-6 shadow-sm">
+                <div key={item.question} className="rounded-[2rem] border border-slate-100 bg-white p-6 shadow-sm transition duration-300 hover:border-blue-200 hover:shadow-[0_20px_50px_-25px_rgba(15,23,42,0.15)]">
                   <button
                     type="button"
                     className="flex w-full items-center justify-between gap-4 text-left"
@@ -377,7 +377,7 @@ export default function OfficesCorporateSpaces() {
         </section>
 
         <section id="contact" className="py-8">
-          <div className="rounded-[3rem] border border-blue-100 bg-blue-50 p-8 md:p-12">
+          <div className="rounded-[3rem] border border-blue-100 bg-[linear-gradient(135deg,#eff6ff_0%,#f8fbff_60%,#eef7ff_100%)] p-8 shadow-[0_25px_65px_-30px_rgba(59,130,246,0.28)] md:p-12">
             <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-2xl">
                 <p className="text-sm font-black uppercase tracking-[0.3em] text-blue-700">Ready to create a more welcoming workplace?</p>
