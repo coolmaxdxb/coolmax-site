@@ -13,6 +13,7 @@ const AboutUs = lazy(() => import("./component/aboutus"));
 const SolutionsSection = lazy(() => import("./component/Solutions"));
 const Products = lazy(() => import("./component/Products"));
 const IndustriesWeServe = lazy(() => import("./component/IndustriesWeServe"));
+const OfficesCorporateSpaces = lazy(() => import("./component/OfficesCorporateSpaces"));
 const Blog = lazy(() => import("./component/blog"));
 const TalkToExpert = lazy(() => import("./component/TalkToExpert"));
 const Aroms = lazy(() => import("./component/AromaOils"));
@@ -196,6 +197,7 @@ function App() {
           <Route path="/products/" element={<ProductPage />} />
           <Route path="/aromas/" element={<Aroms />} />
           <Route path="/industries/" element={<IndustriesWeServe />} />
+          <Route path="/industries/aroma-diffuser-for-corporate-office-dubai/" element={<OfficesCorporateSpaces />} />
           <Route path="/blog/" element={<Blog />} />
           <Route path="/contact/" element={<TalkToExpert />} />
           <Route path="/solution/" element={<Solution />} />

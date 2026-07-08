@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // --- ASSET IMPORTS ---
 import Client1 from "../asset/clientslogo/Mercure Hotels.webp";
@@ -16,6 +17,7 @@ export default function IndustriesSection() {
     {
       name: "Offices & Corporate Spaces",
       desc: "Enhance productivity and focus with subtle, clean fragrances that reduce stress and improve mental clarity.",
+      path: "/industries/aroma-diffuser-for-corporate-office-dubai/",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
       )
@@ -136,6 +138,12 @@ export default function IndustriesSection() {
                 </div>
                 <h3 className="text-3xl font-serif text-slate-900 mb-6 tracking-tight leading-none">{ind.name}</h3>
                 <p className="text-slate-500 leading-relaxed font-light text-lg">{ind.desc}</p>
+                {ind.path ? (
+                  <Link to={ind.path} className="mt-8 inline-flex items-center gap-2 text-sm font-black uppercase tracking-[0.25em] text-blue-600 hover:text-blue-700 transition-colors">
+                    Explore Page
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H4" /></svg>
+                  </Link>
+                ) : null}
               </div>
             ))}
           </div>
