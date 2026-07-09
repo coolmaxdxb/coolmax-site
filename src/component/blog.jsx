@@ -42,6 +42,7 @@ import Blog38 from "../asset/blogimg/blog38.webp";
 import Blog39 from "../asset/blogimg/blog39.webp";
 import Blog40 from "../asset/blogimg/blog40.webp";
 import Blog41 from "../asset/blogimg/blog41.webp";
+import Blog42 from "../asset/blogimg/blog42.webp";
 
 
 const blogPosts = [
@@ -416,6 +417,15 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/5-ways-aroma-diffusers-essential-oils-enhance-customer-satisfaction-in-grocery-stores/",
     image: Blog41,
+  },
+  {
+    id: 42,
+    title: "Best Aroma Diffuser for Shopping Malls in Dubai",
+    excerpt: "Discover how an aroma diffuser for shopping malls in Dubai helps create a welcoming environment, improve visitor comfort, and strengthen the mall's premium retail experience.",
+    
+    readTime: "8 min read",
+    path: "/aroma-diffuser-shopping-malls-dubai",
+    image: Blog42,
   },
 
 ];
