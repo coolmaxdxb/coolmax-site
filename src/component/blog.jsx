@@ -43,6 +43,7 @@ import Blog39 from "../asset/blogimg/blog39.webp";
 import Blog40 from "../asset/blogimg/blog40.webp";
 import Blog41 from "../asset/blogimg/blog41.webp";
 import Blog42 from "../asset/blogimg/blog42.webp";
+import Blog43 from "../asset/blogimg/blog43.webp";
 
 
 const blogPosts = [
@@ -426,6 +427,15 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/aroma-diffuser-shopping-malls-dubai",
     image: Blog42,
+  },
+  {
+    id: 43,
+    title: "Aroma Diffuser for Corporate Office in Dubai | CoolMax Scent",
+    excerpt: "Explore why office ambience matters and how a professional office aroma diffuser supports a welcoming workplace in Dubai.",
+    
+    readTime: "8 min read",
+    path: "/aroma-diffuser-for-corporate-office-in-dubai",
+    image: Blog43,
   },
 
 ];
