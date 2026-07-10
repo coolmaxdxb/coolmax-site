@@ -425,7 +425,7 @@ const blogPosts = [
     excerpt: "Discover how an aroma diffuser for shopping malls in Dubai helps create a welcoming environment, improve visitor comfort, and strengthen the mall's premium retail experience.",
     
     readTime: "8 min read",
-    path: "/aroma-diffuser-shopping-malls-dubai",
+    path: "/blog/aroma-diffuser-shopping-malls-dubai",
     image: Blog42,
   },
   {
@@ -434,7 +434,7 @@ const blogPosts = [
     excerpt: "Explore why office ambience matters and how a professional office aroma diffuser supports a welcoming workplace in Dubai.",
     
     readTime: "8 min read",
-    path: "/aroma-diffuser-for-corporate-office-in-dubai",
+    path: "/blog/aroma-diffuser-for-corporate-office-in-dubai",
     image: Blog43,
   },
 

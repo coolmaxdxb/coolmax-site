@@ -361,8 +361,8 @@ function App() {
                                   <Route path="/blog/aroma-diffuser-for-restaurants-in-dubai/" element={<Blog39 />} />
                                   <Route path="/blog/aeropillar-diffuser-luxury-aroma-diffuser-dubai/" element={<Blog40 />} />
                                   <Route path="/blog/5-ways-aroma-diffusers-essential-oils-enhance-customer-satisfaction-in-grocery-stores/" element={<Blog41 />} />
-                                  <Route path="/aroma-diffuser-shopping-malls-dubai" element={<Blog42 />} />
-                                  <Route path="/aroma-diffuser-for-corporate-office-in-dubai" element={<Blog43 />} />
+                                  <Route path="/blog/aroma-diffuser-shopping-malls-dubai" element={<Blog42 />} />
+                                  <Route path="/blog/aroma-diffuser-for-corporate-office-in-dubai" element={<Blog43 />} />
 
 
         </Routes>
