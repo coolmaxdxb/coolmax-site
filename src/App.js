@@ -2,7 +2,7 @@ import React, { useEffect, lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 // --- STATIC IMPORTS (Core UI components to avoid flicker) ---
-import Nav from './component/Nav'; 
+import Nav from './component/Nav';
 import Footer from "./component/Footer";
 import WhatsAppFloating from "./component/WhatsAppFloating";
 import Scrollup from "./component/scrolluparrow";
@@ -98,7 +98,7 @@ const VoyageSpray = lazy(() => import("./component/Spray/VoyageAerosolSpray"));
 const AeroBlackMed = lazy(() => import("./component/separateproducts/AeroBlack Med Diffuser"));
 const DriveMist = lazy(() => import("./component/separateproducts/DriveScent Diffuser"));
 const NovaCar = lazy(() => import("./component/separateproducts/NovaCar Diffuser"));
-const AeroBlackpro = lazy(() => import("./component/separateproducts/AeroBlack Pro Diffuser")); 
+const AeroBlackpro = lazy(() => import("./component/separateproducts/AeroBlack Pro Diffuser"));
 const VentoCar = lazy(() => import("./component/separateproducts/VentoCar Diffuser"));
 const OpalMist = lazy(() => import("./component/separateproducts/OpalMist Clock Diffuser"));
 const DeskMist = lazy(() => import("./component/separateproducts/AromaDesk Diffuser"));
@@ -161,6 +161,7 @@ const Blog17 = lazy(() => import("../src/component/blogs/blog17"));
     const Blog41 = lazy(() => import("../src/component/blogs/blog41"));
     const Blog42 = lazy(() => import("../src/component/blogs/blog42"));
     const Blog43 = lazy(() => import("../src/component/blogs/blog43"));
+    const Blog44 = lazy(() => import("../src/component/blogs/blog44"));
 
     const ScrollToTop = () => {
       const { pathname } = useLocation();
@@ -186,7 +187,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      
+
       <Nav />
       <WhatsAppFloating />
       <Scrollup />
@@ -232,7 +233,7 @@ function App() {
           <Route path="/fruity-aroma-oil/" element={<FruityFragrances />} />
           <Route path="/food-and-beverage-aroma-oil/" element={<FoodBeverageFragrances />} />
           <Route path="/premium-aroma-oil/" element={<PremiumCollection />} />
-          
+
           {/* Commercial Aroma Diffusers */}
           <Route path="/commercial-aroma-diffusers/aeroblack-med-diffuser/" element={<AeroBlackMed />} />
           <Route path="/commercial-aroma-diffusers/mistbox-x-diffuser/" element={<MistBox />} />
@@ -363,6 +364,8 @@ function App() {
                                   <Route path="/blog/5-ways-aroma-diffusers-essential-oils-enhance-customer-satisfaction-in-grocery-stores/" element={<Blog41 />} />
                                   <Route path="/blog/aroma-diffuser-shopping-malls-dubai" element={<Blog42 />} />
                                   <Route path="/blog/aroma-diffuser-for-corporate-office-in-dubai" element={<Blog43 />} />
+                                  <Route path="/blog/corporate-scenting-solutions-dubai" element={<Blog44 />} />
+                                  <Route path="/corporate-scenting-solutions-dubai" element={<Blog44 />} />
 
 
         </Routes>
