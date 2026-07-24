@@ -7,9 +7,7 @@ import {
   ChatBubbleLeftRightIcon,
   CubeTransparentIcon,
   ShieldCheckIcon,
-  SparklesIcon,
-  UserGroupIcon,
-  BriefcaseIcon,
+  SparklesIcon
 } from "@heroicons/react/24/outline";
 
 import BlogHeroImg from "../../asset/blogimg/blog45.webp";
