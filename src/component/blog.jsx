@@ -142,7 +142,7 @@ const blogPosts = [
   {
     id: 11,
     title: "5 Simple Steps to Clean and Maintain Your Diffuser for Long-Lasting Performance",
-    excerpt: "A good scent diffuser helps spread a pleasant fragrance evenly and makes any space feel more inviting—whether it’s your home, hotel, office, or shop.",
+    excerpt: "A good scent diffuser helps spread a pleasant fragrance evenly and makes any space feel more inviting—whether it's your home, hotel, office, or shop.",
 
     readTime: "8 min read",
     path: "/blog/clean-and-maintain-your-diffuser-for-long-lasting-performance/",
@@ -447,14 +447,14 @@ const blogPosts = [
     path: "/corporate-scenting-solutions-dubai",
     image: Blog44,
   },
-  // {
-  //   id: 45,
-  //   title: "Creating Premium Client Impressions with Aroma Diffusers",
-  //   excerpt: "Learn how an Aroma Diffuser for Corporate Office in Dubai helps create premium client impressions through better office ambience and scenting.",
-  //   readTime: "8 min read",
-  //   path: "/corporate-scenting-solutions-dubai",
-  //   image: Blog45,
-  // },
+  {
+    id: 45,
+    title: "What Makes Luxury Hotels Unforgettable? The Role of an Aroma Diffuser for Hotel in Dubai",
+    excerpt: "Every memorable hotel stay begins with the right atmosphere. An Aroma Diffuser for Hotel in Dubai helps create lasting guest impressions and elevates the luxury hospitality experience.",
+    readTime: "8 min read",
+    path: "/blog/luxury-hotel-guest-experiences-dubai",
+    image: Blog45,
+  },
 
 ];
 

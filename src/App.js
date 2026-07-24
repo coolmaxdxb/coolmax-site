@@ -366,9 +366,8 @@ function App() {
                                   <Route path="/blog/aroma-diffuser-shopping-malls-dubai" element={<Blog42 />} />
                                   <Route path="/blog/aroma-diffuser-for-corporate-office-in-dubai" element={<Blog43 />} />
                                   <Route path="/blog/corporate-scenting-solutions-dubai" element={<Blog44 />} />
-                                  <Route path="/corporate-scenting-solutions-dubai" element={<Blog45 />} />
-
-
+                                  <Route path="/blog/luxury-hotel-guest-experiences-dubai" element={<Blog45 />} />
+                               
         </Routes>
       </Suspense>
 
