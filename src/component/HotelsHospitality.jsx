@@ -6,7 +6,6 @@ import {
   CheckCircleIcon,
   ChatBubbleLeftRightIcon,
   ChevronDownIcon,
-  CubeTransparentIcon,
   ShieldCheckIcon,
   SparklesIcon,
   ExclamationTriangleIcon,
@@ -18,13 +17,11 @@ import {
   WindowIcon,
   SunIcon,
   WifiIcon,
-  FireIcon,
-  SwatchIcon,
   StarIcon,
   RectangleGroupIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
-import heroImage from "../asset/hero/hero1.webp";
+import heroImage from "../asset/hero/hotelpage2.webp";
 import heroImage2 from "../asset/hero/hotelpage.webp";
 
 export default function HotelsHospitality() {
