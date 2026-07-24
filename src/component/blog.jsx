@@ -45,6 +45,7 @@ import Blog41 from "../asset/blogimg/blog41.webp";
 import Blog42 from "../asset/blogimg/blog42.webp";
 import Blog43 from "../asset/blogimg/blog43.webp";
 import Blog44 from "../asset/blogimg/blog44.webp";
+import Blog45 from "../asset/blogimg/blog45.webp";
 
 
 const blogPosts = [
@@ -445,6 +446,14 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/corporate-scenting-solutions-dubai",
     image: Blog44,
+  },
+  {
+    id: 45,
+    title: "Creating Premium Client Impressions with Aroma Diffusers",
+    excerpt: "Learn how an Aroma Diffuser for Corporate Office in Dubai helps create premium client impressions through better office ambience and scenting.",
+    readTime: "8 min read",
+    path: "/corporate-scenting-solutions-dubai",
+    image: Blog45,
   },
 
 ];
