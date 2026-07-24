@@ -447,14 +447,14 @@ const blogPosts = [
     path: "/corporate-scenting-solutions-dubai",
     image: Blog44,
   },
-  {
-    id: 45,
-    title: "Creating Premium Client Impressions with Aroma Diffusers",
-    excerpt: "Learn how an Aroma Diffuser for Corporate Office in Dubai helps create premium client impressions through better office ambience and scenting.",
-    readTime: "8 min read",
-    path: "/corporate-scenting-solutions-dubai",
-    image: Blog45,
-  },
+  // {
+  //   id: 45,
+  //   title: "Creating Premium Client Impressions with Aroma Diffusers",
+  //   excerpt: "Learn how an Aroma Diffuser for Corporate Office in Dubai helps create premium client impressions through better office ambience and scenting.",
+  //   readTime: "8 min read",
+  //   path: "/corporate-scenting-solutions-dubai",
+  //   image: Blog45,
+  // },
 
 ];
 
