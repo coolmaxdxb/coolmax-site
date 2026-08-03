@@ -46,6 +46,7 @@ import Blog42 from "../asset/blogimg/blog42.webp";
 import Blog43 from "../asset/blogimg/blog43.webp";
 import Blog44 from "../asset/blogimg/blog44.webp";
 import Blog45 from "../asset/blogimg/blog45.webp";
+import Blog46 from "../asset/blogimg/blog46.webp";
 
 
 const blogPosts = [
@@ -454,6 +455,14 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/luxury-hotel-guest-experiences-dubai",
     image: Blog45,
+  },
+  {
+    id: 46,
+    title: "Why Schools Need Professional Aroma Solutions: Creating Better Learning Environments in Dubai",
+    excerpt: "Discover why schools need professional aroma solutions. An Aroma Diffuser for Schools in Dubai helps create better learning environments across the UAE.",
+    readTime: "8 min read",
+    path: "/blog/aroma-diffuser-for-schools-in-dubai",
+    image: Blog46,
   },
 
 ];
