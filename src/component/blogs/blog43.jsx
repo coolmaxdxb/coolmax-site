@@ -246,7 +246,7 @@ export default function CorporateOfficeAromaDiffuserBlog() {
     }
     canonical.setAttribute(
       "href",
-      "https://www.coolmaxscent.com/blog/aroma-diffuser-for-corporate-office-in-dubai"
+      "https://www.coolmaxscent.com/blog/aroma-diffuser-for-corporate-office-in-dubai/"
     );
   }, []);
 

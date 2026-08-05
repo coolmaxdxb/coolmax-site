@@ -103,7 +103,7 @@ export default function SchoolsAromaSolutionsBlog() {
 
     canonical.setAttribute(
       "href",
-      "https://www.coolmaxscent.com/blog/aroma-diffuser-for-schools-in-dubai"
+      "https://www.coolmaxscent.com/blog/aroma-diffuser-for-schools-in-dubai/"
     );
   }, []);
 

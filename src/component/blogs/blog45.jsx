@@ -97,7 +97,7 @@ export default function LuxuryHotelGuestExperiencesBlog() {
 
     canonical.setAttribute(
       "href",
-      "https://www.coolmaxscent.com/blog/luxury-hotel-guest-experiences-dubai"
+      "https://www.coolmaxscent.com/blog/luxury-hotel-guest-experiences-dubai/"
     );
   }, []);
 

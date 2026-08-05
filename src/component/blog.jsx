@@ -128,7 +128,7 @@ const blogPosts = [
     excerpt: "Compare commercial scent diffuser vs air freshener and find what works best for your business. Improve customer experience with the right scent solution.",
 
     readTime: "8 min read",
-    path: "/blog/commercial-scent-diffuser-vs-air-freshener",
+    path: "/blog/commercial-scent-diffuser-vs-air-freshener/",
     image: Blog9,
   },
   {
@@ -428,7 +428,7 @@ const blogPosts = [
     excerpt: "Discover how an aroma diffuser for shopping malls in Dubai helps create a welcoming environment, improve visitor comfort, and strengthen the mall's premium retail experience.",
 
     readTime: "8 min read",
-    path: "/blog/aroma-diffuser-shopping-malls-dubai",
+    path: "/blog/aroma-diffuser-shopping-malls-dubai/",
     image: Blog42,
   },
   {
@@ -445,7 +445,7 @@ const blogPosts = [
     title: "Creating Premium Client Impressions with Aroma Diffusers",
     excerpt: "Learn how an Aroma Diffuser for Corporate Office in Dubai helps create premium client impressions through better office ambience and scenting.",
     readTime: "8 min read",
-    path: "/corporate-scenting-solutions-dubai",
+    path: "/blog/corporate-scenting-solutions-dubai/",
     image: Blog44,
   },
   {
@@ -453,7 +453,7 @@ const blogPosts = [
     title: "What Makes Luxury Hotels Unforgettable? The Role of an Aroma Diffuser for Hotel in Dubai",
     excerpt: "Every memorable hotel stay begins with the right atmosphere. An Aroma Diffuser for Hotel in Dubai helps create lasting guest impressions and elevates the luxury hospitality experience.",
     readTime: "8 min read",
-    path: "/blog/luxury-hotel-guest-experiences-dubai",
+    path: "/blog/luxury-hotel-guest-experiences-dubai/",
     image: Blog45,
   },
   {
@@ -461,7 +461,7 @@ const blogPosts = [
     title: "Why Schools Need Professional Aroma Solutions: Creating Better Learning Environments in Dubai",
     excerpt: "Discover why schools need professional aroma solutions. An Aroma Diffuser for Schools in Dubai helps create better learning environments across the UAE.",
     readTime: "8 min read",
-    path: "/blog/aroma-diffuser-for-schools-in-dubai",
+    path: "/blog/aroma-diffuser-for-schools-in-dubai/",
     image: Blog46,
   },
 

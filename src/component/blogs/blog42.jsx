@@ -55,7 +55,7 @@ export default function ShoppingMallsScentBlog() {
 
     canonical.setAttribute(
       "href",
-      "https://www.coolmaxscent.com/aroma-diffuser-shopping-malls-dubai"
+      "https://www.coolmaxscent.com/aroma-diffuser-shopping-malls-dubai/"
     );
   }, []);
 

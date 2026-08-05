@@ -58,7 +58,7 @@ export default function CreatingPremiumClientImpressionsBlog() {
 
     canonical.setAttribute(
       "href",
-      "https://www.coolmaxscent.com/corporate-scenting-solutions-dubai"
+      "https://www.coolmaxscent.com/blog/corporate-scenting-solutions-dubai/"
     );
   }, []);
 
