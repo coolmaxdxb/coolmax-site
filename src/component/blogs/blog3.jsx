@@ -37,7 +37,7 @@ export default function ScentMarketingBlog() {
       canonical.setAttribute('rel', 'canonical');
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute('href', 'https://www.coolmaxscent.com/blog/scent-marketing-101-uae');
+    canonical.setAttribute('href', 'https://www.coolmaxscent.com/blog/scent-marketing-101-uae/');
   }, []);
 
   const fadeInUp = {

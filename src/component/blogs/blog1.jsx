@@ -45,7 +45,7 @@ export default function HotelScentMarketingBlog() {
       canonical.setAttribute('rel', 'canonical');
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute('href', 'https://www.coolmaxscent.com/blog/scent-marketing-hotels-uae');
+    canonical.setAttribute('href', 'https://www.coolmaxscent.com/blog/scent-marketing-hotels-uae/');
   }, []);
 
   return (

@@ -46,7 +46,7 @@ export default function ChooseCommercialDiffuserBlog() {
       canonical.setAttribute('rel', 'canonical');
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute('href', 'https://www.coolmaxscent.com/blog/choose-commercial-aroma-diffuser-uae');
+    canonical.setAttribute('href', 'https://www.coolmaxscent.com/blog/choose-commercial-aroma-diffuser-uae/');
   }, []);
 
   return (

@@ -34,7 +34,7 @@ export default function ScentMarketingBlog() {
       canonical.setAttribute('rel', 'canonical');
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute('href', 'https://www.coolmaxscent.com/blog/why-5-star-hotels-dubai-use-scent-diffusers');
+    canonical.setAttribute('href', 'https://www.coolmaxscent.com/blog/why-5-star-hotels-dubai-use-scent-diffusers/');
   }, []);
 
   return (
