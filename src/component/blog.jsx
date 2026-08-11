@@ -47,6 +47,7 @@ import Blog43 from "../asset/blogimg/blog43.webp";
 import Blog44 from "../asset/blogimg/blog44.webp";
 import Blog45 from "../asset/blogimg/blog45.webp";
 import Blog46 from "../asset/blogimg/blog46.webp";
+import Blog47 from "../asset/blogimg/blog47.webp";
 
 
 const blogPosts = [
@@ -463,6 +464,14 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/aroma-diffuser-for-schools-in-dubai/",
     image: Blog46,
+  },
+  {
+    id: 47,
+    title: "Top Commercial Spaces That Benefit Most from HVAC Scenting Systems in Dubai",
+    excerpt: "Discover which Dubai commercial spaces gain the most from HVAC scenting systems — hotels, retail, offices, clinics, gyms and showrooms.",
+    readTime: "8 min read",
+    path: "/blog/hvac-scenting-systems-dubai-commercial-spaces/",
+    image: Blog47,
   },
 
 ];
