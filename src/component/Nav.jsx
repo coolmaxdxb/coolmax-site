@@ -9,7 +9,9 @@ import {
   ArrowRightIcon,
 } from "@heroicons/react/24/outline";
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
-import Logo from "../../src/asset/hero/coll-logo.png";
+// import Logo from "../../src/asset/hero/coll-logo.png";
+import Logo from "../../src/asset/hero/header.png";
+
 
 /* ---------------- NAV DATA ---------------- */
 const navigation = [
@@ -101,7 +103,7 @@ export default function Header() {
           {/* LOGO - Filters removed to show original colors */}
           <div className="flex-shrink-0 z-50">
             <Link to="/" onClick={() => setMobileMenuOpen(false)}>
-              <img src={Logo} alt="CoolMax" className={`object-contain transition-all duration-300 ${scrolled ? "h-7" : "h-8 lg:h-10"}`} />
+              <img src={Logo} alt="CoolMax" className={`object-contain transition-all duration-300 ${scrolled ? "h-23" : "h-23 lg:h-23"}`} />
             </Link>
           </div>
 

@@ -191,7 +191,7 @@ export default function ArchitectStore() {
 
   // --- SEO Implementation ---
   useEffect(() => {
-    document.title = "Cool Max | Premium Scenting Solutions for Homes & Businesses";
+    document.title = "Cool Max Scent | Premium Scenting Solutions for Homes & Businesses";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "Cool Max provides premium scent diffusers and fragrance solutions for homes, hotels, offices, retail spaces, HVAC systems, and automobiles across UAE & Qatar.");

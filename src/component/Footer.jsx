@@ -12,7 +12,8 @@ import {
   PhoneIcon, 
   MapPinIcon, 
 } from "@heroicons/react/24/outline";
-import logo from "../asset/hero/coll-logo.png";
+// import logo from "../asset/hero/coll-logo.png";
+import logo from "../asset/hero/footer.png";
 
 export default function Footer() {
   return (
@@ -36,7 +37,7 @@ export default function Footer() {
               <img 
                 src={logo} 
                 alt="Cool Max Logo" 
-                className="h-12 md:h-16 w-auto object-contain brightness-100 " 
+                className="h-18 md:h-22 w-auto object-contain brightness-100 " 
               />
             </div>
             <p className="text-base text-slate-400 font-light leading-relaxed max-w-lg">

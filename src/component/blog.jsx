@@ -48,6 +48,7 @@ import Blog44 from "../asset/blogimg/blog44.webp";
 import Blog45 from "../asset/blogimg/blog45.webp";
 import Blog46 from "../asset/blogimg/blog46.webp";
 import Blog47 from "../asset/blogimg/blog47.webp";
+import Blog48 from "../asset/blogimg/blog48.webp";
 
 
 const blogPosts = [
@@ -472,6 +473,14 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/hvac-scenting-systems-dubai-commercial-spaces/",
     image: Blog47,
+  },
+  {
+    id: 48,
+    title: "Retail Store Aroma Diffuser Dubai | Professional Scenting",
+    excerpt: "Improve customer experience with a Retail Store Aroma Diffuser Dubai. Explore retail fragrance systems for stores, showrooms, and commercial spaces.",
+    readTime: "8 min read",
+    path: "/blog/retail-store-aroma-diffuser-dubai/",
+    image: Blog48,
   },
 
 ];
