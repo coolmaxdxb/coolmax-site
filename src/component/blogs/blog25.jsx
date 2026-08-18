@@ -249,7 +249,7 @@ export default function DubaiHotelScentMarketingHomeFragranceBlog() {
                 className="py-12 border-t border-slate-100"
               >
                 <h2 className="text-3xl md:text-4xl font-serif text-slate-900 mb-6 text-left">
-                  The Solution: Bring Hotel Luxury to Your Space with Cool Max
+                  The Solution: Bring Hotel Luxury to Your Space with Cool Max Scent
                   Scent
                 </h2>
 

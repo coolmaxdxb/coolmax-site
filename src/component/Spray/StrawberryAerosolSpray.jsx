@@ -27,7 +27,7 @@ const StrawberryAerosolSprayDetail = () => {
         // Updates the Meta Description
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
-            metaDescription.setAttribute("content", "Strawberry Aerosol Spray by Cool Max blends ripe strawberry, red berries, vanilla, and musk to create a warm, sweet, long-lasting fragrance for daily freshness.");
+            metaDescription.setAttribute("content", "Strawberry Aerosol Spray by Cool Max Scent blends ripe strawberry, red berries, vanilla, and musk to create a warm, sweet, long-lasting fragrance for daily freshness.");
         }
 
         // Sets the Canonical Link
@@ -197,9 +197,9 @@ const StrawberryAerosolSprayDetail = () => {
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600 text-left" />
                         </div>
                         <div className="text-left">
-                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Why Choose <span className="italic font-light text-blue-700 text-left">Cool Max Aerosol Sprays?</span></h2>
+                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Why Choose <span className="italic font-light text-blue-700 text-left">Cool Max Scent Aerosol Sprays?</span></h2>
                             <p className="text-slate-500 font-light leading-relaxed font-sans text-left">
-                                Cool Max aerosol sprays are selected for reliable performance in professional dispenser systems. They help maintain consistent fragrance delivery while enhancing hygiene perception and overall comfort.
+                                Cool Max Scent aerosol sprays are selected for reliable performance in professional dispenser systems. They help maintain consistent fragrance delivery while enhancing hygiene perception and overall comfort.
                             </p>
                         </div>
                     </div>
@@ -212,7 +212,7 @@ const StrawberryAerosolSprayDetail = () => {
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full text-left"></div>
                     <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center text-left">Looking for a <br/><span className="italic font-light text-slate-300 font-serif text-left">complete solution?</span></h2>
                     <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center text-left">
-                        For automated fragrance control and consistent results, pair Strawberry Aerosol Spray with Cool Max LED or LCD Aerosol Dispensers.
+                        For automated fragrance control and consistent results, pair Strawberry Aerosol Spray with Cool Max Scent LED or LCD Aerosol Dispensers.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans text-left text-center">
                         <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-left">

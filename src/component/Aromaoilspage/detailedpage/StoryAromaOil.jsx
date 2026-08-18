@@ -181,7 +181,7 @@ const StoryAromaOilDetail = () => {
                     { title: "Versatile Profile", desc: "An elegant and modern fragrance that suits both elite business and home environments." },
                     { title: "Elite Formulation", desc: "Professional-grade fragrance oil ensuring long-lasting and clean diffusion." },
                     { title: "Consistent Presence", desc: "Formulated to maintain its refined character steadily throughout the day." },
-                    { title: "System Ready", desc: "Optimized for all professional Cool Max automated scent delivery diffuser systems." }
+                    { title: "System Ready", desc: "Optimized for all professional Cool Max Scent automated scent delivery diffuser systems." }
                 ].map((item, i) => (
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors text-left text-left text-left">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400" />

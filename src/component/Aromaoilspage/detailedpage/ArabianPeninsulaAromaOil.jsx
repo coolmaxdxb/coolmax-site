@@ -179,7 +179,7 @@ const ArabianPeninsulaAromaOilDetail = () => {
                     { title: "Commanding Intensity", desc: "Strong intensity specifically formulated for large-area diffusion." },
                     { title: "Deep Heritage", desc: "Rich oriental character inspired by authentic Middle Eastern perfumery." },
                     { title: "Elite Formulation", desc: "Professional-grade oil designed for consistent, long-lasting performance." },
-                    { title: "Universal Compatibility", desc: "Works seamlessly with all advanced Cool Max automated scent systems." },
+                    { title: "Universal Compatibility", desc: "Works seamlessly with all advanced Cool Max Scent automated scent systems." },
                     { title: "Prestige Presence", desc: "Leaves a memorable signature that expresses prestige and elegance." }
                 ].map((item, i) => (
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col gap-5 hover:bg-white/10 transition-colors">
@@ -222,7 +222,7 @@ const ArabianPeninsulaAromaOilDetail = () => {
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
             </a>
             <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3">
-              Contact Cool Max <ArrowRightIcon className="w-5 h-5" />
+              Contact Cool Max Scent <ArrowRightIcon className="w-5 h-5" />
             </Link>
           </div>
         </div>

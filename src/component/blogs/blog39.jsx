@@ -10,7 +10,7 @@ export default function RestaurantAromaDiffuserBlog() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = "Aroma Diffuser for Restaurants in Dubai | Coolmax";
+    document.title = "Aroma Diffuser for Restaurants in Dubai | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
@@ -301,18 +301,18 @@ export default function RestaurantAromaDiffuserBlog() {
               </motion.div>
 
               <motion.div {...fadeInUp} id="why-restaurants-across-dubai-choose-coolmaxscent" className="py-12 border-t border-slate-100">
-                <h2 className="text-3xl md:text-4xl font-serif mb-8 tracking-tight text-slate-900">Why Restaurants Across Dubai Choose CoolMaxScent</h2>
+                <h2 className="text-3xl md:text-4xl font-serif mb-8 tracking-tight text-slate-900">Why Restaurants Across Dubai Choose Cool Max Scent</h2>
                 <p className="text-justify mb-6">
                   Every restaurant has different operational requirements, which is why there is no one size fits all solution for commercial scenting. The right fragrance strategy depends on your restaurant's size, layout, customer flow, and brand identity.
                 </p>
                 <p className="text-justify mb-6">
-                  At CoolMaxScent, we help restaurants choose scenting solutions based on these practical considerations rather than recommending the same system for every business.
+                  At Cool Max Scent, we help restaurants choose scenting solutions based on these practical considerations rather than recommending the same system for every business.
                 </p>
                 <p className="text-justify mb-6">
                   Whether you need the AeroBlack Med Commercial Aroma Diffuser for a family restaurant, the NanoPillar Diffuser for a premium dining space, or the AeroBlack Pro HVAC Integrated Aroma Diffuser for large restaurants and banquet halls, each solution is designed to deliver reliable fragrance coverage for different environments.
                 </p>
                 <p className="text-justify">
-                  With a range of <a href="https://www.coolmaxscent.com/commercial-aroma-diffusers/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-bold">Commercial Aroma Diffusers in Dubai</a>, premium fragrance options, and solutions for both standalone and HVAC applications, CoolMaxScent supports restaurants in creating welcoming commercial spaces that leave a lasting impression on their guests.
+                  With a range of <a href="https://www.coolmaxscent.com/commercial-aroma-diffusers/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-bold">Commercial Aroma Diffusers in Dubai</a>, premium fragrance options, and solutions for both standalone and HVAC applications, Cool Max Scent supports restaurants in creating welcoming commercial spaces that leave a lasting impression on their guests.
                 </p>
               </motion.div>
 
@@ -322,7 +322,7 @@ export default function RestaurantAromaDiffuserBlog() {
                   A great dining experience is about more than exceptional food. The atmosphere you create influences how customers feel, how long they stay, and whether they choose to return. Investing in the right <a href="https://www.coolmaxscent.com/floor-standing-aroma-diffusers/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-bold">Fragrance diffuser for Restaurants in Dubai</a> is a practical way to improve ambience, reduce lingering food odours, and create a memorable environment across both intimate dining areas and large spaces.
                 </p>
                 <p className="text-justify mb-4">
-                  If you're considering an aroma diffuser for Restaurants in Dubai, partnering with an experienced provider makes all the difference. <a href="https://www.coolmaxscent.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-bold">CoolMaxScent</a> offers professional scenting solutions, premium fragrances, and expert support to help restaurants across Dubai create inviting environments that reflect their brand and enhance every guest's dining experience.
+                  If you're considering an aroma diffuser for Restaurants in Dubai, partnering with an experienced provider makes all the difference. <a href="https://www.coolmaxscent.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-bold">Cool Max Scent</a> offers professional scenting solutions, premium fragrances, and expert support to help restaurants across Dubai create inviting environments that reflect their brand and enhance every guest's dining experience.
                 </p>
               </motion.div>
             </div>

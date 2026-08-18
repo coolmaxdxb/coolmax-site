@@ -27,7 +27,7 @@ const FloraAerosolSprayDetail = () => {
         // Updates the Meta Description
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
-            metaDescription.setAttribute("content", "Flora Aerosol Spray by Cool Max delivers a fresh floral fragrance for washrooms, offices, and hotels. Compatible with LED & LCD dispensers.");
+            metaDescription.setAttribute("content", "Flora Aerosol Spray by Cool Max Scent delivers a fresh floral fragrance for washrooms, offices, and hotels. Compatible with LED & LCD dispensers.");
         }
 
         // Handles Canonical Link
@@ -180,7 +180,7 @@ const FloraAerosolSprayDetail = () => {
             <section className="py-24 bg-slate-950 text-white px-6 text-left">
                 <div className="max-w-[1200px] mx-auto text-center">
                     <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase">Ideal For</h2>
-                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto">Flora Aerosol Spray works seamlessly with Cool Max aerosol dispensers, making it a practical solution for businesses that require controlled fragrance delivery.</p>
+                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto">Flora Aerosol Spray works seamlessly with Cool Max Scent aerosol dispensers, making it a practical solution for businesses that require controlled fragrance delivery.</p>
                     <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
                         {[
                             { title: "Washrooms", desc: "Maintains hygiene and odor control." },
@@ -206,9 +206,9 @@ const FloraAerosolSprayDetail = () => {
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                         </div>
                         <div>
-                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
+                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight">Why Choose <span className="italic font-light text-blue-700">Cool Max Scent Aerosol Sprays?</span></h2>
                             <p className="text-slate-500 font-light leading-relaxed">
-                                Cool Max aerosol solutions are developed to support hygiene perception and comfort across different environments. Our sprays are designed to perform reliably in professional dispenser systems, helping businesses maintain a fresh and welcoming atmosphere throughout the day.
+                                Cool Max Scent aerosol solutions are developed to support hygiene perception and comfort across different environments. Our sprays are designed to perform reliably in professional dispenser systems, helping businesses maintain a fresh and welcoming atmosphere throughout the day.
                             </p>
                         </div>
                     </div>
@@ -220,7 +220,7 @@ const FloraAerosolSprayDetail = () => {
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
                     <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100">Looking for a <br/><span className="italic font-light text-slate-300">complete solution?</span></h2>
                     <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans">
-                        Pair Flora Aerosol Spray with Cool Max LED or LCD scent dispensers for automated, consistent fragrance control.
+                        Pair Flora Aerosol Spray with Cool Max Scent LED or LCD scent dispensers for automated, consistent fragrance control.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6 relative z-10">
                         <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">

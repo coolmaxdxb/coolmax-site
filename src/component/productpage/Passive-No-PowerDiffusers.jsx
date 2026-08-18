@@ -32,7 +32,7 @@ export default function PassiveDiffusersPage() {
 
   // --- SEO Implementation ---
   useEffect(() => {
-    document.title = "Passive Diffusers UAE | No-Power Fragrance | Cool Max";
+    document.title = "Passive Diffusers UAE | No-Power Fragrance | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "Discover passive diffusers UAE for electricity-free fragrance. Natural aroma diffusion for washrooms, elevators & small spaces. Silent, low-maintenance & reliable.");
@@ -81,7 +81,7 @@ export default function PassiveDiffusersPage() {
 
               <div className="p-6 bg-slate-50 border border-slate-200 rounded-[2rem] mb-8 max-w-xl shadow-sm text-left">
                 <p className="text-base text-slate-600 leading-relaxed italic text-left text-justify">
-                  Cool Max offers Passive / No-Power Diffusers designed for spaces where silent, maintenance-free, and electricity-free fragrance is required. Our Natural Fragrance Diffusion solution provides continuous freshness without using electricity, batteries, or mechanical systems.
+                  Cool Max Scent offers Passive / No-Power Diffusers designed for spaces where silent, maintenance-free, and electricity-free fragrance is required. Our Natural Fragrance Diffusion solution provides continuous freshness without using electricity, batteries, or mechanical systems.
                 </p>
               </div>
 
@@ -259,7 +259,7 @@ export default function PassiveDiffusersPage() {
         {/* ================= SECTION 8: WHY COOL MAX ================= */}
         <section className="py-16 font-sans text-left border-t border-slate-100">
           <div className="bg-slate-50 rounded-[3rem] p-10 md:p-16 border border-slate-100 text-left shadow-sm">
-            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter leading-none text-center lg:text-left uppercase font-bold text-left">Why Choose Cool Max?</h2>
+            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter leading-none text-center lg:text-left uppercase font-bold text-left">Why Choose Cool Max Scent?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left text-left">
               {[
                 "UAE-based company with local experience",
@@ -300,11 +300,11 @@ export default function PassiveDiffusersPage() {
               Looking for Passive / <br /> <span className="italic text-blue-600 font-light text-center text-center">No-Power Diffusers in UAE?</span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-3xl mx-auto font-light leading-relaxed text-center text-justify md:text-center text-center">
-              If you need a simple, electricity-free fragrance solution for washrooms, elevators, or enclosed spaces, Natural Fragrance Diffusion from Cool Max is the right choice. Our team will help you understand whether this solution fits your space or if another option is better.
+              If you need a simple, electricity-free fragrance solution for washrooms, elevators, or enclosed spaces, Natural Fragrance Diffusion from Cool Max Scent is the right choice. Our team will help you understand whether this solution fits your space or if another option is better.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center text-center">
               <Link to="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3 text-center">
-                Contact Cool Max Today <ArrowRightIcon className="w-4 h-4 text-center text-center"/>
+                Contact Cool Max Scent Today <ArrowRightIcon className="w-4 h-4 text-center text-center"/>
               </Link>
               <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3 text-center">
                 <ChatBubbleLeftRightIcon className="w-5 h-5 text-center" /> WhatsApp Expert

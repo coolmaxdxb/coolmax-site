@@ -195,9 +195,9 @@ const EventAerosolSprayDetail = () => {
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                         </div>
                         <div>
-                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
+                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight">Why Choose <span className="italic font-light text-blue-700">Cool Max Scent Aerosol Sprays?</span></h2>
                             <p className="text-slate-500 font-light leading-relaxed">
-                                Cool Max aerosol sprays are designed to support professional hygiene standards and refined scent experiences. Our formulations work reliably with commercial dispenser systems, helping businesses maintain clean, welcoming, and well-managed environments.
+                                Cool Max Scent aerosol sprays are designed to support professional hygiene standards and refined scent experiences. Our formulations work reliably with commercial dispenser systems, helping businesses maintain clean, welcoming, and well-managed environments.
                             </p>
                         </div>
                     </div>
@@ -210,7 +210,7 @@ const EventAerosolSprayDetail = () => {
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
                     <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100">Looking for a <br/><span className="italic font-light text-slate-300">complete solution?</span></h2>
                     <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans">
-                        For automated fragrance control and consistent results, pair Event Aerosol Spray with Cool Max LED or LCD Aerosol Dispensers.
+                        For automated fragrance control and consistent results, pair Event Aerosol Spray with Cool Max Scent LED or LCD Aerosol Dispensers.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6 relative z-10">
                         <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">

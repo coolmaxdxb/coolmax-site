@@ -176,7 +176,7 @@ const ProcessAndInsights = () => {
                 </h2>
                 
                 <p className="text-blue-100/80 text-lg md:text-xl font-light leading-relaxed mb-8">
-                  Whether you are looking for a home scent diffuser, a hotel scent diffuser, or a powerful commercial scent machine, Cool Max has the right solution for you.
+                  Whether you are looking for a home scent diffuser, a hotel scent diffuser, or a powerful commercial scent machine, Cool Max Scent has the right solution for you.
                 </p>
 
                 <p className="text-slate-400 text-base md:text-lg font-light leading-relaxed mb-12 italic">
@@ -190,7 +190,7 @@ const ProcessAndInsights = () => {
 
                    <Link to="/contact/">
                      <button className="px-10 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-blue-50 transition-all flex items-center gap-3 transform hover:scale-105 duration-300 shadow-[0_0_20px_-5px_rgba(255,255,255,0.3)]">
-                       Contact Cool Max today for a consultation
+                       Contact Cool Max Scent today for a consultation
                        <ArrowLongRightIcon className="w-4 h-4" />
                      </button>
                    </Link>

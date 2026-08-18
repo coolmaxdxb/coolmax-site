@@ -335,7 +335,7 @@ const AirPoleProPage = () => {
             </ul>
           </div>
           <div className="p-8 bg-blue-600 text-white rounded-3xl shadow-xl text-left">
-            <h4 className="text-lg font-bold mb-4 text-white text-left">Cool Max Support</h4>
+            <h4 className="text-lg font-bold mb-4 text-white text-left">Cool Max Scent Support</h4>
             <ul className="space-y-2 text-xs text-blue-50 font-light text-left">
                <li className="text-left">• Custom Fragrance Strategy</li>
                <li className="text-left">• Installation & On-site support</li>
@@ -358,7 +358,7 @@ const AirPoleProPage = () => {
                <ChatBubbleLeftRightIcon className="w-5 h-5 text-left" /> WhatsApp Support
             </a>
             <a href={contactPath} className="px-10 py-4 bg-white/5 text-white rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-2 text-left">
-              Contact Cool Max <ArrowRightIcon className="w-4 h-4 text-left" />
+              Contact Cool Max Scent <ArrowRightIcon className="w-4 h-4 text-left" />
             </a>
           </div>
         </div>

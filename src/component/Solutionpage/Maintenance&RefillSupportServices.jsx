@@ -27,10 +27,10 @@ export default function MaintenancePage() {
 
   // --- SEO Implementation ---
   useEffect(() => {
-    document.title = "Maintenance & Refill Support Services in UAE | Cool Max";
+    document.title = "Maintenance & Refill Support Services in UAE | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Maintenance and refill support services in UAE for scent and hygiene systems. Reliable servicing, fragrance refills, and HVAC diffuser maintenance by Cool Max.");
+      metaDesc.setAttribute("content", "Maintenance and refill support services in UAE for scent and hygiene systems. Reliable servicing, fragrance refills, and HVAC diffuser maintenance by Cool Max Scent.");
     }
     
     let canonical = document.querySelector('link[rel="canonical"]');
@@ -128,7 +128,7 @@ export default function MaintenancePage() {
             </p>
             <div className="p-6 bg-slate-50 border-l-4 border-emerald-600 rounded-r-2xl shadow-sm text-left">
               <p className="italic text-slate-500 font-light text-sm md:text-base text-left">
-                Our maintenance and refill programs are designed for businesses that value consistency, efficiency, and peace of mind. Whether you use a home scent diffuser, a commercial scent diffuser, or an HVAC scent diffuser, Cool Max ensures your system continues to deliver the right fragrance at the right intensity—without disruption.
+                Our maintenance and refill programs are designed for businesses that value consistency, efficiency, and peace of mind. Whether you use a home scent diffuser, a commercial scent diffuser, or an HVAC scent diffuser, Cool Max Scent ensures your system continues to deliver the right fragrance at the right intensity—without disruption.
               </p>
             </div>
           </motion.div>
@@ -200,7 +200,7 @@ export default function MaintenancePage() {
                 <motion.div {...smoothFadeUp} className="mb-8 text-left">
                     <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-4 tracking-tighter leading-none text-left">What Is Maintenance & Refill Support?</h2>
                     <p className="text-slate-500 text-base md:text-lg font-light leading-relaxed max-xl text-left text-justify">
-                      Maintenance and refill support involves ongoing service care for scent and hygiene systems. At Cool Max, we offer structured maintenance programs designed to suit different environments and usage levels.
+                      Maintenance and refill support involves ongoing service care for scent and hygiene systems. At Cool Max Scent, we offer structured maintenance programs designed to suit different environments and usage levels.
                     </p>
                 </motion.div>
 
@@ -331,7 +331,7 @@ export default function MaintenancePage() {
 
             <motion.div {...smoothFadeUp} className="p-10 bg-slate-900 rounded-[3rem] text-white overflow-hidden relative text-left shadow-xl">
                <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-600/10 blur-[80px] text-left" />
-               <h2 className="text-3xl font-serif mb-8 relative z-10 text-left">Why Choose Cool Max Support?</h2>
+               <h2 className="text-3xl font-serif mb-8 relative z-10 text-left">Why Choose Cool Max Scent Support?</h2>
                <ul className="space-y-4 relative z-10 text-left">
                  {[
                    "UAE-based service team",
@@ -371,7 +371,7 @@ export default function MaintenancePage() {
             <motion.div {...smoothFadeUp} className="max-w-4xl mx-auto p-10 bg-emerald-50 rounded-[3rem] border border-emerald-100 text-left text-left">
               <h3 className="text-2xl md:text-4xl font-serif text-emerald-900 mb-6 text-left">Supporting Your Brand Through Consistent Scenting</h3>
               <p className="text-emerald-800 leading-relaxed font-light text-left text-justify">
-                A scent system is part of your environment identity. With proper maintenance, your home fragrance system, commercial scent machine, or HVAC scent diffuser continues to support comfort, hygiene, and brand perception. Cool Max ensures your scenting investment delivers long-term value.
+                A scent system is part of your environment identity. With proper maintenance, your home fragrance system, commercial scent machine, or HVAC scent diffuser continues to support comfort, hygiene, and brand perception. Cool Max Scent ensures your scenting investment delivers long-term value.
               </p>
             </motion.div>
         </section>
@@ -383,7 +383,7 @@ export default function MaintenancePage() {
               Let’s Keep Your Scent Systems <br /> <span className="italic text-emerald-600 font-light text-center">Running Smoothly</span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-3xl mx-auto font-light leading-relaxed text-center font-sans">
-              Whether you manage a hotel, office, hospital, school, or commercial facility, Cool Max provides dependable maintenance and refill support services in UAE to keep your scent and hygiene systems operating at their best.
+              Whether you manage a hotel, office, hospital, school, or commercial facility, Cool Max Scent provides dependable maintenance and refill support services in UAE to keep your scent and hygiene systems operating at their best.
             </p>
             
             <p className="text-sm font-black uppercase text-emerald-600 tracking-widest mb-8 text-center">Looking for reliable maintenance and refill support in UAE?</p>

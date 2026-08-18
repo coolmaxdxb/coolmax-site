@@ -178,7 +178,7 @@ const PassionAromaOilDetail = () => {
                     { title: "Bold Modernity", desc: "A professional perfumers-style fragrance that projects confidence and energy." },
                     { title: "Premium Commercial Use", desc: "Specifically crafted for elite business and high-end retail environments." },
                     { title: "Consistent Quality", desc: "Professional-grade oil ensuring a long-lasting and reliable scent experience." },
-                    { title: "System Ready", desc: "Optimized for use with all advanced automated Cool Max scent delivery systems." }
+                    { title: "System Ready", desc: "Optimized for use with all advanced automated Cool Max Scent scent delivery systems." }
                 ].map((item, i) => (
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors text-left text-left text-left text-left text-left">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400" />

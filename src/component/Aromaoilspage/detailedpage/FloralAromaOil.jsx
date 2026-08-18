@@ -178,7 +178,7 @@ const FloralAromaOilDetail = () => {
                     { title: "Universal Appeal", desc: "A soft floral profile that is clean, professional, and welcoming for all visitors." },
                     { title: "Pure Quality", desc: "Professional-grade formulation ensuring a long-lasting and consistent experience." },
                     { title: "Gentle Character", desc: "Designed to provide comfort and freshness without overwhelming the space." },
-                    { title: "System Compatible", desc: "Optimized for all professional Cool Max automated scent delivery systems." }
+                    { title: "System Compatible", desc: "Optimized for all professional Cool Max Scent automated scent delivery systems." }
                 ].map((item, i) => (
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400" />

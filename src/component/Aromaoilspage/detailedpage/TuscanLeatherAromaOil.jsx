@@ -181,7 +181,7 @@ const TuscanLeatherAromaOilDetail = () => {
                     { title: "Signature Accord", desc: "A distinctive leather-inspired fragrance that defines strength and luxury." },
                     { title: "Elite Formulation", desc: "Professional-grade oil ensuring a clean, rich, and consistent scent profile." },
                     { title: "Polished Presence", desc: "Formulated to leave a professional impression that lasts throughout the day." },
-                    { title: "System Compatible", desc: "Optimized for all advanced automated Cool Max scent delivery diffuser systems." }
+                    { title: "System Compatible", desc: "Optimized for all advanced automated Cool Max Scent scent delivery diffuser systems." }
                 ].map((item, i) => (
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400" />

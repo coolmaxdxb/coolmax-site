@@ -103,7 +103,7 @@ export default function Header() {
           {/* LOGO - Filters removed to show original colors */}
           <div className="flex-shrink-0 z-50">
             <Link to="/" onClick={() => setMobileMenuOpen(false)}>
-              <img src={Logo} alt="CoolMax" className={`object-contain transition-all duration-300 ${scrolled ? "h-23" : "h-23 lg:h-23"}`} />
+              <img src={Logo} alt="Cool Max Scent" className={`object-contain transition-all duration-300 ${scrolled ? "h-23" : "h-23 lg:h-23"}`} />
             </Link>
           </div>
 
@@ -194,7 +194,7 @@ export default function Header() {
         <div className={`absolute top-0 right-0 h-full w-full sm:w-[420px] bg-white transform transition-transform duration-500 flex flex-col ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
           <div className="flex items-center justify-between px-6 pt-6 pb-4">
             {/* Logo filters removed here as well */}
-            <img src={Logo} alt="CoolMax" className="h-8 object-contain" />
+            <img src={Logo} alt="Cool Max Scent" className="h-8 object-contain" />
             <button onClick={() => setMobileMenuOpen(false)} className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 border border-slate-200"><XMarkIcon className="w-5 h-5 text-slate-600" /></button>
           </div>
           <div className="flex-1 overflow-y-auto px-4 pb-24 text-left">

@@ -99,7 +99,7 @@ const blogPosts = [
   },
   {
     id: 6,
-    title: "How Large Area & HVAC Aroma Diffusers Transform Commercial Spaces | Cool Max",
+    title: "How Large Area & HVAC Aroma Diffusers Transform Commercial Spaces | Cool Max Scent",
     excerpt: "Discover how industrial HVAC scenting creates seamless fragrance coverage for malls and towers.",
 
     readTime: "5 min read",
@@ -171,7 +171,7 @@ const blogPosts = [
   },
   {
     id: 14,
-    title: "Best Aroma Oil Scent Diffuser Guide for Every Room | Cool Max",
+    title: "Best Aroma Oil Scent Diffuser Guide for Every Room | Cool Max Scent",
     excerpt: "Find the perfect aroma oil diffuser for your space. Explore premium aroma oils like oud, lavender, white tea, and more to create a relaxing atmosphere. Contact Us Today!",
 
     readTime: "8 min read",
@@ -288,7 +288,7 @@ const blogPosts = [
   },
    {
     id: 27,
-    title: "How to Use Aroma Diffusers Effectively | coolmax",
+    title: "How to Use Aroma Diffusers Effectively | Cool Max Scent",
     excerpt: "Learn how to use aroma diffuser machines in UAE effectively for homes, offices, hotels, & commercial spaces. Discover expert tips for better fragrance coverage.",
 
     readTime: "8 min read",
@@ -299,7 +299,7 @@ const blogPosts = [
     {
     id: 28,
     title: "Top 10 Aroma Diffusers in UAE for Commercial Spaces",
-    excerpt: "Discover the best Aroma Diffuser Machines in UAE for hotels, offices, malls, and retail spaces. Explore premium scenting solutions from CoolMaxScent.",
+    excerpt: "Discover the best Aroma Diffuser Machines in UAE for hotels, offices, malls, and retail spaces. Explore premium scenting solutions from Cool Max Scent.",
 
     readTime: "8 min read",
     path: "/blog/10-best-aroma-diffuser-machines-in-uae/",
@@ -309,7 +309,7 @@ const blogPosts = [
 
    {
     id: 29,
-    title: "10 Best Summer Fragrance Oils for Dubai Diffusers | CoolMax",
+    title: "10 Best Summer Fragrance Oils for Dubai Diffusers | Cool Max Scent",
     excerpt: "Looking for the perfect summer scent? Discover the 10 best fragrance oils for diffusers in Dubai, with fresh, long-lasting options for UAE spaces. Contact Us Today!",
 
     readTime: "8 min read",
@@ -318,7 +318,7 @@ const blogPosts = [
   },
    {
     id: 30,
-    title: "Scent Aroma Oil Diffusers for Clinics & Wellness Centers | CoolMax",
+    title: "Scent Aroma Oil Diffusers for Clinics & Wellness Centers | Cool Max Scent",
     excerpt: "Learn how aroma oil diffusers help clinics and wellness centers create calming environments, improve patient comfort, and enhance visitor experiences. Contact Us Today!",
 
     readTime: "8 min read",
@@ -327,7 +327,7 @@ const blogPosts = [
   },
      {
     id: 31,
-    title: "Create a Luxurious Home with Professional Aroma Diffusers | CoolMax",
+    title: "Create a Luxurious Home with Professional Aroma Diffusers | Cool Max Scent",
     excerpt: "Discover how essential oil diffusers and premium fragrance oils create a luxurious, welcoming, and relaxing atmosphere throughout your home.",
 
     readTime: "8 min read",
@@ -435,7 +435,7 @@ const blogPosts = [
   },
   {
     id: 43,
-    title: "Aroma Diffuser for Corporate Office in Dubai | CoolMax Scent",
+    title: "Aroma Diffuser for Corporate Office in Dubai | Cool Max Scent",
     excerpt: "Explore why office ambience matters and how a professional office aroma diffuser supports a welcoming workplace in Dubai.",
 
     readTime: "8 min read",

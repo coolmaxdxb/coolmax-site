@@ -95,7 +95,7 @@ export default function ScentDiffuserMachineGuide() {
                   In many offices across the UAE and Qatar, businesses invest in interior design and furniture but often overlook one important element: scent. Without a pleasant fragrance, even a well-designed office can feel incomplete.
                 </p>
                 <p className="mb-6 text-justify">
-                  This is where a Cool Max scent diffuser machine becomes an effective solution. Unlike traditional air fresheners that fade quickly, professional scent diffuser machines distribute fragrance evenly throughout the space, creating a consistent and refreshing environment.
+                  This is where a Cool Max Scent scent diffuser machine becomes an effective solution. Unlike traditional air fresheners that fade quickly, professional scent diffuser machines distribute fragrance evenly throughout the space, creating a consistent and refreshing environment.
                 </p>
                 <p className="mb-8 text-justify">
                   At Cool Max Scent, we provide advanced scent diffuser machines designed to transform everyday spaces into immersive sensory environments. Our fragrance diffusion systems help create balanced scent coverage for homes, offices, hotels, and commercial spaces across the UAE & QATAR.

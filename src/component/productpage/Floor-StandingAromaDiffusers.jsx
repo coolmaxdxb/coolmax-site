@@ -39,10 +39,10 @@ export default function FloorStandingDiffusersPage() {
 
   // --- SEO Implementation ---
   useEffect(() => {
-    document.title = "Floor-Standing Aroma Diffusers in UAE | Cool Max";
+    document.title = "Floor-Standing Aroma Diffusers in UAE | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Explore floor-standing aroma diffusers in UAE for hotel lobbies, malls, and showrooms. Premium scent diffuser machines with professional support by Cool Max.");
+      metaDesc.setAttribute("content", "Explore floor-standing aroma diffusers in UAE for hotel lobbies, malls, and showrooms. Premium scent diffuser machines with professional support by Cool Max Scent.");
     }
   }, []);
 
@@ -82,7 +82,7 @@ export default function FloorStandingDiffusersPage() {
 
               <div className="p-6 bg-slate-50 border border-slate-200 rounded-[2rem] mb-8 max-w-xl shadow-sm">
                 <p className="text-base text-slate-600 leading-relaxed italic text-left">
-                  Floor-standing aroma diffusers from Cool Max are designed for spaces where fragrance performance and visual appeal are equally important. These professional Floor-Standing Scent Diffusers are ideal for Lobby Aroma Diffusers, shopping malls, showrooms, sales offices, and premium commercial interiors.
+                  Floor-standing aroma diffusers from Cool Max Scent are designed for spaces where fragrance performance and visual appeal are equally important. These professional Floor-Standing Scent Diffusers are ideal for Lobby Aroma Diffusers, shopping malls, showrooms, sales offices, and premium commercial interiors.
                 </p>
               </div>
 
@@ -246,11 +246,11 @@ export default function FloorStandingDiffusersPage() {
               Need a Floor-Standing <br /> <span className="italic text-blue-600 font-light text-center">Aroma Diffuser?</span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-3xl mx-auto font-light leading-relaxed text-center text-justify md:text-center">
-              Whether you are upgrading a lobby, showroom, or commercial space, Cool Max offers professional Floor-Standing Aroma Diffusers in UAE tailored to your needs.
+              Whether you are upgrading a lobby, showroom, or commercial space, Cool Max Scent offers professional Floor-Standing Aroma Diffusers in UAE tailored to your needs.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
               <Link to="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3 text-center">
-                Contact Cool Max Today <ArrowRightIcon className="w-4 h-4 text-center"/>
+                Contact Cool Max Scent Today <ArrowRightIcon className="w-4 h-4 text-center"/>
               </Link>
               <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3 text-center">
                 <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert

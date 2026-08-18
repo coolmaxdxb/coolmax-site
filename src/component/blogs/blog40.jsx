@@ -11,7 +11,7 @@ export default function AeroPillarDiffuserBlog() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = "Why AeroPillar Diffuser is Dubai's Preferred Aroma Diffuser | CoolMax";
+    document.title = "Why AeroPillar Diffuser is Dubai's Preferred Aroma Diffuser | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(

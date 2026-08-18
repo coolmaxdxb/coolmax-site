@@ -36,10 +36,10 @@ export default function DesktopSmallSpacePage() {
 
   // --- SEO Implementation ---
   useEffect(() => {
-    document.title = "Desktop & Small Space Aroma Diffusers in UAE | Cool Max";
+    document.title = "Desktop & Small Space Aroma Diffusers in UAE | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Explore desktop & small space aroma diffusers in UAE for offices, cabins, and small rooms. Quiet, compact, and professional scent solutions by Cool Max.");
+      metaDesc.setAttribute("content", "Explore desktop & small space aroma diffusers in UAE for offices, cabins, and small rooms. Quiet, compact, and professional scent solutions by Cool Max Scent.");
     }
   }, []);
 
@@ -76,7 +76,7 @@ export default function DesktopSmallSpacePage() {
               </p>
               <div className="p-6 bg-slate-50 border border-slate-200 rounded-[2rem] mb-8 max-w-xl shadow-sm text-left">
                 <p className="text-base text-slate-600 leading-relaxed italic text-left">
-                  Office Desk Aroma Diffusers from Cool Max are designed to create fresh, calm, and comfortable environments in compact areas. These scent diffuser machines are ideal for office desks, cabins, meeting rooms, home offices, and other small indoor spaces where subtle and controlled fragrance is required.
+                  Office Desk Aroma Diffusers from Cool Max Scent are designed to create fresh, calm, and comfortable environments in compact areas. These scent diffuser machines are ideal for office desks, cabins, meeting rooms, home offices, and other small indoor spaces where subtle and controlled fragrance is required.
                 </p>
               </div>
               <div className="flex flex-wrap gap-4 font-sans text-left">
@@ -213,7 +213,7 @@ export default function DesktopSmallSpacePage() {
         {/* ================= SECTION 7: WHY COOL MAX ================= */}
         <section className="py-16 text-left font-sans">
           <div className="bg-slate-50 rounded-[3rem] p-10 md:p-16 border border-slate-100 text-left shadow-sm">
-            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter leading-none text-center lg:text-left uppercase">Why Choose Cool Max?</h2>
+            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter leading-none text-center lg:text-left uppercase">Why Choose Cool Max Scent?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
               {[
                 "UAE-based company with local support",
@@ -252,11 +252,11 @@ export default function DesktopSmallSpacePage() {
               Need Help Choosing the <br /> <span className="italic text-blue-600 font-light text-center">Right Desktop Aroma Diffuser?</span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-3xl mx-auto font-light leading-relaxed text-center">
-              Whether you are setting up a single workstation or multiple office cabins, Cool Max offers reliable Desktop & Small Space Aroma Diffusers in UAE tailored to your needs.
+              Whether you are setting up a single workstation or multiple office cabins, Cool Max Scent offers reliable Desktop & Small Space Aroma Diffusers in UAE tailored to your needs.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
               <Link to="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3 text-center">
-                Contact Cool Max Today <ArrowRightIcon className="w-4 h-4 text-center"/>
+                Contact Cool Max Scent Today <ArrowRightIcon className="w-4 h-4 text-center"/>
               </Link>
               <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center gap-3 text-center">
                 <ChatBubbleLeftRightIcon className="w-5 h-5 text-center" /> WhatsApp Expert

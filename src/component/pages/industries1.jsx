@@ -160,7 +160,7 @@ export default function IndustriesSection() {
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-500/30 bg-blue-500/10 backdrop-blur-md mb-8">
                      <CheckBadgeIcon className="w-4 h-4 text-blue-400" />
                      <span className="text-blue-200 text-xs font-bold tracking-widest uppercase">
-                        Why Choose Cool Max
+                        Why Choose Cool Max Scent
                      </span>
                 </div>
                 <h2 className="text-4xl md:text-5xl font-serif text-white mb-6 leading-tight">
@@ -168,7 +168,7 @@ export default function IndustriesSection() {
                     <span className="italic text-blue-400">Supplier in UAE</span>
                 </h2>
                 <p className="text-slate-400 text-lg font-light leading-relaxed max-w-2xl mx-auto">
-                    Businesses and homeowners across the UAE choose Cool Max because we focus on performance, reliability, and service.
+                    Businesses and homeowners across the UAE choose Cool Max Scent because we focus on performance, reliability, and service.
                 </p>
             </div>
 

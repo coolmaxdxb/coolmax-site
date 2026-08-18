@@ -28,7 +28,7 @@ const FreshBakhoorAerosolSprayDetail = () => {
         // Update the meta description
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
-            metaDescription.setAttribute("content", "Fresh Bakhoor Aerosol Spray by Cool Max blends jasmine, rose, saffron, clove, vanilla, and pineapple for a rich oriental fragrance with lasting freshness.");
+            metaDescription.setAttribute("content", "Fresh Bakhoor Aerosol Spray by Cool Max Scent blends jasmine, rose, saffron, clove, vanilla, and pineapple for a rich oriental fragrance with lasting freshness.");
         }
 
         // Update or create the canonical link
@@ -200,9 +200,9 @@ const FreshBakhoorAerosolSprayDetail = () => {
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                         </div>
                         <div className="text-left">
-                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Why Choose <span className="italic font-light text-blue-700 text-left">Cool Max Aerosol Sprays?</span></h2>
+                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Why Choose <span className="italic font-light text-blue-700 text-left">Cool Max Scent Aerosol Sprays?</span></h2>
                             <p className="text-slate-500 font-light leading-relaxed text-justify">
-                                Cool Max aerosol sprays are designed for reliable performance in professional scenting systems. Our formulations help businesses maintain a clean, welcoming environment while ensuring consistent fragrance delivery throughout the day.
+                                Cool Max Scent aerosol sprays are designed for reliable performance in professional scenting systems. Our formulations help businesses maintain a clean, welcoming environment while ensuring consistent fragrance delivery throughout the day.
                             </p>
                         </div>
                     </div>
@@ -215,7 +215,7 @@ const FreshBakhoorAerosolSprayDetail = () => {
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
                     <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center">Interested in <br/><span className="italic font-light text-slate-300">this fragrance?</span></h2>
                     <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
-                        For automated fragrance control and consistent results, pair Fresh Bakhoor Aerosol Spray with Cool Max LED or LCD Aerosol Dispensers.
+                        For automated fragrance control and consistent results, pair Fresh Bakhoor Aerosol Spray with Cool Max Scent LED or LCD Aerosol Dispensers.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6 relative z-10 text-center">
                         <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-center">

@@ -27,7 +27,7 @@ const FloralAerosolSprayDetail = () => {
         // Updates the Meta Description
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
-            metaDescription.setAttribute("content", "Floral Aerosol Spray by Cool Max blends Sicilian orange, lily of the valley, musk, and cedar for a soft citrus-floral freshness with lasting performance.");
+            metaDescription.setAttribute("content", "Floral Aerosol Spray by Cool Max Scent blends Sicilian orange, lily of the valley, musk, and cedar for a soft citrus-floral freshness with lasting performance.");
         }
 
         // Updates the Canonical Link
@@ -195,9 +195,9 @@ const FloralAerosolSprayDetail = () => {
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                         </div>
                         <div className="text-left">
-                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
+                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight">Why Choose <span className="italic font-light text-blue-700">Cool Max Scent Aerosol Sprays?</span></h2>
                             <p className="text-slate-500 font-light leading-relaxed font-sans text-left text-justify">
-                                Cool Max aerosol sprays are developed to ensure reliable fragrance delivery in professional dispenser systems. They help maintain clean, pleasant environments while supporting hygiene perception and operational ease.
+                                Cool Max Scent aerosol sprays are developed to ensure reliable fragrance delivery in professional dispenser systems. They help maintain clean, pleasant environments while supporting hygiene perception and operational ease.
                             </p>
                         </div>
                     </div>
@@ -210,7 +210,7 @@ const FloralAerosolSprayDetail = () => {
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
                     <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center">Looking for a <br/><span className="italic font-light text-slate-300 font-serif">complete solution?</span></h2>
                     <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
-                        For automated fragrance control and dependable freshness, pair Floral Aerosol Spray with Cool Max LED or LCD Aerosol Dispensers.
+                        For automated fragrance control and dependable freshness, pair Floral Aerosol Spray with Cool Max Scent LED or LCD Aerosol Dispensers.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans text-center">
                         <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">

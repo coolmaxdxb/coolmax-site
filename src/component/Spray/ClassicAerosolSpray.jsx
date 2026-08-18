@@ -27,7 +27,7 @@ const ClassicAerosolSprayDetail = () => {
         // Update Meta Description
         const metaDescription = document.querySelector('meta[name="description"]');
         if (metaDescription) {
-            metaDescription.setAttribute("content", "Classic Aerosol Spray by Cool Max blends lemon zest, lavender, rose, and soft woods to deliver balanced, long-lasting freshness for professional spaces.");
+            metaDescription.setAttribute("content", "Classic Aerosol Spray by Cool Max Scent blends lemon zest, lavender, rose, and soft woods to deliver balanced, long-lasting freshness for professional spaces.");
         }
 
         // Set Canonical Link
@@ -195,9 +195,9 @@ const ClassicAerosolSprayDetail = () => {
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                         </div>
                         <div className="text-left">
-                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
+                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left">Why Choose <span className="italic font-light text-blue-700">Cool Max Scent Aerosol Sprays?</span></h2>
                             <p className="text-slate-500 font-light leading-relaxed font-sans text-left">
-                                Cool Max aerosol sprays are developed for reliable performance in professional scenting systems. They help maintain a fresh, clean atmosphere while supporting hygiene perception and ease of maintenance.
+                                Cool Max Scent aerosol sprays are developed for reliable performance in professional scenting systems. They help maintain a fresh, clean atmosphere while supporting hygiene perception and ease of maintenance.
                             </p>
                         </div>
                     </div>
@@ -210,7 +210,7 @@ const ClassicAerosolSprayDetail = () => {
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
                     <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center">Looking for a <br/><span className="italic font-light text-slate-300 font-serif">complete solution?</span></h2>
                     <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
-                        For automated fragrance control and consistent results, pair Classic Aerosol Spray with Cool Max LED or LCD Aerosol Dispensers.
+                        For automated fragrance control and consistent results, pair Classic Aerosol Spray with Cool Max Scent LED or LCD Aerosol Dispensers.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans text-center">
                         <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">

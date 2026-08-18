@@ -12,7 +12,7 @@ export default function FashionAvenueAromaDiffuserBlog() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = "Aroma Diffuser for Fashion Avenue in Dubai | Coolmax Scent";
+    document.title = "Aroma Diffuser for Fashion Avenue in Dubai | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
@@ -164,12 +164,12 @@ export default function FashionAvenueAromaDiffuserBlog() {
               </motion.div>
 
               <motion.div {...fadeInUp} className="py-16 border-t border-slate-100">
-                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Building Premium Retail Environments with Coolmaxscent</h2>
+                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Building Premium Retail Environments with Cool Max Scent</h2>
                 <p className="text-justify mb-4">
                   Creating the right atmosphere is an important part of modern retail. An aroma diffuser for fashion avenue in Dubai can help retailers maintain a pleasant and consistent environment that enhances the overall shopping experience.
                 </p>
                 <p className="text-justify mb-4">
-                  At <a href="https://www.coolmaxscent.com/" className="text-blue-600 hover:underline font-bold">Coolmaxscent</a>, we offer professional fragrance solutions for retail environments of all sizes. Whether it's the AeroBlack Pro – HVAC-Integrated Scent Diffuser, AirPulse 150 – Large Area Aroma Diffuser, or AeroBlack Med – Commercial Aroma Diffuser, our systems are designed to deliver reliable fragrance coverage for modern retail spaces.
+                  At <a href="https://www.coolmaxscent.com/" className="text-blue-600 hover:underline font-bold">Cool Max Scent</a>, we offer professional fragrance solutions for retail environments of all sizes. Whether it's the AeroBlack Pro – HVAC-Integrated Scent Diffuser, AirPulse 150 – Large Area Aroma Diffuser, or AeroBlack Med – Commercial Aroma Diffuser, our systems are designed to deliver reliable fragrance coverage for modern retail spaces.
                 </p>
                 <p className="text-justify">
                   With the right fragrance solution, Fashion Avenue retailers can create a more welcoming environment that encourages customers to spend more time in-store and enjoy a premium shopping experience.

@@ -69,7 +69,7 @@ export default function HvacScentingSystemsDubaiBlog() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = "HVAC Scenting Systems in Dubai: Top Commercial Spaces | CoolMax Scent";
+    document.title = "HVAC Scenting Systems in Dubai: Top Commercial Spaces | Cool Max Scent";
 
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
@@ -665,7 +665,7 @@ export default function HvacScentingSystemsDubaiBlog() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="h-1 bg-blue-500 rounded-full mb-6"
               />
-              <p className="text-xs font-black uppercase tracking-[0.25em] text-blue-600">The CoolMax Scent Approach</p>
+              <p className="text-xs font-black uppercase tracking-[0.25em] text-blue-600">The Cool Max Scent Approach</p>
               <h2 className="mt-2 text-3xl font-serif tracking-tight text-slate-900 sm:text-4xl">
                 Get a Scenting Plan for Your Space
               </h2>
@@ -709,7 +709,7 @@ export default function HvacScentingSystemsDubaiBlog() {
                   className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-4 py-2 text-[10px] font-black uppercase tracking-[0.3em] text-blue-700"
                 >
                   <ShieldCheckIcon className="h-4 w-4" />
-                  CoolMax Scent Solutions
+                  Cool Max Scent Solutions
                 </motion.div>
                 <h3 className="text-3xl font-serif tracking-tight text-slate-900 sm:text-4xl">
                   Scent Your Entire Space From a Single Unit

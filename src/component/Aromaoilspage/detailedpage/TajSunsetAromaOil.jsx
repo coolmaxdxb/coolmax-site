@@ -180,7 +180,7 @@ const TajSunsetAromaOilDetail = () => {
                     { title: "Signature Profile", desc: "A unique, premium fragrance that defines exclusive brand identities and iconic atmospheres." },
                     { title: "Elite Formulation", desc: "Professional-grade fragrance oil ensuring long-lasting, consistent, and clean scent diffusion." },
                     { title: "Grand Presence", desc: "High-performance longevity that maintains its luxurious character throughout the day." },
-                    { title: "System Compatible", desc: "Optimized for all professional Cool Max automated scent delivery diffuser systems." }
+                    { title: "System Compatible", desc: "Optimized for all professional Cool Max Scent automated scent delivery diffuser systems." }
                 ].map((item, i) => (
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors text-left font-sans">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400" />

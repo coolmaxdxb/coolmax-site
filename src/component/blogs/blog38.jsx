@@ -10,7 +10,7 @@ export default function CommercialRestroomAromaDiffuserBlog() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = "Aroma Diffuser for Commercial Restrooms in Dubai | Coolmax";
+    document.title = "Aroma Diffuser for Commercial Restrooms in Dubai | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
@@ -226,7 +226,7 @@ export default function CommercialRestroomAromaDiffuserBlog() {
                   Restroom fragrance is often an overlooked aspect of the customer experience, yet it plays an important role in how visitors perceive your business. Choosing a professional aroma diffuser for Commercial Restrooms in Dubai helps businesses move beyond temporary odor masking, creating a consistently fresh, welcoming environment while reinforcing cleanliness, comfort, and professionalism.
                 </p>
                 <p className="text-justify mb-4">
-                  At <a href="https://www.coolmaxscent.com/" className="text-blue-600 hover:underline font-bold">Coolmaxscent</a>, we provide advanced <Link to="/wall-mounted-and-ceiling-aroma-diffusers/" className="text-blue-600 hover:underline font-bold">Wall-Mounted & Ceiling Aroma Diffusers in Dubai</Link> designed to meet the fragrance needs of modern commercial spaces. Whether you're managing office buildings, retail stores, healthcare facilities, educational institutions, or other large area environments, our professional scenting solutions help maintain fresh, inviting restrooms that leave a positive and lasting impression.
+                  At <a href="https://www.coolmaxscent.com/" className="text-blue-600 hover:underline font-bold">Cool Max Scent</a>, we provide advanced <Link to="/wall-mounted-and-ceiling-aroma-diffusers/" className="text-blue-600 hover:underline font-bold">Wall-Mounted & Ceiling Aroma Diffusers in Dubai</Link> designed to meet the fragrance needs of modern commercial spaces. Whether you're managing office buildings, retail stores, healthcare facilities, educational institutions, or other large area environments, our professional scenting solutions help maintain fresh, inviting restrooms that leave a positive and lasting impression.
                 </p>
               </motion.div>
             </div>

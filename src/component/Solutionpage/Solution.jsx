@@ -27,10 +27,10 @@ export default function AllSolutionsPage() {
 
   // --- SEO METADATA IMPLEMENTATION ---
   useEffect(() => {
-    document.title = "Professional Scent & Hygiene Solutions in UAE | Cool Max";
+    document.title = "Professional Scent & Hygiene Solutions in UAE | Cool Max Scent";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Professional scent and hygiene solutions in UAE for offices, hotels, malls, and homes. Explore scent marketing, HVAC scenting, and washroom hygiene by Cool Max.");
+      metaDescription.setAttribute("content", "Professional scent and hygiene solutions in UAE for offices, hotels, malls, and homes. Explore scent marketing, HVAC scenting, and washroom hygiene by Cool Max Scent.");
     }
   }, []);
 
@@ -38,7 +38,7 @@ export default function AllSolutionsPage() {
     {
       id: "marketing",
       title: "Scent Marketing Solutions",
-      content: "Scent marketing is the strategic use of fragrance to enhance environment experience and brand perception. At Cool Max, our Scent Marketing Solutions UAE help businesses create welcoming, memorable, and comfortable spaces. We design scent strategies using professional aroma scent diffusers that deliver subtle and balanced fragrance.",
+      content: "Scent marketing is the strategic use of fragrance to enhance environment experience and brand perception. At Cool Max Scent, our Scent Marketing Solutions UAE help businesses create welcoming, memorable, and comfortable spaces. We design scent strategies using professional aroma scent diffusers that deliver subtle and balanced fragrance.",
       usage: "Hotels and hospitality spaces, Retail stores and malls, Corporate offices, Healthcare and wellness environments.",
       focus: "Our scent marketing solutions focus on consistency, not overpowering fragrance, ensuring comfort for everyone in the space.",
       image: MarketingImg,
@@ -68,7 +68,7 @@ export default function AllSolutionsPage() {
     {
       id: "washroom",
       title: "Washroom Hygiene Solutions",
-      content: "Washrooms are high-traffic areas that directly impact hygiene perception. Cool Max provides professional Washroom Hygiene Solutions UAE designed to control odors and maintain freshness throughout the day.",
+      content: "Washrooms are high-traffic areas that directly impact hygiene perception. Cool Max Scent provides professional Washroom Hygiene Solutions UAE designed to control odors and maintain freshness throughout the day.",
       includes: "Automated air scent machines, Wall-mounted scent diffusers, Battery-operated hygiene systems.",
       usage: "Offices, Schools and colleges, Hospitals and clinics, Restaurants and food chains, Shopping malls.",
       image: WashroomImg,
@@ -88,7 +88,7 @@ export default function AllSolutionsPage() {
     {
       id: "maintenance",
       title: "Maintenance & Refill Support",
-      content: "Scent systems require regular care to perform consistently. Cool Max offers professional maintenance and refill support services in UAE to ensure uninterrupted operation.",
+      content: "Scent systems require regular care to perform consistently. Cool Max Scent offers professional maintenance and refill support services in UAE to ensure uninterrupted operation.",
       includes: "Scheduled fragrance refills, System inspection and cleaning, Performance optimization, Preventive maintenance.",
       focus: "Whether you use a hotel scent diffuser, commercial scent machine, or home fragrance system, our service team ensures reliable performance.",
       image: MaintenanceImg,
@@ -169,13 +169,13 @@ export default function AllSolutionsPage() {
         <section className="py-16 border-t border-slate-100 text-left">
           <div className="max-w-4xl">
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light mb-8 text-justify md:text-left">
-              Creating a clean, fresh, and welcoming environment is no longer optional—it is an essential part of how people experience spaces. At Cool Max, we provide a complete range of Professional Scent & Hygiene Solutions in UAE, helping businesses and homeowners maintain pleasant indoor environments using reliable technology and consistent service.
+              Creating a clean, fresh, and welcoming environment is no longer optional—it is an essential part of how people experience spaces. At Cool Max Scent, we provide a complete range of Professional Scent & Hygiene Solutions in UAE, helping businesses and homeowners maintain pleasant indoor environments using reliable technology and consistent service.
             </p>
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light mb-8 text-justify md:text-left">
               From Commercial Scent Solutions UAE and HVAC Scenting Solutions UAE to Washroom Hygiene Solutions UAE and car & personal space scenting, our solutions are designed to work in real environments. We focus on practical implementation, long-term performance, and easy maintenance rather than temporary fixes.
             </p>
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-light text-justify md:text-left">
-              This Solutions page gives you an overview of how Cool Max, your trusted Scent Diffuser Supplier Dubai, supports different spaces and requirements. Each solution is backed by professional equipment, expert guidance, and ongoing support.
+              This Solutions page gives you an overview of how Cool Max Scent, your trusted Scent Diffuser Supplier Dubai, supports different spaces and requirements. Each solution is backed by professional equipment, expert guidance, and ongoing support.
             </p>
           </div>
         </section>
@@ -185,7 +185,7 @@ export default function AllSolutionsPage() {
           <div className="bg-slate-50 rounded-[3rem] border border-slate-100 p-8 md:p-16 text-left relative overflow-hidden shadow-sm">
             <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-6 tracking-tight">Our Approach to Professional Scent & Hygiene Solutions in UAE</h2>
             <p className="text-lg text-slate-500 font-light mb-10 max-w-3xl">
-              Every space is different. An office, hotel, hospital, shopping mall, or personal vehicle has unique requirements when it comes to fragrance, hygiene, and air quality. That is why Cool Max does not offer one-size-fits-all products.
+              Every space is different. An office, hotel, hospital, shopping mall, or personal vehicle has unique requirements when it comes to fragrance, hygiene, and air quality. That is why Cool Max Scent does not offer one-size-fits-all products.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 font-sans">
               {[
@@ -260,7 +260,7 @@ export default function AllSolutionsPage() {
         {/* ================= WHY CHOOSE SECTION ================= */}
         <section className="py-16">
           <div className="bg-slate-900 rounded-[4rem] p-10 md:p-20 relative overflow-hidden shadow-2xl text-left font-sans">
-            <h2 className="text-4xl md:text-5xl font-serif text-white mb-10 tracking-tight">Why Choose Cool Max Solutions?</h2>
+            <h2 className="text-4xl md:text-5xl font-serif text-white mb-10 tracking-tight">Why Choose Cool Max Scent Solutions?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 "UAE-based service and support",
@@ -284,12 +284,12 @@ export default function AllSolutionsPage() {
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-7xl font-serif text-slate-900 mb-6 tracking-tighter leading-none text-center">One Partner. <br/><span className="italic text-blue-600 font-light">Complete Professional Scent & Hygiene Solutions in UAE</span></h2>
             <p className="text-xl text-slate-500 mb-10 leading-relaxed font-light font-sans text-center">
-              From home scent diffusers and hotel scent machines to HVAC Scenting Solutions UAE and washroom hygiene systems, Cool Max provides end-to-end solutions under one roof.
+              From home scent diffusers and hotel scent machines to HVAC Scenting Solutions UAE and washroom hygiene systems, Cool Max Scent provides end-to-end solutions under one roof.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 font-sans">
               <a href="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
-                Contact Cool Max Today <ArrowRightIcon className="w-4 h-4" />
+                Contact Cool Max Scent Today <ArrowRightIcon className="w-4 h-4" />
               </a>
               <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3">
                 <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert

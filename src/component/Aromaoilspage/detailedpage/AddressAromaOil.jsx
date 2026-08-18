@@ -177,7 +177,7 @@ const AddressAromaOilDetail = () => {
                 {[
                     { title: "Balanced Diffusion", desc: "Medium strength for balanced diffusion across your space." },
                     { title: "Professional Quality", desc: "Professional-grade fragrance quality for commercial and residential use." },
-                    { title: "Scent System Ready", desc: "Works seamlessly with advanced automated Cool Max scent diffuser systems." },
+                    { title: "Scent System Ready", desc: "Works seamlessly with advanced automated Cool Max Scent scent diffuser systems." },
                     { title: "Consistent Performance", desc: "Designed for consistent and long-lasting fragrance performance." }
                 ].map((item, i) => (
                     <div key={i} className="p-8 rounded-[2rem] bg-white/5 border border-white/10 text-left flex flex-col gap-4">

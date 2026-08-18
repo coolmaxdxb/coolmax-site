@@ -34,7 +34,7 @@ const AeroMaxProPage = () => {
 
   // SEO Implementation
   useEffect(() => {
-    document.title = "AeroMax Pro A315L Diffuser in Dubai | Cool Max";
+    document.title = "AeroMax Pro A315L Diffuser in Dubai | Cool Max Scent";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute("content", "High-capacity AeroMax Pro A315L Diffuser in Dubai for large commercial spaces. Wall-mounted design, strong coverage, and efficient scent diffusion.");
@@ -318,7 +318,7 @@ const AeroMaxProPage = () => {
                <ChatBubbleLeftRightIcon className="w-6 h-6" /> WhatsApp Expert
             </a>
             <a href={contactPath} className="px-12 py-5 bg-white text-slate-900 rounded-2xl font-black uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3">
-              Contact Cool Max <ArrowRightIcon className="w-5 h-5" />
+              Contact Cool Max Scent <ArrowRightIcon className="w-5 h-5" />
             </a>
           </div>
         </div>

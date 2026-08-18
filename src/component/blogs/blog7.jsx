@@ -198,7 +198,7 @@ export default function CorporateOfficeScentBlog() {
 
               {/* WHY COOL MAX (H2) */}
               <div className="py-16 text-left">
-                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Why Leading Corporations Choose Cool Max</h2>
+                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Why Leading Corporations Choose Cool Max Scent</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                     <div>
                         <h4 className="font-bold text-slate-900 mb-2">Corporate Experience</h4>

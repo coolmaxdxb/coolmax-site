@@ -194,7 +194,7 @@ export default function ArchitectStore() {
     document.title = "Cool Max Scent | Premium Scenting Solutions for Homes & Businesses";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Cool Max provides premium scent diffusers and fragrance solutions for homes, hotels, offices, retail spaces, HVAC systems, and automobiles across UAE & Qatar.");
+      metaDesc.setAttribute("content", "Cool Max Scent provides premium scent diffusers and fragrance solutions for homes, hotels, offices, retail spaces, HVAC systems, and automobiles across UAE & Qatar.");
     }
     
     // Canonical link handling
@@ -313,7 +313,7 @@ export default function ArchitectStore() {
       {/* ================= SECTION 4: END ACTION BAR ================= */}
       <section className="mt-20 border-t border-slate-200 bg-white py-20 px-6 text-center">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-serif mb-6 tracking-tight text-center">Experience Cool Max in <span className="italic text-slate-400 font-light text-center">Your Space.</span></h2>
+          <h2 className="text-3xl md:text-5xl font-serif mb-6 tracking-tight text-center">Experience Cool Max Scent in <span className="italic text-slate-400 font-light text-center">Your Space.</span></h2>
           <p className="text-slate-500 mb-12 max-w-xl mx-auto font-light text-center">Get expert advice on choosing the perfect system for your home or business environment.</p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">

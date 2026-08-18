@@ -18,7 +18,7 @@ export default function LuxuryHomeFragranceBlog() {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Create a Luxurious Home with Professional Aroma Diffusers | CoolMax";
+    document.title = "Create a Luxurious Home with Professional Aroma Diffusers | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "Discover how essential oil diffusers and premium fragrance oils create a luxurious, welcoming, and relaxing atmosphere throughout your home.");

@@ -151,7 +151,7 @@ export default function ClinicDiffuserBlog() {
               <div className="py-10 text-left border-t border-slate-100">
                 <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">AirPulse 150 – Large Area Aroma Diffuser for Clinics</h2>
                 <p className="mb-6 text-justify">
-                  The <Link to="/large-area-and-hvac-aroma-diffusers/air-pulse-150-diffuser/" className="text-blue-600 font-medium hover:text-blue-800">AirPulse 150</Link> from Coolmax Scent is designed for clinics, medical centers, and other healthcare facilities that need reliable fragrance coverage.
+                  The <Link to="/large-area-and-hvac-aroma-diffusers/air-pulse-150-diffuser/" className="text-blue-600 font-medium hover:text-blue-800">AirPulse 150</Link> from Cool Max Scent is designed for clinics, medical centers, and other healthcare facilities that need reliable fragrance coverage.
                 </p>
                 <p className="mb-6 text-justify">
                   It delivers consistent scent distribution across reception areas, waiting rooms, consultation suites, and common corridors—helping clinics maintain a premium atmosphere all day.
@@ -170,7 +170,7 @@ export default function ClinicDiffuserBlog() {
                   Choosing the right scenting solution helps clinics stand out, improve patient satisfaction, and reinforce their commitment to care from the first impression onward.
                 </p>
                 <p className="text-justify text-slate-700">
-                  Learn more about professional scenting and large-area aroma diffusers in Dubai by visiting <Link to=" https://www.coolmaxscent.com/" className="text-blue-600 font-medium hover:text-blue-800">Coolmax Scent</Link>.
+                  Learn more about professional scenting and large-area aroma diffusers in Dubai by visiting <Link to=" https://www.coolmaxscent.com/" className="text-blue-600 font-medium hover:text-blue-800">Cool Max Scent</Link>.
                 </p>
               </div>
             </div>

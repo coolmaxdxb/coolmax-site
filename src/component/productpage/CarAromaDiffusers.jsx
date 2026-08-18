@@ -40,7 +40,7 @@ export default function CarAromaDiffusersPage() {
     document.title = "Car Aroma Diffusers in UAE | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Discover premium car aroma diffusers in UAE for personal and commercial vehicles. Compact, safe, and long-lasting scent solutions by Cool Max.");
+      metaDesc.setAttribute("content", "Discover premium car aroma diffusers in UAE for personal and commercial vehicles. Compact, safe, and long-lasting scent solutions by Cool Max Scent.");
     }
   }, []);
 
@@ -86,7 +86,7 @@ export default function CarAromaDiffusersPage() {
 
               <div className="p-6 bg-slate-50 border border-slate-200 rounded-[2rem] mb-8 max-w-xl shadow-sm">
                 <p className="text-base text-slate-600 leading-relaxed italic text-left">
-                  Cool Max offers a premium range of car aroma diffusers in UAE, designed to keep vehicle interiors fresh, clean, and comfortable. Our car scent diffusers are compact, easy to use, and ideal for both personal and professional vehicles where controlled fragrance is important.
+                  Cool Max Scent offers a premium range of car aroma diffusers in UAE, designed to keep vehicle interiors fresh, clean, and comfortable. Our car scent diffusers are compact, easy to use, and ideal for both personal and professional vehicles where controlled fragrance is important.
                 </p>
               </div>
 
@@ -161,7 +161,7 @@ export default function CarAromaDiffusersPage() {
         <section className="py-16 text-left">
           <div className="bg-slate-900 rounded-[3rem] p-10 md:p-20 text-left relative overflow-hidden shadow-2xl">
             <h2 className="text-3xl md:text-5xl font-serif text-white mb-8 tracking-tighter">Why Choose a Professional Car Aroma Diffuser?</h2>
-            <p className="text-slate-400 mb-12 text-lg max-w-3xl">Most car fresheners only mask odors temporarily and fade quickly. Cool Max car aroma diffusers offer a smarter and cleaner solution.</p>
+            <p className="text-slate-400 mb-12 text-lg max-w-3xl">Most car fresheners only mask odors temporarily and fade quickly. Cool Max Scent car aroma diffusers offer a smarter and cleaner solution.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { title: "Consistent & Controlled Fragrance", desc: "Even scent diffusion without sudden strong smells.", icon: <ClockIcon /> },
@@ -185,7 +185,7 @@ export default function CarAromaDiffusersPage() {
         <section className="py-16 text-left">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-4 tracking-tighter leading-none">Where Car Aroma Diffusers Are Commonly Used</h2>
-            <p className="text-slate-500 font-light">Cool Max car aroma diffusers are suitable for more than just vehicles:</p>
+            <p className="text-slate-500 font-light">Cool Max Scent car aroma diffusers are suitable for more than just vehicles:</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 text-center">
             {[
@@ -273,12 +273,12 @@ export default function CarAromaDiffusersPage() {
               Need Help Choosing the <br /> <span className="italic text-blue-600 font-light text-center">Right Car Aroma Diffuser?</span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-3xl mx-auto font-light leading-relaxed text-center">
-              Whether you need a car aroma diffuser for personal use or for multiple vehicles, Cool Max offers dependable solutions designed for comfort and consistency. Our team will guide you in selecting the right product and provide ongoing support.
+              Whether you need a car aroma diffuser for personal use or for multiple vehicles, Cool Max Scent offers dependable solutions designed for comfort and consistency. Our team will guide you in selecting the right product and provide ongoing support.
             </p>
             <p className="text-sm font-black uppercase text-blue-600 tracking-widest mb-8 text-center">Looking for car aroma diffusers in UAE?</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
-                Contact Cool Max Today <ArrowRightIcon className="w-4 h-4"/>
+                Contact Cool Max Scent Today <ArrowRightIcon className="w-4 h-4"/>
               </Link>
               <a href={`https://wa.me/${whatsappNumber.replace(/\+/g, '')}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3">
                 <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert

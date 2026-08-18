@@ -23,7 +23,7 @@ export default function DiffuserMaintenanceBlog() {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "5 Simple Steps to Clean and Maintain Your Diffuser | Cool Max";
+    document.title = "5 Simple Steps to Clean and Maintain Your Diffuser | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "Learn 5 simple steps to clean and maintain your diffuser for long-lasting performance. Improve efficiency and scent quality with expert tips from Cool Max Scent UAE & Qatar.");
@@ -83,7 +83,7 @@ export default function DiffuserMaintenanceBlog() {
               
               <div className="space-y-6">
                 <p className="text-justify">
-                  At Cool Max, our diffusers are made to run for long hours with very little maintenance, so you can enjoy a fresh environment without any hassle. But like any device, a little care goes a long way. Over time, oil buildup, dust, or improper use can affect how well it works. This might make the scent weaker or even cause damage inside the machine.
+                  At Cool Max Scent, our diffusers are made to run for long hours with very little maintenance, so you can enjoy a fresh environment without any hassle. But like any device, a little care goes a long way. Over time, oil buildup, dust, or improper use can affect how well it works. This might make the scent weaker or even cause damage inside the machine.
                 </p>
                 <p className="text-justify">
                   The good part? Taking care of your diffuser is easy. With a few simple steps, you can keep it working smoothly and enjoy a consistent, long-lasting fragrance every day.
@@ -118,7 +118,7 @@ export default function DiffuserMaintenanceBlog() {
                       Use High-Quality Fragrance Oils for Optimal Results
                     </h3>
                     <p className="text-justify">
-                      The performance of your diffuser depends heavily on the quality of fragrance oils used. At Cool Max, our systems are designed to work with premium-grade, diffuser-compatible oils that ensure smooth atomization and consistent scent delivery. Using low-quality or diluted oils can lead to clogging and reduced system efficiency.
+                      The performance of your diffuser depends heavily on the quality of fragrance oils used. At Cool Max Scent, our systems are designed to work with premium-grade, diffuser-compatible oils that ensure smooth atomization and consistent scent delivery. Using low-quality or diluted oils can lead to clogging and reduced system efficiency.
                     </p>
                     <div className="bg-slate-900 text-white p-8 rounded-3xl flex items-start gap-4">
                         <BeakerIcon className="w-8 h-8 text-blue-400 shrink-0" />
@@ -133,7 +133,7 @@ export default function DiffuserMaintenanceBlog() {
                       Adjust Fragrance Timing for Better Performance
                     </h3>
                     <p className="text-justify">
-                      Setting the right fragrance timing is key to achieving consistent scent coverage while maximizing efficiency. Cool Max diffuser systems are designed to operate on adjustable schedules, allowing you to control when and how long the fragrance is released. Customize the timing based on your space and foot traffic.
+                      Setting the right fragrance timing is key to achieving consistent scent coverage while maximizing efficiency. Cool Max Scent diffuser systems are designed to operate on adjustable schedules, allowing you to control when and how long the fragrance is released. Customize the timing based on your space and foot traffic.
                     </p>
                     <div className="grid md:grid-cols-2 gap-4">
                         <div className="p-4 bg-blue-50 rounded-xl flex items-center gap-3 text-sm">
@@ -152,7 +152,7 @@ export default function DiffuserMaintenanceBlog() {
                       Avoid Overfilling for Optimal Performance
                     </h3>
                     <p className="text-justify">
-                      Maintaining the correct oil level is essential for smooth and efficient diffuser operation. Overfilling can disrupt the atomization process, leading to uneven fragrance output and potential system strain. Cool Max diffuser systems are designed to perform best within recommended capacity limits.
+                      Maintaining the correct oil level is essential for smooth and efficient diffuser operation. Overfilling can disrupt the atomization process, leading to uneven fragrance output and potential system strain. Cool Max Scent diffuser systems are designed to perform best within recommended capacity limits.
                     </p>
                     <div className="p-6 bg-amber-50 border border-amber-100 rounded-2xl flex items-start gap-4 shadow-sm">
                         <ExclamationTriangleIcon className="w-6 h-6 text-amber-600 shrink-0"/>
@@ -228,7 +228,7 @@ export default function DiffuserMaintenanceBlog() {
               Consistent <br />Atmospheres
             </h2>
             <p className="text-xl text-slate-400 mb-12 max-w-3xl mx-auto font-light leading-relaxed relative z-10">
-              Experience the premium fragrance quality of a perfectly maintained Cool Max system.
+              Experience the premium fragrance quality of a perfectly maintained Cool Max Scent system.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10 w-full max-w-2xl mx-auto">

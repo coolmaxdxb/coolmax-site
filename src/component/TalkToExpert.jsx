@@ -210,7 +210,7 @@ export default function TalkToExpert() {
                     {[
                         { q: "What is cold-air atomization?", a: "A dry-mist technology that uses filtered room air to diffuse oils without heat, preserving scent purity." },
                         { q: "Do you offer refill services?", a: "Yes, our team manages monthly refills and maintenance in Sharjah, Doha, and across the GCC." },
-                        { q: "Are the fragrances safe?", a: "Every CoolMax scent is IFRA compliant and hypoallergenic for high-traffic commercial spaces." }
+                        { q: "Are the fragrances safe?", a: "Every Cool Max Scent scent is IFRA compliant and hypoallergenic for high-traffic commercial spaces." }
                     ].map((faq, i) => (
                         <div key={i} className="group border-b border-slate-200 pb-6 text-left">
                             <h5 className="text-blue-600 font-bold text-sm uppercase tracking-wide mb-2 flex items-center gap-2 text-left text-justify">

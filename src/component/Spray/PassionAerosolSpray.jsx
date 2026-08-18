@@ -197,9 +197,9 @@ const PassionAerosolSprayDetail = () => {
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                         </div>
                         <div className="text-left">
-                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left text-balance">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
+                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left text-balance">Why Choose <span className="italic font-light text-blue-700">Cool Max Scent Aerosol Sprays?</span></h2>
                             <p className="text-slate-500 font-light leading-relaxed text-justify">
-                                Cool Max aerosol sprays are designed to deliver reliable fragrance performance in professional settings. Engineered to work seamlessly with commercial dispenser systems, they help businesses maintain clean, fresh environments with minimal maintenance.
+                                Cool Max Scent aerosol sprays are designed to deliver reliable fragrance performance in professional settings. Engineered to work seamlessly with commercial dispenser systems, they help businesses maintain clean, fresh environments with minimal maintenance.
                             </p>
                         </div>
                     </div>
@@ -212,7 +212,7 @@ const PassionAerosolSprayDetail = () => {
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full"></div>
                     <h2 className="text-4xl md:text-7xl font-serif mb-10 relative z-10 tracking-tighter leading-tight uppercase text-slate-100 text-center">Looking for a <br/><span className="italic font-light text-slate-300">complete solution?</span></h2>
                     <p className="text-slate-400 text-lg md:text-2xl mb-12 relative z-10 max-w-3xl mx-auto leading-relaxed font-light font-sans text-center">
-                        For automated scent control and consistent results, pair Passion Aerosol Spray with Cool Max LED or LCD Aerosol Dispensers.
+                        For automated scent control and consistent results, pair Passion Aerosol Spray with Cool Max Scent LED or LCD Aerosol Dispensers.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6 relative z-10 text-center">
                         <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 font-sans">

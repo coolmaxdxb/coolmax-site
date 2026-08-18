@@ -105,7 +105,7 @@ export default function EcommerceProducts() {
           <div className="max-w-4xl text-left">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/5 border border-blue-600/10 mb-6">
               <SparklesIcon className="w-4 h-4 text-blue-600" />
-              <span className="text-blue-600 text-[10px] font-black uppercase tracking-widest">Cool Max 2026 Collection</span>
+              <span className="text-blue-600 text-[10px] font-black uppercase tracking-widest">Cool Max Scent 2026 Collection</span>
             </div>
             <h2 className="text-5xl md:text-7xl font-serif leading-[0.9] tracking-tighter mb-6">
               Aroma Diffusers for <br /> 
@@ -114,7 +114,7 @@ export default function EcommerceProducts() {
             <div className="space-y-4">
                <p className="text-2xl font-medium text-slate-800">From Small Rooms to Large Commercial Areas</p>
                <p className="text-slate-500 text-lg font-medium max-w-2xl leading-relaxed">
-                 Cool Max offers a wide range of scent diffuser machines designed to suit different environments and coverage requirements. Our product range includes:
+                 Cool Max Scent offers a wide range of scent diffuser machines designed to suit different environments and coverage requirements. Our product range includes:
                </p>
             </div>
           </div>

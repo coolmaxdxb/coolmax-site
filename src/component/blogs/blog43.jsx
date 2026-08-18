@@ -217,7 +217,7 @@ export default function CorporateOfficeAromaDiffuserBlog() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = "Aroma Diffuser for Corporate Office in Dubai | CoolMax Scent";
+    document.title = "Aroma Diffuser for Corporate Office in Dubai | Cool Max Scent";
 
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
@@ -257,7 +257,7 @@ export default function CorporateOfficeAromaDiffuserBlog() {
     { label: "Fragrance in Design", href: "#fragrance-modern-office-design" },
     { label: "Choosing a Diffuser", href: "#choosing-office-diffuser" },
     { label: "Common Mistakes", href: "#office-ambience-mistakes" },
-    { label: "CoolMaxScent", href: "#building-better-ambience" },
+    { label: "Cool Max Scent", href: "#building-better-ambience" },
   ];
 
   return (
@@ -591,13 +591,13 @@ export default function CorporateOfficeAromaDiffuserBlog() {
           </motion.div>
         </section>
 
-        {/* SECTION 7: Building Better Office Ambience with CoolMaxScent */}
+        {/* SECTION 7: Building Better Office Ambience with Cool Max Scent */}
         <section id="building-better-ambience" className="mx-auto max-w-[1400px] scroll-mt-24 px-6 pb-12 lg:px-16">
           <motion.div {...fadeInUp} className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
             <div className="rounded-[2.5rem] border border-slate-200/80 bg-white p-8 shadow-sm md:p-12">
-              <p className="text-xs font-black uppercase tracking-[0.25em] text-blue-600">The CoolMaxScent Approach</p>
+              <p className="text-xs font-black uppercase tracking-[0.25em] text-blue-600">The Cool Max Scent Approach</p>
               <h2 className="mt-2 text-3xl font-serif tracking-tight text-slate-900 sm:text-4xl">
-                Building Better Office Ambience with CoolMaxScent
+                Building Better Office Ambience with Cool Max Scent
               </h2>
               <div className="mt-6 space-y-4 text-slate-600 leading-relaxed font-light">
                 <p>
@@ -606,7 +606,7 @@ export default function CorporateOfficeAromaDiffuserBlog() {
                 <p>
                   At{" "}
                   <Link to="/" className={textLinkClass}>
-                    CoolMaxScent
+                    Cool Max Scent
                   </Link>
                   , we help businesses create workplaces that feel as professional as they look. Rather than offering one-size-fits-all solutions, we assess each workspace based on its size, layout, occupancy, and operational requirements to recommend the most suitable scenting approach.
                 </p>
@@ -636,7 +636,7 @@ export default function CorporateOfficeAromaDiffuserBlog() {
             <div className="rounded-[2.5rem] border border-blue-100 bg-[linear-gradient(135deg,_#eff6ff_0%,_#f8fbff_60%,_#eef7ff_100%)] p-8 shadow-[0_25px_65px_-30px_rgba(59,130,246,0.28)] md:p-12 flex flex-col justify-between">
               <div>
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-4 py-2 text-[10px] font-black uppercase tracking-[0.3em] text-blue-700">
-                  <ShieldCheckIcon className="h-4 w-4" /> CoolMaxScent Advantage
+                  <ShieldCheckIcon className="h-4 w-4" /> Cool Max Scent Advantage
                 </div>
                 <h3 className="text-3xl font-serif tracking-tight text-slate-900 sm:text-4xl">
                   Transform Your Office Experience
@@ -717,7 +717,7 @@ export default function CorporateOfficeAromaDiffuserBlog() {
               </p>
               <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
                 <p className="text-lg leading-8 text-slate-200">
-                  At CoolMaxScent, we believe every office should leave a positive impression on employees, visitors, and clients alike. With tailored scenting solutions, premium fragrance technology, and commercial-grade diffusers, we help businesses across Dubai create workplaces that people enjoy working in and remember long after they leave.
+                  At Cool Max Scent, we believe every office should leave a positive impression on employees, visitors, and clients alike. With tailored scenting solutions, premium fragrance technology, and commercial-grade diffusers, we help businesses across Dubai create workplaces that people enjoy working in and remember long after they leave.
                 </p>
               </div>
             </div>

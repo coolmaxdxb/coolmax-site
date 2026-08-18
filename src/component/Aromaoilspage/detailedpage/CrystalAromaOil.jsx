@@ -181,7 +181,7 @@ const CrystalAromaOilDetail = () => {
                     { title: "Vibrant Character", desc: "A youthful and energetic fruity fragrance that creates a dynamic atmosphere." },
                     { title: "Elite Formulation", desc: "Professional-grade oil ensuring clean, consistent, and safe aromatic performance." },
                     { title: "Consistent Presence", desc: "Formulated to maintain its bold character steadily throughout the day." },
-                    { title: "System Compatible", desc: "Optimized for all professional Cool Max automated scent delivery systems." }
+                    { title: "System Compatible", desc: "Optimized for all professional Cool Max Scent automated scent delivery systems." }
                 ].map((item, i) => (
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors text-left">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400" />

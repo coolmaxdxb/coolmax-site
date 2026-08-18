@@ -181,7 +181,7 @@ const HarmonyAromaOilDetail = () => {
                     { title: "Universally Appealing", desc: "An elegant profile that suits professional, retail, and residential environments." },
                     { title: "Elite Formulation", desc: "Professional-grade fragrance oil ensuring long-lasting and clean diffusion." },
                     { title: "Consistent Presence", desc: "High-performance scent profile that stays pleasant throughout the day." },
-                    { title: "Automated Ready", desc: "Fully compatible with all professional Cool Max automated scent delivery systems." }
+                    { title: "Automated Ready", desc: "Fully compatible with all professional Cool Max Scent automated scent delivery systems." }
                 ].map((item, i) => (
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors text-left text-left">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400" />

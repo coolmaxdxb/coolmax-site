@@ -85,7 +85,7 @@ export default function SeasonalScentingDubaiBlog() {
                   That is a missed opportunity. The warm, woody scent that feels welcoming in a hotel lobby during December? It feels completely wrong during July. For businesses that truly care about customer experience and employee wellbeing, seasonal scenting is not a luxury. It is a strategy.
                 </p>
                 <p className="text-justify">
-                  At Cool Max, known for providing the best aroma diffuser in Dubai for commercial applications, we help malls, corporate offices, schools, and hotels implement seasonal scenting strategies that actually work.
+                  At Cool Max Scent, known for providing the best aroma diffuser in Dubai for commercial applications, we help malls, corporate offices, schools, and hotels implement seasonal scenting strategies that actually work.
                 </p>
               </motion.div>
 
@@ -104,7 +104,7 @@ export default function SeasonalScentingDubaiBlog() {
                 <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-blue-600 flex items-center gap-4">
                     <CloudIcon className="w-8 h-8" /> Spring: Fresh, Clean, and Inviting
                 </h2>
-                <p className="mb-6 text-justify">During spring, you want scents that are fresh, clean, and subtly inviting. Try these from the Cool Max collection:</p>
+                <p className="mb-6 text-justify">During spring, you want scents that are fresh, clean, and subtly inviting. Try these from the Cool Max Scent collection:</p>
                 <ul className="grid md:grid-cols-2 gap-4 mb-8">
                     <li className="bg-slate-50 p-4 rounded-xl text-sm"><strong>Lavender Aroma Oil:</strong> Soft and calming. Perfect for healthcare.</li>
                     <li className="bg-slate-50 p-4 rounded-xl text-sm"><strong>White Tea Aroma Oil:</strong> Clean and delicate. Excellent for offices.</li>
@@ -205,7 +205,7 @@ export default function SeasonalScentingDubaiBlog() {
 
               {/* WHY COOL MAX (H2) */}
               <motion.div {...fadeInUp} className="py-16">
-                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Why Cool Max for Commercial Seasonal Scenting?</h2>
+                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Why Cool Max Scent for Commercial Seasonal Scenting?</h2>
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
                       "HVAC-integrated systems for building coverage",
@@ -226,7 +226,7 @@ export default function SeasonalScentingDubaiBlog() {
               <motion.div {...fadeInUp} className="py-16 border-t border-slate-100">
                 <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 uppercase">Final Thoughts</h2>
                 <p className="text-justify">
-                  Seasonal scenting delivers returns across your entire operation. Switch your commercial scents every few months to boost morale, extend dwell time, and signal commitment to excellence. When you are ready to implement a professional seasonal scenting strategy, Cool Max is here to help.
+                  Seasonal scenting delivers returns across your entire operation. Switch your commercial scents every few months to boost morale, extend dwell time, and signal commitment to excellence. When you are ready to implement a professional seasonal scenting strategy, Cool Max Scent is here to help.
                 </p>
               </motion.div>
 

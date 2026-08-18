@@ -33,7 +33,7 @@ export default function AromaDiffuserMachinesUAEBlog() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = "10 Best Summer Fragrance Oils for Dubai Diffusers | CoolMax";
+    document.title = "10 Best Summer Fragrance Oils for Dubai Diffusers | Cool Max Scent";
 
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {

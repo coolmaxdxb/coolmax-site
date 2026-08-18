@@ -181,7 +181,7 @@ const LotusFlowerAromaOilDetail = () => {
                     { title: "Elegant Profile", desc: "A soft floral-fresh character that creates a peaceful, natural atmosphere." },
                     { title: "Pure Formulation", desc: "Professional-grade oil designed for consistent and clean diffusion." },
                     { title: "Longevity", desc: "High-performance formula ensuring a lasting and inviting finish." },
-                    { title: "System Ready", desc: "Fully compatible with all professional Cool Max automated scent systems." }
+                    { title: "System Ready", desc: "Fully compatible with all professional Cool Max Scent automated scent systems." }
                 ].map((item, i) => (
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors text-left text-left">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400" />

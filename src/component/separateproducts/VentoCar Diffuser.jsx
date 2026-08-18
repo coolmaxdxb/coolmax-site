@@ -83,7 +83,7 @@ const VentoCarPage = () => {
                 Talk to Scent Expert <ChatBubbleLeftRightIcon className="w-4 h-4" />
               </a>
               <a href={contactPath} className="px-6 py-3 border border-slate-200 text-slate-900 rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-white transition-all flex items-center gap-2 text-center">
-                Contact Cool Max <ArrowRightIcon className="w-3 h-3" />
+                Contact Cool Max Scent <ArrowRightIcon className="w-3 h-3" />
               </a>
             </div>
           </motion.div>
@@ -332,7 +332,7 @@ const VentoCarPage = () => {
         <div className="max-w-[1200px] mx-auto text-center border-t border-slate-100 pt-16 text-left">
           <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 text-center">The Car Aroma Collection</h2>
           <p className="text-sm text-slate-500 max-w-3xl mx-auto mb-10 leading-relaxed font-light text-center text-left">
-            VentoCar Diffuser is part of Cool Max’s Car Aroma Diffusers range, designed for compact personal environments where controlled scenting is essential.
+            VentoCar Diffuser is part of Cool Max Scent’s Car Aroma Diffusers range, designed for compact personal environments where controlled scenting is essential.
           </p>
           <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center text-left">
             {["DriveScent Diffuser", "DeskScent Diffuser", "NovaCar Diffuser"].map((range, i) => (
@@ -357,7 +357,7 @@ const VentoCarPage = () => {
                <ChatBubbleLeftRightIcon className="w-5 h-5 text-left" /> WhatsApp Support
             </a>
             <a href={contactPath} className="px-10 py-4 bg-white/5 text-white rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-2 text-center text-left">
-              Contact Cool Max <ArrowRightIcon className="w-4 h-4" />
+              Contact Cool Max Scent <ArrowRightIcon className="w-4 h-4" />
             </a>
           </div>
         </div>

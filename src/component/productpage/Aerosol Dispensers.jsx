@@ -37,7 +37,7 @@ export default function AerosolDispensersPage() {
     document.title = "Aerosol Dispensers in UAE | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Discover automatic aerosol dispensers in UAE for commercial spaces. Consistent fragrance and hygiene control by Cool Max.");
+      metaDesc.setAttribute("content", "Discover automatic aerosol dispensers in UAE for commercial spaces. Consistent fragrance and hygiene control by Cool Max Scent.");
     }
   }, []);
 
@@ -83,7 +83,7 @@ export default function AerosolDispensersPage() {
 
               <div className="p-6 bg-slate-50 border border-slate-200 rounded-[2rem] mb-8 max-w-xl shadow-sm text-left">
                 <p className="text-base text-slate-600 leading-relaxed italic text-left text-justify">
-                  Cool Max aerosol dispensers are designed to deliver consistent fragrance and hygiene support in washrooms, corridors, offices, and public areas. These automatic dispensers provide controlled scent release using standard aerosol refills, making them ideal for high-traffic commercial environments where simplicity and reliability matter. Our aerosol dispenser solutions are widely used across offices, hotels, restaurants, clinics, malls, and commercial facilities in the UAE.
+                  Cool Max Scent aerosol dispensers are designed to deliver consistent fragrance and hygiene support in washrooms, corridors, offices, and public areas. These automatic dispensers provide controlled scent release using standard aerosol refills, making them ideal for high-traffic commercial environments where simplicity and reliability matter. Our aerosol dispenser solutions are widely used across offices, hotels, restaurants, clinics, malls, and commercial facilities in the UAE.
                 </p>
               </div>
 
@@ -263,9 +263,9 @@ export default function AerosolDispensersPage() {
         <section className="py-16 bg-slate-50 rounded-[4rem] border border-slate-100 text-left">
           <div className="grid lg:grid-cols-2 gap-16 items-center px-8 md:px-16 text-left shadow-sm">
             <div className="text-left">
-              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-left">How Cool Max Approaches Aerosol & Hygiene Solutions</h2>
+              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-left">How Cool Max Scent Approaches Aerosol & Hygiene Solutions</h2>
               <p className="text-slate-500 text-lg font-light leading-relaxed mb-8 text-left text-justify">
-                At Cool Max, we do not just supply dispensers—we provide professional scent & hygiene solutions in the UAE. Our approach ensures reliable performance and long-term results.
+                At Cool Max Scent, we do not just supply dispensers—we provide professional scent & hygiene solutions in the UAE. Our approach ensures reliable performance and long-term results.
               </p>
               
               <div className="grid grid-cols-1 gap-4 text-left">
@@ -319,12 +319,12 @@ export default function AerosolDispensersPage() {
               Need an Aerosol Dispenser <br /> <span className="italic text-blue-600 font-light text-center">for Your Facility?</span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-3xl mx-auto font-light leading-relaxed text-center text-justify lg:text-center">
-              Whether you manage an office, hotel, restaurant, or commercial facility, Cool Max offers reliable aerosol dispenser solutions tailored to your hygiene and fragrance needs.
+              Whether you manage an office, hotel, restaurant, or commercial facility, Cool Max Scent offers reliable aerosol dispenser solutions tailored to your hygiene and fragrance needs.
             </p>
-            <p className="text-sm font-black uppercase text-blue-600 tracking-widest mb-8 text-center">Contact Cool Max today to get expert guidance or WhatsApp us for quick help.</p>
+            <p className="text-sm font-black uppercase text-blue-600 tracking-widest mb-8 text-center">Contact Cool Max Scent today to get expert guidance or WhatsApp us for quick help.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
               <Link to="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
-                Contact Cool Max Today <ArrowRightIcon className="w-4 h-4 text-center"/>
+                Contact Cool Max Scent Today <ArrowRightIcon className="w-4 h-4 text-center"/>
               </Link>
               <a 
                 href={`https://wa.me/${whatsappNumber.replace(/\+/g, '')}`} 

@@ -34,7 +34,7 @@ const PerfumersChoiceOilsPage = () => {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Perfumers Choice Aroma Oils for Offices & Homes | Cool Max";
+    document.title = "Perfumers Choice Aroma Oils for Offices & Homes | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "Explore Perfumers Choice aroma oils by Cool Max Scent. Discover elegant, balanced fragrances like Harmony, Event, Gold, Tuscan Leather, and more.");

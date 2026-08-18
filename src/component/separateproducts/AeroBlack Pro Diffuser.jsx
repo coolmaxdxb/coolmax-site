@@ -255,7 +255,7 @@ const AeroBlackProPage = () => {
               "Smart control for operational efficiency",
               "Reduced maintenance with large capacity",
               "Professional performance for demanding venues",
-              "Backed by Cool Max technical expertise"
+              "Backed by Cool Max Scent technical expertise"
             ].map((text, i) => (
               <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors text-left text-justify">
                 <CheckCircleIcon className="w-5 h-5 text-blue-400 mb-3 text-left" />

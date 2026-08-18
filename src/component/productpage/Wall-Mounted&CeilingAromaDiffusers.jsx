@@ -41,10 +41,10 @@ export default function WallMountedDiffusersPage() {
 
   // --- SEO Implementation ---
   useEffect(() => {
-    document.title = "Wall-Mounted & Ceiling Aroma Diffusers in UAE | Cool Max";
+    document.title = "Wall-Mounted & Ceiling Aroma Diffusers in UAE | Cool Max Scent";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Explore wall-mounted & ceiling aroma diffusers in UAE for offices, clinics, and commercial spaces. Space-saving, professional scent solutions by Cool Max.");
+      metaDescription.setAttribute("content", "Explore wall-mounted & ceiling aroma diffusers in UAE for offices, clinics, and commercial spaces. Space-saving, professional scent solutions by Cool Max Scent.");
     }
   }, []);
 
@@ -90,7 +90,7 @@ export default function WallMountedDiffusersPage() {
 
               <div className="p-6 bg-slate-50 border border-slate-200 rounded-[2rem] mb-8 max-w-xl shadow-sm text-left">
                 <p className="text-base text-slate-600 leading-relaxed italic">
-                  Wall-Mounted Aroma Diffusers and Ceiling Aroma Diffusers from Cool Max are designed for spaces where consistent fragrance coverage is required without occupying desk or floor space. These professional scent diffuser machines are ideal for offices, clinics, corridors, reception areas, and commercial interiors where a clean, fixed installation is preferred.
+                  Wall-Mounted Aroma Diffusers and Ceiling Aroma Diffusers from Cool Max Scent are designed for spaces where consistent fragrance coverage is required without occupying desk or floor space. These professional scent diffuser machines are ideal for offices, clinics, corridors, reception areas, and commercial interiors where a clean, fixed installation is preferred.
                 </p>
               </div>
 
@@ -287,7 +287,7 @@ export default function WallMountedDiffusersPage() {
         {/* ================= SECTION 7: WHY COOL MAX ================= */}
         <section className="py-16 text-left font-sans border-t border-slate-100">
           <div className="bg-slate-50 rounded-[3rem] p-10 md:p-16 border border-slate-100 shadow-sm text-left">
-            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter leading-none text-center lg:text-left uppercase font-bold">Why Choose Cool Max?</h2>
+            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter leading-none text-center lg:text-left uppercase font-bold">Why Choose Cool Max Scent?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
               {[
                 "UAE-based company with local support",
@@ -326,11 +326,11 @@ export default function WallMountedDiffusersPage() {
               Need Help Choosing the <br /> <span className="italic text-blue-600 font-light text-center">Right Fixed-Installation Diffuser?</span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-3xl mx-auto font-light leading-relaxed text-center text-justify md:text-center font-sans">
-              Whether you are planning a new office setup or upgrading an existing commercial space, Cool Max offers reliable Wall-Mounted Aroma Diffusers and Ceiling Aroma Diffusers tailored to your needs.
+              Whether you are planning a new office setup or upgrading an existing commercial space, Cool Max Scent offers reliable Wall-Mounted Aroma Diffusers and Ceiling Aroma Diffusers tailored to your needs.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 font-sans text-center">
               <Link to="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3 text-center">
-                Contact Cool Max Today <ArrowRightIcon className="w-4 h-4" text-center/>
+                Contact Cool Max Scent Today <ArrowRightIcon className="w-4 h-4" text-center/>
               </Link>
               <a href={`https://wa.me/${whatsappNumber.replace(/\s/g, '')}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3 text-center">
                 <ChatBubbleLeftRightIcon className="w-5 h-5" text-center /> WhatsApp Expert

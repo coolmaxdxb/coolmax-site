@@ -19,7 +19,7 @@ export default function DiffuserMaintenanceBlog() {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Scent Aroma Oil Diffusers for Clinics & Wellness Centers | CoolMax";
+    document.title = "Scent Aroma Oil Diffusers for Clinics & Wellness Centers | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "Learn how aroma oil diffusers help clinics and wellness centers create calming environments, improve patient comfort, and enhance visitor experiences. Contact Us Today!");

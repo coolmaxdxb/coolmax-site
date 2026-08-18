@@ -213,12 +213,12 @@ export default function WellnessSpaceAromaDiffuserBlog() {
               </motion.div>
 
               <motion.div {...fadeInUp} id="coolmaxscent" className="py-16 border-t border-slate-100">
-                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Enhancing Wellness Environments with Coolmaxscent</h2>
+                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Enhancing Wellness Environments with Cool Max Scent</h2>
                 <p className="text-justify mb-4">
                   Creating a welcoming wellness environment goes beyond offering quality services. The atmosphere within your facility plays an important role in how visitors feel and how they remember their experience. A professional <a href="https://www.coolmaxscent.com/commercial-aroma-diffusers/" className="text-blue-600 hover:underline font-bold">Aroma Diffuser for Wellness Space in Dubai</a> helps create a comfortable and consistent environment that supports relaxation, visitor satisfaction, and a positive brand image.
                 </p>
                 <p className="text-justify mb-4">
-                  At <a href="https://www.coolmaxscent.com/" className="text-blue-600 hover:underline font-bold">Coolmaxscent</a>, we help wellness businesses choose fragrance solutions that suit their unique requirements, whether it's a yoga studio, spa, fitness center, healthcare clinic, holistic healing clinic, or beauty salon. By investing in the right diffuser solution, businesses can create memorable wellness environments that encourage visitors to return and strengthen long-term customer relationships.
+                  At <a href="https://www.coolmaxscent.com/" className="text-blue-600 hover:underline font-bold">Cool Max Scent</a>, we help wellness businesses choose fragrance solutions that suit their unique requirements, whether it's a yoga studio, spa, fitness center, healthcare clinic, holistic healing clinic, or beauty salon. By investing in the right diffuser solution, businesses can create memorable wellness environments that encourage visitors to return and strengthen long-term customer relationships.
                 </p>
               </motion.div>
             </div>

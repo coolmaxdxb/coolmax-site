@@ -28,7 +28,7 @@ export default function CommercialDiffusersPage() {
     document.title = "Commercial Aroma Diffusers in UAE | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Explore commercial aroma diffusers in UAE for offices and business spaces. Professional scent diffuser machines with reliable performance & support by Cool Max.");
+      metaDesc.setAttribute("content", "Explore commercial aroma diffusers in UAE for offices and business spaces. Professional scent diffuser machines with reliable performance & support by Cool Max Scent.");
     }
   }, []);
 
@@ -113,7 +113,7 @@ export default function CommercialDiffusersPage() {
         <section className="py-24 border-t border-slate-100">
           <div className="max-w-4xl mx-auto text-center lg:text-left lg:mx-0">
             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed font-light text-justify">
-              At Cool Max Scent, we provide professional commercial aroma diffusion solutions in UAE designed for offices, hotels, retail spaces, healthcare facilities, and large commercial environments. Our commercial scent diffuser machines are engineered to deliver even fragrance coverage, helping businesses maintain clean, fresh, and welcoming indoor spaces. From compact systems for offices to large-area solutions for malls and hospitality venues, Cool Max offers practical aroma diffusion solutions that work in real commercial conditions.
+              At Cool Max Scent, we provide professional commercial aroma diffusion solutions in UAE designed for offices, hotels, retail spaces, healthcare facilities, and large commercial environments. Our commercial scent diffuser machines are engineered to deliver even fragrance coverage, helping businesses maintain clean, fresh, and welcoming indoor spaces. From compact systems for offices to large-area solutions for malls and hospitality venues, Cool Max Scent offers practical aroma diffusion solutions that work in real commercial conditions.
             </p>
           </div>
         </section>
@@ -133,7 +133,7 @@ export default function CommercialDiffusersPage() {
               </div>
               <div className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm inline-flex items-center gap-6">
                 <AdjustmentsHorizontalIcon className="w-12 h-12 text-blue-600 shrink-0" />
-                <p className="text-slate-900 font-bold text-lg">At Cool Max, we balance performance, efficiency, and ease of maintenance.</p>
+                <p className="text-slate-900 font-bold text-lg">At Cool Max Scent, we balance performance, efficiency, and ease of maintenance.</p>
               </div>
             </div>
             <div className="relative rounded-[3rem] overflow-hidden shadow-2xl">
@@ -290,7 +290,7 @@ export default function CommercialDiffusersPage() {
 
         {/* ================= WHY COOL MAX ================= */}
         <section className="py-24 bg-slate-50 rounded-[5rem] px-8 md:px-20 mb-24">
-          <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-16 tracking-tighter">Why Choose Cool Max?</h2>
+          <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-16 tracking-tighter">Why Choose Cool Max Scent?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               "UAE-based support and local service teams",
@@ -315,7 +315,7 @@ export default function CommercialDiffusersPage() {
               Improve Your Space <br /> <span className="italic text-blue-600 font-light">with Aroma Diffusion</span>
             </h2>
             <p className="text-xl md:text-2xl text-slate-500 mb-16 max-w-3xl mx-auto font-light leading-relaxed">
-              Whether you operate an office, hotel, clinic, or retail facility, Cool Max offers reliable commercial aroma diffusion solutions in UAE designed for your needs.
+              Whether you operate an office, hotel, clinic, or retail facility, Cool Max Scent offers reliable commercial aroma diffusion solutions in UAE designed for your needs.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 font-sans">

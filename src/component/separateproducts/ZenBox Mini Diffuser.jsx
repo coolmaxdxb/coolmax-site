@@ -27,7 +27,7 @@ const ZenBoxMiniPage = () => {
 
   // --- SEO Implementation ---
   useEffect(() => {
-    document.title = "ZenBox Mini Aroma Diffuser for Small Space | Cool Max";
+    document.title = "ZenBox Mini Aroma Diffuser for Small Space | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "ZenBox Mini Aroma Diffuser is a battery operated small space aroma diffuser with desktop & wall mount use. Ideal for homes, offices and washrooms.");
@@ -82,7 +82,7 @@ const ZenBoxMiniPage = () => {
                 Talk to Scent Expert <ChatBubbleLeftRightIcon className="w-4 h-4" />
               </a>
               <a href={contactPath} className="px-6 py-3 border border-slate-200 text-slate-900 rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-white transition-all flex items-center gap-2 font-sans text-center">
-                Contact Cool Max <ArrowRightIcon className="w-3 h-3" />
+                Contact Cool Max Scent <ArrowRightIcon className="w-3 h-3" />
               </a>
             </div>
           </motion.div>
@@ -292,7 +292,7 @@ const ZenBoxMiniPage = () => {
         <div className="max-w-[1200px] mx-auto text-center border-t border-slate-100 pt-16 text-left">
           <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 text-center text-center">The Desktop & Small Space Collection</h2>
           <p className="text-sm text-slate-500 max-w-3xl mx-auto mb-10 leading-relaxed font-light text-center text-center">
-            ZenBox Mini Diffuser belongs to Cool Max’s Desktop & Small Space Aroma Diffusers category — focused on simplicity, efficiency, and user convenience.
+            ZenBox Mini Diffuser belongs to Cool Max Scent’s Desktop & Small Space Aroma Diffusers category — focused on simplicity, efficiency, and user convenience.
           </p>
           <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">
             {["OpalMist Clock", "LuxePanel Diffuser", "AeroCube Diffuser"].map((range, i) => (
@@ -317,7 +317,7 @@ const ZenBoxMiniPage = () => {
                <ChatBubbleLeftRightIcon className="w-5 h-5 text-left" /> WhatsApp Support
             </a>
             <a href={contactPath} className="px-10 py-4 bg-white/5 text-white rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-2 font-sans text-center text-left">
-              Contact Cool Max <ArrowRightIcon className="w-4 h-4 text-left" />
+              Contact Cool Max Scent <ArrowRightIcon className="w-4 h-4 text-left" />
             </a>
           </div>
         </div>

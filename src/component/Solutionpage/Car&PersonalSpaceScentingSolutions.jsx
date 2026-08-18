@@ -27,10 +27,10 @@ export default function CarPersonalScentingPage() {
 
   // --- SEO Implementation ---
   useEffect(() => {
-    document.title = "Car & Personal Space Scenting Solutions in UAE | Cool Max";
+    document.title = "Car & Personal Space Scenting Solutions in UAE | Cool Max Scent";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Car and personal space scenting solutions in UAE for vehicles, cabins, and small rooms. Discover compact aroma diffusers and home scent systems by Cool Max.");
+      metaDescription.setAttribute("content", "Car and personal space scenting solutions in UAE for vehicles, cabins, and small rooms. Discover compact aroma diffusers and home scent systems by Cool Max Scent.");
     }
   }, []);
 
@@ -147,7 +147,7 @@ export default function CarPersonalScentingPage() {
                     ))}
                   </div>
                 </div>
-                <p className="mt-6 text-blue-600 font-medium font-serif italic text-xl text-left">At Cool Max, our solutions ensure freshness without strong or artificial smells.</p>
+                <p className="mt-6 text-blue-600 font-medium font-serif italic text-xl text-left">At Cool Max Scent, our solutions ensure freshness without strong or artificial smells.</p>
               </motion.div>
               <div className="relative h-[450px] rounded-[2rem] border border-white overflow-hidden shadow-2xl group">
                  <img src={FeatureImg1} alt="Compact Scent Diffuser UAE at office desk" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
@@ -196,7 +196,7 @@ export default function CarPersonalScentingPage() {
         <section className="py-16 border-t border-slate-100 text-left">
           <div className="mb-12 text-center max-w-4xl mx-auto">
             <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-blue-600 mb-4">Our Car Aroma Diffuser UAE & Personal Solutions</h2>
-            <p className="text-lg text-slate-500 font-light max-w-2xl mx-auto">Cool Max provides a range of compact aroma diffusion systems suitable for different personal environments.</p>
+            <p className="text-lg text-slate-500 font-light max-w-2xl mx-auto">Cool Max Scent provides a range of compact aroma diffusion systems suitable for different personal environments.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
             {[
@@ -350,7 +350,7 @@ export default function CarPersonalScentingPage() {
         {/* ================= SECTION 10: WHY COOL MAX ================= */}
         <section className="py-16 text-left">
            <div className="bg-slate-50 rounded-[3rem] border border-slate-100 p-10 md:p-16 text-left">
-              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-left">Why Choose Cool Max for Car & Personal Space Scenting Solutions in UAE?</h2>
+              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-left">Why Choose Cool Max Scent for Car & Personal Space Scenting Solutions in UAE?</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
                 {[
                   "UAE-based service and support",
@@ -375,14 +375,14 @@ export default function CarPersonalScentingPage() {
               Let’s Create a <br /> <span className="italic text-blue-600 font-light">Fresher Personal Environment</span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-4xl mx-auto font-light leading-relaxed font-sans text-center">
-              Whether you need a Car Aroma Diffuser UAE, a home scent system, or a Compact Scent Diffuser UAE for your personal space, Cool Max offers reliable solutions designed for everyday use. Our team will help you choose the right system and provide ongoing support to ensure consistent performance.
+              Whether you need a Car Aroma Diffuser UAE, a home scent system, or a Compact Scent Diffuser UAE for your personal space, Cool Max Scent offers reliable solutions designed for everyday use. Our team will help you choose the right system and provide ongoing support to ensure consistent performance.
             </p>
             
             <p className="text-sm font-black uppercase text-blue-600 tracking-widest mb-8 text-center">Looking for car and personal space scenting solutions in UAE?</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
               <a href="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
-                Contact Cool Max Today <ArrowRightIcon className="w-4 h-4" />
+                Contact Cool Max Scent Today <ArrowRightIcon className="w-4 h-4" />
               </a>
               <a 
                 href={`https://wa.me/${whatsappNumber.replace(/\+/g, "")}`}

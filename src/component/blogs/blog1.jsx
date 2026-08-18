@@ -262,8 +262,8 @@ export default function HotelScentMarketingBlog() {
                 </ul>
               </div>
               <div className="bg-slate-50 rounded-[3rem] p-12 border border-slate-100 text-left">
-                <h2 className="text-3xl font-serif text-slate-900 mb-8 text-left">How Cool Max Approaches Scent Marketing for Hotels</h2>
-                <p className="text-sm text-slate-500 mb-10 text-justify text-left">Cool Max operates as a professional solution provider in UAE. Our approach is designed to work silently in the background.</p>
+                <h2 className="text-3xl font-serif text-slate-900 mb-8 text-left">How Cool Max Scent Approaches Scent Marketing for Hotels</h2>
+                <p className="text-sm text-slate-500 mb-10 text-justify text-left">Cool Max Scent operates as a professional solution provider in UAE. Our approach is designed to work silently in the background.</p>
                 <div className="space-y-6 text-left">
                   {[
                     { title: "Understanding Environment", desc: "Analyzing hotel size, layout, and airflow." },
@@ -325,7 +325,7 @@ export default function HotelScentMarketingBlog() {
               Looking for Professional Scent <br />Marketing Solutions in UAE?
             </h2>
             <p className="text-xl text-slate-400 mb-12 max-w-3xl mx-auto font-light leading-relaxed relative z-10 text-center">
-              Cool Max provides commercial aroma diffusers, HVAC systems, and scent & hygiene strategies that guests remember long after checkout.
+              Cool Max Scent provides commercial aroma diffusers, HVAC systems, and scent & hygiene strategies that guests remember long after checkout.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10 text-center">

@@ -245,9 +245,9 @@ export default function ChooseCommercialDiffuserBlog() {
         <section className="py-24 px-6 lg:px-16 max-w-[1400px] mx-auto text-left">
           <div className="grid lg:grid-cols-2 gap-20 items-center text-left">
             <div className="space-y-8 text-left text-left">
-              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-left">How Cool Max Approaches <br/>Commercial Scenting</h2>
+              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-left">How Cool Max Scent Approaches <br/>Commercial Scenting</h2>
               <p className="text-slate-500 text-lg font-light leading-relaxed text-justify text-left">
-                Cool Max operates as a professional scent & hygiene solution provider in UAE. We focus on consistent performance, hygiene, and experience—the same factors large companies value.
+                Cool Max Scent operates as a professional scent & hygiene solution provider in UAE. We focus on consistent performance, hygiene, and experience—the same factors large companies value.
               </p>
               <div className="space-y-4 text-left">
                 {[
@@ -289,7 +289,7 @@ export default function ChooseCommercialDiffuserBlog() {
               Looking for Commercial <br />Aroma Diffusers in UAE?
             </h2>
             <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto font-light leading-relaxed relative z-10 text-center">
-              Cool Max provides scent marketing, commercial diffusers, HVAC systems, and professional hygiene solutions designed for real business environments.
+              Cool Max Scent provides scent marketing, commercial diffusers, HVAC systems, and professional hygiene solutions designed for real business environments.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10 text-center text-left">

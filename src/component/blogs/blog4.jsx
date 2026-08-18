@@ -252,7 +252,7 @@ export default function ScentMarketingBlog() {
 
               {/* COOL MAX (H2) */}
               <div className="py-16 text-left bg-blue-600 rounded-[3rem] p-10 md:p-16 text-white text-left text-left">
-                <h2 className="text-3xl md:text-4xl font-serif mb-8 tracking-tight text-white text-left uppercase font-bold text-left">Cool Max: Trusted by Dubai's Finest Hotels</h2>
+                <h2 className="text-3xl md:text-4xl font-serif mb-8 tracking-tight text-white text-left uppercase font-bold text-left">Cool Max Scent: Trusted by Dubai's Finest Hotels</h2>
                 <p className="mb-10 text-blue-100 text-left">Since 2020, <Link to="/" className="text-white font-bold underline decoration-blue-300 underline-offset-4">Cool Max Scent</Link> has provided commercial scent diffusers in UAE to some of the region's most prestigious properties. Our approach is simple—understand the space, understand the brand, and recommend the right solution.</p>
                 <p className="mb-6 font-bold uppercase tracking-widest text-xs text-blue-200 text-left">We offer:</p>
                 <div className="grid md:grid-cols-2 gap-4 text-sm text-left">
@@ -280,7 +280,7 @@ export default function ScentMarketingBlog() {
                     Commercial aroma diffusers in UAE have evolved from luxury additions to essential investments. Whether through elegant floor-standing units or integrated HVAC systems, professional scenting delivers measurable returns—in guest satisfaction, brand loyalty, and revenue.
                  </p>
                  <p className="text-justify text-left">
-                    At Cool Max, we're proud to partner with hotels that refuse to compromise on guest experience. Our scent marketing solutions in UAE combine cutting-edge technology with personalized service, ensuring every property we serve creates unforgettable first impressions.
+                    At Cool Max Scent, we're proud to partner with hotels that refuse to compromise on guest experience. Our scent marketing solutions in UAE combine cutting-edge technology with personalized service, ensuring every property we serve creates unforgettable first impressions.
                  </p>
               </div>
 
@@ -309,7 +309,7 @@ export default function ScentMarketingBlog() {
                  <div className="h-40 bg-slate-50 rounded-2xl mb-4 flex items-center justify-center p-6 text-center">
                     <img src={BlogHeroImg} alt="Floor-standing Diffuser" className="h-full object-contain mx-auto" />
                  </div>
-                 <h5 className="font-serif text-lg mb-2 text-left">Cool Max Floor-Standing Units</h5>
+                 <h5 className="font-serif text-lg mb-2 text-left">Cool Max Scent Floor-Standing Units</h5>
                  <p className="text-slate-500 text-xs font-light mb-6 text-left">Designed to fragrance up to 500sqm while complementing luxury interiors.</p>
                  <Link to="/floor-standing-aroma-diffusers/" className="text-[10px] font-black uppercase text-blue-600 flex items-center gap-2 hover:gap-3 transition-all text-left">
                     View Diffusers <ArrowRightIcon className="w-3 h-3" />

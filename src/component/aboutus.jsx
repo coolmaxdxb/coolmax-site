@@ -64,7 +64,7 @@ export default function AboutUs() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-200 bg-white/80 backdrop-blur-md mb-8 shadow-sm relative z-10 mt-16">
             <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse"></span>
             <span className="text-indigo-600 text-xs font-bold tracking-widest uppercase">
-              About Cool Max
+              About Cool Max Scent
             </span>
           </div>
           
@@ -76,7 +76,7 @@ export default function AboutUs() {
           </h1>
           
           <p className="text-xl md:text-2xl text-slate-500 font-light leading-relaxed max-w-8xl mx-auto mb-10 relative z-10">
-            Cool Max General Trading is a Dubai-based company providing professional scent diffuser machines and fragrance solutions for homes and commercial spaces across the UAE. Since 2020, we have been supporting businesses with reliable home fragrance systems, commercial scent machines, and HVAC scent diffuser solutions designed for consistent performance.
+            Cool Max Scent is a Dubai-based company providing professional scent diffuser machines and fragrance solutions for homes and commercial spaces across the UAE. Since 2020, we have been supporting businesses with reliable home fragrance systems, commercial scent machines, and HVAC scent diffuser solutions designed for consistent performance.
           </p>
           
           <div className="relative z-10 inline-block">
@@ -102,7 +102,7 @@ export default function AboutUs() {
             </h2>
             <div className="space-y-8 text-lg text-slate-600 leading-relaxed">
               <p>
-                Cool Max is not just a product supplier—we are a solution-driven scent partner. We work closely with our clients to understand their space, usage patterns, and expectations before recommending the right aroma scent diffuser or air scent machine. Our team focuses on matching the correct diffuser technology with suitable fragrance solutions to ensure effective and controlled scent diffusion.
+                Cool Max Scent is not just a product supplier—we are a solution-driven scent partner. We work closely with our clients to understand their space, usage patterns, and expectations before recommending the right aroma scent diffuser or air scent machine. Our team focuses on matching the correct diffuser technology with suitable fragrance solutions to ensure effective and controlled scent diffusion.
               </p>
               <p>
                 We provide professional home scent systems, commercial scent diffusers, and hotel air freshener machines that are suitable for small rooms, large commercial areas, and everything in between. Our range includes battery-operated diffusers, wall-mounted systems, floor-standing scent machines, and HVAC-integrated solutions.
@@ -110,7 +110,7 @@ export default function AboutUs() {
               
               <div className="p-6 bg-slate-50 border-l-2 border-indigo-500 rounded-r-xl shadow-sm">
                 <p className="text-slate-800 font-medium italic">
-                  By combining the right equipment with ongoing service support, Cool Max ensures that scenting remains consistent and reliable—not overpowering, not inconsistent, and not complicated.
+                  By combining the right equipment with ongoing service support, Cool Max Scent ensures that scenting remains consistent and reliable—not overpowering, not inconsistent, and not complicated.
                 </p>
               </div>
             </div>
@@ -147,7 +147,7 @@ export default function AboutUs() {
             <h2 className="text-4xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tight">Our Journey</h2>
             <div className="grid md:grid-cols-2 gap-16 text-lg text-slate-600 font-light leading-relaxed">
               <p>
-                Cool Max General Trading was founded in 2020 with a clear objective: to provide dependable and easy-to-manage scent and hygiene solutions tailored to the UAE market. We identified a growing demand for professional scent diffuser machines that could operate efficiently in commercial and institutional environments without requiring constant attention or complex maintenance.
+                Cool Max Scent was founded in 2020 with a clear objective: to provide dependable and easy-to-manage scent and hygiene solutions tailored to the UAE market. We identified a growing demand for professional scent diffuser machines that could operate efficiently in commercial and institutional environments without requiring constant attention or complex maintenance.
               </p>
               <p>
                 Starting with a focus on hygiene and washroom solutions, we gradually expanded our offerings to include home diffuser machines, commercial scent machines, and large-area HVAC scent diffuser systems. Over the years, we have built a diverse product portfolio that supports a wide range of applications—from residential homes to hotels, offices, hospitals, malls, and large facilities.
@@ -156,7 +156,7 @@ export default function AboutUs() {
             
             <div className="mt-12 pt-12 border-t border-slate-200">
                 <p className="text-xl text-slate-800 font-medium leading-relaxed max-w-4xl">
-                  Today, Cool Max serves public and private hospitals, schools, corporate offices, retail spaces, listed companies, food chains, and facility management providers across the UAE. Our growth has been driven by consistent service, practical solutions, and long-term client relationships.
+                  Today, Cool Max Scent serves public and private hospitals, schools, corporate offices, retail spaces, listed companies, food chains, and facility management providers across the UAE. Our growth has been driven by consistent service, practical solutions, and long-term client relationships.
                 </p>
             </div>
           </div>
@@ -167,7 +167,7 @@ export default function AboutUs() {
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-serif text-slate-900 mb-6">What We Do</h2>
             <p className="text-xl text-slate-500 font-light max-w-2xl mx-auto">
-              At Cool Max, we provide end-to-end scenting solutions designed for simplicity and performance.
+              At Cool Max Scent, we provide end-to-end scenting solutions designed for simplicity and performance.
             </p>
           </div>
 
@@ -284,10 +284,10 @@ export default function AboutUs() {
         <div className="grid lg:grid-cols-2 gap-20 mb-32 items-center border-t border-slate-200 pt-20">
           <div>
             <h2 className="text-4xl md:text-5xl font-serif text-slate-900 mb-8">
-               Why Choose Cool Max
+               Why Choose Cool Max Scent
             </h2>
             <p className="text-lg text-slate-500 font-light mb-12 leading-relaxed">
-              Businesses across the UAE choose Cool Max for our reliability, product range, and service quality. We aim to be a long-term scent partner, not just a one-time supplier.
+              Businesses across the UAE choose Cool Max Scent for our reliability, product range, and service quality. We aim to be a long-term scent partner, not just a one-time supplier.
             </p>
             <ul className="space-y-6">
               {[
@@ -318,7 +318,7 @@ export default function AboutUs() {
 
             <h3 className="text-3xl font-serif text-slate-900 mb-8 relative z-10">Trusted by Businesses Across UAE</h3>
             <p className="text-lg text-slate-600 font-light mb-12 leading-relaxed relative z-10">
-              Cool Max solutions are trusted by hospitals, schools, corporate offices, retail chains, food service brands, and facility management companies throughout the UAE. Our clients rely on us for practical solutions that work reliably in real-world environments.
+              Cool Max Scent solutions are trusted by hospitals, schools, corporate offices, retail chains, food service brands, and facility management companies throughout the UAE. Our clients rely on us for practical solutions that work reliably in real-world environments.
             </p>
             <div className="relative z-10">
                 <button className="w-full py-5 rounded-2xl bg-slate-900 text-white font-bold hover:bg-slate-800 transition shadow-xl text-lg uppercase tracking-widest">
@@ -384,13 +384,13 @@ export default function AboutUs() {
               <span className="italic text-indigo-600">Experiences Together</span>
             </h2>
             <p className="text-slate-600 text-xl font-light mb-12 leading-relaxed max-w-3xl mx-auto">
-              Whether you are looking for a scent machine for home, a hotel scent diffuser, or a scalable scent machine for business, Cool Max is here to help. Our team will guide you in choosing the right solution, setting it up correctly, and maintaining consistent performance.
+              Whether you are looking for a scent machine for home, a hotel scent diffuser, or a scalable scent machine for business, Cool Max Scent is here to help. Our team will guide you in choosing the right solution, setting it up correctly, and maintaining consistent performance.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link to="/contact/">
                 <button className="px-12 py-5 bg-slate-900 text-white rounded-full font-bold hover:bg-slate-800 transition shadow-2xl text-lg uppercase tracking-wider transform hover:-translate-y-1">
-                  Contact Cool Max Today
+                  Contact Cool Max Scent Today
                 </button>
               </Link>
               <Link to="/products">

@@ -124,7 +124,7 @@ export default function WashroomHygienePage() {
             </p>
             <div className="p-6 bg-slate-50 border-l-4 border-teal-600 rounded-r-2xl shadow-sm text-left">
               <p className="italic text-slate-500 font-light text-sm md:text-base text-left">
-                Our Professional Washroom Hygiene Systems combine advanced scent diffuser machines, professional air freshening technology, and reliable service support to ensure consistent freshness throughout the day. From offices and schools to hospitals, malls, and restaurants, Cool Max helps businesses maintain washroom environments that meet modern hygiene expectations.
+                Our Professional Washroom Hygiene Systems combine advanced scent diffuser machines, professional air freshening technology, and reliable service support to ensure consistent freshness throughout the day. From offices and schools to hospitals, malls, and restaurants, Cool Max Scent helps businesses maintain washroom environments that meet modern hygiene expectations.
               </p>
             </div>
           </motion.div>
@@ -210,7 +210,7 @@ export default function WashroomHygienePage() {
                 </div>
                 
                 <p className="text-sm text-slate-400 italic border-l-4 border-slate-100 pl-6 text-left">
-                  At Cool Max, our solutions are tailored to different washroom sizes and usage levels to ensure reliable performance.
+                  At Cool Max Scent, our solutions are tailored to different washroom sizes and usage levels to ensure reliable performance.
                 </p>
             </div>
           </div>
@@ -291,7 +291,7 @@ export default function WashroomHygienePage() {
         <section className="py-16 text-left">
           <div className="bg-slate-900 rounded-[3.5rem] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl text-left">
             <div className="relative z-10 text-left">
-              <h2 className="text-4xl md:text-6xl font-serif text-white mb-8 tracking-tighter leading-none text-center">Why Cool Max UAE?</h2>
+              <h2 className="text-4xl md:text-6xl font-serif text-white mb-8 tracking-tighter leading-none text-center">Why Cool Max Scent UAE?</h2>
               <div className="flex flex-wrap justify-center gap-3 mb-10 text-left">
                 {["UAE-based service team", "Professional-grade systems", "Scalable solutions", "Easy-to-maintain", "Reliable refills"].map((reason, i) => (
                   <div key={i} className="px-5 py-2 rounded-xl bg-white/5 border border-white/10 text-white text-[10px] font-black uppercase tracking-widest flex items-center gap-2 backdrop-blur-md text-left">
@@ -299,7 +299,7 @@ export default function WashroomHygienePage() {
                   </div>
                 ))}
               </div>
-              <p className="text-lg md:text-xl font-serif italic text-white/50 max-w-2xl mx-auto text-center">"Businesses across the UAE trust Cool Max for dependable hygiene solutions and service-driven excellence."</p>
+              <p className="text-lg md:text-xl font-serif italic text-white/50 max-w-2xl mx-auto text-center">"Businesses across the UAE trust Cool Max Scent for dependable hygiene solutions and service-driven excellence."</p>
             </div>
           </div>
         </section>
@@ -316,7 +316,7 @@ export default function WashroomHygienePage() {
               Washroom <br /> <span className="italic text-teal-600 font-light text-center">Hygiene Excellence</span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-4xl mx-auto font-light leading-relaxed text-center">
-              Whether you manage an office, hospital, restaurant, or commercial facility, Cool Max offers reliable Washroom Hygiene Solutions in UAE. Our team handles the service—so you can focus on your business.
+              Whether you manage an office, hospital, restaurant, or commercial facility, Cool Max Scent offers reliable Washroom Hygiene Solutions in UAE. Our team handles the service—so you can focus on your business.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">

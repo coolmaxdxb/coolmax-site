@@ -17,7 +17,7 @@ export default function OfficesCorporateSpaces() {
   const [openFaq, setOpenFaq] = useState(0);
 
   useEffect(() => {
-    document.title = "Aroma Diffuser for Corporate Office in Dubai | CoolMax Scent";
+    document.title = "Aroma Diffuser for Corporate Office in Dubai | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
@@ -192,7 +192,7 @@ export default function OfficesCorporateSpaces() {
                 A fresh, welcoming office environment enhances employee comfort, strengthens your professional image, and creates a positive first impression for clients and visitors.
               </h2>
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                At <span className="font-semibold text-white">CoolMax Scent</span>, we provide <span className="font-semibold text-blue-200">Aroma Diffusers for Corporate Offices in Dubai</span> designed for reception areas, meeting rooms, executive cabins, and open-plan workspaces.
+                At <span className="font-semibold text-white">Cool Max Scent</span>, we provide <span className="font-semibold text-blue-200">Aroma Diffusers for Corporate Offices in Dubai</span> designed for reception areas, meeting rooms, executive cabins, and open-plan workspaces.
               </p>
             </div>
             <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/10 p-3 shadow-lg backdrop-blur-sm">
@@ -218,7 +218,7 @@ export default function OfficesCorporateSpaces() {
           </div>
 
           <div className="rounded-[2.5rem] border border-slate-100 bg-slate-900 p-8 text-white shadow-sm">
-            <p className="text-sm font-black uppercase tracking-[0.3em] text-blue-400">Why choose CoolMax Scent</p>
+            <p className="text-sm font-black uppercase tracking-[0.3em] text-blue-400">Why choose Cool Max Scent</p>
             <h2 className="mt-4 text-3xl font-serif tracking-tight sm:text-4xl">
               Purpose-built office scenting for business environments.
             </h2>
@@ -337,7 +337,7 @@ export default function OfficesCorporateSpaces() {
             <div className="mt-8 overflow-hidden rounded-[2rem] border border-slate-200">
               <div className="grid grid-cols-2 bg-slate-900 px-6 py-4 text-sm font-black uppercase tracking-[0.25em] text-white">
                 <span>Traditional Air Fresheners</span>
-                <span>CoolMax Scent Office Aroma Diffusers</span>
+                <span>Cool Max Scent Office Aroma Diffusers</span>
               </div>
               {comparisonRows.map((row) => (
                 <div key={row.left} className="grid grid-cols-2 border-t border-slate-200 bg-white/70 text-sm text-slate-700 last:rounded-b-[2rem]">
@@ -382,7 +382,7 @@ export default function OfficesCorporateSpaces() {
               <div className="max-w-2xl">
                 <p className="text-sm font-black uppercase tracking-[0.3em] text-blue-700">Ready to create a more welcoming workplace?</p>
                 <h2 className="mt-3 text-3xl font-serif tracking-tight text-slate-900 sm:text-4xl">
-                  Enhance your office environment with professional office aroma diffuser solutions from CoolMax Scent.
+                  Enhance your office environment with professional office aroma diffuser solutions from Cool Max Scent.
                 </h2>
                 <p className="mt-4 text-lg leading-8 text-slate-600">
                   From consultation and product selection to installation and ongoing support, we provide reliable <span className="font-semibold text-slate-900">Corporate Scenting Solutions UAE</span> tailored to your workplace.

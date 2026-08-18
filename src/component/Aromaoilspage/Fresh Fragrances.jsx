@@ -96,7 +96,7 @@ const FreshAromaOilsPage = () => {
   return (
     <div className="mt-16 bg-white text-slate-900 font-sans selection:bg-blue-100 overflow-hidden tracking-tight text-left">
       <Helmet>
-        <title>Fresh Aroma Oils for Home, Spas & Wellness Space | Cool Max</title>
+        <title>Fresh Aroma Oils for Home, Spas & Wellness Space | Cool Max Scent</title>
         <meta
           name="description"
           content="Discover fresh aroma oils by Cool Max Scent. Clean, calm, and refreshing fragrances ideal for homes, spas, and wellness spaces. Explore our Lavender, White Tea, and Lotus Flower collections."

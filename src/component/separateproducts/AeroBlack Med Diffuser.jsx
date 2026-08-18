@@ -269,7 +269,7 @@ const AeroBlackMedPage = () => {
               "Supports business branding through scent marketing",
               "Reduces odor complaints without overpowering fragrance",
               "Scalable solution for growing spaces",
-              "Backed by professional support from Cool Max"
+              "Backed by professional support from Cool Max Scent"
             ].map((text, i) => (
               <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors text-left">
                 <CheckCircleIcon className="w-5 h-5 text-blue-400 mb-3" />

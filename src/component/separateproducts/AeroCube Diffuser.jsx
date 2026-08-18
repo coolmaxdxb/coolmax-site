@@ -27,7 +27,7 @@ const AeroCubePage = () => {
 
   // --- SEO Implementation ---
   useEffect(() => {
-    document.title = "AeroCube Aroma Diffuser for Small Spaces | Cool Max";
+    document.title = "AeroCube Aroma Diffuser for Small Spaces | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "AeroCube Aroma Diffuser for small spaces with low noise, adjustable scent control and 300 m³ coverage. Ideal for offices, corridors and washrooms.");
@@ -292,7 +292,7 @@ const AeroCubePage = () => {
         <div className="max-w-[1200px] mx-auto text-center border-t border-slate-100 pt-16">
           <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight text-center">The Desktop & Small Space Collection</h2>
           <p className="text-sm text-slate-500 max-w-3xl mx-auto mb-10 leading-relaxed font-light text-center">
-            The AeroCube Diffuser belongs to Cool Max’s Desktop & Small Space Aroma Diffusers category — designed for controlled environments where precision and simplicity matter.
+            The AeroCube Diffuser belongs to Cool Max Scent’s Desktop & Small Space Aroma Diffusers category — designed for controlled environments where precision and simplicity matter.
           </p>
           <div className="grid md:grid-cols-4 gap-4 text-center">
             {["OpalMist Clock", "AromaDesk Diffuser", "ZenBox Mini", "LuxePanel Diffuser"].map((range, i) => (
@@ -317,7 +317,7 @@ const AeroCubePage = () => {
                <ChatBubbleLeftRightIcon className="w-5 h-5 text-left" /> WhatsApp Support
             </a>
             <a href={contactPath} className="px-10 py-4 bg-white/5 text-white rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-2 font-sans text-left">
-              Contact Cool Max <ArrowRightIcon className="w-4 h-4 text-left" />
+              Contact Cool Max Scent <ArrowRightIcon className="w-4 h-4 text-left" />
             </a>
           </div>
         </div>

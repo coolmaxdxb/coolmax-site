@@ -29,7 +29,7 @@ export default function HotelsHospitality() {
   const [openFaq, setOpenFaq] = useState(0);
 
   useEffect(() => {
-    document.title = "Aroma Diffuser for Hotels in Dubai | CoolMaxScent";
+    document.title = "Aroma Diffuser for Hotels in Dubai | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
@@ -149,7 +149,7 @@ export default function HotelsHospitality() {
     },
     {
       question: "Do you provide hotel scenting solutions across the UAE?",
-      answer: "Yes. CoolMaxScent supplies, installs, and supports professional hotel scenting systems for hospitality businesses throughout Dubai and the UAE.",
+      answer: "Yes. Cool Max Scent supplies, installs, and supports professional hotel scenting systems for hospitality businesses throughout Dubai and the UAE.",
     },
   ];
 
@@ -212,7 +212,7 @@ export default function HotelsHospitality() {
                 A welcoming hotel atmosphere shapes how guests feel, how they remember their stay, and how they perceive your brand.
               </h2>
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                At <span className="font-semibold text-white">CoolMaxScent</span>, we provide <span className="font-semibold text-blue-200">Aroma Diffusers for Hotels in Dubai</span> for hotel lobbies, reception areas, restaurants, guest corridors, and other hospitality spaces. Our professional scenting solutions deliver consistent fragrance that enhances the guest experience without overwhelming the environment.
+                At <span className="font-semibold text-white">Cool Max Scent</span>, we provide <span className="font-semibold text-blue-200">Aroma Diffusers for Hotels in Dubai</span> for hotel lobbies, reception areas, restaurants, guest corridors, and other hospitality spaces. Our professional scenting solutions deliver consistent fragrance that enhances the guest experience without overwhelming the environment.
               </p>
               <p className="mt-4 text-lg leading-8 text-slate-300">
                 Since 2020, we've helped hotels and resorts across the UAE implement reliable hotel aroma diffuser UAE solutions, from standalone hotel scent machines to HVAC-integrated systems.
@@ -250,7 +250,7 @@ export default function HotelsHospitality() {
           </div>
 
           <div className="rounded-[2.5rem] border border-slate-100 bg-slate-900 p-8 text-white shadow-sm">
-            <p className="text-sm font-black uppercase tracking-[0.3em] text-blue-400">Why Hotels Choose CoolMaxScent</p>
+            <p className="text-sm font-black uppercase tracking-[0.3em] text-blue-400">Why Hotels Choose Cool Max Scent</p>
             <h2 className="mt-4 text-3xl font-serif tracking-tight sm:text-4xl">
               Choosing the right hotel scenting partner is just as important as selecting the right fragrance.
             </h2>
@@ -274,7 +274,7 @@ export default function HotelsHospitality() {
                 Every area of your hotel creates a different impression on guests, so each space requires the right scenting solution.
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-600">
-                At CoolMaxScent, we recommend professional aroma diffusers based on your property's layout, coverage requirements, and guest experience goals.
+                At Cool Max Scent, we recommend professional aroma diffusers based on your property's layout, coverage requirements, and guest experience goals.
               </p>
             </div>
             <div className="overflow-hidden rounded-[2rem] border border-slate-200">
@@ -387,7 +387,7 @@ export default function HotelsHospitality() {
             <div className="mt-8 overflow-hidden rounded-[2rem] border border-slate-200">
               <div className="grid grid-cols-2 bg-slate-900 px-6 py-4 text-sm font-black uppercase tracking-[0.25em] text-white">
                 <span>Traditional Hotel Air Fresheners</span>
-                <span>CoolMaxScent Hotel Scenting Solutions</span>
+                <span>Cool Max Scent Hotel Scenting Solutions</span>
               </div>
               {comparisonRows.map((row) => (
                 <div key={row.left} className="grid grid-cols-2 border-t border-slate-200 bg-white/70 text-sm text-slate-700 last:rounded-b-[2rem]">
@@ -437,7 +437,7 @@ export default function HotelsHospitality() {
                   Create a welcoming atmosphere that guests remember long after check-out.
                 </h2>
                 <p className="mt-4 text-lg leading-8 text-slate-600">
-                  Whether you manage a boutique hotel, luxury resort, or serviced apartment, CoolMaxScent provides reliable fragrance solutions tailored to your hospitality space.
+                  Whether you manage a boutique hotel, luxury resort, or serviced apartment, Cool Max Scent provides reliable fragrance solutions tailored to your hospitality space.
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row">

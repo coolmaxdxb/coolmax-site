@@ -181,7 +181,7 @@ const ArabianBakhourAromaOilDetail = () => {
                     { title: "Traditional Profile", desc: "Classic oriental fragrance that honors traditional Middle Eastern scent heritage." },
                     { title: "Consistent Quality", desc: "Professional-grade formulation ensuring the same premium scent from start to finish." },
                     { title: "Long-Lasting Performance", desc: "Designed to linger effectively, providing value and continuous ambiance." },
-                    { title: "Diffuser Compatible", desc: "Optimized for use with all advanced automated Cool Max scent diffuser systems." }
+                    { title: "Diffuser Compatible", desc: "Optimized for use with all advanced automated Cool Max Scent scent diffuser systems." }
                 ].map((item, i) => (
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col gap-5 hover:bg-white/10 transition-colors">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-500" />

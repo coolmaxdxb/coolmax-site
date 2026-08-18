@@ -22,7 +22,7 @@ export default function HVACAreaScentBlog() {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "How Large Area & HVAC Aroma Diffusers Transform Commercial Spaces | Cool Max";
+    document.title = "How Large Area & HVAC Aroma Diffusers Transform Commercial Spaces | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "Discover how Large Area & HVAC Aroma Diffusers in UAE create inviting commercial environments. Learn about HVAC scent diffusers for offices, malls & hotels.");
@@ -200,9 +200,9 @@ export default function HVACAreaScentBlog() {
               </div>
 
               <div className="py-16">
-                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Why Cool Max?</h2>
+                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Why Cool Max Scent?</h2>
                 <p className="text-justify mb-6">
-                  Since 2020, Cool Max has provided Large Area & HVAC Aroma Diffusers in UAE. We evaluate airflow patterns, consider your brand identity, and match technology with the right fragrance solutions.
+                  Since 2020, Cool Max Scent has provided Large Area & HVAC Aroma Diffusers in UAE. We evaluate airflow patterns, consider your brand identity, and match technology with the right fragrance solutions.
                 </p>
                 <div className="p-8 border border-slate-100 rounded-3xl bg-slate-50 flex flex-col md:flex-row gap-8">
                   <div className="flex-1 space-y-4">
@@ -216,7 +216,7 @@ export default function HVACAreaScentBlog() {
               <div className="py-16 border-t border-slate-100">
                 <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 uppercase">Final Thoughts</h2>
                 <p className="text-justify">
-                  The way your space smells matters more than most business owners realize. Large Area & HVAC Aroma Diffusers in UAE from Cool Max give you complete control over your indoor environment.
+                  The way your space smells matters more than most business owners realize. Large Area & HVAC Aroma Diffusers in UAE from Cool Max Scent give you complete control over your indoor environment.
                 </p>
               </div>
 

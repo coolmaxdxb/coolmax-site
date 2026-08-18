@@ -81,7 +81,7 @@ const NovaCarPage = () => {
                 Talk to Scent Expert <ChatBubbleLeftRightIcon className="w-4 h-4" />
               </a>
               <a href={contactPath} className="px-6 py-3 border border-slate-200 text-slate-900 rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-white transition-all flex items-center gap-2">
-                Contact Cool Max <ArrowRightIcon className="w-3 h-3" />
+                Contact Cool Max Scent <ArrowRightIcon className="w-3 h-3" />
               </a>
             </div>
           </motion.div>
@@ -316,7 +316,7 @@ const NovaCarPage = () => {
           </div>
           <div className="p-8 bg-blue-600 text-white rounded-3xl shadow-xl text-left text-white">
             <h4 className="text-lg font-bold mb-4 flex items-center gap-2 text-white text-left">
-              <ShieldCheckIcon className="w-5 h-5 text-white" /> Cool Max Support
+              <ShieldCheckIcon className="w-5 h-5 text-white" /> Cool Max Scent Support
             </h4>
             <ul className="space-y-2 text-xs text-blue-50 font-light text-left text-left">
                <li className="text-left">• Fragrance refill options</li>
@@ -332,7 +332,7 @@ const NovaCarPage = () => {
         <div className="max-w-[1200px] mx-auto text-center border-t border-slate-100 pt-16 text-left">
           <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight text-center text-slate-900">The Car Aroma Collection</h2>
           <p className="text-sm text-slate-500 max-w-3xl mx-auto mb-10 leading-relaxed font-light text-center text-left">
-            NovaCar Diffuser is part of Cool Max’s Car Aroma Diffusers range, designed to provide safe, intelligent, and effective fragrance solutions for vehicles.
+            NovaCar Diffuser is part of Cool Max Scent’s Car Aroma Diffusers range, designed to provide safe, intelligent, and effective fragrance solutions for vehicles.
           </p>
           <div className="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center text-left">
             {["DriveScent Diffuser", "VentoCar Diffuser", "DeskScent Diffuser"].map((range, i) => (
@@ -357,7 +357,7 @@ const NovaCarPage = () => {
                <ChatBubbleLeftRightIcon className="w-5 h-5 text-left" /> WhatsApp Support
             </a>
             <a href={contactPath} className="px-10 py-4 bg-white/5 text-white rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-2">
-              Contact Cool Max <ArrowRightIcon className="w-4 h-4 text-left" />
+              Contact Cool Max Scent <ArrowRightIcon className="w-4 h-4 text-left" />
             </a>
           </div>
         </div>

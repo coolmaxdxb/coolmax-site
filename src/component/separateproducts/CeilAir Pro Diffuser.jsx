@@ -291,7 +291,7 @@ const CeilAirProPage = () => {
         <div className="max-w-[1200px] mx-auto text-center border-t border-slate-100 pt-16 text-left">
           <h2 className="text-2xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 text-center">The Wall-Mounted & Ceiling Range</h2>
           <p className="text-sm text-slate-500 max-w-3xl mx-auto mb-10 leading-relaxed font-light text-center">
-            CeilAir Pro Diffuser belongs to Cool Max’s Wall-Mounted & Ceiling Aroma Diffusers collection—designed for efficient scenting without compromising space or safety.
+            CeilAir Pro Diffuser belongs to Cool Max Scent’s Wall-Mounted & Ceiling Aroma Diffusers collection—designed for efficient scenting without compromising space or safety.
           </p>
           <div className="max-w-xs mx-auto text-left">
             <Link to="/wall-mounted-and-ceiling-aroma-diffuser/aeromax-pro-diffuser/" className="block p-6 rounded-2xl bg-white border border-slate-100 hover:border-blue-600 transition-all font-bold uppercase tracking-widest text-[9px] text-slate-500 cursor-pointer text-center">
@@ -314,7 +314,7 @@ const CeilAirProPage = () => {
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert
             </a>
             <a href={contactPath} className="px-10 py-4 bg-white/5 text-white rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-2 font-sans text-center">
-              Contact Cool Max <ArrowRightIcon className="w-4 h-4" />
+              Contact Cool Max Scent <ArrowRightIcon className="w-4 h-4" />
             </a>
           </div>
         </div>

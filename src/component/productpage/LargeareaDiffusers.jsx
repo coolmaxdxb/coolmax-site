@@ -25,10 +25,10 @@ export default function LargeAreaDiffusersPage() {
 
   // --- SEO Implementation ---
   useEffect(() => {
-    document.title = "Large Area & HVAC Aroma Diffusers in UAE | Cool Max";
+    document.title = "Large Area & HVAC Aroma Diffusers in UAE | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-      metaDesc.setAttribute("content", "Explore large area & HVAC aroma diffusers in UAE for hotels, malls, airports, & large commercial spaces. Powerful, professional scenting solutions by Cool Max.");
+      metaDesc.setAttribute("content", "Explore large area & HVAC aroma diffusers in UAE for hotels, malls, airports, & large commercial spaces. Powerful, professional scenting solutions by Cool Max Scent.");
     }
   }, []);
 
@@ -67,7 +67,7 @@ export default function LargeAreaDiffusersPage() {
               </p>
               <div className="p-6 bg-slate-50 border border-slate-200 rounded-[2rem] mb-8 max-w-xl shadow-sm">
                 <p className="text-sm md:text-base text-slate-600 leading-relaxed italic text-left">
-                  Large area and HVAC Scent Diffusers from Cool Max are designed for environments that require wide fragrance coverage, high performance, and professional control. These scent diffuser machines are ideal for hotels, shopping malls, airports, large offices, showrooms, and other high-footfall commercial spaces.
+                  Large area and HVAC Scent Diffusers from Cool Max Scent are designed for environments that require wide fragrance coverage, high performance, and professional control. These scent diffuser machines are ideal for hotels, shopping malls, airports, large offices, showrooms, and other high-footfall commercial spaces.
                 </p>
               </div>
               <div className="flex flex-wrap gap-4 font-sans">
@@ -200,7 +200,7 @@ export default function LargeAreaDiffusersPage() {
         {/* ================= SECTION 6: WHY COOL MAX ================= */}
         <section className="py-16 text-left font-sans">
           <div className="bg-slate-50 rounded-[3rem] p-10 md:p-16 border border-slate-100 text-left shadow-sm">
-            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter leading-tight text-center lg:text-left uppercase">Why Choose Cool Max?</h2>
+            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-10 tracking-tighter leading-tight text-center lg:text-left uppercase">Why Choose Cool Max Scent?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
               {[
                 "UAE-based company with local expertise",
@@ -239,11 +239,11 @@ export default function LargeAreaDiffusersPage() {
               Need a Large Area or <br /> <span className="italic text-blue-600 font-light text-center">HVAC Scenting Solution?</span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-3xl mx-auto font-light leading-relaxed text-center text-justify md:text-center">
-              Whether you manage a hotel, shopping mall, airport, or large commercial facility, Cool Max offers reliable Large Area & HVAC Aroma Diffusers in UAE designed for professional use.
+              Whether you manage a hotel, shopping mall, airport, or large commercial facility, Cool Max Scent offers reliable Large Area & HVAC Aroma Diffusers in UAE designed for professional use.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
               <Link to="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
-                Contact Cool Max Today <ArrowRightIcon className="w-4 h-4 text-center"/>
+                Contact Cool Max Scent Today <ArrowRightIcon className="w-4 h-4 text-center"/>
               </Link>
               <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-10 py-6 bg-[#25D366] text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-[#128C7E] transition-all shadow-xl flex items-center justify-center gap-3 text-center">
                 <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert

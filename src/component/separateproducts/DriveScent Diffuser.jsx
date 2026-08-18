@@ -28,7 +28,7 @@ const DriveScentPage = () => {
 
   // --- SEO Implementation ---
   useEffect(() => {
-    document.title = "Car Aroma Diffuser – DriveScent Diffuser | Cool Max";
+    document.title = "Car Aroma Diffuser – DriveScent Diffuser | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "DriveScent Diffuser is a premium car aroma diffuser with rechargeable battery, quiet operation and smart fragrance control for cars and desks.");
@@ -80,7 +80,7 @@ const DriveScentPage = () => {
                 Talk to Scent Expert <ChatBubbleLeftRightIcon className="w-4 h-4" />
               </a>
               <a href={contactPath} className="px-6 py-3 border border-slate-200 text-slate-900 rounded-xl font-bold text-[10px] uppercase tracking-widest hover:bg-white transition-all flex items-center gap-2 font-sans text-left">
-                Contact Cool Max <ArrowRightIcon className="w-3 h-3" />
+                Contact Cool Max Scent <ArrowRightIcon className="w-3 h-3" />
               </a>
             </div>
           </motion.div>
@@ -330,7 +330,7 @@ const DriveScentPage = () => {
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert
             </a>
             <a href={contactPath} className="px-10 py-4 bg-white/5 text-white rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-2 font-sans text-center">
-              Contact Cool Max <ArrowRightIcon className="w-4 h-4" />
+              Contact Cool Max Scent <ArrowRightIcon className="w-4 h-4" />
             </a>
           </div>
         </div>

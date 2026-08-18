@@ -31,7 +31,7 @@ export default function BestAromaOilDiffuserGuide() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = "Best Aroma Oil Scent Diffuser Guide for Every Room | Cool Max";
+    document.title = "Best Aroma Oil Scent Diffuser Guide for Every Room | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "Find the perfect aroma oil diffuser for your space. Explore premium aroma oils like oud, lavender, white tea, and more to create a relaxing atmosphere. Contact Us Today!");

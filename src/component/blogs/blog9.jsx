@@ -23,7 +23,7 @@ export default function ScentDiffuserVsAirFreshenerBlog() {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "Commercial Scent Diffuser vs Air Freshener | Cool Max";
+    document.title = "Commercial Scent Diffuser vs Air Freshener | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "Compare commercial scent diffuser vs air freshener and find what works better for your business in UAE. Improve customer experience with professional scent solutions.");

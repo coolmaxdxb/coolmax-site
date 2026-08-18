@@ -174,7 +174,7 @@ const ClassicAromaOilDetail = () => {
                             { title: "Timeless Profile", desc: "A sophisticated premium fragrance that defines elegance and luxury in any setting." },
                             { title: "Elite Formulation", desc: "Professional-grade fragrance oil ensuring long-lasting, consistent, and clean diffusion." },
                             { title: "Reliable Longevity", desc: "High-performance longevity that maintains its refined character steadily all day." },
-                            { title: "System Compatible", desc: "Optimized for all professional Cool Max automated scent delivery diffuser systems." }
+                            { title: "System Compatible", desc: "Optimized for all professional Cool Max Scent automated scent delivery diffuser systems." }
                         ].map((item, i) => (
                             <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors">
                                 <CheckBadgeIcon className="w-10 h-10 text-blue-400" />

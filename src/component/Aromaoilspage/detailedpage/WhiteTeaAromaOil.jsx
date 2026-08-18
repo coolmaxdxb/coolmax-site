@@ -175,7 +175,7 @@ const WhiteTeaAromaOilDetail = () => {
                     { title: "Subtle Profile", desc: "A clean and natural aroma that enhances spaces without overwhelming them." },
                     { title: "Elite Formulation", desc: "Professional-grade fragrance oil ensuring long-lasting purity." },
                     { title: "Consistent Presence", desc: "Formulated for high-performance diffusion that stays fresh all day." },
-                    { title: "Smart Compatibility", desc: "Optimized for all professional Cool Max automated scent delivery systems." }
+                    { title: "Smart Compatibility", desc: "Optimized for all professional Cool Max Scent automated scent delivery systems." }
                 ].map((item, i) => (
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400" />

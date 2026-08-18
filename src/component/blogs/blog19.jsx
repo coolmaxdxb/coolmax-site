@@ -237,7 +237,7 @@ export default function AromaMoodComfortBlog() {
               Upgrade Your <br />Business Atmosphere
             </h2>
             <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto font-light leading-relaxed relative z-10 text-center">
-              Cool Max provides complete premium scent diffusion integration across the UAE.
+              Cool Max Scent provides complete premium scent diffusion integration across the UAE.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10">
               <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-12 py-6 bg-white text-blue-600 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all shadow-xl flex items-center justify-center gap-3">

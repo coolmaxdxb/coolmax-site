@@ -39,7 +39,7 @@ export default function CommercialDiffusersPage() {
     document.title = "Commercial Aroma Diffusers in UAE | Cool Max Scent";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Explore commercial aroma diffusers in UAE for offices and business spaces. Professional scent diffuser machines with reliable performance & support by Cool Max.");
+      metaDescription.setAttribute("content", "Explore commercial aroma diffusers in UAE for offices and business spaces. Professional scent diffuser machines with reliable performance & support by Cool Max Scent.");
     }
   }, []);
 
@@ -85,7 +85,7 @@ export default function CommercialDiffusersPage() {
               </h2>
               
               <p className="text-lg text-slate-500 font-light max-w-xl mb-8 leading-relaxed text-left text-justify">
-                Commercial aroma diffusers from Cool Max are designed for professional environments where consistent fragrance, reliability, and controlled diffusion are essential. These scent diffuser machines are suitable for offices, clinics, retail stores, educational institutions, and other medium-sized commercial spaces.
+                Commercial aroma diffusers from Cool Max Scent are designed for professional environments where consistent fragrance, reliability, and controlled diffusion are essential. These scent diffuser machines are suitable for offices, clinics, retail stores, educational institutions, and other medium-sized commercial spaces.
               </p>
 
               <div className="flex flex-wrap gap-4 text-left">
@@ -277,7 +277,7 @@ export default function CommercialDiffusersPage() {
 
         {/* ================= SECTION 6: WHY COOL MAX ================= */}
         <section className="py-24 text-left font-sans text-left">
-          <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-12 tracking-tighter uppercase text-center md:text-left">Why Choose Cool Max Commercial Aroma Diffusers?</h2>
+          <h2 className="text-4xl md:text-6xl font-serif text-slate-900 mb-12 tracking-tighter uppercase text-center md:text-left">Why Choose Cool Max Scent Commercial Aroma Diffusers?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
             {[
               "UAE-based company with local support",
@@ -321,14 +321,14 @@ export default function CommercialDiffusersPage() {
               <span className="italic text-blue-400 font-light text-center">Right Commercial Aroma Diffuser?</span>
             </h2>
             <p className="text-xl text-slate-400 mb-12 leading-relaxed font-light font-sans text-center text-justify md:text-center">
-              Whether you manage a single office or multiple commercial locations, Cool Max offers dependable commercial aroma diffusers designed for professional use. Our team will help you select the right solution and ensure long-term performance.
+              Whether you manage a single office or multiple commercial locations, Cool Max Scent offers dependable commercial aroma diffusers designed for professional use. Our team will help you select the right solution and ensure long-term performance.
             </p>
             
             <p className="text-sm font-black uppercase text-blue-500 tracking-widest mb-8 text-center">Looking for commercial aroma diffusers in UAE?</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 font-sans text-center">
               <Link to="/contact/" className="w-full sm:w-auto px-12 py-6 bg-white text-slate-900 font-black text-xs uppercase tracking-[0.3em] rounded-2xl transition-all shadow-xl hover:bg-blue-600 hover:text-white flex items-center justify-center gap-3 text-center">
-                Contact Cool Max Today <ArrowRightIcon className="w-4 h-4 text-center"/>
+                Contact Cool Max Scent Today <ArrowRightIcon className="w-4 h-4 text-center"/>
               </Link>
               <a 
                 href={`https://wa.me/${whatsappNumber.replace('+', '')}`}

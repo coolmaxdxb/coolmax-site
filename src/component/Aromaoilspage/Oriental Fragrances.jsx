@@ -260,7 +260,7 @@ const OrientalAromaOilsPage = () => {
                  <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
               </a>
               <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all flex items-center justify-center gap-3 border border-white/10">
-                Contact Cool Max <ArrowRightIcon className="w-5 h-5" />
+                Contact Cool Max Scent <ArrowRightIcon className="w-5 h-5" />
               </Link>
             </div>
           </div>

@@ -174,7 +174,7 @@ const EmaarAromaOilDetail = () => {
                     { title: "Non-Overpowering", desc: "Elegant scent profile that enhances spaces without overwhelming visitors." },
                     { title: "Professional Formulation", desc: "High-grade performance oils ensuring a premium atmosphere every time." },
                     { title: "Long-Lasting Character", desc: "Consistent aromatic presence tailored for high-end environments." },
-                    { title: "Scent System Ready", desc: "Fully compatible with all advanced automated Cool Max scent diffuser machines." }
+                    { title: "Scent System Ready", desc: "Fully compatible with all advanced automated Cool Max Scent scent diffuser machines." }
                 ].map((item, i) => (
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors text-left">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400" />
@@ -216,7 +216,7 @@ const EmaarAromaOilDetail = () => {
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Scent Expert
             </a>
             <Link to={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-full font-bold uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 text-center font-sans">
-              Contact Cool Max <ArrowRightIcon className="w-5 h-5" />
+              Contact Cool Max Scent <ArrowRightIcon className="w-5 h-5" />
             </Link>
           </div>
         </div>

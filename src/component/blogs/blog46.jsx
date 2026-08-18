@@ -72,7 +72,7 @@ export default function SchoolsAromaSolutionsBlog() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = "Aroma Diffuser for Schools in Dubai | Better Learning Environments | CoolMax Scent";
+    document.title = "Aroma Diffuser for Schools in Dubai | Better Learning Environments | Cool Max Scent";
 
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
@@ -116,7 +116,7 @@ export default function SchoolsAromaSolutionsBlog() {
     { label: "AeroBlack Med", href: "#professional-solution-for-schools-and-medium-sized-educational-spaces" },
     { label: "AirPulse 150", href: "#professional-solution-for-large-educational-campuses" },
     { label: "Student Well-Being", href: "#supporting-student-well-being-through-better-environments" },
-    { label: "CoolMaxScent", href: "#create-better-learning-environments-with-coolmaxscent" },
+    { label: "Cool Max Scent", href: "#create-better-learning-environments-with-coolmaxscent" },
   ];
 
   return (
@@ -1041,7 +1041,7 @@ export default function SchoolsAromaSolutionsBlog() {
           </motion.div>
         </section>
 
-        {/* ========== SECTION 12: Create Better Learning Environments with Coolmaxscent ========== */}
+        {/* ========== SECTION 12: Create Better Learning Environments with Cool Max Scent ========== */}
         <section id="create-better-learning-environments-with-coolmaxscent" className="mx-auto max-w-[1400px] px-6 pb-16 lg:px-16">
           <motion.div
             variants={fadeInUp}
@@ -1061,9 +1061,9 @@ export default function SchoolsAromaSolutionsBlog() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="h-1 bg-blue-500 rounded-full mb-6"
               />
-              <p className="text-xs font-black uppercase tracking-[0.25em] text-blue-600">The CoolMaxScent Commitment</p>
+              <p className="text-xs font-black uppercase tracking-[0.25em] text-blue-600">The Cool Max Scent Commitment</p>
               <h2 className="mt-2 text-3xl font-serif tracking-tight text-slate-900 sm:text-4xl">
-                Create Better Learning Environments with Coolmaxscent
+                Create Better Learning Environments with Cool Max Scent
               </h2>
               <div className="mt-6 space-y-4 text-slate-600 leading-relaxed font-light">
                 <p>
@@ -1077,7 +1077,7 @@ export default function SchoolsAromaSolutionsBlog() {
                     rel="noreferrer"
                     className={textLinkClass}
                   >
-                    Coolmaxscent
+                    Cool Max Scent
                   </a>
                   , we provide advanced{" "}
                   <a
@@ -1118,7 +1118,7 @@ export default function SchoolsAromaSolutionsBlog() {
                   >
                     Aroma Diffuser for Schools in Dubai
                   </a>
-                  , Coolmaxscent offers innovative fragrance solutions that help educational institutions create cleaner, more welcoming, and memorable learning environments across the UAE.
+                  , Cool Max Scent offers innovative fragrance solutions that help educational institutions create cleaner, more welcoming, and memorable learning environments across the UAE.
                 </p>
               </div>
             </motion.div>
@@ -1136,7 +1136,7 @@ export default function SchoolsAromaSolutionsBlog() {
                   className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-4 py-2 text-[10px] font-black uppercase tracking-[0.3em] text-blue-700"
                 >
                   <ShieldCheckIcon className="h-4 w-4" />
-                  CoolMax Scent Solutions
+                  Cool Max Scent Solutions
                 </motion.div>
                 <h3 className="text-3xl font-serif tracking-tight text-slate-900 sm:text-4xl">
                   Elevate Your School's Learning Environment
@@ -1150,7 +1150,7 @@ export default function SchoolsAromaSolutionsBlog() {
                       rel="noreferrer"
                       className={textLinkClass}
                     >
-                      CoolMaxScent
+                      Cool Max Scent
                     </a>{" "}
                     provides expertly designed commercial scenting systems that help educational institutions across the UAE create welcoming environments where students can thrive.
                   </p>

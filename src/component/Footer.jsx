@@ -36,7 +36,7 @@ export default function Footer() {
             <div className="mb-6">
               <img 
                 src={logo} 
-                alt="Cool Max Logo" 
+                alt="Cool Max Scent Logo" 
                 className="h-18 md:h-22 w-auto object-contain brightness-100 " 
               />
             </div>
@@ -54,7 +54,7 @@ export default function Footer() {
             <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-indigo-400 mb-6">Company</h4>
             <ul className="space-y-3 text-sm">
               {[
-                { name: 'About Cool Max', url: '/about-us/' },
+                { name: 'About Cool Max Scent', url: '/about-us/' },
                 { name: 'Our Solutions', url: '/solution/' },
                 { name: 'Fragrance Innovation', url: '/aromas/' },
                 { name: 'Industries We Serve', url: '/industries/' },
@@ -193,7 +193,7 @@ export default function Footer() {
 
           <div className="text-center md:text-right">
             <p className="text-[10px] text-slate-500 uppercase tracking-wider font-medium mb-1">
-              © {new Date().getFullYear()} Cool Max General Trading.
+              © {new Date().getFullYear()} Cool Max Scent.
             </p>
             <div className="flex gap-4 justify-center md:justify-end text-[10px] text-slate-600 font-medium">
               <a href="/contact/" className="hover:text-indigo-400 transition-colors">Privacy</a>

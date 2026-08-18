@@ -27,7 +27,7 @@ export default function HVACSolutionsPage() {
     document.title = "HVAC Scenting Solutions in UAE | Cool Max Scent";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "HVAC scenting solutions in UAE for malls, airports, & large facilities. Discover centralized scent diffusers for consistent fragrance coverage by Cool Max.");
+      metaDescription.setAttribute("content", "HVAC scenting solutions in UAE for malls, airports, & large facilities. Discover centralized scent diffusers for consistent fragrance coverage by Cool Max Scent.");
     }
   }, []);
 
@@ -218,9 +218,9 @@ export default function HVACSolutionsPage() {
         {/* ================= SECTION 4: OUR SOLUTIONS ================= */}
         <section className="py-16 border-t border-slate-100">
           <div className="mb-12 text-center max-w-4xl mx-auto">
-            <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-cyan-600 mb-4">Our HVAC Scenting Solutions in UAE at Cool Max</h2>
+            <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-cyan-600 mb-4">Our HVAC Scenting Solutions in UAE at Cool Max Scent</h2>
             <p className="text-base md:text-lg text-slate-500 font-light text-center">
-              Cool Max provides end-to-end HVAC Scenting Solutions in UAE designed for reliability, performance, and ease of maintenance.
+              Cool Max Scent provides end-to-end HVAC Scenting Solutions in UAE designed for reliability, performance, and ease of maintenance.
             </p>
           </div>
 
@@ -387,8 +387,8 @@ export default function HVACSolutionsPage() {
         {/* ================= SECTION 10: WHY CHOOSE ================= */}
         <section className="py-16">
            <div className="bg-slate-50 rounded-[3rem] border border-slate-100 p-10 md:p-16 text-left shadow-sm">
-              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-left">Why Choose Cool Max for HVAC Scenting Solutions in UAE?</h2>
-              <p className="text-slate-500 mb-10 max-w-3xl text-left font-light">Businesses choose Cool Max for Centralized Scenting Solutions because of our experience. We focus on delivering scent systems that work reliably every day, not just during installation.</p>
+              <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-left">Why Choose Cool Max Scent for HVAC Scenting Solutions in UAE?</h2>
+              <p className="text-slate-500 mb-10 max-w-3xl text-left font-light">Businesses choose Cool Max Scent for Centralized Scenting Solutions because of our experience. We focus on delivering scent systems that work reliably every day, not just during installation.</p>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
                 {[
                   "UAE-based technical support",
@@ -413,14 +413,14 @@ export default function HVACSolutionsPage() {
               Let’s Design the Right <br /> <span className="italic text-cyan-600 font-light">HVAC Scenting Solutions in UAE for Your Space</span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-4xl mx-auto font-light leading-relaxed text-center font-sans">
-              Whether you manage a hotel, mall, airport, or corporate facility, Cool Max provides reliable HVAC Scenting Solutions in UAE designed to deliver consistent and professional fragrance coverage. Our team will assess your space, recommend the right Commercial HVAC Aroma Diffuser, and provide ongoing support to ensure long-term performance.
+              Whether you manage a hotel, mall, airport, or corporate facility, Cool Max Scent provides reliable HVAC Scenting Solutions in UAE designed to deliver consistent and professional fragrance coverage. Our team will assess your space, recommend the right Commercial HVAC Aroma Diffuser, and provide ongoing support to ensure long-term performance.
             </p>
             
             <p className="text-sm font-black uppercase text-cyan-600 tracking-widest mb-8 text-center">Looking for professional HVAC Scent Diffuser UAE solutions?</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 font-sans">
               <a href="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3">
-                Contact Cool Max Today <ArrowRightIcon className="w-4 h-4" />
+                Contact Cool Max Scent Today <ArrowRightIcon className="w-4 h-4" />
               </a>
               <a 
                 href={`https://wa.me/${whatsappNumber}`}

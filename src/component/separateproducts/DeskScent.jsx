@@ -360,7 +360,7 @@ const DeskScentPage = () => {
                   </ul>
               </div>
               <div className="p-10 bg-blue-600 rounded-[3rem] text-left text-white shadow-xl text-left">
-                  <h3 className="text-2xl font-serif mb-8 uppercase tracking-tight text-white text-left">Cool Max Refill Support</h3>
+                  <h3 className="text-2xl font-serif mb-8 uppercase tracking-tight text-white text-left">Cool Max Scent Refill Support</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 font-sans text-left text-left">
                       {["Fragrance refill support", "Product usage guidance", "Maintenance assistance"].map((li, i) => (
                         <div key={i} className="flex items-center gap-3 text-[10px] font-black uppercase tracking-widest text-left">
@@ -377,7 +377,7 @@ const DeskScentPage = () => {
         <div className="max-w-[1200px] mx-auto text-center border-t border-slate-200 pt-16 text-left">
           <h2 className="text-2xl md:text-3xl font-serif mb-6 tracking-tight uppercase text-center text-left">Part of Our Car Aroma Diffusers Collection</h2>
           <p className="text-sm text-slate-500 max-w-3xl mx-auto mb-10 leading-relaxed font-light text-center text-left">
-            DeskScent Diffuser is part of Cool Max’s Car Aroma Diffusers range, designed to deliver effective fragrance diffusion in cars and personal spaces.
+            DeskScent Diffuser is part of Cool Max Scent’s Car Aroma Diffusers range, designed to deliver effective fragrance diffusion in cars and personal spaces.
           </p>
           <div className="grid md:grid-cols-3 gap-4 text-left">
             {["DriveScent Diffuser", "VentoCar Diffuser", "NovaCar Diffuser"].map((range, i) => (
@@ -399,7 +399,7 @@ const DeskScentPage = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-6 relative z-10 font-sans text-left">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-12 py-5 bg-white text-slate-900 rounded-2xl font-black uppercase tracking-widest text-[11px] hover:bg-blue-600 hover:text-white transition-all shadow-xl flex items-center gap-3 text-left">
-                <ChatBubbleLeftRightIcon className="w-6 h-6 text-left" /> Contact Cool Max
+                <ChatBubbleLeftRightIcon className="w-6 h-6 text-left" /> Contact Cool Max Scent
             </a>
             <a href={contactPath} className="px-12 py-5 bg-white/5 text-white rounded-2xl font-black uppercase tracking-widest text-[11px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-3 text-left">
               Request product details <ArrowRightIcon className="w-5 h-5 text-left" />

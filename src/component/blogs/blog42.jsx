@@ -302,10 +302,10 @@ export default function ShoppingMallsScentBlog() {
                   Choosing the right scenting partner is just as important as selecting the right fragrance system. An experienced provider understands that every shopping mall has unique operational requirements and requires a tailored approach rather than a standard solution.
                 </p>
                 <p className="mb-6 text-justify">
-                  At CoolMaxScent, we work closely with shopping mall owners, property managers, and facility management teams to understand their environment before recommending the most suitable scenting strategy. Whether the goal is improving visitor comfort, creating a premium retail atmosphere, or maintaining a consistent fragrance across multiple commercial spaces, our approach is based on practical requirements rather than assumptions.
+                  At Cool Max Scent, we work closely with shopping mall owners, property managers, and facility management teams to understand their environment before recommending the most suitable scenting strategy. Whether the goal is improving visitor comfort, creating a premium retail atmosphere, or maintaining a consistent fragrance across multiple commercial spaces, our approach is based on practical requirements rather than assumptions.
                 </p>
                 <p className="text-justify">
-                  With professional guidance, premium fragrance collections, and reliable Commercial Aroma Diffusers in Dubai, CoolMaxScent helps shopping malls create welcoming environments that enhance the overall retail experience while supporting their brand image.
+                  With professional guidance, premium fragrance collections, and reliable Commercial Aroma Diffusers in Dubai, Cool Max Scent helps shopping malls create welcoming environments that enhance the overall retail experience while supporting their brand image.
                 </p>
               </motion.div>
 
@@ -326,7 +326,7 @@ export default function ShoppingMallsScentBlog() {
                     <span className="text-sm font-black uppercase tracking-[0.3em] text-blue-100">Professional retail scenting</span>
                   </div>
                   <p className="mb-6 text-lg leading-relaxed text-blue-50">
-                    If you're looking for professional scenting solutions, <a href="https://www.coolmaxscent.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-white underline decoration-white/70 underline-offset-4 transition hover:decoration-2">CoolMaxScent</a> provides reliable fragrance systems and expert guidance to help shopping malls across Dubai create inviting environments that leave a lasting impression on every visitor.
+                    If you're looking for professional scenting solutions, <a href="https://www.coolmaxscent.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-white underline decoration-white/70 underline-offset-4 transition hover:decoration-2">Cool Max Scent</a> provides reliable fragrance systems and expert guidance to help shopping malls across Dubai create inviting environments that leave a lasting impression on every visitor.
                   </p>
                   <Link to="/contact/" className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-black uppercase tracking-[0.25em] text-blue-700 transition hover:bg-blue-50">
                     Contact our team <ArrowRightIcon className="h-4 w-4" />

@@ -33,7 +33,7 @@ export default function AromaDiffuserMachinesUAEBlog() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = "How to Use Aroma Diffusers Machines Effectively | Coolmax";
+    document.title = "How to Use Aroma Diffusers Machines Effectively | Cool Max Scent";
 
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
@@ -216,7 +216,7 @@ export default function AromaDiffuserMachinesUAEBlog() {
                 </h3>
                 
                 <p className="mb-8 text-justify">
-                  The quality of fragrance oil directly affects the performance of your aroma diffuser machine. Premium fragrance oils last longer, smell more natural, diffuse evenly, and create a luxury fragrance experience. Using low-quality oils may damage the diffuser system and reduce fragrance performance. CoolMax provides professional fragrance solutions designed specifically for commercial and residential scent diffuser systems.
+                  The quality of fragrance oil directly affects the performance of your aroma diffuser machine. Premium fragrance oils last longer, smell more natural, diffuse evenly, and create a luxury fragrance experience. Using low-quality oils may damage the diffuser system and reduce fragrance performance. Cool Max Scent provides professional fragrance solutions designed specifically for commercial and residential scent diffuser systems.
                 </p>
 
                 <h3 className="text-2xl font-serif text-slate-900 mb-4 text-left">
@@ -308,11 +308,11 @@ export default function AromaDiffuserMachinesUAEBlog() {
                 className="py-12 border-t border-slate-100"
               >
                 <h2 className="text-3xl md:text-4xl font-serif text-slate-900 mb-6 uppercase text-left">
-                  Why Choose CoolMax Aroma Diffuser Machines in UAE
+                  Why Choose Cool Max Scent Aroma Diffuser Machines in UAE
                 </h2>
 
                 <p className="mb-6 text-justify">
-                  CoolMax offers advanced fragrance solutions designed for homes, offices, and commercial spaces across the UAE. Why choose CoolMax: premium scent technology, elegant diffuser designs, solutions for all space sizes, long-lasting fragrance performance, professional support, and easy maintenance systems. Whether you need compact home diffusers or commercial HVAC scent systems, CoolMax helps you create the perfect fragrance experience.
+                  Cool Max Scent offers advanced fragrance solutions designed for homes, offices, and commercial spaces across the UAE. Why choose Cool Max Scent: premium scent technology, elegant diffuser designs, solutions for all space sizes, long-lasting fragrance performance, professional support, and easy maintenance systems. Whether you need compact home diffusers or commercial HVAC scent systems, Cool Max Scent helps you create the perfect fragrance experience.
                 </p>
 
                 <h3 className="text-2xl font-serif text-slate-900 mb-4 text-left">
@@ -326,7 +326,7 @@ export default function AromaDiffuserMachinesUAEBlog() {
                   With the right placement, proper fragrance intensity, and high-quality aroma oils, <strong>aroma diffuser machines in UAE</strong> can completely transform homes, offices, hotels, and commercial environments.
                 </p>
                 <p className="text-justify">
-                  Explore CoolMax <strong>premium scent diffusers for all spaces</strong> and create a refreshing atmosphere that leaves a lasting impression.
+                  Explore Cool Max Scent <strong>premium scent diffusers for all spaces</strong> and create a refreshing atmosphere that leaves a lasting impression.
                 </p>
               </motion.div>
             </div>
@@ -474,7 +474,7 @@ export default function AromaDiffuserMachinesUAEBlog() {
             </h2>
 
             <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto font-light leading-relaxed relative z-10 text-center">
-              Explore CoolMax premium scent diffusers for all spaces and create a refreshing atmosphere that leaves a lasting impression.
+              Explore Cool Max Scent premium scent diffusers for all spaces and create a refreshing atmosphere that leaves a lasting impression.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10">

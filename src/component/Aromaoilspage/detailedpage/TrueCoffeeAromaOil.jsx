@@ -173,7 +173,7 @@ const TrueCoffeeAromaOilDetail = () => {
                     { title: "Warm Profile", desc: "A warm, gourmand fragrance profile that enhances the appetite and cozy feel." },
                     { title: "Elite Formulation", desc: "Professional-grade formulation designed for consistent aromatic performance." },
                     { title: "Consistent Presence", desc: "Long-lasting and consistent performance throughout your business hours." },
-                    { title: "System Compatible", desc: "Compatible with advanced automated Cool Max scent diffuser systems." }
+                    { title: "System Compatible", desc: "Compatible with advanced automated Cool Max Scent scent diffuser systems." }
                 ].map((item, i) => (
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors text-left">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400" />

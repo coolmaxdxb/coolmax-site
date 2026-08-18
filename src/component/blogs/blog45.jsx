@@ -66,7 +66,7 @@ export default function LuxuryHotelGuestExperiencesBlog() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = "Aroma Diffuser for Hotel in Dubai | Luxury Stays | CoolMax Scent";
+    document.title = "Aroma Diffuser for Hotel in Dubai | Luxury Stays | Cool Max Scent";
 
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
@@ -108,7 +108,7 @@ export default function LuxuryHotelGuestExperiencesBlog() {
     { label: "Guest Journey", href: "#following-the-guest-journey" },
     { label: "Scenting Strategy", href: "#creating-scenting-strategy-for-your-hotel" },
     { label: "What Hotels Get Right", href: "#what-luxury-hotels-get-right" },
-    { label: "CoolMaxScent", href: "#the-stay-ends-the-memory-doesnt" },
+    { label: "Cool Max Scent", href: "#the-stay-ends-the-memory-doesnt" },
   ];
 
   return (
@@ -602,7 +602,7 @@ export default function LuxuryHotelGuestExperiencesBlog() {
                 Equally important is selecting a scenting strategy that aligns with the hotel's architecture, guest profile, and operational needs. What works for a boutique hotel may not suit a business hotel or luxury resort, which is why a tailored approach often delivers the best results.
               </p>
               <p>
-                This is where experienced partners such as CoolMaxScent add value. Instead of offering a one-size-fits-all solution, the focus is on understanding each hotel's environment and recommending fragrance systems that support its unique hospitality experience. The result is an atmosphere that feels intentional, elegant, and memorable for every guest.
+                This is where experienced partners such as Cool Max Scent add value. Instead of offering a one-size-fits-all solution, the focus is on understanding each hotel's environment and recommending fragrance systems that support its unique hospitality experience. The result is an atmosphere that feels intentional, elegant, and memorable for every guest.
               </p>
             </div>
           </motion.div>
@@ -667,7 +667,7 @@ export default function LuxuryHotelGuestExperiencesBlog() {
                   className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-4 py-2 text-[10px] font-black uppercase tracking-[0.3em] text-blue-700"
                 >
                   <ShieldCheckIcon className="h-4 w-4" />
-                  CoolMax Scent Solutions
+                  Cool Max Scent Solutions
                 </motion.div>
                 <h3 className="text-3xl font-serif tracking-tight text-slate-900 sm:text-4xl">
                   Elevate Your Hotel Ambience
@@ -681,7 +681,7 @@ export default function LuxuryHotelGuestExperiencesBlog() {
                       rel="noreferrer"
                       className={textLinkClass}
                     >
-                      CoolMaxScent
+                      Cool Max Scent
                     </a>{" "}
                     provides expertly designed commercial scenting systems that help hospitality brands across the UAE create welcoming environments where every stay is remembered for the right reasons.
                   </p>

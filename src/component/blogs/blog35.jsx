@@ -171,9 +171,9 @@ export default function SalonAromaDiffuserBlog() {
               </motion.div>
 
               <motion.div {...fadeInUp} className="py-12 border-t border-slate-100">
-                <h2 className="text-3xl md:text-4xl font-serif mb-10 tracking-tight text-slate-900">Professional Salon Scenting Solutions from Coolmaxscent</h2>
+                <h2 className="text-3xl md:text-4xl font-serif mb-10 tracking-tight text-slate-900">Professional Salon Scenting Solutions from Cool Max Scent</h2>
                 <p className="text-justify mb-8">
-                  At <a href="https://www.coolmaxscent.com/" className="text-blue-600 hover:underline font-bold">Coolmaxscent</a>, we help salons create memorable experiences with professional fragrance solutions.
+                  At <a href="https://www.coolmaxscent.com/" className="text-blue-600 hover:underline font-bold">Cool Max Scent</a>, we help salons create memorable experiences with professional fragrance solutions.
                 </p>
                 <p className="text-justify">
                   Products like the <a href="https://www.coolmaxscent.com/commercial-aroma-diffusers/aeroblack-med-diffuser/" className="text-blue-600 hover:underline font-bold">AeroBlack Med Diffuser</a> are designed to deliver reliable fragrance distribution across modern salon environments.
@@ -191,7 +191,7 @@ export default function SalonAromaDiffuserBlog() {
               </motion.div>
 
               <motion.div {...fadeInUp} className="py-16 border-t border-slate-100">
-                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Creating Memorable Salon Experiences with Coolmaxscent</h2>
+                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Creating Memorable Salon Experiences with Cool Max Scent</h2>
                 <p className="text-justify mb-4">
                   Clients remember how a salon makes them feel. Fragrance is a powerful part of that memory, helping salons stand out through premium, consistent sensory experiences.
                 </p>

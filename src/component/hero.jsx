@@ -90,7 +90,7 @@ export default function EcommerceHero() {
 
             <p className="text-base lg:text-xl text-slate-600 lg:text-slate-200 font-medium mb-10 lg:mb-12 max-w-lg mx-auto lg:mx-0 leading-relaxed text-center lg:text-left">
               Create Fresh, Memorable, and Welcoming Spaces with 
-              <span className="text-blue-600 lg:text-white font-bold ml-1">Cool Max</span>. 
+              <span className="text-blue-600 lg:text-white font-bold ml-1">Cool Max Scent</span>. 
             </p>
 
             {/* ACTION BUTTONS */}

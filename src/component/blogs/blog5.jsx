@@ -22,7 +22,7 @@ export default function CorporateReceptionScentBlog() {
     window.scrollTo(0, 0);
 
     // Dynamic SEO update
-    document.title = "First Impressions Matter: Scent Solutions for Corporate Reception Areas | Cool Max";
+    document.title = "First Impressions Matter: Scent Solutions for Corporate Reception Areas | Cool Max Scent";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "Discover how commercial scent diffuser machines create lasting first impressions. Explore scent marketing solutions in UAE for corporate reception areas.");
@@ -81,7 +81,7 @@ export default function CorporateReceptionScentBlog() {
                   Scent. The moment someone enters your reception, their brain processes the aroma of your space. It happens faster than conscious thought. And that initial olfactory impression shapes everything that follows.
                 </p>
                 <p className="text-justify text-left">
-                  At Cool Max, we've helped countless businesses across the UAE transform their corporate reception areas using commercial scent diffuser machines. In this article, we'll explore why scent marketing matters for corporate spaces and how you can leverage it to create powerful first impressions.
+                  At Cool Max Scent, we've helped countless businesses across the UAE transform their corporate reception areas using commercial scent diffuser machines. In this article, we'll explore why scent marketing matters for corporate spaces and how you can leverage it to create powerful first impressions.
                 </p>
               </div>
 
@@ -196,8 +196,8 @@ export default function CorporateReceptionScentBlog() {
 
               {/* COOL MAX APPROACH (H2) */}
               <div className="py-16 text-left bg-blue-600 rounded-[3rem] p-10 md:p-16 text-white text-left text-left">
-                <h2 className="text-3xl md:text-4xl font-serif mb-8 tracking-tight text-white text-left uppercase font-bold text-left">Scent Marketing Solutions in UAE: The Cool Max Approach</h2>
-                <p className="mb-10 text-blue-100 text-left text-left">Since 2020, Cool Max has provided solutions to corporate clients across Dubai, Abu Dhabi, and beyond. Our process: Consultation, Recommendation, Installation, and Ongoing Support.</p>
+                <h2 className="text-3xl md:text-4xl font-serif mb-8 tracking-tight text-white text-left uppercase font-bold text-left">Scent Marketing Solutions in UAE: The Cool Max Scent Approach</h2>
+                <p className="mb-10 text-blue-100 text-left text-left">Since 2020, Cool Max Scent has provided solutions to corporate clients across Dubai, Abu Dhabi, and beyond. Our process: Consultation, Recommendation, Installation, and Ongoing Support.</p>
                 <div className="grid md:grid-cols-2 gap-6 text-sm text-left">
                     {[
                         { t: "Consultation", d: "Assess space size, layout, HVAC, and brand identity." },
@@ -242,7 +242,7 @@ export default function CorporateReceptionScentBlog() {
               <div className="py-16 text-left border-t border-slate-100 text-left">
                 <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900 text-left uppercase text-left">Conclusion</h2>
                 <p className="text-justify mb-4 text-left text-left">
-                  Your corporate reception area tells a story before you say a single word. Make sure it's the right story. With professional commercial scent diffuser machines from Cool Max, you can create welcoming, memorable environments that impress clients and inspire employees.
+                  Your corporate reception area tells a story before you say a single word. Make sure it's the right story. With professional commercial scent diffuser machines from Cool Max Scent, you can create welcoming, memorable environments that impress clients and inspire employees.
                 </p>
                 <p className="text-justify text-left text-left">
                   In a competitive market like the UAE, every sensory detail matters—and scent is one of the most powerful tools at your disposal. Don't let your reception area blend in. Make it unforgettable.
@@ -257,7 +257,7 @@ export default function CorporateReceptionScentBlog() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/20 blur-2xl rounded-full text-left" />
                 <h4 className="font-bold mb-6 uppercase text-xs tracking-widest text-left text-blue-400 relative z-10 text-left">Transform Reception</h4>
                 <p className="text-slate-400 text-sm leading-relaxed mb-8 text-justify relative z-10 text-left">
-                  Discover why leading UAE businesses trust Cool Max for scent marketing solutions and professional fragrance strategies.
+                  Discover why leading UAE businesses trust Cool Max Scent for scent marketing solutions and professional fragrance strategies.
                 </p>
                 <div className="space-y-4 relative z-10 text-left">
                   <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-3 bg-[#25D366] text-white w-full py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all text-center">

@@ -36,7 +36,7 @@ export default function Top10AromaDiffusersBlog() {
     if (metaDesc) {
       metaDesc.setAttribute(
         "content",
-        "Discover the best Aroma Diffuser Machines in UAE for hotels, offices, malls, and retail spaces. Explore premium scenting solutions from CoolMaxScent."
+        "Discover the best Aroma Diffuser Machines in UAE for hotels, offices, malls, and retail spaces. Explore premium scenting solutions from Cool Max Scent."
       );
     }
 
@@ -58,7 +58,7 @@ export default function Top10AromaDiffusersBlog() {
       name: "1. Titan Diffuser",
       bestFor: "Corporate Lobbies, Event Venues, Hospitality Spaces",
       desc: [
-        "The Titan Diffuser is one of the most powerful floor-standing scent machines from CoolMaxScent. If you need a strong but not overwhelming fragrance in a large open space, this one is a great choice.",
+        "The Titan Diffuser is one of the most powerful floor-standing scent machines from Cool Max Scent. If you need a strong but not overwhelming fragrance in a large open space, this one is a great choice.",
         "It keeps the smell steady all day long. That makes it perfect for hotels, convention centers, and event venues that get lots of visitors.",
         "If you want a with wide coverage, the Titan Diffuser is one of the strongest you can find."
       ]
@@ -192,7 +192,7 @@ export default function Top10AromaDiffusersBlog() {
                   But here’s the challenge most people overlook: standard home diffusers simply aren’t built for scale. Large spaces need industrial-grade performance, consistent coverage, adjustable intensity, and minimal maintenance. That’s why professional <a href="/blog/10-best-aroma-diffuser-machines-in-uae" className="text-blue-600 font-medium hover:text-blue-800 underline transition-colors">aroma diffuser machines in the UAE</a> have become essential for modern businesses serious about brand experience.
                 </p>
                 <p className="text-justify">
-                  CoolMaxScent has emerged as a go-to name for commercial scent solutions across the Emirates. Whether you need to scent a small VIP lounge or a sprawling airport terminal, their range covers everything from cold-air diffusion to high-capacity HVAC-integrated systems.
+                  Cool Max Scent has emerged as a go-to name for commercial scent solutions across the Emirates. Whether you need to scent a small VIP lounge or a sprawling airport terminal, their range covers everything from cold-air diffusion to high-capacity HVAC-integrated systems.
                 </p>
                 <p className="text-justify">
                   In this guide, we’ve rounded up the 10 best <a href="/blog/10-best-aroma-diffuser-machines-in-uae" className="text-blue-600 font-medium hover:text-blue-800 underline transition-colors">Commercial Aroma Diffuser in UAE</a> for large spaces and commercial environments available in the UAE in 2026, engineered for performance, built for the region, and designed to leave a lasting impression.
@@ -324,7 +324,7 @@ export default function Top10AromaDiffusersBlog() {
                 </h2>
                 <div className="space-y-4 text-justify text-slate-600">
                   <p>
-                    Choosing the right aroma diffuser really depends on your space size, how you want to install it, and what you want to achieve. From small office solutions like the ZenBox Mini to large HVAC systems like the AeroBlack Pro, CoolMax Scent offers a complete range of Aroma Diffuser Machines in UAE for every commercial need.
+                    Choosing the right aroma diffuser really depends on your space size, how you want to install it, and what you want to achieve. From small office solutions like the ZenBox Mini to large HVAC systems like the AeroBlack Pro, Cool Max Scent offers a complete range of Aroma Diffuser Machines in UAE for every commercial need.
                   </p>
                   <p>
                     Whether you need a <a href="/blog/10-best-aroma-diffuser-machines-in-uae" className="text-blue-600 font-medium hover:text-blue-800 underline transition-colors">Commercial Aroma Diffuser in UAE</a> for your office or you're looking at Premium Scent Diffusers for Large Spaces for a hotel, mall, or showroom, investing in professional scent technology can truly change how customers and visitors experience your space.
@@ -400,7 +400,7 @@ export default function Top10AromaDiffusersBlog() {
             </h2>
 
             <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto font-light leading-relaxed relative z-10 text-center">
-              Discover the perfect commercial aroma diffuser in the UAE for your business with CoolMaxScent's premium fragrance solutions.
+              Discover the perfect commercial aroma diffuser in the UAE for your business with Cool Max Scent's premium fragrance solutions.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10">

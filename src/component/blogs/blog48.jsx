@@ -68,7 +68,7 @@ export default function RetailStoreAromaDiffuserDubaiBlog() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = "Retail Store Aroma Diffuser Dubai | Professional Scenting | CoolMax Scent";
+    document.title = "Retail Store Aroma Diffuser Dubai | Professional Scenting | Cool Max Scent";
 
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
@@ -112,7 +112,7 @@ export default function RetailStoreAromaDiffuserDubaiBlog() {
     { label: "Professional vs Air Fresheners", href: "#why-professional-scent-solutions-outperform-ordinary-air-fresheners" },
     { label: "Different Scenting Needs", href: "#one-store-different-spaces-different-scenting-needs" },
     { label: "Retail Branding", href: "#fragrance-is-becoming-part-of-retail-branding" },
-    { label: "CoolMaxScent", href: "#creating-better-shopping-experiences-with-coolmaxscent" },
+    { label: "Cool Max Scent", href: "#creating-better-shopping-experiences-with-coolmaxscent" },
   ];
 
   const behaviourCards = [
@@ -812,7 +812,7 @@ export default function RetailStoreAromaDiffuserDubaiBlog() {
                   rel="noreferrer"
                   className={textLinkClass}
                 >
-                  CoolMaxScent's Commercial Aroma Diffusers in UAE
+                  Cool Max Scent's Commercial Aroma Diffusers in UAE
                 </a>{" "}
                 provide reliable and continuous scenting. Larger retail stores need fragrance to remain consistent across multiple shopping areas, where customers expect the same pleasant atmosphere wherever they browse.{" "}
                 <a
@@ -821,7 +821,7 @@ export default function RetailStoreAromaDiffuserDubaiBlog() {
                   rel="noreferrer"
                   className={textLinkClass}
                 >
-                  CoolMaxScent's Floor-Standing Aroma Diffusers in UAE
+                  Cool Max Scent's Floor-Standing Aroma Diffusers in UAE
                 </a>{" "}
                 are designed to meet these requirements.
               </p>
@@ -882,7 +882,7 @@ export default function RetailStoreAromaDiffuserDubaiBlog() {
           </motion.div>
         </section>
 
-        {/* ========== SECTION 9: Creating Better Shopping Experiences with CoolMaxScent ========== */}
+        {/* ========== SECTION 9: Creating Better Shopping Experiences with Cool Max Scent ========== */}
         <section id="creating-better-shopping-experiences-with-coolmaxscent" className="mx-auto max-w-[1400px] px-6 pb-16 lg:px-16">
           <motion.div
             variants={fadeInUp}
@@ -902,9 +902,9 @@ export default function RetailStoreAromaDiffuserDubaiBlog() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="h-1 bg-blue-500 rounded-full mb-6"
               />
-              <p className="text-xs font-black uppercase tracking-[0.25em] text-blue-600">The CoolMax Scent Approach</p>
+              <p className="text-xs font-black uppercase tracking-[0.25em] text-blue-600">The Cool Max Scent Approach</p>
               <h2 className="mt-2 text-3xl font-serif tracking-tight text-slate-900 sm:text-4xl">
-                Creating Better Shopping Experiences with CoolMaxScent
+                Creating Better Shopping Experiences with Cool Max Scent
               </h2>
               <div className="mt-6 space-y-4 text-slate-600 leading-relaxed font-light">
                 <p>
@@ -918,7 +918,7 @@ export default function RetailStoreAromaDiffuserDubaiBlog() {
                     rel="noreferrer"
                     className={textLinkClass}
                   >
-                    CoolMaxScent
+                    Cool Max Scent
                   </a>
                   , we understand that every retail space has different requirements. Whether you manage a boutique, a luxury showroom, a department store, or a large retail outlet, our professional scenting solutions are designed to help you create a consistent and memorable atmosphere. From selecting the right fragrance to recommending the most suitable diffuser, installation, and ongoing support, we work with businesses to develop scenting solutions that complement their retail environment and brand identity.
                 </p>
@@ -941,7 +941,7 @@ export default function RetailStoreAromaDiffuserDubaiBlog() {
                   className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-[10px] font-black uppercase tracking-[0.3em] text-blue-600"
                 >
                   <ShieldCheckIcon className="h-4 w-4" />
-                  Explore CoolMax Scent Solutions
+                  Explore Cool Max Scent Solutions
                 </motion.div>
                 <h3 className="text-3xl font-serif tracking-tight text-slate-900 sm:text-4xl">
                   Discover How Professional Aroma Diffusers Transform Retail Spaces

@@ -119,7 +119,7 @@ export default function ScentMarketingPage() {
             </p>
             <div className="p-6 bg-slate-50 border-l-4 border-blue-600 rounded-r-2xl shadow-sm text-left">
               <p className="italic text-slate-500 font-light text-sm md:text-base text-left">
-                Since 2020, Cool Max has been the premier Scent Marketing Company in Dubai, working with businesses across the UAE to deliver reliable commercial scent machines, hotel scent machines, and home fragrance systems that perform consistently in real-world environments. Whether you operate a hotel, office, clinic, retail store, or corporate facility, our Hotel Scent Marketing UAE and Commercial Scent Marketing Solutions help enhance comfort, brand perception, and overall experience.
+                Since 2020, Cool Max Scent has been the premier Scent Marketing Company in Dubai, working with businesses across the UAE to deliver reliable commercial scent machines, hotel scent machines, and home fragrance systems that perform consistently in real-world environments. Whether you operate a hotel, office, clinic, retail store, or corporate facility, our Hotel Scent Marketing UAE and Commercial Scent Marketing Solutions help enhance comfort, brand perception, and overall experience.
               </p>
             </div>
           </motion.div>
@@ -144,7 +144,7 @@ export default function ScentMarketingPage() {
                     Using Professional Scent Systems UAE and air scent machines, fragrance is distributed evenly across a space to create a subtle and consistent experience. Unlike traditional air fresheners, scent marketing systems are designed for controlled diffusion, long-lasting performance, and commercial use.
                   </p>
                   <p className="text-blue-600 font-medium font-serif italic text-xl border-l-4 border-blue-100 pl-6 py-2 text-left">
-                    At Cool Max, we design Commercial Scent Marketing Solutions that suit both home scent systems and large-scale scent machines for business, ensuring the fragrance complements the environment rather than dominating it.
+                    At Cool Max Scent, we design Commercial Scent Marketing Solutions that suit both home scent systems and large-scale scent machines for business, ensuring the fragrance complements the environment rather than dominating it.
                   </p>
                 </div>
               </motion.div>
@@ -215,9 +215,9 @@ export default function ScentMarketingPage() {
         {/* ================= SECTION 4: OUR SOLUTIONS ================= */}
         <section className="py-16 border-t border-slate-100 text-left">
           <div className="mb-12 text-center max-w-4xl mx-auto">
-            <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-blue-600 mb-4 text-center">Our Scent Marketing Solutions in UAE at Cool Max</h2>
+            <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-blue-600 mb-4 text-center">Our Scent Marketing Solutions in UAE at Cool Max Scent</h2>
             <p className="text-base md:text-lg text-slate-500 font-light text-center">
-              Cool Max provides end-to-end scent marketing services designed to be simple, reliable, and effective. We do not follow a one-size-fits-all approach—each solution is tailored to the space, usage, and expectations of the client.
+              Cool Max Scent provides end-to-end scent marketing services designed to be simple, reliable, and effective. We do not follow a one-size-fits-all approach—each solution is tailored to the space, usage, and expectations of the client.
             </p>
           </div>
 
@@ -273,7 +273,7 @@ export default function ScentMarketingPage() {
         <section className="py-16 border-t border-slate-100 text-left">
            <div className="bg-slate-900 rounded-[3rem] p-10 md:p-16 text-left relative overflow-hidden">
               <h2 className="text-3xl md:text-5xl font-serif text-white mb-8 tracking-tighter text-left">Technology Behind Our Professional Scent Systems UAE</h2>
-              <p className="text-slate-400 mb-10 max-w-3xl text-left">Cool Max uses modern scent air machines and diffuser technologies designed for performance and efficiency.</p>
+              <p className="text-slate-400 mb-10 max-w-3xl text-left">Cool Max Scent uses modern scent air machines and diffuser technologies designed for performance and efficiency.</p>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
                 {[
                   "Even fragrance distribution",
@@ -321,7 +321,7 @@ export default function ScentMarketingPage() {
         {/* ================= SECTION 8: WHY CHOOSE ================= */}
         <section className="py-16 text-left">
           <div className="bg-slate-50 rounded-[3rem] border border-slate-100 p-10 md:p-16 text-left">
-            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-left">Why Choose Cool Max for Scent Marketing Solutions in UAE?</h2>
+            <h2 className="text-3xl md:text-5xl font-serif text-slate-900 mb-8 tracking-tighter leading-none text-left">Why Choose Cool Max Scent for Scent Marketing Solutions in UAE?</h2>
             <p className="text-slate-500 mb-10 max-w-3xl text-left">Businesses across the emirates choose us as their preferred Scent Marketing Company in Dubai because we focus on reliability, simplicity, and service.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
               {[
@@ -353,14 +353,14 @@ export default function ScentMarketingPage() {
               Let’s Build a <br /> <span className="italic text-blue-600 font-light text-center">Memorable Scent Experience</span>
             </h2>
             <p className="text-xl text-slate-500 mb-10 max-w-3xl mx-auto font-light leading-relaxed text-center">
-              Whether you are looking for a scent machine for home, a hotel scent machine, or a full-scale scent machine for business, Cool Max is here to help. Our Scent Marketing Solutions in UAE are designed to enhance environments, support comfort, and leave a lasting impression.
+              Whether you are looking for a scent machine for home, a hotel scent machine, or a full-scale scent machine for business, Cool Max Scent is here to help. Our Scent Marketing Solutions in UAE are designed to enhance environments, support comfort, and leave a lasting impression.
             </p>
             
             <p className="text-sm font-black uppercase text-blue-600 tracking-widest mb-8 text-center">Looking for professional scent marketing solutions in UAE?</p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
               <a href="/contact/" className="w-full sm:w-auto px-10 py-6 bg-slate-900 text-white font-black text-[10px] uppercase tracking-[0.3em] rounded-2xl hover:bg-blue-600 transition-all shadow-xl flex items-center justify-center gap-3 text-center">
-                Contact Cool Max Today <ArrowRightIcon className="w-4 h-4 text-center"/>
+                Contact Cool Max Scent Today <ArrowRightIcon className="w-4 h-4 text-center"/>
               </a>
               <a 
                 href={`https://wa.me/${whatsappNumber}`}

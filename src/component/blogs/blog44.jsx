@@ -27,7 +27,7 @@ export default function CreatingPremiumClientImpressionsBlog() {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    document.title = "Creating Premium Client Impressions with Aroma Diffusers | CoolMax Scent";
+    document.title = "Creating Premium Client Impressions with Aroma Diffusers | Cool Max Scent";
 
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
@@ -524,7 +524,7 @@ export default function CreatingPremiumClientImpressionsBlog() {
               <div>
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white px-4 py-2 text-[10px] font-black uppercase tracking-[0.3em] text-blue-700">
                   <ShieldCheckIcon className="h-4 w-4" />
-                  CoolMax Scent Solutions
+                  Cool Max Scent Solutions
                 </div>
                 <h3 className="text-3xl font-serif tracking-tight text-slate-900 sm:text-4xl">
                   Transform Your Office Experience
@@ -538,7 +538,7 @@ export default function CreatingPremiumClientImpressionsBlog() {
                       rel="noreferrer"
                       className="font-semibold text-blue-600 underline hover:text-blue-800 transition-colors"
                     >
-                      CoolMaxScent
+                      Cool Max Scent
                     </a>
                     , we believe businesses should be remembered not only for the services they provide but also for the experience they create. Our thoughtfully designed Corporate scenting solutions UAE are developed to complement modern workplaces, helping organisations maintain a refined atmosphere through reliable aroma diffuser Dubai technology. From executive offices to expansive commercial buildings, our solutions are designed to support businesses that understand one simple truth: clients do not just see your workplace. They experience it.
                   </p>

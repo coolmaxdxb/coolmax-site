@@ -56,13 +56,13 @@ export default function AboutUs() {
             </p>
             <div className="space-y-6">
               <p className="text-base leading-relaxed">
-                From compact home scent diffusers to powerful commercial scent machines and HVAC scent diffuser systems, our solutions are designed to deliver consistent fragrance coverage with minimal maintenance. Whether you are looking for a scent machine for home, a hotel scent machine, or a scent machine for business, Cool Max provides reliable, scalable, and easy-to-manage scenting solutions tailored to your space.
+                From compact home scent diffusers to powerful commercial scent machines and HVAC scent diffuser systems, our solutions are designed to deliver consistent fragrance coverage with minimal maintenance. Whether you are looking for a scent machine for home, a hotel scent machine, or a scent machine for business, Cool Max Scent provides reliable, scalable, and easy-to-manage scenting solutions tailored to your space.
               </p>
               <p className="italic text-indigo-600 text-lg font-medium border-l-2 border-indigo-600 pl-6">
-                A pleasant-smelling environment is no longer a luxury—it is part of the experience. With Cool Max, fragrance becomes a powerful tool to improve comfort, enhance brand perception, and create lasting impressions.
+                A pleasant-smelling environment is no longer a luxury—it is part of the experience. With Cool Max Scent, fragrance becomes a powerful tool to improve comfort, enhance brand perception, and create lasting impressions.
               </p>
               <p className="font-bold text-slate-900 tracking-tight text-xl pt-4">
-                Looking for a trusted scent diffuser company in the UAE? Talk to Cool Max today.
+                Looking for a trusted scent diffuser company in the UAE? Talk to Cool Max Scent today.
               </p>
             </div>
           </motion.div>
@@ -99,7 +99,7 @@ export default function AboutUs() {
             
             <div className="space-y-6 text-lg font-light leading-relaxed text-justify">
               <p>
-                Cool Max is a solution-driven company. We don't just sell machines; we analyze your space, understand your airflow, and design a scenting strategy that works silently in the background.
+                Cool Max Scent is a solution-driven company. We don't just sell machines; we analyze your space, understand your airflow, and design a scenting strategy that works silently in the background.
               </p>
               <p>
                 From intimate residential spaces to sprawling commercial complexes, our portfolio includes battery-operated units, sleek floor stands, and powerful HVAC-integrated systems.

@@ -188,7 +188,7 @@ const SweetOudAromaOilDetail = () => {
                     { title: "Rich Composition", desc: "A sophisticated rich oud-based oriental composition tailored for luxury branding." },
                     { title: "Elite Formulation", desc: "Professional-grade aroma oil quality ensuring consistent and clean atomization." },
                     { title: "Impactful Diffusion", desc: "Ideal for large and premium spaces that require a statement olfactory presence." },
-                    { title: "Proven Performance", desc: "Consistent performance with advanced Cool Max automated scent diffuser systems." }
+                    { title: "Proven Performance", desc: "Consistent performance with advanced Cool Max Scent automated scent diffuser systems." }
                 ].map((item, i) => (
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors text-left">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400 text-left" />

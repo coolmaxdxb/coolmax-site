@@ -9,7 +9,7 @@ const reviews = [
     name: "Ahmed Al Mansoori",
     title: "Facility Manager, Luxury Hotel",
     feedback:
-      "The CoolMax lobby scent diffuser elevated our guest experience with subtle, consistent fragrance distribution.",
+      "The Cool Max Scent lobby scent diffuser elevated our guest experience with subtle, consistent fragrance distribution.",
     image: "/images/reviews/client1.jpg",
     rating: 5,
     product: "Lobby Scent Diffuser (CM-102)",
@@ -18,7 +18,7 @@ const reviews = [
     name: "Ritika Sharma",
     title: "Operations Head, Retail Chain",
     feedback:
-      "CoolMax HVAC scent systems are reliable, easy to maintain, and perfect for multi-location deployment.",
+      "Cool Max Scent HVAC scent systems are reliable, easy to maintain, and perfect for multi-location deployment.",
     image: "/images/reviews/client2.jpg",
     rating: 5,
     product: "HVAC Scent Diffuser (CM-104)",

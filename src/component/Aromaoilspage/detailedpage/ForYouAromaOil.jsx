@@ -181,7 +181,7 @@ const ForYouAromaOilDetail = () => {
                     { title: "Graceful Profile", desc: "An elegant, universally appealing profile that creates a refined atmosphere." },
                     { title: "Elite Formulation", desc: "Professional-grade fragrance oil ensuring long-lasting and clean diffusion." },
                     { title: "Consistent Presence", desc: "High-performance formula ensuring a lasting and inviting finish." },
-                    { title: "System Compatible", desc: "Optimized for all professional Cool Max automated scent diffuser systems." }
+                    { title: "System Compatible", desc: "Optimized for all professional Cool Max Scent automated scent diffuser systems." }
                 ].map((item, i) => (
                     <div key={i} className="p-10 rounded-[3rem] bg-white/5 border border-white/10 flex flex-col items-center gap-5 hover:bg-white/10 transition-colors text-center">
                         <CheckBadgeIcon className="w-10 h-10 text-blue-400" />

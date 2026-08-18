@@ -303,7 +303,7 @@ export default function AromaDiffuserMachineUAEBlog() {
               Transform Your <br />Space Today
             </h2>
             <p className="text-xl text-slate-400 mb-12 max-w-3xl mx-auto font-light leading-relaxed relative z-10 text-center">
-              Discover why leading businesses trust Cool Max for professional fragrance solutions.
+              Discover why leading businesses trust Cool Max Scent for professional fragrance solutions.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10">

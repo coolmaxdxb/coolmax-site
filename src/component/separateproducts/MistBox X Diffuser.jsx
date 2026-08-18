@@ -302,7 +302,7 @@ const MistBoxXPage = () => {
           </div>
           <div className="p-8 bg-blue-600 text-white rounded-3xl shadow-xl text-left text-white">
             <h4 className="text-lg font-bold mb-4 flex items-center gap-2 text-left text-white">
-              <ShieldCheckIcon className="w-5 h-5 text-white" /> Cool Max Support
+              <ShieldCheckIcon className="w-5 h-5 text-white" /> Cool Max Scent Support
             </h4>
             <ul className="space-y-2 text-xs text-blue-50 font-light text-left">
                <li className="text-left">• HVAC Installation & Usage guidance</li>
@@ -326,7 +326,7 @@ const MistBoxXPage = () => {
                <ChatBubbleLeftRightIcon className="w-5 h-5" /> WhatsApp Expert
             </a>
             <a href={contactPath} className="px-10 py-4 bg-white/5 text-white rounded-xl font-black uppercase tracking-widest text-[10px] hover:bg-white/10 border border-white/10 transition-all flex items-center gap-2">
-              Contact Cool Max <ArrowRightIcon className="w-4 h-4" />
+              Contact Cool Max Scent <ArrowRightIcon className="w-4 h-4" />
             </a>
           </div>
         </div>

@@ -133,7 +133,7 @@ export default function CinemaAromaDiffuserBlog() {
 
                 <p className="text-justify mb-8">Unlike residential units, these systems are specifically designed for demanding environments and high visitor volumes. They can distribute fragrance across multiple zones while maintaining balanced scent levels throughout the venue.</p>
 
-                <p className="text-justify">At Coolmax Scent, our solutions are developed to meet the needs of cinemas and other commercial spaces, including hotels, shopping malls, offices, and entertainment venues. HVAC-integrated scenting systems provide an efficient and scalable approach for businesses looking to enhance customer experiences through fragrance.</p>
+                <p className="text-justify">At Cool Max Scent, our solutions are developed to meet the needs of cinemas and other commercial spaces, including hotels, shopping malls, offices, and entertainment venues. HVAC-integrated scenting systems provide an efficient and scalable approach for businesses looking to enhance customer experiences through fragrance.</p>
               </motion.div>
 
               <motion.div {...fadeInUp} className="py-12 border-t border-slate-100">
@@ -178,9 +178,9 @@ export default function CinemaAromaDiffuserBlog() {
               </motion.div>
 
               <motion.div {...fadeInUp} className="py-16 border-t border-slate-100">
-                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Partner with Coolmax Scent for Professional Cinema Scenting Solutions</h2>
+                <h2 className="text-3xl md:text-4xl font-serif mb-6 tracking-tight text-slate-900">Partner with Cool Max Scent for Professional Cinema Scenting Solutions</h2>
                 <p className="text-justify mb-4">Choosing the right aroma diffuser for cinema in Dubai requires careful consideration of coverage, HVAC compatibility, fragrance selection, and overall performance.</p>
-                <p className="text-justify mb-4">At <a href="https://www.coolmaxscent.com/" className="text-blue-600 hover:underline font-bold">Coolmax Scent</a>, we offer advanced Large Area & HVAC Aroma Diffusers in UAE designed for large spaces and busy commercial spaces. Our solutions help cinemas maintain consistent fragrance coverage across key customer areas.</p>
+                <p className="text-justify mb-4">At <a href="https://www.coolmaxscent.com/" className="text-blue-600 hover:underline font-bold">Cool Max Scent</a>, we offer advanced Large Area & HVAC Aroma Diffusers in UAE designed for large spaces and busy commercial spaces. Our solutions help cinemas maintain consistent fragrance coverage across key customer areas.</p>
                 <p className="text-justify">A professional fragrance diffuser can enhance the cinema atmosphere, improve visitor comfort, and contribute to a more memorable entertainment experience.</p>
               </motion.div>
 

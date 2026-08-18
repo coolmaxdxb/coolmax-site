@@ -177,7 +177,7 @@ const ForYouAerosolSprayDetail = () => {
             <section className="py-24 bg-slate-950 text-white px-6 text-left">
                 <div className="max-w-[1200px] mx-auto text-center">
                     <h2 className="text-3xl md:text-5xl font-serif mb-10 tracking-tight text-blue-400 italic font-light uppercase text-center">Ideal For</h2>
-                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto text-center">For You Aerosol Spray works efficiently with Cool Max aerosol dispenser systems, making it a reliable solution for automated fragrance delivery.</p>
+                    <p className="text-slate-400 mb-16 text-lg max-w-2xl mx-auto text-center">For You Aerosol Spray works efficiently with Cool Max Scent aerosol dispenser systems, making it a reliable solution for automated fragrance delivery.</p>
                     <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
                         {["Washrooms & Restrooms", "Offices & Corporate", "Hotels & Hospitality", "Retail & Showrooms", "Elevators & Waiting Zones"].map((item, i) => (
                             <div key={i} className="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col items-center gap-4 hover:bg-white/10 transition-colors text-center">
@@ -197,9 +197,9 @@ const ForYouAerosolSprayDetail = () => {
                             <ShieldCheckIcon className="w-12 h-12 text-blue-600" />
                         </div>
                         <div className="text-left">
-                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left text-balance">Why Choose <span className="italic font-light text-blue-700">Cool Max Aerosol Sprays?</span></h2>
+                            <h2 className="text-2xl font-serif font-bold mb-4 uppercase text-slate-900 tracking-tight text-left text-balance">Why Choose <span className="italic font-light text-blue-700">Cool Max Scent Aerosol Sprays?</span></h2>
                             <p className="text-slate-500 font-light leading-relaxed text-justify">
-                                Cool Max aerosol sprays are designed to support hygiene perception, comfort, and consistency across commercial environments. Our sprays are optimized for professional dispenser systems, helping facilities maintain a pleasant atmosphere throughout operating hours.
+                                Cool Max Scent aerosol sprays are designed to support hygiene perception, comfort, and consistency across commercial environments. Our sprays are optimized for professional dispenser systems, helping facilities maintain a pleasant atmosphere throughout operating hours.
                             </p>
                         </div>
                     </div>
