@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import {
   ArrowRightIcon,
   BuildingStorefrontIcon,
-  CheckCircleIcon,
-  ClockIcon,
   SparklesIcon,
 } from "@heroicons/react/24/outline";
 import BlogHeroImg from "../../asset/blogimg/blog49.webp";
