@@ -49,6 +49,7 @@ import Blog45 from "../asset/blogimg/blog45.webp";
 import Blog46 from "../asset/blogimg/blog46.webp";
 import Blog47 from "../asset/blogimg/blog47.webp";
 import Blog48 from "../asset/blogimg/blog48.webp";
+import Blog49 from "../asset/blogimg/blog49.webp";
 
 
 const blogPosts = [
@@ -481,6 +482,14 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/retail-store-aroma-diffuser-dubai/",
     image: Blog48,
+  },
+  {
+    id: 49,
+    title: "Why Customers Spend More Time in Pleasantly Scented Retail Stores",
+    excerpt: "Discover how a commercial aroma diffuser for retail stores can create inviting shopping experiences. Explore AeroBlack Med and MistBox X for effective retail scenting.",
+    readTime: "8 min read",
+    path: "/blog/commercial-aroma-diffuser-retail-stores/",
+    image: Blog49,
   },
 
 ];
