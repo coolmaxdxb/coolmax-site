@@ -62,7 +62,7 @@ const sections = [
   },
 ];
 
-const linkClass = "font-semibold text-blue-600 underline decoration-blue-500/40 underline-offset-4 transition hover:text-blue-500";
+
 
 export default function CommercialFragranceIntensityGuideBlog() {
   useEffect(() => {
