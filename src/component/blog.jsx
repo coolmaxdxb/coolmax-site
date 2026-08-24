@@ -50,6 +50,7 @@ import Blog46 from "../asset/blogimg/blog46.webp";
 import Blog47 from "../asset/blogimg/blog47.webp";
 import Blog48 from "../asset/blogimg/blog48.webp";
 import Blog49 from "../asset/blogimg/blog49.webp";
+import Blog50 from "../asset/blogimg/blog50.webp";
 
 
 const blogPosts = [
@@ -490,6 +491,14 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/commercial-aroma-diffuser-retail-stores/",
     image: Blog49,
+  },
+  {
+    id: 50,
+    title: "How to Select the Right Fragrance Intensity for Different Commercial Spaces",
+    excerpt: "Too strong drives customers out, too weak wastes budget. Here's how to calibrate fragrance intensity for UAE commercial spaces, room by room. Contact Us!",
+    readTime: "8 min read",
+    path: "/blog/commercial-fragrance-intensity-guide/",
+    image: Blog50,
   },
 
 ];
