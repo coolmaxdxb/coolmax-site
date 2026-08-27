@@ -51,6 +51,7 @@ import Blog47 from "../asset/blogimg/blog47.webp";
 import Blog48 from "../asset/blogimg/blog48.webp";
 import Blog49 from "../asset/blogimg/blog49.webp";
 import Blog50 from "../asset/blogimg/blog50.webp";
+import Blog51 from "../asset/blogimg/blog51.webp";
 
 
 const blogPosts = [
@@ -499,6 +500,14 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/commercial-fragrance-intensity-guide/",
     image: Blog50,
+  },
+  {
+    id: 51,
+    title: "Aroma Diffuser for Hotel in UAE: A Complete Guide to Creating Memorable Guest Experiences",
+    excerpt: "Discover how an aroma diffuser for hotel in UAE can enhance guest experiences. Explore professional hotel scenting solutions for lobbies, corridors and large hospitality spaces.",
+    readTime: "12 min read",
+    path: "/blog/aroma-diffuser-for-hotel-in-uae/",
+    image: Blog51,
   },
 
 ];
