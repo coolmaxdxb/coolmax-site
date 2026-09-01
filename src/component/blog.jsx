@@ -52,6 +52,8 @@ import Blog48 from "../asset/blogimg/blog48.webp";
 import Blog49 from "../asset/blogimg/blog49.webp";
 import Blog50 from "../asset/blogimg/blog50.webp";
 import Blog51 from "../asset/blogimg/blog51.webp";
+import Blog52 from "../asset/blogimg/blog52.webp";
+import Blog53 from "../asset/blogimg/blog53.webp";
 
 
 const blogPosts = [
@@ -508,6 +510,22 @@ const blogPosts = [
     readTime: "12 min read",
     path: "/blog/aroma-diffuser-for-hotel-in-uae/",
     image: Blog51,
+  },
+  {
+    id: 52,
+    title: "Commercial Aroma Diffuser for Car Showroom: Create Premium Buying Experiences",
+    excerpt: "Create a premium car buying experience with a Commercial Aroma Diffuser for Car Showroom. Explore luxury scenting solutions for automotive dealerships.",
+    readTime: "11 min read",
+    path: "/blog/commercial-aroma-diffuser-for-car-showroom/",
+    image: Blog52,
+  },
+  {
+    id: 53,
+    title: "Why Members Return to Fresh Fitness Centers | Gym Fragrance Solutions Dubai",
+    excerpt: "Discover how Gym Fragrance Solutions in Dubai can support a fresh, comfortable fitness environment and create a consistent member experience.",
+    readTime: "12 min read",
+    path: "/blog/gym-fragrance-solutions-dubai-fresh-fitness-centers/",
+    image: Blog53,
   },
 
 ];
