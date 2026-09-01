@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { ChatBubbleLeftRightIcon, CheckCircleIcon, SparklesIcon } from "@heroicons/react/24/outline";
+import { CheckCircleIcon, SparklesIcon } from "@heroicons/react/24/outline";
 import BlogHeroImg from "../../asset/blogimg/blog51.webp";
 
 const fadeInUp = {
