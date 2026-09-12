@@ -55,6 +55,7 @@ import Blog51 from "../asset/blogimg/blog51.webp";
 import Blog52 from "../asset/blogimg/blog52.webp";
 import Blog53 from "../asset/blogimg/blog53.webp";
 import Blog54 from "../asset/blogimg/blog54.webp";
+import Blog55 from "../asset/blogimg/blog55.webp";
 
 
 const blogPosts = [
@@ -535,6 +536,14 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/scent-diffusers-for-airports–aviation-lounges-in-uae/",
     image: Blog54,
+  },
+  {
+    id: 55,
+    title: "Creating a Luxury Showroom Experience: The Role of Fragrance in Dubai Car Dealerships",
+    excerpt: "Discover how fragrance can elevate luxury car showrooms in Dubai, create memorable customer experiences, and strengthen premium brand perception with scent marketing.",
+    readTime: "8 min read",
+    path: "/blog/luxury-car-showroom-scent-marketing-dubai/",
+    image: Blog55,
   },
 
 ];
