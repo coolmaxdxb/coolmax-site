@@ -54,6 +54,7 @@ import Blog50 from "../asset/blogimg/blog50.webp";
 import Blog51 from "../asset/blogimg/blog51.webp";
 import Blog52 from "../asset/blogimg/blog52.webp";
 import Blog53 from "../asset/blogimg/blog53.webp";
+import Blog54 from "../asset/blogimg/blog54.webp";
 
 
 const blogPosts = [
@@ -526,6 +527,14 @@ const blogPosts = [
     readTime: "12 min read",
     path: "/blog/gym-fragrance-solutions-dubai-fresh-fitness-centers/",
     image: Blog53,
+  },
+  {
+    id: 54,
+    title: "How Scent Diffusers Enhance Passenger Experience in Airports & Aviation Lounges",
+    excerpt: "Discover how scent diffusers enhance passenger experience in airports and aviation lounges by creating a fresh, relaxing, and premium atmosphere. Contact Us!",
+    readTime: "8 min read",
+    path: "/blog/scent-diffusers-for-airports–aviation-lounges-in-uae/",
+    image: Blog54,
   },
 
 ];
