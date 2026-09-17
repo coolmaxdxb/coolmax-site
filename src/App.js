@@ -174,6 +174,7 @@ const Blog17 = lazy(() => import("../src/component/blogs/blog17"));
     const Blog53 = lazy(() => import("../src/component/blogs/blog53"));
     const Blog54 = lazy(() => import("../src/component/blogs/blog54"));
     const Blog55 = lazy(() => import("../src/component/blogs/blog55"));
+    const Blog56 = lazy(() => import("../src/component/blogs/blog56"));
 
     const ScrollToTop = () => {
       const { pathname } = useLocation();
@@ -389,6 +390,7 @@ function App() {
                                    <Route path="/blog/gym-fragrance-solutions-dubai-fresh-fitness-centers/" element={<Blog53 />} />
                                    <Route path="/blog/scent-diffusers-for-airports–aviation-lounges-in-uae/" element={<Blog54 />} />
                                    <Route path="/blog/luxury-car-showroom-scent-marketing-dubai/" element={<Blog55 />} />
+                                   <Route path="/blog/how-fragrance-influences-customer-experience/" element={<Blog56 />} />
                                 
         </Routes>
       </Suspense>

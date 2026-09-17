@@ -56,6 +56,7 @@ import Blog52 from "../asset/blogimg/blog52.webp";
 import Blog53 from "../asset/blogimg/blog53.webp";
 import Blog54 from "../asset/blogimg/blog54.webp";
 import Blog55 from "../asset/blogimg/blog55.webp";
+import Blog56 from "../asset/blogimg/blog56.webp";
 
 
 const blogPosts = [
@@ -544,6 +545,14 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/luxury-car-showroom-scent-marketing-dubai/",
     image: Blog55,
+  },
+  {
+    id: 56,
+    title: "How Fragrance Influences Customer Experience in Commercial Spaces",
+    excerpt: "Discover how fragrance influences customer experience, first impressions, and brand identity in hotels, restaurants, offices, retail stores, and commercial spaces. Contact Us!",
+    readTime: "8 min read",
+    path: "/blog/how-fragrance-influences-customer-experience/",
+    image: Blog56,
   },
 
 ];
