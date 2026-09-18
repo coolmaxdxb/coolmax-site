@@ -731,5 +731,10 @@
     <priority>0.60</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://www.coolmaxscent.com/blog/back-to-school-fresh-atmosphere-fragrance-in-uae/</loc>
+    <priority>0.60</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 
 </urlset>

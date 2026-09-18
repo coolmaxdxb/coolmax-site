@@ -57,6 +57,7 @@ import Blog53 from "../asset/blogimg/blog53.webp";
 import Blog54 from "../asset/blogimg/blog54.webp";
 import Blog55 from "../asset/blogimg/blog55.webp";
 import Blog56 from "../asset/blogimg/blog56.webp";
+import Blog57 from "../asset/blogimg/blog57.webp";
 
 
 const blogPosts = [
@@ -553,6 +554,14 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/how-fragrance-influences-customer-experience/",
     image: Blog56,
+  },
+  {
+    id: 57,
+    title: "Back to School, Fresh Atmosphere: Refreshing Homes, Classrooms & Study Spaces with Fragrance",
+    excerpt: "Discover how fragrance can refresh homes, classrooms, and study spaces for back-to-school season with aroma solutions from Cool Max Scent. Contact Us!",
+    readTime: "8 min read",
+    path: "/blog/back-to-school-fresh-atmosphere-fragrance-in-uae/",
+    image: Blog57,
   },
 
 ];
