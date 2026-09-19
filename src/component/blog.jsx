@@ -58,6 +58,7 @@ import Blog54 from "../asset/blogimg/blog54.webp";
 import Blog55 from "../asset/blogimg/blog55.webp";
 import Blog56 from "../asset/blogimg/blog56.webp";
 import Blog57 from "../asset/blogimg/blog57.webp";
+import Blog58 from "../asset/blogimg/blog58.webp";
 
 
 const blogPosts = [
@@ -562,6 +563,14 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/back-to-school-fresh-atmosphere-fragrance-in-uae/",
     image: Blog57,
+  },
+  {
+    id: 58,
+    title: "How to Choose the Right Fragrance for Your Business: A Complete Scent Selection Guide",
+    excerpt: "Learn how to choose the right fragrance for your business based on your space, audience and brand identity. Discover professional scent solutions from Cool Max Scent.",
+    readTime: "8 min read",
+    path: "/blog/how-to-choose-right-fragrance-for-your-business/",
+    image: Blog58,
   },
 
 ];
