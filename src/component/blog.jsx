@@ -59,6 +59,7 @@ import Blog55 from "../asset/blogimg/blog55.webp";
 import Blog56 from "../asset/blogimg/blog56.webp";
 import Blog57 from "../asset/blogimg/blog57.webp";
 import Blog58 from "../asset/blogimg/blog58.webp";
+import Blog59 from "../asset/blogimg/blog59.webp";
 
 
 const blogPosts = [
@@ -571,6 +572,14 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/how-to-choose-right-fragrance-for-your-business/",
     image: Blog58,
+  },
+  {
+    id: 59,
+    title: "How Office Fragrance Solutions Create a More Productive Workplace",
+    excerpt: "Discover how an office aroma diffuser for workplace environments can improve ambience and comfort. Explore professional office fragrance solutions in Dubai.",
+    readTime: "8 min read",
+    path: "/office-aroma-diffuser-for-workplace/",
+    image: Blog59,
   },
 
 ];
