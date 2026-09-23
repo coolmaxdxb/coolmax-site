@@ -60,6 +60,7 @@ import Blog56 from "../asset/blogimg/blog56.webp";
 import Blog57 from "../asset/blogimg/blog57.webp";
 import Blog58 from "../asset/blogimg/blog58.webp";
 import Blog59 from "../asset/blogimg/blog59.webp";
+import Blog60 from "../asset/blogimg/blog60.webp";
 
 
 const blogPosts = [
@@ -580,6 +581,14 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/office-aroma-diffuser-for-workplace/",
     image: Blog59,
+  },
+  {
+    id: 60,
+    title: "Villa Aroma Diffuser Dubai Room-by-Room Guide | Cool Max Scent",
+    excerpt: "Discover how to choose the right aroma diffuser for your Dubai villa. Explore room-by-room diffuser recommendations, fragrance notes, and expert tips.",
+    readTime: "8 min read",
+    path: "/blog/choose-aroma-diffuser-villa-dubai/",
+    image: Blog60,
   },
 
 ];
