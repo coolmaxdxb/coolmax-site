@@ -61,6 +61,7 @@ import Blog57 from "../asset/blogimg/blog57.webp";
 import Blog58 from "../asset/blogimg/blog58.webp";
 import Blog59 from "../asset/blogimg/blog59.webp";
 import Blog60 from "../asset/blogimg/blog60.webp";
+import Blog61 from "../asset/blogimg/blog61.webp";
 
 
 const blogPosts = [
@@ -589,6 +590,14 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/choose-aroma-diffuser-villa-dubai/",
     image: Blog60,
+  },
+  {
+    id: 61,
+    title: "Scent Marketing for Real Estate Developers: Creating Memorable Property Viewing Experiences",
+    excerpt: "Discover how scent marketing enhances property viewings, sales galleries, and luxury show apartments. Explore professional aroma diffuser solutions by Cool Max Scent.",
+    readTime: "8 min read",
+    path: "/blog/scent-marketing-real-estate-developers/",
+    image: Blog61,
   },
 
 ];
