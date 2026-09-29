@@ -63,6 +63,7 @@ import Blog59 from "../asset/blogimg/blog59.webp";
 import Blog60 from "../asset/blogimg/blog60.webp";
 import Blog61 from "../asset/blogimg/blog61.webp";
 import Blog62 from "../asset/blogimg/blog62.webp";
+import Blog63 from "../asset/blogimg/blog63.webp";
 
 
 const blogPosts = [
@@ -607,6 +608,14 @@ const blogPosts = [
     readTime: "7 min read",
     path: "/blog/what-is-cold-air-diffusion-technology/",
     image: Blog62,
+  },
+  {
+    id: 63,
+    title: "Why Fragrance Consistency Matters in Multi-Branch Businesses: A Guide to Standardising Your Brand's Scent",
+    excerpt: "Learn why consistent brand fragrance matters for multi-branch businesses and how standardised scent solutions create a memorable, recognisable customer experience. Contact Us!",
+    readTime: "6 min read",
+    path: "/blog/fragrance-consistency-multi-branch-businesses/",
+    image: Blog63,
   },
 
 ];
