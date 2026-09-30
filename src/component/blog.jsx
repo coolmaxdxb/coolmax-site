@@ -64,6 +64,7 @@ import Blog60 from "../asset/blogimg/blog60.webp";
 import Blog61 from "../asset/blogimg/blog61.webp";
 import Blog62 from "../asset/blogimg/blog62.webp";
 import Blog63 from "../asset/blogimg/blog63.webp";
+import Blog64 from "../asset/blogimg/blog64.webp";
 
 
 const blogPosts = [
@@ -616,6 +617,14 @@ const blogPosts = [
     readTime: "6 min read",
     path: "/blog/fragrance-consistency-multi-branch-businesses/",
     image: Blog63,
+  },
+  {
+    id: 64,
+    title: "How to Select Aroma Oils for Different Seasons in the UAE: Summer, Winter and Transitional Weather",
+    excerpt: "Discover how to choose fresh summer scents, warm winter fragrances and versatile aroma oils for transitional weather in homes, offices and commercial spaces across the UAE.",
+    readTime: "7 min read",
+    path: "/blog/how-to-select-aroma-oils-for-different-seasons-in-uae/",
+    image: Blog64,
   },
 
 ];
