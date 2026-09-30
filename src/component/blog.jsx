@@ -65,6 +65,7 @@ import Blog61 from "../asset/blogimg/blog61.webp";
 import Blog62 from "../asset/blogimg/blog62.webp";
 import Blog63 from "../asset/blogimg/blog63.webp";
 import Blog64 from "../asset/blogimg/blog64.webp";
+import Blog65 from "../asset/blogimg/blog65.webp";
 
 
 const blogPosts = [
@@ -625,6 +626,14 @@ const blogPosts = [
     readTime: "7 min read",
     path: "/blog/how-to-select-aroma-oils-for-different-seasons-in-uae/",
     image: Blog64,
+  },
+  {
+    id: 65,
+    title: "Aroma Diffusers for Salons and Barbershops: Creating a Welcoming Customer Environment",
+    excerpt: "Discover how professional aroma diffusers and scent marketing can create a welcoming salon or barbershop atmosphere and strengthen your brand in the UAE.",
+    readTime: "7 min read",
+    path: "/blog/aroma-diffusers-salons-barbershops-uae/",
+    image: Blog65,
   },
 
 ];
