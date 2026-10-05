@@ -66,6 +66,7 @@ import Blog62 from "../asset/blogimg/blog62.webp";
 import Blog63 from "../asset/blogimg/blog63.webp";
 import Blog64 from "../asset/blogimg/blog64.webp";
 import Blog65 from "../asset/blogimg/blog65.webp";
+import Blog66 from "../asset/blogimg/blog66.webp";
 
 
 const blogPosts = [
@@ -634,6 +635,14 @@ const blogPosts = [
     readTime: "7 min read",
     path: "/blog/aroma-diffusers-salons-barbershops-uae/",
     image: Blog65,
+  },
+  {
+    id: 66,
+    title: "How to Calculate Aroma Oil Consumption and Monthly Refilling Costs for Commercial Spaces",
+    excerpt: "Learn how diffuser size, operating hours, fragrance intensity, and coverage affect aroma oil consumption and monthly refilling requirements for commercial spaces.",
+    readTime: "7 min read",
+    path: "/blog/aroma-oil-consumption-monthly-refilling-costs-commercial-spaces/",
+    image: Blog66,
   },
 
 ];
