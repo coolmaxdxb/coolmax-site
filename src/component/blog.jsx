@@ -67,6 +67,7 @@ import Blog63 from "../asset/blogimg/blog63.webp";
 import Blog64 from "../asset/blogimg/blog64.webp";
 import Blog65 from "../asset/blogimg/blog65.webp";
 import Blog66 from "../asset/blogimg/blog66.webp";
+import Blog67 from "../asset/blogimg/blog67.webp";
 
 
 const blogPosts = [
@@ -643,6 +644,14 @@ const blogPosts = [
     readTime: "7 min read",
     path: "/blog/aroma-oil-consumption-monthly-refilling-costs-commercial-spaces/",
     image: Blog66,
+  },
+  {
+    id: 67,
+    title: "How Professional Fragrance Creates a Calming Wellness Environment",
+    excerpt: "Discover how an aroma diffuser for wellness centres can create a calming atmosphere. Explore professional spa scenting solutions with AeroBlack Med and MistBox X.",
+    readTime: "7 min read",
+    path: "/blog/fragrance-creates-a-calming-wellness-environment/",
+    image: Blog67,
   },
 
 ];
