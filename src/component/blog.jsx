@@ -68,6 +68,7 @@ import Blog64 from "../asset/blogimg/blog64.webp";
 import Blog65 from "../asset/blogimg/blog65.webp";
 import Blog66 from "../asset/blogimg/blog66.webp";
 import Blog67 from "../asset/blogimg/blog67.webp";
+import Blog68 from "../asset/blogimg/blog68.webp";
 
 
 const blogPosts = [
@@ -652,6 +653,14 @@ const blogPosts = [
     readTime: "7 min read",
     path: "/blog/fragrance-creates-a-calming-wellness-environment/",
     image: Blog67,
+  },
+  {
+    id: 68,
+    title: "Professional Aroma Diffuser Rental Services in Dubai, UAE: Affordable Scent Marketing Solutions for Businesses",
+    excerpt: "Transform your business environment with affordable aroma diffuser rental services in Dubai. Deliver a welcoming experience with professional scent marketing solutions.",
+    readTime: "7 min read",
+    path: "/blog/aroma-diffuser-rental-services-dubai-uae/",
+    image: Blog68,
   },
 
 ];
