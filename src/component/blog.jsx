@@ -69,6 +69,7 @@ import Blog65 from "../asset/blogimg/blog65.webp";
 import Blog66 from "../asset/blogimg/blog66.webp";
 import Blog67 from "../asset/blogimg/blog67.webp";
 import Blog68 from "../asset/blogimg/blog68.webp";
+import Blog69 from "../asset/blogimg/blog69.webp";
 
 
 const blogPosts = [
@@ -661,6 +662,14 @@ const blogPosts = [
     readTime: "7 min read",
     path: "/blog/aroma-diffuser-rental-services-dubai-uae/",
     image: Blog68,
+  },
+  {
+    id: 69,
+    title: "Create a Lasting Impression with Signature Scents: 5-Day Free Trial and Affordable Rental Plans in the UAE",
+    excerpt: "Discover Cool Max Scent's signature scent solutions in the UAE with a 5-day free trial and affordable rental plans for hotels, offices, retail stores and businesses.",
+    readTime: "7 min read",
+    path: "/blog/signature-scent-solutions-5-day-free-trial-uae/",
+    image: Blog69,
   },
 
 ];
