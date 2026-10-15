@@ -70,6 +70,7 @@ import Blog66 from "../asset/blogimg/blog66.webp";
 import Blog67 from "../asset/blogimg/blog67.webp";
 import Blog68 from "../asset/blogimg/blog68.webp";
 import Blog69 from "../asset/blogimg/blog69.webp";
+import Blog70 from "../asset/blogimg/blog70.webp";
 
 
 const blogPosts = [
@@ -670,6 +671,14 @@ const blogPosts = [
     readTime: "7 min read",
     path: "/blog/signature-scent-solutions-5-day-free-trial-uae/",
     image: Blog69,
+  },
+  {
+    id: 70,
+    title: "From Installation to Refilling: Your Complete Guide to Hassle-Free Commercial Scenting Solutions in the UAE",
+    excerpt: "Discover how commercial scenting solutions work, from diffuser installation and fragrance selection to regular refilling and maintenance for businesses across the UAE.",
+    readTime: "7 min read",
+    path: "/blog/commercial-scenting-solutions-installation-refilling-uae/",
+    image: Blog70,
   },
 
 ];

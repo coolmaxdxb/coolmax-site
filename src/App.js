@@ -188,6 +188,7 @@ const Blog17 = lazy(() => import("../src/component/blogs/blog17"));
     const Blog67 = lazy(() => import("../src/component/blogs/blog67"));
     const Blog68 = lazy(() => import("../src/component/blogs/blog68"));
     const Blog69 = lazy(() => import("../src/component/blogs/blog69"));
+    const Blog70 = lazy(() => import("../src/component/blogs/blog70"));
 
     const ScrollToTop = () => {
       const { pathname } = useLocation();
@@ -417,6 +418,7 @@ function App() {
                                    <Route path="/blog/fragrance-creates-a-calming-wellness-environment/" element={<Blog67 />} />
                                    <Route path="/blog/aroma-diffuser-rental-services-dubai-uae/" element={<Blog68 />} />
                                    <Route path="/blog/signature-scent-solutions-5-day-free-trial-uae/" element={<Blog69 />} />
+                                   <Route path="/blog/commercial-scenting-solutions-installation-refilling-uae/" element={<Blog70 />} />
                                 
         </Routes>
       </Suspense>
