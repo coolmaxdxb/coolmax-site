@@ -71,6 +71,7 @@ import Blog67 from "../asset/blogimg/blog67.webp";
 import Blog68 from "../asset/blogimg/blog68.webp";
 import Blog69 from "../asset/blogimg/blog69.webp";
 import Blog70 from "../asset/blogimg/blog70.webp";
+import Blog71 from "../asset/blogimg/blog71.webp";
 
 
 const blogPosts = [
@@ -679,6 +680,14 @@ const blogPosts = [
     readTime: "7 min read",
     path: "/blog/commercial-scenting-solutions-installation-refilling-uae/",
     image: Blog70,
+  },
+  {
+    id: 71,
+    title: "How to Create a Consistent Signature Scent Across Multiple Business Locations",
+    excerpt: "Discover how UAE businesses can create a consistent signature scent across multiple locations with the right fragrance, diffuser system and maintenance plan.",
+    readTime: "8 min read",
+    path: "/blog/signature-scent-multiple-business-locations-in-dubai/",
+    image: Blog71,
   },
 
 ];
