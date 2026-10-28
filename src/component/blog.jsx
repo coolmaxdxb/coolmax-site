@@ -72,6 +72,7 @@ import Blog68 from "../asset/blogimg/blog68.webp";
 import Blog69 from "../asset/blogimg/blog69.webp";
 import Blog70 from "../asset/blogimg/blog70.webp";
 import Blog71 from "../asset/blogimg/blog71.webp";
+import Blog72 from "../asset/blogimg/blog72.webp";
 
 
 const blogPosts = [
@@ -688,6 +689,14 @@ const blogPosts = [
     readTime: "8 min read",
     path: "/blog/signature-scent-multiple-business-locations-in-dubai/",
     image: Blog71,
+  },
+  {
+    id: 72,
+    title: "Choosing the Perfect Aroma Diffuser for Every Business Space in the UAE",
+    excerpt: "Learn how to choose the right scent diffuser for hotels, offices, restaurants and retail spaces in the UAE with Cool Max Scent.",
+    readTime: "7 min read",
+    path: "/blog/choose-scent-diffuser-business-spaces-uae/",
+    image: Blog72,
   },
 
 ];
