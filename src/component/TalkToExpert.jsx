@@ -89,7 +89,7 @@ export default function TalkToExpert() {
                 <div className="space-y-3 text-sm text-slate-500 text-left">
                    <div className="flex gap-3 items-start">
                       <MapPinIcon className="w-5 h-5 text-blue-600 shrink-0" />
-                      <span>Office no:501 Al Reem building , Bus station Road Muweilah, Sharjah -UAE</span>
+                      <span>Shop No: B8 Fourth Industrial St - Industrial Area 13 - Area Street - Sharjah, UAE</span>
                    </div>
                    <div className="flex gap-3 items-center">
                       <PhoneIcon className="w-5 h-5 text-blue-600 shrink-0" />
