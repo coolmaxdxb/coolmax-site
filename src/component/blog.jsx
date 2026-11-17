@@ -73,6 +73,7 @@ import Blog69 from "../asset/blogimg/blog69.webp";
 import Blog70 from "../asset/blogimg/blog70.webp";
 import Blog71 from "../asset/blogimg/blog71.webp";
 import Blog72 from "../asset/blogimg/blog72.webp";
+import Blog73 from "../asset/blogimg/blog73.webp";
 
 
 const blogPosts = [
@@ -697,6 +698,14 @@ const blogPosts = [
     readTime: "7 min read",
     path: "/blog/choose-scent-diffuser-business-spaces-uae/",
     image: Blog72,
+  },
+  {
+    id: 73,
+    title: "Transforming Malls and Offices with Commercial Aroma Diffusers in Dubai",
+    excerpt: "Discover how commercial aroma diffusers improve shopping mall and workplace experiences in Dubai with a more welcoming and memorable atmosphere.",
+    readTime: "7 min read",
+    path: "/blog/transforming-malls-and-offices-with-commercial-aroma-diffusers-in-dubai/",
+    image: Blog73,
   },
 
 ];
