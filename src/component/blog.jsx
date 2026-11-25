@@ -74,6 +74,7 @@ import Blog70 from "../asset/blogimg/blog70.webp";
 import Blog71 from "../asset/blogimg/blog71.webp";
 import Blog72 from "../asset/blogimg/blog72.webp";
 import Blog73 from "../asset/blogimg/blog73.webp";
+import Blog74 from "../asset/blogimg/blog74.webp";
 
 
 const blogPosts = [
@@ -706,6 +707,14 @@ const blogPosts = [
     readTime: "7 min read",
     path: "/blog/transforming-malls-and-offices-with-commercial-aroma-diffusers-in-dubai/",
     image: Blog73,
+  },
+  {
+    id: 74,
+    title: "Beyond Interior Design: How Fragrance Shapes the Modern Workplace",
+    excerpt: "Discover how professional office fragrance solutions can complement workplace ambience. Explore AeroBlack Med and MistBox X for suitable commercial spaces.",
+    readTime: "8 min read",
+    path: "/blog/beyond-interior-design-fragrance-modern-workplace/",
+    image: Blog74,
   },
 
 ];
