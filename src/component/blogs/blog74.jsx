@@ -14,6 +14,7 @@ const articleSections = [
 ];
 
 
+
 const internalLinkClass =
   "font-semibold text-cyan-700 underline decoration-cyan-200 underline-offset-4 transition hover:text-cyan-950 hover:decoration-cyan-500";
 
